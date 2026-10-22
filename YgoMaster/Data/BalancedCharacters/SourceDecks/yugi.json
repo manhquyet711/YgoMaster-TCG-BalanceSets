@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "characterId": "yugi",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-kkyhrp9wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Mystic Box",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Multiply",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Spell Shattering Arrow",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Magic Attack",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Burning Land",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Magic Curtain",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Spellbinding Circle",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Magical Hats",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dedication through Light and Darkness",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Horn of the Unicorn",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Thousand Knives",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mage Power",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Swords of Revealing Light",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Lightforce Sword",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Magic Cylinder",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Shift",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Magic Jammer",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Horn of Heaven",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Feral Imp",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mammoth Graveyard",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Winged Dragon, Guardian of the Fortress #1",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Beaver Warrior",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Red Archery Girl",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Mystical Elf",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Giant Soldier of Stone",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Neo the Magic Swordsman",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Celtic Guardian",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Koumori Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Kuriboh",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Magician of Faith",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Magician Girl",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Summoned Skull",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Magician of Chaos",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Magician",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Black Luster Soldier",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Black Luster Ritual",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Photo review: Red Archery Girl replaces incorrect Rude Kaiser transcription."
+  ]
+}

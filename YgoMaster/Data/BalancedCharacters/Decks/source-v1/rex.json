@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "characterId": "rex",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "revision": "source-v1",
+  "main": [
+    {
+      "cardId": 4326,
+      "quantity": 1
+    },
+    {
+      "cardId": 4838,
+      "quantity": 1
+    },
+    {
+      "cardId": 4843,
+      "quantity": 2
+    },
+    {
+      "cardId": 5607,
+      "quantity": 1
+    },
+    {
+      "cardId": 4905,
+      "quantity": 2
+    },
+    {
+      "cardId": 4691,
+      "quantity": 1
+    },
+    {
+      "cardId": 6811,
+      "quantity": 1
+    },
+    {
+      "cardId": 4849,
+      "quantity": 1
+    },
+    {
+      "cardId": 6823,
+      "quantity": 2
+    },
+    {
+      "cardId": 5355,
+      "quantity": 1
+    },
+    {
+      "cardId": 4817,
+      "quantity": 1
+    },
+    {
+      "cardId": 4663,
+      "quantity": 1
+    },
+    {
+      "cardId": 4342,
+      "quantity": 1
+    },
+    {
+      "cardId": 4835,
+      "quantity": 1
+    },
+    {
+      "cardId": 4804,
+      "quantity": 1
+    },
+    {
+      "cardId": 4836,
+      "quantity": 1
+    },
+    {
+      "cardId": 4576,
+      "quantity": 1
+    },
+    {
+      "cardId": 4224,
+      "quantity": 1
+    },
+    {
+      "cardId": 5507,
+      "quantity": 3
+    },
+    {
+      "cardId": 4038,
+      "quantity": 2
+    },
+    {
+      "cardId": 4086,
+      "quantity": 2
+    },
+    {
+      "cardId": 6796,
+      "quantity": 1
+    },
+    {
+      "cardId": 5256,
+      "quantity": 2
+    },
+    {
+      "cardId": 5888,
+      "quantity": 1
+    },
+    {
+      "cardId": 5886,
+      "quantity": 2
+    },
+    {
+      "cardId": 5142,
+      "quantity": 2
+    },
+    {
+      "cardId": 5887,
+      "quantity": 2
+    },
+    {
+      "cardId": 5250,
+      "quantity": 1
+    },
+    {
+      "cardId": 5889,
+      "quantity": 1
+    }
+  ],
+  "extra": [],
+  "side": []
+}

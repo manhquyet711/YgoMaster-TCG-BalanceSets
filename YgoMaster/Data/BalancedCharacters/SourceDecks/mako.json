@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mako",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-c3ag2k8wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Block Attack",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "A Legendary Ocean",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Reinforcements",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Salvage",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Giant Trunade",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dark Hole",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Tornado Wall",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Solemn Wishes",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Flying Fish",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Jellyfish",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Great White",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Aqua Madoor",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Mother Grizzly",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Mermaid Knight",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Amphibious Bugroth MK-3",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Cure Mermaid",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Cannonball Spear Shellfish",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Torpedo Fish",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Star Boy",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Maiden of the Aqua",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Deepsea Warrior",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "The Legendary Fisherman",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Bottom Dweller",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Giant Turtle Who Feeds on Flames",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Metal Fish",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Amphibian Beast",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Terrorking Salmon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Fortress Whale's Oath",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Fortress Whale",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Orca Mega-Fortress of Darkness",
+      "quantity": 2,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Photo review 2026-10-22: Great Turtle Who Feeds on Flames -> Giant Turtle Who Feeds on Flames (quantity unchanged)."
+  ],
+  "photoReview": {
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "d198914cb3ec9e757c7cbdfbe5db03efd86daedfe707c87dda23ac34aaa59f27",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "recordedUtc": "2026-10-21T23:32:39.8093245Z",
+  "sourceRoot": "F:\\ChatGPT\\Balanced-Character-Duels",
+  "gameRoot": "G:\\Game\\yugioh online\\copy of master dual\\Yu-Gi-Oh!  Master Duel",
+  "localDataPresent": true,
+  "files": [
+    {
+      "path": "G:\\Game\\yugioh online\\copy of master dual\\Yu-Gi-Oh!  Master Duel\\masterduel.exe",
+      "bytes": 672256,
+      "sha256": "F3B38F5419161DD5A70FFC51821761855A4EE9B63665CB47E5C2D86CA06448D6",
+      "modifiedUtc": "2026-10-21T19:14:41.6571774Z"
+    },
+    {
+      "path": "G:\\Game\\yugioh online\\copy of master dual\\Yu-Gi-Oh!  Master Duel\\GameAssembly.dll",
+      "bytes": 66766848,
+      "sha256": "CA24A284A86DC394F6B0CBEAAD455D29E5F6B95FC8DB8FC42812B29DE3C7620C",
+      "modifiedUtc": "2026-10-21T19:14:41.6571774Z"
+    },
+    {
+      "path": "G:\\Game\\yugioh online\\copy of master dual\\Yu-Gi-Oh!  Master Duel\\masterduel_Data\\Plugins\\x86_64\\duel.dll",
+      "bytes": 19443200,
+      "sha256": "97BD4D136E39B0872E4A8A9171632F1F0BD9BB04D69AF08E836C56E684D43C44",
+      "modifiedUtc": "2026-10-21T19:14:41.6571774Z"
+    },
+    {
+      "path": "F:\\ChatGPT\\Balanced-Character-Duels\\YgoMaster\\YgoMaster.exe",
+      "bytes": 480256,
+      "sha256": "92E4523501F5338B26F85D87560EB40432515935E8DBEC57FE19E64864E094F6",
+      "modifiedUtc": "2026-10-21T23:32:01.6915839Z"
+    },
+    {
+      "path": "F:\\ChatGPT\\Balanced-Character-Duels\\YgoMaster\\YgoMasterClient.exe",
+      "bytes": 650752,
+      "sha256": "F8BB83002AE905043C4760C54D2744A23E4457F0848897C7F2A77B20CF9AA623",
+      "modifiedUtc": "2026-10-21T23:29:35.0018337Z"
+    },
+    {
+      "path": "F:\\ChatGPT\\Balanced-Character-Duels\\YgoMaster\\YgoMasterLoader.dll",
+      "bytes": 185856,
+      "sha256": "6185540596E65967D75B7183D5C4657D86363CE6B2D0B3A39693B28D29A0495C",
+      "modifiedUtc": "2026-10-21T20:39:08.1970525Z"
+    }
+  ],
+  "runtimeTest": "NOT PERFORMED",
+  "profile": "Source/runtime data is local to this new project; no DataDir*.txt overrides permitted."
+}

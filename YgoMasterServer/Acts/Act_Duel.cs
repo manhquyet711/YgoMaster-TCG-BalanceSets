@@ -12,6 +12,7 @@ namespace YgoMaster
     {
         DuelSettings GetSoloDuelSettings(Player player, int chapterId)
         {
+            if (IsReservedBalancedChapter(chapterId)) return CreateBalancedDuelSettings(player, chapterId, false);
             DuelSettings duelSettings;
             ChapterStatus chapterStatus;
             if (SoloDuels.TryGetValue(chapterId, out duelSettings) &&
@@ -127,6 +128,7 @@ namespace YgoMaster
 
         DuelSettings CreateSoloDuelSettingsInstance(Player player, int chapterId)
         {
+            if (IsReservedBalancedChapter(chapterId)) return CreateBalancedDuelSettings(player, chapterId, false);
             DuelSettings duelSettings = null;
             PlayerDuelState duel = player.Duel;
             DuelSettings ds = GetSoloDuelSettings(player, chapterId);
@@ -178,6 +180,14 @@ namespace YgoMaster
                 duel.Mode = (GameMode)Utils.GetValue<int>(rule, "GameMode");
                 duel.ChapterId = Utils.GetValue<int>(rule, "chapter");
 
+                if (IsReservedBalancedChapter(duel.ChapterId) &&
+                    (duel.Mode != GameMode.SoloSingle || !IsBalancedChapter(duel.ChapterId)))
+                {
+                    request.ResultCode = (int)ResultCodes.SoloCode.INVALID_CHAPTER;
+                    request.Remove("Duel", "DuelResult", "Result");
+                    return;
+                }
+
                 switch (duel.Mode)
                 {
                     case GameMode.Room:
@@ -193,7 +203,11 @@ namespace YgoMaster
 
                 DuelSettings duelSettings = null;
                 Dictionary<string, object> duelStarterData = Utils.GetDictionary(rule, "duelStarterData");
-                if (duelStarterData != null)
+                if (IsBalancedChapter(duel.ChapterId) && duel.Mode == GameMode.SoloSingle)
+                {
+                    duelSettings = CreateBalancedDuelSettings(request.Player, duel.ChapterId, true);
+                }
+                else if (duelStarterData != null)
                 {
                     duelSettings = new DuelSettings();
                     duelSettings.FromDictionary(duelStarterData);
@@ -212,7 +226,7 @@ namespace YgoMaster
                 if (duelSettings != null)
                 {
                     int firstPlayer;
-                    if (Utils.TryGetValue(rule, "FirstPlayer", out firstPlayer))
+                    if (!IsBalancedChapter(duel.ChapterId) && Utils.TryGetValue(rule, "FirstPlayer", out firstPlayer))
                     {
                         duelSettings.FirstPlayer = firstPlayer;
                     }
@@ -244,6 +258,7 @@ namespace YgoMaster
                     request.Player.ActiveDuelSettings.HasSavedReplay = false;
                     request.Player.ActiveDuelSettings.DuelBeginTime = Utils.GetEpochTime();
                     request.Response["Duel"] = duelSettings.ToDictionary();
+                    BeginBalancedRun(request.Player, request.Player.ActiveDuelSettings);
                 }
             }
             request.Remove("Duel", "DuelResult", "Result");
@@ -274,6 +289,9 @@ namespace YgoMaster
                 request.Player.ActiveDuelSettings.res = (int)res;
                 request.Player.ActiveDuelSettings.finish = (int)finish;
                 request.Player.ActiveDuelSettings.turn = Utils.GetValue<int>(endParams, "turn");
+                if (gameMode == GameMode.SoloSingle && IsBalancedChapter(request.Player.Duel.ChapterId) && balancedRunLogger != null)
+                    balancedRunLogger.End(request.Player, request.Player.Duel.ChapterId, res, finish,
+                        request.Player.ActiveDuelSettings.turn);
                 string replayData = Utils.GetValue<string>(endParams, "replayData");
 
                 if (!string.IsNullOrEmpty(replayData) && !request.Player.ActiveDuelSettings.HasSavedReplay &&
@@ -362,7 +380,9 @@ namespace YgoMaster
                             request.Player.SoloChapters.TryGetValue(request.Player.Duel.ChapterId, out newChapterStatus);
                             chapterStatusChanged = oldChapterStatus != newChapterStatus;
                         }
-                        GiveDuelReward(request, request.Player, DuelRewards, res, finish, chapterStatusChanged);
+                        GiveDuelReward(request, request.Player,
+                            IsBalancedChapter(request.Player.Duel.ChapterId) ? new DuelRewardInfos() : DuelRewards,
+                            res, finish, chapterStatusChanged);
                         SavePlayer(request.Player);
                         break;
 

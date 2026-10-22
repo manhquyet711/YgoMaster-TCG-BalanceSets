@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "characterId": "pegasus",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-myzdbi8wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 2,
+  "main": [
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Briefcase",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Mask",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon World",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Mimicat",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Comic Hand",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Defense",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Draining Shield",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Alligator",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dark Rabbit",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Thousand-Eyes Idol",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Crass Clown",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dream Clown",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Hane-Hane",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Gemini Elf",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Goblin Attack Force",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Mermaid",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Harpie Lady",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Cannon Soldier",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Masked Sorcerer",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Jigen Bakudan",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Blue-Eyes Toon Dragon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Buster Blader",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Red-Eyes Toon Dragon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Dark Magician",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Summoned Skull",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Barrel Dragon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Toon Dark Magician Girl",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Black Illusion Ritual",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Relinquished",
+      "quantity": 1,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Bickuribox",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Thousand-Eyes Restrict",
+      "quantity": 1,
+      "status": "photo-verified"
+    }
+  ],
+  "side": [],
+  "corrections": [],
+  "photoReview": {
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "5712713f6dba6e6d9f34d97692fc3ead2ca3f4ce413b4f407e0596c2b2fe5377",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits."
+  }
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "yugi",
+    "displayName": "Yugi",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/yugi.json",
+    "presentationId": "yugi"
+  },
+  {
+    "id": "yugi_battle_city",
+    "displayName": "Yugi (Battle City)",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/yugi_battle_city.json",
+    "presentationId": "yugi_battle_city"
+  },
+  {
+    "id": "kaiba",
+    "displayName": "Kaiba",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/kaiba.json",
+    "presentationId": "kaiba"
+  },
+  {
+    "id": "joey",
+    "displayName": "Joey",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/joey.json",
+    "presentationId": "joey"
+  },
+  {
+    "id": "weevil",
+    "displayName": "Weevil",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/weevil.json",
+    "presentationId": "weevil"
+  },
+  {
+    "id": "rex",
+    "displayName": "Rex",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/rex.json",
+    "presentationId": "rex"
+  },
+  {
+    "id": "mako",
+    "displayName": "Mako Tsunami",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/mako.json",
+    "presentationId": "mako"
+  },
+  {
+    "id": "mai",
+    "displayName": "Mai Valentine",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/mai.json",
+    "presentationId": "mai"
+  },
+  {
+    "id": "bandit_keith",
+    "displayName": "Bandit Keith",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/bandit_keith.json",
+    "presentationId": "bandit_keith"
+  },
+  {
+    "id": "bonz",
+    "displayName": "Bonz",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/bonz.json",
+    "presentationId": "bonz"
+  },
+  {
+    "id": "pegasus",
+    "displayName": "Pegasus",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/pegasus.json",
+    "presentationId": "pegasus"
+  },
+  {
+    "id": "marik_bakura",
+    "displayName": "Marik Ishtar (Marik/Bakura mix)",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/marik_bakura.json",
+    "presentationId": "marik_bakura"
+  },
+  {
+    "id": "gravekeepers",
+    "displayName": "Ishtar (Gravekeepers)",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/gravekeepers.json",
+    "presentationId": "gravekeepers"
+  },
+  {
+    "id": "grandpa",
+    "displayName": "Grandpa (Exodia)",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/grandpa.json",
+    "presentationId": "grandpa"
+  },
+  {
+    "id": "jaden",
+    "displayName": "Jaden Yuki",
+    "deckRevision": "source-v1",
+    "deckFile": "Decks/source-v1/jaden.json",
+    "presentationId": "jaden"
+  }
+]

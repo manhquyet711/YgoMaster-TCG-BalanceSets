@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "characterId": "gravekeepers",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-19l7zn8wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Raigeki Break",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Rite of Spirit",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Curse of Aging",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Embodiment of Apophis",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Altar for Tribute",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Royal Tribute",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Different Dimension Capsule",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Book of Moon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dark Hole",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Needle Ceiling",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Draining Shield",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Judgment of Anubis",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Curse of Anubis",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gravekeeper's Vassal",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gravekeeper's Guard",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gravekeeper's Spy",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gravekeeper's Spear Soldier",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gravekeeper's Assailant",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gravekeeper's Cannonholder",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gravekeeper's Curse",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Charm of Shabti",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "A Cat of Ill Omen",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Neko Mane King",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gravekeeper's Chief",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Mystical Knight of Jackal",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Necrovalley",
+      "quantity": 3,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Photo review 2026-10-22: Oracle of Shai -> Charm of Shabti (quantity unchanged)."
+  ],
+  "photoReview": {
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "0849b7c3a157ce45a2990a1e95d525c4463f29f37d47cd3209345dbf80b4e4af",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits."
+  }
+}

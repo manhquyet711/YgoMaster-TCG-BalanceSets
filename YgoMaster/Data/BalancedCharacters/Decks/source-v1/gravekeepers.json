@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "characterId": "gravekeepers",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "revision": "source-v1",
+  "main": [
+    {
+      "cardId": 4843,
+      "quantity": 1
+    },
+    {
+      "cardId": 4838,
+      "quantity": 1
+    },
+    {
+      "cardId": 5544,
+      "quantity": 1
+    },
+    {
+      "cardId": 5548,
+      "quantity": 1
+    },
+    {
+      "cardId": 5542,
+      "quantity": 1
+    },
+    {
+      "cardId": 5234,
+      "quantity": 1
+    },
+    {
+      "cardId": 5792,
+      "quantity": 1
+    },
+    {
+      "cardId": 5540,
+      "quantity": 1
+    },
+    {
+      "cardId": 5532,
+      "quantity": 1
+    },
+    {
+      "cardId": 5432,
+      "quantity": 1
+    },
+    {
+      "cardId": 4342,
+      "quantity": 1
+    },
+    {
+      "cardId": 5442,
+      "quantity": 1
+    },
+    {
+      "cardId": 5994,
+      "quantity": 1
+    },
+    {
+      "cardId": 5232,
+      "quantity": 1
+    },
+    {
+      "cardId": 6067,
+      "quantity": 1
+    },
+    {
+      "cardId": 5513,
+      "quantity": 3
+    },
+    {
+      "cardId": 5511,
+      "quantity": 2
+    },
+    {
+      "cardId": 5509,
+      "quantity": 2
+    },
+    {
+      "cardId": 5512,
+      "quantity": 2
+    },
+    {
+      "cardId": 5517,
+      "quantity": 2
+    },
+    {
+      "cardId": 5516,
+      "quantity": 2
+    },
+    {
+      "cardId": 5510,
+      "quantity": 1
+    },
+    {
+      "cardId": 5524,
+      "quantity": 1
+    },
+    {
+      "cardId": 5520,
+      "quantity": 2
+    },
+    {
+      "cardId": 5595,
+      "quantity": 1
+    },
+    {
+      "cardId": 5515,
+      "quantity": 3
+    },
+    {
+      "cardId": 5519,
+      "quantity": 1
+    },
+    {
+      "cardId": 5533,
+      "quantity": 3
+    }
+  ],
+  "extra": [],
+  "side": []
+}

@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "characterId": "yugi_battle_city",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-vl3hl69wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 4,
+  "main": [
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Block Attack",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Card of Sanctity",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Heart of the Underdog",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Card of Safe Return",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Magical Mallet",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "The Shallow Grave",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Stray Lambs",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "De-Fusion",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Nobleman of Crossout",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Swords of Revealing Light",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Solemn Judgment",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Queen's Knight",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "King's Knight",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gazelle the King of Mythical Beasts",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Green Phantom King",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Alpha The Magnet Warrior",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gamma The Magnet Warrior",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Beta The Magnet Warrior",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gemini Elf",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Big Shield Gardna",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "The Tricky",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Obnoxious Celtic Guard",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Black Luster Soldier - Envoy of the Beginning",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Jack's Knight",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Berfomet",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gaia the Fierce Knight",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Valkyrion the Magna Warrior",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Slifer the Sky Dragon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Curse of Dragon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Buster Blader",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dark Magician",
+      "quantity": 1,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Dark Paladin",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gaia the Dragon Champion",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Chimera the Flying Mythical Beast",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Black Skull Dragon",
+      "quantity": 1,
+      "status": "photo-verified"
+    }
+  ],
+  "side": [],
+  "corrections": [],
+  "photoReview": {
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "75d582df6c9a0605a63392438b6948196b85257506b76e46b6902b252a7394da",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits."
+  }
+}

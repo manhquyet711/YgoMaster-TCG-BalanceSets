@@ -488,6 +488,10 @@ namespace YgoMasterClient
             methodAddQuitting = coreModuleAssembly.GetClass("Application", "UnityEngine").GetMethod("add_quitting");
 
             InitSoloTypes();
+            // Read managed configuration before native hooks are enabled. The
+            // deferred window callback may not run before the first Solo request.
+            // soloThumbsPtr is still zero here, so this makes no Unity calls.
+            LoadSoloData();
         }
 
         public static void Init()
@@ -1923,6 +1927,7 @@ namespace YgoMasterClient
 
         static uint Load(IntPtr thisPtr, IntPtr path, IntPtr systemTypeInstance, IntPtr completeHandler, csbool disableErrorNotify)
         {
+            TraceSoloImageRequest(path);
             if (ClientSettings.AssetHelperLog && path != IntPtr.Zero)
             {
                 Console.WriteLine(new IL2String(path).ToString());
@@ -1941,6 +1946,7 @@ namespace YgoMasterClient
 
         static uint LoadImmediate(IntPtr thisPtr, IntPtr path, IntPtr systemTypeInstance, IntPtr completeHandler, csbool disableErrorNotify)
         {
+            TraceSoloImageRequest(path);
             if (ClientSettings.AssetHelperLog && path != IntPtr.Zero)
             {
                 Console.WriteLine(new IL2String(path).ToString() + " (LoadImmediate)");

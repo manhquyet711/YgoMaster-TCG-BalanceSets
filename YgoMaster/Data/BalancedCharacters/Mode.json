@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "contentVersion": "0.2.2-prototype",
+  "activeCharacterIds": [
+    "yugi_battle_city",
+    "kaiba",
+    "joey",
+    "weevil",
+    "rex",
+    "mako",
+    "mai",
+    "bandit_keith",
+    "bonz",
+    "pegasus",
+    "marik_bakura",
+    "gravekeepers",
+    "grandpa",
+    "jaden"
+  ],
+  "rosterVersion": 1,
+  "activeDeckRevision": "source-v1",
+  "defaults": {
+    "life": [
+      8000,
+      8000
+    ],
+    "hnum": [
+      5,
+      5
+    ],
+    "noshuffle": false,
+    "Type": 0,
+    "MyType": 0,
+    "cpu": 97,
+    "cpuflag": null
+  },
+  "note": "Fourteen photo-reviewed character decks; 182 fixed-deck encounters. Original Yugi remains blocked: Spellbinding Circle is absent from local tables/catalog. Expanded map and duel acceptance pending in game."
+}

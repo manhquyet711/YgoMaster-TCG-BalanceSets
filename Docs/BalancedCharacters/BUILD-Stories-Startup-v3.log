@@ -1,0 +1,98 @@
+test_duplicate_and_side_cards (test_content.ContentTests) ... ok
+test_fingerprint_order_independent (test_content.ContentTests) ... ok
+test_fingerprint_zone_sensitive (test_content.ContentTests) ... ok
+test_invalid_ids (test_content.ContentTests) ... ok
+test_invalid_quantities (test_content.ContentTests) ... ok
+test_missing_prerequisite_writes_no_payloads (test_content.ContentTests) ... ok
+test_total_copy_limit_across_zones (test_content.ContentTests) ... ok
+test_valid_and_wire_counts (test_content.ContentTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.006s
+
+OK
+{
+  "cardTableCount": 14257,
+  "readyDecks": [
+    "kaiba",
+    "joey"
+  ],
+  "blockedDecks": [
+    "yugi",
+    "yugi_battle_city",
+    "weevil",
+    "rex",
+    "mako",
+    "mai",
+    "bandit_keith",
+    "bonz",
+    "pegasus",
+    "marik_bakura",
+    "gravekeepers",
+    "grandpa",
+    "jaden"
+  ]
+}
+Generated 2 gates / 2 directed encounters for kaiba, joey
+
+  YgoMaster -> F:\ChatGPT\Balanced-Character-Duels\YgoMaster\YgoMaster.exe
+  YgoMasterClient -> F:\ChatGPT\Balanced-Character-Duels\YgoMaster\YgoMasterClient.exe
+Built client and server for Master Duel 2.8.0. Using the unchanged official v1.79 native loader.
+Balanced Characters loaded: 2 gates / 2 encounters
+PASS 13997 catalog cards loaded
+PASS TCG campaign duels loaded: 1023
+PASS TCG shop packs loaded: 326
+PASS Campaign chapter table loaded
+PASS Campaign chapters loaded: 760
+PASS Progressive card list retained
+PASS Progressive rarities retained
+PASS Updated DoCommand offset
+PASS Updated RunDialog offset
+PASS Custom TCG rarity retained
+PASS Order does not change identity
+PASS Cosmetic finish does not change identity
+PASS Changed quantities rejected even at same total
+PASS Extra card rejected
+PASS Missing card rejected
+PASS Main and Extra swap rejected
+PASS Unexpected side card rejected
+PASS Missing decks rejected
+PASS Checks leave trusted template unchanged
+Balanced Characters loaded: 2 gates / 2 encounters
+PASS Balanced mode loaded without errors
+PASS Two directed prototype encounters registered
+PASS Kaiba player encounter found
+PASS Only balanced chapters opened for new player
+PASS Gate UI exposes a valid loaner without requiring owned cards
+PASS Solo detail registers player/opponent deck recipes with valid IDs
+PASS My Deck route returns trusted loaner without card ownership
+PASS Mutating preview cannot mutate trusted template
+PASS Balanced launch emitted a duel
+PASS Exact canonical decks survived forged launch data
+PASS Trusted life and starting hands enforced
+PASS Trusted shuffle, duel type and CPU enforced
+PASS Client FirstPlayer override rejected and fresh seed selected
+PASS Character names preserved
+PASS Balanced launch emitted a duel
+PASS Exact canonical decks survived forged launch data
+PASS Trusted life and starting hands enforced
+PASS Trusted shuffle, duel type and CPU enforced
+PASS Client FirstPlayer override rejected and fresh seed selected
+PASS Character names preserved
+PASS Reserved chapter cannot be launched as a room/custom bypass
+PASS Unknown reserved chapter fails closed
+PASS Ordinary custom-duel route remains available outside balanced IDs
+PASS Completed balanced chapters retain fixed decks
+PASS Completed chapter ignores targeted CustomDuel.json and cached custom settings
+PASS disabled: mode adds no partial encounters and preserves base campaign
+PASS disabled: disabled/invalid content reported correctly
+Validation fixture: C:\Users\QQQ\AppData\Local\Temp\BalancedValidation-2a66e3e19eb843e0bf43b58c2937bdd3
+[WARNING] Balanced Characters disabled: Invalid card or quantity: kaiba
+PASS quantity: mode adds no partial encounters and preserves base campaign
+PASS quantity: disabled/invalid content reported correctly
+Validation fixture: C:\Users\QQQ\AppData\Local\Temp\BalancedValidation-91c3c3a484ca4c2e95c0778cd2288a47
+[WARNING] Balanced Characters disabled: Stale/tampered compiled deck: kaiba
+PASS fingerprint: mode adds no partial encounters and preserves base campaign
+PASS fingerprint: disabled/invalid content reported correctly
+Validation fixture: C:\Users\QQQ\AppData\Local\Temp\BalancedValidation-66125d3243e342ccbcb4f806f5251082
+Server integration checks passed. In-game acceptance remains pending.

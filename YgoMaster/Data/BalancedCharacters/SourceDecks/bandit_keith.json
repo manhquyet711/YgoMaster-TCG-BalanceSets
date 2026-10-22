@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "characterId": "bandit_keith",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-n7ab0l9wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "7 Completed",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Seven Tools of the Bandit",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Divine Wrath",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Paralyzing Potion",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "7",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Creature Swap",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Limiter Removal",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Metalmorph",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Trap Hole",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Time Machine",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Robotic Knight",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Oni Tank T-34",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Overdrive",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Ground Attacker Bugroth",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Bokoichi the Freightening Car",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Guardian of the Throne Room",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Battle Footballer",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Cyber Falcon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Cannon Soldier",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dekoichi the Battlechanted Locomotive",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Jinzo #7",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Blast Sphere",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Cyber Jar",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Pendulum Machine",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Blowback Dragon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Machine King",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Barrel Dragon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Slot Machine",
+      "quantity": 1,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Photo review 2026-10-22: Robotic Knight? [CHECK: top-left normal monster is 'Robotic ...' / mechanical car artwork] -> Bokoichi the Freightening Car (quantity unchanged)."
+  ],
+  "photoReview": {
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "29f18fc52f5a666b869d5fab3921323b26abd231de57c3638b0ecfba8695bc07",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits."
+  }
+}

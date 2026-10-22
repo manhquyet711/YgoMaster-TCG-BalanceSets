@@ -1,0 +1,61 @@
+{
+  "Red-Eyes B. Dragon": {
+    "canonicalName": "Red-Eyes Black Dragon",
+    "evidence": "Historical English abbreviation retained in the supplied Joey photo; modern English name refers to the same original monster. Verify matching local ID via card tables."
+  },
+  "Dark Magician": {
+    "evidence": "Explicit original-card selection verified in local YdkIds.txt: passcode 46986420 maps to 4041; other same-name entries are not selected.",
+    "canonicalName": "Dark Magician",
+    "masterDuelId": 4041
+  },
+  "Monster Reborn": {
+    "evidence": "Explicit original-card selection verified in local YdkIds.txt: passcode 83764719 maps to 4842; other same-name entries are not selected.",
+    "canonicalName": "Monster Reborn",
+    "masterDuelId": 4842
+  },
+  "Black Luster Soldier": {
+    "evidence": "Explicit original-card selection verified in local YdkIds.txt: passcode 5405694 maps to 4370; other same-name entries are not selected.",
+    "canonicalName": "Black Luster Soldier",
+    "masterDuelId": 4370
+  },
+  "Dark Magician Girl": {
+    "evidence": "Explicit original-card selection verified in local YdkIds.txt: passcode 38033121 maps to 4766; other same-name entries are not selected.",
+    "canonicalName": "Dark Magician Girl",
+    "masterDuelId": 4766
+  },
+  "Polymerization": {
+    "evidence": "Explicit original-card selection verified in local YdkIds.txt: passcode 24094653 maps to 4837; other same-name entries are not selected.",
+    "canonicalName": "Polymerization",
+    "masterDuelId": 4837
+  },
+  "Blue-Eyes White Dragon": {
+    "evidence": "Explicit original-card selection verified in local YdkIds.txt: passcode 89631139 maps to 3801; other same-name entries are not selected.",
+    "canonicalName": "Blue-Eyes White Dragon",
+    "masterDuelId": 3801
+  },
+  "Blue-Eyes Ultimate Dragon": {
+    "evidence": "Explicit original-card selection verified in local YdkIds.txt: passcode 23995348 maps to 4386; other same-name entries are not selected.",
+    "canonicalName": "Blue-Eyes Ultimate Dragon",
+    "masterDuelId": 4386
+  },
+  "Slifer the Sky Dragon": {
+    "canonicalName": "Slifer the Sky Dragon",
+    "masterDuelId": 4999,
+    "evidence": "Explicit original-card ID verified in local YdkIds.txt: 10000020 4999"
+  },
+  "The Winged Dragon of Ra": {
+    "canonicalName": "The Winged Dragon of Ra",
+    "masterDuelId": 5000,
+    "evidence": "Explicit original-card ID verified in local YdkIds.txt: 10000010 5000"
+  },
+  "Limiter Removal": {
+    "canonicalName": "Limiter Removal",
+    "masterDuelId": 5129,
+    "evidence": "Explicit original-card ID verified in local YdkIds.txt: 23171610 5129"
+  },
+  "Marie the Fallen One": {
+    "canonicalName": "Darklord Marie",
+    "masterDuelId": 5209,
+    "evidence": "Official Konami database identifies renamed original card, cid=5209; local name table matches. https://www.db.yugioh-card.com/yugiohdb/card_search.action?cid=5209&ope=2"
+  }
+}

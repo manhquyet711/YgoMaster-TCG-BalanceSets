@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "characterId": "weevil",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-b5gbtp8wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Insect Armor with Laser Cannon",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Eradicating Aerosol",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Insect Barrier",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "DNA Surgery",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Forest",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Block Attack",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Share the Pain",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Snatch Steal",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Fake Trap",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Petit Moth",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Girochin Kuwagata",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Flying Kamakiri #2",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Neo Bug",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Arsenal Bug",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Jirai Gumo",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Flying Kamakiri #1",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Insect Soldiers of the Sky",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Man-Eater Bug",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Cocoon of Evolution",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Leghul",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Skull-Mark Ladybug",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Kiseitai",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Pinch Hopper",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "4-Starred Ladybug of Doom",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Parasite Paracide",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Insect Queen",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Empress Mantis",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Great Moth",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Metal Armored Bug",
+      "quantity": 1,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [],
+  "photoReview": {
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "f601ccf3dd403c093f30fddfffa18b931b7522d715d1563d84650abaf431eddc",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits."
+  }
+}

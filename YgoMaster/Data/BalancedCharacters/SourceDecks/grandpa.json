@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "characterId": "grandpa",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-o84zyg8wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 41,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Second Coin Toss",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Card Trader",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Monster Reincarnation",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dark Factory of Mass Production",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Backup Soldier",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Jar of Greed",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Emergency Provisions",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Cup of Ace",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Hand Destruction",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Magical Mallet",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Reckless Greed",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gold Sarcophagus",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Waboku",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Ordeal of a Traveler",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Fairy Box",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Exodia the Forbidden One",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Right Arm of the Forbidden One",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Left Arm of the Forbidden One",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Right Leg of the Forbidden One",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Left Leg of the Forbidden One",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Wandering Mummy",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gambler of Legend",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Witch of the Black Forest",
+      "quantity": 1,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [],
+  "photoReview": {
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "a4071351af7a181cdf84efe5bab1be8e601aec5f93cddc321b6a9e6d093731ef",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits."
+  }
+}

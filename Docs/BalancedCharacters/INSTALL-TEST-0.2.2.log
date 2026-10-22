@@ -1,0 +1,14 @@
+PASS balanced launch paths and matching configured ports: 4989 / 4988
+PASS 0.2.2 upgrade: 14 characters / 182 matchups; backups; settings and saves preserved.
+PASS balanced launch paths and matching configured ports: 4989 / 4988
+PASS balanced launch paths and matching configured ports: 4989 / 4988
+Installed 0.2.2. Backups: F:\ChatGPT\BalancedUpgrade022Test-bad08ec356304a999f4d64a8d6384cc9\success\YgoMaster-BalancedCharacters\UpgradeBackups\0.2.2-20261022-063611-335
+Run Start-Balanced.cmd, then Stories. Fourteen Balanced Characters gates are available.
+Each battle is selectable immediately. Goal unlocks after beating every opponent in that gate.
+0.2.2 already installed and verified.
+Restored pre-upgrade files. Settings, saves and run logs were preserved.
+PASS dry run, install, repeat, disabled/unknown preferences, settings/saves/client/decks preserved, manual restore
+PASS balanced launch paths and matching configured ports: 4989 / 4988
+Expected failure: Access to the path 'F:\ChatGPT\BalancedUpgrade022Test-bad08ec356304a999f4d64a8d6384cc9\rollback\YgoMaster-BalancedCharacters\Data\BalancedCharacters\Mode.json' is denied.
+PASS forced late write failure restores every original file and removes new payload files
+Fixture evidence: F:\ChatGPT\BalancedUpgrade022Test-bad08ec356304a999f4d64a8d6384cc9 (not playable game copies)

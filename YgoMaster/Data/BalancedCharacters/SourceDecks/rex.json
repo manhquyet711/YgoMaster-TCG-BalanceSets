@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "characterId": "rex",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-z3z8l99wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Stop Defense",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Poison of the Old Man",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Rush Recklessly",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Acid Trap Hole",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Fossil Excavation",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Reinforcements",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Jurassic World",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Shrink",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Mind Control",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Megamorph",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dark Hole",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Fissure",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Trap Hole",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Trakodon",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Two-Mouth Darkruler",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Kabazauls",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Two-Headed King Rex",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Uraby",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Sabersaurus",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Gilasaurus",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Hyper Hammerhead",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Balloon Lizard",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Mad Sword Beast",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dark Driceratops",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Bazoo the Soul-Eater",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Black Tyranno",
+      "quantity": 1,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [],
+  "photoReview": {
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "97a2a7a738349e2895531b8fae3c5a84dd6dc6a69651f4214e59afe7c8a53c2d",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits."
+  }
+}

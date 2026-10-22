@@ -1,0 +1,5 @@
+PASS native signature ChapterMap.OnClickChapter(sb, data)
+PASS native signature ChapterMap.InitChapter(chapterID, chapterData)
+PASS native signature ChapterMap.Create()
+PASS native signature DuelDialog.Open(data)
+NOT TESTED: runtime hook execution, chapter clicks, deck panel and Play button

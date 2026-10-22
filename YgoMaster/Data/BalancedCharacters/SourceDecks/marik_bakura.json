@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "characterId": "marik_bakura",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-0vvusm8wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Dark Sanctuary",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Destiny Board",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Spirit Message \"I\"",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Spirit Message \"N\"",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Spirit Message \"A\"",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Spirit Message \"L\"",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Nightmare's Steelcage",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Deal of Phantom",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Spiritualism",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Exchange",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Brain Control",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Souls of the Forgotten",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "The Portrait's Secret",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "The Gross Ghost of Fled Dreams",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Headless Knight",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Ryu-Kishin Powered",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Whiptail Crow",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Earthbound Spirit",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Revival Jam",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Morphing Jar",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Yomi Ship",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Masked Sorcerer",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Sinister Serpent",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dark Ruler Ha Des",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Lesser Fiend",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Marie the Fallen One",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dark Necrofear",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Puppet Master",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "The Winged Dragon of Ra",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Invader of Darkness",
+      "quantity": 1,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [],
+  "photoReview": {
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "c0a8677599bb728a18c25a14cc2d4da3c99419e38d4b40174bc7245975d3b9d2",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits."
+  }
+}

@@ -25,6 +25,16 @@ namespace YgomGame.Solo
         static IL2Class classDuelClient;
 
         static IL2Field fieldChapterId;
+        static IL2Field fieldChapterMapEntries;
+        static IL2Field fieldChapterMapGate;
+        static IL2Field fieldChapterGameObject;
+        delegate void Del_ClickChapter(IntPtr thisPtr, IntPtr selectionButton, IntPtr chapterData);
+        static Hook<Del_ClickChapter> hookClickChapter;
+        static Hook<Del_Play> hookDuelDialogOpen;
+        delegate void Del_InitChapter(IntPtr thisPtr, int chapterId, IntPtr chapterData);
+        static Hook<Del_InitChapter> hookInitChapter;
+        delegate void Del_CreateChapterMap(IntPtr thisPtr);
+        static Hook<Del_CreateChapterMap> hookCreateChapterMap;
 
         delegate void Del_Play(IntPtr thisPtr, IntPtr chapterData);
         static Hook<Del_Play> hookDuelDialogPlay;
@@ -39,14 +49,79 @@ namespace YgomGame.Solo
             IL2Class classInfo = assembly.GetClass("SoloSelectChapterViewController", "YgomGame.Solo");
             IL2Class chapterClassInfo = classInfo.GetNestedType("Chapter");
             fieldChapterId = chapterClassInfo.GetField("id");
+            fieldChapterGameObject = chapterClassInfo.GetField("go");
+            IL2Class chapterMapClass = classInfo.GetNestedType("ChapterMap");
+            fieldChapterMapEntries = chapterMapClass.GetField("chapterDataDic");
+            fieldChapterMapGate = chapterMapClass.GetField("gateID");
+            hookClickChapter = new Hook<Del_ClickChapter>(ClickChapter,
+                classInfo.GetNestedType("ChapterMap").GetMethod("OnClickChapter", x => x.GetParameters().Length == 2));
+            hookInitChapter = new Hook<Del_InitChapter>(InitChapter,
+                classInfo.GetNestedType("ChapterMap").GetMethod("InitChapter", x => x.GetParameters().Length == 2));
+            hookCreateChapterMap = new Hook<Del_CreateChapterMap>(CreateChapterMap,
+                chapterMapClass.GetMethod("Create", x => x.GetParameters().Length == 0));
             IL2Class duelDialogClassInfo = classInfo.GetNestedType("DuelDialog");
             IL2Class tutorialDialogClassInfo = classInfo.GetNestedType("TutorialDialog");
+            hookDuelDialogOpen = new Hook<Del_Play>(OpenDuelDialog,
+                duelDialogClassInfo.GetMethod("Open", x => x.GetParameters().Length == 1));
             hookDuelDialogPlay = new Hook<Del_Play>(DuelDialogPlay, duelDialogClassInfo.GetMethod("Play"));
             hookTutorialDialogPlay = new Hook<Del_Play>(TutorialDialogPlay, tutorialDialogClassInfo.GetMethod("Play"));
             hookNotificationStack = new Hook<Del_NotificationStack>(NotificationStack, classInfo.GetMethod("NotificationStack"));
 
             classDuelResultViewController = assembly.GetClass("DuelResultViewController", "YgomGame.Menu");
             classDuelClient = assembly.GetClass("DuelClient", "YgomGame.Duel");
+        }
+
+        static void InitChapter(IntPtr thisPtr, int chapterId, IntPtr chapterData)
+        {
+            hookInitChapter.Original(thisPtr, chapterId, chapterData);
+            LogChapterEntry(thisPtr, chapterId, "Created");
+        }
+
+        static void CreateChapterMap(IntPtr thisPtr)
+        {
+            hookCreateChapterMap.Original(thisPtr);
+            int gate = fieldChapterMapGate.GetValue(thisPtr).GetValueRef<int>();
+            foreach (int id in AssetHelper.BalancedSoloChapterIdsForGate(gate))
+                LogChapterEntry(thisPtr, id, "Map ready");
+        }
+
+        static void LogChapterEntry(IntPtr map, int id, string stage)
+        {
+            if (!AssetHelper.IsBalancedSoloChapter(id)) return;
+            try
+            {
+                IL2Object entries = fieldChapterMapEntries.GetValue(map);
+                if (entries == null) return;
+                IL2Class dictionaryClass = new IL2Class(Import.Object.il2cpp_object_get_class(entries.ptr));
+                IL2Object chapter = dictionaryClass.GetProperty("Item").GetGetMethod()
+                    .Invoke(entries.ptr, new IntPtr[] { new IntPtr(&id) });
+                if (chapter == null) return;
+                string type = new IL2Class(Import.Object.il2cpp_object_get_class(chapter.ptr)).Name;
+                bool hasObject = fieldChapterGameObject.GetValue(chapter.ptr) != null;
+                AssetHelper.LogBalancedSoloUi(stage + " chapter=" + id + " type=" + type + " gameObject=" + hasObject);
+            }
+            catch (Exception error) { AssetHelper.LogBalancedSoloUi(stage + " diagnostic error: " + error.Message); }
+        }
+
+        static void ClickChapter(IntPtr thisPtr, IntPtr selectionButton, IntPtr chapterData)
+        {
+            if (chapterData != IntPtr.Zero)
+            {
+                int id = fieldChapterId.GetValue(chapterData).GetValueRef<int>();
+                if (AssetHelper.IsBalancedSoloChapter(id)) AssetHelper.LogBalancedSoloUi("Click chapter=" + id);
+            }
+            hookClickChapter.Original(thisPtr, selectionButton, chapterData);
+        }
+
+        static void OpenDuelDialog(IntPtr thisPtr, IntPtr chapterData)
+        {
+            if (chapterData != IntPtr.Zero)
+            {
+                int id = fieldChapterId.GetValue(chapterData).GetValueRef<int>();
+                if (AssetHelper.IsBalancedSoloChapter(id))
+                    AssetHelper.LogBalancedSoloUi("Opening deck/Play panel chapter=" + id);
+            }
+            hookDuelDialogOpen.Original(thisPtr, chapterData);
         }
 
         static void NotificationStack(IntPtr thisPtr, IntPtr vcm, IntPtr vc, bool isEntry)

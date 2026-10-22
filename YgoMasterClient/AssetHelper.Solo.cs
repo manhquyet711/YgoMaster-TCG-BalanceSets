@@ -17,6 +17,53 @@ namespace YgoMasterClient
         static IL2Field fieldGateMap;
         static IL2Field fieldChapterMap;
 
+        // Newer clients may already have cached SettingMap lookups when the
+        // resource hook appends custom gates to m_Settings. Apply the configured
+        // gate thumbnail at the lookup boundary as well, before card art loads.
+        delegate IntPtr Del_GetSoloThumbSetting(IntPtr thisPtr, int format, int id);
+        static Hook<Del_GetSoloThumbSetting> hookGetSoloThumbSetting;
+        delegate csbool Del_HasSoloThumbSetting(IntPtr thisPtr, int format, int id);
+        static Hook<Del_HasSoloThumbSetting> hookHasSoloThumbSetting;
+        static HashSet<int> loggedSoloThumbRepairs = new HashSet<int>();
+        const int SoloThumbFormatGate = 0;
+        static int soloLookupLogCount;
+        static int soloZeroRequestLogCount;
+        static HashSet<int> balancedSoloChapterIds = new HashSet<int>();
+
+        internal static bool IsBalancedSoloChapter(int chapterId)
+        {
+            return balancedSoloChapterIds.Contains(chapterId);
+        }
+
+        internal static int[] BalancedSoloChapterIdsForGate(int gateId)
+        {
+            return balancedSoloChapterIds.Where(id => id / 10000 == gateId).ToArray();
+        }
+
+        internal static void LogBalancedSoloUi(string message)
+        {
+            LogSoloThumbnail("[chapter-map-0.2.1] " + message);
+        }
+
+        static void LogSoloThumbnail(string message)
+        {
+            try
+            {
+                File.AppendAllText(Path.Combine(Program.CurrentDir, "SoloThumbnailFix.log"),
+                    DateTime.UtcNow.ToString("o") + " [startup-v3] " + message + Environment.NewLine);
+            }
+            catch { }
+        }
+
+        static void TraceSoloImageRequest(IntPtr path)
+        {
+            if (path == IntPtr.Zero) return;
+            string value = new IL2String(path).ToString();
+            if (value != null && value.IndexOf("Card/Images/Illust/0000", StringComparison.OrdinalIgnoreCase) >= 0 &&
+                System.Threading.Interlocked.Increment(ref soloZeroRequestLogCount) <= 3)
+                LogSoloThumbnail("ZERO CARD REQUEST " + value + "\n" + Environment.StackTrace);
+        }
+
         // YgomGame.Solo.SoloCardThumbSettings.SettingMap
         static IL2Class settingMapClassInfo;
         static IL2Field fieldThumbMapSettings;
@@ -50,6 +97,7 @@ namespace YgoMasterClient
 
         static void InitSoloTypes()
         {
+            LogSoloThumbnail("Initializing thumbnail types");
             IL2Assembly assembly = Assembler.GetAssembly("Assembly-CSharp");
             soloCardThumbSettingsClassInfo = assembly.GetClass("SoloCardThumbSettings");
             fieldGateMap = soloCardThumbSettingsClassInfo.GetField("m_GateMap");
@@ -65,12 +113,99 @@ namespace YgoMasterClient
             fieldThumbSettingUvRectSize = thumbSettingClassInfo.GetField("uvRectSize");
             fieldThumbSettingUvRectPosOther = thumbSettingClassInfo.GetField("uvRectPosOther");
             fieldThumbSettingUvRectSizeOther = thumbSettingClassInfo.GetField("uvRectSizeOther");
+
+            IL2Method getSetting = soloCardThumbSettingsClassInfo.GetMethod("GetSetting",
+                x => x.GetParameters().Length == 2);
+            IL2Method hasSetting = soloCardThumbSettingsClassInfo.GetMethod("IsExitsSetting",
+                x => x.GetParameters().Length == 2);
+            if (getSetting == null || hasSetting == null)
+            {
+                throw new InvalidOperationException("Solo thumbnail lookup signatures are incompatible with this game version.");
+            }
+            hookGetSoloThumbSetting = new Hook<Del_GetSoloThumbSetting>(GetSoloThumbSetting, getSetting);
+            hookHasSoloThumbSetting = new Hook<Del_HasSoloThumbSetting>(HasSoloThumbSetting, hasSetting);
+            LogSoloThumbnail("Initialized root lookup hooks; client=" + typeof(AssetHelper).Assembly.Location);
+        }
+
+        static csbool HasSoloThumbSetting(IntPtr thisPtr, int format, int id)
+        {
+            SoloGateCardEntry entry;
+            if (format == SoloThumbFormatGate && SoloGates.TryGetValue(id, out entry) && entry.CardId > 0)
+            {
+                return true;
+            }
+            return hookHasSoloThumbSetting.Original(thisPtr, format, id);
+        }
+
+        static IntPtr GetSoloThumbSetting(IntPtr thisPtr, int format, int id)
+        {
+            IntPtr setting = hookGetSoloThumbSetting.Original(thisPtr, format, id);
+            if (System.Threading.Interlocked.Increment(ref soloLookupLogCount) <= 40)
+                LogSoloThumbnail("Lookup format=" + format + " id=" + id + " card=" +
+                    (setting == IntPtr.Zero ? "null" : fieldThumbSettingMrk.GetValue(setting).GetValueRef<int>().ToString()));
+            SoloGateCardEntry entry;
+            if (format == SoloThumbFormatGate && setting != IntPtr.Zero &&
+                SoloGates.TryGetValue(id, out entry) && entry.CardId > 0)
+            {
+                int previousCard = fieldThumbSettingMrk.GetValue(setting).GetValueRef<int>();
+                // Only touch gate thumbnails explicitly declared in SoloGateCards.txt.
+                // Chapter, loot-source and standard gate settings are left alone.
+                InjectSoloThumb(setting, entry);
+                if (loggedSoloThumbRepairs.Add(id))
+                {
+                    string message = "[SoloThumbnailFix] gate=" + id + " oldCard=" + previousCard +
+                        " configuredCard=" + entry.CardId;
+                    Console.WriteLine(message);
+                    try
+                    {
+                        File.AppendAllText(Path.Combine(Program.CurrentDir, "SoloThumbnailFix.log"),
+                            DateTime.UtcNow.ToString("o") + " " + message + Environment.NewLine);
+                    }
+                    catch { }
+                }
+            }
+            return setting;
         }
 
         public static void LoadSoloData()
         {
+            LogSoloThumbnail("Loading data=" + Program.DataDir + " clientData=" + Program.ClientDataDir);
             SoloGates.Clear();
             SoloGateBackgroundPaths.Clear();
+            balancedSoloChapterIds.Clear();
+            try
+            {
+                string modeRoot = Path.Combine(Program.DataDir, "BalancedCharacters");
+                string modePath = Path.Combine(modeRoot, "Mode.json");
+                string overlayPath = Path.Combine(modeRoot, "Generated", "Overlay.json");
+                if (File.Exists(modePath) && File.Exists(overlayPath))
+                {
+                    var mode = MiniJSON.Json.DeserializeStripped(File.ReadAllText(modePath)) as Dictionary<string, object>;
+                    if (mode != null && YgoMaster.Utils.GetValue<bool>(mode, "enabled"))
+                    {
+                        var overlay = MiniJSON.Json.DeserializeStripped(File.ReadAllText(overlayPath)) as Dictionary<string, object>;
+                        var chapters = YgoMaster.Utils.GetDictionary(overlay, "chapter");
+                        if (chapters != null)
+                            foreach (var gate in chapters.Values)
+                            {
+                                var entries = gate as Dictionary<string, object>;
+                                if (entries == null) continue;
+                                foreach (string key in entries.Keys)
+                                {
+                                    int chapterId;
+                                    if (int.TryParse(key, out chapterId) && chapterId > 0)
+                                        balancedSoloChapterIds.Add(chapterId);
+                                }
+                            }
+                    }
+                }
+                LogBalancedSoloUi("Configured chapters=" + string.Join(",", balancedSoloChapterIds));
+            }
+            catch (Exception error)
+            {
+                balancedSoloChapterIds.Clear();
+                LogBalancedSoloUi("Chapter configuration unavailable: " + error.Message);
+            }
 
             string backgroundsDir = Path.Combine(Program.ClientDataDir, "SoloGateBackgrounds");
             if (Directory.Exists(backgroundsDir))
@@ -85,9 +220,16 @@ namespace YgoMasterClient
                 }
             }
 
-            string file = Path.Combine(Program.ClientDataDir, "SoloGateCards.txt");
-            if (File.Exists(file))
+            foreach (string file in new string[] {
+                Path.Combine(Program.ClientDataDir, "SoloGateCards.txt"),
+                Path.Combine(Program.DataDir, "BalancedCharacters", "Generated", "SoloGateCards.txt") })
             {
+                if (!File.Exists(file))
+                {
+                    LogSoloThumbnail("Optional thumbnail file missing: " + file);
+                    continue;
+                }
+                LogSoloThumbnail("Reading thumbnail file: " + file);
                 char[] splitChars = { ',', '|' };
                 string[] lines = File.ReadAllLines(file);
                 foreach (string line in lines)
@@ -97,7 +239,7 @@ namespace YgoMasterClient
                         continue;
                     }
                     string[] splitted = line.Split(splitChars, StringSplitOptions.RemoveEmptyEntries);
-                    if (splitted[0].Trim().StartsWith("//"))
+                    if (splitted.Length == 0 || splitted[0].Trim().StartsWith("//"))
                     {
                         continue;
                     }
@@ -137,6 +279,7 @@ namespace YgoMasterClient
                     }
                 }
             }
+            LogSoloThumbnail("Configured gates=" + string.Join(",", SoloGates.Keys));
             if (soloThumbsPtr != IntPtr.Zero)
             {
                 InjectSoloThumbs(soloThumbsPtr);
@@ -160,6 +303,7 @@ namespace YgoMasterClient
         static void InjectSoloThumbs(IntPtr obj)
         {
             soloThumbsPtr = obj;
+            LogSoloThumbnail("Resource received; injecting gate thumbnails");
             // NOTE: Not modifying m_ChapterMap as those card images are only used for scenario chapters
 
             // NOTE: When loading the m_SettingsMap seems to be empty. It's probably filled in later on
@@ -168,12 +312,23 @@ namespace YgoMasterClient
             {
                 IL2Object settingsObj = fieldThumbMapSettings.GetValue(gateMapObj.ptr);
                 IL2Object settingsMapObj = fieldThumbMapSettingsMap.GetValue(gateMapObj.ptr);
-                if (settingsObj != null && settingsMapObj != null)
+                if (settingsObj != null)
                 {
                     StringBuilder dataDump = null;
                     IL2ListExplicit settingsList = new IL2ListExplicit(settingsObj.ptr, thumbSettingClassInfo);
-                    /*IL2DictionaryExplicit settingsMap = new IL2DictionaryExplicit(settingsMapObj.ptr,
-                        Assembler.GetAssembly("mscorlib").GetClass(typeof(int).Name, typeof(int).Namespace), thumbSettingClassInfo);*/
+                    // Resolve the actual closed Dictionary<int, ThumbSetting> type.
+                    // The shared generic wrapper's type cache is unsuitable here.
+                    IL2Method cacheSetter = null;
+                    if (settingsMapObj != null)
+                    {
+                        IL2Class cacheClass = new IL2Class(Import.Object.il2cpp_object_get_class(settingsMapObj.ptr));
+                        int cacheCount = cacheClass.GetProperty("Count").GetGetMethod()
+                            .Invoke(settingsMapObj.ptr).GetValueRef<int>();
+                        // Leave an empty cache empty: native lazy initialization must
+                        // still register every standard gate from the complete list.
+                        if (cacheCount > 0) cacheSetter = cacheClass.GetProperty("Item").GetSetMethod();
+                        LogSoloThumbnail("Existing cache entries=" + cacheCount);
+                    }
                     HashSet<int> seenIds = new HashSet<int>();
                     for (int j = 0; j < settingsList.Count; j++)
                     {
@@ -184,6 +339,9 @@ namespace YgoMasterClient
                         if (SoloGates.TryGetValue(id, out customSetting))
                         {
                             InjectSoloThumb(setting, customSetting);
+                            if (cacheSetter != null)
+                                cacheSetter.Invoke(settingsMapObj.ptr, new IntPtr[] { new IntPtr(&id), setting });
+                            LogSoloThumbnail("Updated gate=" + id + " card=" + customSetting.CardId + " cache=" + (cacheSetter != null));
                         }
                         if (ClientSettings.AssetHelperDump)
                         {
@@ -231,6 +389,9 @@ namespace YgoMasterClient
                             thumbSettingCtor.Invoke(newSetting, new IntPtr[] { new IntPtr(&id) });
                             InjectSoloThumb(newSetting, customSetting);
                             settingsList.Add(newSetting);
+                            if (cacheSetter != null)
+                                cacheSetter.Invoke(settingsMapObj.ptr, new IntPtr[] { new IntPtr(&id), newSetting });
+                            LogSoloThumbnail("Added gate=" + id + " card=" + customSetting.CardId + " cache=" + (cacheSetter != null));
                         }
                     }
                 }

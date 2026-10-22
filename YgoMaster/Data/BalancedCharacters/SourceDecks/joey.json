@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "characterId": "joey",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-w204mj8wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 3,
+  "main": [
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Graceful Dice",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Release Restraint",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Scapegoat",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Roulette Spider",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Shield & Sword",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "The Forceful Sentry",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Lightning Blade",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Black Pendant",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "United We Stand",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Metalmorph",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Sakuretsu Armor",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Skull Dice",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Magical Arm Shield",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Kunai with Chain",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Graverobber",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Alligator's Sword",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Masaki the Legendary Swordsman",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Flame Manipulator",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Baby Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Armored Lizard",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Axe Raider",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Rocket Warrior",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gearfried the Iron Knight",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mataza the Zapper",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Copycat",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Goblin Attack Force",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Panther Warrior",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Jinzo",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Time Wizard",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Red-Eyes B. Dragon",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Red-Eyes Black Metal Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gearfried the Swordmaster",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Alligator's Sword Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Thousand Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Flame Swordsman",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "side": [],
+  "corrections": []
+}

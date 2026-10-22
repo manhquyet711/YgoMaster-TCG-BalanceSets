@@ -188,6 +188,30 @@ namespace YgoMaster
 
         void SoloUpdateChapterStatus(GameServerWebRequest request, int chapterId, DuelResultType duelResult, DuelFinishType finishType)
         {
+            if (IsBalancedGoal(chapterId))
+            {
+                if (!CanCompleteBalancedGoal(request.Player, chapterId))
+                {
+                    request.ResultCode = (int)ResultCodes.SoloCode.INVALID_CHAPTER;
+                    return;
+                }
+                request.Player.SoloChapters[chapterId] = ChapterStatus.COMPLETE;
+                SavePlayer(request.Player);
+                request.GetOrCreateDictionary("Solo")["cleared"] = request.Player.SoloChaptersToDictionary();
+                Utils.GetOrCreateDictionary(request.GetOrCreateDictionary("Solo"), "Result")["rewards"] = new List<object>();
+                return;
+            }
+            if (IsBalancedChapter(chapterId))
+            {
+                if (duelResult == DuelResultType.Win)
+                {
+                    request.Player.SoloChapters[chapterId] = ChapterStatus.COMPLETE;
+                    SavePlayer(request.Player);
+                }
+                request.GetOrCreateDictionary("Solo")["cleared"] = request.Player.SoloChaptersToDictionary();
+                Utils.GetOrCreateDictionary(request.GetOrCreateDictionary("Solo"), "Result")["rewards"] = new List<object>();
+                return;
+            }
             int gateId = GetChapterGateId(chapterId);
 
             Dictionary<string, object> allGateData = Utils.GetDictionary(SoloData, "gate");
@@ -830,6 +854,7 @@ namespace YgoMaster
 
         void Act_SoloInfo(GameServerWebRequest request)
         {
+            EnsureBalancedChapterAccess(request.Player);
             if (Utils.GetValue<bool>(request.ActParams, "back"))
             {
                 return;
@@ -1231,7 +1256,7 @@ namespace YgoMaster
             int chapterId, deckType;
             if (Utils.TryGetValue(request.ActParams, "chapter", out chapterId) && Utils.TryGetValue(request.ActParams, "deck_type", out deckType))
             {
-                request.Player.Duel.IsMyDeck = (SoloDeckType)deckType == SoloDeckType.POSSESSION;
+                request.Player.Duel.IsMyDeck = !IsBalancedChapter(chapterId) && (SoloDeckType)deckType == SoloDeckType.POSSESSION;
             }
             request.Remove("Solo.rental_deck");
         }
@@ -1246,6 +1271,19 @@ namespace YgoMaster
             int chapterId;
             if (Utils.TryGetValue<int>(request.ActParams, "chapter", out chapterId))
             {
+                if (IsReservedBalancedChapter(chapterId) && !IsBalancedChapter(chapterId) && !IsBalancedGoal(chapterId))
+                {
+                    request.ResultCode = (int)ResultCodes.SoloCode.INVALID_CHAPTER;
+                    request.Remove("Solo.Result", "Duel", "DuelResult");
+                    return;
+                }
+                if (IsBalancedGoal(chapterId))
+                {
+                    SoloUpdateChapterStatus(request, chapterId, DuelResultType.None, DuelFinishType.None);
+                    request.Remove("Duel", "DuelResult");
+                    return;
+                }
+                if (IsBalancedChapter(chapterId)) request.Player.Duel.IsMyDeck = false;
                 request.Player.Duel.IsCustomSoloDuel = Utils.GetValue<bool>(request.ActParams, "customduel");
                 if (!request.Player.Duel.IsCustomSoloDuel)
                 {

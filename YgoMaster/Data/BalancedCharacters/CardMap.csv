@@ -1,0 +1,510 @@
+characterId,zone,sourceName,quantity,canonicalName,masterDuelId,resolutionStatus,evidence,photoStatus,effectNote
+yugi,main,Mystic Box,1,Mystic Box,5168,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Multiply,1,Multiply,4805,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Spell Shattering Arrow,1,Spell Shattering Arrow,5290,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Dark Magic Attack,1,Dark Magic Attack,6057,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Remove Trap,1,Remove Trap,4838,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Burning Land,1,Burning Land,5126,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Dark Magic Curtain,1,Dark Magic Curtain,4830,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Spellbinding Circle,1,,,unresolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Magical Hats,1,Magical Hats,4962,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Dedication through Light and Darkness,1,Dedication through Light and Darkness,5907,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Horn of the Unicorn,1,Horn of the Unicorn,4320,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Thousand Knives,1,Thousand Knives,5166,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Pot of Greed,1,Pot of Greed,4844,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Mage Power,1,Mage Power,5213,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Monster Reborn,1,Monster Reborn,4842,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 83764719 maps to 4842; other same-name entries are not selected.,transcribed,not playtested; modern engine effects
+yugi,main,Swords of Revealing Light,1,Swords of Revealing Light,4354,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Mirror Force,1,Mirror Force,4887,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Lightforce Sword,1,Lightforce Sword,4808,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Magic Cylinder,1,Magic Cylinder,5124,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Shift,1,Shift,5130,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Magic Jammer,1,Magic Jammer,4862,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Horn of Heaven,1,Horn of Heaven,4864,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Feral Imp,1,Feral Imp,4012,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Mammoth Graveyard,1,Mammoth Graveyard,4065,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,"Winged Dragon, Guardian of the Fortress #1",1,"Winged Dragon, Guardian of the Fortress #1",4013,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Beaver Warrior,1,Beaver Warrior,4033,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Red Archery Girl,1,Red Archery Girl,4731,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi,main,Mystical Elf,1,Mystical Elf,4008,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Giant Soldier of Stone,1,Giant Soldier of Stone,4080,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Neo the Magic Swordsman,1,Neo the Magic Swordsman,4881,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Celtic Guardian,1,Celtic Guardian,4047,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Koumori Dragon,1,Koumori Dragon,4037,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Kuriboh,1,Kuriboh,4064,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Magician of Faith,1,Magician of Faith,4434,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Dark Magician Girl,1,Dark Magician Girl,4766,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 38033121 maps to 4766; other same-name entries are not selected.,transcribed,not playtested; modern engine effects
+yugi,main,Summoned Skull,1,Summoned Skull,4028,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Dark Magician of Chaos,1,Dark Magician of Chaos,5880,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi,main,Dark Magician,1,Dark Magician,4041,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 46986420 maps to 4041; other same-name entries are not selected.,transcribed,not playtested; modern engine effects
+yugi,main,Black Luster Soldier,1,Black Luster Soldier,4370,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 5405694 maps to 4370; other same-name entries are not selected.,transcribed,not playtested; modern engine effects
+yugi,main,Black Luster Ritual,1,Black Luster Ritual,4676,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+yugi_battle_city,main,Polymerization,1,Polymerization,4837,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 24094653 maps to 4837; other same-name entries are not selected.,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Block Attack,1,Block Attack,4874,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,De-Spell,1,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Mystical Space Typhoon,1,Mystical Space Typhoon,4909,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Card of Sanctity,1,Card of Sanctity,5479,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Heart of the Underdog,1,Heart of the Underdog,5837,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Card of Safe Return,1,Card of Safe Return,5123,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Magical Mallet,1,Magical Mallet,6541,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,The Shallow Grave,1,The Shallow Grave,4965,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Stray Lambs,1,Stray Lambs,5904,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,De-Fusion,1,De-Fusion,5118,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Nobleman of Crossout,1,Nobleman of Crossout,4963,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Swords of Revealing Light,1,Swords of Revealing Light,4354,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Monster Reborn,1,Monster Reborn,4842,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 83764719 maps to 4842; other same-name entries are not selected.,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Solemn Judgment,1,Solemn Judgment,4861,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Queen's Knight,2,Queen's Knight,5503,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,King's Knight,1,King's Knight,5558,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Gazelle the King of Mythical Beasts,1,Gazelle the King of Mythical Beasts,4753,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Green Phantom King,1,Green Phantom King,4280,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Alpha The Magnet Warrior,2,Alpha The Magnet Warrior,4744,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Gamma The Magnet Warrior,2,Gamma The Magnet Warrior,4792,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Beta The Magnet Warrior,2,Beta The Magnet Warrior,4763,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Gemini Elf,1,Gemini Elf,4538,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Big Shield Gardna,1,Big Shield Gardna,4764,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,The Tricky,1,The Tricky,6150,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Sangan,1,Sangan,4054,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Obnoxious Celtic Guard,1,Obnoxious Celtic Guard,5244,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Black Luster Soldier - Envoy of the Beginning,1,Black Luster Soldier - Envoy of the Beginning,5835,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Jack's Knight,1,Jack's Knight,5559,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Berfomet,1,Berfomet,4755,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Gaia the Fierce Knight,1,Gaia The Fierce Knight,4044,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Valkyrion the Magna Warrior,1,Valkyrion the Magna Warrior,5002,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Slifer the Sky Dragon,1,Slifer the Sky Dragon,4999,resolved,Explicit original-card ID verified in local YdkIds.txt: 10000020 4999,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Curse of Dragon,1,Curse of Dragon,4045,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Buster Blader,1,Buster Blader,4983,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,main,Dark Magician,1,Dark Magician,4041,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 46986420 maps to 4041; other same-name entries are not selected.,photo-verified,not playtested; modern engine effects
+yugi_battle_city,extra,Dark Paladin,1,Dark Paladin,5628,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,extra,Gaia the Dragon Champion,1,Gaia the Dragon Champion,4043,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,extra,Chimera the Flying Mythical Beast,1,Chimera the Flying Mythical Beast,4756,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+yugi_battle_city,extra,Black Skull Dragon,1,Black Skull Dragon,4223,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+kaiba,main,The Flute of Summoning Dragon,1,The Flute of Summoning Dragon,4810,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,De-Spell,2,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Enemy Controller,1,Enemy Controller,5505,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Negate Attack,1,Negate Attack,4804,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Crush Card Virus,1,Crush Card Virus,4667,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Ultimate Offering,1,Ultimate Offering,4851,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Stop Defense,1,Stop Defense,4326,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Polymerization,1,Polymerization,4837,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 24094653 maps to 4837; other same-name entries are not selected.,transcribed,not playtested; modern engine effects
+kaiba,main,Burst Stream of Destruction,1,Burst Stream of Destruction,5979,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Soul Exchange,1,Soul Exchange,5099,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Graceful Charity,1,Graceful Charity,4812,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Raigeki,1,Raigeki,4343,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Ring of Destruction,1,Ring of Destruction,5005,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Shadow Spell,1,Shadow Spell,4675,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Reinforcements,1,Reinforcements,4849,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Saggi the Dark Clown,1,Saggi the Dark Clown,4040,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Battle Ox,1,Battle Ox,4032,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Mystic Horseman,1,Mystic Horseman,4097,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Hitotsu-Me Giant,1,Hitotsu-Me Giant,4009,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Ryu-Kishin Powered,1,Ryu-Kishin Powered,4383,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,La Jinn the Mystical Genie of the Lamp,1,La Jinn the Mystical Genie of the Lamp,4385,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Ancient Lamp,1,Ancient Lamp,5238,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Trap Master,1,Trap Master,4230,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Witch of the Black Forest,1,Witch of the Black Forest,4580,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Lord of D.,2,Lord of D.,4747,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Spear Dragon,1,Spear Dragon,5334,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Blade Knight,1,Blade Knight,5488,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Red-Eyes Darkness Metal Dragon,1,Red-Eyes Darkness Metal Dragon,7557,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Luster Dragon #2,1,Luster Dragon #2,5349,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Chaos Emperor Dragon - Envoy of the End,1,Chaos Emperor Dragon - Envoy of the End,5860,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Thunder Dragon,3,Thunder Dragon,4431,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,main,Blue-Eyes White Dragon,3,Blue-Eyes White Dragon,3801,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 89631139 maps to 3801; other same-name entries are not selected.,transcribed,not playtested; modern engine effects
+kaiba,main,Blizzard Dragon,2,Blizzard Dragon,7017,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+kaiba,extra,Rabid Horseman,1,Rabid Horseman,4098,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,extra,Twin-Headed Thunder Dragon,1,Twin-Headed Thunder Dragon,4619,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+kaiba,extra,Blue-Eyes Ultimate Dragon,1,Blue-Eyes Ultimate Dragon,4386,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 23995348 maps to 4386; other same-name entries are not selected.,transcribed,not playtested; modern engine effects
+joey,main,Polymerization,1,Polymerization,4837,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 24094653 maps to 4837; other same-name entries are not selected.,transcribed,not playtested; modern engine effects
+joey,main,Graceful Dice,1,Graceful Dice,4815,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,De-Spell,1,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Release Restraint,1,Release Restraint,6270,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Scapegoat,1,Scapegoat,4818,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Roulette Spider,1,Roulette Spider,4820,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Shield & Sword,1,Shield & Sword,4811,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Dust Tornado,1,Dust Tornado,4988,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,The Forceful Sentry,1,The Forceful Sentry,4907,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Lightning Blade,1,Lightning Blade,5110,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Black Pendant,1,Black Pendant,4317,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,United We Stand,1,United We Stand,5212,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Pot of Greed,1,Pot of Greed,4844,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Metalmorph,1,Metalmorph,4664,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Sakuretsu Armor,1,Sakuretsu Armor,5799,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Skull Dice,1,Skull Dice,4816,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Magical Arm Shield,1,Magical Arm Shield,4834,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Kunai with Chain,1,Kunai with Chain,4657,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Graverobber,1,Graverobber,4985,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Alligator's Sword,2,Alligator's Sword,4767,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Masaki the Legendary Swordsman,1,Masaki the Legendary Swordsman,4299,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Flame Manipulator,1,Flame Manipulator,4148,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Baby Dragon,1,Baby Dragon,4010,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Armored Lizard,1,Armored Lizard,4057,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Axe Raider,2,Axe Raider,4084,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Rocket Warrior,1,Rocket Warrior,5067,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Gearfried the Iron Knight,2,Gearfried the Iron Knight,5059,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Mataza the Zapper,1,Mataza the Zapper,5898,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Copycat,1,Copycat,4795,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Goblin Attack Force,1,Goblin Attack Force,5145,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Panther Warrior,1,Panther Warrior,4751,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Jinzo,1,Jinzo,4758,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Time Wizard,1,Time Wizard,4022,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Red-Eyes B. Dragon,2,Red-Eyes Black Dragon,4088,resolved,Historical English abbreviation retained in the supplied Joey photo; modern English name refers to the same original monster. Verify matching local ID via card tables.,transcribed,not playtested; modern engine effects
+joey,main,Red-Eyes Black Metal Dragon,1,Red-Eyes Black Metal Dragon,4748,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,main,Gearfried the Swordmaster,1,Gearfried the Swordmaster,6251,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,extra,Alligator's Sword Dragon,1,Alligator's Sword Dragon,5003,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,extra,Thousand Dragon,1,Thousand Dragon,4075,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+joey,extra,Flame Swordsman,1,Flame Swordsman,4021,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,transcribed,not playtested; modern engine effects
+weevil,main,Insect Armor with Laser Cannon,2,Insect Armor with Laser Cannon,4312,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,De-Spell,1,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Remove Trap,1,Remove Trap,4838,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Eradicating Aerosol,1,Eradicating Aerosol,4668,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Insect Barrier,1,Insect Barrier,4832,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,DNA Surgery,2,DNA Surgery,4951,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Negate Attack,2,Negate Attack,4804,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Forest,1,Forest,4336,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Block Attack,1,Block Attack,4874,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Share the Pain,1,Share the Pain,4889,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Snatch Steal,1,Snatch Steal,4898,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Mirror Force,1,Mirror Force,4887,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Call of the Haunted,1,Call of the Haunted,4989,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Fake Trap,1,Fake Trap,4696,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Petit Moth,1,Petit Moth,4284,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Girochin Kuwagata,1,Girochin Kuwagata,5136,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Flying Kamakiri #2,1,Flying Kamakiri #2,4979,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Neo Bug,1,Neo Bug,5873,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Arsenal Bug,1,Arsenal Bug,5033,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Jirai Gumo,1,Jirai Gumo,4373,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Flying Kamakiri #1,2,Flying Kamakiri #1,4927,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Insect Soldiers of the Sky,1,Insect Soldiers of the Sky,4484,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Man-Eater Bug,2,Man-Eater Bug,4507,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Cocoon of Evolution,1,Cocoon of Evolution,4078,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Leghul,1,Leghul,4403,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Skull-Mark Ladybug,1,Skull-Mark Ladybug,4770,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Kiseitai,1,Kiseitai,4976,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Pinch Hopper,1,Pinch Hopper,4772,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,4-Starred Ladybug of Doom,1,4-Starred Ladybug of Doom,5139,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Parasite Paracide,1,Parasite Paracide,4769,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Insect Queen,2,Insect Queen,4768,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Empress Mantis,1,Empress Mantis,5203,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Great Moth,1,Great Moth,4063,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+weevil,main,Metal Armored Bug,1,Metal Armored Bug,5950,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Stop Defense,1,Stop Defense,4326,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Remove Trap,1,Remove Trap,4838,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,De-Spell,2,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Poison of the Old Man,1,Poison of the Old Man,5607,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Rush Recklessly,2,Rush Recklessly,4905,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Acid Trap Hole,1,Acid Trap Hole,4691,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Fossil Excavation,1,Fossil Excavation,6811,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Reinforcements,1,Reinforcements,4849,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Jurassic World,2,Jurassic World,6823,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Shrink,1,Shrink,5355,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Mind Control,1,Mind Control,4817,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Megamorph,1,Megamorph,4663,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Dark Hole,1,Dark Hole,4342,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Fissure,1,Fissure,4835,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Negate Attack,1,Negate Attack,4804,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Trap Hole,1,Trap Hole,4836,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Trakodon,1,Trakodon,4576,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Two-Mouth Darkruler,1,Two-Mouth Darkruler,4224,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Kabazauls,3,Kabazauls,5507,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Two-Headed King Rex,2,Two-Headed King Rex,4038,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Uraby,2,Uraby,4086,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Sabersaurus,1,Sabersaurus,6796,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Gilasaurus,2,Gilasaurus,5256,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Hyper Hammerhead,1,Hyper Hammerhead,5888,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Balloon Lizard,2,Balloon Lizard,5886,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Mad Sword Beast,2,Mad Sword Beast,5142,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Dark Driceratops,2,Dark Driceratops,5887,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Bazoo the Soul-Eater,1,Bazoo the Soul-Eater,5250,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+rex,main,Black Tyranno,1,Black Tyranno,5889,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Block Attack,1,Block Attack,4874,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,De-Spell,1,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,A Legendary Ocean,3,A Legendary Ocean,5387,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Negate Attack,1,Negate Attack,4804,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Reinforcements,1,Reinforcements,4849,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Salvage,1,Salvage,5908,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Giant Trunade,1,Giant Trunade,4910,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Heavy Storm,1,Heavy Storm,4891,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Dark Hole,1,Dark Hole,4342,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Torrential Tribute,1,Torrential Tribute,5114,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Tornado Wall,1,Tornado Wall,5111,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Solemn Wishes,1,Solemn Wishes,5125,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Flying Fish,1,Flying Fish,5065,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Jellyfish,1,Jellyfish,4077,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Great White,1,Great White,4066,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Aqua Madoor,1,Aqua Madoor,4219,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Mother Grizzly,2,Mother Grizzly,4926,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Mermaid Knight,1,Mermaid Knight,5967,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Amphibious Bugroth MK-3,1,Amphibious Bugroth MK-3,5893,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Cure Mermaid,1,Cure Mermaid,5204,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Cannonball Spear Shellfish,2,Cannonball Spear Shellfish,5897,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Torpedo Fish,1,Torpedo Fish,5894,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Star Boy,1,Star Boy,4530,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Maiden of the Aqua,1,Maiden of the Aqua,5026,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Deepsea Warrior,1,Deepsea Warrior,4776,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,The Legendary Fisherman,2,The Legendary Fisherman,5069,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Bottom Dweller,1,Bottom Dweller,4445,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Giant Turtle Who Feeds on Flames,1,Giant Turtle Who Feeds on Flames,4599,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Metal Fish,1,Metal Fish,4444,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Amphibian Beast,1,Amphibian Beast,5066,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Terrorking Salmon,1,Terrorking Salmon,5875,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Fortress Whale's Oath,1,Fortress Whale's Oath,4706,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Fortress Whale,1,Fortress Whale,4724,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mako,main,Orca Mega-Fortress of Darkness,2,Orca Mega-Fortress of Darkness,5896,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Soul Release,1,Soul Release,4857,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,De-Spell,1,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Triangle Ecstasy Spark,1,Triangle Ecstasy Spark,6208,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Harpies' Hunting Ground,2,Harpies' Hunting Ground,6207,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Mirror Wall,1,Mirror Wall,4993,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Hysteric Party,1,Hysteric Party,6722,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Phoenix Wing Wind Blast,1,Phoenix Wing Wind Blast,6279,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Cyber Shield,2,Cyber Shield,4323,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Elegant Egotist,3,Elegant Egotist,4324,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Harpie's Feather Duster,1,Harpie's Feather Duster,4678,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Graceful Charity,1,Graceful Charity,4812,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Call of the Haunted,1,Call of the Haunted,4989,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Michizure,1,Michizure,4939,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Shadow of Eyes,1,Shadow of Eyes,5135,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Fiend Reflection #2,1,Fiend Reflection #2,4192,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Skull Red Bird,1,Skull Red Bird,4472,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Sonic Duck,2,Sonic Duck,5643,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Sky Scout,1,Sky Scout,4980,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Faith Bird,1,Faith Bird,4131,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Harpie Girl,1,Harpie Girl,6175,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Birdface,3,Birdface,5021,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Garuda the Wind Spirit,1,Garuda the Wind Spirit,5255,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Amazoness Fighter,1,Amazoness Fighter,5295,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Amazoness Blowpiper,1,Amazoness Blowpiper,5646,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Amazoness Archer,1,Amazoness Archer,5195,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Amazoness Swords Woman,1,Amazoness Swords Woman,5284,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Harpie Lady 1,1,Harpie Lady 1,6186,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Harpie Lady 2,1,Harpie Lady 2,6187,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Harpie Lady 3,1,Harpie Lady 3,6188,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Harpie Lady Sisters,3,Harpie Lady Sisters,4069,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+mai,main,Harpie's Pet Dragon,1,Harpie's Pet Dragon,4392,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,7 Completed,3,7 Completed,4806,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,De-Spell,1,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Remove Trap,1,Remove Trap,4838,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Seven Tools of the Bandit,1,Seven Tools of the Bandit,4863,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Divine Wrath,1,Divine Wrath,6217,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Paralyzing Potion,1,Paralyzing Potion,4878,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,7,3,7,6053,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Creature Swap,1,Creature Swap,5162,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Pot of Greed,1,Pot of Greed,4844,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Graceful Charity,1,Graceful Charity,4812,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Limiter Removal,1,Limiter Removal,5129,resolved,Explicit original-card ID verified in local YdkIds.txt: 23171610 5129,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Metalmorph,1,Metalmorph,4664,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Trap Hole,1,Trap Hole,4836,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Time Machine,1,Time Machine,4794,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Robotic Knight,2,Robotic Knight,5027,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Oni Tank T-34,1,Oni Tank T-34,4981,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Overdrive,1,Overdrive,4982,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Ground Attacker Bugroth,1,Ground Attacker Bugroth,4281,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Bokoichi the Freightening Car,1,Bokoichi the Freightening Car,6174,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Guardian of the Throne Room,2,Guardian of the Throne Room,4519,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Battle Footballer,1,Battle Footballer,5702,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Cyber Falcon,1,Cyber Falcon,4977,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Cannon Soldier,1,Cannon Soldier,4518,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Dekoichi the Battlechanted Locomotive,2,Dekoichi the Battlechanted Locomotive,6201,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Jinzo #7,1,Jinzo #7,4428,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Blast Sphere,1,Blast Sphere,4742,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Cyber Jar,1,Cyber Jar,4913,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Pendulum Machine,1,Pendulum Machine,4394,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Blowback Dragon,1,Blowback Dragon,5964,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Machine King,2,Machine King,4413,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Barrel Dragon,1,Barrel Dragon,4749,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bandit_keith,main,Slot Machine,1,Slot Machine,4729,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Block Attack,1,Block Attack,4874,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Book of Life,1,Book of Life,5430,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Call of the Mummy,1,Call of the Mummy,5435,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,De-Spell,1,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Dust Tornado,1,Dust Tornado,4988,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Skull Invitation,1,Skull Invitation,4961,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Deal of Phantom,2,Deal of Phantom,5266,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Negate Attack,1,Negate Attack,4804,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,The Dark Door,1,The Dark Door,5225,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Violet Crystal,1,Violet Crystal,4328,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Mirage of Nightmare,1,Mirage of Nightmare,5433,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Pot of Greed,1,Pot of Greed,4844,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Call of the Haunted,2,Call of the Haunted,4989,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Nightmare Wheel,1,Nightmare Wheel,5298,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Widespread Ruin,1,Widespread Ruin,4692,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Yaranzo,1,Yaranzo,4357,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,The Snake Hair,1,The Snake Hair,4042,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Dragon Zombie,2,Dragon Zombie,4103,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Armored Zombie,2,Armored Zombie,4102,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Master Kyonshee,1,Master Kyonshee,5506,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,The 13th Grave,1,The 13th Grave,4138,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Clown Zombie,1,Clown Zombie,4104,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Three-Legged Zombies,1,Three-Legged Zombies,4365,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Pyramid Turtle,2,Pyramid Turtle,5423,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Castle of Dark Illusions,2,Castle of Dark Illusions,4089,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Des Lacooda,1,Des Lacooda,5427,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Decayed Commander,1,Decayed Commander,5584,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Zombie Tiger,1,Zombie Tiger,5585,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Pumpking the King of Ghosts,2,Pumpking the King of Ghosts,4105,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Shadow Ghoul,1,Shadow Ghoul,4374,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Vampire Genesis,1,Vampire Genesis,6293,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+bonz,main,Vampire Lord,2,Vampire Lord,5410,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Polymerization,1,Polymerization,4837,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 24094653 maps to 4837; other same-name entries are not selected.,photo-verified,not playtested; modern engine effects
+pegasus,main,Remove Trap,1,Remove Trap,4838,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,De-Spell,1,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Briefcase,1,Toon Briefcase,11906,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Mask,1,Toon Mask,11905,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon World,3,Toon World,4798,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Mimicat,1,Mimicat,4800,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Comic Hand,1,Comic Hand,11904,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Pot of Greed,1,Pot of Greed,4844,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Graceful Charity,1,Graceful Charity,4812,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Defense,1,Toon Defense,5473,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Draining Shield,1,Draining Shield,5994,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Alligator,1,Toon Alligator,4387,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Dark Rabbit,1,Dark Rabbit,4390,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Thousand-Eyes Idol,1,Thousand-Eyes Idol,4739,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Crass Clown,2,Crass Clown,4101,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Dream Clown,2,Dream Clown,4126,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Hane-Hane,2,Hane-Hane,4547,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Gemini Elf,2,Toon Gemini Elf,5476,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Goblin Attack Force,1,Toon Goblin Attack Force,5478,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Mermaid,1,Toon Mermaid,4734,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Harpie Lady,1,Toon Harpie Lady,15471,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Cannon Soldier,1,Toon Cannon Soldier,5477,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Masked Sorcerer,1,Toon Masked Sorcerer,5475,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Jigen Bakudan,1,Jigen Bakudan,4738,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Blue-Eyes Toon Dragon,1,Blue-Eyes Toon Dragon,4773,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Buster Blader,1,Toon Buster Blader,12146,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Red-Eyes Toon Dragon,1,Red-Eyes Toon Dragon,12308,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Dark Magician,1,Toon Dark Magician,12431,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Summoned Skull,1,Toon Summoned Skull,4735,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Barrel Dragon,1,Toon Barrel Dragon,11982,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Toon Dark Magician Girl,1,Toon Dark Magician Girl,5450,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Black Illusion Ritual,1,Black Illusion Ritual,4802,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,main,Relinquished,1,Relinquished,4737,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,extra,Bickuribox,1,Bickuribox,4391,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+pegasus,extra,Thousand-Eyes Restrict,1,Thousand-Eyes Restrict,4740,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Dark Sanctuary,1,Dark Sanctuary,12572,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Destiny Board,1,Destiny Board,5224,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,"Spirit Message ""I""",1,"Spirit Message ""I""",5271,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,"Spirit Message ""N""",1,"Spirit Message ""N""",5272,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,"Spirit Message ""A""",1,"Spirit Message ""A""",5273,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,"Spirit Message ""L""",1,"Spirit Message ""L""",5274,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Nightmare's Steelcage,2,Nightmare's Steelcage,5120,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Deal of Phantom,2,Deal of Phantom,5266,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Spiritualism,1,Spiritualism,5246,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,De-Spell,1,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Remove Trap,1,Remove Trap,4838,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Exchange,1,Exchange,5218,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Brain Control,1,Brain Control,4803,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Monster Reborn,1,Monster Reborn,4842,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 83764719 maps to 4842; other same-name entries are not selected.,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Graceful Charity,1,Graceful Charity,4812,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Dust Tornado,1,Dust Tornado,4988,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Souls of the Forgotten,1,Souls of the Forgotten,5149,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,The Portrait's Secret,1,The Portrait's Secret,5219,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,The Gross Ghost of Fled Dreams,1,The Gross Ghost of Fled Dreams,5220,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Headless Knight,1,Headless Knight,5221,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Ryu-Kishin Powered,1,Ryu-Kishin Powered,4383,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Whiptail Crow,2,Whiptail Crow,4656,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Earthbound Spirit,2,Earthbound Spirit,5226,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Revival Jam,1,Revival Jam,5063,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Morphing Jar,1,Morphing Jar,4597,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Yomi Ship,1,Yomi Ship,5521,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Sangan,1,Sangan,4054,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Masked Sorcerer,1,Masked Sorcerer,4226,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Sinister Serpent,1,Sinister Serpent,4481,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Dark Ruler Ha Des,1,Dark Ruler Ha Des,5301,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Lesser Fiend,1,Lesser Fiend,5303,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Marie the Fallen One,1,Darklord Marie,5209,resolved,"Official Konami database identifies renamed original card, cid=5209; local name table matches. https://www.db.yugioh-card.com/yugiohdb/card_search.action?cid=5209&ope=2",photo-verified,not playtested; modern engine effects
+marik_bakura,main,Dark Necrofear,1,Dark Necrofear,5222,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Puppet Master,1,Puppet Master,5482,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+marik_bakura,main,The Winged Dragon of Ra,1,The Winged Dragon of Ra,5000,resolved,Explicit original-card ID verified in local YdkIds.txt: 10000010 5000,photo-verified,not playtested; modern engine effects
+marik_bakura,main,Invader of Darkness,1,Invader of Darkness,5922,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,De-Spell,1,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Remove Trap,1,Remove Trap,4838,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Raigeki Break,1,Raigeki Break,5544,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Rite of Spirit,1,Rite of Spirit,5548,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Curse of Aging,1,Curse of Aging,5542,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Embodiment of Apophis,1,Embodiment of Apophis,5234,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Altar for Tribute,1,Altar for Tribute,5792,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Royal Tribute,1,Royal Tribute,5540,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Different Dimension Capsule,1,Different Dimension Capsule,5532,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Book of Moon,1,Book of Moon,5432,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Dark Hole,1,Dark Hole,4342,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Needle Ceiling,1,Needle Ceiling,5442,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Draining Shield,1,Draining Shield,5994,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Judgment of Anubis,1,Judgment of Anubis,5232,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Curse of Anubis,1,Curse of Anubis,6067,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Gravekeeper's Vassal,3,Gravekeeper's Vassal,5513,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Gravekeeper's Guard,2,Gravekeeper's Guard,5511,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Gravekeeper's Spy,2,Gravekeeper's Spy,5509,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Gravekeeper's Spear Soldier,2,Gravekeeper's Spear Soldier,5512,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Gravekeeper's Assailant,2,Gravekeeper's Assailant,5517,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Gravekeeper's Cannonholder,2,Gravekeeper's Cannonholder,5516,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Gravekeeper's Curse,1,Gravekeeper's Curse,5510,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Charm of Shabti,1,Charm of Shabti,5524,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,A Cat of Ill Omen,2,A Cat of Ill Omen,5520,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Neko Mane King,1,Neko Mane King,5595,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Gravekeeper's Chief,3,Gravekeeper's Chief,5515,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Mystical Knight of Jackal,1,Mystical Knight of Jackal,5519,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+gravekeepers,main,Necrovalley,3,Necrovalley,5533,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Remove Trap,1,Remove Trap,4838,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,De-Spell,1,De-Spell,4843,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Second Coin Toss,1,Second Coin Toss,5391,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Card Trader,1,Card Trader,7001,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Monster Reincarnation,1,Monster Reincarnation,6213,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Dark Factory of Mass Production,1,Dark Factory of Mass Production,6129,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Backup Soldier,1,Backup Soldier,4953,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Jar of Greed,2,Jar of Greed,5210,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Emergency Provisions,2,Emergency Provisions,5350,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Cup of Ace,3,Cup of Ace,7623,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Pot of Greed,1,Pot of Greed,4844,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Graceful Charity,1,Graceful Charity,4812,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Hand Destruction,1,Hand Destruction,7389,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Magical Mallet,2,Magical Mallet,6541,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Reckless Greed,2,Reckless Greed,5448,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Gold Sarcophagus,1,Gold Sarcophagus,6161,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Waboku,3,Waboku,4886,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Ordeal of a Traveler,2,Ordeal of a Traveler,5439,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Fairy Box,1,Fairy Box,5113,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Exodia the Forbidden One,1,Exodia the Forbidden One,4027,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Right Arm of the Forbidden One,1,Right Arm of the Forbidden One,4025,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Left Arm of the Forbidden One,1,Left Arm of the Forbidden One,4026,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Right Leg of the Forbidden One,1,Right Leg of the Forbidden One,4023,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Left Leg of the Forbidden One,1,Left Leg of the Forbidden One,4024,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Wandering Mummy,3,Wandering Mummy,5416,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Gambler of Legend,3,Gambler of Legend,7296,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Sangan,1,Sangan,4054,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+grandpa,main,Witch of the Black Forest,1,Witch of the Black Forest,4580,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,H - Heated Heart,1,H - Heated Heart,6671,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,E - Emergency Call,1,E - Emergency Call,6672,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,R - Righteous Justice,3,R - Righteous Justice,6673,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,O - Oversoul,1,O - Oversoul,6674,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Fusion Reserve,1,Fusion Reserve,11410,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Compulsory Evacuation Device,1,Compulsory Evacuation Device,5914,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Hero Signal,1,Hero Signal,6356,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Spark Blaster,1,Spark Blaster,6409,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Bubble Shuffle,1,Bubble Shuffle,6408,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Pot of Greed,1,Pot of Greed,4844,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Fusion Recovery,1,Fusion Recovery,6431,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Fusion Gate,1,Fusion Gate,5276,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Miracle Fusion,1,Miracle Fusion,6432,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Fusion Sage,1,Fusion Sage,4872,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Polymerization,3,Polymerization,4837,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 24094653 maps to 4837; other same-name entries are not selected.,photo-verified,not playtested; modern engine effects
+jaden,main,Elemental HERO Burstinatrix,3,Elemental HERO Burstinatrix,6311,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Elemental HERO Avian,3,Elemental HERO Avian,6310,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Elemental HERO Sparkman,3,Elemental HERO Sparkman,6313,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Elemental HERO Clayman,3,Elemental HERO Clayman,6312,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Elemental HERO Wildheart,3,Elemental HERO Wildheart,6478,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Elemental HERO Bubbleman,3,Elemental HERO Bubbleman,6393,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Winged Kuriboh,1,Winged Kuriboh,6314,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,main,Elemental HERO Bladedge,2,Elemental HERO Bladedge,6477,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,extra,Elemental HERO Steam Healer,1,Elemental HERO Steam Healer,6535,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,extra,Elemental HERO Shining Flare Wingman,1,Elemental HERO Shining Flare Wingman,6467,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,extra,Elemental HERO Flame Wingman,1,Elemental HERO Flame Wingman,6344,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,extra,Elemental HERO Tempest,1,Elemental HERO Tempest,6487,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,extra,Elemental HERO Electrum,1,Elemental HERO Electrum,6639,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,extra,Elemental HERO Mudballman,1,Elemental HERO Mudballman,6529,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,extra,Elemental HERO Plasma Vice,1,Elemental HERO Plasma Vice,7252,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,extra,Elemental HERO Thunder Giant,2,Elemental HERO Thunder Giant,6345,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,extra,Elemental HERO Wildedge,2,Elemental HERO Wildedge,6488,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,extra,Elemental HERO Wild Wingman,2,Elemental HERO Wild Wingman,6643,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects
+jaden,extra,Elemental HERO Rampart Blaster,2,Elemental HERO Rampart Blaster,6486,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,photo-verified,not playtested; modern engine effects

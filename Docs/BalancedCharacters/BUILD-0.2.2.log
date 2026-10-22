@@ -1,0 +1,128 @@
+test_duplicate_and_side_cards (test_content.ContentTests) ... ok
+test_fingerprint_order_independent (test_content.ContentTests) ... ok
+test_fingerprint_zone_sensitive (test_content.ContentTests) ... ok
+test_invalid_ids (test_content.ContentTests) ... ok
+test_invalid_quantities (test_content.ContentTests) ... ok
+test_missing_prerequisite_writes_no_payloads (test_content.ContentTests) ... ok
+test_total_copy_limit_across_zones (test_content.ContentTests) ... ok
+test_valid_and_wire_counts (test_content.ContentTests) ... ok
+test_duplicate_results_do_not_count_twice_and_conflicts_fail (test_playtest.PlaytestTests) ... ok
+test_incomplete_disconnect_draw_and_test_are_not_losses (test_playtest.PlaytestTests) ... ok
+test_queue_is_pending_and_directed (test_playtest.PlaytestTests) ... ok
+test_revisions_and_binaries_do_not_pool (test_playtest.PlaytestTests) ... ok
+test_duplicate_character_is_rejected (test_roster_compile.RosterCompilerTests) ... ok
+test_existing_battle_ids_and_fingerprints_survive_expansion (test_roster_compile.RosterCompilerTests) ... ok
+test_two_three_and_fourteen_character_graphs (test_roster_compile.RosterCompilerTests) ... ok
+test_unavailable_original_yugi_is_blocked (test_roster_compile.RosterCompilerTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.847s
+
+OK
+{
+  "cardTableCount": 14257,
+  "readyDecks": [
+    "yugi_battle_city",
+    "kaiba",
+    "joey",
+    "weevil",
+    "rex",
+    "mako",
+    "mai",
+    "bandit_keith",
+    "bonz",
+    "pegasus",
+    "marik_bakura",
+    "gravekeepers",
+    "grandpa",
+    "jaden"
+  ],
+  "blockedDecks": [
+    "yugi"
+  ]
+}
+Generated 14 gates / 182 directed encounters for yugi_battle_city, kaiba, joey, weevil, rex, mako, mai, bandit_keith, bonz, pegasus, marik_bakura, gravekeepers, grandpa, jaden
+
+  YgoMaster -> F:\ChatGPT\Balanced-Character-Duels\YgoMaster\YgoMaster.exe
+  YgoMasterClient -> F:\ChatGPT\Balanced-Character-Duels\YgoMaster\YgoMasterClient.exe
+Built client and server for Master Duel 2.8.0. Using the unchanged official v1.79 native loader.
+Balanced Characters loaded: 14 gates / 182 encounters
+PASS 13997 catalog cards loaded
+PASS TCG campaign duels loaded: 1203
+PASS TCG shop packs loaded: 326
+PASS Campaign chapter table loaded
+PASS Campaign chapters loaded: 954
+PASS Progressive card list retained
+PASS Progressive rarities retained
+PASS Updated DoCommand offset
+PASS Updated RunDialog offset
+PASS Custom TCG rarity retained
+PASS Order does not change identity
+PASS Cosmetic finish does not change identity
+PASS Changed quantities rejected even at same total
+PASS Extra card rejected
+PASS Missing card rejected
+PASS Main and Extra swap rejected
+PASS Unexpected side card rejected
+PASS Missing decks rejected
+PASS Checks leave trusted template unchanged
+Balanced Characters loaded: 14 gates / 182 encounters
+PASS Balanced mode loaded without errors
+PASS Complete directed encounter matrix registered
+PASS Kaiba player encounter found
+PASS Each character gate has a separate terminal goal
+PASS Terminal goal is connected to a battle
+PASS Native goal selection cannot consume the battle node
+PASS Goal cannot be completed before winning its battle
+PASS Goal cannot be forged into a custom duel
+PASS One victory cannot clear an unfinished character gate
+PASS Winning every opponent unlocks the terminal goal
+PASS Unlocked goal completes without rewards or a duel
+PASS All opponent battles open immediately; goals remain locked
+PASS Gate UI exposes a valid loaner without requiring owned cards
+PASS Solo detail registers player/opponent deck recipes with valid IDs
+PASS My Deck route returns trusted loaner without card ownership
+PASS Mutating preview cannot mutate trusted template
+PASS Balanced launch emitted a duel
+PASS Exact canonical decks survived forged launch data
+PASS Trusted life and starting hands enforced
+PASS Trusted shuffle, duel type and CPU enforced
+PASS Client FirstPlayer override rejected and fresh seed selected
+PASS Character names preserved
+PASS Balanced launch emitted a duel
+PASS Exact canonical decks survived forged launch data
+PASS Trusted life and starting hands enforced
+PASS Trusted shuffle, duel type and CPU enforced
+PASS Client FirstPlayer override rejected and fresh seed selected
+PASS Character names preserved
+PASS Actual Duel.end handler records one terminal result despite duplicate requests
+PASS Terminal evidence includes reported result and turns
+PASS Disconnect is excluded from gameplay losses and win rates
+PASS Starting another duel closes the previous run as interrupted and links a fresh run
+PASS Run evidence omits account codes and personal player names
+PASS Every directed encounter exposes deck recipes and launches exact canonical decks/names through real handlers
+PASS Reserved chapter cannot be launched as a room/custom bypass
+PASS Unknown reserved chapter fails closed
+PASS Ordinary custom-duel route remains available outside balanced IDs
+PASS Completed balanced chapters retain fixed decks
+PASS Completed chapter ignores targeted CustomDuel.json and cached custom settings
+PASS disabled: mode adds no partial encounters and preserves base campaign
+PASS disabled: disabled/invalid content reported correctly
+Validation fixture: C:\Users\QQQ\AppData\Local\Temp\BalancedValidation-c22fe6f73f38438bb48f34ed65ad1ae1
+[WARNING] Balanced Characters disabled: Invalid card or quantity: kaiba
+PASS quantity: mode adds no partial encounters and preserves base campaign
+PASS quantity: disabled/invalid content reported correctly
+Validation fixture: C:\Users\QQQ\AppData\Local\Temp\BalancedValidation-a871a45f2a1646fc9b9434cb5abd5da4
+[WARNING] Balanced Characters disabled: Stale/tampered compiled deck: kaiba
+PASS fingerprint: mode adds no partial encounters and preserves base campaign
+PASS fingerprint: disabled/invalid content reported correctly
+Validation fixture: C:\Users\QQQ\AppData\Local\Temp\BalancedValidation-e9e3ef078f6e4b79ab9c806f62bfe00c
+[WARNING] Balanced Characters disabled: Balanced gate requires connected battles and a reward-free terminal goal
+PASS goal-parent: mode adds no partial encounters and preserves base campaign
+PASS goal-parent: disabled/invalid content reported correctly
+Validation fixture: C:\Users\QQQ\AppData\Local\Temp\BalancedValidation-225ec2877c984e4f9b9bf08d3027e749
+[WARNING] Balanced Characters disabled: Balanced gate requires connected battles and a reward-free terminal goal
+PASS goal-root: mode adds no partial encounters and preserves base campaign
+PASS goal-root: disabled/invalid content reported correctly
+Validation fixture: C:\Users\QQQ\AppData\Local\Temp\BalancedValidation-e6df6b36a9d64d35b1c7851fecc2473b
+Server integration checks passed. In-game acceptance remains pending.

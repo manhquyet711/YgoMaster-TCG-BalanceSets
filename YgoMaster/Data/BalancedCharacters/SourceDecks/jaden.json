@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "characterId": "jaden",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-u30akp8wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 15,
+  "main": [
+    {
+      "name": "H - Heated Heart",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "E - Emergency Call",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "R - Righteous Justice",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "O - Oversoul",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Fusion Reserve",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Compulsory Evacuation Device",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Hero Signal",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Spark Blaster",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Bubble Shuffle",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Fusion Recovery",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Fusion Gate",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Miracle Fusion",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Fusion Sage",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Polymerization",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Burstinatrix",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Avian",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Sparkman",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Clayman",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Wildheart",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Bubbleman",
+      "quantity": 3,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Winged Kuriboh",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Bladedge",
+      "quantity": 2,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Elemental HERO Steam Healer",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Shining Flare Wingman",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Flame Wingman",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Tempest",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Electrum",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Mudballman",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Plasma Vice",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Thunder Giant",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Wildedge",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Wild Wingman",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Elemental HERO Rampart Blaster",
+      "quantity": 2,
+      "status": "photo-verified"
+    }
+  ],
+  "side": [],
+  "corrections": [
+    "Photo review 2026-10-22: Elemental HERO Thunder Giant [CHECK: bottom-left pair] -> Elemental HERO Thunder Giant (quantity unchanged).",
+    "Photo review 2026-10-22: Unresolved Fusion A [CHECK: bottom row, second pair] -> Elemental HERO Wildedge (quantity unchanged).",
+    "Photo review 2026-10-22: Unresolved Fusion B [CHECK: bottom-right pair] -> Elemental HERO Rampart Blaster (quantity unchanged)."
+  ],
+  "photoReview": {
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "50bd9b3a9dfa79d125b8c0a4e6e6f6406448a82a56b96122e20c8e61973e6225",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits."
+  }
+}

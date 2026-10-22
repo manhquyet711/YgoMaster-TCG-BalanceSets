@@ -214,6 +214,14 @@ namespace YgoMaster
 
         void WriteSolo_deck_info(GameServerWebRequest request)
         {
+            if (balancedEncounters.Values.Any(x => x.GateId == request.Player.SoloGateId))
+            {
+                request.GetOrCreateDictionary("Solo")["deck_info"] = new Dictionary<string, object>()
+                {
+                    { "deck_id", 0 }, { "valid", true }, { "possession", false }
+                };
+                return;
+            }
             DeckInfo deck = request.Player.Duel.GetDeck(GameMode.SoloSingle);
             Dictionary<string, object> solo = request.GetOrCreateDictionary("Solo");
             int regulationId = DeckInfo.DefaultRegulationId;

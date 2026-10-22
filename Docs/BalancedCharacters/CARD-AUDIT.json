@@ -1,0 +1,112 @@
+{
+  "cardTableCount": 14257,
+  "decks": [
+    {
+      "characterId": "yugi",
+      "ready": false,
+      "errors": [
+        "Unresolved card: Spellbinding Circle"
+      ],
+      "mainCount": 40,
+      "extraCount": 0
+    },
+    {
+      "characterId": "yugi_battle_city",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 4
+    },
+    {
+      "characterId": "kaiba",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 3
+    },
+    {
+      "characterId": "joey",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 3
+    },
+    {
+      "characterId": "weevil",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 0
+    },
+    {
+      "characterId": "rex",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 0
+    },
+    {
+      "characterId": "mako",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 0
+    },
+    {
+      "characterId": "mai",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 0
+    },
+    {
+      "characterId": "bandit_keith",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 0
+    },
+    {
+      "characterId": "bonz",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 0
+    },
+    {
+      "characterId": "pegasus",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 2
+    },
+    {
+      "characterId": "marik_bakura",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 0
+    },
+    {
+      "characterId": "gravekeepers",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 0
+    },
+    {
+      "characterId": "grandpa",
+      "ready": true,
+      "errors": [],
+      "mainCount": 41,
+      "extraCount": 0
+    },
+    {
+      "characterId": "jaden",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 15
+    }
+  ]
+}

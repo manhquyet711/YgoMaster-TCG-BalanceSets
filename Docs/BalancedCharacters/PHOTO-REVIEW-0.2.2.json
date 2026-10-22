@@ -1,0 +1,144 @@
+[
+  {
+    "characterId": "yugi_battle_city",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-vl3hl69wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "75d582df6c9a0605a63392438b6948196b85257506b76e46b6902b252a7394da",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 40,
+    "extraCount": 4,
+    "corrections": []
+  },
+  {
+    "characterId": "weevil",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-b5gbtp8wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "f601ccf3dd403c093f30fddfffa18b931b7522d715d1563d84650abaf431eddc",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 40,
+    "extraCount": 0,
+    "corrections": []
+  },
+  {
+    "characterId": "rex",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-z3z8l99wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "97a2a7a738349e2895531b8fae3c5a84dd6dc6a69651f4214e59afe7c8a53c2d",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 40,
+    "extraCount": 0,
+    "corrections": []
+  },
+  {
+    "characterId": "mako",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-c3ag2k8wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "d198914cb3ec9e757c7cbdfbe5db03efd86daedfe707c87dda23ac34aaa59f27",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 40,
+    "extraCount": 0,
+    "corrections": [
+      "Photo review 2026-10-22: Great Turtle Who Feeds on Flames -> Giant Turtle Who Feeds on Flames (quantity unchanged)."
+    ]
+  },
+  {
+    "characterId": "mai",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-6xhdyi8wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "eb8ae3830975ffe60cbbaff147791b4ac76b89b8076c3fa8e5330c47e80620b1",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 40,
+    "extraCount": 0,
+    "corrections": []
+  },
+  {
+    "characterId": "bandit_keith",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-n7ab0l9wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "29f18fc52f5a666b869d5fab3921323b26abd231de57c3638b0ecfba8695bc07",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 40,
+    "extraCount": 0,
+    "corrections": [
+      "Photo review 2026-10-22: Robotic Knight? [CHECK: top-left normal monster is 'Robotic ...' / mechanical car artwork] -> Bokoichi the Freightening Car (quantity unchanged)."
+    ]
+  },
+  {
+    "characterId": "bonz",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-0ael2i9wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "c2d758cff23c95018e01bfe8ef8a637a36c81557cb7c6ee6503894a37664e84c",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 40,
+    "extraCount": 0,
+    "corrections": []
+  },
+  {
+    "characterId": "pegasus",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-myzdbi8wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "5712713f6dba6e6d9f34d97692fc3ead2ca3f4ce413b4f407e0596c2b2fe5377",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 40,
+    "extraCount": 2,
+    "corrections": []
+  },
+  {
+    "characterId": "marik_bakura",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-0vvusm8wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "c0a8677599bb728a18c25a14cc2d4da3c99419e38d4b40174bc7245975d3b9d2",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 40,
+    "extraCount": 0,
+    "corrections": []
+  },
+  {
+    "characterId": "gravekeepers",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-19l7zn8wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "0849b7c3a157ce45a2990a1e95d525c4463f29f37d47cd3209345dbf80b4e4af",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 40,
+    "extraCount": 0,
+    "corrections": [
+      "Photo review 2026-10-22: Oracle of Shai -> Charm of Shabti (quantity unchanged)."
+    ]
+  },
+  {
+    "characterId": "grandpa",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-o84zyg8wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "a4071351af7a181cdf84efe5bab1be8e601aec5f93cddc321b6a9e6d093731ef",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 41,
+    "extraCount": 0,
+    "corrections": []
+  },
+  {
+    "characterId": "jaden",
+    "photo": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-u30akp8wr9k61.webp",
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "50bd9b3a9dfa79d125b8c0a4e6e6f6406448a82a56b96122e20c8e61973e6225",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits.",
+    "mainCount": 40,
+    "extraCount": 15,
+    "corrections": [
+      "Photo review 2026-10-22: Elemental HERO Thunder Giant [CHECK: bottom-left pair] -> Elemental HERO Thunder Giant (quantity unchanged).",
+      "Photo review 2026-10-22: Unresolved Fusion A [CHECK: bottom row, second pair] -> Elemental HERO Wildedge (quantity unchanged).",
+      "Photo review 2026-10-22: Unresolved Fusion B [CHECK: bottom-right pair] -> Elemental HERO Rampart Blaster (quantity unchanged)."
+    ]
+  }
+]

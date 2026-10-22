@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "characters": {
+    "yugi": {
+      "gateId": 2016,
+      "npcId": 3027
+    },
+    "yugi_battle_city": {
+      "gateId": 2017,
+      "npcId": 3028
+    },
+    "kaiba": {
+      "gateId": 2018,
+      "npcId": 3029
+    },
+    "joey": {
+      "gateId": 2019,
+      "npcId": 3030
+    },
+    "weevil": {
+      "gateId": 2020,
+      "npcId": 3031
+    },
+    "rex": {
+      "gateId": 2021,
+      "npcId": 3032
+    },
+    "mako": {
+      "gateId": 2022,
+      "npcId": 3033
+    },
+    "mai": {
+      "gateId": 2023,
+      "npcId": 3034
+    },
+    "bandit_keith": {
+      "gateId": 2024,
+      "npcId": 3035
+    },
+    "bonz": {
+      "gateId": 2025,
+      "npcId": 3036
+    },
+    "pegasus": {
+      "gateId": 2026,
+      "npcId": 3037
+    },
+    "marik_bakura": {
+      "gateId": 2027,
+      "npcId": 3038
+    },
+    "gravekeepers": {
+      "gateId": 2028,
+      "npcId": 3039
+    },
+    "grandpa": {
+      "gateId": 2029,
+      "npcId": 3040
+    },
+    "jaden": {
+      "gateId": 2030,
+      "npcId": 3041
+    }
+  }
+}

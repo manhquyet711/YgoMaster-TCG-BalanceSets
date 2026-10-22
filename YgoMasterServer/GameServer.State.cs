@@ -745,6 +745,7 @@ namespace YgoMaster
             LoadCardCategory();
             LoadShop();
             LoadSolo();
+            LoadBalancedCharacters();
 
             DuelRewards = new DuelRewardInfos();
             DuelRewards.FromDictionary(Utils.GetDictionary(values, "DuelRewards"));
@@ -1880,6 +1881,7 @@ namespace YgoMaster
 
             player.SoloLastPlayedChaterId = Utils.GetValue<int>(data, "SoloLastPlayedChaterId");
             player.SoloChaptersFromDictionary(Utils.GetDictionary(data, "SoloChapters"));
+            EnsureBalancedChapterAccess(player);
             if (UnlockAllSoloChapters)
             {
                 foreach (int chapterId in GetAllSoloChapterIds())

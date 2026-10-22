@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "characterId": "bonz",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-0ael2i9wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Block Attack",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Book of Life",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Call of the Mummy",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Skull Invitation",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Deal of Phantom",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "The Dark Door",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Violet Crystal",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Mirage of Nightmare",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Nightmare Wheel",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Widespread Ruin",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Yaranzo",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "The Snake Hair",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Dragon Zombie",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Armored Zombie",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Master Kyonshee",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "The 13th Grave",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Clown Zombie",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Three-Legged Zombies",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Pyramid Turtle",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Castle of Dark Illusions",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Des Lacooda",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Decayed Commander",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Zombie Tiger",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Pumpking the King of Ghosts",
+      "quantity": 2,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Shadow Ghoul",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Vampire Genesis",
+      "quantity": 1,
+      "status": "photo-verified"
+    },
+    {
+      "name": "Vampire Lord",
+      "quantity": 2,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [],
+  "photoReview": {
+    "date": "2026-10-22",
+    "reviewer": "AI visual inspection",
+    "photoSha256": "c2d758cff23c95018e01bfe8ef8a637a36c81557cb7c6ee6503894a37664e84c",
+    "note": "Compared all pictured names and visible copy counts, including Fusion piles; no balance edits."
+  }
+}

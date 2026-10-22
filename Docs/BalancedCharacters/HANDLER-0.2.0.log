@@ -1,0 +1,37 @@
+Balanced Characters loaded: 2 gates / 2 encounters
+PASS Balanced mode loaded without errors
+PASS Two directed prototype encounters registered
+PASS Kaiba player encounter found
+PASS Only balanced chapters opened for new player
+PASS Gate UI exposes a valid loaner without requiring owned cards
+PASS Solo detail registers player/opponent deck recipes with valid IDs
+PASS My Deck route returns trusted loaner without card ownership
+PASS Mutating preview cannot mutate trusted template
+PASS Balanced launch emitted a duel
+PASS Exact canonical decks survived forged launch data
+PASS Trusted life and starting hands enforced
+PASS Trusted shuffle, duel type and CPU enforced
+PASS Client FirstPlayer override rejected and fresh seed selected
+PASS Character names preserved
+PASS Balanced launch emitted a duel
+PASS Exact canonical decks survived forged launch data
+PASS Trusted life and starting hands enforced
+PASS Trusted shuffle, duel type and CPU enforced
+PASS Client FirstPlayer override rejected and fresh seed selected
+PASS Character names preserved
+PASS Reserved chapter cannot be launched as a room/custom bypass
+PASS Unknown reserved chapter fails closed
+PASS Ordinary custom-duel route remains available outside balanced IDs
+PASS Completed balanced chapters retain fixed decks
+PASS Completed chapter ignores targeted CustomDuel.json and cached custom settings
+PASS disabled: mode adds no partial encounters and preserves base campaign
+PASS disabled: disabled/invalid content reported correctly
+Validation fixture: C:\Users\QQQ\AppData\Local\Temp\BalancedValidation-4992b5b94d964ed194f2299577a66f45
+[WARNING] Balanced Characters disabled: Invalid card or quantity: kaiba
+PASS quantity: mode adds no partial encounters and preserves base campaign
+PASS quantity: disabled/invalid content reported correctly
+Validation fixture: C:\Users\QQQ\AppData\Local\Temp\BalancedValidation-d8a6f5abb7e7437f990dae58c9f54d79
+[WARNING] Balanced Characters disabled: Stale/tampered compiled deck: kaiba
+PASS fingerprint: mode adds no partial encounters and preserves base campaign
+PASS fingerprint: disabled/invalid content reported correctly
+Validation fixture: C:\Users\QQQ\AppData\Local\Temp\BalancedValidation-a549eee0673d4a039782561032c95aa1

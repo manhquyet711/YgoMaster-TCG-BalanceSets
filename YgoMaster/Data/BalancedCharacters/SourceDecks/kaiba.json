@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "characterId": "kaiba",
+  "sourcePhoto": "finally-finished-a-huge-project-a-set-of-balanced-old-v0-lxammg8wr9k61.webp",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 3,
+  "main": [
+    {
+      "name": "The Flute of Summoning Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Enemy Controller",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Crush Card Virus",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Ultimate Offering",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Stop Defense",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Burst Stream of Destruction",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Soul Exchange",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Raigeki",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Ring of Destruction",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Shadow Spell",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Reinforcements",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Saggi the Dark Clown",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Battle Ox",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mystic Horseman",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Hitotsu-Me Giant",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Ryu-Kishin Powered",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "La Jinn the Mystical Genie of the Lamp",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Ancient Lamp",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Trap Master",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Witch of the Black Forest",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Lord of D.",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Spear Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Blade Knight",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Red-Eyes Darkness Metal Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Luster Dragon #2",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Chaos Emperor Dragon - Envoy of the End",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Thunder Dragon",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Blue-Eyes White Dragon",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Blizzard Dragon",
+      "quantity": 2,
+      "status": "photo-verified"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Rabid Horseman",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Twin-Headed Thunder Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Blue-Eyes Ultimate Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "side": [],
+  "corrections": [
+    "Two Blizzard Dragons identified from source photo; removed malformed split entry.",
+    "Photo review and corrected count: 40 Main, 3 Extra; former 41 count included malformed split entry."
+  ]
+}
