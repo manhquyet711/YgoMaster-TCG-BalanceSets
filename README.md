@@ -128,14 +128,5 @@ Every Balanced Characters deck was designed, built and photographed by
 
 The only change made here is Shadow Spell in place of Spellbinding Circle, because that card is not in Master Duel.
 
-Thanks also to everyone who discussed the decks in the 2024 thread:
-u/thebrandtman, u/ElReptil, u/Akiel13, u/V0XIMITY, u/TheNextSherlock52, u/South-Awareness6249,
-u/Lazy-Gene-432, u/cardgamechampion, u/Zebedee_Deltax, u/bendernobending2, u/hys275, u/DarkMcChicken,
-u/axw30, u/SulfurInfect, u/AardeWandelaar, u/Archester, u/513298690, u/BotherThese258, u/cbronson2018,
-u/Glittering_Flight_93, u/SunChip00, u/Ensatzuken, u/Final_Ambassador_661, u/greggels86, u/X_WujuStyle,
-u/7djharper, u/vibranttoucan, u/Twilight-2007, u/Snoo_93140, u/CultOfTheIdiot, u/Charismatic_Icon
-and u/shapeofjunktocome. Their suggestions (for example Dark Magician Girl in Yugi Season 2, Tyrant Dragon
-for Rex, Earl of Demise for Bakura) are not applied: the decks follow Rosehn's final lists exactly.
-
 Base mod documentation (settings, PvP, language, Linux, custom content) is in [Docs](Docs).
 Licensed under the [MIT License](LICENSE).
