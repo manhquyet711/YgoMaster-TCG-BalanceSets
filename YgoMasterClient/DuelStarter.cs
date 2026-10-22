@@ -43,9 +43,36 @@ namespace YgomGame.Solo
         delegate void Del_NotificationStack(IntPtr thisPtr, IntPtr vcm, IntPtr vc, bool isEntry);
         static Hook<Del_NotificationStack> hookNotificationStack;
 
+        // Map card header labels ("Practice" -> "vs Joey") for Balanced Characters battles
+        static IntPtr tmpTextClass;
+        static IntPtr bindingTextClass;
+        static IL2Property tmpEnableAutoSizing;
+        static IL2Property tmpFontSize;
+        static IL2Property tmpFontSizeMin;
+        static IL2Property tmpFontSizeMax;
+        static IL2Property tmpEnableWordWrapping;
+        static HashSet<int> loggedMapLabelGates = new HashSet<int>();
+
         static SoloSelectChapterViewController()
         {
             IL2Assembly assembly = Assembler.GetAssembly("Assembly-CSharp");
+            try
+            {
+                IL2Class tmpClass = Assembler.GetAssembly("Unity.TextMeshPro").GetClass("TMP_Text", "TMPro");
+                tmpTextClass = tmpClass.ptr;
+                tmpEnableAutoSizing = tmpClass.GetProperty("enableAutoSizing");
+                tmpFontSize = tmpClass.GetProperty("fontSize");
+                tmpFontSizeMin = tmpClass.GetProperty("fontSizeMin");
+                tmpFontSizeMax = tmpClass.GetProperty("fontSizeMax");
+                tmpEnableWordWrapping = tmpClass.GetProperty("enableWordWrapping");
+                IL2Class bindingClass = assembly.GetClass("BindingTextMeshProUGUI", "YgomSystem.UI");
+                bindingTextClass = bindingClass != null ? bindingClass.ptr : IntPtr.Zero;
+            }
+            catch (Exception error)
+            {
+                tmpTextClass = IntPtr.Zero;
+                AssetHelper.LogBalancedSoloUi("Map label setup failed: " + error.Message);
+            }
             IL2Class classInfo = assembly.GetClass("SoloSelectChapterViewController", "YgomGame.Solo");
             IL2Class chapterClassInfo = classInfo.GetNestedType("Chapter");
             fieldChapterId = chapterClassInfo.GetField("id");
@@ -83,6 +110,131 @@ namespace YgomGame.Solo
             int gate = fieldChapterMapGate.GetValue(thisPtr).GetValueRef<int>();
             foreach (int id in AssetHelper.BalancedSoloChapterIdsForGate(gate))
                 LogChapterEntry(thisPtr, id, "Map ready");
+            try { ApplyMapLabels(thisPtr, gate); }
+            catch (Exception error) { AssetHelper.LogBalancedSoloUi("Map label error gate=" + gate + ": " + error.Message); }
+        }
+
+        static IntPtr GetChapterObject(IntPtr map, int id)
+        {
+            IL2Object entries = fieldChapterMapEntries.GetValue(map);
+            if (entries == null) return IntPtr.Zero;
+            IL2Class dictionaryClass = new IL2Class(Import.Object.il2cpp_object_get_class(entries.ptr));
+            IL2Method containsKey = dictionaryClass.GetMethod("ContainsKey");
+            if (containsKey != null)
+            {
+                IL2Object found = containsKey.Invoke(entries.ptr, new IntPtr[] { new IntPtr(&id) });
+                if (found == null || !found.GetValueRef<csbool>()) return IntPtr.Zero;
+            }
+            IL2Object chapter = dictionaryClass.GetProperty("Item").GetGetMethod()
+                .Invoke(entries.ptr, new IntPtr[] { new IntPtr(&id) });
+            if (chapter == null) return IntPtr.Zero;
+            IL2Object go = fieldChapterGameObject.GetValue(chapter.ptr);
+            return go != null ? go.ptr : IntPtr.Zero;
+        }
+
+        static void CollectTexts(IntPtr obj, string path, List<KeyValuePair<string, IntPtr>> result)
+        {
+            foreach (IntPtr component in UnityEngine.GameObject.GetComponents(obj, tmpTextClass))
+                result.Add(new KeyValuePair<string, IntPtr>(path, component));
+            foreach (IntPtr child in UnityEngine.GameObject.GetChildren(obj))
+                CollectTexts(child, path + "/" + UnityEngine.UnityObject.GetName(child), result);
+        }
+
+        static bool IsLabelCandidate(string text)
+        {
+            if (string.IsNullOrEmpty(text) || text.Trim().Length == 0) return false;
+            foreach (char c in text.Trim())
+                if (!char.IsDigit(c)) return true;
+            return false; // star counts such as "1"
+        }
+
+        /// <summary>
+        /// Replaces the shared battle-type header on each Balanced Characters map card with the
+        /// opponent label from IDS_SOLO.CHAPTER{id}_MAPLABEL. The header is found as the
+        /// non-numeric text that every battle card on the map shows (e.g. "Practice").
+        /// </summary>
+        static void ApplyMapLabels(IntPtr map, int gate)
+        {
+            if (tmpTextClass == IntPtr.Zero) return;
+            bool log = loggedMapLabelGates.Add(gate);
+            var cards = new Dictionary<int, List<KeyValuePair<string, IntPtr>>>();
+            var labels = new Dictionary<int, string>();
+            foreach (int id in AssetHelper.BalancedSoloChapterIdsForGate(gate))
+            {
+                string label;
+                if (!YgomSystem.Utility.TextData.CustomTextData.TryGetValue("IDS_SOLO.CHAPTER" + id + "_MAPLABEL", out label)) continue;
+                IntPtr go = GetChapterObject(map, id);
+                if (go == IntPtr.Zero) continue;
+                var texts = new List<KeyValuePair<string, IntPtr>>();
+                CollectTexts(go, UnityEngine.UnityObject.GetName(go), texts);
+                cards[id] = texts;
+                labels[id] = label;
+            }
+            if (cards.Count == 0) return;
+
+            // Header text = a non-numeric text shown on every card.
+            HashSet<string> common = null;
+            foreach (var texts in cards.Values)
+            {
+                var values = new HashSet<string>(texts.Select(x => TMPro.TMP_Text.GetText(x.Value)).Where(IsLabelCandidate));
+                if (common == null) common = values; else common.IntersectWith(values);
+            }
+            if (log)
+            {
+                var first = cards.First();
+                AssetHelper.LogBalancedSoloUi("Map labels gate=" + gate + " cards=" + cards.Count + " common=[" +
+                    string.Join("|", common ?? new HashSet<string>()) + "] texts of chapter " + first.Key + ": " +
+                    string.Join("; ", first.Value.Select(x => x.Key + "='" + TMPro.TMP_Text.GetText(x.Value) + "'")));
+            }
+            if (common == null || common.Count == 0) return;
+            // Cards also carry hidden shared texts (e.g. the locked placeholder under ImageUnopen),
+            // so prefer the card's own name text when it is one of the shared values.
+            string header = cards.First().Value
+                .Where(x => x.Key.EndsWith("/Button/TextName"))
+                .Select(x => TMPro.TMP_Text.GetText(x.Value))
+                .FirstOrDefault(common.Contains) ?? common.First();
+
+            int replaced = 0;
+            foreach (var card in cards)
+            {
+                foreach (var text in card.Value)
+                {
+                    if (TMPro.TMP_Text.GetText(text.Value) != header) continue;
+                    SetLabel(text.Value, labels[card.Key]);
+                    replaced++;
+                }
+            }
+            if (log) AssetHelper.LogBalancedSoloUi("Map labels gate=" + gate + " header='" + header + "' replaced=" + replaced);
+        }
+
+        static void SetLabel(IntPtr text, string label)
+        {
+            IntPtr klass = Import.Object.il2cpp_object_get_class(text);
+            if (bindingTextClass != IntPtr.Zero &&
+                (klass == bindingTextClass || Import.Class.il2cpp_class_is_subclass_of(klass, bindingTextClass, false)))
+            {
+                // Keep the label when the game re-applies the bound text id.
+                YgomSystem.UI.BindingTextMeshProUGUI.SetTextId(text, label);
+            }
+            try
+            {
+                if (tmpFontSize != null && tmpEnableAutoSizing != null && tmpFontSizeMin != null && tmpFontSizeMax != null)
+                {
+                    float size = tmpFontSize.GetGetMethod().Invoke(text).GetValueRef<float>();
+                    float min = size * 0.55f;
+                    csbool on = true;
+                    tmpFontSizeMax.GetSetMethod().Invoke(text, new IntPtr[] { new IntPtr(&size) });
+                    tmpFontSizeMin.GetSetMethod().Invoke(text, new IntPtr[] { new IntPtr(&min) });
+                    tmpEnableAutoSizing.GetSetMethod().Invoke(text, new IntPtr[] { new IntPtr(&on) });
+                }
+                if (tmpEnableWordWrapping != null)
+                {
+                    csbool off = false;
+                    tmpEnableWordWrapping.GetSetMethod().Invoke(text, new IntPtr[] { new IntPtr(&off) });
+                }
+            }
+            catch { }
+            TMPro.TMP_Text.SetText(text, label);
         }
 
         static void LogChapterEntry(IntPtr map, int id, string stage)

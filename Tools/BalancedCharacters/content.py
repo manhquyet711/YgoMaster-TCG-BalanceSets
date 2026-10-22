@@ -337,6 +337,13 @@ def compile_prototype():
                          if names_by_id[c['cardId']] == preferred_names.get(cid)]
         signatures[cid] = signature_ids[0] if len(signature_ids) == 1 else decks[cid]['main'][0]['cardId']
 
+    # Short opponent names for the small header on each map card (read by the client patch).
+    map_labels = {'yugi': 'Yugi S1', 'yugi_season2': 'Yugi S2', 'yugi_battle_city': 'Yugi BC',
+        'kaiba': 'Kaiba', 'joey': 'Joey', 'weevil': 'Weevil', 'rex': 'Rex', 'mako': 'Mako',
+        'mai': 'Mai', 'bandit_keith': 'Keith', 'bonz': 'Bonz', 'pegasus': 'Pegasus',
+        'yami_bakura': 'Bakura', 'marik_bakura': 'Marik', 'gravekeepers': 'Gravekeeper',
+        'grandpa': 'Grandpa', 'jaden': 'Jaden'}
+
     def deck_size(cid):
         main = sum(c['quantity'] for c in decks[cid]['main'])
         extra = sum(c['quantity'] for c in decks[cid].get('extra', []))
@@ -364,7 +371,9 @@ def compile_prototype():
                           '[IDS_SOLO.CHAPTER%d_EXPLANATION]' % chapter_id,
                           'Opponent: %s, %s deck, %s. You play %s, %s. Fixed decks, 8000 LP each.'
                           % (names[opponent], names_by_id[signatures[opponent]], deck_size(opponent),
-                             names[player], deck_size(player))])
+                             names[player], deck_size(player)),
+                          '[IDS_SOLO.CHAPTER%d_MAPLABEL]' % chapter_id,
+                          'vs ' + map_labels.get(opponent, names[opponent])])
         goal_id = gate * 10000 + 9000
         if goal_id in existing_chapters or str(goal_id) in chapter_rows:
             raise ValueError('Allocated goal chapter collides with existing content')
