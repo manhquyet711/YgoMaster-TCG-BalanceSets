@@ -1,5 +1,8 @@
 # Balanced Characters - deck lists (source-v2)
 
+Decks designed and photographed by **u/Rosehn**: [Three years ago I posted a set of balanced old school
+character decks, today I'm back with my updated and finalized lists!](https://www.reddit.com/r/yugioh/comments/1epku1s/three_years_ago_i_posted_a_set_of_balanced_old/)
+
 Transcribed from the 15 photos of the "Three years ago I posted a set of balanced old-school decks" set
 (local folder `G:\Game\charracter set v2`). Every deck was read from the photo and compared with the v1 list;
 each difference was checked on an enlarged crop of the photo.

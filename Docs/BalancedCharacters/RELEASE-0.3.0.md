@@ -1,7 +1,8 @@
 # Balanced Characters 0.3.0 - character set v2
 
-Deck revision `source-v2`, from the 15 photos of the "Three years ago I posted a set of balanced
-old-school decks" update (local folder `G:\Game\charracter set v2`).
+Deck revision `source-v2`: the updated and finalized lists by **u/Rosehn**, transcribed from the 15 photos in
+[their 2024 post](https://www.reddit.com/r/yugioh/comments/1epku1s/three_years_ago_i_posted_a_set_of_balanced_old/) (local folder `G:\Game\charracter set v2`).
+The v1 set is from their [2021 post](https://www.reddit.com/r/yugioh/comments/luo915/finally_finished_a_huge_project_a_set_of_balanced/).
 
 ## Roster: 15 characters, 210 encounters
 
