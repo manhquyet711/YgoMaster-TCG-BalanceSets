@@ -321,6 +321,27 @@ def compile_prototype():
     original_thumbs = (DATA / 'ClientData/SoloGateCards.txt').read_text(encoding='utf-8-sig')
     used_thumb_gates = {int(line.split(',')[0]) for line in original_thumbs.splitlines()
                        if line.strip() and not line.lstrip().startswith('//')}
+    # Verified original signature monsters selected from each actual deck.
+    preferred_names = {'yugi': 'Dark Magician', 'yugi_battle_city': 'Slifer the Sky Dragon',
+        'yugi_season2': 'Slifer the Sky Dragon', 'yami_bakura': 'Dark Necrofear',
+        'kaiba': 'Blue-Eyes White Dragon', 'joey': 'Red-Eyes Black Dragon',
+        'weevil': 'Insect Queen', 'rex': 'Black Tyranno', 'mako': 'The Legendary Fisherman',
+        'mai': 'Harpie Lady Sisters', 'bandit_keith': 'Barrel Dragon', 'bonz': 'Pumpking the King of Ghosts',
+        'pegasus': 'Relinquished', 'marik_bakura': 'Dark Necrofear',
+        'gravekeepers': "Gravekeeper's Chief", 'grandpa': 'Exodia the Forbidden One',
+        'jaden': 'Elemental HERO Bladedge'}
+    names_by_id = card_table()
+    signatures = {}
+    for cid in characters:
+        signature_ids = [c['cardId'] for c in decks[cid]['main']
+                         if names_by_id[c['cardId']] == preferred_names.get(cid)]
+        signatures[cid] = signature_ids[0] if len(signature_ids) == 1 else decks[cid]['main'][0]['cardId']
+
+    def deck_size(cid):
+        main = sum(c['quantity'] for c in decks[cid]['main'])
+        extra = sum(c['quantity'] for c in decks[cid].get('extra', []))
+        return '%d cards' % main + (' + %d Extra' % extra if extra else '')
+
     for player in characters:
         gate = allocations['characters'][player]['gateId']
         if gate in used_thumb_gates:
@@ -341,7 +362,9 @@ def compile_prototype():
             previous_chapter = chapter_id
             texts.extend(['[IDS_SOLO.CHAPTER%d]' % chapter_id, names[player] + ' vs ' + names[opponent],
                           '[IDS_SOLO.CHAPTER%d_EXPLANATION]' % chapter_id,
-                          'Fixed character decks. 8000 LP. No card ownership requirement.'])
+                          'Opponent: %s, %s deck, %s. You play %s, %s. Fixed decks, 8000 LP each.'
+                          % (names[opponent], names_by_id[signatures[opponent]], deck_size(opponent),
+                             names[player], deck_size(player))])
         goal_id = gate * 10000 + 9000
         if goal_id in existing_chapters or str(goal_id) in chapter_rows:
             raise ValueError('Allocated goal chapter collides with existing content')
@@ -352,20 +375,7 @@ def compile_prototype():
         chapters[str(gate)] = chapter_rows
         texts.extend(['[IDS_SOLO.GATE%d]' % gate, 'Balanced Characters - ' + names[player],
                       '[IDS_SOLO.GATE%d_EXPLANATION]' % gate, 'Choose an opponent. You play ' + names[player] + "'s fixed deck."])
-        # Verified original signature monsters selected from each actual deck.
-        preferred_names = {'yugi': 'Dark Magician', 'yugi_battle_city': 'Slifer the Sky Dragon',
-            'yugi_season2': 'Slifer the Sky Dragon', 'yami_bakura': 'Dark Necrofear',
-            'kaiba': 'Blue-Eyes White Dragon', 'joey': 'Red-Eyes Black Dragon',
-            'weevil': 'Insect Queen', 'rex': 'Black Tyranno', 'mako': 'The Legendary Fisherman',
-            'mai': 'Harpie Lady Sisters', 'bandit_keith': 'Barrel Dragon', 'bonz': 'Pumpking the King of Ghosts',
-            'pegasus': 'Relinquished', 'marik_bakura': 'Dark Necrofear',
-            'gravekeepers': "Gravekeeper's Chief", 'grandpa': 'Exodia the Forbidden One',
-            'jaden': 'Elemental HERO Bladedge'}
-        names_by_id = card_table()
-        signature_ids = [c['cardId'] for c in decks[player]['main']
-                         if names_by_id[c['cardId']] == preferred_names.get(player)]
-        signature = signature_ids[0] if len(signature_ids) == 1 else decks[player]['main'][0]['cardId']
-        thumbs.append('%d,%d,0,0.2' % (gate, signature))
+        thumbs.append('%d,%d,0,0.2' % (gate, signatures[player]))
     output = ROOT / 'Tools' / 'BalancedCharacters' / 'Generated'
     for player in characters:
         for opponent in characters:
