@@ -47,6 +47,7 @@ namespace YgoMasterClient
         public static double DuelClientSpectatorRapidTimeMultiplayer;
         public static double DuelClientTimeMultiplier;
         public static int ReplayControlsXOffset;
+        public static int ReplayControlsYOffset;
         public static bool ReplayControlsAlwaysEnabled;
         public static double ReplayControlsTimeMultiplier;
         public static double TimeMultiplier;
@@ -94,6 +95,8 @@ namespace YgoMasterClient
         public static bool DisableSoloVisualNovel;
         public static bool DisableSoloVisualNovelNextButtonSound;
         public static bool SoloRemoveDuelTutorials;
+        public static bool InstantDuel;
+        public static Dictionary<string, object> InstantDuelConfig;
 
         public static string FilePath
         {
@@ -169,6 +172,7 @@ namespace YgoMasterClient
             DuelClientSpectatorRapidTimeMultiplayer = Utils.GetValue<double>(data, "DuelClientSpectatorRapidTimeMultiplayer");
             DuelClientTimeMultiplier = Utils.GetValue<double>(data, "DuelClientTimeMultiplier");
             ReplayControlsXOffset = Utils.GetValue<int>(data, "ReplayControlsXOffset");
+            ReplayControlsYOffset = Utils.GetValue<int>(data, "ReplayControlsYOffset");
             ReplayControlsAlwaysEnabled = Utils.GetValue<bool>(data, "ReplayControlsAlwaysEnabled");
             ReplayControlsTimeMultiplier = Utils.GetValue<double>(data, "ReplayControlsTimeMultiplier");
             TimeMultiplier = Utils.GetValue<double>(data, "TimeMultiplier");

@@ -26,7 +26,7 @@ namespace YgoMaster
             }
             catch (Exception e)
             {
-                Console.WriteLine("[ERROR] Loading data threw an exception" + Environment.NewLine + e.ToString());
+                Console.WriteLine("[ERROR] Loading data threw an exception\n" + e.ToString());
                 return;
             }
 
@@ -322,6 +322,24 @@ namespace YgoMaster
                                     case "Deck.set_accessory":// v2.2.1
                                         Act_DeckSetAccessory(gameServerWebRequest);
                                         break;
+                                    case "Billing.product_list":
+                                        Act_BillingProductList(gameServerWebRequest);
+                                        break;
+                                    case "Billing.Steam.in_complete_item_check":
+                                        Act_Billing_Steam_in_complete_item_check(gameServerWebRequest);
+                                        break;
+                                    case "Billing.reservation":
+                                        Act_BillingReservation(gameServerWebRequest);
+                                        break;
+                                    case "Billing.purchase":
+                                        Act_BillingPurchase(gameServerWebRequest);
+                                        break;
+                                    case "Billing.add_purchased_item":
+                                        Act_Billing_add_purchased_item(gameServerWebRequest);
+                                        break;
+                                    case "Billing.cancel":
+                                        Act_BillingCancel(gameServerWebRequest);
+                                        break;
                                     case "Shop.get_list":
                                         Act_ShopGetList(gameServerWebRequest);
                                         break;
@@ -348,6 +366,9 @@ namespace YgoMaster
                                         break;
                                     case "Solo.info":
                                         Act_SoloInfo(gameServerWebRequest);
+                                        break;
+                                    case "Solo.gate_entry":
+                                        Act_GateEntry(gameServerWebRequest);
                                         break;
                                     case "Solo.detail":
                                         Act_SoloDetail(gameServerWebRequest);
@@ -469,6 +490,15 @@ namespace YgoMaster
                                     case "PvP.replay_duel":
                                         Act_ReplayDuel(gameServerWebRequest);
                                         break;
+                                    case "CardFile.get_list":// v2.4.0
+                                        Act_CardFileGetList(gameServerWebRequest);
+                                        break;
+                                    case "CardFile.detail":// v2.4.0
+                                        Act_CardFileDetail(gameServerWebRequest);
+                                        break;
+                                    case "CardFile.update_card_order":// v2.4.0
+                                        Act_CardFileUpdateCardOrder(gameServerWebRequest);
+                                        break;
                                     default:
                                         Utils.LogInfo("Unhandled act " + actsHeader);
                                         Debug.WriteLine("Unhandled act " + actsHeader + " " + MiniJSON.Json.Serialize(vals));
@@ -566,8 +596,8 @@ namespace YgoMaster
                 {
                     requestString = "(null)";
                 }
-                string errorMsg = "Exception when processing message. Exception: " + e + Environment.NewLine +
-                    " Token: " + requestToken + Environment.NewLine + "Request: " + requestString;
+                string errorMsg = "Exception when processing message. Exception: " + e +
+                    "\n Token: " + requestToken + "\nRequest: " + requestString;
                 Utils.LogWarning(errorMsg);
                 Debug.WriteLine(errorMsg);
             }
@@ -676,7 +706,7 @@ namespace YgoMaster
                 {
                     return 0;
                 }
-                token = token.Substring(0, MultiplayerTokenPrefixSecret.Length);
+                token = token.Substring(MultiplayerTokenPrefixSecret.Length); // Take the token after the MultiplayerTokenPrefixSecret
                 if (string.IsNullOrEmpty(token))
                 {
                     return 0;

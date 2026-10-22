@@ -39,6 +39,7 @@ namespace YgoMaster
             WriteCards(request);
             WriteItem(request);
             request.Response["Craft"] = Craft.ToDictionary();
+            WriteCardFileHave(request);
 
             Dictionary<string, object> serverData = request.GetOrCreateDictionary("Server");
             
@@ -137,6 +138,9 @@ namespace YgoMaster
                                 request.Player.TitleTags.Add((int)Convert.ChangeType(tagObj, typeof(int)));
                             }
                             break;
+                        case "card_file":
+                            request.Player.CardFiles.ActiveCardFileId = (int)Convert.ChangeType(arg.Value, typeof(int));
+                            break;
                         default:
                             Utils.LogWarning("Unhandled player profile arg '" + arg.Key + "' = " + MiniJSON.Json.Serialize(arg.Value));
                             break;
@@ -169,7 +173,8 @@ namespace YgoMaster
                 { "Structure", structure },// All structure decks
                 { "Regulation", Regulation },// Forbidden / limited cards
                 { "RegulationIcon", RegulationIcon },
-                { "AccessorySet", AccessorySet },
+                { "AccessorySet", AccessorySet },// NOTE: Should really be under User.Entry
+                { "CardFile", RawCardFilesData }// NOTE: Should really be under User.Entry
             };
             request.Response["Regulation"] = RegulationInfo;
             request.Response["DuelMenu"] = new Dictionary<string, object>()
@@ -191,11 +196,9 @@ namespace YgoMaster
             request.Response["EXHDeck"] = new object[0];// Exhibition deck list?
             request.Response["EXHDeckList"] = null;// Exhibition deck list?
 
-            string NotificationPath = Path.Combine(dataDirectory, "Notifications");
-
             if (ShowTopics)
             {
-                request.Response["Topics"] = ProcessJsonNotificationsFiles(NotificationPath);
+                request.Response["Topics"] = LoadTopics();
             }
             else
             {
@@ -243,18 +246,23 @@ namespace YgoMaster
                 "ReplayInfo");
         }
 
-        static List<object> ProcessJsonNotificationsFiles(string directoryPath)
+        List<object> LoadTopics()
         {
+            string topicsPath = Path.Combine(dataDirectory, "Topics");
             var responseTopics = new List<object>();
-            if (Directory.Exists(directoryPath))
+            if (Directory.Exists(topicsPath))
             {
-                foreach (string file in Directory.GetFiles(directoryPath, "*.json"))
+                foreach (string file in Directory.GetFiles(topicsPath, "*.json"))
                 {
                     try
                     {
                         Dictionary<string, object> data = MiniJSON.Json.Deserialize(File.ReadAllText(file)) as Dictionary<string, object>;
                         if (data != null)
                         {
+                            if (data.ContainsKey("body") && data["body"] as string == null)
+                            {
+                                data["body"] = MiniJSON.Json.Serialize(data["body"]);
+                            }
                             responseTopics.Add(data);
                         }
                     }
@@ -366,6 +374,7 @@ namespace YgoMaster
             profileData["follow_num"] = friends.Count(x => x.Value.HasFlag(FriendState.Following));
             profileData["follower_num"] = friends.Count(x => x.Value.HasFlag(FriendState.Follower));
             profileData["replay_exist"] = DoesPlayerHaveAnyVisibleReplays(player, requestedBy);
+            profileData["card_file"] = GetCardFileStatusForProfile(player);
         }
 
         void Act_UserRecord(GameServerWebRequest request)

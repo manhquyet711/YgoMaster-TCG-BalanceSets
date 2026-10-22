@@ -29,4 +29,72 @@
   "62962631":20569,//Aluber the Jester of Despia
   "55273561":20568,//Incredible Ecclesia, the Virtuous
   "95515790":20570,//Blazing Cartesia, the Virtuous
+  "86120752":3409,//Aleister the Invoker
+  "73580472":3420,//Black Rose Dragon
+  "75286622":3431,//Invoked Mechaba
+  "74063035":3432,//Invocation
+  "82044280":3873,//Clear Wing Synchro Dragon
+  "84206436":19736,//Medallion of the Ice Barrier
+  "86066373":21226,//Accesscode Talker
+  "41232648":3435,//House Dragonmaid
+  "78231356":3436,//Dragonmaid Hospitality
+  "71413902":22081,//Breaker the Magical Warrior (NOTE: DuelingNexus doesn't have this. Regular ID is 71413901 so we'll assume ID is +1 similar to other alt arts)
+  "85138717":21965,//Rescue Rabbit
+  "49238329":21234,//Pot of Extravagance
+  "81497286":21230,//Lady Labrynth of the Silver Castle
+  "72270340":21231,//Diabellstar the Black Witch
+  "51100263":19092,//Black Luster Soldier (common variant)
+  "81260680":21733,//Ohime the Manifested Mikanko
+  "6327735":21732,//Hu-Li the Jewel Mikanko
+  "65741788":22746,//I:P Masquerena
+  "47222537":21729,//Dark Magical Circle
+  "24224831":21233,//Called by the Grave
+  "59514117":21728,//Secrets of Dark Magic
+  "29301451":22747,//S:P Little Knight
+  "100201001":22715,//W:P Fancy Ball (NOTE: prerelease/beta ID?)
+  "61257790":22302,//Stardust Dragon/Assault Mode
+  "21143941":21731,//Mask Change
+  "58481573":21730,//Masked HERO Dark Law
+  "20415050":21938,//The Hidden Hecahands (NOTE: ygoprodeck calls this "Hecahands" which is why it might not be found)
+  "60303689":22186,//Dogmatika Ecclesia, the Virtuous
+  "6498707":22188,//Fusion Deployment
+  "35269905":22189,//Triple Tactics Thrust
+  "69680032":22187,//Dogmatika Fleurdelis the Knighted
+  "44146296":22811,//Mirrorjade the Iceblade Dragon
+  "40366668":22823,//Dominus Impulse
+  "83965311":3413,//Destiny HERO - Plasma
+  "46986420":3880,//Dark Magician
+  "40044919":3407,//Elemental HERO Stratos
+  "52038442":3416,//Ghost Mourner & Moonlit Chill
+  "24094654":20386,//Polymerization
+  "48130398":22812,//Super Polymerization
+  "32828467":22805,//Wake Up Your Elemental HERO
+  "87758526":22771,//Favorite HERO Shining Flare Wingman
+  "46986432":23487,//Dark Magician
+  "10443958":3898,//Cyber Dragon Infinity
+  "23995350":23489,//Blue-Eyes Ultimate Dragon
+  "38033131":23488,//Dark Magician Girl
+  "24094657":23490,//Polymerization
+  "83764721":23491,//Monster Reborn
+  "23171611":19945,//Limiter Removal
+  "97268403":21224,//Effect Veiler
+  "87116929":22815,//Chimeratech Megafleet Dragon
+  "14532164":21235,//Lightning Storm
+  "91073014":23494,//Vanquish Soul Caesar Valius
+  "19899074":23496,//Ame no Murakumo no Mitsurugi
+  "1498450":23492,//Dracotail Faimena
+  "30581602":23493,//Yummy★Snatchy
+  "27420824":23495,//K9-17 "Ripper"
+  "30275299":22789,//Cyber End Dragon, the Final Strike Dragon (NOTE: conflict between ygoprodeck/DuelingNexus at time of adding this - ygoprodeck:30275298=regular, DuelingNexus:30275298=overframe)
+  "31887906":3403,//Familiar-Possessed - Aussa
+  "68881650":3404,//Familiar-Possessed - Eria
+  "4376659":3405,//Familiar-Possessed - Hiita
+  "31764354":3406,//Familiar-Possessed - Wynn
+  "37970941":20263,//Aussa the Earth Charmer
+  "74364660":20264,//Eria the Water Charmer
+  "759394":20265,//Hiita the Fire Charmer
+  "37744403":20266,//Wynn the Wind Charmer
+  "25542643":23138,//Phantom Knights' Fog Blade
+  "91530237":22822,//Spirit Charmers
+  "34755995":23137,//Artemis, the Magistus Moon Maiden
 }

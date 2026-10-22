@@ -57,7 +57,10 @@ namespace YgoMaster
             KID_INHERIT_PF_RELATION_FAILED_XBOX,
             KID_INHERIT_PF_RELATION_FAILED_STEAM,
             KID_INHERIT_FAILED_BY_COUNTRY,
-            INHERIT_COUNT_LIMIT = 1169,//v2.3.0
+            GC_AGE_VERIFICATION_LIMIT = 1166,
+            GC_APPROVAL_CANCEL,
+            NEED_STATE,
+            INHERIT_COUNT_LIMIT,
             PLATFORM_ERROR,
             PLATFORM_REAUTH,
             PLATFORM_REBOOT,
@@ -70,6 +73,29 @@ namespace YgoMaster
             PASSWD_LOCK_INCORRECT,
             PASSWD_LOCK_EXPIRED,
             DEEPLINK_TITLE_BACK,
+            GC_BAD_REQUEST = 1196,
+            GC_NEED_AGE_GATE,
+            GC_INVALID_TOKEN,
+            GC_SEND_MAIL_FAILED,
+        }
+
+        public enum AnnounceCode //v2.4.0
+        {
+            NONE,
+            ERROR,
+            FATAL,
+            CRITICAL,
+        }
+
+        enum CardFileCode //v2.4.0
+        {
+            NONE,
+            ERROR,
+            FATAL,
+            CRITICAL,
+            INVALID_PARAM = 5200,
+            ERR_ACCOUNT_NOT_EXIST,
+            ERR_UNDEFINED_FILE,
         }
 
         public enum UserCode
@@ -266,7 +292,8 @@ namespace YgoMaster
             TEAM_MATCHING_CANCELED,//v1.3.1
             VS_TEAM_WAITING,//v1.3.1
             ERR_REPLAY_LOCK_MAX = 2150,//v2.1.0
-            ERR_REPLAY_LOCK,////v2.1.0
+            ERR_REPLAY_LOCK,//v2.1.0
+            ERR_CROSS_PLAY_WATCH,//v2.5.0
         }
 
         public enum StructureCode
@@ -326,15 +353,17 @@ namespace YgoMaster
 
         public enum ShopCode
         {
-            NONE = 0,
-            ERROR = 1,
-            FATAL = 2,
-            CRITICAL = 3,
+            NONE,
+            ERROR,
+            FATAL,
+            CRITICAL,
             INVALID_PARAM = 2700,
-            OUT_OF_TERM = 2701,
-            ITEMS_SHORTAGE = 2702,
-            LIMIT_MAX = 2703,
-            PROCESSING_FAILED = 2704,
+            OUT_OF_TERM,
+            ITEMS_SHORTAGE,
+            LIMIT_MAX,
+            PROCESSING_FAILED,
+            EXPIRED_COST_ITEM,
+            UPDATE_PRODUCTS,//v2.5.0
         }
 
         public enum ChallengeCode

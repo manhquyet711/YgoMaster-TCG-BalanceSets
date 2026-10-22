@@ -9,6 +9,7 @@ namespace YgoMaster
     {
         public Dictionary<string, ShopOddsInfo> PackOddsByName { get; private set; }
         public Dictionary<ShopPackType, ShopOddsInfo> PackOddsByPackType { get; private set; }
+        public Dictionary<int, ShopOddsInfo> PackOddsByShopId { get; private set; }
         public ShopOddsVisualsSettings PackOddsVisuals { get; private set; }
         public Dictionary<int, string> PackShopImagesByCardId { get; private set; }
         public Dictionary<int, ShopItemInfo> PackShop { get; private set; }
@@ -18,7 +19,8 @@ namespace YgoMaster
         public Dictionary<int, ShopItemInfo> AllShops { get; private set; }
         public Dictionary<int, ShopItemInfo> PacksByPackId { get; private set; }
         public Dictionary<int, List<ShopItemInfo>> SecretPacksByCardId { get; private set; }
-        
+        public Dictionary<int, ShopBundlePrize> PrizesByCardListId { get; private set; }
+
         public ShopItemInfo StandardPack;
 
         /// <summary>
@@ -85,6 +87,7 @@ namespace YgoMaster
         {
             PackOddsByName = new Dictionary<string, ShopOddsInfo>();
             PackOddsByPackType = new Dictionary<ShopPackType, ShopOddsInfo>();
+            PackOddsByShopId = new Dictionary<int, ShopOddsInfo>();
             PackOddsVisuals = new ShopOddsVisualsSettings();
             PackShopImagesByCardId = new Dictionary<int,string>();
             PackShop = new Dictionary<int, ShopItemInfo>();
@@ -94,6 +97,7 @@ namespace YgoMaster
             AllShops = new Dictionary<int, ShopItemInfo>();
             PacksByPackId = new Dictionary<int, ShopItemInfo>();
             SecretPacksByCardId = new Dictionary<int, List<ShopItemInfo>>();
+            PrizesByCardListId = new Dictionary<int, ShopBundlePrize>();
         }
 
         public static int GetBaseShopId(ShopCategory category)
@@ -134,6 +138,7 @@ namespace YgoMaster
         public string IconData;
         public string Preview;
         public string Decoration;
+        public string DetailPath;
         public HashSet<int> SearchCategory { get; private set; }
         public List<ShopItemPrice> Prices { get; private set; }
 
@@ -214,6 +219,18 @@ namespace YgoMaster
         public int BundlePickupCardListId;
         public List<ShopBundleItem> SetItems = new List<ShopBundleItem>();
 
+        /// <summary>
+        /// Bundle prize info (Prize.PrizeData) e.g. the "Lucky Card" in a lucky card bundle
+        /// </summary>
+        public int PrizeId;
+        public ShopPrizeType PrizeType;
+        public string PrizeCoverPath;
+        public List<ShopBundlePrize> Prizes = new List<ShopBundlePrize>();
+        /// <summary>
+        /// "prob_gacha_id" of a prize bundle (used for "Odds" as targetId is the prize id)
+        /// </summary>
+        public int PrizeProbGachaId;
+
         public ShopItemInfo()
         {
             SearchCategory = new HashSet<int>();
@@ -226,14 +243,15 @@ namespace YgoMaster
         public ShopOddsInfo GetOdds(ShopInfo shop)
         {
             ShopOddsInfo odds = null;
-            if (!string.IsNullOrEmpty(OddsName))
+            if (shop.PackOddsByShopId.TryGetValue(ShopId, out odds))
             {
-                shop.PackOddsByName.TryGetValue(OddsName, out odds);
+                return odds;
             }
-            if (odds == null)
+            if (!string.IsNullOrEmpty(OddsName) && shop.PackOddsByName.TryGetValue(OddsName, out odds))
             {
-                shop.PackOddsByPackType.TryGetValue(PackType, out odds);
+                return odds;
             }
+            shop.PackOddsByPackType.TryGetValue(PackType, out odds);
             return odds;
         }
 
@@ -457,6 +475,7 @@ namespace YgoMaster
     {
         public string Name;
         public HashSet<ShopPackType> PackTypes { get; private set; }
+        public HashSet<int> PackShopIds { get; private set; }
         public List<ShopOddsRarity> CardRateList { get; private set; }
         /// <summary>
         /// premiereRateList
@@ -466,6 +485,7 @@ namespace YgoMaster
         public ShopOddsInfo()
         {
             PackTypes = new HashSet<ShopPackType>();
+            PackShopIds = new HashSet<int>();
             CardRateList = new List<ShopOddsRarity>();
             CardStyleRarityRateList = new List<ShopOddsStyleRarity>();
         }
@@ -547,7 +567,9 @@ namespace YgoMaster
         Protector,
         Icon,
         Wallpaper,
-        DeckCase
+        DeckCase,
+        UNKNOWN, // Card File ???
+        Coin
     }
 
     /// <summary>
@@ -586,7 +608,8 @@ namespace YgoMaster
         IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_30_SR_SET,
         IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_10_UR,
         IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_NUM_RARE_RARENUM_SET,
-        IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_NUM_URNUM_SET
+        IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_NUM_URNUM_SET,
+        IDS_SHOP_BUY_BUTTON_ADS_PRIZE_LUCKY_CARD_NUM_URNUM_SET
     }
 
     class ShopBundleItem
@@ -595,5 +618,42 @@ namespace YgoMaster
         public int ItemId;
         public int Num;
         public bool Period;
+    }
+
+    /// <summary>
+    /// YgomGame.Shop.ShopDef.ProductType
+    /// </summary>
+    enum ShopProductType
+    {
+        None = 0,
+        Pack = 1,
+        Structure = 2,
+        Accessories = 3,
+        Duelpass = 4,
+        Card = 5,
+        Prize = 6,
+        Market = 8,
+        Fukubiki = 9
+    }
+
+    /// <summary>
+    /// YgomGame.Prize.PrizeDef.PrizeType
+    /// </summary>
+    enum ShopPrizeType
+    {
+        None = 0,
+        LuckyCard = 3
+    }
+
+    /// <summary>
+    /// An entry of "Prizes" in Prize.PrizeData (for a lucky card this is a 1 card pack of a random card from the card list)
+    /// </summary>
+    class ShopBundlePrize
+    {
+        public int PackId;
+        public string NameText;
+        public int CardListId;
+        public string PackImageName;
+        public List<int> Cards = new List<int>();
     }
 }

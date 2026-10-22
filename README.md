@@ -1,3 +1,5 @@
+> Compatibility update: targets Master Duel **2.8.0** using YgoMaster v1.79. See [UPGRADE-NOTES.md](UPGRADE-NOTES.md). Build with `Build-Updated.cmd`.
+
 Mod for YGOMaster
 - Master Duel - TCG Solo Campaign.
 
@@ -51,7 +53,7 @@ Offline Yu-Gi-Oh! Master Duel (PC)
 
 ## Requirements
 
-- .NET Framework 4.0 (or above)
+- .NET Framework 4.8
 - The game downloaded on Steam (complete the in-game tutorial to download all data)
 
 YgoMaster is portable and can be used on any machine without Steam installed after being fully downloaded
@@ -89,7 +91,8 @@ Running `Build.bat` is the equivilant of:
 - https://www.nexusmods.com/yugiohmasterduel/articles/3 - modding guide
 - https://github.com/SethPDA/MasterDuel-Modding/wiki - modding guide
 - https://github.com/crazydoomy/MD-Replay-Editor - save / load replays
-- https://code.mycard.moe/sherry_chaos/MDPro3 - forked YGOPro2 with Master Duel assets
+- https://github.com/Nauder/ygomd-rush-frames - Rush Duel card frames mod
+- https://code.moenext.com/sherry_chaos/MDPro3 - forked YGOPro2 with Master Duel assets
 
 ## Screenshots
 

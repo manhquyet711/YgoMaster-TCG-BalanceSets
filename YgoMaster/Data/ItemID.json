@@ -1,1086 +1,1652 @@
 {
   "CONSUME": [
-    1,//GEM
-    2,//GEM
-    3,//CP-N
-    4,//CP-R
-    5,//CP-SR
-    6,//CP-UR
-    7,//ORB
-    8,//ORB-DARK
-    9,//ORB-LIGHT
-    10,//ORB-EARTH
-    11,//ORB-WATER
-    12,//ORB-FIRE
-    13,//ORB-WIND
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
   ],
   "AVATAR": [
-    1000001,//Rescue Rabbit
-    1000002,//Ritual Raven
-    1000003,//Dark Magician
-    1000005,//Borreload Dragon (Mini)
-    1000006,//Cyber Dragon Infinity (Mini)
-    1000007,//Elemental HERO Stratos
-    1000008,//Ancient Gear Wyvern
-    1000009,//Sangan
-    1000010,//World Chalice Guardragon
-    1000011,//Salamangreat Gazelle
-    1000012,//Pot of Greed
-    1000013,//Ash Blossom & Joyous Spring
-    1000014,//Geargiano
-    1000015,//Karakuri Barrel mdl 96 "Shinkuro"
-    1000016,//Wightbaking
-    1000017,//Ninja Grandmaster Hanzo
-    1000018,//Ghostrick Lantern
-    1000019,//Trishula, Dragon of the Ice Barrier
-    1000020,//Laundry Dragonmaid
-    1000022,//Revendread Slayer
-    1000023,//Toadally Awesome
-    1000024,//Blue-Eyes White Dragon
-    1000025,//Machina Citadel
-    1000026,//Spright Blue
-    1000027,//Unchained Abomination
-    1000028,//White Aura Dolphin
-    1000029,//Souleating Oviraptor
-    1000030,//Purrely
-    1000031,//Jinzo
-    1000032,//Elemental HERO Flame Wingman
-    1000033,//Blue-Eyes Chaos MAX Dragon
-    1000034,//Scareclaw Light-Heart
-    1000041,//Number 41: Bagooska the Terribly Tired Tapir
-    1001001,//Instant Fusion
-    1001002,//Noble Arms - Caliburn
-    1001003,//Book of Moon
-    1001004,//Qliphort Monolith
-    1001005,//Scapegoat
-    1001006,//Bitron
-    1001007,//Moai Interceptor Cannons
-    1001008,//Mokey Mokey
-    1001009,//Shard of Greed
-    1001010,//D/D Ghost
-    1001011,//Marshmallon
-    1001012,//Kuriboh
-    1001013,//Danger!? Jackalope?
-    1001014,//Quillbolt Hedgehog
-    1001015,//PSY-Framegear Gamma
-    1001016,//Kagetokage
-    1001017,//Gunkan Suship Ikura
-    1001018,//Genex Controller
-    1001019,//Genex Spare
-    1001020,//A New Life - Galatea
-    1001021,//Linkuriboh
-    1001022,//Cross-Sheep
-    1001023,//Hungry Burger
-    1001024,//Eldlixir
-    1001025,//Naturia Cosmobeet
-    1001026,//The Fabled Chawa
-    1001027,//Snowman Eater
-    1001028,//Bonfire
-    1001029,//Crystal Beast Ruby Carbuncle
-    1001030,//Blaze Accelerator
-    1001031,//Ryko, Lightsworn Hunter
-    1001032,//King's Sarcophagus
-    1002001,//Soccer Ball
-    1002002,//Basketball
-    1002003,//Record Player
-    1002004,//American Football
-    1002005,//Rugby
-    1002006,//Car
-    1002007,//Treasure Box
-    1002008,//Boxing
-    1002009,//Crown
-    1002010,//Inline Skates
-    1002011,//Darts
-    1002012,//Bicycle
-    1003001,//Gaia The Fierce Knight
-    1003002,//Tri-Brigade Shuraig the Ominous Omen
-    1003003,//Sky Striker Ace - Raye
-    1003004,//Fiendsmith Engraver
+    1000001,
+    1000002,
+    1000003,
+    1000005,
+    1000006,
+    1000007,
+    1000008,
+    1000009,
+    1000010,
+    1000011,
+    1000012,
+    1000013,
+    1000014,
+    1000015,
+    1000016,
+    1000017,
+    1000018,
+    1000019,
+    1000020,
+    1000022,
+    1000023,
+    1000024,
+    1000025,
+    1000026,
+    1000027,
+    1000028,
+    1000029,
+    1000030,
+    1000031,
+    1000032,
+    1000033,
+    1000034,
+    1000035,
+    1000036,
+    1000037,
+    1000038,
+    1000039,
+    1000040,
+    1000041,
+    1000042,
+    1000043,
+    1000046,
+    1000047,
+    1000048,
+    1001001,
+    1001002,
+    1001003,
+    1001004,
+    1001005,
+    1001006,
+    1001007,
+    1001008,
+    1001009,
+    1001010,
+    1001011,
+    1001012,
+    1001013,
+    1001014,
+    1001015,
+    1001016,
+    1001017,
+    1001018,
+    1001019,
+    1001020,
+    1001021,
+    1001022,
+    1001023,
+    1001024,
+    1001025,
+    1001026,
+    1001027,
+    1001028,
+    1001029,
+    1001030,
+    1001031,
+    1001032,
+    1001034,
+    1001036,
+    1001037,
+    1001038,
+    1001039,
+    1001040,
+    1001041,
+    1002001,
+    1002002,
+    1002003,
+    1002004,
+    1002005,
+    1002006,
+    1002007,
+    1002008,
+    1002009,
+    1002010,
+    1002011,
+    1002012,
+    1002014,
+    1003001,
+    1003002,
+    1003003,
+    1003004,
+    1003005,
+    1003006,
+    1003007,
+    1005001
   ],
   "ICON": [
-    1010001,//Duelist
-    1010002,//SPYRAL Quik-Fix
-    1010003,//Dante, Pilgrim of the Burning Abyss
-    1010004,//Condemned Darklord
-    1010005,//Berserker of the Tenyi
-    1010006,//Warrior Dai Grepher
-    1010007,//Danger! Bigfoot!
-    1010008,//Yuki-Onna, the Absolute Zero Mayakashi
-    1010009,//Revendread Slayer
-    1010010,//Kuriboh
-    1010011,//Black Luster Soldier - Super Soldier
-    1010012,//Time Thief Redoer
-    1010013,//Dogmatika Ecclesia, the Virtuous
-    1010014,//Hela, Generaider Boss of Doom
-    1010015,//Upstart Goblin
-    1010016,//Thunder Dragon Colossus
-    1010017,//True King of All Calamities
-    1010018,//House Dragonmaid
-    1010019,//Fallen of Albaz
-    1010020,//Swordsoul Supreme Sovereign - Chengying
-    1010021,//Aluber the Dogmatic
-    1010022,//Destiny HERO - Destroyer Phoenix Enforcer
-    1010023,//Water Enchantress of the Temple
-    1010024,//Visas Starfrost
-    1010025,//White Relic of Dogmatika
-    1010026,//The Weather Painter Moonbow
-    1010027,//Blue-Eyes White Dragon
-    1010028,//Dark Magician
-    1010029,//Red-Eyes Black Dragon
-    1010031,//Kurikara Divincarnate
-    1010032,//Melffy Staring Contest
-    1010033,//Ancient Fairy Dragon
-    1010034,//Icejade Aegirine
-    1010035,//Rafale, Champion Fur Hire
-    1010036,//Springans Rockey
-    1010037,//Lady Labrynth of the Silver Castle
-    1010038,//Blackwing Full Armor Master
-    1010039,//Another Duelist
-    1010040,//Armed Neos
-    1010041,//Number 41: Bagooska the Terribly Tired Tapir
-    1010042,//WCS2023 "Legendary Magician of Dark"
-    1010043,//WCS2023 "Legendary Dragon of White"
-    1010044,//Purrely
-    1010045,//Pumpking the King of Ghosts
-    1010046,//I:P Masquerena
-    1010047,//Promethean Princess, Bestower of Flames
-    1010048,//Vanquish Soul Razen
-    1010049,//Hungry Burger
-    1010050,//Superheavy Samurai Prodigy Wakaushi
-    1010051,//Dreaming Nemleria
-    1010052,//Slifer the Sky Dragon
-    1010053,//The Winged Dragon of Ra
-    1010054,//Obelisk the Tormentor
-    1010055,//Question
-    1010056,//The Legend of Duelist QUARTER CENTURY
-    1010057,//Yu-Gi-Oh! Card Game 25th Anniversary
-    1010058,//Blue-Eyes White Dragon
-    1010059,//Diabellstar the Black Witch
-    1010060,//Sinful Spoils of Subversion - Snake-Eye
-    1010061,//Magicians of Bonds and Unity
-    1010062,//Dragon of Pride and Soul
-    1010063,//Scareclaw Light-Heart
-    1010064,//Rikka Princess
-    1010065,//S-Force Nightchaser
-    1010066,//Mementotlan Ghattic
-    1010067,//Legendary Fire King Ponix
-    1010068,//Super Polymerization
-    1010069,//Number C62: Neo Galaxy-Eyes Prime Photon Dragon
-    1010070,//Galaxy-Eyes Photon Dragon
-    1010071,//Ash Blossom & Joyous Spring
-    1010072,//Nibiru, the Primal Being
-    1010073,//Lo, the Prayers of the Voiceless Voice
-    1010074,//Ragnaraika the Evil Seed
-    1010075,//Minerva, the Athenian Lightsworn
-    1010076,//Called by the Grave
-    1010077,//Sangen Summoning
-    1010078,//Stardust Dragon
-    1010079,//Junk Warrior
-    1010080,//The Legendary Fisherman
-    1010081,//Cyber Harpie Lady
-    1010082,//Hallo & Ween
-    1010083,//1,000 Days since Launch Celebration
-    1010084,//Evil★Twin
-    1010085,//2025 SEASON
-    1010086,//Nightmare Apprentice
-    1010087,//Gimmick Puppet Fantasix Machinix
-    1010088,//Diabellze the Original Sinkeeper
-    1010089,//Mulcharmy Purulia
-    1010090,//The Wicked Avatar
-    1010091,//Sky Striker Ace - Raye
-    1010092,//Ghost Belle & Haunted Mansion
-    1010093,//Elemental HERO Neos
-    1010094,//Hey, Trunade!
-    1010095,//Fiendsmith Engraver
-    1010096,//Synchro Fusionist
-    1010097,//Spirit Illusion
-    1010098,//Performage Plushfire
-    1010099,//Like the Diabell
-    1010100,//Silent Magician LV8
-    1010101,//P.U.N.K. JAM FEVER!
-    1010102,//The Fallen & The Virtuous
-    1010103,//Red Supernova Dragon
-    1010107,//Aluber the Jester of Despia
-    1010108,//Blazing Cartesia, the Virtuous
-    1011001,//Soccer Ball
-    1011002,//Trophy
-    1011003,//Diamond
-    1011004,//5D's Duel Transer Rider
-    1011005,//5D's Duel Transer Prince
-    1011006,//5D's Duel Transer Average Joe
-    1011007,//5D's Duel Transer Friendly Teen
-    1011008,//5D's Duel Transer Gruff King
-    1011009,//5D's Duel Transer Tough Guy
-    1011010,//5D's Duel Transer Casual Teen
-    1011011,//5D's Duel Transer School Student
-    1011012,//5D's Duel Transer Tough Girl
-    1011013,//5D's Duel Transer Idol
-    1011014,//5D's Duel Transer Secretary
-    1011015,//5D's Duel Transer Rider
-    1011016,//DM Rare Hunter
-    1011017,//GX Shadow Rider
-    1011018,//5D Dark Signer
-    1011019,//Zexal Barian Duelist
-    1011020,//Arc-V Obelisk Force
-    1011021,//VRAINS Knight of Hanoi
-    1011022,//DL Card Trader EX
-    1011023,//DM Atem
-    1011024,//GX Supreme King
-    1011025,//5D Yusei
-    1011026,//Zexal Number 96
-    1011027,//DC 2024 MAR Silver Finalist
-    1011028,//DC 2024 MAR Bronze Finalist
-    1011029,//WCS 2024 Qualifiers Gold Finalist
-    1011030,//WCS 2024 Qualifiers Silver Finalist
-    1011031,//WCS 2024 Qualifiers Bronze Finalist
-    1011032,//Xyz Cup Gold Finalist
-    1011033,//Xyz Cup Silver Finalist
-    1011034,//Xyz Cup Bronze Finalist
-    1011035,//WCS 2024 Champion
-    1011036,//WCS 2024 Finalist
-    1011037,//WCS 2024 Top 4
-    1011038,//WCS 2024 Top 12
-    1011039,//DC 2024 SEP Gold Finalist
-    1011040,//DC 2024 SEP Silver Finalist
-    1011041,//DC 2024 SEP Bronze Finalist
-    1011042,//Xyz Cup Champion
-    1011043,//DC 2024 DEC Gold Finalist
-    1011044,//DC 2024 DEC Silver Finalist
-    1011045,//DC 2024 DEC Bronze Finalist
-    1011046,//DC 2025 MAR Gold Finalist
-    1011047,//DC 2025 MAR Silver Finalist
-    1011048,//DC 2025 MAR Bronze Finalist
-    1011049,//WCS 2025 Qualifiers Gold Finalist
-    1011050,//WCS 2025 Qualifiers Silver Finalist
-    1011051,//WCS 2025 Qualifiers Bronze Finalist
-    1012001,//X-Krawler Synaphysis
-    1012002,//Mekk-Knight Spectrum Supreme
-    1012003,//Knightmare Gryphon
-    1012004,//Digital Bug Rhinosebus
-    1012005,//Erebus the Underworld Monarch
-    1012006,//Elementsaber Lapauila Mana
-    1012007,//Demise, Supreme King of Armageddon
-    1012008,//Megalith Aratron
-    1012009,//Gem-Knight Master Diamond
-    1012010,//Gladiator Beast Domitianus
-    1012011,//Karakuri Super Shogun mdl 00N "Bureibu"
-    1012012,//Shiranui Sunsaga
-    1012013,//Geargiagear Gigant XG
-    1012014,//Dinomist Rex
-    1012015,//Apoqliphort Towers
-    1012016,//The Weather Painter Rainbow
-    1012017,//Judgment Dragon
-    1012018,//Punishment Dragon
-    1012019,//Mecha Phantom Beast Dracossack
-    1012020,//Herald of Ultimateness
-    1012021,//Auram the World Chalice Blademaster
-    1012022,//Oneiros, the Dream Mirror Erlking
-    1012023,//Oneiros, the Dream Mirror Tormentor
-    1012024,//Crusadia Equimax
-    1012025,//Longirsu, the Orcust Orchestrator
-    1012026,//Orcustrion
-    1012027,//U.A. Playmaker
-    1012028,//Great Shogun Shien
-    1012029,//Danger! Nessie!
-    1012030,//Nephthys, the Sacred Flame
-    1012031,//Blackbeard, the Plunder Patroll Captain
-    1012032,//Bujintei Susanowo
-    1012033,//Bujinki Amaterasu
-    1012034,//Ally of Justice Catastor
-    1012035,//Worm Dimikles
-    1012036,//Mermail Abysstrite
-    1012037,//Beetrooper Sting Lancer
-    1012038,//Vendread Battlelord
-    1012039,//Vendread Chimera
-    1012040,//Legendary Six Samurai - Shi En
-    1012041,//Yoko, the Graceful Mayakashi
-    1012042,//Ghostrick Alucard
-    1012043,//Genex Controller
-    1012044,//Myutant GB-88
-    1012045,//Myutant Mutant
-    1012046,//Starry Night, Starry Dragon
-    1012047,//Mekk-Knight Crusadia Avramax
-    1012048,//Dingirsu, the Orcust of the Evening Star
-    1012049,//Knightmare Incarnation Idlee
-    1012050,//S-Force Justify
-    1012051,//Teardrop the Rikka Queen
-    1012052,//Subterror Behemoth Speleogeist
-    1012053,//Monk of the Tenyi
-    1012054,//Commander Gottoms, Swordmaster
-    1012055,//Eldlich the Golden Lord
-    1012056,//Naturia Leodrake
-    1012057,//Ally of Justice Field Marshal
-    1012058,//Fabled Leviathan
-    1012061,//Cyber Dragon
-    1012062,//Evil★Twins Ki-sikil & Lil-la
-    1012063,//Eldlixir of White Destiny
-    1012064,//Ally of Justice Cosmic Gateway
-    1012065,//Ally Mind
-    1012066,//Mist Valley Thunder Lord
-    1012067,//Skull Servant
-    1012068,//Dominant Expansionist Empire
-    1012069,//Sky Striker Ace - Roze
-    1012070,//Sky Striker Ace - Shizuku
-    1012071,//Rescue-ACE Impulse
-    1012072,//Exosister Elis
-    1012073,//Flamvell Baby
-    1013001,//PawaPuro
-    1013002,//Memories of Intersecting Duels
-    1013003,//Yu-Gi-Oh! CARD GAME THE CHRONICLES
-    1013004,//Sky Striker Ace - Kagari
+    1010001,
+    1010002,
+    1010003,
+    1010004,
+    1010005,
+    1010006,
+    1010007,
+    1010008,
+    1010009,
+    1010010,
+    1010011,
+    1010012,
+    1010013,
+    1010014,
+    1010015,
+    1010016,
+    1010017,
+    1010018,
+    1010019,
+    1010020,
+    1010021,
+    1010022,
+    1010023,
+    1010024,
+    1010025,
+    1010026,
+    1010027,
+    1010028,
+    1010029,
+    1010031,
+    1010032,
+    1010033,
+    1010034,
+    1010035,
+    1010036,
+    1010037,
+    1010038,
+    1010039,
+    1010040,
+    1010041,
+    1010042,
+    1010043,
+    1010044,
+    1010045,
+    1010046,
+    1010047,
+    1010048,
+    1010049,
+    1010050,
+    1010051,
+    1010052,
+    1010053,
+    1010054,
+    1010055,
+    1010056,
+    1010057,
+    1010058,
+    1010059,
+    1010060,
+    1010061,
+    1010062,
+    1010063,
+    1010064,
+    1010065,
+    1010066,
+    1010067,
+    1010068,
+    1010069,
+    1010070,
+    1010071,
+    1010072,
+    1010073,
+    1010074,
+    1010075,
+    1010076,
+    1010077,
+    1010078,
+    1010079,
+    1010080,
+    1010081,
+    1010082,
+    1010083,
+    1010084,
+    1010085,
+    1010086,
+    1010087,
+    1010088,
+    1010089,
+    1010090,
+    1010091,
+    1010092,
+    1010093,
+    1010094,
+    1010095,
+    1010096,
+    1010097,
+    1010098,
+    1010099,
+    1010100,
+    1010101,
+    1010102,
+    1010103,
+    1010104,
+    1010105,
+    1010107,
+    1010108,
+    1010109,
+    1010110,
+    1010111,
+    1010113,
+    1010114,
+    1010115,
+    1010116,
+    1010117,
+    1010118,
+    1010119,
+    1010120,
+    1010121,
+    1010122,
+    1010123,
+    1010124,
+    1010125,
+    1010126,
+    1010127,
+    1010128,
+    1010129,
+    1010130,
+    1010131,
+    1010132,
+    1010133,
+    1010134,
+    1010135,
+    1010136,
+    1010137,
+    1010138,
+    1010139,
+    1010140,
+    1010141,
+    1010142,
+    1010143,
+    1010144,
+    1010145,
+    1010146,
+    1010147,
+    1010148,
+    1010149,
+    1010150,
+    1010151,
+    1010152,
+    1010153,
+    1010154,
+    1010155,
+    1010156,
+    1010157,
+    1010158,
+    1010159,
+    1010160,
+    1010161,
+    1010180,
+    1011001,
+    1011002,
+    1011003,
+    1011004,
+    1011005,
+    1011006,
+    1011007,
+    1011008,
+    1011009,
+    1011010,
+    1011011,
+    1011012,
+    1011013,
+    1011014,
+    1011015,
+    1011016,
+    1011017,
+    1011018,
+    1011019,
+    1011020,
+    1011021,
+    1011022,
+    1011023,
+    1011024,
+    1011025,
+    1011026,
+    1011027,
+    1011028,
+    1011029,
+    1011030,
+    1011031,
+    1011032,
+    1011033,
+    1011034,
+    1011035,
+    1011036,
+    1011037,
+    1011038,
+    1011039,
+    1011040,
+    1011041,
+    1011042,
+    1011043,
+    1011044,
+    1011045,
+    1011046,
+    1011047,
+    1011048,
+    1011049,
+    1011050,
+    1011051,
+    1011052,
+    1011053,
+    1011054,
+    1011055,
+    1011056,
+    1011057,
+    1011058,
+    1011059,
+    1011060,
+    1011061,
+    1011062,
+    1011063,
+    1011064,
+    1011065,
+    1011066,
+    1011067,
+    1011068,
+    1011069,
+    1011070,
+    1011071,
+    1011072,
+    1011073,
+    1011074,
+    1011075,
+    1011076,
+    1011077,
+    1011078,
+    1011079,
+    1011080,
+    1011081,
+    1011082,
+    1011086,
+    1012001,
+    1012002,
+    1012003,
+    1012004,
+    1012005,
+    1012006,
+    1012007,
+    1012008,
+    1012009,
+    1012010,
+    1012011,
+    1012012,
+    1012013,
+    1012014,
+    1012015,
+    1012016,
+    1012017,
+    1012018,
+    1012019,
+    1012020,
+    1012021,
+    1012022,
+    1012023,
+    1012024,
+    1012025,
+    1012026,
+    1012027,
+    1012028,
+    1012029,
+    1012030,
+    1012031,
+    1012032,
+    1012033,
+    1012034,
+    1012035,
+    1012036,
+    1012037,
+    1012038,
+    1012039,
+    1012040,
+    1012041,
+    1012042,
+    1012043,
+    1012044,
+    1012045,
+    1012046,
+    1012047,
+    1012048,
+    1012049,
+    1012050,
+    1012051,
+    1012052,
+    1012053,
+    1012054,
+    1012055,
+    1012056,
+    1012057,
+    1012058,
+    1012059,
+    1012060,
+    1012061,
+    1012062,
+    1012063,
+    1012064,
+    1012065,
+    1012066,
+    1012067,
+    1012068,
+    1012069,
+    1012070,
+    1012071,
+    1012072,
+    1012073,
+    1012074,
+    1012075,
+    1012076,
+    1012077,
+    1012078,
+    1012079,
+    1012080,
+    1012081,
+    1012082,
+    1012083,
+    1012084,
+    1012085,
+    1013001,
+    1013002,
+    1013003,
+    1013004,
+    1013005,
+    1013006,
+    1013007,
+    1013008,
+    1013009,
+    1013010,
+    1013011,
+    1013012,
+    1013013,
+    1013014,
+    1013015,
+    1013016
   ],
   "PROFILE_TAG": [
-    1020001,//Beginner Duelist
-    1020002,//Fan of the Anime
-    1020003,//Returnee
-    1020004,//TCG Player
-    1020005,//Duel Links Player
-    1020006,//Quick Play
-    1020007,//Relaxed Play
-    1020008,//Casual
-    1020009,//Stoic
-    1020010,//Follow Me
-    1020011,//True Duelist
-    1020012,//Strong Arm
-    1020013,//Showoff
-    1020014,//Tactician
-    1020015,//Demon
-    1020016,//Forbidden One
-    1020017,//Destroyer
-    1020018,//Strategy Expert
-    1020019,//Unfathomable
-    1020020,//Synchro Festival 2022
-    1020022,//Fusion Festival 2022
-    1020023,//Limit One Festival 2022
-    1020024,//EX-ZERO Festival 2022
-    1020025,//DC 2022 AUG Top 10
-    1020026,//DC 2022 AUG Top 100
-    1020027,//DC 2022 AUG Top 500
-    1020028,//DC 2022 AUG Top 1000
-    1020029,//DC 2022 AUG Top 10000
-    1020030,//DC 2022 AUG 2nd Stage Duelist
-    1020031,//Link Beginner
-    1020032,//Link Challenger
-    1020033,//Link Practitioner
-    1020034,//Link Expert
-    1020035,//Link Elite
-    1020036,//Link Master
-    1020037,//Synchro x Xyz Festival2022
-    1020038,//DC 2022 DEC Top 10
-    1020039,//DC 2022 DEC Top 100
-    1020040,//DC 2022 DEC Top 500
-    1020041,//DC 2022 DEC Top 1000
-    1020042,//DC 2022 DEC Top 10000
-    1020043,//DC 2022 DEC 2nd Stage Duelist
-    1020044,//Anti-Spell Festival 2022
-    1020045,//Theme Chronicle 2023
-    1020046,//Legend Anthology 2023
-    1020047,//DC 2023 MAR Top 10
-    1020048,//DC 2023 MAR Top 100
-    1020049,//DC 2023 MAR Top 500
-    1020050,//DC 2023 MAR Top 1000
-    1020051,//DC 2023 MAR Top 10000
-    1020052,//DC 2023 MAR 2nd Stage Duelist
-    1020053,//Xyz Festival 2023
-    1020054,//Attribute 4 (2023)
-    1020055,//WCS 2023 Qualifiers Top 10
-    1020056,//WCS 2023 Qualifiers Top 100
-    1020057,//WCS 2023 Qualifiers Top 500
-    1020058,//WCS 2023 Qualifiers Top 1000
-    1020059,//WCS 2023 Qualifiers Top 10000
-    1020060,//WCS 2023 Qualifiers DLv. MAX
-    1020061,//Explorer
-    1020062,//Academy 2023
-    1020063,//Synchro Festival 2023
-    1020064,//Monster Type Festival 2023
-    1020065,//Harnesser of Chaos
-    1020066,//DARK Side
-    1020067,//LIGHT Side
-    1020068,//King of the Island 2023
-    1020069,//Fusion x Xyz Festival 2023
-    1020070,//DC 2023 OCT Top 10
-    1020071,//DC 2023 OCT Top 100
-    1020072,//DC 2023 OCT Top 500
-    1020073,//DC 2023 OCT Top 1000
-    1020074,//DC 2023 OCT Top 10000
-    1020075,//DC 2023 OCT 2nd Stage Duelist
-    1020076,//WCS 2023 Champion
-    1020077,//WCS 2023 Finalist
-    1020078,//WCS 2023 Top 4
-    1020079,//WCS 2023 Top 8
-    1020080,//MD Proficiency Test Grade 10
-    1020081,//Ritual Festival 2023
-    1020082,//DC 2023 DEC Top 10
-    1020083,//DC 2023 DEC Top 100
-    1020084,//DC 2023 DEC Top 500
-    1020085,//DC 2023 DEC Top 1000
-    1020086,//DC 2023 DEC Top 10000
-    1020087,//DC 2023 DEC 2nd Stage Duelist
-    1020088,//Theme Chronicle 2024
-    1020089,//The Bond of Duelists
-    1020090,//Acceleration 2024
-    1020091,//Synchro x Link Festival 2024
-    1020092,//DC 2024 MAR Top 10
-    1020093,//DC 2024 MAR Top 100
-    1020094,//DC 2024 MAR Top 500
-    1020095,//DC 2024 MAR Top 1000
-    1020096,//DC 2024 MAR Top 10000
-    1020097,//DC 2024 MAR 2nd Stage Duelist
-    1020098,//Three Pillars
-    1020099,//Purple Wave
-    1020100,//White Wave
-    1020101,//Black Wave
-    1020102,//Limit One Festival 2024
-    1020103,//Fusion x Link Festival 2024
-    1020104,//WCS 2024 Qualifiers Top 10
-    1020105,//WCS 2024 Qualifiers Top 100
-    1020106,//WCS 2024 Qualifiers Top 500
-    1020107,//WCS 2024 Qualifiers Top 1000
-    1020108,//WCS 2024 Qualifiers Top 10000
-    1020109,//WCS 2024 Qualifiers DLv. MAX
-    1020110,//Xyz Cup Top 10
-    1020111,//Xyz Cup Top 100
-    1020112,//Xyz Cup Top 500
-    1020113,//Xyz Cup Top 1000
-    1020114,//Xyz Cup Top 10000
-    1020115,//Xyz Cup 2nd Stage Duelist
-    1020116,//Awakening
-    1020117,//Transcendence
-    1020118,//Beast
-    1020119,//MD Proficiency Test Grade 20
-    1020120,//DC 2024 SEP Top 10
-    1020121,//DC 2024 SEP Top 100
-    1020122,//DC 2024 SEP Top 500
-    1020123,//DC 2024 SEP Top 1000
-    1020124,//DC 2024 SEP Top 10000
-    1020125,//DC 2024 SEP 2nd Stage Duelist
-    1020126,//Three Creeds
-    1020127,//Evolution Intertwined
-    1020128,//Hyperspeed Halo
-    1020129,//Three-Pronged Union
-    1020130,//Overlord of Deepest Black
-    1020131,//Storm and Surge
-    1020132,//WCS 2024 Champion
-    1020133,//WCS 2024 Finalist
-    1020134,//WCS 2024 Top 4
-    1020135,//WCS 2024 Top 12
-    1020136,//Ace of Black and Blue
-    1020137,//Domain of Nothingness
-    1020138,//DC 2024 DEC Top 10
-    1020139,//DC 2024 DEC Top 100
-    1020140,//DC 2024 DEC Top 500
-    1020141,//DC 2024 DEC Top 1000
-    1020142,//DC 2024 DEC Top 10000
-    1020143,//DC 2024 DEC 2nd Stage Duelist
-    1020144,//Chronicler
-    1020145,//Unstoppable Incarnation
-    1020146,//Duelist Crusher
-    1020147,//DC 2025 MAR Top 10
-    1020148,//DC 2025 MAR Top 100
-    1020149,//DC 2025 MAR Top 500
-    1020150,//DC 2025 MAR Top 1000
-    1020151,//DC 2025 MAR Top 10000
-    1020152,//DC 2025 MAR 2nd Stage Duelist
-    1020153,//Primary Colors
-    1020154,//Icy Edge Whetted in the Shadow
-    1020155,//Blistering Bolt Crashing upon the Earth
-    1020156,//Apocalyptic Fire Driven by the Wind
-    1020157,//Berserker
-    1020158,//All or Nothing
-    1020159,//WCS 2025 Qualifiers Top 10
-    1020160,//WCS 2025 Qualifiers Top 100
-    1020161,//WCS 2025 Qualifiers Top 500
-    1020162,//WCS 2025 Qualifiers Top 1000
-    1020163,//WCS 2025 Qualifiers Top 10000
-    1020164,//WCS 2025 Qualifiers DLv. MAX
-    1021001,//Starting Out
-    1021002,//Top Performer
+    1020001,
+    1020002,
+    1020003,
+    1020004,
+    1020005,
+    1020006,
+    1020007,
+    1020008,
+    1020009,
+    1020010,
+    1020011,
+    1020012,
+    1020013,
+    1020014,
+    1020015,
+    1020016,
+    1020017,
+    1020018,
+    1020019,
+    1020020,
+    1020022,
+    1020023,
+    1020024,
+    1020025,
+    1020026,
+    1020027,
+    1020028,
+    1020029,
+    1020030,
+    1020031,
+    1020032,
+    1020033,
+    1020034,
+    1020035,
+    1020036,
+    1020037,
+    1020038,
+    1020039,
+    1020040,
+    1020041,
+    1020042,
+    1020043,
+    1020044,
+    1020045,
+    1020046,
+    1020047,
+    1020048,
+    1020049,
+    1020050,
+    1020051,
+    1020052,
+    1020053,
+    1020054,
+    1020055,
+    1020056,
+    1020057,
+    1020058,
+    1020059,
+    1020060,
+    1020061,
+    1020062,
+    1020063,
+    1020064,
+    1020065,
+    1020066,
+    1020067,
+    1020068,
+    1020069,
+    1020070,
+    1020071,
+    1020072,
+    1020073,
+    1020074,
+    1020075,
+    1020076,
+    1020077,
+    1020078,
+    1020079,
+    1020080,
+    1020081,
+    1020082,
+    1020083,
+    1020084,
+    1020085,
+    1020086,
+    1020087,
+    1020088,
+    1020089,
+    1020090,
+    1020091,
+    1020092,
+    1020093,
+    1020094,
+    1020095,
+    1020096,
+    1020097,
+    1020098,
+    1020099,
+    1020100,
+    1020101,
+    1020102,
+    1020103,
+    1020104,
+    1020105,
+    1020106,
+    1020107,
+    1020108,
+    1020109,
+    1020110,
+    1020111,
+    1020112,
+    1020113,
+    1020114,
+    1020115,
+    1020116,
+    1020117,
+    1020118,
+    1020119,
+    1020120,
+    1020121,
+    1020122,
+    1020123,
+    1020124,
+    1020125,
+    1020126,
+    1020127,
+    1020128,
+    1020129,
+    1020130,
+    1020131,
+    1020132,
+    1020133,
+    1020134,
+    1020135,
+    1020136,
+    1020137,
+    1020138,
+    1020139,
+    1020140,
+    1020141,
+    1020142,
+    1020143,
+    1020144,
+    1020145,
+    1020146,
+    1020147,
+    1020148,
+    1020149,
+    1020150,
+    1020151,
+    1020152,
+    1020153,
+    1020154,
+    1020155,
+    1020156,
+    1020157,
+    1020158,
+    1020159,
+    1020160,
+    1020161,
+    1020162,
+    1020163,
+    1020164,
+    1020165,
+    1020166,
+    1020167,
+    1020168,
+    1020169,
+    1020170,
+    1020171,
+    1020172,
+    1020173,
+    1020174,
+    1020175,
+    1020176,
+    1020177,
+    1020178,
+    1020179,
+    1020180,
+    1020181,
+    1020182,
+    1020183,
+    1020184,
+    1020185,
+    1020186,
+    1020187,
+    1020188,
+    1020189,
+    1020190,
+    1020191,
+    1020192,
+    1020193,
+    1020194,
+    1020195,
+    1020196,
+    1020197,
+    1020198,
+    1020199,
+    1020200,
+    1020201,
+    1020202,
+    1020203,
+    1020204,
+    1020205,
+    1020206,
+    1020207,
+    1020208,
+    1020209,
+    1020210,
+    1020211,
+    1020212,
+    1020213,
+    1020214,
+    1020215,
+    1020216,
+    1020217,
+    1020218,
+    1020219,
+    1020220,
+    1020221,
+    1020222,
+    1020223,
+    1020224,
+    1020225,
+    1020226,
+    1020227,
+    1020228,
+    1020229,
+    1020230,
+    1020231,
+    1020232,
+    1020233,
+    1020234,
+    1020235,
+    1020236,
+    1020237,
+    1020238,
+    1021001,
+    1021002,
+    1021003,
+    1022001,
+    1022002,
+    1022003
   ],
   "ICON_FRAME": [
-    1030001,//Beginner's Frame
-    1030002,//SILVER Frame
-    1030003,//BRONZE Frame
-    1030004,//GOLD Frame
-    1030005,//Green Frame
-    1030006,//Purple Frame
-    1030007,//PLATINUM Frame
-    1030008,//DIAMOND Frame
-    1030009,//Blue Frame
-    1030010,//Bronze Award Frame
-    1030011,//Silver Award Frame
-    1030012,//Gold Award Frame
-    1030013,//Red Frame
-    1030014,//Icon Frame - LIGHT
-    1030015,//Icon Frame - DARK
-    1030016,//Icon Frame - EARTH
-    1030017,//Icon Frame - WATER
-    1030018,//Icon Frame - FIRE
-    1030019,//Icon Frame - WIND
-    1030020,//Yellow Frame
-    1030021,//Master Frame
-    1030022,//Pink Frame
-    1030023,//Orange Frame
-    1030024,//Navy Frame
-    1030025,//Mint Frame
-    1030026,//Link Master Frame
-    1030027,//The Legend of Duelist  QUARTER CENTURY Frame
-    1030028,//Lime Frame
-    1030029,//Gray Frame
-    1030030,//Leodrake's Mane
-    1030031,//Ally of Justice Cosmic Gateway
-    1030032,//White Frame
-    1030033,//Yellow & Lime Frame
-    1030034,//Blue & Purple Frame
-    1030035,//Rekindling
-    1031001,//The Path of the Blue Sky Striker
-    1031002,//The Path of the Red Sky Striker
-    1031003,//Magic Cylinder
-    1031004,//Dark Magical Circle
-    1031005,//Evil Eye of Selene
-    1031006,//Polymerization
-    1031007,//Blue-Eyes White Dragon
-    1031008,//Brain Control
-    1031009,//Called by the Grave
-    1031010,//Goblin Circus
-    1031011,//Flock Together
-    1031012,//Sky Striker Ace - Raye
-    1031013,//Mirror Force
-    1031014,//Detonating Kuriboh
-    1032001,//Festive Ornament
-    1032002,//Celebration of Spring Breeze
-    1032003,//Tropical Seaside
-    1032004,//Night festival in Costume
-    1032005,//Frost Frame
-    1032006,//Flurry of Cherry Blossoms
-    1032007,//Neon Sign
-    1032008,//Maple Maiden
-    1032009,//Rikka
-    1033001,//WCS 2023 Party Favor
-    1033002,//WCS 2024 Party Favor
-    1033003,//Overlay Unit
+    1030001,
+    1030002,
+    1030003,
+    1030004,
+    1030005,
+    1030006,
+    1030007,
+    1030008,
+    1030009,
+    1030010,
+    1030011,
+    1030012,
+    1030013,
+    1030014,
+    1030015,
+    1030016,
+    1030017,
+    1030018,
+    1030019,
+    1030020,
+    1030021,
+    1030022,
+    1030023,
+    1030024,
+    1030025,
+    1030026,
+    1030027,
+    1030028,
+    1030029,
+    1030030,
+    1030031,
+    1030032,
+    1030033,
+    1030034,
+    1030035,
+    1030036,
+    1030037,
+    1030038,
+    1030039,
+    1030040,
+    1030041,
+    1030042,
+    1030043,
+    1030044,
+    1031001,
+    1031002,
+    1031003,
+    1031004,
+    1031005,
+    1031006,
+    1031007,
+    1031008,
+    1031009,
+    1031010,
+    1031011,
+    1031012,
+    1031013,
+    1031014,
+    1031015,
+    1031016,
+    1031017,
+    1031018,
+    1031019,
+    1031020,
+    1031021,
+    1031022,
+    1031023,
+    1031024,
+    1031025,
+    1031026,
+    1031027,
+    1031028,
+    1031029,
+    1032001,
+    1032002,
+    1032003,
+    1032004,
+    1032005,
+    1032006,
+    1032007,
+    1032008,
+    1032009,
+    1032010,
+    1032011,
+    1033001,
+    1033002,
+    1033003,
+    1033004,
+    1033005,
+    1033006,
+    1033007
   ],
   "PROTECTOR": [
-    1070001,//Yu-Gi-Oh! Trading Card Game
-    1070002,//Auram the World Chalice Blademaster
-    1070003,//Link Black
-    1070004,//Fusion Purple
-    1070005,//Synchro Silver
-    1070006,//Xyz Black
-    1070007,//Geartown
-    1070008,//Ash Blossom & Joyous Spring
-    1070009,//Blue-Eyes Chaos MAX Dragon
-    1070010,//Trishula, Dragon of the Ice Barrier
-    1070011,//Protector Silver
-    1070012,//Dragonmaid Send-Off
-    1070013,//Protector - FIRE
-    1070014,//Protector - WIND
-    1070015,//Protector: WATER
-    1070016,//Protector: EARTH
-    1070017,//Protector: LIGHT
-    1070018,//Protector: DARK
-    1070019,//Token Collector
-    1070020,//Link Blue
-    1070021,//DC 2022 AUG Celebration
-    1070022,//Ghostrick Festival
-    1070023,//Dinomorphia Frenzy
-    1070024,//Runick Fountain
-    1070025,//Lovely Labrynth of the Silver Castle
-    1070026,//Mamonaka the Vaylantz United
-    1070027,//Therion "King" Regulus
-    1070028,//Tri-Brigade
-    1070029,//The Weather Forecast
-    1070030,//DC 2022 DEC Celebration
-    1070031,//The Millennium Puzzle
-    1070032,//The World Legacy
-    1070033,//Vera the Vernusylph Goddess
-    1070034,//Gigantic Spright
-    1070035,//Kurikara Divincarnate
-    1070036,//Tearlaments Kaleido-Heart
-    1070037,//Exosisters Magnifica
-    1070038,//P.U.N.K. JAM Dragon Drive
-    1070039,//Video Game Awards 2022 Commemoration
-    1070040,//Five-Headed Dragon
-    1070041,//Number 41: Bagooska the Terribly Tired Tapir
-    1070042,//DC 2023 MAR Celebration
-    1070043,//Instant Contact
-    1070044,//Spirit Charmers
-    1070045,//Pendulum Green
-    1070046,//WCS 2023 Qualifiers Celebration
-    1070047,//Mayhem Fur Hire
-    1070048,//Ghoti of the Deep Beyond
-    1070049,//Witchcrafter Vice-Madame
-    1070050,//The Bystial Lubellion
-    1070051,//Traptantalizing Tune
-    1070052,//Reign-Beaux, Overking of Dark World
-    1070053,//Road to Worlds! Proficiency Test 2023
-    1070054,//Chaos Angel
-    1070055,//Black Luster Soldier - Legendary Swordsman
-    1070056,//Ohime the Manifested Mikanko
-    1070057,//Kashtira Arise-Heart
-    1070058,//Live☆Twin Lil-la Treat
-    1070059,//WCS2023 "Legendary Magician of Dark"
-    1070060,//WCS2023 "Legendary Dragon of White"
-    1070061,//Light and Darkness Dragon
-    1070062,//Promethean Princess, Bestower of Flames
-    1070063,//Firewall Dragon Singularity
-    1070064,//Stake your Soul!
-    1070065,//Live☆Twin Ki-sikil Frost
-    1070066,//Albion the Sanctifire Dragon
-    1070067,//Gold Pride
-    1070068,//Slifer the Sky Dragon
-    1070069,//WANTED: Seeker of Sinful Spoils
-    1070070,//Blue-Eyes White Dragon
-    1070071,//Magicians of Bonds and Unity
-    1070072,//Dragon of Pride and Soul
-    1070073,//Shaddoll Fusion
-    1070074,//Tearlaments Perlegia
-    1070075,//Nightmare Magician
-    1070076,//The Iris Swordsoul
-    1070077,//Crimson Dragon
-    1070078,//Emperor Charles the Great
-    1070079,//Supreme King Z-ARC
-    1070080,//Imsety, Glory of Horus
-    1070081,//Vaalmonica Scelta
-    1070082,//Yubel - The Loving Defender Forever
-    1070083,//Centur-Ion Primera
-    1070084,//Dragon Master Magia
-    1070085,//Traptrix Sera
-    1070086,//Dark Magician Girl
-    1070087,//Diabellstar the Black Witch
-    1070088,//Galaxy-Eyes Photon Dragon
-    1070089,//Flower Cardian Cherry Blossom with Curtain
-    1070090,//Aleister the Invoker of Madness
-    1070091,//Flower Cardian Zebra Grass
-    1070092,//Ragnaraika Stag Sovereign
-    1070093,//Ritual Beast Ulti-Reirautari
-    1070094,//Flower Cardian Maple with Deer
-    1070095,//Stardust Dragon
-    1070096,//Junk Warrior
-    1070097,//Triple Tactics Talent
-    1070098,//Red-Eyes Dark Dragoon
-    1070099,//Light and Darkness Dragonlord
-    1070100,//Terminal World
-    1070101,//Sky Striker Ace - Raye
-    1070102,//Aluber the Dogmatic
-    1070103,//Fiendsmith
-    1070104,//Kochobo's Hinamatsuri
-    1070105,//Blue-Eyes Ultimate Spirit Dragon
-    1070106,//Neverending Nightmare Absorber
-    1070107,//Red-Eyes Black Fullmetal Dragon
-    1070108,//Performage Trapeze High Magician
-    1070109,//Full Armored Dark Knight Lancer
-    1070110,//Tearlaments Kitkallos
-    1070111,//Traptrix Rafflesia
-    1070112,//RGB Rainbowlution
-    1070113,//Dark Supremacy
-    1070114,//Double Wild
-    1070115,//The Fallen & The Virtuous
-    1070116,//Materiactor Exagard
-    1070117,//Crystron Quariongandrax
-	1070118,//Arcana Force XXI - The World
-    1070119,//Gladiator Beast Gyzarus									  									 
-    1071001,//Crusadia Maximus
-    1071002,//Longirsu, the Orcust Orchestrator
-    1071003,//Dream Mirror Phantasms
-    1071004,//Six Samurai United
-    1071005,//Danger! Bigfoot!
-    1071006,//Nephthys, the Sacred Flame
-    1071007,//U.A. Playmaker
-    1071008,//Blackbeard, the Plunder Patroll Captain
-    1071009,//Bujintei Susanowo
-    1071010,//Ally of Justice Catastor
-    1071011,//Mermail Abyssmegalo
-    1071012,//Giant Beetrooper Invincible Atlas
-    1071013,//Revendread Slayer
-    1071014,//Ghostrick Alucard
-    1071015,//Yoko, the Graceful Mayakashi
-    1071016,//Legendary Six Samurai - Shi En
-    1071017,//Genex Controller
-    1071018,//Myutant Ultimus
-    1071019,//Starry Night, Starry Dragon
-    1071020,//Mekk-Knight Crusadia Avramax
-    1071021,//Dingirsu, the Orcust of the Evening Star
-    1071022,//S-Force Justify
-    1071023,//Teardrop the Rikka Queen
-    1071024,//Subterror Behemoth Speleogeist
-    1071025,//Draco Masters of the Tenyi
-    1071026,//Commander Gottoms, Swordmaster
-    1071027,//Eldlixir of Black Awakening
-    1071028,//Naturia Leodrake
-    1071029,//Fabled Leviathan
-    1071030,//Ally of Justice Field Marshal
-    1071031,//Mist Valley Apex Avian
-    1071032,//Skull Servant
-    1071033,//Sky Striker Ace - Raye
-    1071034,//Flamvell Uruquizas
-    1072001,//Sky Striker Conversion: Flaming Wings of Destruction
-    1072002,//Chaos Xyz Evolution －Galactic Gathering of Dragons－
-    1072003,//Sky Striker Armor - Black Flash Raiment
-    1072004,//Hallo & Ween
-    1072005,//Evil★Twin
-    1073001,//WCS 2023 Party Favor
-    1073002,//WCS 2023 Celebration
-    1073003,//DC 2023 OCT Celebration
-    1073004,//DC 2023 DEC Celebration
-    1073005,//DC 2024 MAR Celebration
-    1073006,//WCS 2024 Qualifiers Celebration
-    1073007,//Xyz Cup Celebration
-    1073008,//WCS 2024 Celebration
-    1073009,//WCS 2024 Party Favor
-    1073010,//DC 2024 SEP Celebration
-    1073011,//DC 2024 DEC Celebration
-    1073012,//DC 2025 MAR Celebration
-    1073013,//WCS 2025 Qualifiers Celebration
-    1075001,//Yu-Gi-Oh! CARD GAME THE CHRONICLES
-    1075002,//THE CHRONICLES: Sky Striker Ace
+    1070001,
+    1070002,
+    1070003,
+    1070004,
+    1070005,
+    1070006,
+    1070007,
+    1070008,
+    1070009,
+    1070010,
+    1070011,
+    1070012,
+    1070013,
+    1070014,
+    1070015,
+    1070016,
+    1070017,
+    1070018,
+    1070019,
+    1070020,
+    1070021,
+    1070022,
+    1070023,
+    1070024,
+    1070025,
+    1070026,
+    1070027,
+    1070028,
+    1070029,
+    1070030,
+    1070031,
+    1070032,
+    1070033,
+    1070034,
+    1070035,
+    1070036,
+    1070037,
+    1070038,
+    1070039,
+    1070040,
+    1070041,
+    1070042,
+    1070043,
+    1070044,
+    1070045,
+    1070046,
+    1070047,
+    1070048,
+    1070049,
+    1070050,
+    1070051,
+    1070052,
+    1070053,
+    1070054,
+    1070055,
+    1070056,
+    1070057,
+    1070058,
+    1070059,
+    1070060,
+    1070061,
+    1070062,
+    1070063,
+    1070064,
+    1070065,
+    1070066,
+    1070067,
+    1070068,
+    1070069,
+    1070070,
+    1070071,
+    1070072,
+    1070073,
+    1070074,
+    1070075,
+    1070076,
+    1070077,
+    1070078,
+    1070079,
+    1070080,
+    1070081,
+    1070082,
+    1070083,
+    1070084,
+    1070085,
+    1070086,
+    1070087,
+    1070088,
+    1070089,
+    1070090,
+    1070091,
+    1070092,
+    1070093,
+    1070094,
+    1070095,
+    1070096,
+    1070097,
+    1070098,
+    1070099,
+    1070100,
+    1070101,
+    1070102,
+    1070103,
+    1070104,
+    1070105,
+    1070106,
+    1070107,
+    1070108,
+    1070109,
+    1070110,
+    1070111,
+    1070112,
+    1070113,
+    1070114,
+    1070115,
+    1070116,
+    1070117,
+    1070118,
+    1070119,
+    1070120,
+    1070121,
+    1070122,
+    1070123,
+    1070124,
+    1070125,
+    1070126,
+    1070127,
+    1070128,
+    1070129,
+    1070130,
+    1070131,
+    1070132,
+    1070133,
+    1070134,
+    1070135,
+    1070137,
+    1070138,
+    1070139,
+    1070140,
+    1070141,
+    1070142,
+    1070143,
+    1070144,
+    1070145,
+    1070146,
+    1070147,
+    1070148,
+    1070149,
+    1070150,
+    1070151,
+    1070152,
+    1070153,
+    1070154,
+    1070155,
+    1070156,
+    1070157,
+    1070158,
+    1070159,
+    1070160,
+    1070161,
+    1070162,
+    1070163,
+    1070164,
+    1070165,
+    1070166,
+    1070167,
+    1070168,
+    1070169,
+    1070170,
+    1070171,
+    1070172,
+    1070173,
+    1070174,
+    1070175,
+    1070176,
+    1070177,
+    1070178,
+    1070179,
+    1070180,
+    1070181,
+    1070182,
+    1070183,
+    1070184,
+    1070185,
+    1070186,
+    1070189,
+    1070190,
+    1070191,
+    1070192,
+    1070193,
+    1071001,
+    1071002,
+    1071003,
+    1071004,
+    1071005,
+    1071006,
+    1071007,
+    1071008,
+    1071009,
+    1071010,
+    1071011,
+    1071012,
+    1071013,
+    1071014,
+    1071015,
+    1071016,
+    1071017,
+    1071018,
+    1071019,
+    1071020,
+    1071021,
+    1071022,
+    1071023,
+    1071024,
+    1071025,
+    1071026,
+    1071027,
+    1071028,
+    1071029,
+    1071030,
+    1071031,
+    1071032,
+    1071033,
+    1071034,
+    1071035,
+    1071036,
+    1071037,
+    1071038,
+    1071039,
+    1071040,
+    1072001,
+    1072002,
+    1072003,
+    1072004,
+    1072005,
+    1072006,
+    1072007,
+    1072008,
+    1072009,
+    1072010,
+    1072011,
+    1072012,
+    1073001,
+    1073002,
+    1073003,
+    1073004,
+    1073005,
+    1073006,
+    1073007,
+    1073008,
+    1073009,
+    1073010,
+    1073011,
+    1073012,
+    1073013,
+    1073014,
+    1073015,
+    1073016,
+    1073017,
+    1073018,
+    1073019,
+    1073020,
+    1073021,
+    1073022,
+    1073023,
+    1073025,
+    1075001,
+    1075002,
+    1075003,
+    1075004,
+    1075005,
+    1075006,
+    1075007,
+    1075008,
+    1075009,
+    1075010
   ],
   "DECK_CASE": [
-    1080001,//Duelist Card Case Red
-    1080002,//Fusion Purple
-    1080003,//Synchro Silver
-    1080004,//Link Blue
-    1080005,//Re-Contract Universe
-    1080006,//Magician of Pendulum
-    1080007,//Rage of Cipher
-    1080008,//Cybernetic Successor
-    1080009,//Heir to the Shiranui-Style
-    1080010,//Growing Digital Bug
-    1080011,//Roar of the Gladiator Beasts
-    1080012,//Emergence of the Monarchs
-    1080013,//Being Who Sees the End of the World
-    1080014,//Gem-Knights' Resolution
-    1080015,//Dragonmaid-To-Order
-    1080016,//Burning Spirits
-    1080018,//Spellbook of Prophecy
-    1080019,//Immortal Glory
-    1080020,//Vortex of Magic
-    1080021,//Spiral Spear Strike
-    1080022,//Blackwing's Pride
-    1080023,//Hidden Arts of Shadows
-    1080024,//Blue-Eyes Max
-    1080025,//Sword of Souls
-    1080026,//Origin of the Galaxy
-    1080027,//Heroes' Union
-    1080028,//Blaze of Albaz
-    1080029,//Crimson Powerforce
-    1082001,//Xyz Black
-    1082002,//The Millennium Puzzle
-    1082003,//Duelist Card Case Blue
-    1082004,//Card Case - LIGHT
-    1082005,//Card Case - DARK
-    1082006,//Card Case - EARTH
-    1082007,//Card Case - WATER
-    1082008,//Card Case - FIRE
-    1082009,//Card Case - WIND
-    1082010,//Gold Pride
-    1082011,//2024 Card Case
-    1082012,//President's Briefcase
-    1082013,//Magicians of Bonds and Unity
-    1082014,//King's Sarcophagus
-    1082015,//Snake Pattern
-    1082016,//Hallo & Ween
-    1082017,//Live☆Twin
-    1082018,//Dragon of Pride and Soul
-    1082019,//Sky Striker Ace - Raye
-    1082020,//Sky Striker Ace - Roze
-    1082021,//Abyssal Land
+    1080001,
+    1080002,
+    1080003,
+    1080004,
+    1080005,
+    1080006,
+    1080007,
+    1080008,
+    1080009,
+    1080010,
+    1080011,
+    1080012,
+    1080013,
+    1080014,
+    1080015,
+    1080016,
+    1080018,
+    1080019,
+    1080020,
+    1080021,
+    1080022,
+    1080023,
+    1080024,
+    1080025,
+    1080026,
+    1080027,
+    1080028,
+    1080029,
+    1080030,
+    1080031,
+    1080032,
+    1080033,
+    1080034,
+    1080035,
+    1082001,
+    1082002,
+    1082003,
+    1082004,
+    1082005,
+    1082006,
+    1082007,
+    1082008,
+    1082009,
+    1082010,
+    1082011,
+    1082012,
+    1082013,
+    1082014,
+    1082015,
+    1082016,
+    1082017,
+    1082018,
+    1082019,
+    1082020,
+    1082021,
+    1082022,
+    1082023,
+    1082024,
+    1082025,
+    1082026,
+    1082027,
+    1082028,
+    1082029,
+    1082030,
+    1082032,
+    1082033,
+    1082034,
+    1083001
   ],
   "FIELD": [
-    1090001,//Forest
-    1090002,//Spellbook Star Hall
-    1090003,//Ritual Cage
-    1090004,//Geartown
-    1090005,//Volcano
-    1090006,//World Legacy Ruins
-    1090007,//Foreign Capital
-    1090008,//Realm of Danger!
-    1090009,//Night Skyscrapers
-    1090010,//Glacial World
-    1090011,//The Desolate Temple
-    1090012,//Mount Swordsoul
-    1090013,//Vivid Abyssal Waters
-    1090014,//Madolche Chateau
-    1090015,//Ghostrick Mansion
-    1090016,//Myutant Evolution Lab
-    1090017,//Cyber Universe
-    1090018,//Memories of an Ancient Duel
-    1090019,//Dogmatika Cathedral
-    1090020,//Archfiend Palabyrinth
-    1090021,//The Revived Sky Temple
-    1090022,//Pyroxene Cave
-    1090023,//Pressured Planet Wraitsoth
-    1090024,//Ursarctic Big Dipper
-    1090025,//Blue-Eyes Mausoleum
-    1090026,//Forest of Cherry Pink
-    1090028,//Forest of Endless White
-    1090030,//Forest of the Traptrix
-    1090031,//Ruins of the Sinful Spoils
-	1090032,//Lost World					
-    1090033,//Evil★Twin
-    1090034,//Striking Stratagem Simulation Area
-    1090036,//Despia, Theater of the Branded
-    1092001,//Colosseum
-    1092002,//WCS
+    1090001,
+    1090002,
+    1090003,
+    1090004,
+    1090005,
+    1090006,
+    1090007,
+    1090008,
+    1090009,
+    1090010,
+    1090011,
+    1090012,
+    1090013,
+    1090014,
+    1090015,
+    1090016,
+    1090017,
+    1090018,
+    1090019,
+    1090020,
+    1090021,
+    1090022,
+    1090023,
+    1090024,
+    1090025,
+    1090026,
+    1090027,
+    1090028,
+    1090030,
+    1090031,
+    1090032,
+    1090033,
+    1090034,
+    1090035,
+    1090036,
+    1090037,
+    1090039,
+    1090040,
+    1090041,
+    1090042,
+    1092001,
+    1092002,
+    1092004
   ],
   "FIELD_OBJ": [
-    1100001,//Forest
-    1100002,//Spellbook Star Hall
-    1100003,//Ritual Cage
-    1100004,//Geartown
-    1100005,//Volcano
-    1100006,//World Legacy Ruins
-    1100007,//Foreign Capital
-    1100008,//Realm of Danger!
-    1100009,//Night Skyscrapers
-    1100010,//Glacial World
-    1100011,//The Desolate Temple
-    1100012,//Mount Swordsoul
-    1100013,//Vivid Abyssal Waters
-    1100014,//Madolche Chateau
-    1100015,//Ghostrick Mansion
-    1100016,//Myutant Evolution Lab
-    1100017,//Cyber Universe
-    1100018,//Memories of an Ancient Duel
-    1100019,//Dogmatika Cathedral
-    1100020,//Archfiend Palabyrinth
-    1100021,//The Revived Sky Temple
-    1100022,//Pyroxene Cave
-    1100023,//Pressured Planet Wraitsoth
-    1100024,//Ursarctic Big Dipper
-    1100025,//Blue-Eyes Mausoleum
-    1100026,//Forest of Cherry Pink
-    1100028,//Forest of Endless White
-    1100030,//Forest of the Traptrix
-    1100031,//Ruins of the Sinful Spoils
-	1100032,//Lost World					
-    1100033,//Evil★Twin
-    1100034,//Striking Stratagem Simulation Area
-    1100036,//Despia, Theater of the Branded
-    1101001,//Trap Hole
-    1101002,//Magical Hats
-    1101003,//Summon Limit
-    1101004,//Giant Trap Hole
-    1101005,//TG1-EM1
-    1101006,//Predaplant Chimerafflesia
-    1101007,//Contract with the Abyss
-    1101008,//Loop of Destruction
-    1101009,//Genex Furnace
-    1101010,//Jar of Metamorphosis
-    1101011,//Negate Attack
-    1101012,//Twin Twisters
-    1101013,//Foolish Burial
-    1101014,//Soul-Absorbing Bone Tower
-    1101016,//Magical Thorn
-    1101017,//Time Machine
-    1101019,//Dragon Capture Jar
-    1101020,//Opening of the Spirit Gates
-    1101022,//Scrap Recycler & Garbage Collector
-    1101023,//Back to Square One
-    1101025,//Fire King Sanctuary
-    1101032,//Centur-Ion Emeth VI
-    1101034,//Kochobo's Hinamatsuri
-    1101035,//Floral Crown
-    1102001,//Colosseum
-    1102002,//WCS
+    1100001,
+    1100002,
+    1100003,
+    1100004,
+    1100005,
+    1100006,
+    1100007,
+    1100008,
+    1100009,
+    1100010,
+    1100011,
+    1100012,
+    1100013,
+    1100014,
+    1100015,
+    1100016,
+    1100017,
+    1100018,
+    1100019,
+    1100020,
+    1100021,
+    1100022,
+    1100023,
+    1100024,
+    1100025,
+    1100026,
+    1100027,
+    1100028,
+    1100030,
+    1100031,
+    1100032,
+    1100033,
+    1100034,
+    1100035,
+    1100036,
+    1100037,
+    1100039,
+    1100040,
+    1100041,
+    1100042,
+    1101001,
+    1101002,
+    1101003,
+    1101004,
+    1101005,
+    1101006,
+    1101007,
+    1101008,
+    1101009,
+    1101010,
+    1101011,
+    1101012,
+    1101013,
+    1101014,
+    1101016,
+    1101017,
+    1101018,
+    1101019,
+    1101020,
+    1101022,
+    1101023,
+    1101025,
+    1101026,
+    1101030,
+    1101031,
+    1101032,
+    1101034,
+    1101035,
+    1101036,
+    1101040,
+    1101041,
+    1101044,
+    1101045,
+    1101048,
+    1102001,
+    1102002,
+    1102004
   ],
   "AVATAR_HOME": [
-    1110001,//Forest
-    1110002,//Spellbook Star Hall
-    1110003,//Ritual Cage
-    1110004,//Geartown
-    1110005,//Volcano
-    1110006,//World Legacy Ruins
-    1110007,//Foreign Capital
-    1110008,//Realm of Danger!
-    1110009,//Night Skyscrapers
-    1110010,//Glacial World
-    1110011,//The Desolate Temple
-    1110012,//Mount Swordsoul
-    1110013,//Vivid Abyssal Waters
-    1110014,//Madolche Chateau
-    1110015,//Ghostrick Mansion
-    1110016,//Myutant Evolution Lab
-    1110017,//Cyber Universe
-    1110018,//Memories of an Ancient Duel
-    1110019,//Dogmatika Cathedral
-    1110020,//Archfiend Palabyrinth
-    1110021,//The Revived Sky Temple
-    1110022,//Pyroxene Cave
-    1110023,//Pressured Planet Wraitsoth
-    1110024,//Ursarctic Big Dipper
-    1110025,//Blue-Eyes Mausoleum
-    1110026,//Forest of Cherry Pink
-    1110028,//Forest of Endless White
-    1110030,//Forest of the Traptrix
-    1110031,//Ruins of the Sinful Spoils
-	1110032,//Lost World					
-    1110033,//Evil★Twin
-    1110034,//Striking Stratagem Simulation Area
-    1110036,//Despia, Theater of the Branded
-    1111001,//Destiny Board
-    1111002,//Bug Matrix
-    1111003,//Shien's Dojo
-    1111004,//Flower Gathering
-    1111005,//Dragonic Tactics
-    1111006,//Catapult Turtle
-    1111007,//World Legacy - "World Key"
-    1111008,//Rank-Up-Magic Barian's Force
-    1111009,//Rank-Up-Magic Astral Force
-    1111010,//D - Force
-    1111011,//Destiny Signal
-    1111012,//H - Heated Heart
-    1111013,//E - Emergency Call
-    1111014,//R - Righteous Justice
-    1111015,//O - Oversoul
-    1111016,//Normal Monster Card
-    1111018,//Spell Card
-    1111019,//Polymerization
-    1111021,//Green Stone of Magic
-    1111022,//Summer Trace of the Thunder God
-    1111024,//Limiter Removal
-    1111026,//Treasured Tree Stump
-    1111032,//Xyz Monster Card
-    1111038,//Rikka
-    1111039,//Barrier of the Voiceless Voice
-    1111040,//Gunkan Sushipyard Seaside Supper Spot
-    1111041,//Shrine of Mist Valley
-    1111042,//Depresspard
-    1111043,//Tales of the White Forest
-    1111045,//Madolche Chickolates
-    1111047,//DARK
-    1111048,//LIGHT
-	1111049,//EARTH			   
-    1111050,//WATER
-    1111056,//Legend of the Sovereign Seas
-    1111057,//Shield of the Millennium Dynasty
-    1111061,//Mimighoul Room
-    1111062,//Flamvell, the Scarlet Warriors
-    1112001,//Colosseum
-    1112002,//WCS
-    1113001,//WCS 2023 Party Favor
-    1113002,//WCS 2024 Party Favor
+    1110001,
+    1110002,
+    1110003,
+    1110004,
+    1110005,
+    1110006,
+    1110007,
+    1110008,
+    1110009,
+    1110010,
+    1110011,
+    1110012,
+    1110013,
+    1110014,
+    1110015,
+    1110016,
+    1110017,
+    1110018,
+    1110019,
+    1110020,
+    1110021,
+    1110022,
+    1110023,
+    1110024,
+    1110025,
+    1110026,
+    1110027,
+    1110028,
+    1110030,
+    1110031,
+    1110032,
+    1110033,
+    1110034,
+    1110035,
+    1110036,
+    1110037,
+    1110039,
+    1110040,
+    1110041,
+    1110042,
+    1111001,
+    1111002,
+    1111003,
+    1111004,
+    1111005,
+    1111006,
+    1111007,
+    1111008,
+    1111009,
+    1111010,
+    1111011,
+    1111012,
+    1111013,
+    1111014,
+    1111015,
+    1111016,
+    1111018,
+    1111019,
+    1111021,
+    1111022,
+    1111023,
+    1111024,
+    1111025,
+    1111026,
+    1111032,
+    1111037,
+    1111038,
+    1111039,
+    1111040,
+    1111041,
+    1111042,
+    1111043,
+    1111044,
+    1111045,
+    1111046,
+    1111047,
+    1111048,
+    1111049,
+    1111050,
+    1111051,
+    1111052,
+    1111054,
+    1111056,
+    1111057,
+    1111058,
+    1111061,
+    1111062,
+    1111064,
+    1111066,
+    1111068,
+    1111069,
+    1111070,
+    1111071,
+    1111072,
+    1111074,
+    1111077,
+    1111078,
+    1111080,
+    1111081,
+    1111082,
+    1111083,
+    1111084,
+    1112001,
+    1112002,
+    1112004,
+    1113001,
+    1113002,
+    1113003,
+    1113004,
+    1115001
   ],
   "STRUCTURE": [
-    1120001,//Starting Deck
-    1120002,//Power of the Dragon
-    1120003,//Synchro of Unity
-    1120004,//Link Generation
-    1120005,//Re-Contract Universe
-    1120006,//Magician of Pendulum
-    1120007,//Rage of Cipher
-    1120008,//Cybernetic Successor
-    1120009,//Heir to the Shiranui-Style
-    1120010,//Growing Digital Bug
-    1120011,//Roar of the Gladiator Beasts
-    1120012,//Emergence of the Monarchs
-    1120013,//Being Who Sees the End of the World
-    1120014,//Gem-Knights' Resolution
-    1120015,//Dragonmaid-To-Order
-    1120016,//Burning Spirits
-    1120017,//Freezing World
-    1120018,//Spellbook of Prophecy
-    1120019,//Immortal Glory
-    1120020,//Vortex of Magic
-    1120021,//Spiral Spear Strike
-    1120022,//Blackwing's Pride
-    1120023,//Hidden Arts of Shadows
-    1120024,//Blue-Eyes Max
-    1120025,//Sword of Souls
-    1120026,//Origin of the Galaxy
-    1120027,//Heroes' Union
-    1120028,//Blaze of Albaz
-    1120029,//Crimson Powerforce
+    1120001,
+    1120002,
+    1120003,
+    1120004,
+    1120005,
+    1120006,
+    1120007,
+    1120008,
+    1120009,
+    1120010,
+    1120011,
+    1120012,
+    1120013,
+    1120014,
+    1120015,
+    1120016,
+    1120017,
+    1120018,
+    1120019,
+    1120020,
+    1120021,
+    1120022,
+    1120023,
+    1120024,
+    1120025,
+    1120026,
+    1120027,
+    1120028,
+    1120029,
+    1120030,
+    1120031,
+    1120032,
+    1120033,
+    1120034,
+    1120035
   ],
   "WALLPAPER": [
-    1130001,//Blue-Eyes Alternative White Dragon
-    1130002,//El Shaddoll Construct
-    1130003,//Tri-Brigade Shuraig the Ominous Omen
-    1130004,//Dingirsu, the Orcust of the Evening Star
-    1130005,//Sky Striker Ace - Kagari
-    1130006,//Eldlich the Golden Lord
-    1130007,//Mekk-Knight Crusadia Avramax
-    1130008,//Meteonis Drytron
-    1130009,//Palladium Oracle Mahad
-    1130010,//Elemental HERO Honest Neos
-    1130011,//Shooting Quasar Dragon
-    1130012,//Number F0: Utopic Draco Future
-    1130013,//Odd-Eyes Arc Pendulum Dragon
-    1130014,//Accesscode Talker
-    1130015,//Ghostrick Festival
-    1130016,//The World Legacy
-    1130017,//Dark Magician
-    1130018,//Vernusylph of the Flourishing Hills
-    1130019,//Ursarctic Radiation
-    1130020,//Abyss Actors' Curtain Call
-    1130021,//Rescue-ACE Turbulence
-    1130022,//Master Peace, the True Dracoslayer
-    1130023,//WCS2023 "Legendary Magician of Dark"
-    1130024,//WCS2023 "Legendary Dragon of White"
-    1130025,//Vanquish Soul Caesar Valius
-    1130026,//Branded Fusion
-    1130027,//New Frontier
-    1130028,//Gold Pride - Star Leon
-    1130029,//Gift Exchange
-    1130030,//Onikuji
-    1130031,//Loka Samsara
-    1130032,//Blue-Eyes White Dragon
-    1130033,//Magicians of Bonds and Unity
-    1130034,//Dragon of Pride and Soul
-    1130035,//Promethean Princess, Bestower of Flames
-    1130036,//Chimera the Illusion Beast
-    1130037,//Mamemaki
-    1130038,//Red Dragon Archfiend
-    1130039,//Snake-Eyes Flamberge Dragon
-    1130040,//Flawless Perfection of the Tenyi
-    1130041,//Number 41: Bagooska the Terribly Tired Tapir
-    1130042,//Sky Striker Mobilize - Linkage!
-    1130043,//Stars Align across the Milky Way
-    1130044,//Sacred Fire King Garunix
-    1130045,//Dark Hole Dragon
-    1130046,//Kingyo Sukui
-    1130047,//Galaxy-Eyes Photon Dragon
-    1130048,//Raidraptor - Rising Rebellion Falcon
-    1130049,//Ancient Gear Advance
-    1130050,//Aroma Healing
-    1130051,//Final Gesture
-    1130052,//Sangen Kaiho
-    1130053,//Stardust Dragon
-    1130054,//Junk Warrior
-    1130055,//Goblin Circus
-    1130056,//Ties That Bind
-    1130057,//Terrors of the Afterroot
-    1130058,//Susurrus of the Sinful Spoils
-    1130059,//Varudras, the Final Bringer of the End Times
-    1130060,//The Unstoppable Exodia Incarnate
-    1130061,//Sky Striker Ace - Raye
-    1130063,//Dogmatika Encounter
-    1130064,//Majesty of the White Dragons
-    1130065,//Varar, Vaalmonican Concord
-    1130066,//Dominus Purge
-    1130067,//Dominus Impulse
-    1130068,//Primite Howl
-    1130069,//Goblin Bikers Gone Wild
-    1130070,//Elemental HERO Neos
-    1130071,//Sky Striker Maneuver - Scissors Cross
-    1130072,//Traptrix Sera
-    1130073,//Argostars
-    1130074,//Firestorms Over Atlantis
-    1130075,//The Fallen & The Virtuous
-    1130081,//Aluber the Jester of Despia
-    1130082,//Blazing Cartesia, the Virtuous
+    1130001,
+    1130002,
+    1130003,
+    1130004,
+    1130005,
+    1130006,
+    1130007,
+    1130008,
+    1130009,
+    1130010,
+    1130011,
+    1130012,
+    1130013,
+    1130014,
+    1130015,
+    1130016,
+    1130017,
+    1130018,
+    1130019,
+    1130020,
+    1130021,
+    1130022,
+    1130023,
+    1130024,
+    1130025,
+    1130026,
+    1130027,
+    1130028,
+    1130029,
+    1130030,
+    1130031,
+    1130032,
+    1130033,
+    1130034,
+    1130035,
+    1130036,
+    1130037,
+    1130038,
+    1130039,
+    1130040,
+    1130041,
+    1130042,
+    1130043,
+    1130044,
+    1130045,
+    1130046,
+    1130047,
+    1130048,
+    1130049,
+    1130050,
+    1130051,
+    1130052,
+    1130053,
+    1130054,
+    1130055,
+    1130056,
+    1130057,
+    1130058,
+    1130059,
+    1130060,
+    1130061,
+    1130062,
+    1130063,
+    1130064,
+    1130065,
+    1130066,
+    1130067,
+    1130068,
+    1130069,
+    1130070,
+    1130071,
+    1130072,
+    1130073,
+    1130074,
+    1130075,
+    1130076,
+    1130077,
+    1130078,
+    1130079,
+    1130080,
+    1130081,
+    1130082,
+    1130083,
+    1130084,
+    1130085,
+    1130086,
+    1130088,
+    1130089,
+    1130090,
+    1130091,
+    1130092,
+    1130094,
+    1130095,
+    1130096,
+    1130097,
+    1130098,
+    1130099,
+    1130100,
+    1130101,
+    1130102,
+    1130103,
+    1130104,
+    1130105,
+    1130106,
+    1130107,
+    1130108,
+    1130109,
+    1130110,
+    1130111,
+    1130112,
+    1130113,
+    1130114,
+    1130115,
+    1130116,
+    1130117,
+    1130118,
+    1130119,
+    1130120,
+    1130122,
+    1130124,
+    1130125,
+    1130126,
+    1130127,
+    1130128,
+    1130129,
+    1130130,
+    1130131,
+    1130132,
+    1130133,
+    1130134,
+    1130135,
+    1130136,
+    1130137,
+    1130138,
+    1130139,
+    1130140,
+    1130141,
+    1130142,
+    1130143,
+    1130144,
+    1130145,
+    1130146,
+    1130147,
+    1130148,
+    1130149,
+    1130150,
+    1130151,
+    1132001,
+    1132002,
+    1132003,
+    1132004,
+    1132005
   ],
   "PACK_TICKET": [
-    1140001,//Legacy Pack ticket
-    1140002,//Tournament Pack ticket 1
-    1141001,//Xyz Reward Ticket
-    1141002,//Fusion Reward Ticket
-    1141003,//Synchro Reward Ticket
-    1141004,//Duelist Cup Reward Tickets
+    1140001,
+    1140002,
+    1141001,
+    1141002,
+    1141003,
+    1141004,
+    1142001,
+    1142002
   ],
   "DECK_LIMIT": [
-    1150001,//Deck Slot
+    1150001
   ],
   "REPLAY_LIMIT": [
-    1160001,//Replay Slots
+    1160001
   ],
+  "CARD_FILE": [
+    1170001,
+    1170002,
+    1170003,
+    1170004,
+    1170005,
+    1170006,
+    1170007,
+    1170008,
+    1170009,
+    1170010,
+    1170011,
+    1170012,
+    1170013,
+    1170014,
+    1170015,
+    1170016,
+    1170017,
+    1170018,
+    1170019,
+    1170020,
+    1170021,
+    1170022
+  ],
+  "COIN": [
+    1180001,
+    1180002,
+    1180003,
+    1180004,
+    1180005,
+    1180006,
+    1180007,
+    1180008,
+    1180010,
+    1180012,
+    1180013,
+    1180014,
+    1180015,
+    1180016,
+    1180017,
+    1180018,
+    1180019,
+    1180020,
+    1180021,
+    1180022,
+    1180023,
+    1180024,
+    1180025,
+    1180026,
+    1180027,
+    1180028
+  ],
+  "BOOKMARK_LIMIT": [
+    1190001
+  ]
 }

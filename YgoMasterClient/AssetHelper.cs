@@ -1,15 +1,32 @@
-﻿using System;
+﻿using IL2CPP;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using IL2CPP;
-using System.Runtime.InteropServices;
 using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
 using System.Threading;
 using YgoMaster;
 
 namespace YgoMasterClient
 {
+
+    [Flags]
+    enum DownloadedTextureFlags : uint
+    {
+        None = 0,
+        Readable = 1,
+        MipmapChain = 2,
+        LinearColorSpace = 4
+    }
+
+    [StructLayout(LayoutKind.Sequential)]
+    struct DownloadedTextureParams
+    {
+        public DownloadedTextureFlags flags;
+        public int mipmapCount;
+    }
+
     unsafe static partial class AssetHelper
     {
         [ThreadStatic]
@@ -19,7 +36,7 @@ namespace YgoMasterClient
         struct CustomAssetLoadRequest
         {
             public IntPtr CompleteHandler;
-            public uint GcHandle;
+            public IntPtr GcHandle;
         }
 
         enum AssetType
@@ -184,24 +201,23 @@ namespace YgoMasterClient
         // mscorlib
         static IL2Method methodReadAllBytes;// File
 
+        // https://github.com/Unity-Technologies/UnityCsReference/blob/master/Runtime/Scripting/Marshalling/ManagedSpanWrapper.cs
+        unsafe struct BindingsManagedSpan
+        {
+            public IntPtr data;
+            public long length;
+        }
+
         // UnityEngine.AudioClip
         delegate IntPtr Del_AudioClip_CUSTOM_Construct_Internal();
         static Del_AudioClip_CUSTOM_Construct_Internal AudioClip_CUSTOM_Construct_Internal;
-        delegate void Del_AudioClip_CUSTOM_CreateUserSound(IntPtr thisPtr, IntPtr name, int lengthSamples, int channels, int frequency, csbool stream);
+        delegate void Del_AudioClip_CUSTOM_CreateUserSound(IntPtr thisPtr, ref BindingsManagedSpan name, int lengthSamples, int channels, int frequency, csbool stream);
         static Del_AudioClip_CUSTOM_CreateUserSound AudioClip_CUSTOM_CreateUserSound;
-        delegate int Del_AudioClip_CUSTOM_SetData(IntPtr clip, IntPtr data, int numsamples, int samplesOffset);
+        delegate int Del_AudioClip_CUSTOM_SetData(IntPtr clip, ref BindingsManagedSpan data, int samplesOffset);
         static Del_AudioClip_CUSTOM_SetData AudioClip_CUSTOM_SetData;
-        //class ScriptingBackendNativeObjectPtrOpaque * __cdecl AudioClip_CUSTOM_Construct_Internal(void)
-        //void __cdecl AudioClip_CUSTOM_CreateUserSound(class ScriptingBackendNativeObjectPtrOpaque *,class ScriptingBackendNativeStringPtrOpaque *,int,int,int,unsigned char)
-        //unsigned char __cdecl AudioClip_CUSTOM_SetData(class ScriptingBackendNativeObjectPtrOpaque *,class ScriptingBackendNativeArrayPtrOpaque *,int,int)
-        //unsigned char __cdecl AudioClip_CUSTOM_GetData(class ScriptingBackendNativeObjectPtrOpaque *,class ScriptingBackendNativeArrayPtrOpaque *,int,int)
-        //unsigned char __cdecl AudioClip_CUSTOM_LoadAudioData(class ScriptingBackendNativeObjectPtrOpaque *)
-        //unsigned char __cdecl AudioClip_CUSTOM_UnloadAudioData(class ScriptingBackendNativeObjectPtrOpaque *)
-        //class ScriptingBackendNativeStringPtrOpaque * __cdecl AudioClip_CUSTOM_GetName(class ScriptingBackendNativeObjectPtrOpaque *)
-        //void * __cdecl DownloadHandlerAudioClip_CUSTOM_Create(class ScriptingBackendNativeObjectPtrOpaque *,class ScriptingBackendNativeStringPtrOpaque *,enum FMOD_SOUND_TYPE)
 
         // UnityEngine.Networking.DownloadHandlerTexture
-        delegate IntPtr Del_DownloadHandlerTexture_CUSTOM_Create(IntPtr obj, csbool readable);
+        delegate IntPtr Del_DownloadHandlerTexture_CUSTOM_Create(IntPtr obj, ref DownloadedTextureParams parameters);
         static Del_DownloadHandlerTexture_CUSTOM_Create DownloadHandlerTexture_CUSTOM_Create;
         delegate IntPtr Del_DownloadHandlerTexture_CUSTOM_InternalGetTextureNative(IntPtr thisPtr);
         static Del_DownloadHandlerTexture_CUSTOM_InternalGetTextureNative DownloadHandlerTexture_CUSTOM_InternalGetTextureNative;
@@ -712,6 +728,24 @@ namespace YgoMasterClient
                 {
                     customAssetPath = Path.ChangeExtension(customAssetPath, ".jpg");
                 }
+                if (!File.Exists(customAssetPath))
+                {
+                    // Fallback to alternate resource type if file doesn't exist
+                    if (customAssetPath.Contains("/HighEnd_HD/"))
+                    {
+                        customAssetPath = customAssetPath.Replace("/HighEnd_HD/", "/SD/");
+                    }
+                    else if (customAssetPath.Contains("/SD/"))
+                    {
+                        customAssetPath = customAssetPath.Replace("/SD/", "/HighEnd_HD/");
+                    }
+
+                    customAssetPath = Path.ChangeExtension(customAssetPath, ".png");
+                    if (!File.Exists(customAssetPath))
+                    {
+                        customAssetPath = Path.ChangeExtension(customAssetPath, ".jpg");
+                    }
+                }
             }
             if (customAssetPath != null && File.Exists(customAssetPath))
             {
@@ -806,9 +840,9 @@ namespace YgoMasterClient
         {
             IL2Array<IntPtr> assetsArray = new IL2Array<IntPtr>(1, objectClassInfo);
 
-            uint assetsArrayGcHandle = Import.Handler.il2cpp_gchandle_new(assetsArray.ptr, true);
-            uint resourcePtrHandle = Import.Handler.il2cpp_gchandle_new(resourcePtr, true);
-            uint completeHandlerHandle = Import.Handler.il2cpp_gchandle_new(completeHandler, true);
+            IntPtr assetsArrayGcHandle = Import.Handler.il2cpp_gchandle_new(assetsArray.ptr, true);
+            IntPtr resourcePtrHandle = Import.Handler.il2cpp_gchandle_new(resourcePtr, true);
+            IntPtr completeHandlerHandle = Import.Handler.il2cpp_gchandle_new(completeHandler, true);
 
             Action<Action> invokeImmediate = (Action action) =>
             {
@@ -870,7 +904,8 @@ namespace YgoMasterClient
                 }
 
                 IntPtr audioClip = IntPtr.Zero;
-                uint audioClipGcHandle = 0;
+                IntPtr audioClipGcHandle = IntPtr.Zero;
+                IntPtr nativeAudioClip = IntPtr.Zero;
                 //IL2Array<float> data = null;
                 //uint dataGcHandle = 0;
                 invoke(() =>
@@ -887,7 +922,21 @@ namespace YgoMasterClient
                         Import.Handler.il2cpp_gchandle_new(audioBufferIL2CPP, true);
                     }
                     audioClip = AudioClip_CUSTOM_Construct_Internal();
-                    AudioClip_CUSTOM_CreateUserSound(audioClip, new IL2String(name).ptr, info.LengthSamples / info.Channels, info.Channels, info.SampleRate, false);
+                    // The following was determined by looking at the result of AudioClip_CUSTOM_Construct_Internal / the call to BaseObjectInternal::NewObject<AudioClip>()
+                    // (look for the native AudioClip address (RAX register after NewObject<AudioClip>()) in the memory of the result of the function call (AudioClip_CUSTOM_Construct_Internal))
+                    // The ScriptingBackendNativeObjectPtrOpaque is inside of the return value (which is different to 2.3.0)
+                    audioClip = *(IntPtr*)audioClip;
+                    nativeAudioClip = *(IntPtr*)(audioClip + 16);// ScriptingBackendNativeObjectPtrOpaque -> AudioClip
+                    byte[] nameBuffer = Encoding.Unicode.GetBytes(name);
+                    fixed (byte* nameBufferPtr = nameBuffer)
+                    {
+                        BindingsManagedSpan nameSpan = new BindingsManagedSpan()
+                        {
+                            data = (IntPtr)nameBufferPtr,
+                            length = nameBuffer.Length
+                        };
+                        AudioClip_CUSTOM_CreateUserSound(nativeAudioClip, ref nameSpan, info.LengthSamples / info.Channels, info.Channels, info.SampleRate, false);
+                    }
                     audioClipGcHandle = Import.Handler.il2cpp_gchandle_new(audioClip, true);
                     //data = new IL2Array<float>(buffer.Length, IL2SystemClass.Float);
                     //dataGcHandle = Import.Handler.il2cpp_gchandle_new(data.ptr, true);
@@ -929,8 +978,17 @@ namespace YgoMasterClient
                         //Marshal.Copy(buffer, 0, (IntPtr)((long*)data.ptr + 4), dataLen);
                         //AudioClip_CUSTOM_SetData(audioClip, data.ptr, dataLen / info.Channels, index / info.Channels);
 
+                        //Marshal.Copy(buffer, 0, (IntPtr)((long*)audioBufferIL2CPP + 4), dataLen);
+                        //AudioClip_CUSTOM_SetData(audioClip, audioBufferIL2CPP, index / info.Channels);
+
+                        // NOTE: Since switching to BindingsManagedSpan the audioBufferIL2CPP doesn't really need to be an IL2Array anymore. TODO: Make it just a C# Marshal.AllocHGlobal for simplicity
                         Marshal.Copy(buffer, 0, (IntPtr)((long*)audioBufferIL2CPP + 4), dataLen);
-                        AudioClip_CUSTOM_SetData(audioClip, audioBufferIL2CPP, dataLen / info.Channels, index / info.Channels);
+                        BindingsManagedSpan audioData = new BindingsManagedSpan()
+                        {
+                            data = (IntPtr)((long*)audioBufferIL2CPP + 4),
+                            length = dataLen
+                        };
+                        AudioClip_CUSTOM_SetData(nativeAudioClip, ref audioData, index / info.Channels);
 
                         waitForMainThread.Set();
                     });
@@ -978,6 +1036,7 @@ namespace YgoMasterClient
             Rect rect = default(Rect);
             bool mipChain = true;
             bool setPointFilterMode = false;
+            float pixelsPerUnit = 50;
 
             // Card packs have some weird artifacting if the sprite isn't the correct size
             // NOTE: Explicitly check for "CardPackTex" to allow for custom images which ignore this code
@@ -1007,6 +1066,17 @@ namespace YgoMasterClient
                 hasSprite = false;
             }
 
+            if (customAssetPath.Contains("/SD/"))
+            {
+                Console.WriteLine("Path contains SD path: " + loadPath + " setting pixelsPerUnit to 50");
+                pixelsPerUnit = 50;
+            }
+            else if (customAssetPath.Contains("/HighEnd_HD/"))
+            {
+                Console.WriteLine("Path contains HighEnd_HD path: " + loadPath + " setting pixelsPerUnit to 100");
+                pixelsPerUnit = 100;
+            }
+
             if (loadImmediate)
             {
                 IL2Array<IntPtr> assetsArray = new IL2Array<IntPtr>(hasSprite ? 2 : 1, objectClassInfo);
@@ -1026,7 +1096,7 @@ namespace YgoMasterClient
 
                 if (hasSprite)
                 {
-                    IntPtr newSpriteAsset = SpriteFromTexture(newTextureAsset, assetName, rect);
+                    IntPtr newSpriteAsset = SpriteFromTexture(newTextureAsset, assetName, rect, pixelsPerUnit);
                     if (newSpriteAsset != IntPtr.Zero)
                     {
                         assetsArray[1] = newSpriteAsset;
@@ -1039,8 +1109,8 @@ namespace YgoMasterClient
             {
                 customAssetLoadRequests[path] = null;
 
-                uint resourcePtrHandle = Import.Handler.il2cpp_gchandle_new(resourcePtr, true);
-                uint completeHandlerHandle = Import.Handler.il2cpp_gchandle_new(completeHandler, true);
+                IntPtr resourcePtrHandle = Import.Handler.il2cpp_gchandle_new(resourcePtr, true);
+                IntPtr completeHandlerHandle = Import.Handler.il2cpp_gchandle_new(completeHandler, true);
 
                 string assetName = Path.GetFileNameWithoutExtension(customAssetPath);
                 AsyncTextureFromPNG(customAssetPath, assetName, (IntPtr texture) =>
@@ -1072,7 +1142,7 @@ namespace YgoMasterClient
 
                         if (hasSprite)
                         {
-                            IntPtr newSpriteAsset = SpriteFromTexture(texture, assetName, rect);
+                            IntPtr newSpriteAsset = SpriteFromTexture(texture, assetName, rect, pixelsPerUnit);
                             if (newSpriteAsset != IntPtr.Zero)
                             {
                                 assetsArray[1] = newSpriteAsset;
@@ -1104,9 +1174,16 @@ namespace YgoMasterClient
             }
             downloadHandlerCtor.Invoke(request.DownloadHandler);
 
-            // +16 is accessed in DownloadHandlerTexture_CUSTOM_InternalGetTextureNative
-            // TODO: The false param will need to be updated in a future unity version as they add additional params for mipmap options
-            *(IntPtr*)(request.DownloadHandler + 16) = DownloadHandlerTexture_CUSTOM_Create(request.DownloadHandler, false);
+            var p = new DownloadedTextureParams
+            {
+                flags = DownloadedTextureFlags.MipmapChain,
+                mipmapCount = -1
+            };
+            IntPtr ptr = DownloadHandlerTexture_CUSTOM_Create(request.DownloadHandler, ref p);
+
+            // +16 is accessed in DownloadHandlerTexture_CUSTOM_InternalGetTextureNative.
+            // This offset is highly version-dependent and might change.
+            *(IntPtr*)(request.DownloadHandler + 16) = ptr;
 
             request.WebRequest = Import.Object.il2cpp_object_new(webRequestClass.ptr);
             if (request.WebRequest == IntPtr.Zero)
@@ -1157,7 +1234,8 @@ namespace YgoMasterClient
                 // UnityWebRequest.Result.Success = 1
                 if (result != 0 || request.RequestTime < DateTime.UtcNow - TimeSpan.FromMinutes(1))
                 {
-                    IntPtr texture = result != 1 ? IntPtr.Zero : DownloadHandlerTexture_CUSTOM_InternalGetTextureNative(request.DownloadHandler);
+                    IntPtr nativeDownloadHandlerTexturePtr = *(IntPtr*)(request.DownloadHandler + 16);
+                    IntPtr texture = result != 1 ? IntPtr.Zero : *(IntPtr*)DownloadHandlerTexture_CUSTOM_InternalGetTextureNative(nativeDownloadHandlerTexturePtr);
                     request.Callback(texture);
                     webRequestDispose.Invoke(request.WebRequest);
                     asyncLoadTextureRequests.RemoveAt(i);
@@ -1325,8 +1403,8 @@ namespace YgoMasterClient
         static void LoadCustomMaterialAsync(IntPtr thisPtr, IntPtr pathPtr, IntPtr systemTypeInstance, IntPtr completeHandler, bool disableErrorNotify, string path, string loadPath, string customAssetPath, IntPtr resourcePtr, AssetType assetType)
         {
             // TODO: Correct cleanup
-            uint resourcePtrHandle = Import.Handler.il2cpp_gchandle_new(resourcePtr, true);
-            uint completeHandlerHandle = Import.Handler.il2cpp_gchandle_new(completeHandler, true);
+            IntPtr resourcePtrHandle = Import.Handler.il2cpp_gchandle_new(resourcePtr, true);
+            IntPtr completeHandlerHandle = Import.Handler.il2cpp_gchandle_new(completeHandler, true);
 
             string baseMat = null;
             const string baseMatKey = "BaseMat";
@@ -1363,7 +1441,7 @@ namespace YgoMasterClient
                 }
                 existingAssetPath = new IL2String("Images/ProfileFrame/ProfileFrameMat" + baseMat).ptr;
             }
-            uint existingAssetPathHandle = Import.Handler.il2cpp_gchandle_new(existingAssetPath, true);
+            IntPtr existingAssetPathHandle = Import.Handler.il2cpp_gchandle_new(existingAssetPath, true);
 
             uint crc = hookLoad.Original(thisPtr, existingAssetPath, IntPtr.Zero, IntPtr.Zero, false);
             if (!resourceDictionary.ContainsKey((int)crc))
@@ -1405,7 +1483,7 @@ namespace YgoMasterClient
                 }
                 IL2Array<IntPtr> assetsArray = new IL2Array<IntPtr>(1, objectClassInfo);
                 assetsArray[0] = UnityEngine.UnityObject.Instantiate(existingObj);
-                uint assetsGcHandle = Import.Handler.il2cpp_gchandle_new(assetsArray.ptr, true);
+                IntPtr assetsGcHandle = Import.Handler.il2cpp_gchandle_new(assetsArray.ptr, true);
 
                 // TODO: Load both textures at the same time (and during the Load call)
                 string assetName = Path.GetFileNameWithoutExtension(customAssetPath);
@@ -1897,10 +1975,10 @@ namespace YgoMasterClient
             return result != null ? result.ptr : IntPtr.Zero;
         }
 
-        public static IntPtr GetAsset(string path)
+        public static IntPtr GetSpriteFromAsset(string path)
         {
             IntPtr mgr = fieldResourceManagerInstance.GetValue().ptr;
-            IL2Object result = methodGetAsset.Invoke(mgr, new IntPtr[] { new IL2String(path).ptr, IntPtr.Zero });
+            IL2Object result = methodGetAsset.Invoke(mgr, new IntPtr[] { new IL2String(path).ptr, spriteClassInfo.ptr });
             return result != null ? result.ptr : IntPtr.Zero;
         }
 

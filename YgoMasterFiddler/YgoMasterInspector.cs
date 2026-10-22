@@ -219,14 +219,12 @@ namespace YgoMaster
                 result.AppendLine(headers);
                 result.AppendLine();
                 result.AppendLine(str);
-                control.Text = result.ToString();
+                control.Text = result.ToString().Replace("\r", "");
 
                 if (Directory.Exists(updateDir))
                 {
-                    File.AppendAllText(Path.Combine(updateDir, "dllog.txt"), headers.TrimEnd('\r', '\n') + Environment.NewLine + str + Environment.NewLine + Environment.NewLine +
-                        (request ? string.Empty : "---------------------------------------" + Environment.NewLine + Environment.NewLine));
-
-                    //File.AppendAllText(Path.Combine(updateDir, "dllog.txt"), headers.TrimEnd('\r', '\n') + Environment.NewLine + str + Environment.NewLine + Environment.NewLine);
+                    File.AppendAllText(Path.Combine(updateDir, "dllog.txt"), headers.TrimEnd('\r', '\n') + "\n" + str + "\n\n" +
+                        (request ? string.Empty : "---------------------------------------\n\n"));
                 }
             }
             else
@@ -265,14 +263,14 @@ namespace YgoMaster
                             {
                                 //Dictionary<string, object> bodyDict = MessagePack.Unpack(bodyBuffer.ToArray()) as Dictionary<string, object>;
                                 object bodyUnpacked = MessagePack.Unpack(bodyBuffer.ToArray());
-                                return Json.Serialize(dict) + Environment.NewLine + "cmd:" + cmd + Environment.NewLine + Json.Serialize(bodyUnpacked);
+                                return Json.Serialize(dict) + "\ncmd:" + cmd + "\n" + Json.Serialize(bodyUnpacked);
                             }
                             catch
                             {
                             }
                         }
                     }
-                    return Json.Serialize(dict) + Environment.NewLine + "cmd:" + cmd;
+                    return Json.Serialize(dict) + "\ncmd:" + cmd;
                 }
                 else
                 {
@@ -353,7 +351,7 @@ namespace YgoMaster
                     }
                 }
             }
-            return string.Join(Environment.NewLine, entries);
+            return string.Join("\n", entries);
         }
 
         public static void HandleRecvData(Pvp.Command cmd, byte[] buffer, List<string> entries)
@@ -485,6 +483,22 @@ namespace YgoMaster
                                                 File.WriteAllText(Path.Combine(updateDir, "Solo.json"), FormatJson(MiniJSON.Json.Serialize(dictTemp)));
                                             }
                                         }
+                                        if (masterData.ContainsKey("CardFile") && masterData["CardFile"] as Dictionary<string, object> != null)
+                                        {
+                                            string cardFilesDir = Path.Combine(updateDir, "CardFiles");
+                                            try
+                                            {
+                                                Directory.CreateDirectory(cardFilesDir);
+                                            }
+                                            catch
+                                            {
+                                            }
+                                            Dictionary<string, object> cardFileData = masterData["CardFile"] as Dictionary<string, object>;
+                                            foreach (KeyValuePair<string, object> cardFileEntry in cardFileData)
+                                            {
+                                                File.WriteAllText(Path.Combine(cardFilesDir, cardFileEntry.Key + ".json"), FormatJson(MiniJSON.Json.Serialize(cardFileEntry.Value)));
+                                            }
+                                        }
                                     }
                                     if (data.ContainsKey("Duel") && data["Duel"] as Dictionary<string, object> != null)
                                     {
@@ -512,21 +526,36 @@ namespace YgoMaster
                                             {
                                                 Dictionary<string, object> chapterData;
                                                 int chapterId;
-                                                if (int.TryParse(chapter.Key, out chapterId) && chapterId > 0 && (chapterData = chapter.Value as Dictionary<string, object>) != null &&
-                                                    chapterData.ContainsKey("npc_deck_id"))
+                                                if (int.TryParse(chapter.Key, out chapterId) && chapterId > 0 && (chapterData = chapter.Value as Dictionary<string, object>) != null)
                                                 {
-                                                    int npcDeckId = (int)Convert.ChangeType(chapterData["npc_deck_id"], typeof(int));
-                                                    if (npcDeckId > 0)
+                                                    if (chapterData.ContainsKey("npc_deck_id"))
                                                     {
-                                                        string soloDeckIdsDir = Path.Combine(updateDir, "SoloNpcDeckIds");
+                                                        int npcDeckId = (int)Convert.ChangeType(chapterData["npc_deck_id"], typeof(int));
+                                                        if (npcDeckId > 0)
+                                                        {
+                                                            string soloDeckIdsDir = Path.Combine(updateDir, "SoloNpcDeckIds");
+                                                            try
+                                                            {
+                                                                Directory.CreateDirectory(soloDeckIdsDir);
+                                                            }
+                                                            catch
+                                                            {
+                                                            }
+                                                            File.WriteAllText(Path.Combine(soloDeckIdsDir, chapterId + ".txt"), npcDeckId.ToString());
+                                                        }
+                                                    }
+                                                    if (chapterData.ContainsKey("movie"))
+                                                    {
+                                                        string soloMoviesDir = Path.Combine(updateDir, "SoloMovies");
                                                         try
                                                         {
-                                                            Directory.CreateDirectory(soloDeckIdsDir);
+                                                            Directory.CreateDirectory(soloMoviesDir);
                                                         }
                                                         catch
                                                         {
                                                         }
-                                                        File.WriteAllText(Path.Combine(soloDeckIdsDir, chapterId + ".txt"), npcDeckId.ToString());
+                                                        (chapterData["movie"] as Dictionary<string, object>)["url"] = "http://localhost/" + chapterId + ".mp4";
+                                                        File.WriteAllText(Path.Combine(soloMoviesDir, chapterId + ".json"), "{\"movie\":" + MiniJSON.Json.Serialize(chapterData["movie"]) + "}");
                                                     }
                                                 }
                                             }
@@ -664,9 +693,9 @@ namespace YgoMaster
             var result =
                 from ch in json
                 let quotes = ch == '"' ? quoteCount++ : quoteCount
-                let lineBreak = ch == ',' && quotes % 2 == 0 ? ch + Environment.NewLine + String.Concat(Enumerable.Repeat(INDENT_STRING, indentation)) : null
-                let openChar = ch == '{' || ch == '[' ? ch + Environment.NewLine + String.Concat(Enumerable.Repeat(INDENT_STRING, ++indentation)) : (ch == ':' && quotes % 2 == 0 ? ": " : ch.ToString())
-                let closeChar = ch == '}' || ch == ']' ? Environment.NewLine + String.Concat(Enumerable.Repeat(INDENT_STRING, --indentation)) + ch : ch.ToString()
+                let lineBreak = ch == ',' && quotes % 2 == 0 ? ch + "\n" + String.Concat(Enumerable.Repeat(INDENT_STRING, indentation)) : null
+                let openChar = ch == '{' || ch == '[' ? ch + "\n" + String.Concat(Enumerable.Repeat(INDENT_STRING, ++indentation)) : (ch == ':' && quotes % 2 == 0 ? ": " : ch.ToString())
+                let closeChar = ch == '}' || ch == ']' ? "\n" + String.Concat(Enumerable.Repeat(INDENT_STRING, --indentation)) + ch : ch.ToString()
                 select lineBreak == null ? openChar.Length > 1 ? openChar : closeChar : lineBreak;
             return String.Concat(result);
         }

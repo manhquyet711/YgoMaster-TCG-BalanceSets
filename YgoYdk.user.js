@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yu-Gi-Oh! Card Database to YDK(e)
 // @namespace    https://github.com/pixeltris/YgoMaster
-// @version      1.1
+// @version      1.2
 // @description  Adds YDK / YDKe buttons to the official "Yu-Gi-Oh! Card Database" website
 // @author       pixeltris
 // @match        *://*.db.yugioh-card.com/yugiohdb/member_deck.action*
@@ -118,10 +118,10 @@
                 updateCards();
             }
         }
-        fetch('https://raw.githubusercontent.com/pixeltris/YgoMaster/master/Build/Data/CardList.json')
+        fetch('https://raw.githubusercontent.com/pixeltris/YgoMaster/master/YgoMaster/Data/CardList.json')
             .then(response => response.json())
             .then(data => onLoadedAllCards(data));
-        fetch('https://raw.githubusercontent.com/pixeltris/YgoMaster/master/Build/Data/YdkIds.txt')
+        fetch('https://raw.githubusercontent.com/pixeltris/YgoMaster/master/YgoMaster/Data/YdkIds.txt')
             .then(response => response.text())
             .then(data => onLoadedYdkIds(data));
     }
@@ -143,7 +143,7 @@
             }
             var allLinks = imageTables[i].querySelectorAll('a');
             for (var j = 0; j < allLinks.length; j++) {
-                var cid = new URL(allLinks[j].href).searchParams.get('cid');
+                var cid = new URL(allLinks[j].href).searchParams.get('cid') | 0;
                 if (cid) {
                     if (allCards[cid]) {
                         cardList.push(cid);

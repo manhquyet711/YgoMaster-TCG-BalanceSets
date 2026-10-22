@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>YgoMaster</RootNamespace>
     <AssemblyName>YgoMaster</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acts\Act_Billing.cs" />
+    <Compile Include="Acts\Act_CardFile.cs" />
     <Compile Include="Acts\Act_Craft.cs" />
     <Compile Include="Acts\Act_Duel.cs" />
     <Compile Include="Acts\Act_Friend.cs" />
@@ -61,6 +63,7 @@
     <Compile Include="GameServer.Multiplayer.cs" />
     <Compile Include="Infos\DuelRoom.cs" />
     <Compile Include="Infos\TradeInfo.cs" />
+    <Compile Include="Infos\CardFile.cs" />
     <Compile Include="Lib\LinearCongruentialGenerator.cs" />
     <Compile Include="Lib\ProcessCommandLine.cs" />
     <Compile Include="Net\Message\ConnectionRequestMessage.cs" />

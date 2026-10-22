@@ -245,6 +245,10 @@ namespace YgoMasterClient
         static Hook<Del_DLL_DuelChangeCardIDByUniqueID> hookDLL_DuelChangeCardIDByUniqueID;
         delegate void Del_DLL_SetRareByUniqueID(int uniqueId, int rare);
         static Hook<Del_DLL_SetRareByUniqueID> hookDLL_SetRareByUniqueID;
+        delegate bool Del_DLL_DuelGetCantActIcon(int player, int locate, int index, int flag);
+        static Hook<Del_DLL_DuelGetCantActIcon> hookDLL_DuelGetCantActIcon;
+        delegate bool Del_DLL_DuelIsThisMaximumMode(int player, int locate);
+        static Hook<Del_DLL_DuelIsThisMaximumMode> hookDLL_DuelIsThisMaximumMode;
 
         static void InitProxyFunctions(IntPtr lib)
         {
@@ -365,6 +369,8 @@ namespace YgoMasterClient
             hookDLL_DuelGetAttachedEffectList = new Hook<Del_DLL_DuelGetAttachedEffectList>(DLL_DuelGetAttachedEffectList, PInvoke.GetProcAddress(lib, "DLL_DuelGetAttachedEffectList"));
             hookDLL_DuelChangeCardIDByUniqueID = new Hook<Del_DLL_DuelChangeCardIDByUniqueID>(DLL_DuelChangeCardIDByUniqueID, PInvoke.GetProcAddress(lib, "DLL_DuelChangeCardIDByUniqueID"));
             hookDLL_SetRareByUniqueID = new Hook<Del_DLL_SetRareByUniqueID>(DLL_SetRareByUniqueID, PInvoke.GetProcAddress(lib, "DLL_SetRareByUniqueID"));
+            hookDLL_DuelGetCantActIcon = new Hook<Del_DLL_DuelGetCantActIcon>(DLL_DuelGetCantActIcon, PInvoke.GetProcAddress(lib, "DLL_DuelGetCantActIcon"));
+            hookDLL_DuelIsThisMaximumMode = new Hook<Del_DLL_DuelIsThisMaximumMode>(DLL_DuelIsThisMaximumMode, PInvoke.GetProcAddress(lib, "DLL_DuelIsThisMaximumMode"));
         }
 
         static uint DLL_CardRareGetBufferSize()
@@ -1860,6 +1866,30 @@ namespace YgoMasterClient
             else
             {
                 hookDLL_SetRareByUniqueID.Original(uniqueId, rare);
+            }
+        }
+
+        static bool DLL_DuelGetCantActIcon(int player, int locate, int index, int flag)
+        {
+            if (IsPvpDuel)
+            {
+                return false; // Ignore ???
+            }
+            else
+            {
+                return hookDLL_DuelGetCantActIcon.Original(player, locate, index, flag);
+            }
+        }
+
+        static bool DLL_DuelIsThisMaximumMode(int player, int locate)
+        {
+            if (IsPvpDuel)
+            {
+                return pvpEngineState.GetValue(PvpOperationType.DLL_DuelIsThisMaximumMode, player, locate) != 0;
+            }
+            else
+            {
+                return hookDLL_DuelIsThisMaximumMode.Original(player, locate);
             }
         }
     }

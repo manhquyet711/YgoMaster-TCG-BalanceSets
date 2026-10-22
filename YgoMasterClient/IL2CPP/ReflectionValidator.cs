@@ -96,7 +96,7 @@ namespace IL2CPP
             catch
             {
             }
-            File.WriteAllText(GetDumpPath(), MiniJSON.Json.Serialize(json));
+            File.WriteAllText(GetDumpPath(), MiniJSON.Json.Serialize(json) + "\n");
             Console.WriteLine("Dumped to '" + GetDumpPath() + "'");
         }
 
@@ -198,7 +198,7 @@ namespace IL2CPP
                             else
                             {
                                 Log("Signature of method '" + signature.Name + "' in type '" + string.Join(".", signature.Class) + "' / assembly '" + signature.Assembly + "'" +
-                                    " does not match. Expected: '" + signature.Signature + "' Found: " + string.Join(Environment.NewLine, methods.Select(x => x.GetSignature())));
+                                    " does not match. Expected: '" + signature.Signature + "' Found: " + string.Join("\n", methods.Select(x => x.GetSignature())));
                             }
                         }
                         break;
@@ -218,7 +218,14 @@ namespace IL2CPP
             {
                 sig.Append("static ");
             }
-            sig.Append(property.GetGetMethod().ReturnType.Name);
+            if (property.GetGetMethod() != null)
+            {
+                sig.Append(property.GetGetMethod().ReturnType.Name);
+            }
+            else if (property.GetSetMethod() != null)
+            {
+                sig.Append(property.GetSetMethod().GetParameters()[0].Type.Name);
+            }
             return sig.ToString();
         }
 
@@ -233,7 +240,7 @@ namespace IL2CPP
             {
                 sig.Append("static ");
             }
-            sig.Append(field.Name);
+            sig.Append(field.ReflectedType.Name);
             return sig.ToString();
         }
 
@@ -276,7 +283,7 @@ namespace IL2CPP
 
         static void Log(string str)
         {
-            File.AppendAllText(GetLogPath(), str + Environment.NewLine);
+            File.AppendAllText(GetLogPath(), str + "\n");
             Console.WriteLine(str);
         }
 

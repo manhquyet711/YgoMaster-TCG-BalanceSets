@@ -132,7 +132,7 @@ namespace YgomGame.Solo
 
         static void SelectTurn(IntPtr thisPtr)
         {
-            if (YgomGame.Room.RoomCreateViewController.IsHacked)
+            if (YgomGame.Room.RoomCreateViewController.IsHacked || YgomGame.Room.RoomCreateViewController.HasInstantDuelStarted)
             {
                 DuelSettings settings = YgomGame.Room.RoomCreateViewController.Settings;
                 if (settings != null)
@@ -208,7 +208,7 @@ namespace YgomSystem.Network
 
         static IntPtr Duel_begin(IntPtr rulePtr)
         {
-            if (YgomGame.Room.RoomCreateViewController.IsHacked)
+            if (YgomGame.Room.RoomCreateViewController.IsHacked || YgomGame.Room.RoomCreateViewController.HasInstantDuelStarted)
             {
                 Dictionary<string, object> rule = MiniJSON.Json.Deserialize(YgomMiniJSON.Json.Serialize(rulePtr)) as Dictionary<string, object>;
                 if (rule == null)
@@ -264,6 +264,30 @@ namespace YgomSystem.Network
             {
                 param["turn"] = DuelDll.DLL_DuelGetTurnNum() + 1;
                 param["replayData"] = GetReplayDataString(param);
+            }
+            if (ClientSettings.InstantDuel)
+            {
+                // Use Exit Code to pass Duel Result to the Loader
+                if (Convert.ToInt32(param["res"]) == (int)DuelResultType.Win)
+                {
+                    Environment.Exit(2);
+                }
+                else if (Convert.ToInt32(param["res"]) == (int)DuelResultType.Draw)
+                {
+                    Environment.Exit(4);
+                }
+                else if (Convert.ToInt32(param["res"]) == (int)DuelResultType.Lose)
+                {
+                    Environment.Exit(3);
+                }
+                else if (Convert.ToInt32(param["res"]) == (int)DuelResultType.Time)
+                {
+                    Environment.Exit(5);
+                }
+                else
+                {
+                    Environment.Exit(6);
+                }
             }
             paramPtr = YgomMiniJSON.Json.Deserialize(MiniJSON.Json.Serialize(param));
             return hookDuel_end.Original(paramPtr);
@@ -394,7 +418,7 @@ namespace YgomSystem.Network
 
                 YgomGame.Menu.ProfileReplayViewController.OnNetworkComplete(thisPtr, cmd);
 
-                if (YgomGame.Room.RoomCreateViewController.IsHacked)
+                if (YgomGame.Room.RoomCreateViewController.IsHacked || YgomGame.Room.RoomCreateViewController.HasInstantDuelStarted)
                 {
                     switch (cmd)
                     {
@@ -445,6 +469,7 @@ namespace YgomSystem.Network
                                 }
                                 else
                                 {
+                                    YgomGame.Menu.ProfileViewController.HideLoading();// Hide loading wheel / unblock input
                                     YgomSystem.UI.ViewControllerManager.PushChildViewController(manager, "Solo/SoloStartProduction");
                                 }
                             }
@@ -502,7 +527,7 @@ namespace YgomGame.Duel
 
         static int get_rivalType(IntPtr thisPtr)
         {
-            if (YgomGame.Room.RoomCreateViewController.IsHacked)
+            if (YgomGame.Room.RoomCreateViewController.IsHacked || YgomGame.Room.RoomCreateViewController.HasInstantDuelStarted)
             {
                 if (YgomGame.Room.RoomCreateViewController.Settings.OpponentType == 1)
                 {
@@ -656,6 +681,7 @@ namespace YgomGame.Room
         static Dictionary<IntPtr, string[]> buttonsActionSheets = new Dictionary<IntPtr, string[]>();
 
         public static bool IsNextInstanceHacked = false;
+        public static bool HasInstantDuelStarted = false;
         public static bool IsHacked
         {
             get
@@ -755,6 +781,9 @@ namespace YgomGame.Room
         {
             if (IsHacked)
             {
+                // Need to show loading wheel to block input / prevent multiple Solo.start (if this fails it'll double stack a Solo/SoloStartProduction and get softlocked after the duel)
+                YgomGame.Menu.ProfileViewController.ShowLoading();
+
                 // Update the duel settings
                 duelSettingsManager.SettingsClone = null;
                 duelSettingsManager.DuelSettingsFromUI();
@@ -773,6 +802,66 @@ namespace YgomGame.Room
             {
                 hookCallAPIRoomCreate.Original(thisPtr);
             }
+        }
+
+        public static void InstantDuel()
+        {
+            duelSettingsManager.InitDuelSettings();
+            // Force SettingsClone to refresh
+            duelSettingsManager.SettingsClone = null;
+            DuelSettings settings = duelSettingsManager.SettingsClone;
+
+            settings.Deck[0].Clear();
+            settings.Deck[0].File = Utils.GetValue<string>(ClientSettings.InstantDuelConfig, "deck_player");
+            settings.Deck[0].Load();
+            settings.Deck[1].Clear();
+            settings.Deck[1].File = Utils.GetValue<string>(ClientSettings.InstantDuelConfig, "deck_opponent");
+            settings.Deck[1].Load();
+
+            // default cpu settings Konami uses for their Solo Mode
+            settings.cpu = 100;
+            settings.cpuflag = "Light";
+            
+            // the AI plays too passive on the first turn, so we make the player go first
+            settings.FirstPlayer = 0;
+
+            List<int> hnum = Utils.GetIntList(ClientSettings.InstantDuelConfig, "hnum");
+            if (hnum.Count == 2)
+            {
+                settings.hnum[0] = hnum[0];
+                settings.hnum[1] = hnum[1];
+            }
+
+            List<int> life = Utils.GetIntList(ClientSettings.InstantDuelConfig, "life");
+            if (life.Count == 2)
+            {
+                settings.life[0] = life[0];
+                settings.life[1] = life[1];
+            }
+
+            settings.duel_object[0] = 0;
+            settings.duel_object[1] = 0;
+            settings.SharedField = Utils.GetValue<int>(ClientSettings.InstantDuelConfig, "field", 1090001);
+            // call this again so the field and field objects are set according to SharedField
+            settings.SetRequiredDefaults();
+
+            // randomize BGM
+            settings.SetRandomBgm();
+
+            // set AI icon & name
+            settings.icon[1] = 1010039; // Another Duelist
+            settings.name[1] = Utils.GetValue<string>(ClientSettings.InstantDuelConfig, "name_opponent", "CPU");
+
+            Dictionary<string, object> data = new Dictionary<string, object>()
+            {
+                { "chapter", ClientSettings.DuelStarterLiveChapterId }
+            };
+            if (!Program.IsLive)
+            {
+                data["customduel"] = true;
+            }
+            
+            YgomSystem.Network.Request.Entry("Solo.start", MiniJSON.Json.Serialize(data));
         }
 
         static IntPtr AddLabel(IL2ListExplicit infosList, string label)
@@ -894,6 +983,8 @@ namespace YgomGame.Room
                 public IntPtr Sleeve1; public IntPtr Sleeve2; public IntPtr Field1; public IntPtr Field2; public IntPtr FieldPart1;
                 public IntPtr FieldPart2; public IntPtr Mate1; public IntPtr Mate2; public IntPtr MateBase1; public IntPtr MateBase2;
                 public IntPtr Icon1; public IntPtr Icon2; public IntPtr IconFrame1; public IntPtr IconFrame2;
+                public IntPtr Coin1; public IntPtr Coin2;
+                public IntPtr ExSleeve1; public IntPtr ExSleeve2;
                 public IntPtr Player1; /*public IntPtr Player2; public IntPtr Player3; public IntPtr Player4;*/
                 public IntPtr BGM; public IntPtr BGM1; public IntPtr BGM2; public IntPtr BGM3;
             }
@@ -926,6 +1017,14 @@ namespace YgomGame.Room
                 set
                 {
                     settingsClone = value;
+                }
+            }
+
+            public void InitDuelSettings()
+            {
+                if (settings == null)
+                {
+                    settings = new DuelSettings();
                 }
             }
 
@@ -1328,6 +1427,8 @@ namespace YgomGame.Room
                 SetTeamValue(GetButtonValueI32(buttons.Hand2), settings.hnum, 1, 3, false);
                 SetTeamValue(LookupItemName(ItemID.Category.PROTECTOR, GetButtonValueString(buttons.Sleeve1)), settings.sleeve, 0, 2, true);
                 SetTeamValue(LookupItemName(ItemID.Category.PROTECTOR, GetButtonValueString(buttons.Sleeve2)), settings.sleeve, 1, 3, true);
+                SetTeamValue(LookupItemName(ItemID.Category.PROTECTOR, GetButtonValueString(buttons.ExSleeve1)), settings.ex_sleeve, 0, 2, true);
+                SetTeamValue(LookupItemName(ItemID.Category.PROTECTOR, GetButtonValueString(buttons.ExSleeve2)), settings.ex_sleeve, 1, 3, true);
                 SetTeamValue(LookupItemName(ItemID.Category.FIELD, GetButtonValueString(buttons.Field1)), settings.mat, 0, 2, true);
                 SetTeamValue(LookupItemName(ItemID.Category.FIELD, GetButtonValueString(buttons.Field2)), settings.mat, 1, 3, true);
                 SetTeamValue(LookupItemName(ItemID.Category.FIELD_OBJ, GetButtonValueString(buttons.FieldPart1)), settings.duel_object, 0, 2, true);
@@ -1340,6 +1441,8 @@ namespace YgomGame.Room
                 SetTeamValue(LookupItemName(ItemID.Category.ICON, GetButtonValueString(buttons.Icon2)), settings.icon, 1, 3, true);
                 SetTeamValue(LookupItemName(ItemID.Category.ICON_FRAME, GetButtonValueString(buttons.IconFrame1)), settings.icon_frame, 0, 2, true);
                 SetTeamValue(LookupItemName(ItemID.Category.ICON_FRAME, GetButtonValueString(buttons.IconFrame2)), settings.icon_frame, 1, 3, true);
+                SetTeamValue(LookupItemName(ItemID.Category.COIN, GetButtonValueString(buttons.Coin1)), settings.coin, 0, 2, true);
+                SetTeamValue(LookupItemName(ItemID.Category.COIN, GetButtonValueString(buttons.Coin2)), settings.coin, 1, 3, true);
 
                 /*TODO: Fix up DeckInfo.File loading/saving so this code can be used // Reload decks which are loaded from files
                 for (int i = 0; i < settings.Deck.Length; i++)
@@ -1391,6 +1494,8 @@ namespace YgomGame.Room
                 SetButtonIndexFromI32(buttons.Hand2, settings.AreAllEqual(settings.hnum) ? -1 : settings.hnum[1]);
                 SetButtonIndexFromItemId(buttons.Sleeve1, settings.AreAllEqual(settings.sleeve) ? -1 : settings.sleeve[0]);
                 SetButtonIndexFromItemId(buttons.Sleeve2, settings.AreAllEqual(settings.sleeve) ? -1 : settings.sleeve[1]);
+                SetButtonIndexFromItemId(buttons.ExSleeve1, settings.AreAllEqual(settings.ex_sleeve) ? -1 : settings.ex_sleeve[0]);
+                SetButtonIndexFromItemId(buttons.ExSleeve2, settings.AreAllEqual(settings.ex_sleeve) ? -1 : settings.ex_sleeve[1]);
                 SetButtonIndexFromItemId(buttons.Field1, settings.AreAllEqual(settings.mat) ? -1 : settings.mat[0]);
                 SetButtonIndexFromItemId(buttons.Field2, settings.AreAllEqual(settings.mat) ? -1 : settings.mat[1]);
                 SetButtonIndexFromItemId(buttons.FieldPart1, settings.duel_object[0]);
@@ -1403,6 +1508,8 @@ namespace YgomGame.Room
                 SetButtonIndexFromItemId(buttons.Icon2, settings.icon[1]);
                 SetButtonIndexFromItemId(buttons.IconFrame1, settings.icon_frame[0]);
                 SetButtonIndexFromItemId(buttons.IconFrame2, settings.icon_frame[1]);
+                SetButtonIndexFromItemId(buttons.Coin1, settings.coin[0]);
+                SetButtonIndexFromItemId(buttons.Coin2, settings.coin[1]);
                 foreach (KeyValuePair<IntPtr, DeckInfo> deck in buttons.Decks)
                 {
                     UpdateDeckName(deck.Key, deck.Value);
@@ -1547,6 +1654,8 @@ namespace YgomGame.Room
                 buttons.Hand2 = AddButtonString(infosList, "Hand2", ClientSettings.CustomTextDuelStarterHand2, handStrings);
                 buttons.Sleeve1 = AddButtonString(infosList, "Sleeve1", ClientSettings.CustomTextDuelStarterSleeve1, GetItemNames(ItemID.Category.PROTECTOR).Values.ToArray());
                 buttons.Sleeve2 = AddButtonString(infosList, "Sleeve2", ClientSettings.CustomTextDuelStarterSleeve2, GetItemNames(ItemID.Category.PROTECTOR).Values.ToArray());
+                buttons.ExSleeve1 = AddButtonString(infosList, "ExSleeve1", ClientSettings.CustomTextDuelStarterExSleeve1, GetItemNames(ItemID.Category.PROTECTOR).Values.ToArray());
+                buttons.ExSleeve2 = AddButtonString(infosList, "ExSleeve2", ClientSettings.CustomTextDuelStarterExSleeve2, GetItemNames(ItemID.Category.PROTECTOR).Values.ToArray());
                 buttons.Field1 = AddButtonString(infosList, "Field1", ClientSettings.CustomTextDuelStarterField1, GetItemNames(ItemID.Category.FIELD).Values.ToArray());
                 buttons.Field2 = AddButtonString(infosList, "Field2", ClientSettings.CustomTextDuelStarterField2, GetItemNames(ItemID.Category.FIELD).Values.ToArray());
                 buttons.FieldPart1 = AddButtonString(infosList, "FieldPart1", ClientSettings.CustomTextDuelStarterFieldPart1, GetItemNames(ItemID.Category.FIELD_OBJ).Values.ToArray());
@@ -1559,6 +1668,8 @@ namespace YgomGame.Room
                 buttons.Icon2 = AddButtonString(infosList, "Icon2", ClientSettings.CustomTextDuelStarterIcon2, GetItemNames(ItemID.Category.ICON).Values.ToArray());
                 buttons.IconFrame1 = AddButtonString(infosList, "IconFrame1", ClientSettings.CustomTextDuelStarterIconFrame1, GetItemNames(ItemID.Category.ICON_FRAME).Values.ToArray());
                 buttons.IconFrame2 = AddButtonString(infosList, "IconFrame2", ClientSettings.CustomTextDuelStarterIconFrame2, GetItemNames(ItemID.Category.ICON_FRAME).Values.ToArray());
+                buttons.Coin1 = AddButtonString(infosList, "Coin1", ClientSettings.CustomTextDuelStarterCoin1, GetItemNames(ItemID.Category.COIN).Values.ToArray());
+                buttons.Coin2 = AddButtonString(infosList, "Coin2", ClientSettings.CustomTextDuelStarterCoin2, GetItemNames(ItemID.Category.COIN).Values.ToArray());
                 AddLabel(infosList, ClientSettings.CustomTextDuelStarterLoadSave);
                 buttons.LoadIncludingDecks = AddButtonString(infosList, "LoadIncludingDecks", ClientSettings.CustomTextDuelStarterLoadIncludingDecks, null);
                 buttons.Load = AddButtonString(infosList, "Load", ClientSettings.CustomTextDuelStarterLoad, null);
@@ -1942,11 +2053,24 @@ namespace YgomSystem.UI
 
         public static IntPtr LoadViewControllerPrefab(IntPtr thisPtr, IntPtr prefabpathPtr)
         {
-            /*if (prefabpathPtr != IntPtr.Zero)
+            if (prefabpathPtr != IntPtr.Zero)
             {
                 string prefabpath = new IL2String(prefabpathPtr).ToString();
-                Console.WriteLine("vc: " + prefabpath);
-            }*/
+                //Console.WriteLine("Load vc: " + prefabpath);
+                if (prefabpath == "Title/Title" && ClientSettings.InstantDuel)
+                {  
+                    // First we skip the Title Screen
+                    prefabpathPtr = new IL2String("GameEntry/V1/GameEntryV1").ptr;
+                }else if (prefabpath == "Home/Home" && ClientSettings.InstantDuel && !YgomGame.Room.RoomCreateViewController.HasInstantDuelStarted)
+                {
+                    // Start the Instant Duel once the Home Screen is about to load
+                    // Any earlier would cause issues like BGM not playing, Effects missing
+                    YgomGame.Room.RoomCreateViewController.HasInstantDuelStarted = true;
+                    YgomGame.Room.RoomCreateViewController.InstantDuel();
+                    prefabpathPtr = new IL2String("Solo/SoloStartProduction").ptr;
+                }
+
+            }
             return hookLoadViewControllerPrefab.Original.Invoke(thisPtr, prefabpathPtr);
         }
 

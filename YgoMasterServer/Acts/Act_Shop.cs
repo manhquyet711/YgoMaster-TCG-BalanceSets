@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +8,52 @@ namespace YgoMaster
     partial class GameServer
     {
         const int shopExtraGuaranteePackCount = 10;
+
+        int RemapCardId(int cardId, out CardStyleRarity cardStyleRarity)
+        {
+            cardStyleRarity = (CardStyleRarity)(cardId / 100000) + 1;
+            return cardId % 100000;
+        }
+
+        /// <summary>
+        /// The card pack which the packs of a bundle are drawn from
+        /// </summary>
+        ShopItemInfo GetBundlePack(ShopItemInfo bundle)
+        {
+            ShopItemInfo pack = null;
+            if (bundle.BundlePickupCardListId > 0)
+            {
+                Shop.PackShop.TryGetValue(bundle.BundlePickupCardListId, out pack);
+            }
+            if (pack == null)
+            {
+                Shop.PackShop.TryGetValue(bundle.BundleNormalCardListId, out pack);
+            }
+            return pack;
+        }
+
+        /// <summary>
+        /// The rarity guaranteed on the final card of every 10th pack of a bundle
+        /// </summary>
+        CardRarity GetBundleRarityGuarantee(ShopItemInfo bundle)
+        {
+            switch (bundle.BundleType)
+            {
+                case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_10_UR:
+                case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_NUM_URNUM_SET:
+                case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_PRIZE_LUCKY_CARD_NUM_URNUM_SET:
+                    return CardRarity.UltraRare;
+                case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_NUM_RARE_RARENUM_SET:
+                    ShopItemPrice price = bundle.Prices.FirstOrDefault();
+                    if (price != null && price.PopArgs != null && price.PopArgs.Count >= 3 && price.PopArgs[1] == (int)CardRarity.UltraRare)
+                    {
+                        return CardRarity.UltraRare;
+                    }
+                    return CardRarity.SuperRare;
+                default:
+                    return CardRarity.SuperRare;
+            }
+        }
 
         // TODO: Put this somewhere else (called by Act_ShopPurchase / SoloUpdateChapterStatus / GiveDuelReward)
         bool GiveStructureDeck(GameServerWebRequest request, int structureDeckId)
@@ -26,8 +72,10 @@ namespace YgoMaster
             HashSet<int> uniqueCardIds = new HashSet<int>();
             foreach (int cardId in cards)
             {
-                uniqueCardIds.Add(cardId);
-                request.Player.Cards.Add(cardId, 1, DisableNoDismantle ? PlayerCardKind.Dismantle : PlayerCardKind.NoDismantle, CardStyleRarity.Normal);
+                CardStyleRarity cardStyle;
+                int cid = RemapCardId(cardId, out cardStyle);
+                uniqueCardIds.Add(cid);
+                request.Player.Cards.Add(cid, 1, DisableNoDismantle ? PlayerCardKind.Dismantle : PlayerCardKind.NoDismantle, cardStyle);
             }
             Dictionary<string, object> itemsData = request.GetOrCreateDictionary("Item");
             Dictionary<string, object> itemsHave = Utils.GetOrCreateDictionary(itemsData, "have");
@@ -46,6 +94,40 @@ namespace YgoMaster
             }
             WriteCards_have(request, uniqueCardIds);
             return true;
+        }
+
+        void WritePrizeData(GameServerWebRequest request, ShopItemInfo shopItem)
+        {
+            List<object> prizes = new List<object>();
+            for (int pos = 0; pos < shopItem.Prizes.Count; pos++)
+            {
+                ShopBundlePrize prize = shopItem.Prizes[pos];
+                Dictionary<string, object> prizeData = new Dictionary<string, object>()
+                {
+                    { "packId", prize.PackId },
+                    { "nameTextId", prize.NameText },
+                    { "normalCardListId", prize.CardListId },
+                    { "pickupCardListId", 0 },
+                    { "packImageName", prize.PackImageName },
+                };
+                int obtainedCardId = request.Player.ShopState.GetPrizeCardId(shopItem, pos);
+                if (obtainedCardId > 0)
+                {
+                    prizeData["unlockData"] = new Dictionary<string, object>()
+                    {
+                        { "pos", pos },
+                        { "obtain_ur", obtainedCardId }
+                    };
+                }
+                prizes.Add(prizeData);
+            }
+            Dictionary<string, object> allPrizeData = Utils.GetOrCreateDictionary(request.GetOrCreateDictionary("Prize"), "PrizeData");
+            allPrizeData[shopItem.PrizeId.ToString()] = new Dictionary<string, object>()
+            {
+                { "shop_id", shopItem.ShopId },
+                { "cover_path", shopItem.PrizeCoverPath },
+                { "Prizes", prizes }
+            };
         }
 
         void Act_ShopGetList(GameServerWebRequest request, int targetShopId = 0)
@@ -78,6 +160,7 @@ namespace YgoMaster
                 int buyLimit = 0;
                 int have = 0;
                 int targetCategory = 0;
+                int targetId = shopItem.Id;
                 Dictionary<string, object> data = new Dictionary<string, object>();
                 switch (shopItem.Category)
                 {
@@ -154,8 +237,7 @@ namespace YgoMaster
                                 }
                                 string descStr = Utils.FixIdString(string.Join("\n", desc));
                                 data["descShortTextId"] = descStr;
-                                //data["descFullTextId"] = descStr;
-								data["descFullTextId"] = updateShopText(shopItem.DescFullText);
+                                data["descFullTextId"] = updateShopText(shopItem.DescFullText);
                             }
                             else
                             {
@@ -218,8 +300,22 @@ namespace YgoMaster
                             {
                                 case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_NUM_URNUM_SET:
                                 case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_NUM_RARE_RARENUM_SET:
+                                case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_PRIZE_LUCKY_CARD_NUM_URNUM_SET:
                                     data["isMulti"] = true;
                                     break;
+                            }
+                            if (shopItem.Prizes.Count > 0)
+                            {
+                                // targetCategory is the prize type and targetId is the key into Prize.PrizeData
+                                targetCategory = (int)shopItem.PrizeType;
+                                targetId = shopItem.PrizeId;
+                                data["is_prize"] = true;
+                                data["prize_type"] = (int)shopItem.PrizeType;
+                                if (shopItem.PrizeProbGachaId > 0)
+                                {
+                                    data["prob_gacha_id"] = shopItem.PrizeProbGachaId;
+                                }
+                                WritePrizeData(request, shopItem);
                             }
                             List<Dictionary<string, object>> setItems = new List<Dictionary<string, object>>();
                             foreach (ShopBundleItem item in shopItem.SetItems)
@@ -237,7 +333,7 @@ namespace YgoMaster
                         break;
                 }
                 data["targetCategory"] = targetCategory;
-                data["targetId"] = shopItem.Id;
+                data["targetId"] = targetId;
                 data["shopId"] = shopItem.ShopId;
                 data["category"] = (int)shopItem.Category;
                 data["productType"] = (int)shopItem.ProductType;
@@ -266,6 +362,10 @@ namespace YgoMaster
                 data["list_button_price"] = 0;
                 data["confirm_text_id"] = new string[0];// Custom text for the "Purchase Confirmation" popup (entries are line breaked)
                 data["isNew"] = isNew;
+                if (!string.IsNullOrWhiteSpace(shopItem.DetailPath))
+                {
+                    data["detailPath"] = shopItem.DetailPath;
+                }
 
                 Dictionary<string, object> prices = new Dictionary<string,object>();
                 foreach (ShopItemPrice price in shopItem.Prices)
@@ -311,6 +411,7 @@ namespace YgoMaster
                         {
                             case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_10_UR:
                             case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_NUM_URNUM_SET:
+                            case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_PRIZE_LUCKY_CARD_NUM_URNUM_SET:
                                 buttonType = ShopItemPriceButtonType.Pink;
                                 break;
                             case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_10_SR:
@@ -435,11 +536,15 @@ namespace YgoMaster
                     { "AccessoryShop", accessoryShop },
                     { "SpecialShop", specialShop },
                 };
-                request.Remove("Shop");
+                request.Remove("Shop", "Prize");
                 if (request.Player.ShopState.ClearNew())
                 {
                     SavePlayer(request.Player);
                 }
+            }
+            if (Shop.PerPackRarities)
+            {
+                request.Remove("Gacha.cardList");
             }
         }
 
@@ -599,15 +704,7 @@ namespace YgoMaster
             if (shopItem.Category == ShopCategory.Special)
             {
                 isBundle = true;
-                targetShopItem = null;
-                if (shopItem.BundlePickupCardListId > 0)
-                {
-                    Shop.PackShop.TryGetValue(shopItem.BundlePickupCardListId, out targetShopItem);
-                }
-                if (targetShopItem == null)
-                {
-                    Shop.PackShop.TryGetValue(shopItem.BundleNormalCardListId, out targetShopItem);
-                }
+                targetShopItem = GetBundlePack(shopItem);
                 switch (shopItem.BundleType)
                 {
                     case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_10_SR:
@@ -630,6 +727,7 @@ namespace YgoMaster
                         rarityGuaranteedCount = price.PopArgs[2];
                         break;
                     case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_CARDPACK_NUM_URNUM_SET:
+                    case ShopBundleType.IDS_SHOP_BUY_BUTTON_ADS_PRIZE_LUCKY_CARD_NUM_URNUM_SET:
                         if (price.PopArgs == null || price.PopArgs.Count < 2)
                         {
                             Utils.LogWarning("Bad POPArgs for shop bundle " + shopItem.Id);
@@ -681,6 +779,34 @@ namespace YgoMaster
             HashSet<ShopItemInfo> pickupPacks = new HashSet<ShopItemInfo>();
             bool showSecretFoundResult = false;
             bool pulledUltraRare = false;
+            Action<int, CardRarity, HashSet<int>, HashSet<int>> findSecretPacks = (int secretCardId, CardRarity secretCardRarity, HashSet<int> cardFoundSecrets, HashSet<int> cardFoundSecretsExtend) =>
+            {
+                List<ShopItemInfo> secretPacks;
+                if (secretCardRarity >= CardRarity.SuperRare && Shop.SecretPacksByCardId.TryGetValue(secretCardId, out secretPacks))
+                {
+                    foreach (ShopItemInfo secretPack in secretPacks)
+                    {
+                        switch (secretPack.SecretType)
+                        {
+                            case ShopItemSecretType.FindOrCraft:
+                            case ShopItemSecretType.Find:
+                                if (request.Player.ShopState.GetAvailability(Shop, secretPack) == PlayerShopItemAvailability.Available)
+                                {
+                                    cardFoundSecretsExtend.Add(secretPack.ShopId);
+                                }
+                                else
+                                {
+                                    request.Player.ShopState.New(secretPack);
+                                    foundSecrets.Add(secretPack.ShopId);
+                                    cardFoundSecrets.Add(secretPack.ShopId);
+                                }
+                                request.Player.ShopState.Unlock(secretPack);
+                                showSecretFoundResult = true;
+                                break;
+                        }
+                    }
+                }
+            };
             if (!isUltraRareGuaranteed && !isBundle)
             {
                 isUltraRareGuaranteed = packCount == shopExtraGuaranteePackCount && request.Player.ShopState.IsUltraRareGuaranteed(shopItem.Id) &&
@@ -917,31 +1043,7 @@ namespace YgoMaster
                     cardIdsToUpdate.Add(foundCardId);
                     HashSet<int> thisCardFoundSecrets = new HashSet<int>();
                     HashSet<int> thisCardFoundSecretsExtend = new HashSet<int>();
-                    List<ShopItemInfo> secretPacks;
-                    if (rarity >= CardRarity.SuperRare && Shop.SecretPacksByCardId.TryGetValue(foundCardId, out secretPacks))
-                    {
-                        foreach (ShopItemInfo secretPack in secretPacks)
-                        {
-                            switch (secretPack.SecretType)
-                            {
-                                case ShopItemSecretType.FindOrCraft:
-                                case ShopItemSecretType.Find:
-                                    if (request.Player.ShopState.GetAvailability(Shop, secretPack) == PlayerShopItemAvailability.Available)
-                                    {
-                                        thisCardFoundSecretsExtend.Add(secretPack.ShopId);
-                                    }
-                                    else
-                                    {
-                                        request.Player.ShopState.New(secretPack);
-                                        foundSecrets.Add(secretPack.ShopId);
-                                        thisCardFoundSecrets.Add(secretPack.ShopId);
-                                    }
-                                    request.Player.ShopState.Unlock(secretPack);
-                                    showSecretFoundResult = true;
-                                    break;
-                            }
-                        }
-                    }
+                    findSecretPacks(foundCardId, rarity, thisCardFoundSecrets, thisCardFoundSecretsExtend);
                     List<ShopItemInfo> additionalUnlockedSecrets = targetShopItem.DoUnlockSecrets(request.Player, Shop);
                     if (additionalUnlockedSecrets != null && additionalUnlockedSecrets.Count > 0)
                     {
@@ -1054,6 +1156,77 @@ namespace YgoMaster
                     }
                 }
 
+                // Prizes (e.g. the "Lucky Card") are each drawn as a 1 card pack after the regular packs
+                // NOTE: The shop data doesn't say what finish the lucky card is. It's hardcoded as Royal Finish as that's what
+                // the "Charmer" bundle (shop id 40022018, the first lucky card bundle) gave. A future lucky card bundle could be different.
+                const string luckyCardLabelTextId = "IDS_SHOP_CARDPACK_OPENMOVIE_LABEL_PRIZE_LUCKY_CARD";
+                for (int pos = 0; pos < shopItem.Prizes.Count; pos++)
+                {
+                    ShopBundlePrize prize = shopItem.Prizes[pos];
+                    int prizeCardId = prize.Cards[rand.Next(prize.Cards.Count)];
+                    CardRarity prizeRarity;
+                    if (!TryGetCardRarity(prizeCardId, CardRare, out prizeRarity))
+                    {
+                        Utils.LogWarning("Unknown rarity for prize card " + prizeCardId + " on shop " + shopItem.ShopId);
+                        prizeRarity = CardRarity.UltraRare;
+                    }
+                    bool isNewCard = false;
+                    if (request.Player.Cards.GetCount(prizeCardId) == 0 || newCardIds.Contains(prizeCardId))
+                    {
+                        isNewCard = true;
+                        newCardIds.Add(prizeCardId);
+                    }
+                    request.Player.Cards.Add(prizeCardId, 1, DisableNoDismantle ? PlayerCardKind.Dismantle : PlayerCardKind.NoDismantle, CardStyleRarity.Royal);
+                    cardIdsToUpdate.Add(prizeCardId);
+                    request.Player.ShopState.SetPrizeCardId(shopItem, pos, prizeCardId);
+                    HashSet<int> prizeFoundSecrets = new HashSet<int>();
+                    HashSet<int> prizeFoundSecretsExtend = new HashSet<int>();
+                    findSecretPacks(prizeCardId, prizeRarity, prizeFoundSecrets, prizeFoundSecretsExtend);
+                    packs.Add(new Dictionary<string, object>()
+                    {
+                        { "packInfo", new List<object>()
+                        {
+                            new Dictionary<string, object>()
+                            {
+                                { "effects", new Dictionary<string, object>()
+                                {
+                                    { "thunder", 3 },
+                                    { "rarityup", (int)prizeRarity },
+                                    { "cut", 2 },
+                                    { "rarityupBg", (int)prizeRarity },
+                                    { "rarity", (int)prizeRarity },
+                                    { "labelType", 1 },
+                                    { "labelTextId", luckyCardLabelTextId },
+                                } },
+                                { "cardInfo", new List<object>()
+                                {
+                                    new Dictionary<string, object>()
+                                    {
+                                        { "mrk", prizeCardId },
+                                        { "rarity", (int)prizeRarity },
+                                        { "backSideRarity", (int)prizeRarity },
+                                        { "foundSecrets", prizeFoundSecrets.ToArray() },
+                                        { "extendSecrets", prizeFoundSecretsExtend.ToArray() },
+                                        { "new", isNewCard },
+                                        { "premiumType", (int)CardStyleRarity.Royal },
+                                        { "extraGroupId", shopItem.PrizeId },// Links the card to "extraCardGroups" on the result screen
+                                    }
+                                } },
+                            }
+                        } },
+                        { "effects", new Dictionary<string, object>()
+                        {
+                            { "isPickup", false },
+                            { "imageName", prize.PackImageName },
+                            { "smokeType", 3 }
+                        } },
+                        { "options", new Dictionary<string, object>()
+                        {
+                            { "skippable", false }
+                        } },
+                    });
+                }
+
                 Dictionary<string, object> drawInfo = Utils.GetOrCreateDictionary(gacha, "drawInfo");
                 drawInfo["packs"] = packs;
                 drawInfo["options"] = new Dictionary<string, object>()
@@ -1061,6 +1234,7 @@ namespace YgoMaster
                     { "skippable", true },
                 };
 
+                int cardFileItemId = 0;
                 List<object> setItems = new List<object>();
                 if (isBundle)
                 {
@@ -1079,9 +1253,25 @@ namespace YgoMaster
                                 break;
                             case ItemID.Category.CARD:
                                 {
-                                    request.Player.Cards.Add(item.ItemId, item.Num, PlayerCardKind.NoDismantle, CardStyleRarity.Normal);
-                                    cardIdsToUpdate.Add(item.ItemId);
+                                    CardStyleRarity cardStyle;
+                                    int cid = RemapCardId(item.ItemId, out cardStyle);
+                                    request.Player.Cards.Add(cid, item.Num, DisableNoDismantle ? PlayerCardKind.Dismantle : PlayerCardKind.NoDismantle, cardStyle);
+                                    cardIdsToUpdate.Add(cid);
                                     added = true;
+                                }
+                                break;
+                            case ItemID.Category.CARD_FILE:
+                                {
+                                    if (!request.Player.CardFiles.Files.ContainsKey(item.ItemId))
+                                    {
+                                        UserCardFileStatus userCardFileStatus = new UserCardFileStatus(item.ItemId);
+                                        request.Player.CardFiles.Files[item.ItemId] = userCardFileStatus;
+                                        UpdateCardFileStatus(request.Player, userCardFileStatus);
+                                        WriteCardFileHave(request);
+                                        WriteItem(request, item.ItemId);
+                                        added = true;
+                                    }
+                                    cardFileItemId = item.ItemId;
                                 }
                                 break;
                             default:
@@ -1106,14 +1296,37 @@ namespace YgoMaster
                     }
                 }
 
-                gacha["resultInfo"] = new Dictionary<string, object>()
+                Dictionary<string, object> resultInfo = new Dictionary<string, object>()
                 {
                     { "isSendGift", false },
                     { "showSecretFoundResult", showSecretFoundResult },
                     { "isNextFinalizedUR", isNextPackUR },
                     { "NextFinalizedURNameTextId", "IDS_CARDPACK_ID0001_NAME" },
-                    { "setItems", setItems }
+                    { "setItems", setItems },
+                    { "buyCardFile", cardFileItemId }// Shows the "To Collector's File" button at final card list page
                 };
+                if (shopItem.Prizes.Count > 0)
+                {
+                    // Shows the prize cards as a separate labeled group on the final card list page
+                    resultInfo["extraCardGroups"] = new List<object>()
+                    {
+                        new Dictionary<string, object>()
+                        {
+                            { "id", shopItem.PrizeId },
+                            { "label", "IDS_SHOP_CARDPACK_OPENRESULT_OBTAIN_CARDS_NAMED" },
+                            { "labelArgs", new List<object>() { luckyCardLabelTextId } }
+                        }
+                    };
+                    resultInfo["extraPackGroups"] = new List<object>()
+                    {
+                        new Dictionary<string, object>()
+                        {
+                            { "packs", new List<object>() },
+                            { "iconPath", "" }
+                        }
+                    };
+                }
+                gacha["resultInfo"] = resultInfo;
             }
             WriteCards_have(request, cardIdsToUpdate);
             WriteItem(request, (int)ItemID.Value.Gem);
@@ -1156,9 +1369,14 @@ namespace YgoMaster
             {
                 List<int> cardList = null;
                 ShopItemInfo shopItem;
+                ShopBundlePrize prize;
                 if (Shop.AllShops.TryGetValue(cardListId, out shopItem))
                 {
                     cardList = new List<int>(shopItem.Cards.Keys);
+                }
+                else if (Shop.PrizesByCardListId.TryGetValue(cardListId, out prize))
+                {
+                    cardList = new List<int>(prize.Cards);
                 }
                 else
                 {
@@ -1178,18 +1396,43 @@ namespace YgoMaster
             }
         }
 
+        /// <summary>
+        /// Formats a value with the given number of significant digits (e.g. 4 digits: 0.001719 / 1.500 / 12.50)
+        /// </summary>
+        static string FormatSignificantDigits(double value, int digits)
+        {
+            if (value <= 0 || double.IsInfinity(value) || double.IsNaN(value))
+            {
+                return value.ToString("F" + digits);
+            }
+            int decimals = Math.Max(0, digits - 1 - (int)Math.Floor(Math.Log10(value)));
+            return value.ToString("F" + decimals);
+        }
+
         void Act_GachaGetProbability(GameServerWebRequest request)
         {
             int packId = Utils.GetValue<int>(request.ActParams, "gacha_id");
-            ShopItemInfo item;
-            if (Shop.PacksByPackId.TryGetValue(packId, out item) && item.Cards.Count > 0)
+            int shopId = Utils.GetValue<int>(request.ActParams, "shop_id");
+            ShopItemInfo item = null;
+            ShopItemInfo bundle;
+            CardRarity bundleRarityGuarantee = CardRarity.None;
+            if (Shop.AllShops.TryGetValue(shopId, out bundle) && bundle.Category == ShopCategory.Special)
+            {
+                // Bundles show the odds of their pack ("gacha_id" is an official bundle id which doesn't map to a pack here)
+                item = GetBundlePack(bundle);
+                bundleRarityGuarantee = GetBundleRarityGuarantee(bundle);
+            }
+            else
+            {
+                Shop.PacksByPackId.TryGetValue(packId, out item);
+            }
+            if (item != null && item.Cards.Count > 0)
             {
                 ShopOddsInfo odds = item.GetOdds(Shop);
                 if (odds != null)
                 {
                     Dictionary<CardRarity, int> cardRarityCount = new Dictionary<CardRarity, int>();
-                    Dictionary<int, int> packCardRare = GetCardRarities(request.Player, item);
-                    foreach (KeyValuePair<int, int> card in packCardRare)
+                    foreach (KeyValuePair<int, int> card in GetCardRarities(request.Player, item))
                     {
                         if (!cardRarityCount.ContainsKey((CardRarity)card.Value))
                         {
@@ -1200,60 +1443,195 @@ namespace YgoMaster
                             cardRarityCount[(CardRarity)card.Value]++;
                         }
                     }
-                    List<object> cardRateList = new List<object>();
-                    List<object> premiereRateList = new List<object>();
-                    foreach (ShopOddsRarity cardRate in odds.CardRateList)
+
+                    Dictionary<CardRarity, int> cardRarityCountStandardPack = new Dictionary<CardRarity, int>();
+                    foreach (KeyValuePair<int, int> card in GetCardRarities(request.Player, Shop.StandardPack))
                     {
-                        Dictionary<string, object> rateDict = new Dictionary<string, object>();
+                        if (!cardRarityCountStandardPack.ContainsKey((CardRarity)card.Value))
+                        {
+                            cardRarityCountStandardPack[(CardRarity)card.Value] = 1;
+                        }
+                        else
+                        {
+                            cardRarityCountStandardPack[(CardRarity)card.Value]++;
+                        }
+                    }
+
+                    List<object> rateData = new List<object>();
+
+                    Action<int, string, List<object>, string> createHeader = (int indent, string textId, List<object> args, string subTextId) =>
+                    {
+                        Dictionary<string, object> header = new Dictionary<string, object>();
+                        header["tp"] = "header";
+                        header["indent"] = indent;
+                        List<object> datas = new List<object>();
+                        if (textId != null)
+                        {
+                            Dictionary<string, object> mainText = new Dictionary<string, object>();
+                            mainText["textId"] = textId;
+                            if (args != null)
+                            {
+                                mainText["args"] = args;
+                            }
+                            datas.Add(mainText);
+                        }
+                        if (subTextId != null)
+                        {
+                            datas.Add(new Dictionary<string, object>()
+                            {
+                                { "textId", subTextId }
+                            });
+                        }
+                        header["datas"] = datas;
+                        rateData.Add(header);
+                    };
+
+                    Action<int, string> createText = (int indent, string textId) =>
+                    {
+                        Dictionary<string, object> text = new Dictionary<string, object>();
+                        text["tp"] = "text";
+                        text["indent"] = indent;
+                        text["datas"] = new List<object>
+                        {
+                            new Dictionary<string, object>()
+                            {
+                                { "textId", textId }
+                            }
+                        };
+                        rateData.Add(text);
+                    };
+
+                    Action<int, ShopOddsStyleRarity> createPremiereTable = (int indent, ShopOddsStyleRarity premiereRate) =>
+                    {
+                        Dictionary<string, object> premiereTable = new Dictionary<string, object>();
+                        premiereTable["tp"] = "premiereTable";
+                        premiereTable["indent"] = indent;
+                        List<object> datas = new List<object>();
+                        foreach (KeyValuePair<CardStyleRarity, double> rate in premiereRate.Rate)
+                        {
+                            datas.Add(new Dictionary<string, object>()
+                            {
+                                { "premire", (int)rate.Key },
+                                { "rate", string.Format("{0:0.00}", rate.Value)}
+                            });
+                        }
+                        premiereTable["datas"] = datas;
+                        rateData.Add(premiereTable);
+                    };
+
+                    Action<int, ShopOddsRarity> createRarityTable = (int indent, ShopOddsRarity cardRate) =>
+                    {
+                        Dictionary<string, object> rarityTable = new Dictionary<string, object>();
+                        rarityTable["tp"] = "rarityTable";
+                        rarityTable["indent"] = indent;
+                        List<object> datas = new List<object>();
                         foreach (KeyValuePair<CardRarity, double> rate in cardRate.Rate)
                         {
                             int num;
-                            cardRarityCount.TryGetValue(rate.Key, out num);
-                            rateDict[((int)rate.Key).ToString()] = new Dictionary<string, object>()
+                            if (cardRate.Standard)
                             {
+                                cardRarityCountStandardPack.TryGetValue(rate.Key, out num);
+                            }
+                            else
+                            {
+                                cardRarityCount.TryGetValue(rate.Key, out num);
+                            }
+                            datas.Add(new Dictionary<string, object>()
+                            {
+                                { "rare", (int)rate.Key },
+                                { "rate", string.Format("{0:0.00}", rate.Value) },
                                 { "num", num },
-                                { "rate", string.Format("{0:0.00}", rate.Value) }
-                            };
+                                { "perpiece", FormatSignificantDigits(rate.Value / num, 4) },
+                            });
                         }
-                        Dictionary<string, object> info = new Dictionary<string, object>()
+                        rarityTable["datas"] = datas;
+                        rateData.Add(rarityTable);
+                    };
+
+                    CardRarity baseRarityGuarantee = odds.CardRateList.Where(x => x.GuaranteeRareMin != CardRarity.None)
+                        .Select(x => x.GuaranteeRareMin).DefaultIfEmpty(CardRarity.None).Min();
+                    foreach (ShopOddsRarity cardRate in odds.CardRateList)
+                    {
+                        if (bundleRarityGuarantee != CardRarity.None && cardRate.GuaranteeRareMin != CardRarity.None &&
+                            cardRate.GuaranteeRareMin != baseRarityGuarantee && cardRate.GuaranteeRareMin != bundleRarityGuarantee)
                         {
-                            { "start_num", cardRate.StartNum },
-                            { "end_num", cardRate.EndNum },
-                            { "standard", cardRate.Standard },
-                            { "rate", rateDict }
-                        };
-                        if (cardRate.GuaranteeRareMin != CardRarity.None || cardRate.GuaranteeRareMax != CardRarity.None)
-                        {
-                            info["settle_rare_min"] = (int)cardRate.GuaranteeRareMin;
-                            info["settle_rare_max"] = (int)cardRate.GuaranteeRareMax;
+                            // Bundles only show the pack's base guarantee and the bundle's guarantee
+                            continue;
                         }
-                        cardRateList.Add(info);
+                        if (cardRate.GuaranteeRareMin != CardRarity.None)
+                        {
+                            if (cardRate.StartNum != cardRate.EndNum)
+                            {
+                                Utils.LogWarning("TODO: Support card odds where StartNum != EndNum when cardRate.GuaranteeRareMin != None");
+                            }
+                            createHeader(
+                                0,
+                                "IDS_MARKUPSHOP_TEIKYOU_CARD_LABEL_UNIT",
+                                new List<object> {
+                                    cardRate.StartNum,
+                                    new Dictionary<string, object>()
+                                    {
+                                        { "textId", cardRate.GuaranteeRareMin == cardRate.GuaranteeRareMax ? "IDS_MARKUPSHOP_TEIKYOU_CARD_LABELCOMMENT_SETTELERARE" : "IDS_MARKUPSHOP_TEIKYOU_CARD_LABELCOMMENT_SETTELEUPPERRARE" },
+                                        { "args", new List<object>() {
+                                            "<rarity id='" + (int)cardRate.GuaranteeRareMin + "' />"
+                                        }}
+                                    }
+                                },
+                                cardRate.Standard ? "IDS_MARKUPSHOP_TEIKYOU_CARD_LABELCOMMENT_STANDARD" : null);
+                        }
+                        else
+                        {
+                            createHeader(
+                                0,
+                                "IDS_MARKUPSHOP_TEIKYOU_CARD_LABEL_RANGE",
+                                new List<object> {
+                                    cardRate.StartNum,
+                                    cardRate.EndNum,
+                                    ""
+                                },
+                                cardRate.Standard ? "IDS_MARKUPSHOP_TEIKYOU_CARD_LABELCOMMENT_STANDARD" : null);
+                        }
+
+                        createRarityTable(0, cardRate);
+                    }
+                    string packDetailTextId = null;
+                    switch (item.PackType)
+                    {
+                        case ShopPackType.Standard:
+                            packDetailTextId = "IDS_MARKUPSHOP_TEIKYOU_CARD_DETAIL_STANDARD";
+                            break;
+                        case ShopPackType.Secret:
+                            packDetailTextId = "IDS_MARKUPSHOP_TEIKYOU_CARD_DETAIL_SECRET";
+                            break;
+                        case ShopPackType.Selection:
+                            packDetailTextId = "IDS_MARKUPSHOP_TEIKYOU_CARD_DETAIL_PICKUP";
+                            break;
+                    }
+                    if (packDetailTextId != null)
+                    {
+                        createText(1, packDetailTextId);
+                    }
+
+                    if (odds.CardStyleRarityRateList.Count > 0)
+                    {
+                        createHeader(0, "IDS_MARKUPSHOP_TEIKYOU_PREMIRE_LABEL", null, null);
                     }
                     foreach (ShopOddsStyleRarity premiereRate in odds.CardStyleRarityRateList)
                     {
-                        List<object> rareList = new List<object>();
-                        Dictionary<string, object> rateDict = new Dictionary<string,object>();
-                        foreach (CardRarity rarity in premiereRate.Rarities)
-                        {
-                            rareList.Add((int)rarity);
-                        }
-                        foreach (KeyValuePair<CardStyleRarity, double> rate in premiereRate.Rate)
-                        {
-                            rateDict[((int)rate.Key).ToString()] = string.Format("{0:0.00}", rate.Value);
-                        }
-                        premiereRateList.Add(new Dictionary<string, object>()
-                            {
-                                { "rare", rareList },
-                                { "rate", rateDict }
-                            });
+                        createHeader(
+                            2,
+                            "IDS_MARKUPSHOP_TEIKYOU_PREMIRE_RARE" + Math.Min(premiereRate.Rarities.Count, 4) + "_LABEL",
+                            premiereRate.Rarities.Select(x => (object)("<rarity id='" + (int)x + "' />")).ToList(),
+                            null);
+
+                        createPremiereTable(0, premiereRate);
                     }
+
+                    createText(1, "IDS_MARKUPSHOP_TEIKYOU_PREMIRE_DETAIL");
+
                     request.Response["Gacha"] = new Dictionary<string, object>()
                     {
-                        { "rateData", new Dictionary<string, object>() {
-                            { "gachaType", (int)item.PackType },
-                            { "cardRateList", cardRateList },
-                            { "premiereRateList", premiereRateList },
-                        }}
+                        { "rateData", rateData }
                     };
                 }
             }

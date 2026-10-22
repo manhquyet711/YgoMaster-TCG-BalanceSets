@@ -153,6 +153,8 @@ namespace YgoMaster
                         duelSettings.SetP1ItemValue(duel.IsMyDeck, ItemID.Category.PROTECTOR, deck.Accessory.Sleeve);
                         duelSettings.SetP1ItemValue(duel.IsMyDeck, ItemID.Category.FIELD, deck.Accessory.Field);
                         duelSettings.SetP1ItemValue(duel.IsMyDeck, ItemID.Category.FIELD_OBJ, deck.Accessory.FieldObj);
+                        duelSettings.SetP1ItemValue(duel.IsMyDeck, ItemID.Category.COIN, deck.Accessory.Coin < (int)ItemID.Value.DefaultCoin ? (int)ItemID.Value.DefaultCoin : deck.Accessory.Coin);
+                        duelSettings.SetP1ItemValue(duel.IsMyDeck, ItemID.Category.PROTECTOR, deck.Accessory.ExSleeve, ex: true);
                         duelSettings.story_deck_id[DuelSettings.PlayerIndex] = 0;
                         if (player.DuelBgmMode == DuelBgmMode.Myself && !duelSettings.OverrideUserBgm)
                         {
@@ -649,6 +651,7 @@ namespace YgoMaster
                                         ItemID.Category.FIELD_OBJ,
                                         ItemID.Category.AVATAR_HOME,
                                         ItemID.Category.WALLPAPER,
+                                        ItemID.Category.COIN
                                     };
                                     foreach (ItemID.Category category in categories)
                                     {
@@ -764,8 +767,8 @@ namespace YgoMaster
                                         List<int> cardIds = new List<int>();
                                         foreach (KeyValuePair<int, int> card in cardRare)
                                         {
-                                            if (card.Value == (int)cardRarity && (reward.CardOwnedLimit == 0 ||
-                                                reward.CardOwnedLimit > request.Player.Cards.GetCount(card.Key)))
+                                            if (card.Value == (int)cardRarity && (reward.CardPool == null || reward.CardPool.Count == 0 || reward.CardPool.Contains(card.Key)) &&
+                                                (reward.CardOwnedLimit == 0 || reward.CardOwnedLimit > request.Player.Cards.GetCount(card.Key)))
                                             {
                                                 cardIds.Add(card.Key);
                                             }

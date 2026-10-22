@@ -1,12 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
 using System.Diagnostics;
-using System.Threading;
+using System.IO;
+using System.Linq;
 using System.Net;
 using System.Reflection;
+using System.Text;
 
 namespace YgoMaster
 {
@@ -50,6 +49,7 @@ namespace YgoMaster
         URNG.LinearCongruentialGenerator duelRoomSpectatorRoomIdRng;
 
         int NumDeckSlots;
+        int BookmarkLimit;
         bool UnlockAllCards;
         bool UnlockAllCardsHighestRarity;
         bool UnlockAllCardsShine;
@@ -70,6 +70,8 @@ namespace YgoMaster
         Dictionary<string, object> RegulationIcon;
         Dictionary<string, object> RegulationInfo;
         Dictionary<string, object> AccessorySet;
+        Dictionary<int, CardFileData> CardFiles;
+        Dictionary<string, object> RawCardFilesData;
         Dictionary<string, object> SoloData;
         Dictionary<int, DuelSettings> SoloDuels;// <chapterid, DuelSettings>
         Dictionary<int, CardCategory> CardCategories;// <categoryId, CardCategory>
@@ -100,6 +102,10 @@ namespace YgoMaster
         /// Solo rewards in the duel result screen are flagged as rare (gold box)
         /// </summary>
         bool SoloRewardsInDuelResultAreRare;
+        /// <summary>
+        /// A regulation ID that overrides the default solo regulation ID (which is normally IDS_CARDMENU_REGULATION_NORMAL)
+        /// </summary>
+        int SoloRegulationId;
         /// <summary>
         /// Show information about YgoMaster in the topics panel on the home screen
         /// </summary>
@@ -165,7 +171,7 @@ namespace YgoMaster
         /// </summary>
         int DuelReplaySaveFileLimit;
         /// <summary>
-        /// Should should replays be flagged as public by default
+        /// Should replays be flagged as public by default
         /// </summary>
         bool DuelReplayMakePublicByDefault;
         /// <summary>
@@ -173,7 +179,7 @@ namespace YgoMaster
         /// </summary>
         DuelReplayCardVisibility DuelReplayCardVisibility;
         /// <summary>
-        /// Allows mulitple connections
+        /// Allows multiple connections
         /// </summary>
         bool MultiplayerEnabled;
         /// <summary>
@@ -269,6 +275,10 @@ namespace YgoMaster
         /// </summary>
         public int MultiplayerPvpClientRunDialogUserOffset;
         /// <summary>
+        /// Size of the duel.dll which the duel offsets depend on (used to notify user of errors if outdated)
+        /// </summary>
+        public int MultiplayerPvpClientDuelDllSize;
+        /// <summary>
         /// Doesn't update the deck edit time when the deck is edited (this will preserve the deck order of the deck list)
         /// </summary>
         public bool DontUpdateDeckEditTime;
@@ -324,11 +334,54 @@ namespace YgoMaster
                             }
                         }
                     }
+                    string unityPlayerFile = Path.Combine("..", "UnityPlayer.dll");
+                    string expectedUnityPlayerVersion = Utils.GetValue<string>(clientValues, "UnityPlayerVersion");
+                    if (!string.IsNullOrEmpty(expectedUnityPlayerVersion) && File.Exists(unityPlayerFile))
+                    {
+                        string unityPlayerVersion = FileVersionInfo.GetVersionInfo(unityPlayerFile).ProductVersion;
+                        if (!string.IsNullOrEmpty(unityPlayerVersion))
+                        {
+                            unityPlayerVersion = unityPlayerVersion.Split()[0];
+                            if (expectedUnityPlayerVersion != unityPlayerVersion)
+                            {
+                                Utils.LogWarning("UnityPlayer.dll version mismatch. Expected:" + expectedUnityPlayerVersion + ", found:" + unityPlayerVersion);
+                                Utils.LogWarning("If the mod is using custom images the client will crash!");
+                            }
+                        }
+                    }
                 }
             }
             DuelSettings.LoadBgmInfo(Path.Combine(dataDirectory, "Bgm.json"));
 
             ItemID.Load(dataDirectory);
+
+            // Add missing duel fields from Bgm.json (duel fields without names - event duel fields)
+            foreach (int fieldId in DuelSettings.MatIdToBgmId.Keys)
+            {
+                if (!ItemID.Values[ItemID.Category.FIELD].Contains(fieldId))
+                {
+                    List<int> fields = ItemID.Values[ItemID.Category.FIELD].ToList();
+                    fields.Add(fieldId);
+                    ItemID.Values[ItemID.Category.FIELD] = fields.ToArray();
+
+                    int avatarHome = ItemID.GetFieldAvatarBaseFromField(fieldId);
+                    if (!ItemID.Values[ItemID.Category.AVATAR_HOME].Contains(avatarHome))
+                    {
+                        List<int> avatarHomes = ItemID.Values[ItemID.Category.AVATAR_HOME].ToList();
+                        avatarHomes.Add(avatarHome);
+                        ItemID.Values[ItemID.Category.AVATAR_HOME] = avatarHomes.ToArray();
+                    }
+
+                    int fieldObj = ItemID.GetFieldObjFromField(fieldId);
+                    if (!ItemID.Values[ItemID.Category.FIELD_OBJ].Contains(fieldObj))
+                    {
+                        List<int> fieldObjs = ItemID.Values[ItemID.Category.FIELD_OBJ].ToList();
+                        fieldObjs.Add(fieldObj);
+                        ItemID.Values[ItemID.Category.FIELD_OBJ] = fieldObjs.ToArray();
+                    }
+                }
+            }
+
             YdkHelper.LoadIdMap(dataDirectory);
 
             //DuelSimulator sim = new DuelSimulator(dataDirectory);
@@ -398,6 +451,7 @@ namespace YgoMaster
             MultiplayerCoinFlipCounter = Utils.GetValue<int>(values, "MultiplayerCoinFlipCounter");
 
             NumDeckSlots = Utils.GetValue<int>(values, "DeckSlots", 20);
+            BookmarkLimit = Utils.GetValue<int>(values, "BookmarkLimit", 100);
             Utils.GetIntHashSet(values, "DefaultItems", DefaultItems = new HashSet<int>(), ignoreZero: true);
             DefaultGems = Utils.GetValue<int>(values, "DefaultGems");
             DefaultCraftPoints = Utils.GetDictionary(values, "DefaultCraftPoints");
@@ -428,6 +482,16 @@ namespace YgoMaster
             MultiplayerPvpClientSysActCallsPerSleep = Utils.GetValue<int>(values, "MultiplayerPvpClientSysActCallsPerSleep");
             MultiplayerPvpClientDoCommandUserOffset = Utils.GetValue<int>(values, "MultiplayerPvpClientDoCommandUserOffset");
             MultiplayerPvpClientRunDialogUserOffset = Utils.GetValue<int>(values, "MultiplayerPvpClientRunDialogUserOffset");
+            MultiplayerPvpClientDuelDllSize = Utils.GetValue<int>(values, "MultiplayerPvpClientDuelDllSize");
+            if (MultiplayerPvpClientDuelDllSize != 0 && MultiplayerEnabled)
+            {
+                FileInfo duelDllFile = new FileInfo(Path.Combine("..", "masterduel_Data", "Plugins", "x86_64", "duel.dll"));
+                if (duelDllFile.Exists && duelDllFile.Length != MultiplayerPvpClientDuelDllSize)
+                {
+                    Utils.LogWarning("duel.dll size mismatch. Expected:" + MultiplayerPvpClientDuelDllSize + ", found:" + duelDllFile.Length);
+                    Utils.LogWarning("If you use PvP and you can control your opponents cards update the following Settings.json values from github: MultiplayerPvpClientDoCommandUserOffset, MultiplayerPvpClientRunDialogUserOffset, MultiplayerPvpClientDuelDllSize");
+                }
+            }
 
             FriendSearchLimit = Utils.GetValue<int>(values, "FriendSearchLimit", 100);
             FriendOfflineInSeconds = Utils.GetValue<int>(values, "FriendOfflineInSeconds", 300);
@@ -561,6 +625,27 @@ namespace YgoMaster
                 }
             }
 
+            CardFiles = new Dictionary<int, CardFileData>();
+            RawCardFilesData = new Dictionary<string, object>();
+            string cardFilesDir = Path.Combine(dataDirectory, "CardFiles");
+            if (Directory.Exists(cardFilesDir))
+            {
+                foreach (string file in Directory.GetFiles(cardFilesDir, "*.json"))
+                {
+                    int id;
+                    if (int.TryParse(Path.GetFileNameWithoutExtension(file), out id))
+                    {
+                        CardFileData cardFile = new CardFileData(id, MiniJSON.Json.DeserializeStripped(File.ReadAllText(file)) as Dictionary<string, object>);
+                        CardFiles[cardFile.Id] = cardFile;
+                        RawCardFilesData[cardFile.Id.ToString()] = cardFile.RawData;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid CardFiles file name '" + file + "' (needs to be an integer value)");
+                    }
+                }
+            }
+
             string TitleLoopFile = Path.Combine(dataDirectory, "TitleLoop.json");
             if (File.Exists(TitleLoopFile))
             {
@@ -582,8 +667,61 @@ namespace YgoMaster
                         DeckInfo.RegulationIdsByName.Add(regulation.Value as string, int.Parse(regulation.Key));
                         DeckInfo.RegulationNamesById.Add(int.Parse(regulation.Key), regulation.Value as string);
                     }
+
+                    string soloRegulationName = Utils.GetValue<string>(values, "SoloRegulationName");
+                    if (!string.IsNullOrEmpty(soloRegulationName))
+                    {
+                        string soloRegulationIdStr = Utils.GetDictionary(RegulationInfo, "rule_list").FirstOrDefault(x => (string)x.Value == soloRegulationName).Key;
+                        if (string.IsNullOrEmpty(soloRegulationIdStr))
+                        {
+                            Utils.LogWarning("Invalid SoloRegulationName value '" + soloRegulationName + "'");
+                        }
+                        else
+                        {
+                            SoloRegulationId = int.Parse(soloRegulationIdStr);
+                        }
+                    }
                 }
             }
+            string regulationDir = Path.Combine(dataDirectory, "Regulation.d");
+            if (Directory.Exists(regulationDir))
+            {
+                var ruleList = Utils.GetDictionary(RegulationInfo, "rule_list");
+                foreach (string file in Directory.GetFiles(regulationDir))
+                {
+                    Dictionary<string, object> reg = MiniJSON.Json.DeserializeStripped(File.ReadAllText(file)) as Dictionary<string, object>;
+                    var id = Utils.GetValue<int>(reg, "regulation_id", -1);
+                    var name = Utils.GetValue<string>(reg, "name", "");
+                    //Console.WriteLine("Add regulation:" + id + ": " + name);
+
+                    ruleList.Add(id.ToString(), name);
+                    var icon = Utils.GetDictionary(reg, "regulation_icon");
+                    icon.Add("regulation_id", id);
+                    icon.Add("id", id);
+                    RegulationIcon.Add(id.ToString(), icon);
+
+                    if (reg.ContainsKey("banlist")) {
+                        var available = new Dictionary<string, object>();
+                        var banlist = Utils.GetDictionary(reg, "banlist");
+                        var bannedCards = new HashSet<int>(CardRare.Keys.Cast<int>());
+                        for (int i = 1; i <= 3; i++) {
+                            var tmp = Utils.GetValueTypeList<int>(banlist, "a" + i);
+                            available.Add("a"+ i, tmp);
+                            foreach (int c in tmp) {
+                                bannedCards.Remove(c);
+                            }
+                        }
+                        available.Add("a0", bannedCards.ToList());
+                        reg.Add("available", available);
+                    } 
+
+                    Regulation.Add(id.ToString(), reg);
+                    DeckInfo.RegulationIdsByName.Add(name, id);
+                    DeckInfo.RegulationNamesById.Add(id, name);
+                }
+            }
+
+
             if (Utils.GetValue<bool>(values, "DisableBanList") && Regulation != null)
             {
                 Dictionary<string, object> defaultRegulation = Utils.GetDictionary(Regulation, DeckInfo.DefaultRegulationId.ToString());
@@ -614,7 +752,9 @@ namespace YgoMaster
             DuelRoomRewards = new DuelRewardInfos();
             DuelRoomRewards.FromDictionary(Utils.GetDictionary(values, "DuelRoomRewards"));
 
-            if (MultiplayerEnabled)
+            string[] args = Environment.GetCommandLineArgs();
+
+            if (MultiplayerEnabled && (args.Length < 2 || !args[1].StartsWith("--")))
             {
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
@@ -655,10 +795,9 @@ namespace YgoMaster
             InitDecksWatcher();
 
             // TODO: Move elsewhere (these are helpers to generate files)
-            string[] args = Environment.GetCommandLineArgs();
             if (args.Length > 0)
             {
-                bool ranCommand = false;
+                bool ranCommand = args.Length > 1 && args[1].StartsWith("--");
                 for (int i = 1; i < args.Length; i++)
                 {
                     bool log = true;
@@ -999,6 +1138,11 @@ namespace YgoMaster
                             break;
                         case "--unknown-alt-cards":// Lists unknown alt card ids (excludes everything already in AltCardsYdk.json)
                             {
+                                YdkHelper.LoadIdMap(dataDirectory);
+
+                                bool showPromo1 = args.Contains("--show-promo1");
+                                bool showPromo2 = args.Contains("--show-promo2");
+
                                 HashSet<int> knownAltCardIds = new HashSet<int>();
                                 string altCardIdsFile = Path.Combine("..", "Docs", "AltCardsYdk.json");
                                 if (File.Exists(altCardIdsFile))
@@ -1025,8 +1169,18 @@ namespace YgoMaster
                                 Dictionary<int, YdkHelper.GameCardInfo> cards = YdkHelper.LoadCardDataFromGame(dataDirectory);
                                 foreach (YdkHelper.GameCardInfo card in cards.Values)
                                 {
-                                    if (card.Kind == CardKind.Token)
+                                    if (card.Kind == CardKind.Token || card.Kind == CardKind.TokenTuner)
                                     {
+                                        continue;
+                                    }
+                                    if ((card.Id >= 30000 && card.Id <= 30099) && !showPromo1)
+                                    {
+                                        // Promotional card ids
+                                        continue;
+                                    }
+                                    if ((card.Id >= 3100 && card.Id <= 3199) && !showPromo2)
+                                    {
+                                        // More promotional card ids?
                                         continue;
                                     }
                                     if (!cardNameIds.ContainsKey(card.Name))
@@ -1038,39 +1192,320 @@ namespace YgoMaster
 
                                 foreach (KeyValuePair<string, List<int>> card in cardNameIds)
                                 {
-                                    if (card.Value.Count > 1)
+                                    List<int> altIds = new List<int>();
+                                    foreach (int cardId in card.Value)
                                     {
-                                        List<int> altIds = new List<int>();
-                                        foreach (int cardId in card.Value)
+                                        if (YdkHelper.GetYdkId(cardId) == 0)
                                         {
-                                            bool isAlt = true;
-                                            try
+                                            altIds.Add(cardId);
+                                        }
+                                    }
+                                    List<int> unknownAltIds = altIds.Except(knownAltCardIds).ToList();
+                                    if (unknownAltIds.Count > 0)
+                                    {
+                                        Console.WriteLine(card.Key + " = " + string.Join(",", card.Value) + " (unknown:" + string.Join(",", unknownAltIds) + ")");
+                                    }
+                                }
+                            }
+                            break;
+                        case "--import_card_collection":
+                            {
+                                CardStyleRarity defaultRarity = CardStyleRarity.Normal;
+                                CardStyleRarity forcedRarity = CardStyleRarity.None;
+                                int cardCount = 1;
+                                bool append = true;
+                                bool setClear = false;
+                                bool recursive = false;
+                                bool unique = false;
+                                string path = null;
+                                bool allNetworkedPlayers = false;
+                                bool clearExistingCardCollection = false;
+                                string targetPlayerPath = Path.Combine(GetLocalPlayerSaveDataDir(), "Player.json");
+                                MultiplayerEnabled = false;
+                                // Need to set all "UnlockAll" to false to avoid writing over things we dont want
+                                UnlockAllCards = false;
+                                UnlockAllItems = false;
+                                UnlockAllCardsHighestRarity = false;
+                                UnlockAllSoloChapters = false;
+                                UnlockAllCardsShine = false;
+                                List<Player> players = new List<Player>();
+                                for (int j = 2; j < args.Length; j++)
+                                {
+                                    if (!args[j].StartsWith("--"))
+                                    {
+                                        path = string.Join(" ", args, j, args.Length - j);
+                                        break;
+                                    }
+                                    switch (args[j].ToLowerInvariant())
+                                    {
+                                        case "--set":// Sets the card count to the given value rather than adding to the existing card count e.g. if you already have 6x of a card and you `--set --count 3` you'll end up with 3x of that card instead of 9x
+                                            append = false;
+                                            break;
+                                        case "--set-clear":// When using `--set` this will also clear all existing entries for the given card id before doing the set (all rarities are set to 0 before setting the card count)
+                                            setClear = true;
+                                            break;
+                                        case "--unique":// Every card id is to only be counted once (i.e. `--unique --count 5` will add 5 of a given card id regardless of how many times the card id appears in the import data, without the `--unique` it'll add 5x every time it sees the given card id in the import data)
+                                            unique = true;
+                                            break;
+                                        case "--count":// The number of cards to add for each card id found
+                                            if (j < args.Length - 1)
                                             {
-                                                using (WebClient client = new WebClient())
+                                                j++;
+                                                int.TryParse(args[j], out cardCount);
+                                                if (cardCount <= 1)
                                                 {
-                                                    client.Proxy = null;
-                                                    string json = client.DownloadString("https://db.ygoprodeck.com/api/v7/cardinfo.php?misc=yes&konami_id=" + cardId);
-                                                    Dictionary<string, object> jsonData = MiniJSON.Json.Deserialize(json) as Dictionary<string, object>;
-                                                    if (jsonData != null && jsonData.Count == 1)
+                                                    cardCount = 1;
+                                                }
+                                            }
+                                            break;
+                                        case "--rarity":// Forces the given rarity for all cards added
+                                            if (j < args.Length - 1)
+                                            {
+                                                j++;
+                                                Enum.TryParse(args[j], out forcedRarity);
+                                            }
+                                            break;
+                                        case "--default-rarity":// The rarity to use if there's no rarity defined in the imported data
+                                            if (j < args.Length - 1)
+                                            {
+                                                j++;
+                                                Enum.TryParse(args[j], out defaultRarity);
+                                                if (defaultRarity == CardStyleRarity.None || Array.IndexOf(Enum.GetValues(typeof(CardStyleRarity)), defaultRarity) == -1)
+                                                {
+                                                    defaultRarity = CardStyleRarity.Normal;
+                                                }
+                                            }
+                                            break;
+                                        case "--player":// Targets a specific player ID to update
+                                            if (j < args.Length - 1)
+                                            {
+                                                j++;
+                                                uint pcode = uint.Parse(args[j]);// Will crash if not a number
+                                                targetPlayerPath = Path.Combine(playersDirectory, pcode.ToString(), "Player.json");
+                                                MultiplayerEnabled = true;
+                                            }
+                                            break;
+                                        case "--all-network-players":// Updates all players
+                                            allNetworkedPlayers = true;
+                                            MultiplayerEnabled = true;
+                                            break;
+                                        case "--clear":// Clears the existing card collection
+                                            clearExistingCardCollection = true;
+                                            break;
+                                        case "--recursive":
+                                            recursive = true;
+                                            break;
+                                    }
+                                }
+                                if (allNetworkedPlayers)
+                                {
+                                    try
+                                    {
+                                        HashSet<string> playerPaths = new HashSet<string>();
+                                        foreach (string dir in Directory.GetFiles(playersDirectory))
+                                        {
+                                            uint pcode;
+                                            if (uint.TryParse(new DirectoryInfo(dir).Name, out pcode))
+                                            {
+                                                string file = Path.Combine(dir, "Player.json");
+                                                if (File.Exists(file) && playerPaths.Add(file))
+                                                {
+                                                    Player player = new Player(pcode);
+                                                    LoadPlayer(player);
+                                                    players.Add(player);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        Console.WriteLine(e);
+                                    }
+                                    if (players.Count == 0)
+                                    {
+                                        Console.WriteLine("Couldn't find any Player.json files");
+                                        break;
+                                    }
+                                }
+                                else
+                                {
+                                    if (!File.Exists(targetPlayerPath))
+                                    {
+                                        Console.WriteLine("Couldn't find target player json '" + targetPlayerPath + "'");
+                                        break;
+                                    }
+                                    Player player = new Player(1111111111);
+                                    uint pcode;
+                                    if (uint.TryParse(new FileInfo(targetPlayerPath).Directory.Name, out pcode))
+                                    {
+                                        player.Code = pcode;
+                                    }
+                                    LoadPlayer(player);
+                                    players.Add(player);
+                                }
+                                HashSet<int> allRemovedCids = new HashSet<int>();
+                                if (clearExistingCardCollection)
+                                {
+                                    foreach (Player player in players)
+                                    {
+                                        foreach (int cid in player.Cards.GetIDs())
+                                        {
+                                            allRemovedCids.Add(cid);
+                                        }
+                                        player.Cards.Clear();
+                                    }
+                                }
+                                long totalNumCardsAdded = 0;
+                                HashSet<int> allAddedCids = new HashSet<int>();
+                                HashSet<int> allNewCids = new HashSet<int>();
+                                Action<string> processFile = (string filePath) =>
+                                {
+                                    List<Tuple<int, CardStyleRarity>> cards = new List<Tuple<int, CardStyleRarity>>();
+                                    switch (Path.GetExtension(filePath).ToLowerInvariant())
+                                    {
+                                        case ".json":
+                                        case ".ydk":
+                                            {
+                                                DeckInfo deck = new DeckInfo();
+                                                deck.File = filePath;
+                                                try
+                                                {
+                                                    deck.Load();
+                                                }
+                                                catch
+                                                {
+                                                    break;
+                                                }
+                                                CardCollection[] cardCollections = { deck.MainDeckCards, deck.ExtraDeckCards, deck.SideDeckCards, deck.TrayCards };
+                                                foreach (CardCollection cardCollection in cardCollections)
+                                                {
+                                                    foreach (KeyValuePair<int, CardStyleRarity> card in cardCollection.GetCollection())
                                                     {
-                                                        isAlt = false;
+                                                        if (!unique || !cards.Any(x => x.Item1 == card.Key))
+                                                        {
+                                                            cards.Add(new Tuple<int, CardStyleRarity>(card.Key, card.Value));
+                                                        }
                                                     }
                                                 }
                                             }
-                                            catch
+                                            break;
+                                    }
+                                    if (filePath.ToLowerInvariant().EndsWith(".lflist.conf"))
+                                    {
+                                        // Banlist / whitelist file e.g. https://github.com/ProjectIgnis/LFLists/blob/master/GOAT.lflist.conf
+                                        try
+                                        {
+                                            foreach (string line in File.ReadAllLines(filePath))
                                             {
-                                            }
-                                            if (isAlt)
-                                            {
-                                                altIds.Add(cardId);
+                                                string trimmedLine = line.Trim();
+                                                if (trimmedLine.Length > 0 && char.IsNumber(trimmedLine[0]))
+                                                {
+                                                    int lastNumberIndex = 0;
+                                                    for (int j = 0; j < trimmedLine.Length; j++)
+                                                    {
+                                                        lastNumberIndex = j;
+                                                        if (!char.IsNumber(trimmedLine[j]))
+                                                        {
+                                                            break;
+                                                        }
+                                                    }
+                                                    string ydkIdStr = trimmedLine.Substring(0, lastNumberIndex);
+                                                    long ydkId;
+                                                    if (long.TryParse(ydkIdStr, out ydkId))
+                                                    {
+                                                        long cid = YdkHelper.GetOfficialId(ydkId);
+                                                        if (cid > 0 && (!unique || !cards.Any(x => x.Item1 == cid)))
+                                                        {
+                                                            cards.Add(new Tuple<int, CardStyleRarity>((int)cid, CardStyleRarity.None));
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
-                                        List<int> unknownAltIds = altIds.Except(knownAltCardIds).ToList();
-                                        if (unknownAltIds.Count > 0)
+                                        catch
                                         {
-                                            Console.WriteLine(card.Key + " = " + string.Join(",", card.Value) + " (unknown:" + string.Join(",", unknownAltIds) + ")");
                                         }
                                     }
+                                    totalNumCardsAdded += cards.Count * cardCount;
+                                    foreach (Player player in players)
+                                    {
+                                        foreach (Tuple<int, CardStyleRarity> card in cards)
+                                        {
+                                            CardStyleRarity rarity = card.Item2;
+                                            if (forcedRarity != CardStyleRarity.None)
+                                            {
+                                                rarity = forcedRarity;
+                                            }
+                                            if (rarity == CardStyleRarity.None)
+                                            {
+                                                rarity = defaultRarity;
+                                            }
+                                            allAddedCids.Add(card.Item1);
+                                            if (player.Cards.GetCount(card.Item1) == 0)
+                                            {
+                                                allNewCids.Add(card.Item1);
+                                            }
+                                            if (append)
+                                            {
+                                                player.Cards.Add(card.Item1, cardCount, PlayerCardKind.Dismantle, rarity);
+                                            }
+                                            else
+                                            {
+                                                if (setClear)
+                                                {
+                                                    player.Cards.Remove(card.Item1);
+                                                }
+                                                player.Cards.SetCount(card.Item1, cardCount, PlayerCardKind.Dismantle, rarity);
+                                            }
+                                        }
+                                    }
+                                };
+                                if (!string.IsNullOrEmpty(path))
+                                {
+                                    bool foundPath = false;
+                                    try
+                                    {
+                                        if (Directory.Exists(path))
+                                        {
+                                            foundPath = true;
+                                            foreach (string file in Directory.GetFiles(path, "*.*", recursive ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly))
+                                            {
+                                                processFile(file);
+                                            }
+                                        }
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        Console.WriteLine(e);
+                                    }
+                                    try
+                                    {
+                                        if (File.Exists(path))
+                                        {
+                                            foundPath = true;
+                                            processFile(path);
+                                        }
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        Console.WriteLine(e);
+                                    }
+                                    if (!foundPath)
+                                    {
+                                        Console.WriteLine("Couldn't find '" + path + "'");
+                                    }
+                                }
+                                if (allAddedCids.Count > 0 || allNewCids.Count > 0 || allRemovedCids.Count > 0 || totalNumCardsAdded > 0)
+                                {
+                                    foreach (Player player in players)
+                                    {
+                                        SavePlayerNow(player);
+                                    }
+                                    Console.WriteLine("Saved cards (addedCids:" + allAddedCids.Count + ", newCids:" + allNewCids.Count + ", removedCids:" + allRemovedCids.Count + ", totalAdded:" + totalNumCardsAdded + ")");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Didn't modify any cards");
                                 }
                             }
                             break;
@@ -1080,7 +1515,6 @@ namespace YgoMaster
                     }
                     if (log)
                     {
-                        ranCommand = true;
                         Console.WriteLine("Done (" + arg + ")");
                     }
                 }
@@ -1207,91 +1641,112 @@ namespace YgoMaster
         /// - Also used to get the card rarities for a specific pack in a shop (which can use specific rarities for that pack)
         /// </summary>
         Dictionary<int, int> GetCardRarities(Player player, ShopItemInfo targetShopItem = null)
-{
-    if (targetShopItem != null)
-    {
-        Dictionary<int, int> packCardRare = new Dictionary<int, int>();
-        foreach (KeyValuePair<int, CardRarity> card in targetShopItem.Cards)
         {
-            CardRarity rarity = card.Value;
-            if (rarity == CardRarity.None || !Shop.PerPackRarities)
+            // NOTE: This function is probably a little heavy handed, only call once per packet
+            if (targetShopItem != null)
             {
-                TryGetCardRarity(card.Key, CardRare, out rarity);
-            }
-            if (rarity != CardRarity.None)
-            {
-                packCardRare[card.Key] = (int)rarity;
-            }
-        }
-        return packCardRare;
-    }
-    if (!ProgressiveCardList && !ProgressiveCardRarities)
-    {
-        return CardRare;
-    }
-    Dictionary<int, int> result = ProgressiveCardList ? new Dictionary<int, int>() : new Dictionary<int, int>(CardRare);
-    Dictionary<int, int> lowestPackRarities = ProgressiveCardRarities ? new Dictionary<int, int>() : null;
-    foreach (ShopItemInfo shopItem in Shop.PackShop.Values)
-    {
-        if (ProgressiveCardList && player.ShopState.GetAvailability(Shop, shopItem) == PlayerShopItemAvailability.Hidden)
-        {
-            continue;
-        }
-        foreach (KeyValuePair<int, CardRarity> card in shopItem.Cards)
-        {
-            int cardId = card.Key;
-            CardRarity packRarity = card.Value;
-            if (ProgressiveCardRarities)
-            {
-                CardRarity existingRarity;
-                bool exists = TryGetCardRarity(cardId, lowestPackRarities, out existingRarity);
-                if (!exists || packRarity < existingRarity)
+                Dictionary<int, int> packCardRare = new Dictionary<int, int>();
+                foreach (KeyValuePair<int, CardRarity> card in targetShopItem.Cards)
                 {
-                    lowestPackRarities[cardId] = (int)packRarity;
-                }
-            }
-            if (ProgressiveCardList)
-            {
-                CardRarity existing;
-                if (!TryGetCardRarity(cardId, result, out existing))
-                {
-                    CardRarity baseRarity;
-                    if (TryGetCardRarity(cardId, CardRare, out baseRarity))
+                    CardRarity rarity = card.Value;
+                    if (rarity == CardRarity.None || !Shop.PerPackRarities)
                     {
-                        result[cardId] = (int)baseRarity;
+                        TryGetCardRarity(card.Key, CardRare, out rarity);
+                    }
+                    if (rarity != CardRarity.None)
+                    {
+                        packCardRare[card.Key] = (int)rarity;
+                    }
+                }
+                return packCardRare;
+            }
+            if (!ProgressiveCardList && !ProgressiveCardRarities)
+            {
+                return CardRare;
+            }
+            Dictionary<int, int> result = ProgressiveCardList ? new Dictionary<int, int>() : new Dictionary<int, int>(CardRare);
+            Dictionary<int, int> lowestPackRarities = ProgressiveCardRarities ? new Dictionary<int, int>() : null;
+            foreach (ShopItemInfo shopItem in Shop.PackShop.Values)
+            {
+                if (ProgressiveCardList && player.ShopState.GetAvailability(Shop, shopItem) == PlayerShopItemAvailability.Hidden)
+                {
+                    continue;
+                }
+                if (ProgressiveCardList && shopItem == Shop.StandardPack && Shop.StandardPack != null && Shop.StandardPack.SecretType == ShopItemSecretType.Other)
+                {
+                    // Avoid the Master Pack contributing towards the lowest rarity (any missing cards are appended at the end of this function)
+                    continue;
+                }
+                foreach (KeyValuePair<int, CardRarity> card in shopItem.Cards)
+                {
+                    if (ProgressiveCardRarities)
+                    {
+                        CardRarity rarity;
+                        if (!TryGetCardRarity(card.Key, lowestPackRarities, out rarity) || card.Value < rarity)
+                        {
+                            lowestPackRarities[card.Key] = (int)card.Value;
+                        }
+                    }
+                    if (ProgressiveCardList)
+                    {
+                        CardRarity rarity;
+                        if (!TryGetCardRarity(card.Key, result, out rarity) &&
+                            TryGetCardRarity(card.Key, CardRare, out rarity))
+                        {
+                            if (ProgressiveCardRarities)
+                            {
+                                // Temporary value to avoid breaking ProgressiveCardRarities
+                                result[card.Key] = int.MaxValue;
+                            }
+                            else
+                            {
+                                result[card.Key] = (int)rarity;
+                            }
+                        }
                     }
                 }
             }
-        }
-    }
-    if (ProgressiveCardRarities)
-    {
-        Dictionary<int, int> copy = new Dictionary<int, int>(result);
-        foreach (KeyValuePair<int, int> entry in copy)
-        {
-            int cardId = entry.Key;
-            CardRarity currentRarity = (CardRarity)entry.Value;
-            CardRarity unlockedLowest;
-            if (TryGetCardRarity(cardId, lowestPackRarities, out unlockedLowest) &&
-                unlockedLowest < currentRarity)
+            if (ProgressiveCardRarities)
             {
-                result[cardId] = (int)unlockedLowest;
+                foreach (KeyValuePair<int, int> card in new Dictionary<int, int>(result))
+                {
+                    CardRarity rarity;
+                    if (TryGetCardRarity(card.Key, lowestPackRarities, out rarity) && rarity < (CardRarity)card.Value)
+                    {
+                        result[card.Key] = (int)rarity;
+                    }
+
+                    // Fix up rarities based on the default CardRare data
+                    if (result[card.Key] == int.MaxValue)
+                    {
+                        TryGetCardRarity(card.Key, CardRare, out rarity);
+                        result[card.Key] = (int)rarity;
+                    }
+                }
             }
-        }
-    }
-    foreach (int cardId in player.Cards.GetIDs())
-    {
-        if (!result.ContainsKey(cardId))
-        {
-            CardRarity rarity;
-            if (TryGetCardRarity(cardId, CardRare, out rarity))
+            // Add any cards owned by the player but are missing from the result (otherwise the client will have issues with those cards)
+            foreach (int cardId in player.Cards.GetIDs())
             {
-                result[cardId] = (int)rarity;
+                CardRarity rarity;
+                if (!result.ContainsKey(cardId) && TryGetCardRarity(cardId, CardRare, out rarity))
+                {
+                    result[cardId] = (int)rarity;
+                }
             }
+            if (ProgressiveCardList && player.ShopState.GetAvailability(Shop, Shop.StandardPack) == PlayerShopItemAvailability.Available && Shop.StandardPack != null && Shop.StandardPack.SecretType == ShopItemSecretType.Other)
+            {
+                // When the Master Pack finally unlocks (which should be the last pack to unlock) we'll want to make all cards visible, even if they aren't featured in any packs
+                foreach (KeyValuePair<int, int> card in CardRare)
+                {
+                    if (!result.ContainsKey(card.Key))
+                    {
+                        result[card.Key] = card.Value;
+                    }
+                }
+            }
+            return result;
         }
-    }
-    return result;
-}
+
         bool TryGetCardRarity(int cardId, Dictionary<int, int> rarities, out CardRarity result)
         {
             result = CardRarity.None;
@@ -1343,6 +1798,7 @@ namespace YgoMaster
                 data["SoloLastPlayedChaterId"] = player.SoloLastPlayedChaterId;
                 data["SoloChapters"] = player.SoloChaptersToDictionary();
                 data["ShopState"] = player.ShopState.ToDictionary();
+                data["CardFiles"] = player.CardFiles.ToDictionary();
                 data["Cards"] = player.Cards.ToDictionary();
                 if (MultiplayerEnabled)
                 {
@@ -1445,6 +1901,7 @@ namespace YgoMaster
             }
             player.OrbPoints.FromDictionary(Utils.GetDictionary(data, "OrbPoints"));
             player.ShopState.FromDictionary(Utils.GetDictionary(data, "ShopState"));
+            player.CardFiles.FromDictionary(Utils.GetDictionary(data, "CardFiles"));
             player.CardFavorites.FromDictionary(Utils.GetDictionary(data, "CardFavorites"));
             player.CardLock.FromDictionary(Utils.GetDictionary(data, "CardLock"));
             List<object> titleTags;
@@ -1489,6 +1946,7 @@ namespace YgoMaster
                     ItemID.Category.FIELD_OBJ,
                     ItemID.Category.AVATAR_HOME,
                     ItemID.Category.WALLPAPER,
+                    ItemID.Category.COIN
                 };
                 foreach (ItemID.Category category in categories)
                 {
@@ -1498,6 +1956,14 @@ namespace YgoMaster
                         {
                             player.RequiresSaving = true;
                         }
+                    }
+                }
+                foreach (int itemId in CardFiles.Keys)
+                {
+                    if (!player.CardFiles.Files.ContainsKey(itemId))
+                    {
+                        player.CardFiles.Files[itemId] = new UserCardFileStatus(itemId);
+                        player.RequiresSaving = true;
                     }
                 }
             }
@@ -1608,6 +2074,9 @@ namespace YgoMaster
                     }
                 }
             }
+
+            // Update CardFile (Collector's Files) status in case any cards were manually added to json
+            UpdateCardFilesStatus(player);
         }
 
         void SaveDeck(DeckInfo deck)
@@ -2061,6 +2530,7 @@ namespace YgoMaster
                 info.SubCategory = Utils.GetValue<int>(data, "subCategory", 1);
                 info.TargetCategory = Utils.GetValue<int>(data, "targetCategory");
                 info.ProductType = Utils.GetValue<int>(data, "productType");
+                info.DetailPath = Utils.GetValue<string>(data, "detailPath");
                 object previewObj = Utils.GetValue<object>(data, "preview");
                 if (previewObj is string)
                 {
@@ -2230,6 +2700,9 @@ namespace YgoMaster
                             case ItemID.Category.DECK_CASE:
                                 info.SubCategory = (int)ShopSubCategoryAccessory.DeckCase;
                                 break;
+                            case ItemID.Category.COIN:
+                                info.SubCategory = (int)ShopSubCategoryAccessory.Coin;
+                                break;
                             default:
                                 Utils.LogWarning("Unhandled shop accessory type " + itemCategory + " for item id " + info.Id);
                                 return;
@@ -2250,52 +2723,42 @@ namespace YgoMaster
                         {
                             info.Buylimit = 1;
                         }
-                        if (info.TargetCategory == 1)
+                        if (GetSpecialShopUnsupportedReason(data, out info.BundleType) != null)
                         {
-                            foreach (Dictionary<string, object> priceData in Utils.GetDictionaryCollection(data, "prices"))
+                            // Only supporting bundles for now (unsupported bundles are logged by --mergeshops)
+                            continue;
+                        }
+                        List<Dictionary<string, object>> setItems = Utils.GetDictionaryCollection(data, "setItems");
+                        if (setItems != null)
+                        {
+                            foreach (Dictionary<string, object> itemData in setItems)
                             {
-                                string pop = Utils.GetValue<string>(priceData, "POP");
-                                Enum.TryParse<ShopBundleType>(pop, true, out info.BundleType);
-                            }
-                            if (info.BundleType == ShopBundleType.None)
-                            {
-                                // Unsupported bundle type
-                                continue;
-                            }
-                            List<Dictionary<string, object>> setItems = Utils.GetDictionaryCollection(data, "setItems");
-                            if (setItems != null)
-                            {
-                                foreach (Dictionary<string, object> itemData in setItems)
+                                ShopBundleItem item = new ShopBundleItem();
+                                item.ItemCategory = Utils.GetValue<int>(itemData, "item_category");
+                                item.ItemId = Utils.GetValue<int>(itemData, "item_id");
+                                item.Num = Utils.GetValue<int>(itemData, "num");
+                                item.Period = Utils.GetValue<bool>(itemData, "is_period");
+                                if (ItemID.GetCategoryFromID(item.ItemId) != (ItemID.Category)item.ItemCategory)
                                 {
-                                    ShopBundleItem item = new ShopBundleItem();
-                                    item.ItemCategory = Utils.GetValue<int>(itemData, "item_category");
-                                    item.ItemId = Utils.GetValue<int>(itemData, "item_id");
-                                    item.Num = Utils.GetValue<int>(itemData, "num");
-                                    item.Period = Utils.GetValue<bool>(itemData, "is_period");
-                                    info.SetItems.Add(item);
+                                    // The item id doesn't belong to the stated category so this isn't an item we can safely give / display
+                                    // (seen on period based exchange tickets which use category DECK_CASE with an item id of 4)
+                                    continue;
                                 }
+                                info.SetItems.Add(item);
                             }
-                            // NOTE: For this to work SpecialShop should always be loaded after other packs
-                            if (Utils.GetValue<int>(data, "pickupCardListId") != 0 && !string.IsNullOrEmpty(info.IconData))
-                            {
-                                int mrk;
-                                string packImageInfo = info.IconData.Split(new char[] { '&' }, StringSplitOptions.RemoveEmptyEntries).FirstOrDefault(x => x.StartsWith("pack=") && x.Contains("_"));
-                                if (!string.IsNullOrEmpty(packImageInfo) && int.TryParse(packImageInfo.Split('_')[1], out mrk))
-                                {
-                                    ShopItemInfo packShop = Shop.PackShop.Values.FirstOrDefault(x => x.IconMrk == mrk);
-                                    info.BundlePickupCardListId = packShop.ShopId;
-                                }
-                            }
+                        }
+                        info.BundlePickupCardListId = Utils.GetValue<int>(data, "pickupCardListId");
+                        info.BundleNormalCardListId = Utils.GetValue<int>(data, "normalCardListId");
+                        if (info.BundleNormalCardListId == 0)
+                        {
                             ShopItemInfo standardPack = Shop.PackShop.Values.FirstOrDefault(x => x.PackType == ShopPackType.Standard);
                             if (standardPack != null)
                             {
                                 info.BundleNormalCardListId = standardPack.ShopId;
                             }
                         }
-                        else
+                        if (Utils.GetValue<bool>(data, "is_prize") && !LoadShopItemPrize(info, data))
                         {
-                            // Only supporting bundles for now
-                            // TODO: Deck box (category 15)
                             continue;
                         }
                         break;
@@ -2315,7 +2778,7 @@ namespace YgoMaster
                         info.Flexibility = Utils.GetValue<int>(data, "flexibility");
                         info.Difficulty = Utils.GetValue<int>(data, "difficulty");
                         info.OddsName = Utils.GetValue<string>(data, "oddsName");// custom
-                        //info.IsSpecialTime = Utils.GetValue<bool>(data, "isSpecialTime");// This will be annoying to maintain. Get it from a seperate list.
+                        //info.IsSpecialTime = Utils.GetValue<bool>(data, "isSpecialTime");// This will be annoying to maintain. Get it from a separate list.
                         break;
                 }
                 foreach (Dictionary<string, object> priceData in Utils.GetDictionaryCollection(data, "prices"))
@@ -2396,6 +2859,81 @@ namespace YgoMaster
             }
         }
 
+        /// <summary>
+        /// Returns why a SpecialShop item isn't supported (or null if it's supported). Only bundles are supported.
+        /// </summary>
+        static string GetSpecialShopUnsupportedReason(Dictionary<string, object> data, out ShopBundleType bundleType)
+        {
+            bundleType = ShopBundleType.None;
+            int targetCategory = Utils.GetValue<int>(data, "targetCategory");
+            bool isPrize = Utils.GetValue<bool>(data, "is_prize");
+            if (targetCategory != 1 && !(isPrize && targetCategory == (int)ShopPrizeType.LuckyCard))
+            {
+                // TODO: Deck box (category 15)
+                return "unsupported targetCategory " + targetCategory + (isPrize ? " (prize)" : string.Empty);
+            }
+            List<string> pops = new List<string>();
+            foreach (Dictionary<string, object> priceData in Utils.GetDictionaryCollection(data, "prices"))
+            {
+                string pop = Utils.GetValue<string>(priceData, "POP");
+                Enum.TryParse<ShopBundleType>(pop, true, out bundleType);
+                pops.Add(string.IsNullOrEmpty(pop) ? "none" : pop);
+            }
+            if (bundleType == ShopBundleType.None)
+            {
+                return "unsupported bundle type (POP: " + string.Join(", ", pops) + ")";
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Loads "prize" (custom, Prize.PrizeData[targetId] with each prize's "cardList" added by --mergeshops)
+        /// </summary>
+        bool LoadShopItemPrize(ShopItemInfo info, Dictionary<string, object> data)
+        {
+            info.PrizeId = Utils.GetValue<int>(data, "targetId");
+            info.PrizeType = (ShopPrizeType)Utils.GetValue<int>(data, "prize_type");
+            if (info.PrizeType != ShopPrizeType.LuckyCard)
+            {
+                Utils.LogWarning("Unsupported prize type " + (int)info.PrizeType + " for shop " + info.ShopId);
+                return false;
+            }
+            Dictionary<string, object> prizeData = Utils.GetValue(data, "prize", default(Dictionary<string, object>));
+            if (prizeData == null)
+            {
+                Utils.LogWarning("Missing prize data for shop " + info.ShopId);
+                return false;
+            }
+            info.PrizeCoverPath = Utils.GetValue<string>(prizeData, "cover_path");
+            info.PrizeProbGachaId = Utils.GetValue<int>(data, "prob_gacha_id");
+            foreach (Dictionary<string, object> prizeRow in Utils.GetDictionaryCollection(prizeData, "Prizes"))
+            {
+                ShopBundlePrize prize = new ShopBundlePrize();
+                prize.PackId = Utils.GetValue<int>(prizeRow, "packId");
+                prize.NameText = Utils.GetValue<string>(prizeRow, "nameTextId");
+                prize.CardListId = Utils.GetValue<int>(prizeRow, "normalCardListId");
+                prize.PackImageName = Utils.GetValue<string>(prizeRow, "packImageName");
+                List<int> cards = Utils.GetIntList(prizeRow, "cardList");
+                if (cards == null || cards.Count == 0)
+                {
+                    Utils.LogWarning("No card list for prize card list " + prize.CardListId + " on shop " + info.ShopId);
+                    return false;
+                }
+                prize.Cards.AddRange(cards);
+                info.Prizes.Add(prize);
+            }
+            if (info.Prizes.Count == 0)
+            {
+                Utils.LogWarning("No prizes for shop " + info.ShopId);
+                return false;
+            }
+            foreach (ShopBundlePrize prize in info.Prizes)
+            {
+                Shop.PrizesByCardListId[prize.CardListId] = prize;
+            }
+            return true;
+        }
+
         void LoadShopPackOdds(string file)
         {
             if (!File.Exists(file))
@@ -2422,6 +2960,14 @@ namespace YgoMaster
                     foreach (object packType in packTypesList)
                     {
                         shopOdds.PackTypes.Add((ShopPackType)(int)Convert.ChangeType(packType, typeof(int)));
+                    }
+                }
+                List<int> packShopIds = Utils.GetIntList(data, "packShopIds");
+                if (packShopIds != null)
+                {
+                    foreach (int shopId in packShopIds)
+                    {
+                        shopOdds.PackShopIds.Add(shopId);
                     }
                 }
                 List<object> cardRateList = Utils.GetValue(data, "cardRateList", default(List<object>));
@@ -2489,6 +3035,17 @@ namespace YgoMaster
                     else
                     {
                         Shop.PackOddsByPackType[packType] = shopOdds;
+                    }
+                }
+                foreach (int shopId in shopOdds.PackShopIds)
+                {
+                    if (Shop.PackOddsByShopId.ContainsKey(shopId))
+                    {
+                        Utils.LogWarning("Duplicate shop odds for pack shop id " + shopId);
+                    }
+                    else
+                    {
+                        Shop.PackOddsByShopId[shopId] = shopOdds;
                     }
                 }
                 if (!string.IsNullOrEmpty(shopOdds.Name))
@@ -2598,7 +3155,15 @@ namespace YgoMaster
                 Dictionary<string, object> duelData;
                 if (!Utils.TryGetValue(data, "Duel", out duelData))
                 {
-                    continue;
+                    Utils.LogWarning(file + " isn't valid duel file format");
+                    if (data.ContainsKey("chapter"))
+                    {
+                        duelData = data;
+                    }
+                    else
+                    {
+                        continue;
+                    }
                 }
                 int chapterId;
                 if (!Utils.TryGetValue(duelData, "chapter", out chapterId))
@@ -2643,7 +3208,7 @@ namespace YgoMaster
         }
 
         /// <summary>
-        /// Helper to merge packet logs of visting the shop to extract out desired information (card packs)
+        /// Helper to merge packet logs of visiting the shop to extract out desired information (card packs)
         /// </summary>
         void MergeShopDumps()
         {
@@ -2659,12 +3224,49 @@ namespace YgoMaster
             Dictionary<int, Dictionary<string, object>> accessoryShop = new Dictionary<int, Dictionary<string, object>>();
             Dictionary<int, Dictionary<string, object>> specialShop = new Dictionary<int, Dictionary<string, object>>();
             Dictionary<int, List<int>> extraCardLists = new Dictionary<int, List<int>>();
+            Dictionary<int, int> extraCardListIds = new Dictionary<int, int>();// The card list id inside each "Gacha-" file (keyed by the id in the file name)
+            Dictionary<int, int> cardListIdToCardPackId = new Dictionary<int, int>();
+            Dictionary<int, Dictionary<string, object>> prizeDatas = new Dictionary<int, Dictionary<string, object>>();
+            Dictionary<int, List<int>> allCardLists = new Dictionary<int, List<int>>();// Every dumped card list by its card list id (used for prize card lists)
+            int standardCardListId = 0;
             foreach (string file in Directory.GetFiles(dir).OrderBy(x => new FileInfo(x).LastWriteTime))
             {
                 Dictionary<string, object> data = MiniJSON.Json.DeserializeStripped(File.ReadAllText(file)) as Dictionary<string, object>;
                 data = Utils.GetResData(data);
                 if (data != null)
                 {
+                    Dictionary<string, object> prizeData = Utils.GetValue(data, "Prize", default(Dictionary<string, object>));
+                    if (prizeData != null)
+                    {
+                        Dictionary<string, object> prizeDataItems = Utils.GetValue(prizeData, "PrizeData", default(Dictionary<string, object>));
+                        if (prizeDataItems != null)
+                        {
+                            foreach (KeyValuePair<string, object> prizeDataItem in prizeDataItems)
+                            {
+                                int prizeId;
+                                if (int.TryParse(prizeDataItem.Key, out prizeId) && prizeDataItem.Value is Dictionary<string, object>)
+                                {
+                                    prizeDatas[prizeId] = prizeDataItem.Value as Dictionary<string, object>;
+                                }
+                            }
+                        }
+                    }
+                    Dictionary<string, object> allGachaData = Utils.GetValue(data, "Gacha", default(Dictionary<string, object>));
+                    if (allGachaData != null)
+                    {
+                        Dictionary<string, object> allCardListData = Utils.GetValue(allGachaData, "cardList", default(Dictionary<string, object>));
+                        if (allCardListData != null)
+                        {
+                            foreach (string cardListKey in allCardListData.Keys)
+                            {
+                                int cardListId;
+                                if (int.TryParse(cardListKey, out cardListId))
+                                {
+                                    allCardLists[cardListId] = Utils.GetIntList(allCardListData, cardListKey);
+                                }
+                            }
+                        }
+                    }
                     Dictionary<string, object> shopData = Utils.GetValue(data, "Shop", default(Dictionary<string, object>));
                     if (shopData != null)
                     {
@@ -2734,7 +3336,7 @@ namespace YgoMaster
                                                 }
                                                 else
                                                 {
-                                                    // Special case. We aren't merging pack shops anymore due to old assets not being downlaoded.
+                                                    // Special case. We aren't merging pack shops anymore due to old assets not being downloaded.
                                                     if (!foundPackShop)
                                                     {
                                                         foundPackShop = true;
@@ -2756,14 +3358,26 @@ namespace YgoMaster
                                             {
                                                 int normalCardListId = Utils.GetValue<int>(itemData, "normalCardListId");
                                                 int pickupCardListId = Utils.GetValue<int>(itemData, "pickupCardListId");
+                                                if (shop == packShop && shopId == 10000001)
+                                                {
+                                                    standardCardListId = normalCardListId;
+                                                }
                                                 object cardIdsObj = null;
                                                 if (pickupCardListId != 0)
                                                 {
                                                     Utils.TryGetValue(cardListData, pickupCardListId.ToString(), out cardIdsObj);
+                                                    if (shop == packShop && !cardListIdToCardPackId.ContainsKey(pickupCardListId))
+                                                    {
+                                                        cardListIdToCardPackId[pickupCardListId] = shopId;
+                                                    }
                                                 }
                                                 else if (normalCardListId != 0)
                                                 {
                                                     Utils.TryGetValue(cardListData, normalCardListId.ToString(), out cardIdsObj);
+                                                    if (shop == packShop && normalCardListId != standardCardListId && !cardListIdToCardPackId.ContainsKey(normalCardListId))
+                                                    {
+                                                        cardListIdToCardPackId[normalCardListId] = shopId;
+                                                    }
                                                 }
                                                 if (cardIdsObj != null)
                                                 {
@@ -2798,6 +3412,11 @@ namespace YgoMaster
                                     else
                                     {
                                         extraCardLists[shopId] = Utils.GetIntList(cardListData, cardListData.First().Key);
+                                        int cardListId;
+                                        if (int.TryParse(cardListData.First().Key, out cardListId))
+                                        {
+                                            extraCardListIds[shopId] = cardListId;
+                                        }
                                     }
                                 }
                             }
@@ -2822,19 +3441,71 @@ namespace YgoMaster
                     }
                 }
             }
+            // Log bundles which won't be loaded so that new types of bundles don't go unnoticed
+            foreach (KeyValuePair<int, Dictionary<string, object>> specialShopItem in specialShop.OrderBy(x => x.Key))
+            {
+                List<Dictionary<string, object>> setItems = Utils.GetDictionaryCollection(specialShopItem.Value, "setItems");
+                if (setItems == null || setItems.Count == 0)
+                {
+                    continue;
+                }
+                ShopBundleType bundleType;
+                string unsupportedReason = GetSpecialShopUnsupportedReason(specialShopItem.Value, out bundleType);
+                if (unsupportedReason != null)
+                {
+                    Utils.LogWarning("Unsupported bundle " + specialShopItem.Key + " (productType: " +
+                        (ShopProductType)Utils.GetValue<int>(specialShopItem.Value, "productType") + ") " + unsupportedReason + ". It won't be in the shop");
+                }
+            }
+            // Embed Prize.PrizeData into prize bundles as "prize"
+            HashSet<int> prizeCardListIds = new HashSet<int>();
+            foreach (KeyValuePair<int, Dictionary<string, object>> specialShopItem in specialShop)
+            {
+                if (!Utils.GetValue<bool>(specialShopItem.Value, "is_prize"))
+                {
+                    continue;
+                }
+                int prizeId = Utils.GetValue<int>(specialShopItem.Value, "targetId");
+                Dictionary<string, object> prizeData;
+                if (!prizeDatas.TryGetValue(prizeId, out prizeData))
+                {
+                    Utils.LogWarning("Couldn't find prize data " + prizeId + " for shop " + specialShopItem.Key);
+                    continue;
+                }
+                foreach (Dictionary<string, object> prizeRow in Utils.GetDictionaryCollection(prizeData, "Prizes"))
+                {
+                    int cardListId = Utils.GetValue<int>(prizeRow, "normalCardListId");
+                    prizeCardListIds.Add(cardListId);
+                    List<int> cardList;
+                    if (allCardLists.TryGetValue(cardListId, out cardList))
+                    {
+                        prizeRow["cardList"] = cardList;
+                    }
+                    else
+                    {
+                        Utils.LogWarning("No card list for prize card list " + cardListId + " on shop " + specialShopItem.Key);
+                    }
+                }
+                specialShopItem.Value["prize"] = prizeData;
+            }
             foreach (KeyValuePair<int, List<int>> cardList in extraCardLists)
             {
                 if (!packShop.ContainsKey(cardList.Key))
                 {
-                    Console.WriteLine("[WARNING] Couldn't find shop for gacha list " + cardList.Key);
+                    // Prize card lists aren't for a pack shop (they're picked up by card list id above, whatever the file name)
+                    int cardListId;
+                    if (!extraCardListIds.TryGetValue(cardList.Key, out cardListId) || !prizeCardListIds.Contains(cardListId))
+                    {
+                        Console.WriteLine("[WARNING] Couldn't find shop for gacha list " + cardList.Key);
+                    }
                     continue;
                 }
                 packShop[cardList.Key]["cardList"] = cardList.Value;
             }
             // NOTE:
             // We reassign the card list ids to their shop ids.
-            // On the real server each card list has its own id which is seperate from the shop id.
-            // It makes sense for card lists to be seperate in cases like bonus packs where each bonus pack
+            // On the real server each card list has its own id which is separate from the shop id.
+            // It makes sense for card lists to be separate in cases like bonus packs where each bonus pack
             // is the same. Though the legacy pack is essentially the "main" / "master" bonus pack
             foreach (KeyValuePair<int, Dictionary<string, object>> packShopItem in new Dictionary<int, Dictionary<string, object>>(packShop))
             {
@@ -2861,6 +3532,38 @@ namespace YgoMaster
                 {
                     Utils.LogWarning("No card list for shop " + packShopItem.Key);
                     packShop.Remove(packShopItem.Key);
+                }
+            }
+            foreach (KeyValuePair<int, Dictionary<string, object>> packShopItem in new Dictionary<int, Dictionary<string, object>>(specialShop))
+            {
+                int normalCardListId = Utils.GetValue<int>(packShopItem.Value, "normalCardListId");
+                int pickupCardListId = Utils.GetValue<int>(packShopItem.Value, "pickupCardListId");
+                int normalCardPackId, pickupCardPackId;
+                if (normalCardListId != 0)
+                {
+                    if (normalCardListId == standardCardListId)
+                    {
+                        packShopItem.Value["normalCardListId"] = 10000001;
+                    }
+                    else if (cardListIdToCardPackId.TryGetValue(normalCardListId, out normalCardPackId))
+                    {
+                        packShopItem.Value["normalCardListId"] = normalCardPackId;
+                    }
+                    else
+                    {
+                        Utils.LogWarning("Couldn't find normal pack id from card list " + normalCardListId);
+                    }
+                }
+                if (pickupCardListId != 0)
+                {
+                    if (cardListIdToCardPackId.TryGetValue(pickupCardListId, out pickupCardPackId))
+                    {
+                        packShopItem.Value["pickupCardListId"] = pickupCardPackId;
+                    }
+                    else
+                    {
+                        Utils.LogWarning("Couldn't find pickup pack id from card list " + pickupCardPackId);
+                    }
                 }
             }
             MergeShops(Path.Combine(dataDirectory, "AllShopsMerged.json"), packShop, structureShop, accessoryShop, specialShop);
@@ -2899,7 +3602,7 @@ namespace YgoMaster
                 }
                 sb.AppendLine("    },");
             }
-            File.WriteAllText(outputFile, sb.ToString());
+            File.WriteAllText(outputFile, sb.ToStringLF());
         }
 
         // TODO: Remove. This is no longer being used (though fetching official sets is still useful)
@@ -3036,7 +3739,7 @@ namespace YgoMaster
                             deck.DisplayCards.Add(focusCards[i]);
                         }
                     }
-                    // NOTE: Focus cards are required outwise it'll bug out the shop
+                    // NOTE: Focus cards are required otherwise it'll bug out the shop
                     while (deck.DisplayCards.Count < 3)
                     {
                         deck.DisplayCards.Add(6018);// Mokey mokey
@@ -3452,7 +4155,7 @@ namespace YgoMaster
                 }
             }
             File.WriteAllText(Path.Combine(dataDirectory, "Solo.json"), MiniJSON.Json.Serialize(data));
-            File.WriteAllText(Path.Combine(dataDirectory, "IDS_SOLO.txt"), soloStrings.ToString());
+            File.WriteAllText(Path.Combine(dataDirectory, "IDS_SOLO.txt"), soloStrings.ToStringLF());
         }
 
         void ExtractStructureDecks()

@@ -576,15 +576,14 @@ namespace YgoMaster
                                                         }
                                                         break;
                                                     case ItemID.Category.CARD:
-                                                        int cardCountRemaining = count;
-                                                        for (CardStyleRarity i = CardStyleRarity.Normal; i <= CardStyleRarity.Shine; i++)
                                                         {
-                                                            int currentCardCount = request.Player.Cards.GetCount(itemId, PlayerCardKind.Dismantle, i);
+                                                            CardStyleRarity cardStyle;
+                                                            int cid = RemapCardId(itemId, out cardStyle);
+                                                            int currentCardCount = request.Player.Cards.GetCount(cid, PlayerCardKind.Dismantle, cardStyle);
                                                             if (currentCardCount > 0)
                                                             {
-                                                                int numCardsToTake = Math.Min(cardCountRemaining, currentCardCount);
-                                                                request.Player.Cards.Subtract(itemId, numCardsToTake, PlayerCardKind.Dismantle, i);
-                                                                cardCountRemaining -= numCardsToTake;
+                                                                int numCardsToTake = Math.Min(count, currentCardCount);
+                                                                request.Player.Cards.Subtract(cid, numCardsToTake, PlayerCardKind.Dismantle, cardStyle);
                                                             }
                                                         }
                                                         break;
@@ -599,6 +598,7 @@ namespace YgoMaster
                                                     case ItemID.Category.AVATAR_HOME:
                                                     case ItemID.Category.FIELD_OBJ:
                                                     case ItemID.Category.FIELD:
+                                                    case ItemID.Category.COIN:
                                                         request.Player.Items.Remove(itemId);
                                                         break;
                                                 }
@@ -653,7 +653,9 @@ namespace YgoMaster
                                 {
                                     if (!SoloRewardsInDuelResult)
                                     {
-                                        request.Player.Cards.Add(itemId, count, DisableNoDismantle ? PlayerCardKind.Dismantle : PlayerCardKind.NoDismantle, CardStyleRarity.Normal);
+                                        CardStyleRarity cardStyle;
+                                        int cid = RemapCardId(itemId, out cardStyle);
+                                        request.Player.Cards.Add(cid, count, DisableNoDismantle ? PlayerCardKind.Dismantle : PlayerCardKind.NoDismantle, cardStyle);
                                     }
                                 }
                                 break;
@@ -674,6 +676,7 @@ namespace YgoMaster
                             case ItemID.Category.AVATAR_HOME:
                             case ItemID.Category.FIELD_OBJ:
                             case ItemID.Category.FIELD:
+                            case ItemID.Category.COIN:
                                 {
                                     count = 1;
                                     if (!SoloRewardsInDuelResult)
@@ -1120,6 +1123,70 @@ namespace YgoMaster
             }
         }
 
+        int GetSoloRegulationIdOverride(Dictionary<string, object> data, int requestId)
+        {
+            int result = 0;
+            string regulationOverrideName;
+            if (Utils.TryGetValue(data, "regulation_name", out regulationOverrideName) && RegulationInfo != null)
+            {
+                string idStr = Utils.GetDictionary(RegulationInfo, "rule_list").FirstOrDefault(x => (string)x.Value == regulationOverrideName).Key;
+                if (string.IsNullOrEmpty(idStr))
+                {
+                    Utils.LogWarning("Invalid regulation_name '" + regulationOverrideName + "' for request " + requestId);
+                }
+                else
+                {
+                    result = int.Parse(idStr);
+                }
+            }
+            return result;
+        }
+
+        void UpdateSoloDeckValidation(GameServerWebRequest request, int chapterId)
+        {
+            int soloRegulationIdOverride = 0;
+            if (chapterId != 0)
+            {
+                int gateId = GetChapterGateId(chapterId);
+                Dictionary<string, object> allChapterData = Utils.GetDictionary(SoloData, "chapter");
+                if (allChapterData != null)
+                {
+                    Dictionary<string, object> chapterGateData = Utils.GetDictionary(allChapterData, gateId.ToString());
+                    if (chapterGateData != null)
+                    {
+                        Dictionary<string, object> chapterData = Utils.GetDictionary(chapterGateData, chapterId.ToString());
+                        if (chapterData != null)
+                        {
+                            soloRegulationIdOverride = GetSoloRegulationIdOverride(chapterData, chapterId);
+                        }
+                    }
+                }
+            }
+            if (soloRegulationIdOverride == 0 && request.Player.SoloGateId != 0)
+            {
+                Dictionary<string, object> allGateData = Utils.GetDictionary(SoloData, "gate");
+                if (allGateData != null)
+                {
+                    Dictionary<string, object> gateData = Utils.GetDictionary(allGateData, request.Player.SoloGateId.ToString());
+                    if (gateData != null)
+                    {
+                        soloRegulationIdOverride = GetSoloRegulationIdOverride(gateData, request.Player.SoloGateId);
+                    }
+                }
+            }
+            if (request.Player.SoloRegulationIdOverride != soloRegulationIdOverride)
+            {
+                request.Player.SoloRegulationIdOverride = soloRegulationIdOverride;
+                WriteSolo_deck_info(request);
+            }
+        }
+
+        void Act_GateEntry(GameServerWebRequest request)
+        {
+            request.Player.SoloGateId = Utils.GetValue<int>(request.ActParams, "gate");
+            UpdateSoloDeckValidation(request, 0);
+        }
+
         void Act_SoloDetail(GameServerWebRequest request)
         {
             int chapterId;
@@ -1154,6 +1221,8 @@ namespace YgoMaster
                         { chapterId.ToString(), chapterInfo }
                     }}
                 };
+                UpdateSoloDeckValidation(request, chapterId);
+                request.Remove("Solo.chapter");// Force the client to re-request the data every time you click the chapter
             }
         }
 

@@ -250,6 +250,12 @@ namespace YgoMaster
         Access,//v1.9.0
         Shukudai,//V2.0.0
         Shiki,//v2.3.0
+        Kyuzai,//v2.4.0
+        C,//v2.4.0
+        Osara,//v2.4.0 (changed from Osara -> Dish in v2.5.0) (changed from Dish -> Orsa in v2.6.0)
+        T,//v2.6.0
+        VIP,//v2.6.0 (changed from AAA -> VIP in v2.7.0)
+        Gachirin,//v2.6.0 (changed from BBB -> Gachirin in v2.7.0)
         Max
     }
 
@@ -550,7 +556,8 @@ namespace YgoMaster
         SelAllIndeck,
         SelAllGunkan,//v1.7.1
         SelAllNormal,//v2.2.1
-        SelAllNormal2//v2.2.1
+        SelAllNormal2,//v2.2.1
+        SelAllArtmage,//v2.5.0
     }
 
     /// <summary>
@@ -740,7 +747,8 @@ namespace YgoMaster
         Ritual,
         Xyz,
         Pendulum,
-        Link
+        Link,
+        Maximum//v2.5.0
     }
 
     /// <summary>

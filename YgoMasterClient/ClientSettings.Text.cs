@@ -222,6 +222,14 @@ namespace YgoMasterClient
         /// </summary>
         public static string CustomTextDuelStarterSleeve2;
         /// <summary>
+        /// Sleeve1 (EX)
+        /// </summary>
+        public static string CustomTextDuelStarterExSleeve1;
+        /// <summary>
+        /// Sleeve2 (EX)
+        /// </summary>
+        public static string CustomTextDuelStarterExSleeve2;
+        /// <summary>
         /// Field1
         /// </summary>
         public static string CustomTextDuelStarterField1;
@@ -269,6 +277,14 @@ namespace YgoMasterClient
         /// IconFrame2
         /// </summary>
         public static string CustomTextDuelStarterIconFrame2;
+        /// <summary>
+        /// Coin1
+        /// </summary>
+        public static string CustomTextDuelStarterCoin1;
+        /// <summary>
+        /// Coin2
+        /// </summary>
+        public static string CustomTextDuelStarterCoin2;
         /// <summary>
         /// Load / Save
         /// </summary>
@@ -605,6 +621,8 @@ namespace YgoMasterClient
             CustomTextDuelStarterHand2 = Utils.GetValue<string>(data, "CustomTextDuelStarterHand2");
             CustomTextDuelStarterSleeve1 = Utils.GetValue<string>(data, "CustomTextDuelStarterSleeve1");
             CustomTextDuelStarterSleeve2 = Utils.GetValue<string>(data, "CustomTextDuelStarterSleeve2");
+            CustomTextDuelStarterExSleeve1 = Utils.GetValue<string>(data, "CustomTextDuelStarterExSleeve1");
+            CustomTextDuelStarterExSleeve2 = Utils.GetValue<string>(data, "CustomTextDuelStarterExSleeve2");
             CustomTextDuelStarterField1 = Utils.GetValue<string>(data, "CustomTextDuelStarterField1");
             CustomTextDuelStarterField2 = Utils.GetValue<string>(data, "CustomTextDuelStarterField2");
             CustomTextDuelStarterFieldPart1 = Utils.GetValue<string>(data, "CustomTextDuelStarterFieldPart1");
@@ -617,6 +635,8 @@ namespace YgoMasterClient
             CustomTextDuelStarterIcon2 = Utils.GetValue<string>(data, "CustomTextDuelStarterIcon2");
             CustomTextDuelStarterIconFrame1 = Utils.GetValue<string>(data, "CustomTextDuelStarterIconFrame1");
             CustomTextDuelStarterIconFrame2 = Utils.GetValue<string>(data, "CustomTextDuelStarterIconFrame2");
+            CustomTextDuelStarterCoin1 = Utils.GetValue<string>(data, "CustomTextDuelStarterCoin1");
+            CustomTextDuelStarterCoin2 = Utils.GetValue<string>(data, "CustomTextDuelStarterCoin2");
             CustomTextDuelStarterLoadSave = Utils.GetValue<string>(data, "CustomTextDuelStarterLoadSave");
             CustomTextDuelStarterLoadIncludingDecks = Utils.GetValue<string>(data, "CustomTextDuelStarterLoadIncludingDecks");
             CustomTextDuelStarterLoad = Utils.GetValue<string>(data, "CustomTextDuelStarterLoad");

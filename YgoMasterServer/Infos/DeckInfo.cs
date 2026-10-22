@@ -476,6 +476,13 @@ namespace YgoMaster
         public int FieldObj;
         public int AvBase;// Can be 0 (the others should be assigned to some value)
         public int AvatarId;
+        public int Coin;
+        public int ExSleeve;
+
+        public DeckAccessoryInfo()
+        {
+            Clear();
+        }
 
         public Dictionary<string, object> ToDictionary()
         {
@@ -486,6 +493,8 @@ namespace YgoMaster
             result["object"] = FieldObj;
             result["av_base"] = AvBase;
             result["avatar_id"] = AvatarId > 0 ? AvatarId : -1;
+            result["coin"] = Coin;
+            result["ex_sleeve"] = ExSleeve;
             return result;
         }
 
@@ -497,16 +506,13 @@ namespace YgoMaster
             FieldObj = other.FieldObj;
             AvBase = other.AvBase;
             AvatarId = other.AvatarId;
+            Coin = other.Coin;
+            ExSleeve = other.ExSleeve;
         }
 
         public void Clear()
         {
-            Box = 0;
-            Sleeve = 0;
-            Field = 0;
-            FieldObj = 0;
-            AvBase = 0;
-            AvatarId = -1;
+            SetDefault();
         }
 
         public void FromDictionary(Dictionary<string, object> dict)
@@ -521,6 +527,8 @@ namespace YgoMaster
             FieldObj = Utils.GetValue<int>(dict, "object");
             AvBase = Utils.GetValue<int>(dict, "av_base");
             AvatarId = Utils.GetValue<int>(dict, "avatar_id");
+            Coin = Utils.GetValue<int>(dict, "coin");
+            ExSleeve = Utils.GetValue<int>(dict, "ex_sleeve");
         }
 
 #if !YGO_MASTER_CLIENT
@@ -532,6 +540,8 @@ namespace YgoMaster
             FieldObj = Sanitize(player, ItemID.Category.FIELD_OBJ, FieldObj);
             AvBase = Sanitize(player, ItemID.Category.AVATAR_HOME, AvBase, true);
             AvatarId = Sanitize(player, ItemID.Category.AVATAR, AvatarId, true);
+            Coin = Sanitize(player, ItemID.Category.COIN, Coin);
+            ExSleeve = Sanitize(player, ItemID.Category.PROTECTOR, ExSleeve, true);
         }
 
         int Sanitize(Player player, ItemID.Category category, int value, bool allowZeroValue = false)
@@ -551,7 +561,7 @@ namespace YgoMaster
                     return id;
                 }
             }
-            return 0;
+            return ItemID.GetDefaultId(category);
         }
 #endif
 
@@ -564,8 +574,10 @@ namespace YgoMaster
             Sleeve = (int)ItemID.Value.DefaultProtector;
             Field = (int)ItemID.Value.DefaultField;
             FieldObj = (int)ItemID.Value.DefaultFieldObj;
+            Coin = (int)ItemID.Value.DefaultCoin;
             AvBase = 0;
             AvatarId = -1;
+            ExSleeve = 0;
         }
     }
 }

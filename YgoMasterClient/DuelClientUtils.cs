@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,36 +28,48 @@ namespace YgomGame.Duel
     unsafe static class ReplayControl
     {
         static IL2Field field_ffIconOn;
+        static IL2Field field_ffIconOff;
 
         delegate void Del_OnTapFast(IntPtr thisPtr);
         static Hook<Del_OnTapFast> hookOnTapFast;
+        delegate void Del_OnTapPause(IntPtr thisPtr);
+        static Hook<Del_OnTapPause> hookOnTapPause;
+        delegate void Del_OnTapPlay(IntPtr thisPtr);
+        static Hook<Del_OnTapPlay> hookOnTapPlay;
+
+        delegate void Del_DuelClient_SetPauseReplay(csbool pause);
+        static Hook<Del_DuelClient_SetPauseReplay> hookDuelClient_SetPauseReplay;
+        delegate csbool Del_Engine_IsReplayMode(IntPtr thisPtr);
+        static Hook<Del_Engine_IsReplayMode> hookEngine_IsReplayMode;
+
+        static bool isSetPauseReplay;
 
         static ReplayControl()
         {
             IL2Assembly assembly = Assembler.GetAssembly("Assembly-CSharp");
             IL2Class classInfo = assembly.GetClass("ReplayControl", "YgomGame.Duel");
             field_ffIconOn = classInfo.GetField("ffIconOn");
+            field_ffIconOff = classInfo.GetField("ffIconOff");
             hookOnTapFast = new Hook<Del_OnTapFast>(OnTapFast, classInfo.GetMethod("OnTapFast"));
+            hookOnTapPause = new Hook<Del_OnTapPause>(OnTapPause, classInfo.GetMethod("OnTapPause"));
+            hookOnTapPlay = new Hook<Del_OnTapPlay>(OnTapPlay, classInfo.GetMethod("OnTapPlay"));
+
+            hookDuelClient_SetPauseReplay = new Hook<Del_DuelClient_SetPauseReplay>(DuelClient_SetPauseReplay, assembly.GetClass("DuelClient", "YgomGame.Duel").GetMethod("SetPauseReplay"));
+            hookEngine_IsReplayMode = new Hook<Del_Engine_IsReplayMode>(Engine_IsReplayMode, assembly.GetClass("Engine", "YgomGame.Duel").GetMethod("IsReplayMode"));
         }
 
         static void OnTapFast(IntPtr thisPtr)
         {
             // The state of the button is determined based on the current duel speed setting, so set it to what it should be
-            bool enabled = false;
-            if (UnityEngine.GameObject.IsActive(field_ffIconOn.GetValue(thisPtr).ptr))
-            {
-                DuelClient.SetDuelSpeed(DuelClient.DuelSpeed.Fastest);
-                enabled = true;
-            }
-            else
-            {
-                DuelClient.SetDuelSpeed(DuelClient.DuelSpeed.Normal);
-                enabled = false;
-            }
-            hookOnTapFast.Original(thisPtr);
-            enabled = !enabled;
+            IntPtr ffIconOn = field_ffIconOn.GetValue(thisPtr).ptr;
+            IntPtr ffIconOff = field_ffIconOff.GetValue(thisPtr).ptr;
+            bool setFastForward = UnityEngine.GameObject.IsActive(ffIconOff);
+            DuelClient.SetDuelSpeed(setFastForward ? DuelClient.DuelSpeed.Fastest : DuelClient.DuelSpeed.Normal);
+            UnityEngine.GameObject.SetActive(ffIconOn, setFastForward);
+            UnityEngine.GameObject.SetActive(ffIconOff, !setFastForward);
+            //hookOnTapFast.Original(thisPtr);// NOTE: By not calling this we miss out on OnFastReplay action being called
             ClientSettings.LoadTimeMultipliers();
-            if (enabled && ClientSettings.ReplayControlsTimeMultiplier != 0)
+            if (setFastForward && ClientSettings.ReplayControlsTimeMultiplier != 0)
             {
                 // Use a normal duel speed and use our time multiplier instead
                 DuelClient.SetDuelSpeed(DuelClient.DuelSpeed.Normal);
@@ -69,6 +81,34 @@ namespace YgomGame.Duel
                     ClientSettings.DuelClientTimeMultiplier : ClientSettings.TimeMultiplier);
             }
             DuelDll.PvpSpectatorRapidState = PvpSpectatorRapidState.Finished;
+        }
+
+        static void OnTapPause(IntPtr thisPtr)
+        {
+            hookOnTapPause.Original(thisPtr);
+            DuelClient_SetPauseReplay(true);
+        }
+
+        static void OnTapPlay(IntPtr thisPtr)
+        {
+            hookOnTapPlay.Original(thisPtr);
+            DuelClient_SetPauseReplay(false);
+        }
+
+        static void DuelClient_SetPauseReplay(csbool pause)
+        {
+            isSetPauseReplay = true;
+            hookDuelClient_SetPauseReplay.Original(pause);
+            isSetPauseReplay = false;
+        }
+
+        static csbool Engine_IsReplayMode(IntPtr thisPtr)
+        {
+            if (isSetPauseReplay)
+            {
+                return true;
+            }
+            return hookEngine_IsReplayMode.Original(thisPtr);
         }
     }
 
@@ -235,7 +275,6 @@ namespace YgomGame.Duel
         static IL2Property rectTransforOffsetMin;
         static IL2Property rectTransforOffsetMax;
 
-
         public static IntPtr Instance
         {
             get { return DuelClient.HUD; }
@@ -267,18 +306,24 @@ namespace YgomGame.Duel
         static void DuelStart(IntPtr thisPtr)
         {
             hookDuelStart.Original(thisPtr);
-            if (ClientSettings.ReplayControlsXOffset != 0)
+            if (Util.IsReplay() == 0 && ClientSettings.ReplayControlsAlwaysEnabled)
             {
                 IntPtr obj = GameObject.FindGameObjectByPath(Component.GetGameObject(thisPtr), "DuelHUD(Clone).Root.ReplayControl.BG");
                 if (obj != IntPtr.Zero)
                 {
-                    IntPtr transform = GameObject.GetTransform(obj);
-                    AssetHelper.Vector2 offsetMin = rectTransforOffsetMin.GetGetMethod().Invoke(transform).GetValueRef<AssetHelper.Vector2>();
-                    AssetHelper.Vector2 offsetMax = rectTransforOffsetMax.GetGetMethod().Invoke(transform).GetValueRef<AssetHelper.Vector2>();
-                    offsetMin.x -= ClientSettings.ReplayControlsXOffset;
-                    offsetMax.x -= ClientSettings.ReplayControlsXOffset;
-                    rectTransforOffsetMin.GetSetMethod().Invoke(transform, new IntPtr[] { new IntPtr(&offsetMin) });
-                    rectTransforOffsetMax.GetSetMethod().Invoke(transform, new IntPtr[] { new IntPtr(&offsetMax) });
+                    GameObject.SetActive(GameObject.GetParentObject(obj), true);
+                    if (ClientSettings.ReplayControlsXOffset != 0 || ClientSettings.ReplayControlsYOffset != 0)
+                    {
+                        IntPtr transform = GameObject.GetTransform(obj);
+                        AssetHelper.Vector2 offsetMin = rectTransforOffsetMin.GetGetMethod().Invoke(transform).GetValueRef<AssetHelper.Vector2>();
+                        AssetHelper.Vector2 offsetMax = rectTransforOffsetMax.GetGetMethod().Invoke(transform).GetValueRef<AssetHelper.Vector2>();
+                        offsetMin.x += ClientSettings.ReplayControlsXOffset;
+                        offsetMax.x += ClientSettings.ReplayControlsXOffset;
+                        offsetMin.y += ClientSettings.ReplayControlsYOffset;
+                        offsetMax.y += ClientSettings.ReplayControlsYOffset;
+                        rectTransforOffsetMin.GetSetMethod().Invoke(transform, new IntPtr[] { new IntPtr(&offsetMin) });
+                        rectTransforOffsetMax.GetSetMethod().Invoke(transform, new IntPtr[] { new IntPtr(&offsetMax) });
+                    }
                 }
             }
         }
@@ -318,37 +363,6 @@ namespace YgomGame.Duel
         }
     }
 
-    unsafe static class DuelHUD_PrepareToDuelProcess
-    {
-        delegate csbool Del_MoveNext(IntPtr thisPtr);
-        static Hook<Del_MoveNext> hookMoveNext;
-
-        public static bool IsMoveNext;
-
-        static DuelHUD_PrepareToDuelProcess()
-        {
-            IL2Assembly assembly = Assembler.GetAssembly("Assembly-CSharp");
-            IL2Class duelHudClassInfo = assembly.GetClass("DuelHUD", "YgomGame.Duel");
-            foreach (IL2Class nestedClassInfo in duelHudClassInfo.GetNestedTypes())
-            {
-                if (nestedClassInfo.Name.Contains("PrepareToDuelProcess"))
-                {
-                    hookMoveNext = new Hook<Del_MoveNext>(MoveNext, nestedClassInfo.GetMethod("MoveNext"));
-                    break;
-                }
-            }
-        }
-
-        static csbool MoveNext(IntPtr thisPtr)
-        {
-            //Console.WriteLine("State: " + *(int*)(thisPtr + 0x10));
-            IsMoveNext = true;
-            csbool result = hookMoveNext.Original(thisPtr);
-            IsMoveNext = false;
-            return result;
-        }
-    }
-
     unsafe static class Util
     {
         delegate int Del_CheckDuelMode();
@@ -366,12 +380,8 @@ namespace YgomGame.Duel
             hookIsAudience = new Hook<Del_CheckDuelMode>(IsAudience, classInfo.GetMethod("IsAudience"));
         }
 
-        static int IsReplay()
+        public static int IsReplay()
         {
-            if (ClientSettings.ReplayControlsAlwaysEnabled && DuelHUD_PrepareToDuelProcess.IsMoveNext)
-            {
-                return 1;
-            }
             if (DuelDll.IsInsideDuelTimerPrepareToDuel && DuelDll.IsTimerEnabled)
             {
                 return 0;
@@ -536,9 +546,8 @@ namespace YgomGame.Duel
 
         static IL2Field fieldType;
         static IL2Method methodGetCurrentDataList;
-        static IL2Method methodClose;
 
-        delegate void Del_UpdateList(IntPtr thisPtr, int team, int position);
+        delegate void Del_UpdateList(IntPtr thisPtr, int team, int position, csbool onCursor);
         static Hook<Del_UpdateList> hookUpdateList;
         delegate void Del_UpdateDataList(IntPtr thisPtr);
         static Hook<Del_UpdateDataList> hookUpdateDataList;
@@ -551,13 +560,12 @@ namespace YgomGame.Duel
             IL2Class classInfo = assembly.GetClass("GenericCardListController", "YgomGame.Duel");
             fieldType = classInfo.GetField("m_Type");
             methodGetCurrentDataList = classInfo.GetProperty("m_CurrentDataList").GetGetMethod();
-            methodClose = classInfo.GetMethod("Close");
             hookUpdateList = new Hook<Del_UpdateList>(UpdateList, classInfo.GetMethod("UpdateList"));
             hookUpdateDataList = new Hook<Del_UpdateDataList>(UpdateDataList, classInfo.GetMethod("UpdateDataList"));
             hookSetUidCard = new Hook<Del_SetUidCard>(SetUidCard, classInfo.GetMethod("SetUidCard"));
         }
 
-        static void UpdateList(IntPtr thisPtr, int team, int position)
+        static void UpdateList(IntPtr thisPtr, int team, int position, csbool onCursor)
         {
             if (ClientSettings.DuelClientShowRemainingCardsInDeck)
             {
@@ -576,7 +584,7 @@ namespace YgomGame.Duel
                 {
                     isCustomCardList = true;
                     position = positionBanish;
-                    hookUpdateList.Original(thisPtr, team, position);
+                    hookUpdateList.Original(thisPtr, team, position, onCursor);
                     UpdateDataList(thisPtr);
                     return;
                 }
@@ -586,7 +594,7 @@ namespace YgomGame.Duel
                     isCustomCardList = false;
                 }
             }
-            hookUpdateList.Original(thisPtr, team, position);
+            hookUpdateList.Original(thisPtr, team, position, onCursor);
         }
 
         static void UpdateDataList(IntPtr thisPtr)
@@ -688,12 +696,15 @@ namespace YgomGame.Duel
     {
         delegate IntPtr Del_Get(IntPtr thisPtr, int mrk, int player, int effectNo);
         static Hook<Del_Get> hookGet;
+        delegate IntPtr Del_Get2(IntPtr thisPtr, int mrk);
+        static Hook<Del_Get2> hookGet2;
 
         static CardRunEffectSetting()
         {
             IL2Assembly assembly = Assembler.GetAssembly("Assembly-CSharp");
             IL2Class classInfo = assembly.GetClass("CardRunEffectSetting", "YgomGame.Duel");
-            hookGet = new Hook<Del_Get>(Get, classInfo.GetMethod("Get"));
+            hookGet = new Hook<Del_Get>(Get, classInfo.GetMethod("Get", x => x.GetParameters().Length == 3));
+            hookGet2 = new Hook<Del_Get2>(Get2, classInfo.GetMethod("Get", x => x.GetParameters().Length == 1));
         }
 
         static IntPtr Get(IntPtr thisPtr, int mrk, int player, int effectNo)
@@ -704,6 +715,16 @@ namespace YgomGame.Duel
                 return IntPtr.Zero;
             }
             return hookGet.Original(thisPtr, mrk, player, effectNo);
+        }
+
+        static IntPtr Get2(IntPtr thisPtr, int mrk)
+        {
+            if (ClientSettings.DuelClientDisableCutinAnimations ||
+                (ClientSettings.DuelClientDisableCutinAnimationsForCardsWithCustomImages && CardIndividualSetting.IsCustomImage(mrk)))
+            {
+                return IntPtr.Zero;
+            }
+            return hookGet2.Original(thisPtr, mrk);
         }
     }
 

@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.IO;
 using System.Threading;
 using System.Reflection;
@@ -41,6 +42,13 @@ namespace YgoMasterClient
                 {
                     isMultiplayerClient = true;
                 }
+                // We need to check for this option now
+                // If present, we make the GameLauncher wait for the Client to Exit
+                // and write the result to standard output for inter-process communication
+                if ((args.Length > 0 && args[0].ToLower() == "instantduel"))
+                {
+                    ClientSettings.InstantDuel = true;
+                }
             }
             catch
             {
@@ -49,7 +57,7 @@ namespace YgoMasterClient
             bool success = false;
             if (!File.Exists(GameLauncher.LoaderDll))
             {
-                ShowMessageBox("Couldn't find " + GameLauncher.LoaderDll);
+                ShowMessageBox("Couldn't find " + GameLauncher.LoaderDll + "\n\nCurrent directory: " + Environment.CurrentDirectory);
                 return;
             }
             if (!File.Exists(Path.Combine("..", "masterduel_Data", "Plugins", "x86_64", "duel.dll")))
@@ -130,12 +138,12 @@ namespace YgoMasterClient
                         ClientSettings.LaunchMode = GameLauncherMode.Detours;
                         break;
                 }
-                success = GameLauncher.Launch(ClientSettings.LaunchMode);
+                success = GameLauncher.Launch(ClientSettings.LaunchMode, args);
             }
             if (!success)
             {
                 ShowMessageBoxError("Failed. Make sure the YgoMaster folder is inside game folder.\n\nThis should roughly be (depending on your steam install):\n\n " +
-                    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Yu-Gi-Oh! Master Duel\\YgoMaster\\\n\nThe working directory is:\n\n" +
+                    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Yu-Gi-Oh! Master Duel\\YgoMaster\\\n\nThe current directory is:\n\n" +
                      Environment.CurrentDirectory);
             }
         }
@@ -179,6 +187,26 @@ namespace YgoMasterClient
                     ConsoleHelper.ShowConsole();
                 }
 
+                ClientSettings.InstantDuel = false;
+                string arg_cl = Environment.CommandLine;
+                if (arg_cl != null)
+                {
+                    // parse command line arguments
+                    var matches = Regex.Matches(arg_cl, @"[\""].+?[\""]|[^ ]+");
+                    string[] args = new string[matches.Count];
+
+                    for (int i = 0; i < matches.Count; i++)
+                    {
+                        args[i] = matches[i].Value.Trim('"');
+                    }
+
+                    if (args.Length>=2 && args[0].ToLower() == "instantduel")
+                    {
+                        ClientSettings.InstantDuel = true;
+                        ClientSettings.InstantDuelConfig = MiniJSON.Json.DeserializeStripped(args[1]) as Dictionary<string, object>;
+                    }
+                }
+
                 string pluginsDir = Path.Combine(CurrentDir, "Plugins");
                 if (Directory.Exists(pluginsDir))
                 {
@@ -197,7 +225,11 @@ namespace YgoMasterClient
                     ReflectionValidator.ValidateDump();
                 }
 
-                if (!IsLive)
+                if (IsLive)
+                {
+                    ClientSettings.MultiplayerToken = null;
+                }
+                else
                 {
                     SimpleProxy.Run();
                 }
@@ -271,7 +303,7 @@ namespace YgoMasterClient
                 nativeTypes.Add(typeof(YgomGame.Duel.ReplayControl));
                 nativeTypes.Add(typeof(YgomGame.Duel.DuelClient));
                 nativeTypes.Add(typeof(YgomGame.Duel.CameraShaker));
-                nativeTypes.Add(typeof(YgomGame.Duel.DuelHUD_PrepareToDuelProcess));
+                // nativeTypes.Add(typeof(YgomGame.Duel.DuelHUD_PrepareToDuelProcess)); // v2.4.0 removed
                 nativeTypes.Add(typeof(YgomGame.Duel.Util));
                 nativeTypes.Add(typeof(YgomGame.Duel.Engine));
                 nativeTypes.Add(typeof(YgomGame.Duel.EngineApiUtil));
@@ -333,6 +365,7 @@ namespace YgoMasterClient
                 nativeTypes.Add(typeof(YgomSystem.Utility.ClientWork));
                 nativeTypes.Add(typeof(YgomSystem.Utility.ClientWorkUtil));
                 nativeTypes.Add(typeof(YgomSystem.Network.ProtocolHttp));
+                nativeTypes.Add(typeof(YgomSystem.Billing.Billing_Steam));
                 nativeTypes.Add(typeof(YgomSystem.LocalFileSystem.WindowsStorageIO));
                 nativeTypes.Add(typeof(YgomSystem.LocalFileSystem.StandardStorageIO));
                 nativeTypes.Add(typeof(YgomMiniJSON.Json));
@@ -434,7 +467,7 @@ namespace YgoMasterClient
                 }
                 sb.AppendLine(e.ToString());
 
-                ShowMessageBox(sb.ToString());
+                ShowMessageBox(sb.ToStringLF());
                 Environment.Exit(0);
                 return 1;
             }
@@ -475,29 +508,55 @@ namespace YgoMasterClient
 
 unsafe static class Win32Hooks
 {
+    [UnmanagedFunctionPointer(CallingConvention.Winapi)]
     delegate int Del_PeekMessageA(IntPtr lpMsg, IntPtr hWnd, uint wMsgFilterMin, uint wMsgFilterMax, uint wRemoveMsg);
     static Hook<Del_PeekMessageA> hookPeekMessageA;
+    static Del_PeekMessageA peekMessageADelegate;
+
+    [UnmanagedFunctionPointer(CallingConvention.Winapi)]
+    delegate int Del_PeekMessageW(IntPtr lpMsg, IntPtr hWnd, uint wMsgFilterMin, uint wMsgFilterMax, uint wRemoveMsg);
+    static Hook<Del_PeekMessageW> hookPeekMessageW;
+    static Del_PeekMessageW peekMessageWDelegate;
 
     static List<Action> actions = new List<Action>();
 
     static Win32Hooks()
     {
-        hookPeekMessageA = new Hook<Del_PeekMessageA>(PeekMessageA, PInvoke.GetProcAddress(PInvoke.GetModuleHandle("user32.dll"), "PeekMessageA"));
+        IntPtr user32 = PInvoke.GetModuleHandle("user32.dll");
+
+        IntPtr addrA = PInvoke.GetProcAddress(user32, "PeekMessageA");
+        peekMessageADelegate = PeekMessageA;
+        hookPeekMessageA = new Hook<Del_PeekMessageA>(peekMessageADelegate, addrA);
+
+        IntPtr addrW = PInvoke.GetProcAddress(user32, "PeekMessageW");
+        peekMessageWDelegate = PeekMessageW;
+        hookPeekMessageW = new Hook<Del_PeekMessageW>(peekMessageWDelegate, addrW);   
     }
 
-    static int PeekMessageA(IntPtr lpMsg, IntPtr hWnd, uint wMsgFilterMin, uint wMsgFilterMax, uint wRemoveMsg)
+    static void HandleActions()
     {
         lock (actions)
         {
             for (int i = actions.Count - 1; i >= 0; i--)
             {
-                if (!AssetHelper.IsQuitting)
-                {
-                    actions[i]();
+                try { if (!AssetHelper.IsQuitting) actions[i](); }
+                catch (Exception ex) { 
+                    Console.WriteLine(ex);
                 }
                 actions.RemoveAt(i);
             }
         }
+    }
+
+    static int PeekMessageW(IntPtr lpMsg, IntPtr hWnd, uint wMsgFilterMin, uint wMsgFilterMax, uint wRemoveMsg)
+    {
+        HandleActions();
+        return hookPeekMessageW.Original(lpMsg, hWnd, wMsgFilterMin, wMsgFilterMax, wRemoveMsg);
+    }
+
+    static int PeekMessageA(IntPtr lpMsg, IntPtr hWnd, uint wMsgFilterMin, uint wMsgFilterMax, uint wRemoveMsg)
+    {
+        HandleActions();
         return hookPeekMessageA.Original(lpMsg, hWnd, wMsgFilterMin, wMsgFilterMax, wRemoveMsg);
     }
 
@@ -885,6 +944,108 @@ namespace YgomSystem.Network
             YgomSystem.Utility.ClientWork.UpdateJson("$.Server.urls", MiniJSON.Json.Serialize(urls));
             YgomSystem.Utility.ClientWork.UpdateValue("$.Server.url", ClientSettings.ServerUrl);
             YgomSystem.Utility.ClientWork.UpdateValue("$.Server.url_polling", ClientSettings.ServerPollUrl);
+        }
+    }
+}
+
+namespace YgomSystem.Billing
+{
+    // Bypasses the Steam payment path so the gem shop works offline.
+    // Server half / act ordering: YgoMasterServer/Acts/Act_Billing.cs
+    static class Billing_Steam
+    {
+        const uint SteamAppId = 1449850;
+
+        // MicroTxnAuthorizationResponse_t layout, inferred from x64 alignment of
+        // { UInt32, UInt64, Byte } rather than read from IL2CPP. If it ever stops matching,
+        // m_bAuthorized reads 0 and purchases are silently declined instead of crashing.
+        // IL2Field.Token gives the real offsets.
+        const int MicroTxn_Size = 24;
+        const int MicroTxn_AppIdOffset = 0;
+        const int MicroTxn_OrderIdOffset = 8;
+        const int MicroTxn_AuthorizedOffset = 16;
+
+        static IL2Class classInfo;
+        static IL2Method methodCanMakePayment;
+        static IL2Method methodOnMicroTxnAuthorizationResponse;
+
+        delegate bool Del_CanMakePayment();
+        static Hook<Del_CanMakePayment> hookCanMakePayment;
+
+        delegate bool Del_BuyItemFromPlatform(IntPtr thisPtr, IntPtr product, IntPtr callback);
+        static Hook<Del_BuyItemFromPlatform> hookBuyItemFromPlatform;
+
+        static Billing_Steam()
+        {
+            // Never touch payment behaviour on the real game.
+            if (Program.IsLive)
+            {
+                return;
+            }
+            IL2Assembly assembly = Assembler.GetAssembly("Assembly-CSharp");
+            classInfo = assembly.GetClass("Billing_Steam", "YgomSystem.Billing");
+            methodCanMakePayment = classInfo.GetMethod("canMakePayment");
+            methodOnMicroTxnAuthorizationResponse = classInfo.GetMethod("OnMicroTxnAuthorizationResponse");
+
+            hookCanMakePayment = new Hook<Del_CanMakePayment>(CanMakePayment, methodCanMakePayment);
+            hookBuyItemFromPlatform = new Hook<Del_BuyItemFromPlatform>(
+                BuyItemFromPlatform, classInfo.GetMethod("BuyItemFromPlatform"));
+        }
+
+        // Steam would normally authorise the purchase and fire MicroTxnAuthorizationResponse_t.
+        // Offline that never happens, so synthesise it and drive the game's own callback.
+        static bool BuyItemFromPlatform(IntPtr thisPtr, IntPtr product, IntPtr callback)
+        {
+            ulong orderId = (ulong)YgoMaster.Utils.CreateBillingId();
+
+            // Must run the original: it sets m_ProductInfo, which the callback chain
+            // dereferences. Skip it and OnMicroTxnAuthorizationResponse throws.
+            bool originalResult = false;
+            try
+            {
+                originalResult = hookBuyItemFromPlatform.Original(thisPtr, product, callback);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("[Billing] Original BuyItemFromPlatform threw (expected offline): " + e.Message);
+            }
+
+            Console.WriteLine("[Billing] BuyItemFromPlatform intercepted (original returned " + originalResult +
+                ") - faking Steam authorization (order " + orderId + ")");
+
+            // Deferred a frame - completing the purchase inline finishes it before the caller has
+            // set up the state it's about to wait on.
+            TradeUtils.AddAction(delegate
+            {
+                IntPtr mem = Marshal.AllocHGlobal(MicroTxn_Size);
+                try
+                {
+                    for (int i = 0; i < MicroTxn_Size; i++)
+                    {
+                        Marshal.WriteByte(mem, i, 0);
+                    }
+                    Marshal.WriteInt32(mem, MicroTxn_AppIdOffset, (int)SteamAppId);
+                    Marshal.WriteInt64(mem, MicroTxn_OrderIdOffset, (long)orderId);
+                    Marshal.WriteByte(mem, MicroTxn_AuthorizedOffset, 1);
+
+                    methodOnMicroTxnAuthorizationResponse.Invoke(thisPtr, new IntPtr[] { mem });
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("[Billing] Failed to drive OnMicroTxnAuthorizationResponse: " + e);
+                }
+                finally
+                {
+                    Marshal.FreeHGlobal(mem);
+                }
+            });
+
+            return true;
+        }
+
+        static bool CanMakePayment()
+        {
+            return true;
         }
     }
 }

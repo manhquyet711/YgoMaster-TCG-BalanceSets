@@ -429,7 +429,7 @@ namespace YgomGame
         delegate IntPtr Del_RemoveFromDeck2(IntPtr thisPtr, IntPtr card, csbool isDrag, IntPtr pos, csbool isFlick);
         static Hook<Del_RemoveFromDeck2> hookRemoveFromDeck2;
 
-        delegate IntPtr Del_AsyncFilterAndSort(IntPtr thisPtr, IntPtr onFinish, csbool setAll, IntPtr targetSorter, csbool filter);
+        delegate IntPtr Del_AsyncFilterAndSort(IntPtr thisPtr, IntPtr onFinish, csbool setAll, IntPtr targetSorter, csbool filter, IntPtr targetArea);
         static Hook<Del_AsyncFilterAndSort> hookAsyncFilterAndSort;
 
         delegate IntPtr Del_getRelatedCardList(IntPtr thisPtr, int cardID, csbool fullStyle);
@@ -840,14 +840,14 @@ namespace YgomGame
             Deck.CardCollectionView.UpdateView(collectionView, updateDataCount, select);
         }
 
-        static IntPtr AsyncFilterAndSort(IntPtr thisPtr, IntPtr onFinish, csbool setAll, IntPtr targetSorter, csbool filter)
+        static IntPtr AsyncFilterAndSort(IntPtr thisPtr, IntPtr onFinish, csbool setAll, IntPtr targetSorter, csbool filter, IntPtr targetArea)
         {
             if (skipNextAsyncFilterAndSort)
             {
                 skipNextAsyncFilterAndSort = false;
                 return IntPtr.Zero;
             }
-            return hookAsyncFilterAndSort.Original(thisPtr, onFinish, setAll, targetSorter, filter);
+            return hookAsyncFilterAndSort.Original(thisPtr, onFinish, setAll, targetSorter, filter, targetArea);
         }
 
         public static void ReapplyFilter()
@@ -1179,8 +1179,8 @@ namespace YgomGame.SubMenu
                         {
                             string fullErrorMsg = ClientSettings.CustomTextDeckEditTextParseFailed;
                             fullErrorMsg = fullErrorMsg.Replace("{numFailed}", numFailed.ToString());
-                            fullErrorMsg = fullErrorMsg.Replace("{failedSb}", failedSb.ToString());
-                            Clipboard.SetText(failedSb.ToString());
+                            fullErrorMsg = fullErrorMsg.Replace("{failedSb}", failedSb.ToStringLF());
+                            Clipboard.SetText(failedSb.ToStringLF());
                             YgomGame.Menu.CommonDialogViewController.OpenConfirmationDialogScroll(ClientSettings.CustomTextInfo,
                                 fullErrorMsg, ClientSettings.CustomTextOK, null, null, true, 500);
                         }
@@ -1235,8 +1235,8 @@ namespace YgomGame.SubMenu
                         {
                             string fullErrorMsg = ClientSettings.CustomTextDeckEditTextParseFailed;
                             fullErrorMsg = fullErrorMsg.Replace("{numFailed}", numFailed.ToString());
-                            fullErrorMsg = fullErrorMsg.Replace("{failedSb}", failedSb.ToString());
-                            Clipboard.SetText(failedSb.ToString());
+                            fullErrorMsg = fullErrorMsg.Replace("{failedSb}", failedSb.ToStringLF());
+                            Clipboard.SetText(failedSb.ToStringLF());
                             YgomGame.Menu.CommonDialogViewController.OpenConfirmationDialogScroll(ClientSettings.CustomTextInfo,
                                 fullErrorMsg, ClientSettings.CustomTextOK, null, null, true, 500);
                         }
@@ -1326,7 +1326,7 @@ namespace YgomGame.SubMenu
                 {
                     sb.Append(Convert.ToBase64String(buffer) + "!");
                 }
-                Clipboard.SetText(sb.ToString());
+                Clipboard.SetText(sb.ToStringLF());
             }
         };
 
@@ -1574,7 +1574,7 @@ namespace YgomGame.SubMenu
             sb.AppendLine();
             sb.AppendLine(ClientSettings.CustomTextCardStatsIndex);
             YgomGame.Menu.CommonDialogViewController.OpenConfirmationDialogScroll(ClientSettings.CustomTextCardStatsTitle,
-                sb.ToString(), ClientSettings.CustomTextOK, null, null, true, 720);
+                sb.ToStringLF(), ClientSettings.CustomTextOK, null, null, true, 720);
         };
 
         static void PopViewController()

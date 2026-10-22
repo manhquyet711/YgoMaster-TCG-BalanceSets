@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -82,6 +82,28 @@ namespace YgoMaster
             return (new DateTime(1970, 1, 1)).AddSeconds(time).ToLocalTime();
         }
 
+        static readonly object billingIdLocker = new object();
+        static long lastBillingId;
+
+        // Ids used by the billing flow (Steam order id / purchased_item_target_id).
+        // The real ones look like 2000010112000000000 - a UTC timestamp (yyyyMMddHHmmss) followed by
+        // sub-second digits - so match that shape. Always increases, so two purchases landing in
+        // the same millisecond can't produce the same id.
+        public static long CreateBillingId()
+        {
+            lock (billingIdLocker)
+            {
+                long id;
+                if (!long.TryParse(DateTime.UtcNow.ToString("yyyyMMddHHmmssfff",
+                    System.Globalization.CultureInfo.InvariantCulture) + "00", out id) || id <= lastBillingId)
+                {
+                    id = lastBillingId + 1;
+                }
+                lastBillingId = id;
+                return id;
+            }
+        }
+
         public static bool TryCreateDirectory(string dir)
         {
             try
@@ -152,7 +174,7 @@ namespace YgoMaster
                 foreach (object item in items)
                 {
                     int intVal = (int)Convert.ChangeType(item, typeof(int));
-                    if (intVal != 0)
+                    if (!ignoreZero || intVal != 0)
                     {
                         result.Add(intVal);
                     }
@@ -160,14 +182,14 @@ namespace YgoMaster
             }
         }
 
-        public static List<T> GetValueTypeList<T>(Dictionary<string, object> values, string key, bool ignoreZero = false)
+        public static List<T> GetValueTypeList<T>(Dictionary<string, object> values, string key)
         {
             List<T> result = new List<T>();
-            GetValueTypeList(values, key, result, ignoreZero);
+            GetValueTypeList(values, key, result);
             return result;
         }
 
-        public static void GetValueTypeList<T>(Dictionary<string, object> values, string key, List<T> result, bool ignoreZero = false)
+        public static void GetValueTypeList<T>(Dictionary<string, object> values, string key, List<T> result)
         {
             List<object> items;
             if (TryGetValue(values, key, out items))
@@ -194,7 +216,7 @@ namespace YgoMaster
                 foreach (object item in items)
                 {
                     int intVal = (int)Convert.ChangeType(item, typeof(int));
-                    if (intVal != 0)
+                    if (!ignoreZero || intVal != 0)
                     {
                         result.Add(intVal);
                     }
@@ -737,5 +759,13 @@ namespace YgoMaster
             }
             return true;
         }
+    }
+}
+
+static class StringBuilderExtensions
+{
+    public static string ToStringLF(this StringBuilder sb)
+    {
+        return sb.ToString().Replace("\r", "");
     }
 }

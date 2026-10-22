@@ -8,7 +8,7 @@ YgoMaster/Data/CpuContest/*
 YgoMaster/Data/Decks/*
 YgoMaster/Data/Players/*
 YgoMaster/Data/Player.json
-YgoMaster/YgoMaster.exe.config
+YgoMaster/*.exe.config
 YgoMaster/*.vshost.*
 YgoMaster/*.exp
 YgoMaster/*.lib
@@ -23,7 +23,6 @@ masterduel_Data/*
 *.user
 *.userosscache
 *.sln.docstates
-*.ico
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

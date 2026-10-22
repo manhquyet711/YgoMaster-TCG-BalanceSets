@@ -51,6 +51,9 @@ namespace YgoMaster
         public TradeInfo ActiveTrade;
         public DateTime LastEnterTradeRoomRequest;
         public NetClient NetClient;
+        public UserCardFiles CardFiles { get; private set; }
+        public int SoloRegulationIdOverride;
+        public int SoloGateId;
 
         public bool IsDuelingPVP
         {
@@ -69,7 +72,7 @@ namespace YgoMaster
             CardFavorites = new CardCollection();
             CardLock = new CardCollection();
             Decks = new Dictionary<int, DeckInfo>();
-            Cards = new PlayerCards();
+            Cards = new PlayerCards(this);
             ShopState = new PlayerShopState();
             SoloChapters = new Dictionary<int, ChapterStatus>();
             CraftPoints = new PlayerCraftPoints();
@@ -79,6 +82,7 @@ namespace YgoMaster
             DuelRoomInvitesByFriendId = new Dictionary<uint, uint>();
             ActiveDuelSettings = new DuelSettings();
             RecentlyListedReplayFilesByDid = new Dictionary<long, string>();
+            CardFiles = new UserCardFiles();
         }
 
         public Dictionary<string, object> SoloChaptersToDictionary()
@@ -157,6 +161,50 @@ namespace YgoMaster
                     return true;
                 default:
                     return Items.Add(itemId);
+            }
+        }
+
+        public void UpdateCardFileStatusForCardId(int cardId)
+        {
+            foreach (UserCardFileStatus cardFileStatus in CardFiles.Files.Values)
+            {
+                UserCardFileStatusCard cardStatus;
+                if (cardFileStatus.Cards.TryGetValue(cardId, out cardStatus))
+                {
+                    int cardCount = Cards.GetCount(cardId);
+                    if ((cardFileStatus.Cards[cardId].RealHave && cardCount == 0) || (!cardFileStatus.Cards[cardId].RealHave && cardCount > 0))
+                    {
+                        cardFileStatus.Cards[cardId].RealHave = cardCount > 0;
+                        if (cardCount == 0)
+                        {
+                            cardFileStatus.Cards[cardId].Style = CardStyleRarity.Normal;
+                        }
+                        RequiresSaving = true;
+                    }
+                    if (cardFileStatus.Cards[cardId].Have && !cardFileStatus.Cards[cardId].RealHave)
+                    {
+                        cardFileStatus.Cards[cardId].Dismantled = true;
+                        RequiresSaving = true;
+                    }
+                    if (cardFileStatus.Cards[cardId].RealHave && cardFileStatus.Cards[cardId].Dismantled)
+                    {
+                        cardFileStatus.Cards[cardId].Dismantled = false;
+                        RequiresSaving = true;
+                    }
+                    for (CardStyleRarity style = CardStyleRarity.Royal; style >= CardStyleRarity.Normal; style--)
+                    {
+                        int count = Cards.GetCount(cardId, PlayerCardKind.All, style);
+                        if (count > 0)
+                        {
+                            if (cardStatus.Style != style)
+                            {
+                                cardStatus.Style = style;
+                                RequiresSaving = true;
+                            }
+                            break;
+                        }
+                    }
+                }
             }
         }
     }
@@ -294,6 +342,13 @@ namespace YgoMaster
     {
         ConcurrentDictionary<int, State> cards = new ConcurrentDictionary<int, State>();
 
+        Player player;
+
+        public PlayerCards(Player player)
+        {
+            this.player = player;
+        }
+
         public int Count
         {
             get { return cards.Count; }
@@ -346,6 +401,7 @@ namespace YgoMaster
             {
                 cards[cardId] = state;
             }
+            player.UpdateCardFileStatusForCardId(cardId);
         }
 
         public void Subtract(int cardId, int count, PlayerCardKind kind, CardStyleRarity styleRarity)
@@ -362,6 +418,7 @@ namespace YgoMaster
                     cards[cardId] = state;
                 }
             }
+            player.UpdateCardFileStatusForCardId(cardId);
         }
 
         public void SetCount(int cardId, int count, PlayerCardKind kind, CardStyleRarity styleRarity)
@@ -377,11 +434,13 @@ namespace YgoMaster
             {
                 cards[cardId] = state;
             }
+            player.UpdateCardFileStatusForCardId(cardId);
         }
 
         public void Remove(int cardId)
         {
             cards.Remove(cardId);
+            player.UpdateCardFileStatusForCardId(cardId);
         }
 
         public void Remove(int cardId, PlayerCardKind kind, CardStyleRarity styleRarity)
@@ -739,6 +798,18 @@ namespace YgoMaster
             return state != null ? state.PurchaseCount : 0;
         }
 
+        public void SetPrizeCardId(ShopItemInfo shopItem, int pos, int cardId)
+        {
+            GetItemState(shopItem).PrizeCardIds[pos] = cardId;
+        }
+
+        public int GetPrizeCardId(ShopItemInfo shopItem, int pos)
+        {
+            int cardId;
+            GetItemState(shopItem).PrizeCardIds.TryGetValue(pos, out cardId);
+            return cardId;
+        }
+
         public PlayerShopItemAvailability GetAvailability(ShopInfo shop, ShopItemInfo shopItem)
         {
             long buyLimit, expireTime;
@@ -807,7 +878,7 @@ namespace YgoMaster
                 {
                     continue;
                 }
-                shopItemsData[shopItemState.Key.ToString()] = new Dictionary<string, object>()
+                Dictionary<string, object> stateData = new Dictionary<string, object>()
                 {
                     { "Unlocked", shopItemState.Value.Unlocked },
                     { "UnlockedTime", shopItemState.Value.UnlockedTime },
@@ -815,6 +886,11 @@ namespace YgoMaster
                     { "PurchaseCount", shopItemState.Value.PurchaseCount },
                     { "UnlockedPurchaseCount", shopItemState.Value.UnlockedPurchaseCount },
                 };
+                if (shopItemState.Value.PrizeCardIds.Count > 0)
+                {
+                    stateData["PrizeCardIds"] = shopItemState.Value.PrizeCardIds.ToDictionary(x => x.Key.ToString(), x => (object)x.Value);
+                }
+                shopItemsData[shopItemState.Key.ToString()] = stateData;
             }
             result["ShopItems"] = shopItemsData;
             return result;
@@ -852,6 +928,18 @@ namespace YgoMaster
                         state.IsNew = Utils.GetValue<bool>(stateData, "IsNew");
                         state.PurchaseCount = Utils.GetValue<long>(stateData, "PurchaseCount");
                         state.UnlockedPurchaseCount = Utils.GetValue<long>(stateData, "UnlockedPurchaseCount");
+                        Dictionary<string, object> prizeCardIds = Utils.GetValue(stateData, "PrizeCardIds", default(Dictionary<string, object>));
+                        if (prizeCardIds != null)
+                        {
+                            foreach (KeyValuePair<string, object> prizeCardId in prizeCardIds)
+                            {
+                                int pos;
+                                if (int.TryParse(prizeCardId.Key, out pos))
+                                {
+                                    state.PrizeCardIds[pos] = (int)Convert.ChangeType(prizeCardId.Value, typeof(int));
+                                }
+                            }
+                        }
                         ShopItems[shopId] = state;
                     }
                 }
@@ -879,10 +967,14 @@ namespace YgoMaster
         /// Number of times this item has been purchased after being unlocked (resets every time it's unlocked)
         /// </summary>
         public long UnlockedPurchaseCount;
+        /// <summary>
+        /// The card obtained for each prize of a bundle (prize pos -> card id), used for "unlockData" in Prize.PrizeData
+        /// </summary>
+        public Dictionary<int, int> PrizeCardIds = new Dictionary<int, int>();
 
         public bool IsDefault
         {
-            get { return !Unlocked && UnlockedTime == 0 && !IsNew && PurchaseCount == 0 && UnlockedPurchaseCount == 0; }
+            get { return !Unlocked && UnlockedTime == 0 && !IsNew && PurchaseCount == 0 && UnlockedPurchaseCount == 0 && PrizeCardIds.Count == 0; }
         }
     }
 

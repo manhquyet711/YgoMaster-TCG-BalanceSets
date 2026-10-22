@@ -1,5 +1,5 @@
 #include <windows.h>
-IDI_APP_ICON ICON "ygoset.ico"
+IDI_APP_ICON ICON "ygotcg.ico"
 101 DIALOGEX 0, 0, 300, 500
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Edit Settings"
