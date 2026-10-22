@@ -91,6 +91,49 @@ class ValidateBalancedIntegration
     {
         return (bool)assembly.GetType("YgoMaster.FixedDeckPolicy", true).GetMethod("Matches", All).Invoke(null, new object[] { first, second });
     }
+    static void ValidateReferenceDecks(object server)
+    {
+        string root = Path.Combine(Path.GetTempPath(), "BalancedReferenceDecks-" + Guid.NewGuid().ToString("N"));
+        object oldMultiplayer = Get(server, "MultiplayerEnabled"), oldPlayers = Get(server, "playersDirectory");
+        try
+        {
+            Set(server, "MultiplayerEnabled", true);
+            Set(server, "playersDirectory", root);
+            var player = Player();
+            var catalog = Get(server, "balancedCatalog");
+            var ids = ((IEnumerable)Get(catalog, "Ids")).Cast<string>().ToList();
+            Call(server, "SeedBalancedReferenceDecks", player);
+            var decks = (IDictionary)Get(player, "Decks");
+            Check(decks.Count == ids.Count, "Every balanced character gets one reference deck");
+            Check((int)Get(Get(player, "Cards"), "Count") == 0, "Reference decks add no cards to the collection");
+            var regulation = Get(server, "Regulation");
+            var deckType = assembly.GetType("YgoMaster.DeckInfo", true);
+            var isValid = deckType.GetMethod("IsValid", All, null,
+                new[] { assembly.GetType("YgoMaster.Player", true), typeof(int), typeof(Dictionary<string, object>) }, null);
+            foreach (string id in ids)
+            {
+                string name = "Balanced - " + (string)Call(catalog, "Name", id);
+                object deck = decks.Values.Cast<object>().Single(x => (string)Get(x, "Name") == name);
+                Check(Matches(deck, Call(catalog, "CreateDeck", id)) && File.Exists((string)Get(deck, "File")),
+                    "Reference deck saved with the canonical cards: " + id);
+                Check(!(bool)isValid.Invoke(deck, new object[] { player, (int)Get(deck, "RegulationId"), regulation }),
+                    "Reference deck cannot be used without owning its cards: " + id);
+            }
+            Call(server, "SeedBalancedReferenceDecks", player);
+            Check(decks.Count == ids.Count, "Seeding again does not duplicate reference decks");
+            object removed = decks.Values.Cast<object>().First();
+            File.Delete((string)Get(removed, "File"));
+            decks.Remove(Get(removed, "Id"));
+            Call(server, "SeedBalancedReferenceDecks", player);
+            Check(decks.Count == ids.Count - 1, "A deleted reference deck is not added back");
+        }
+        finally
+        {
+            Set(server, "MultiplayerEnabled", oldMultiplayer);
+            Set(server, "playersDirectory", oldPlayers);
+            try { Directory.Delete(root, true); } catch { }
+        }
+    }
     static void ValidateLaunch(object request, object expected, string playerName, string opponentName)
     {
         var response = (Dictionary<string, object>)Get(request, "Response");
@@ -255,6 +298,7 @@ class ValidateBalancedIntegration
                     "Completed chapter ignores targeted CustomDuel.json and cached custom settings");
             }
             finally { Set(server, "dataDirectory", oldDataDir); }
+            ValidateReferenceDecks(server);
             ValidateBadContent(server, runtime, "disabled");
             ValidateBadContent(server, runtime, "quantity");
             ValidateBadContent(server, runtime, "fingerprint");

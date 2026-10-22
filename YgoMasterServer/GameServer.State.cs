@@ -2045,6 +2045,7 @@ namespace YgoMaster
                     LoadDeck(player, file);
                 }
             }
+            SeedBalancedReferenceDecks(player);
             SortDecks(player);
             player.Duel.SelectedDeckFromDictionary(Utils.GetDictionary(data, "SelectedDeck"));
 

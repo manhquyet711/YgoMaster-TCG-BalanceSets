@@ -33,6 +33,11 @@ completes after you beat every opponent in it.
 - Same deck for player and CPU, no hidden CPU advantages
 - Decks keep their photographed card counts, e.g. Grandpa's 41-card deck and Jaden's 15-card Extra Deck
 
+**Reference decks:** every player starts with a "Balanced - <character>" copy of all 14 decks in
+their deck list, so the recipes can be browsed from day one. No cards are given: the cards you don't
+own show as missing, and the deck can't be used in normal duels until you collect them through the
+TCG campaign. Each deck is added once; delete one and it stays deleted.
+
 Original Yugi is not included yet: *Spellbinding Circle* is missing from the game's card data,
 and no substitute card was inserted. Card transcriptions and decisions are documented in
 [Docs/BalancedCharacters](Docs/BalancedCharacters) (`DECISIONS.md`, `PHOTO-REVIEW-0.2.2.json`,

@@ -111,6 +111,7 @@
     <Compile Include="BalancedCharacters\CharacterCatalog.cs" />
     <Compile Include="BalancedCharacters\DuelRunLogger.cs" />
     <Compile Include="GameServer.BalancedCharacters.cs" />
+    <Compile Include="GameServer.BalancedReferenceDecks.cs" />
     <Compile Include="Sim\DuelSimulator.cs" />
     <Compile Include="Sim\DuelSimulator.DllEngine.cs" />
     <Compile Include="Enums\ResultCodes.cs" />
