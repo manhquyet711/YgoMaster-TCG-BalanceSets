@@ -1,0 +1,900 @@
+[IDS_SOLO.CHAPTER20160016]
+Yugi (Season 1) vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20160016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160003]
+Yugi (Season 1) vs Kaiba
+[IDS_SOLO.CHAPTER20160003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160004]
+Yugi (Season 1) vs Joey
+[IDS_SOLO.CHAPTER20160004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160005]
+Yugi (Season 1) vs Weevil
+[IDS_SOLO.CHAPTER20160005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160006]
+Yugi (Season 1) vs Rex
+[IDS_SOLO.CHAPTER20160006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160007]
+Yugi (Season 1) vs Mako Tsunami
+[IDS_SOLO.CHAPTER20160007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160008]
+Yugi (Season 1) vs Mai Valentine
+[IDS_SOLO.CHAPTER20160008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160009]
+Yugi (Season 1) vs Bandit Keith
+[IDS_SOLO.CHAPTER20160009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160010]
+Yugi (Season 1) vs Bonz
+[IDS_SOLO.CHAPTER20160010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160011]
+Yugi (Season 1) vs Pegasus
+[IDS_SOLO.CHAPTER20160011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160017]
+Yugi (Season 1) vs Yami Bakura
+[IDS_SOLO.CHAPTER20160017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160013]
+Yugi (Season 1) vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20160013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160014]
+Yugi (Season 1) vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20160014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20160015]
+Yugi (Season 1) vs Jaden Yuki
+[IDS_SOLO.CHAPTER20160015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2016]
+Balanced Characters - Yugi (Season 1)
+[IDS_SOLO.GATE2016_EXPLANATION]
+Choose an opponent. You play Yugi (Season 1)'s fixed deck.
+[IDS_SOLO.CHAPTER20310001]
+Yugi (Season 2) vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20310001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310003]
+Yugi (Season 2) vs Kaiba
+[IDS_SOLO.CHAPTER20310003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310004]
+Yugi (Season 2) vs Joey
+[IDS_SOLO.CHAPTER20310004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310005]
+Yugi (Season 2) vs Weevil
+[IDS_SOLO.CHAPTER20310005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310006]
+Yugi (Season 2) vs Rex
+[IDS_SOLO.CHAPTER20310006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310007]
+Yugi (Season 2) vs Mako Tsunami
+[IDS_SOLO.CHAPTER20310007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310008]
+Yugi (Season 2) vs Mai Valentine
+[IDS_SOLO.CHAPTER20310008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310009]
+Yugi (Season 2) vs Bandit Keith
+[IDS_SOLO.CHAPTER20310009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310010]
+Yugi (Season 2) vs Bonz
+[IDS_SOLO.CHAPTER20310010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310011]
+Yugi (Season 2) vs Pegasus
+[IDS_SOLO.CHAPTER20310011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310017]
+Yugi (Season 2) vs Yami Bakura
+[IDS_SOLO.CHAPTER20310017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310013]
+Yugi (Season 2) vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20310013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310014]
+Yugi (Season 2) vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20310014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20310015]
+Yugi (Season 2) vs Jaden Yuki
+[IDS_SOLO.CHAPTER20310015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2031]
+Balanced Characters - Yugi (Season 2)
+[IDS_SOLO.GATE2031_EXPLANATION]
+Choose an opponent. You play Yugi (Season 2)'s fixed deck.
+[IDS_SOLO.CHAPTER20180001]
+Kaiba vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20180001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180016]
+Kaiba vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20180016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180004]
+Kaiba vs Joey
+[IDS_SOLO.CHAPTER20180004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180005]
+Kaiba vs Weevil
+[IDS_SOLO.CHAPTER20180005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180006]
+Kaiba vs Rex
+[IDS_SOLO.CHAPTER20180006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180007]
+Kaiba vs Mako Tsunami
+[IDS_SOLO.CHAPTER20180007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180008]
+Kaiba vs Mai Valentine
+[IDS_SOLO.CHAPTER20180008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180009]
+Kaiba vs Bandit Keith
+[IDS_SOLO.CHAPTER20180009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180010]
+Kaiba vs Bonz
+[IDS_SOLO.CHAPTER20180010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180011]
+Kaiba vs Pegasus
+[IDS_SOLO.CHAPTER20180011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180017]
+Kaiba vs Yami Bakura
+[IDS_SOLO.CHAPTER20180017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180013]
+Kaiba vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20180013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180014]
+Kaiba vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20180014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20180015]
+Kaiba vs Jaden Yuki
+[IDS_SOLO.CHAPTER20180015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2018]
+Balanced Characters - Kaiba
+[IDS_SOLO.GATE2018_EXPLANATION]
+Choose an opponent. You play Kaiba's fixed deck.
+[IDS_SOLO.CHAPTER20190001]
+Joey vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20190001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190016]
+Joey vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20190016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190003]
+Joey vs Kaiba
+[IDS_SOLO.CHAPTER20190003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190005]
+Joey vs Weevil
+[IDS_SOLO.CHAPTER20190005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190006]
+Joey vs Rex
+[IDS_SOLO.CHAPTER20190006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190007]
+Joey vs Mako Tsunami
+[IDS_SOLO.CHAPTER20190007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190008]
+Joey vs Mai Valentine
+[IDS_SOLO.CHAPTER20190008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190009]
+Joey vs Bandit Keith
+[IDS_SOLO.CHAPTER20190009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190010]
+Joey vs Bonz
+[IDS_SOLO.CHAPTER20190010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190011]
+Joey vs Pegasus
+[IDS_SOLO.CHAPTER20190011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190017]
+Joey vs Yami Bakura
+[IDS_SOLO.CHAPTER20190017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190013]
+Joey vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20190013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190014]
+Joey vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20190014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20190015]
+Joey vs Jaden Yuki
+[IDS_SOLO.CHAPTER20190015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2019]
+Balanced Characters - Joey
+[IDS_SOLO.GATE2019_EXPLANATION]
+Choose an opponent. You play Joey's fixed deck.
+[IDS_SOLO.CHAPTER20200001]
+Weevil vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20200001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200016]
+Weevil vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20200016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200003]
+Weevil vs Kaiba
+[IDS_SOLO.CHAPTER20200003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200004]
+Weevil vs Joey
+[IDS_SOLO.CHAPTER20200004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200006]
+Weevil vs Rex
+[IDS_SOLO.CHAPTER20200006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200007]
+Weevil vs Mako Tsunami
+[IDS_SOLO.CHAPTER20200007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200008]
+Weevil vs Mai Valentine
+[IDS_SOLO.CHAPTER20200008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200009]
+Weevil vs Bandit Keith
+[IDS_SOLO.CHAPTER20200009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200010]
+Weevil vs Bonz
+[IDS_SOLO.CHAPTER20200010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200011]
+Weevil vs Pegasus
+[IDS_SOLO.CHAPTER20200011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200017]
+Weevil vs Yami Bakura
+[IDS_SOLO.CHAPTER20200017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200013]
+Weevil vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20200013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200014]
+Weevil vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20200014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20200015]
+Weevil vs Jaden Yuki
+[IDS_SOLO.CHAPTER20200015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2020]
+Balanced Characters - Weevil
+[IDS_SOLO.GATE2020_EXPLANATION]
+Choose an opponent. You play Weevil's fixed deck.
+[IDS_SOLO.CHAPTER20210001]
+Rex vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20210001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210016]
+Rex vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20210016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210003]
+Rex vs Kaiba
+[IDS_SOLO.CHAPTER20210003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210004]
+Rex vs Joey
+[IDS_SOLO.CHAPTER20210004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210005]
+Rex vs Weevil
+[IDS_SOLO.CHAPTER20210005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210007]
+Rex vs Mako Tsunami
+[IDS_SOLO.CHAPTER20210007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210008]
+Rex vs Mai Valentine
+[IDS_SOLO.CHAPTER20210008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210009]
+Rex vs Bandit Keith
+[IDS_SOLO.CHAPTER20210009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210010]
+Rex vs Bonz
+[IDS_SOLO.CHAPTER20210010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210011]
+Rex vs Pegasus
+[IDS_SOLO.CHAPTER20210011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210017]
+Rex vs Yami Bakura
+[IDS_SOLO.CHAPTER20210017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210013]
+Rex vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20210013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210014]
+Rex vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20210014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20210015]
+Rex vs Jaden Yuki
+[IDS_SOLO.CHAPTER20210015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2021]
+Balanced Characters - Rex
+[IDS_SOLO.GATE2021_EXPLANATION]
+Choose an opponent. You play Rex's fixed deck.
+[IDS_SOLO.CHAPTER20220001]
+Mako Tsunami vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20220001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220016]
+Mako Tsunami vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20220016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220003]
+Mako Tsunami vs Kaiba
+[IDS_SOLO.CHAPTER20220003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220004]
+Mako Tsunami vs Joey
+[IDS_SOLO.CHAPTER20220004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220005]
+Mako Tsunami vs Weevil
+[IDS_SOLO.CHAPTER20220005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220006]
+Mako Tsunami vs Rex
+[IDS_SOLO.CHAPTER20220006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220008]
+Mako Tsunami vs Mai Valentine
+[IDS_SOLO.CHAPTER20220008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220009]
+Mako Tsunami vs Bandit Keith
+[IDS_SOLO.CHAPTER20220009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220010]
+Mako Tsunami vs Bonz
+[IDS_SOLO.CHAPTER20220010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220011]
+Mako Tsunami vs Pegasus
+[IDS_SOLO.CHAPTER20220011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220017]
+Mako Tsunami vs Yami Bakura
+[IDS_SOLO.CHAPTER20220017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220013]
+Mako Tsunami vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20220013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220014]
+Mako Tsunami vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20220014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20220015]
+Mako Tsunami vs Jaden Yuki
+[IDS_SOLO.CHAPTER20220015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2022]
+Balanced Characters - Mako Tsunami
+[IDS_SOLO.GATE2022_EXPLANATION]
+Choose an opponent. You play Mako Tsunami's fixed deck.
+[IDS_SOLO.CHAPTER20230001]
+Mai Valentine vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20230001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230016]
+Mai Valentine vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20230016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230003]
+Mai Valentine vs Kaiba
+[IDS_SOLO.CHAPTER20230003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230004]
+Mai Valentine vs Joey
+[IDS_SOLO.CHAPTER20230004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230005]
+Mai Valentine vs Weevil
+[IDS_SOLO.CHAPTER20230005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230006]
+Mai Valentine vs Rex
+[IDS_SOLO.CHAPTER20230006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230007]
+Mai Valentine vs Mako Tsunami
+[IDS_SOLO.CHAPTER20230007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230009]
+Mai Valentine vs Bandit Keith
+[IDS_SOLO.CHAPTER20230009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230010]
+Mai Valentine vs Bonz
+[IDS_SOLO.CHAPTER20230010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230011]
+Mai Valentine vs Pegasus
+[IDS_SOLO.CHAPTER20230011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230017]
+Mai Valentine vs Yami Bakura
+[IDS_SOLO.CHAPTER20230017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230013]
+Mai Valentine vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20230013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230014]
+Mai Valentine vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20230014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20230015]
+Mai Valentine vs Jaden Yuki
+[IDS_SOLO.CHAPTER20230015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2023]
+Balanced Characters - Mai Valentine
+[IDS_SOLO.GATE2023_EXPLANATION]
+Choose an opponent. You play Mai Valentine's fixed deck.
+[IDS_SOLO.CHAPTER20240001]
+Bandit Keith vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20240001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240016]
+Bandit Keith vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20240016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240003]
+Bandit Keith vs Kaiba
+[IDS_SOLO.CHAPTER20240003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240004]
+Bandit Keith vs Joey
+[IDS_SOLO.CHAPTER20240004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240005]
+Bandit Keith vs Weevil
+[IDS_SOLO.CHAPTER20240005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240006]
+Bandit Keith vs Rex
+[IDS_SOLO.CHAPTER20240006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240007]
+Bandit Keith vs Mako Tsunami
+[IDS_SOLO.CHAPTER20240007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240008]
+Bandit Keith vs Mai Valentine
+[IDS_SOLO.CHAPTER20240008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240010]
+Bandit Keith vs Bonz
+[IDS_SOLO.CHAPTER20240010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240011]
+Bandit Keith vs Pegasus
+[IDS_SOLO.CHAPTER20240011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240017]
+Bandit Keith vs Yami Bakura
+[IDS_SOLO.CHAPTER20240017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240013]
+Bandit Keith vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20240013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240014]
+Bandit Keith vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20240014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20240015]
+Bandit Keith vs Jaden Yuki
+[IDS_SOLO.CHAPTER20240015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2024]
+Balanced Characters - Bandit Keith
+[IDS_SOLO.GATE2024_EXPLANATION]
+Choose an opponent. You play Bandit Keith's fixed deck.
+[IDS_SOLO.CHAPTER20250001]
+Bonz vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20250001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250016]
+Bonz vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20250016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250003]
+Bonz vs Kaiba
+[IDS_SOLO.CHAPTER20250003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250004]
+Bonz vs Joey
+[IDS_SOLO.CHAPTER20250004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250005]
+Bonz vs Weevil
+[IDS_SOLO.CHAPTER20250005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250006]
+Bonz vs Rex
+[IDS_SOLO.CHAPTER20250006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250007]
+Bonz vs Mako Tsunami
+[IDS_SOLO.CHAPTER20250007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250008]
+Bonz vs Mai Valentine
+[IDS_SOLO.CHAPTER20250008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250009]
+Bonz vs Bandit Keith
+[IDS_SOLO.CHAPTER20250009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250011]
+Bonz vs Pegasus
+[IDS_SOLO.CHAPTER20250011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250017]
+Bonz vs Yami Bakura
+[IDS_SOLO.CHAPTER20250017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250013]
+Bonz vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20250013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250014]
+Bonz vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20250014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20250015]
+Bonz vs Jaden Yuki
+[IDS_SOLO.CHAPTER20250015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2025]
+Balanced Characters - Bonz
+[IDS_SOLO.GATE2025_EXPLANATION]
+Choose an opponent. You play Bonz's fixed deck.
+[IDS_SOLO.CHAPTER20260001]
+Pegasus vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20260001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260016]
+Pegasus vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20260016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260003]
+Pegasus vs Kaiba
+[IDS_SOLO.CHAPTER20260003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260004]
+Pegasus vs Joey
+[IDS_SOLO.CHAPTER20260004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260005]
+Pegasus vs Weevil
+[IDS_SOLO.CHAPTER20260005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260006]
+Pegasus vs Rex
+[IDS_SOLO.CHAPTER20260006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260007]
+Pegasus vs Mako Tsunami
+[IDS_SOLO.CHAPTER20260007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260008]
+Pegasus vs Mai Valentine
+[IDS_SOLO.CHAPTER20260008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260009]
+Pegasus vs Bandit Keith
+[IDS_SOLO.CHAPTER20260009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260010]
+Pegasus vs Bonz
+[IDS_SOLO.CHAPTER20260010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260017]
+Pegasus vs Yami Bakura
+[IDS_SOLO.CHAPTER20260017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260013]
+Pegasus vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20260013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260014]
+Pegasus vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20260014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20260015]
+Pegasus vs Jaden Yuki
+[IDS_SOLO.CHAPTER20260015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2026]
+Balanced Characters - Pegasus
+[IDS_SOLO.GATE2026_EXPLANATION]
+Choose an opponent. You play Pegasus's fixed deck.
+[IDS_SOLO.CHAPTER20320001]
+Yami Bakura vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20320001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320016]
+Yami Bakura vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20320016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320003]
+Yami Bakura vs Kaiba
+[IDS_SOLO.CHAPTER20320003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320004]
+Yami Bakura vs Joey
+[IDS_SOLO.CHAPTER20320004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320005]
+Yami Bakura vs Weevil
+[IDS_SOLO.CHAPTER20320005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320006]
+Yami Bakura vs Rex
+[IDS_SOLO.CHAPTER20320006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320007]
+Yami Bakura vs Mako Tsunami
+[IDS_SOLO.CHAPTER20320007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320008]
+Yami Bakura vs Mai Valentine
+[IDS_SOLO.CHAPTER20320008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320009]
+Yami Bakura vs Bandit Keith
+[IDS_SOLO.CHAPTER20320009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320010]
+Yami Bakura vs Bonz
+[IDS_SOLO.CHAPTER20320010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320011]
+Yami Bakura vs Pegasus
+[IDS_SOLO.CHAPTER20320011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320013]
+Yami Bakura vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20320013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320014]
+Yami Bakura vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20320014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20320015]
+Yami Bakura vs Jaden Yuki
+[IDS_SOLO.CHAPTER20320015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2032]
+Balanced Characters - Yami Bakura
+[IDS_SOLO.GATE2032_EXPLANATION]
+Choose an opponent. You play Yami Bakura's fixed deck.
+[IDS_SOLO.CHAPTER20280001]
+Ishtar (Gravekeepers) vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20280001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280016]
+Ishtar (Gravekeepers) vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20280016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280003]
+Ishtar (Gravekeepers) vs Kaiba
+[IDS_SOLO.CHAPTER20280003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280004]
+Ishtar (Gravekeepers) vs Joey
+[IDS_SOLO.CHAPTER20280004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280005]
+Ishtar (Gravekeepers) vs Weevil
+[IDS_SOLO.CHAPTER20280005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280006]
+Ishtar (Gravekeepers) vs Rex
+[IDS_SOLO.CHAPTER20280006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280007]
+Ishtar (Gravekeepers) vs Mako Tsunami
+[IDS_SOLO.CHAPTER20280007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280008]
+Ishtar (Gravekeepers) vs Mai Valentine
+[IDS_SOLO.CHAPTER20280008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280009]
+Ishtar (Gravekeepers) vs Bandit Keith
+[IDS_SOLO.CHAPTER20280009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280010]
+Ishtar (Gravekeepers) vs Bonz
+[IDS_SOLO.CHAPTER20280010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280011]
+Ishtar (Gravekeepers) vs Pegasus
+[IDS_SOLO.CHAPTER20280011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280017]
+Ishtar (Gravekeepers) vs Yami Bakura
+[IDS_SOLO.CHAPTER20280017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280014]
+Ishtar (Gravekeepers) vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20280014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20280015]
+Ishtar (Gravekeepers) vs Jaden Yuki
+[IDS_SOLO.CHAPTER20280015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2028]
+Balanced Characters - Ishtar (Gravekeepers)
+[IDS_SOLO.GATE2028_EXPLANATION]
+Choose an opponent. You play Ishtar (Gravekeepers)'s fixed deck.
+[IDS_SOLO.CHAPTER20290001]
+Grandpa (Exodia) vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20290001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290016]
+Grandpa (Exodia) vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20290016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290003]
+Grandpa (Exodia) vs Kaiba
+[IDS_SOLO.CHAPTER20290003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290004]
+Grandpa (Exodia) vs Joey
+[IDS_SOLO.CHAPTER20290004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290005]
+Grandpa (Exodia) vs Weevil
+[IDS_SOLO.CHAPTER20290005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290006]
+Grandpa (Exodia) vs Rex
+[IDS_SOLO.CHAPTER20290006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290007]
+Grandpa (Exodia) vs Mako Tsunami
+[IDS_SOLO.CHAPTER20290007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290008]
+Grandpa (Exodia) vs Mai Valentine
+[IDS_SOLO.CHAPTER20290008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290009]
+Grandpa (Exodia) vs Bandit Keith
+[IDS_SOLO.CHAPTER20290009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290010]
+Grandpa (Exodia) vs Bonz
+[IDS_SOLO.CHAPTER20290010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290011]
+Grandpa (Exodia) vs Pegasus
+[IDS_SOLO.CHAPTER20290011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290017]
+Grandpa (Exodia) vs Yami Bakura
+[IDS_SOLO.CHAPTER20290017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290013]
+Grandpa (Exodia) vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20290013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20290015]
+Grandpa (Exodia) vs Jaden Yuki
+[IDS_SOLO.CHAPTER20290015_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2029]
+Balanced Characters - Grandpa (Exodia)
+[IDS_SOLO.GATE2029_EXPLANATION]
+Choose an opponent. You play Grandpa (Exodia)'s fixed deck.
+[IDS_SOLO.CHAPTER20300001]
+Jaden Yuki vs Yugi (Season 1)
+[IDS_SOLO.CHAPTER20300001_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300016]
+Jaden Yuki vs Yugi (Season 2)
+[IDS_SOLO.CHAPTER20300016_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300003]
+Jaden Yuki vs Kaiba
+[IDS_SOLO.CHAPTER20300003_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300004]
+Jaden Yuki vs Joey
+[IDS_SOLO.CHAPTER20300004_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300005]
+Jaden Yuki vs Weevil
+[IDS_SOLO.CHAPTER20300005_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300006]
+Jaden Yuki vs Rex
+[IDS_SOLO.CHAPTER20300006_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300007]
+Jaden Yuki vs Mako Tsunami
+[IDS_SOLO.CHAPTER20300007_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300008]
+Jaden Yuki vs Mai Valentine
+[IDS_SOLO.CHAPTER20300008_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300009]
+Jaden Yuki vs Bandit Keith
+[IDS_SOLO.CHAPTER20300009_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300010]
+Jaden Yuki vs Bonz
+[IDS_SOLO.CHAPTER20300010_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300011]
+Jaden Yuki vs Pegasus
+[IDS_SOLO.CHAPTER20300011_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300017]
+Jaden Yuki vs Yami Bakura
+[IDS_SOLO.CHAPTER20300017_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300013]
+Jaden Yuki vs Ishtar (Gravekeepers)
+[IDS_SOLO.CHAPTER20300013_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.CHAPTER20300014]
+Jaden Yuki vs Grandpa (Exodia)
+[IDS_SOLO.CHAPTER20300014_EXPLANATION]
+Fixed character decks. 8000 LP. No card ownership requirement.
+[IDS_SOLO.GATE2030]
+Balanced Characters - Jaden Yuki
+[IDS_SOLO.GATE2030_EXPLANATION]
+Choose an opponent. You play Jaden Yuki's fixed deck.

@@ -57,5 +57,21 @@
     "canonicalName": "Darklord Marie",
     "masterDuelId": 5209,
     "evidence": "Official Konami database identifies renamed original card, cid=5209; local name table matches. https://www.db.yugioh-card.com/yugiohdb/card_search.action?cid=5209&ope=2"
+  },
+  "Obelisk the Tormentor": {
+    "canonicalName": "Obelisk the Tormentor",
+    "masterDuelId": 4998,
+    "evidence": "Explicit original-card ID verified in local YdkIds.txt: 10000000 4998"
+  },
+  "Breaker the Magical Warrior": {
+    "canonicalName": "Breaker the Magical Warrior",
+    "masterDuelId": 5655,
+    "evidence": "Explicit original-card ID verified in local YdkIds.txt: 71413901 5655"
+  },
+  "Spellbinding Circle": {
+    "canonicalName": "Shadow Spell",
+    "masterDuelId": 4675,
+    "substitute": true,
+    "evidence": "Substitute requested by the user: Spellbinding Circle is absent from the installed card tables. Shadow Spell (Continuous Trap: target monster cannot attack or change battle position, loses 700 ATK) is the closest available old-school card."
   }
 }

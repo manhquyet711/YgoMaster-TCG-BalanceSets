@@ -7,11 +7,15 @@ namespace YgoMaster
 {
     partial class GameServer
     {
-        // Each player gets a read-only style copy of every balanced character deck in their
-        // deck list, so they can look at the recipes from the start. No cards are added to
-        // the collection: decks with unowned cards stay invalid for normal duels, so the TCG
-        // campaign progression is unchanged. Each deck is added once; if the player deletes
-        // or renames it, it is not added again (tracked in BalancedReferenceDecks.json).
+        // Each player gets a copy of every balanced character deck in their deck list, so they
+        // can look at the recipes from the start. No cards are added to the collection: decks
+        // with unowned cards stay invalid for normal duels, so the TCG campaign is unchanged.
+        //
+        // BalancedReferenceDecks.json records which deck revision was given for each character.
+        // - Not given yet: the deck is added.
+        // - Given for an older revision and still present: its cards are replaced with the new list.
+        // - Given before but deleted or renamed by the player: it is not added back.
+        // A deck the player made with the same name, without it being given, is never touched.
         const string BalancedReferenceDeckPrefix = "Balanced - ";
         const string BalancedReferenceDecksFile = "BalancedReferenceDecks.json";
 
@@ -22,7 +26,7 @@ namespace YgoMaster
 
         void SeedBalancedReferenceDecks(Player player)
         {
-            if (balancedCatalog == null)
+            if (balancedCatalog == null || string.IsNullOrEmpty(balancedDeckRevision))
             {
                 return;
             }
@@ -30,19 +34,21 @@ namespace YgoMaster
             {
                 string playerDir = GetPlayerDirectory(player);
                 string markerPath = Path.Combine(playerDir, BalancedReferenceDecksFile);
-                HashSet<string> seeded = ReadSeededBalancedReferenceDecks(markerPath);
-                HashSet<string> existingNames = new HashSet<string>(
-                    player.Decks.Values.Where(x => x.Name != null).Select(x => x.Name), StringComparer.OrdinalIgnoreCase);
+                Dictionary<string, string> given = ReadGivenBalancedReferenceDecks(markerPath);
                 string decksDir = GetDecksDirectory(player);
                 bool changed = false;
                 foreach (string id in balancedCatalog.Ids)
                 {
-                    if (seeded.Contains(id))
+                    string givenRevision;
+                    bool wasGiven = given.TryGetValue(id, out givenRevision);
+                    if (wasGiven && givenRevision == balancedDeckRevision)
                     {
                         continue;
                     }
                     string name = BalancedReferenceDeckName(balancedCatalog.Name(id));
-                    if (!existingNames.Contains(name))
+                    DeckInfo existing = player.Decks.Values.FirstOrDefault(x =>
+                        string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase));
+                    if (existing == null && !wasGiven)
                     {
                         DeckInfo deck = balancedCatalog.CreateDeck(id);
                         deck.Name = name;
@@ -58,9 +64,18 @@ namespace YgoMaster
                         // Register before writing so the local deck folder watcher sees a known file.
                         player.Decks[deck.Id] = deck;
                         deck.Save();
-                        existingNames.Add(name);
                     }
-                    seeded.Add(id);
+                    else if (existing != null && wasGiven)
+                    {
+                        // Newer revision of a deck we gave earlier: replace only the card lists.
+                        DeckInfo updated = balancedCatalog.CreateDeck(id);
+                        existing.MainDeckCards.CopyFrom(updated.MainDeckCards);
+                        existing.ExtraDeckCards.CopyFrom(updated.ExtraDeckCards);
+                        existing.SideDeckCards.CopyFrom(updated.SideDeckCards);
+                        existing.TimeEdited = Utils.GetEpochTime();
+                        existing.Save();
+                    }
+                    given[id] = balancedDeckRevision;
                     changed = true;
                 }
                 if (changed)
@@ -68,8 +83,9 @@ namespace YgoMaster
                     Utils.TryCreateDirectory(playerDir);
                     Dictionary<string, object> marker = new Dictionary<string, object>()
                     {
-                        { "schemaVersion", 1 },
-                        { "seeded", seeded.OrderBy(x => x, StringComparer.Ordinal).Cast<object>().ToList() }
+                        { "schemaVersion", 2 },
+                        { "given", given.OrderBy(x => x.Key, StringComparer.Ordinal)
+                            .ToDictionary(x => x.Key, x => (object)x.Value) }
                     };
                     File.WriteAllText(markerPath, MiniJSON.Json.Serialize(marker));
                 }
@@ -80,20 +96,39 @@ namespace YgoMaster
             }
         }
 
-        static HashSet<string> ReadSeededBalancedReferenceDecks(string markerPath)
+        static Dictionary<string, string> ReadGivenBalancedReferenceDecks(string markerPath)
         {
-            HashSet<string> result = new HashSet<string>(StringComparer.Ordinal);
+            Dictionary<string, string> result = new Dictionary<string, string>(StringComparer.Ordinal);
             if (!File.Exists(markerPath))
             {
                 return result;
             }
             Dictionary<string, object> data = MiniJSON.Json.DeserializeStripped(File.ReadAllText(markerPath)) as Dictionary<string, object>;
-            List<object> ids;
-            if (data != null && Utils.TryGetValue(data, "seeded", out ids))
+            if (data == null)
             {
-                foreach (string id in ids.OfType<string>())
+                return result;
+            }
+            Dictionary<string, object> given = Utils.GetDictionary(data, "given");
+            if (given != null)
+            {
+                foreach (KeyValuePair<string, object> entry in given)
                 {
-                    result.Add(id);
+                    if (entry.Value is string)
+                    {
+                        result[entry.Key] = (string)entry.Value;
+                    }
+                }
+            }
+            // Schema 1 (first release) listed IDs only; those decks were all source-v1.
+            List<object> seeded;
+            if (Utils.TryGetValue(data, "seeded", out seeded))
+            {
+                foreach (string id in seeded.OfType<string>())
+                {
+                    if (!result.ContainsKey(id))
+                    {
+                        result[id] = CharacterCatalog.FirstRevision;
+                    }
                 }
             }
             return result;

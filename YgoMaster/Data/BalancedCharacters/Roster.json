@@ -1,9 +1,9 @@
 [
   {
     "id": "yugi",
-    "displayName": "Yugi",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/yugi.json",
+    "displayName": "Yugi (Season 1)",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/yugi.json",
     "presentationId": "yugi"
   },
   {
@@ -16,64 +16,64 @@
   {
     "id": "kaiba",
     "displayName": "Kaiba",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/kaiba.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/kaiba.json",
     "presentationId": "kaiba"
   },
   {
     "id": "joey",
     "displayName": "Joey",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/joey.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/joey.json",
     "presentationId": "joey"
   },
   {
     "id": "weevil",
     "displayName": "Weevil",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/weevil.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/weevil.json",
     "presentationId": "weevil"
   },
   {
     "id": "rex",
     "displayName": "Rex",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/rex.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/rex.json",
     "presentationId": "rex"
   },
   {
     "id": "mako",
     "displayName": "Mako Tsunami",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/mako.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/mako.json",
     "presentationId": "mako"
   },
   {
     "id": "mai",
     "displayName": "Mai Valentine",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/mai.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/mai.json",
     "presentationId": "mai"
   },
   {
     "id": "bandit_keith",
     "displayName": "Bandit Keith",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/bandit_keith.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/bandit_keith.json",
     "presentationId": "bandit_keith"
   },
   {
     "id": "bonz",
     "displayName": "Bonz",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/bonz.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/bonz.json",
     "presentationId": "bonz"
   },
   {
     "id": "pegasus",
     "displayName": "Pegasus",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/pegasus.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/pegasus.json",
     "presentationId": "pegasus"
   },
   {
@@ -86,22 +86,36 @@
   {
     "id": "gravekeepers",
     "displayName": "Ishtar (Gravekeepers)",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/gravekeepers.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/gravekeepers.json",
     "presentationId": "gravekeepers"
   },
   {
     "id": "grandpa",
     "displayName": "Grandpa (Exodia)",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/grandpa.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/grandpa.json",
     "presentationId": "grandpa"
   },
   {
     "id": "jaden",
     "displayName": "Jaden Yuki",
-    "deckRevision": "source-v1",
-    "deckFile": "Decks/source-v1/jaden.json",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/jaden.json",
     "presentationId": "jaden"
+  },
+  {
+    "id": "yugi_season2",
+    "presentationId": "yugi_season2",
+    "displayName": "Yugi (Season 2)",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/yugi_season2.json"
+  },
+  {
+    "id": "yami_bakura",
+    "presentationId": "yami_bakura",
+    "displayName": "Yami Bakura",
+    "deckRevision": "source-v2",
+    "deckFile": "Decks/source-v2/yami_bakura.json"
   }
 ]

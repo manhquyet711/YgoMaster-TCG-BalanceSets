@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "characterId": "pegasus",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-krc7epzjd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 2,
+  "main": [
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Briefcase",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Mask",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon World",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mimicat",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Comic Hand",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Defense",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Draining Shield",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Alligator",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Rabbit",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Thousand-Eyes Idol",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Crass Clown",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dream Clown",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Hane-Hane",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Gemini Elf",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Goblin Attack Force",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Mermaid",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Harpie Lady",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Cannon Soldier",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Masked Sorcerer",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Jigen Bakudan",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Blue-Eyes Toon Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Buster Blader",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Red-Eyes Toon Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Dark Magician",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Summoned Skull",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Barrel Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Toon Dark Magician Girl",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Black Illusion Ritual",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Relinquished",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Bickuribox",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Thousand-Eyes Restrict",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "side": [],
+  "corrections": [
+    "Identical to v1 after photo comparison."
+  ]
+}

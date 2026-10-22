@@ -7,7 +7,7 @@ It is built on the [TCG Solo Campaign](https://github.com/vngudu/YgoMaster-TCG) 
 
 *Offline only. Progress is not shared with the live game.*
 
-> **Status: 0.2.2 prototype.** The mode builds, installs and has been played in-game
+> **Status: 0.3.0 prototype (character set v2).** The mode builds, installs and has been played in-game
 > (map, deck/Play panel and CPU duels work), but balance between all matchups is not tested yet.
 
 ## Balanced Characters
@@ -16,32 +16,36 @@ Open **SOLO > Stories** and pick a **Balanced Characters** gate. The gate choose
 each battle node chooses an opponent. All opponents are open from the start, and the gate's Goal
 completes after you beat every opponent in it.
 
-**14 characters, 182 matchups:**
+**15 characters, 210 matchups** (deck set v2, from the "Three years ago I posted a set of
+balanced old-school decks" update):
 
 | | | |
 |---|---|---|
-| Yugi (Battle City) | Kaiba | Joey |
-| Weevil | Rex | Mako |
-| Mai | Bandit Keith | Bonz |
-| Pegasus | Marik / Bakura | Gravekeepers |
-| Grandpa | Jaden | |
+| Yugi (Season 1) | Yugi (Season 2) | Kaiba |
+| Joey | Weevil | Rex |
+| Mako | Mai | Bandit Keith |
+| Bonz | Pegasus | Yami Bakura |
+| Gravekeepers | Grandpa | Jaden |
 
 **Rules for every balanced duel**
 
 - 8000 LP, 5-card opening hand, shuffled decks, no side decking
 - Both players use the exact fixed deck for their character (your collection is not used)
 - Same deck for player and CPU, no hidden CPU advantages
-- Decks keep their photographed card counts, e.g. Grandpa's 41-card deck and Jaden's 15-card Extra Deck
+- Decks keep their photographed card counts, e.g. Jaden's 15-card Extra Deck
 
-**Reference decks:** every player starts with a "Balanced - <character>" copy of all 14 decks in
+**Reference decks:** every player starts with a "Balanced - <character>" copy of all 15 decks in
 their deck list, so the recipes can be browsed from day one. No cards are given: the cards you don't
 own show as missing, and the deck can't be used in normal duels until you collect them through the
-TCG campaign. Each deck is added once; delete one and it stays deleted.
+TCG campaign. Each deck is added once; delete one and it stays deleted. When the deck set is updated,
+reference decks that are still there get the new cards.
 
-Original Yugi is not included yet: *Spellbinding Circle* is missing from the game's card data,
-and no substitute card was inserted. Card transcriptions and decisions are documented in
-[Docs/BalancedCharacters](Docs/BalancedCharacters) (`DECISIONS.md`, `PHOTO-REVIEW-0.2.2.json`,
-`Character_Deck_Lists.md`).
+**One substitute:** *Spellbinding Circle* (Yugi, Season 1) does not exist in Master Duel, so it is played
+as **Shadow Spell**, the closest old-school card (same lock, plus -700 ATK).
+
+Deck lists: [Character_Deck_Lists_v2.md](Docs/BalancedCharacters/Character_Deck_Lists_v2.md).
+The v1 set (14 characters, including Yugi (Battle City) and the Marik/Bakura mix) is kept under
+`Decks/source-v1` and can be selected again with `activeDeckRevision` in `Mode.json`.
 
 ## Also included
 
@@ -103,7 +107,7 @@ Crashes, disconnects and unfinished games do not count as losses, and surrenders
 - Play through the playtest queue and tune decks (a separate `balanced-v1` deck revision)
 - Character portraits and dialogue
 - Optional story campaign
-- Original Yugi once Spellbinding Circle is available
+- Swap Shadow Spell back to Spellbinding Circle if Master Duel adds it
 
 ## Credits
 

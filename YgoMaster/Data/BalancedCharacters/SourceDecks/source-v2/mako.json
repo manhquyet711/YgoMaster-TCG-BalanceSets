@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mako",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-57u46wzjd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Block Attack",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "A Legendary Ocean",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Reinforcements",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Salvage",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Giant Trunade",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Hole",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Tornado Wall",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Solemn Wishes",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Flying Fish",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Jellyfish",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Great White",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Aqua Madoor",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mother Grizzly",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mermaid Knight",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Amphibious Bugroth MK-3",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Cure Mermaid",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Cannonball Spear Shellfish",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Torpedo Fish",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Star Boy",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Maiden of the Aqua",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Deepsea Warrior",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "The Legendary Fisherman",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Bottom Dweller",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Giant Turtle Who Feeds on Flames",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Metal Fish",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Amphibian Beast",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Terrorking Salmon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Fortress Whale's Oath",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Fortress Whale",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Orca Mega-Fortress of Darkness",
+      "quantity": 2,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Identical to v1 after photo comparison."
+  ]
+}

@@ -1,17 +1,16 @@
 {
   "cardTableCount": 14257,
+  "revision": "source-v2",
   "decks": [
     {
       "characterId": "yugi",
-      "ready": false,
-      "errors": [
-        "Unresolved card: Spellbinding Circle"
-      ],
+      "ready": true,
+      "errors": [],
       "mainCount": 40,
       "extraCount": 0
     },
     {
-      "characterId": "yugi_battle_city",
+      "characterId": "yugi_season2",
       "ready": true,
       "errors": [],
       "mainCount": 40,
@@ -81,7 +80,7 @@
       "extraCount": 2
     },
     {
-      "characterId": "marik_bakura",
+      "characterId": "yami_bakura",
       "ready": true,
       "errors": [],
       "mainCount": 40,
@@ -98,7 +97,7 @@
       "characterId": "grandpa",
       "ready": true,
       "errors": [],
-      "mainCount": 41,
+      "mainCount": 40,
       "extraCount": 0
     },
     {

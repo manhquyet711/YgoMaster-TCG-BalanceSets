@@ -26,6 +26,18 @@ ROSTER = [
     ('marik_bakura', 'Marik Ishtar (Marik/Bakura mix)', 40, 0),
     ('gravekeepers', 'Ishtar (Gravekeepers)', 40, 0),
     ('grandpa', 'Grandpa (Exodia)', 41, 0), ('jaden', 'Jaden Yuki', 40, 15)]
+# v2: "Three years ago I posted a set of balanced old-school decks" photo set.
+# New characters get new IDs; v1 decks stay immutable under Decks/source-v1.
+ROSTER_V2 = [
+    ('yugi', 'Yugi (Season 1)', 40, 0), ('yugi_season2', 'Yugi (Season 2)', 40, 4),
+    ('kaiba', 'Kaiba', 40, 3), ('joey', 'Joey', 40, 3), ('weevil', 'Weevil', 40, 0),
+    ('rex', 'Rex', 40, 0), ('mako', 'Mako Tsunami', 40, 0),
+    ('mai', 'Mai Valentine', 40, 0), ('bandit_keith', 'Bandit Keith', 40, 0),
+    ('bonz', 'Bonz', 40, 0), ('pegasus', 'Pegasus', 40, 2),
+    ('yami_bakura', 'Yami Bakura', 40, 0),
+    ('gravekeepers', 'Ishtar (Gravekeepers)', 40, 0),
+    ('grandpa', 'Grandpa (Exodia)', 40, 0), ('jaden', 'Jaden Yuki', 40, 15)]
+ROSTERS = {'source-v1': ROSTER, 'source-v2': ROSTER_V2}
 
 
 def write_json(path, value):
@@ -48,6 +60,19 @@ def load_game_config(path):
 
 def normalize(name):
     return name.replace('\u2019', "'").replace('\u2018', "'").casefold().strip()
+
+
+def active_revision():
+    path = MODE / 'Mode.json'
+    revision = load_json(path).get('activeDeckRevision', 'source-v1') if path.exists() else 'source-v1'
+    if revision not in ROSTERS:
+        raise ValueError('Unknown deck revision: ' + str(revision))
+    return revision
+
+
+def source_dir(revision):
+    # v1 sources predate revisions and stay at the folder root.
+    return MODE / 'SourceDecks' if revision == 'source-v1' else MODE / 'SourceDecks' / revision
 
 
 def card_table():
@@ -118,6 +143,8 @@ def import_sources():
 
 
 def resolve():
+    revision = active_revision()
+    roster = ROSTERS[revision]
     cards = card_table()
     known = load_json(DATA / 'CardList.json')
     by_name = collections.defaultdict(list)
@@ -127,10 +154,10 @@ def resolve():
     aliases = load_json(aliases_path) if aliases_path.exists() else {}
     rows, deck_reports = [], []
     staged = {}
-    for cid, title, _, _ in ROSTER:
-        source = load_json(MODE / 'SourceDecks' / (cid + '.json'))
+    for cid, title, _, _ in roster:
+        source = load_json(source_dir(revision) / (cid + '.json'))
         output = {key: source[key] for key in ('schemaVersion', 'characterId', 'expectedMainCount', 'expectedExtraCount')}
-        output.update(revision='source-v1', main=[], extra=[], side=[])
+        output.update(revision=revision, main=[], extra=[], side=[])
         errors = []
         for zone in ('main', 'extra', 'side'):
             seen = set()
@@ -171,14 +198,14 @@ def resolve():
                              'mainCount': sum(x['quantity'] for x in source['main']),
                              'extraCount': sum(x['quantity'] for x in source['extra'])})
         if not errors:
-            validate_deck(output, set(map(int, known)))
+            validate_deck(output, set(map(int, known)), revision)
             staged[cid] = output
     # Only validated, fully reviewed decks are published. Stale outputs fail closed.
-    for cid, _, _, _ in ROSTER:
-        path = MODE / 'Decks' / 'source-v1' / (cid + '.json')
+    for cid, _, _, _ in roster:
+        path = MODE / 'Decks' / revision / (cid + '.json')
         if cid in staged:
             if path.exists() and load_json(path) != staged[cid]:
-                raise ValueError('Immutable source-v1 changed; create a new revision: ' + cid)
+                raise ValueError('Immutable ' + revision + ' changed; create a new revision: ' + cid)
             write_json(path, staged[cid])
         elif path.exists():
             raise ValueError('Previously published deck is now invalid: ' + cid)
@@ -187,13 +214,13 @@ def resolve():
         writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
-    write_json(DOCS / 'CARD-AUDIT.json', {'cardTableCount': len(cards), 'decks': deck_reports})
-    print(json.dumps({'cardTableCount': len(cards), 'readyDecks': list(staged),
+    write_json(DOCS / 'CARD-AUDIT.json', {'cardTableCount': len(cards), 'revision': revision, 'decks': deck_reports})
+    print(json.dumps({'revision': revision, 'cardTableCount': len(cards), 'readyDecks': list(staged),
                       'blockedDecks': [x['characterId'] for x in deck_reports if not x['ready']]}, indent=2))
 
 
-def validate_deck(deck, catalog):
-    if deck['schemaVersion'] != 1 or deck['revision'] != 'source-v1':
+def validate_deck(deck, catalog, revision='source-v1'):
+    if deck['schemaVersion'] != 1 or deck['revision'] != revision or revision not in ROSTERS:
         raise ValueError('Unsupported deck schema/revision')
     for zone in ('main', 'extra', 'side'):
         seen = set()
@@ -238,17 +265,21 @@ def compile_prototype():
     mode_path = MODE / 'Mode.json'
     mode = load_json(mode_path) if mode_path.exists() else {}
     characters = mode.get('activeCharacterIds', ['yugi', 'kaiba', 'joey'])
-    roster_ids = [row[0] for row in ROSTER]
+    revision = mode.get('activeDeckRevision', 'source-v1')
+    if revision not in ROSTERS:
+        raise ValueError('Unknown deck revision: ' + str(revision))
+    roster = ROSTERS[revision]
+    roster_ids = [row[0] for row in roster]
     if not 2 <= len(characters) <= len(roster_ids) or len(set(characters)) != len(characters) or any(c not in roster_ids for c in characters):
         raise ValueError('Select two to fifteen distinct reviewed characters')
     decks = {}
     for cid in characters:
-        path = MODE / 'Decks' / 'source-v1' / (cid + '.json')
+        path = MODE / 'Decks' / revision / (cid + '.json')
         if not path.exists():
             raise ValueError('Prototype blocked: reviewed/resolved deck missing: ' + cid)
         decks[cid] = load_json(path)
-        validate_deck(decks[cid], catalog)
-        source = load_json(MODE / 'SourceDecks' / (cid + '.json'))
+        validate_deck(decks[cid], catalog, revision)
+        source = load_json(source_dir(revision) / (cid + '.json'))
         if source['verificationStatus'] != 'photo-verified':
             raise ValueError('Source photo is not verified: ' + cid)
     solo = load_game_config(DATA / 'Solo.json')['Master']['Solo']
@@ -259,19 +290,33 @@ def compile_prototype():
     if ids_path.exists():
         allocations = load_json(ids_path)
     else:
-        gate_start, npc_start = max(existing_gates) + 1, max(npc_ids) + 1
-        allocations = {'schemaVersion': 1, 'characters': {
-            cid: {'gateId': gate_start + i, 'npcId': npc_start + i}
-            for i, cid in enumerate(roster_ids)}}
-    allocated_gates = [v['gateId'] for v in allocations['characters'].values()]
-    allocated_npcs = [v['npcId'] for v in allocations['characters'].values()]
-    if len(set(allocated_gates)) != len(roster_ids) or len(set(allocated_npcs)) != len(roster_ids):
+        allocations = {'schemaVersion': 1, 'characters': {}}
+    allocated = allocations['characters']
+    # Chapter IDs use a per-character opponent slot. v1 slots are the original
+    # roster positions, so existing battle IDs never move when the roster changes.
+    v1_ids = [row[0] for row in ROSTER]
+    for cid, value in allocated.items():
+        if 'slot' not in value:
+            if cid not in v1_ids:
+                raise ValueError('Allocated character without a slot: ' + cid)
+            value['slot'] = v1_ids.index(cid) + 1
+    for cid in roster_ids:
+        if cid not in allocated:
+            used_gates = existing_gates | {v['gateId'] for v in allocated.values()}
+            used_npcs = npc_ids | {v['npcId'] for v in allocated.values()}
+            allocated[cid] = {'gateId': max(used_gates) + 1, 'npcId': max(used_npcs) + 1,
+                              'slot': max([v['slot'] for v in allocated.values()] + [0]) + 1}
+    allocated_gates = [v['gateId'] for v in allocated.values()]
+    allocated_npcs = [v['npcId'] for v in allocated.values()]
+    allocated_slots = [v['slot'] for v in allocated.values()]
+    if len(set(allocated_gates)) != len(allocated) or len(set(allocated_npcs)) != len(allocated) or \
+            len(set(allocated_slots)) != len(allocated) or any(not 1 <= x <= 8999 for x in allocated_slots):
         raise ValueError('Duplicate allocated IDs')
     if any(x in existing_gates for x in allocated_gates) or any(x in npc_ids for x in allocated_npcs):
         raise ValueError('Balanced IDs collide with existing campaign')
     if any(x <= 0 or x * 10000 + 9000 > 2147483647 for x in allocated_gates):
         raise ValueError('Allocated gate IDs overflow chapter IDs')
-    names = {cid: name for cid, name, _, _ in ROSTER}
+    names = {cid: name for cid, name, _, _ in roster}
     gates, chapters, encounters, texts, thumbs = {}, {}, [], [], []
     original_thumbs = (DATA / 'ClientData/SoloGateCards.txt').read_text(encoding='utf-8-sig')
     used_thumb_gates = {int(line.split(',')[0]) for line in original_thumbs.splitlines()
@@ -285,7 +330,7 @@ def compile_prototype():
         for opponent in characters:
             if player == opponent:
                 continue
-            chapter_id = gate * 10000 + roster_ids.index(opponent) + 1
+            chapter_id = gate * 10000 + allocated[opponent]['slot']
             if chapter_id in existing_chapters:
                 raise ValueError('Allocated chapter collides with existing campaign')
             chapter_rows[str(chapter_id)] = {'parent_chapter': previous_chapter, 'difficulty': 1,
@@ -309,6 +354,7 @@ def compile_prototype():
                       '[IDS_SOLO.GATE%d_EXPLANATION]' % gate, 'Choose an opponent. You play ' + names[player] + "'s fixed deck."])
         # Verified original signature monsters selected from each actual deck.
         preferred_names = {'yugi': 'Dark Magician', 'yugi_battle_city': 'Slifer the Sky Dragon',
+            'yugi_season2': 'Slifer the Sky Dragon', 'yami_bakura': 'Dark Necrofear',
             'kaiba': 'Blue-Eyes White Dragon', 'joey': 'Red-Eyes Black Dragon',
             'weevil': 'Insect Queen', 'rex': 'Black Tyranno', 'mako': 'The Legendary Fisherman',
             'mai': 'Harpie Lady Sisters', 'bandit_keith': 'Barrel Dragon', 'bonz': 'Pumpking the King of Ghosts',
@@ -331,10 +377,22 @@ def compile_prototype():
             write_json(output / (player + '__' + opponent + '.json'),
                        {'schemaVersion': 1, 'runtimeIntegrated': True, 'Duel': duel,
                         'deckFingerprints': [deck_fingerprint(decks[player]), deck_fingerprint(decks[opponent])]})
-    overlay = {'schemaVersion': 1, 'contentVersion': mode.get('contentVersion', '0.2.0'),
+    overlay = {'schemaVersion': 1, 'contentVersion': mode.get('contentVersion', '0.2.0'), 'deckRevision': revision,
                'gate': gates, 'chapter': chapters, 'encounters': encounters,
                'deckFingerprints': {c: deck_fingerprint(decks[c]) for c in characters}}
     write_json(ids_path, allocations)
+    # Server display names come from Roster.json; retired characters stay listed.
+    roster_path = MODE / 'Roster.json'
+    roster_rows = load_json(roster_path) if roster_path.exists() else []
+    order = [row['id'] for row in roster_rows]
+    by_id = {row['id']: row for row in roster_rows}
+    for cid, name, _, _ in roster:
+        if cid not in by_id:
+            by_id[cid] = {'id': cid, 'presentationId': cid}
+            order.append(cid)
+        by_id[cid].update(displayName=name, deckRevision=revision,
+                          deckFile='Decks/' + revision + '/' + cid + '.json')
+    write_json(roster_path, [by_id[cid] for cid in order])
     write_json(MODE / 'Generated/Overlay.json', overlay)
     write_json(output / 'Overlay.json', overlay)
     ids_text = DATA / 'ClientData/IDS/IDS_BALANCED_CHARACTERS.txt'

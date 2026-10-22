@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mai",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "revision": "source-v2",
+  "main": [
+    {
+      "cardId": 4857,
+      "quantity": 1
+    },
+    {
+      "cardId": 4843,
+      "quantity": 1
+    },
+    {
+      "cardId": 6208,
+      "quantity": 1
+    },
+    {
+      "cardId": 6207,
+      "quantity": 2
+    },
+    {
+      "cardId": 4993,
+      "quantity": 1
+    },
+    {
+      "cardId": 6722,
+      "quantity": 1
+    },
+    {
+      "cardId": 6279,
+      "quantity": 1
+    },
+    {
+      "cardId": 4323,
+      "quantity": 2
+    },
+    {
+      "cardId": 4324,
+      "quantity": 3
+    },
+    {
+      "cardId": 4678,
+      "quantity": 1
+    },
+    {
+      "cardId": 4812,
+      "quantity": 1
+    },
+    {
+      "cardId": 4989,
+      "quantity": 1
+    },
+    {
+      "cardId": 4939,
+      "quantity": 1
+    },
+    {
+      "cardId": 5135,
+      "quantity": 1
+    },
+    {
+      "cardId": 4192,
+      "quantity": 1
+    },
+    {
+      "cardId": 4472,
+      "quantity": 1
+    },
+    {
+      "cardId": 5643,
+      "quantity": 2
+    },
+    {
+      "cardId": 4980,
+      "quantity": 1
+    },
+    {
+      "cardId": 4131,
+      "quantity": 1
+    },
+    {
+      "cardId": 6175,
+      "quantity": 1
+    },
+    {
+      "cardId": 5021,
+      "quantity": 3
+    },
+    {
+      "cardId": 5255,
+      "quantity": 1
+    },
+    {
+      "cardId": 5295,
+      "quantity": 1
+    },
+    {
+      "cardId": 5646,
+      "quantity": 1
+    },
+    {
+      "cardId": 5195,
+      "quantity": 1
+    },
+    {
+      "cardId": 5284,
+      "quantity": 1
+    },
+    {
+      "cardId": 6186,
+      "quantity": 1
+    },
+    {
+      "cardId": 6187,
+      "quantity": 1
+    },
+    {
+      "cardId": 6188,
+      "quantity": 1
+    },
+    {
+      "cardId": 4069,
+      "quantity": 3
+    },
+    {
+      "cardId": 4392,
+      "quantity": 1
+    }
+  ],
+  "extra": [],
+  "side": []
+}

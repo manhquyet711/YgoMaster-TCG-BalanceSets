@@ -3,63 +3,88 @@
   "characters": {
     "yugi": {
       "gateId": 2016,
-      "npcId": 3027
+      "npcId": 3027,
+      "slot": 1
     },
     "yugi_battle_city": {
       "gateId": 2017,
-      "npcId": 3028
+      "npcId": 3028,
+      "slot": 2
     },
     "kaiba": {
       "gateId": 2018,
-      "npcId": 3029
+      "npcId": 3029,
+      "slot": 3
     },
     "joey": {
       "gateId": 2019,
-      "npcId": 3030
+      "npcId": 3030,
+      "slot": 4
     },
     "weevil": {
       "gateId": 2020,
-      "npcId": 3031
+      "npcId": 3031,
+      "slot": 5
     },
     "rex": {
       "gateId": 2021,
-      "npcId": 3032
+      "npcId": 3032,
+      "slot": 6
     },
     "mako": {
       "gateId": 2022,
-      "npcId": 3033
+      "npcId": 3033,
+      "slot": 7
     },
     "mai": {
       "gateId": 2023,
-      "npcId": 3034
+      "npcId": 3034,
+      "slot": 8
     },
     "bandit_keith": {
       "gateId": 2024,
-      "npcId": 3035
+      "npcId": 3035,
+      "slot": 9
     },
     "bonz": {
       "gateId": 2025,
-      "npcId": 3036
+      "npcId": 3036,
+      "slot": 10
     },
     "pegasus": {
       "gateId": 2026,
-      "npcId": 3037
+      "npcId": 3037,
+      "slot": 11
     },
     "marik_bakura": {
       "gateId": 2027,
-      "npcId": 3038
+      "npcId": 3038,
+      "slot": 12
     },
     "gravekeepers": {
       "gateId": 2028,
-      "npcId": 3039
+      "npcId": 3039,
+      "slot": 13
     },
     "grandpa": {
       "gateId": 2029,
-      "npcId": 3040
+      "npcId": 3040,
+      "slot": 14
     },
     "jaden": {
       "gateId": 2030,
-      "npcId": 3041
+      "npcId": 3041,
+      "slot": 15
+    },
+    "yugi_season2": {
+      "gateId": 2031,
+      "npcId": 3042,
+      "slot": 16
+    },
+    "yami_bakura": {
+      "gateId": 2032,
+      "npcId": 3043,
+      "slot": 17
     }
   }
 }

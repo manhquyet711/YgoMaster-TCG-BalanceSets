@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "characterId": "jaden",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-8o7udizjd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 15,
+  "main": [
+    {
+      "name": "H - Heated Heart",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "E - Emergency Call",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "R - Righteous Justice",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "O - Oversoul",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Fusion Reserve",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Compulsory Evacuation Device",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Hero Signal",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Spark Blaster",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Bubble Shuffle",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Fusion Recovery",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Fusion Gate",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Miracle Fusion",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Fusion Sage",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Polymerization",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Burstinatrix",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Avian",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Sparkman",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Clayman",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Wildheart",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Bubbleman",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Winged Kuriboh",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Bladedge",
+      "quantity": 2,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Elemental HERO Steam Healer",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Shining Flare Wingman",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Flame Wingman",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Tempest",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Electrum",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Mudballman",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Plasma Vice",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Thunder Giant",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Wildedge",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Wild Wingman",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elemental HERO Rampart Blaster",
+      "quantity": 2,
+      "status": "transcribed"
+    }
+  ],
+  "side": [],
+  "corrections": [
+    "Identical to v1 after photo comparison."
+  ]
+}

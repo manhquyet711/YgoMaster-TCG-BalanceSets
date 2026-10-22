@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mai",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-le8laxzjd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Soul Release",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Triangle Ecstasy Spark",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Harpies' Hunting Ground",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mirror Wall",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Hysteric Party",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Phoenix Wing Wind Blast",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Cyber Shield",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Elegant Egotist",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Harpie's Feather Duster",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Michizure",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Shadow of Eyes",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Fiend Reflection #2",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Skull Red Bird",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Sonic Duck",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Sky Scout",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Faith Bird",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Harpie Girl",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Birdface",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Garuda the Wind Spirit",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Amazoness Fighter",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Amazoness Blowpiper",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Amazoness Archer",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Amazoness Swords Woman",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Harpie Lady 1",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Harpie Lady 2",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Harpie Lady 3",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Harpie Lady Sisters",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Harpie's Pet Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Identical to v1 after photo comparison."
+  ]
+}

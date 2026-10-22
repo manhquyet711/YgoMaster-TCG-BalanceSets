@@ -37,8 +37,33 @@ namespace YgoMaster
             return checked(Convert.ToInt32(value));
         }
 
+        public const string FirstRevision = "source-v1";
+
+        // Revision names are "source-v<number>". v1 sources predate revisions and stay at the
+        // SourceDecks root; later revisions use SourceDecks/<revision>.
+        public static bool IsValidRevision(string revision)
+        {
+            int number;
+            return revision != null && revision.StartsWith("source-v") &&
+                int.TryParse(revision.Substring("source-v".Length), out number) && number >= 1 &&
+                revision == "source-v" + number;
+        }
+
+        public static string SourceDeckPath(string root, string revision, string id)
+        {
+            return revision == FirstRevision ? Path.Combine(root, "SourceDecks", id + ".json") :
+                Path.Combine(root, "SourceDecks", revision, id + ".json");
+        }
+
         public static CharacterCatalog Load(string root, List<string> selected, Dictionary<int, int> knownCards)
         {
+            return Load(root, selected, knownCards, FirstRevision);
+        }
+
+        public static CharacterCatalog Load(string root, List<string> selected, Dictionary<int, int> knownCards, string revision)
+        {
+            if (!IsValidRevision(revision))
+                throw new InvalidDataException("Unsupported deck revision");
             if (selected == null || selected.Count < 2 || selected.Distinct().Count() != selected.Count)
                 throw new InvalidDataException("Select at least two distinct characters");
             var roster = MiniJSON.Json.DeserializeStripped(File.ReadAllText(Path.Combine(root, "Roster.json"))) as List<object>;
@@ -50,13 +75,13 @@ namespace YgoMaster
                     throw new InvalidDataException("Unsafe character ID");
                 var matches = roster.OfType<Dictionary<string, object>>().Where(x => Utils.GetValue<string>(x, "id") == id).ToList();
                 if (matches.Count != 1) throw new InvalidDataException("Unknown or duplicate roster ID: " + id);
-                var source = Read(Path.Combine(root, "SourceDecks", id + ".json"));
+                var source = Read(SourceDeckPath(root, revision, id));
                 if (Utils.GetValue<string>(source, "verificationStatus") != "photo-verified")
                     throw new InvalidDataException("Unreviewed source photo: " + id);
-                var canonical = Read(Path.Combine(root, "Decks", "source-v1", id + ".json"));
+                var canonical = Read(Path.Combine(root, "Decks", revision, id + ".json"));
                 if (Utils.GetValue<int>(canonical, "schemaVersion") != 1 ||
                     Utils.GetValue<string>(canonical, "characterId") != id ||
-                    Utils.GetValue<string>(canonical, "revision") != "source-v1")
+                    Utils.GetValue<string>(canonical, "revision") != revision)
                     throw new InvalidDataException("Invalid canonical deck identity: " + id);
                 if (Utils.GetValue<int>(canonical, "expectedMainCount") != Utils.GetValue<int>(source, "expectedMainCount") ||
                     Utils.GetValue<int>(canonical, "expectedExtraCount") != Utils.GetValue<int>(source, "expectedExtraCount"))

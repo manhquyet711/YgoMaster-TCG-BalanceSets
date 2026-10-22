@@ -21,6 +21,7 @@ namespace YgoMaster
         string balancedLoadError;
         DuelRunLogger balancedRunLogger;
         string balancedContentVersion;
+        string balancedDeckRevision;
 
         void BeginBalancedRun(Player player, DuelSettings settings)
         {
@@ -28,7 +29,8 @@ namespace YgoMaster
             BalancedEncounter entry;
             bool balanced = balancedEncounters.TryGetValue(settings.chapter, out entry) && settings.GameMode == (int)GameMode.SoloSingle;
             balancedRunLogger.Begin(player, settings, balanced ? entry.PlayerId : null,
-                balanced ? entry.OpponentId : null, balancedContentVersion, Path.GetFullPath(Path.Combine(dataDirectory, "..")));
+                balanced ? entry.OpponentId : null, balancedContentVersion, balancedDeckRevision,
+                Path.GetFullPath(Path.Combine(dataDirectory, "..")));
         }
 
         bool IsBalancedChapter(int chapterId) { return balancedEncounters.ContainsKey(chapterId); }
@@ -51,6 +53,7 @@ namespace YgoMaster
             balancedCatalog = null;
             balancedLoadError = null;
             balancedRunLogger = null;
+            balancedDeckRevision = null;
             string root = Path.Combine(dataDirectory, "BalancedCharacters");
             string modeFile = Path.Combine(root, "Mode.json");
             if (!File.Exists(modeFile)) return;
@@ -58,8 +61,9 @@ namespace YgoMaster
             {
                 var mode = CharacterCatalog.Read(modeFile);
                 if (!Utils.GetValue<bool>(mode, "enabled")) return;
-                if (Utils.GetValue<int>(mode, "schemaVersion") != 1 ||
-                    Utils.GetValue<string>(mode, "activeDeckRevision") != "source-v1")
+                string revision = Utils.GetValue<string>(mode, "activeDeckRevision");
+                if (Utils.GetValue<int>(mode, "schemaVersion") != 1 || !CharacterCatalog.IsValidRevision(revision) ||
+                    !Directory.Exists(Path.Combine(root, "Decks", revision)))
                     throw new InvalidDataException("Unsupported mode schema or deck revision");
                 var allocations = CharacterCatalog.Read(Path.Combine(root, "Ids.json"));
                 foreach (var entry in Utils.GetDictionary(allocations, "characters"))
@@ -67,10 +71,12 @@ namespace YgoMaster
                 List<object> selected;
                 if (!Utils.TryGetValue(mode, "activeCharacterIds", out selected) || selected.Count < 2 || selected.Count > 15 ||
                     selected.Any(x => !(x is string))) throw new InvalidDataException("Invalid active character list");
-                var catalog = CharacterCatalog.Load(root, selected.Cast<string>().ToList(), CardRare);
+                var catalog = CharacterCatalog.Load(root, selected.Cast<string>().ToList(), CardRare, revision);
                 var overlay = CharacterCatalog.Read(Path.Combine(root, "Generated", "Overlay.json"));
+                // Overlays from before deck revisions carry no deckRevision and are always source-v1.
                 if (Utils.GetValue<int>(overlay, "schemaVersion") != 1 ||
-                    Utils.GetValue<string>(overlay, "contentVersion") != Utils.GetValue<string>(mode, "contentVersion"))
+                    Utils.GetValue<string>(overlay, "contentVersion") != Utils.GetValue<string>(mode, "contentVersion") ||
+                    Utils.GetValue<string>(overlay, "deckRevision", CharacterCatalog.FirstRevision) != revision)
                     throw new InvalidDataException("Overlay version does not match mode");
                 var hashes = Utils.GetDictionary(overlay, "deckFingerprints");
                 foreach (string id in catalog.Ids)
@@ -173,6 +179,7 @@ namespace YgoMaster
                 foreach (var encounter in staged) balancedEncounters.Add(encounter.Key, encounter.Value);
                 foreach (var goal in stagedGoals) balancedGoals.Add(goal.Key, goal.Value);
                 balancedCatalog = catalog;
+                balancedDeckRevision = revision;
                 balancedContentVersion = Utils.GetValue<string>(mode, "contentVersion");
                 balancedRunLogger = new DuelRunLogger(Path.Combine(root, "Logs", "duels.jsonl"), false);
                 Utils.LogInfo("Balanced Characters loaded: " + gates.Count + " gates / " + staged.Count + " encounters");

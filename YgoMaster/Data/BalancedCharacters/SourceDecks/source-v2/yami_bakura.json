@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "characterId": "yami_bakura",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-1x0grizjd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Dark Sanctuary",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Destiny Board",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Spirit Message \"I\"",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Spirit Message \"N\"",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Spirit Message \"A\"",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Spirit Message \"L\"",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Nightmare's Steelcage",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Deal of Phantom",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Spiritualism",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Brain Control",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Souls of the Forgotten",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "The Portrait's Secret",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "The Gross Ghost of Fled Dreams",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Headless Knight",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Ryu-Kishin Powered",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Whiptail Crow",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Earthbound Spirit",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Revival Jam",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Morphing Jar",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Yomi Ship",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Masked Sorcerer",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Sinister Serpent",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Ruler Ha Des",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Marie the Fallen One",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Necrofear",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Puppet Master",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "The Winged Dragon of Ra",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Invader of Darkness",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Beast of Talwar",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Michizure",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Successor of v1 Marik/Bakura mix: Beast of Talwar and Michizure replace Lesser Fiend and Exchange."
+  ]
+}

@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
   "enabled": true,
-  "contentVersion": "0.2.2-prototype",
+  "contentVersion": "0.3.0-prototype",
   "activeCharacterIds": [
-    "yugi_battle_city",
+    "yugi",
+    "yugi_season2",
     "kaiba",
     "joey",
     "weevil",
@@ -13,13 +14,13 @@
     "bandit_keith",
     "bonz",
     "pegasus",
-    "marik_bakura",
+    "yami_bakura",
     "gravekeepers",
     "grandpa",
     "jaden"
   ],
   "rosterVersion": 1,
-  "activeDeckRevision": "source-v1",
+  "activeDeckRevision": "source-v2",
   "defaults": {
     "life": [
       8000,
@@ -35,5 +36,5 @@
     "cpu": 97,
     "cpuflag": null
   },
-  "note": "Fourteen photo-reviewed character decks; 182 fixed-deck encounters. Original Yugi remains blocked: Spellbinding Circle is absent from local tables/catalog. Expanded map and duel acceptance pending in game."
+  "note": "v2 character set (photos in \"charracter set v2\"): fifteen photo-reviewed decks, 210 fixed-deck encounters. Yugi (Season 1) plays Shadow Spell in place of Spellbinding Circle, which is absent from Master Duel. In-game acceptance pending."
 }

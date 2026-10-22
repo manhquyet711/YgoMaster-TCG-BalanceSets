@@ -6,7 +6,7 @@ $manifest = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'manifest.json') -
 $modeRelative = 'Data\BalancedCharacters\Mode.json'
 $modePath = Join-Path $root $modeRelative
 $mode = Get-Content -LiteralPath $modePath -Raw | ConvertFrom-Json
-if ($mode.schemaVersion -ne 1 -or $mode.activeDeckRevision -ne 'source-v1') { throw 'Unsupported balanced mode schema/revision.' }
+if ($mode.schemaVersion -ne 1 -or $mode.activeDeckRevision -notmatch '^source-v[1-9][0-9]*$') { throw 'Unsupported balanced mode schema/revision.' }
 if ((Get-FileHash -LiteralPath (Join-Path $root 'YgoMasterClient.exe')).Hash -ne $manifest.expectedClientSha256) { throw 'Client differs from the inspected working 0.2.1 installation.' }
 $already = $mode.contentVersion -eq $manifest.contentVersion
 if (-not $already -and $mode.contentVersion -ne $manifest.fromContentVersion) { throw 'This package upgrades the existing 0.2.1 balanced mod.' }

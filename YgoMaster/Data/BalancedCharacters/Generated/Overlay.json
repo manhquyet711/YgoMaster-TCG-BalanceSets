@@ -1,13 +1,22 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "0.2.2-prototype",
+  "contentVersion": "0.3.0-prototype",
+  "deckRevision": "source-v2",
   "gate": {
-    "2017": {
+    "2016": {
+      "priority": 100,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 20169000,
+      "category": 1
+    },
+    "2031": {
       "priority": 101,
       "parent_gate": 0,
       "view_gate": 0,
       "unlock_id": 0,
-      "clear_chapter": 20179000,
+      "clear_chapter": 20319000,
       "category": 1
     },
     "2018": {
@@ -82,12 +91,12 @@
       "clear_chapter": 20269000,
       "category": 1
     },
-    "2027": {
+    "2032": {
       "priority": 111,
       "parent_gate": 0,
       "view_gate": 0,
       "unlock_id": 0,
-      "clear_chapter": 20279000,
+      "clear_chapter": 20329000,
       "category": 1
     },
     "2028": {
@@ -116,9 +125,19 @@
     }
   },
   "chapter": {
-    "2017": {
-      "20170003": {
+    "2016": {
+      "20160016": {
         "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
+        "anime": 0
+      },
+      "20160003": {
+        "parent_chapter": 20160016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -127,8 +146,8 @@
         "npc_id": 3029,
         "anime": 0
       },
-      "20170004": {
-        "parent_chapter": 20170003,
+      "20160004": {
+        "parent_chapter": 20160003,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -137,8 +156,8 @@
         "npc_id": 3030,
         "anime": 0
       },
-      "20170005": {
-        "parent_chapter": 20170004,
+      "20160005": {
+        "parent_chapter": 20160004,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -147,8 +166,8 @@
         "npc_id": 3031,
         "anime": 0
       },
-      "20170006": {
-        "parent_chapter": 20170005,
+      "20160006": {
+        "parent_chapter": 20160005,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -157,8 +176,8 @@
         "npc_id": 3032,
         "anime": 0
       },
-      "20170007": {
-        "parent_chapter": 20170006,
+      "20160007": {
+        "parent_chapter": 20160006,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -167,8 +186,8 @@
         "npc_id": 3033,
         "anime": 0
       },
-      "20170008": {
-        "parent_chapter": 20170007,
+      "20160008": {
+        "parent_chapter": 20160007,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -177,8 +196,8 @@
         "npc_id": 3034,
         "anime": 0
       },
-      "20170009": {
-        "parent_chapter": 20170008,
+      "20160009": {
+        "parent_chapter": 20160008,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -187,8 +206,8 @@
         "npc_id": 3035,
         "anime": 0
       },
-      "20170010": {
-        "parent_chapter": 20170009,
+      "20160010": {
+        "parent_chapter": 20160009,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -197,8 +216,8 @@
         "npc_id": 3036,
         "anime": 0
       },
-      "20170011": {
-        "parent_chapter": 20170010,
+      "20160011": {
+        "parent_chapter": 20160010,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -207,18 +226,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20170012": {
-        "parent_chapter": 20170011,
+      "20160017": {
+        "parent_chapter": 20160011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
-      "20170013": {
-        "parent_chapter": 20170012,
+      "20160013": {
+        "parent_chapter": 20160017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -227,8 +246,8 @@
         "npc_id": 3039,
         "anime": 0
       },
-      "20170014": {
-        "parent_chapter": 20170013,
+      "20160014": {
+        "parent_chapter": 20160013,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -237,8 +256,8 @@
         "npc_id": 3040,
         "anime": 0
       },
-      "20170015": {
-        "parent_chapter": 20170014,
+      "20160015": {
+        "parent_chapter": 20160014,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -247,8 +266,160 @@
         "npc_id": 3041,
         "anime": 0
       },
-      "20179000": {
-        "parent_chapter": 20170015,
+      "20169000": {
+        "parent_chapter": 20160015,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2031": {
+      "20310001": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20310003": {
+        "parent_chapter": 20310001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3029,
+        "anime": 0
+      },
+      "20310004": {
+        "parent_chapter": 20310003,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3030,
+        "anime": 0
+      },
+      "20310005": {
+        "parent_chapter": 20310004,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3031,
+        "anime": 0
+      },
+      "20310006": {
+        "parent_chapter": 20310005,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3032,
+        "anime": 0
+      },
+      "20310007": {
+        "parent_chapter": 20310006,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3033,
+        "anime": 0
+      },
+      "20310008": {
+        "parent_chapter": 20310007,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3034,
+        "anime": 0
+      },
+      "20310009": {
+        "parent_chapter": 20310008,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3035,
+        "anime": 0
+      },
+      "20310010": {
+        "parent_chapter": 20310009,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3036,
+        "anime": 0
+      },
+      "20310011": {
+        "parent_chapter": 20310010,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3037,
+        "anime": 0
+      },
+      "20310017": {
+        "parent_chapter": 20310011,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3043,
+        "anime": 0
+      },
+      "20310013": {
+        "parent_chapter": 20310017,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3039,
+        "anime": 0
+      },
+      "20310014": {
+        "parent_chapter": 20310013,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3040,
+        "anime": 0
+      },
+      "20310015": {
+        "parent_chapter": 20310014,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3041,
+        "anime": 0
+      },
+      "20319000": {
+        "parent_chapter": 20310015,
         "difficulty": 0,
         "mydeck_set_id": 0,
         "set_id": 0,
@@ -259,18 +430,28 @@
       }
     },
     "2018": {
-      "20180002": {
+      "20180001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20180016": {
+        "parent_chapter": 20180001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20180004": {
-        "parent_chapter": 20180002,
+        "parent_chapter": 20180016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -349,18 +530,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20180012": {
+      "20180017": {
         "parent_chapter": 20180011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20180013": {
-        "parent_chapter": 20180012,
+        "parent_chapter": 20180017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -401,18 +582,28 @@
       }
     },
     "2019": {
-      "20190002": {
+      "20190001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20190016": {
+        "parent_chapter": 20190001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20190003": {
-        "parent_chapter": 20190002,
+        "parent_chapter": 20190016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -491,18 +682,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20190012": {
+      "20190017": {
         "parent_chapter": 20190011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20190013": {
-        "parent_chapter": 20190012,
+        "parent_chapter": 20190017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -543,18 +734,28 @@
       }
     },
     "2020": {
-      "20200002": {
+      "20200001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20200016": {
+        "parent_chapter": 20200001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20200003": {
-        "parent_chapter": 20200002,
+        "parent_chapter": 20200016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -633,18 +834,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20200012": {
+      "20200017": {
         "parent_chapter": 20200011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20200013": {
-        "parent_chapter": 20200012,
+        "parent_chapter": 20200017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -685,18 +886,28 @@
       }
     },
     "2021": {
-      "20210002": {
+      "20210001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20210016": {
+        "parent_chapter": 20210001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20210003": {
-        "parent_chapter": 20210002,
+        "parent_chapter": 20210016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -775,18 +986,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20210012": {
+      "20210017": {
         "parent_chapter": 20210011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20210013": {
-        "parent_chapter": 20210012,
+        "parent_chapter": 20210017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -827,18 +1038,28 @@
       }
     },
     "2022": {
-      "20220002": {
+      "20220001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20220016": {
+        "parent_chapter": 20220001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20220003": {
-        "parent_chapter": 20220002,
+        "parent_chapter": 20220016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -917,18 +1138,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20220012": {
+      "20220017": {
         "parent_chapter": 20220011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20220013": {
-        "parent_chapter": 20220012,
+        "parent_chapter": 20220017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -969,18 +1190,28 @@
       }
     },
     "2023": {
-      "20230002": {
+      "20230001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20230016": {
+        "parent_chapter": 20230001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20230003": {
-        "parent_chapter": 20230002,
+        "parent_chapter": 20230016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1059,18 +1290,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20230012": {
+      "20230017": {
         "parent_chapter": 20230011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20230013": {
-        "parent_chapter": 20230012,
+        "parent_chapter": 20230017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1111,18 +1342,28 @@
       }
     },
     "2024": {
-      "20240002": {
+      "20240001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20240016": {
+        "parent_chapter": 20240001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20240003": {
-        "parent_chapter": 20240002,
+        "parent_chapter": 20240016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1201,18 +1442,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20240012": {
+      "20240017": {
         "parent_chapter": 20240011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20240013": {
-        "parent_chapter": 20240012,
+        "parent_chapter": 20240017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1253,18 +1494,28 @@
       }
     },
     "2025": {
-      "20250002": {
+      "20250001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20250016": {
+        "parent_chapter": 20250001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20250003": {
-        "parent_chapter": 20250002,
+        "parent_chapter": 20250016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1343,18 +1594,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20250012": {
+      "20250017": {
         "parent_chapter": 20250011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20250013": {
-        "parent_chapter": 20250012,
+        "parent_chapter": 20250017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1395,18 +1646,28 @@
       }
     },
     "2026": {
-      "20260002": {
+      "20260001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20260016": {
+        "parent_chapter": 20260001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20260003": {
-        "parent_chapter": 20260002,
+        "parent_chapter": 20260016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1485,18 +1746,18 @@
         "npc_id": 3036,
         "anime": 0
       },
-      "20260012": {
+      "20260017": {
         "parent_chapter": 20260010,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20260013": {
-        "parent_chapter": 20260012,
+        "parent_chapter": 20260017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1536,19 +1797,29 @@
         "anime": 0
       }
     },
-    "2027": {
-      "20270002": {
+    "2032": {
+      "20320001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
         "anime": 0
       },
-      "20270003": {
-        "parent_chapter": 20270002,
+      "20320016": {
+        "parent_chapter": 20320001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
+        "anime": 0
+      },
+      "20320003": {
+        "parent_chapter": 20320016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1557,8 +1828,8 @@
         "npc_id": 3029,
         "anime": 0
       },
-      "20270004": {
-        "parent_chapter": 20270003,
+      "20320004": {
+        "parent_chapter": 20320003,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1567,8 +1838,8 @@
         "npc_id": 3030,
         "anime": 0
       },
-      "20270005": {
-        "parent_chapter": 20270004,
+      "20320005": {
+        "parent_chapter": 20320004,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1577,8 +1848,8 @@
         "npc_id": 3031,
         "anime": 0
       },
-      "20270006": {
-        "parent_chapter": 20270005,
+      "20320006": {
+        "parent_chapter": 20320005,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1587,8 +1858,8 @@
         "npc_id": 3032,
         "anime": 0
       },
-      "20270007": {
-        "parent_chapter": 20270006,
+      "20320007": {
+        "parent_chapter": 20320006,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1597,8 +1868,8 @@
         "npc_id": 3033,
         "anime": 0
       },
-      "20270008": {
-        "parent_chapter": 20270007,
+      "20320008": {
+        "parent_chapter": 20320007,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1607,8 +1878,8 @@
         "npc_id": 3034,
         "anime": 0
       },
-      "20270009": {
-        "parent_chapter": 20270008,
+      "20320009": {
+        "parent_chapter": 20320008,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1617,8 +1888,8 @@
         "npc_id": 3035,
         "anime": 0
       },
-      "20270010": {
-        "parent_chapter": 20270009,
+      "20320010": {
+        "parent_chapter": 20320009,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1627,8 +1898,8 @@
         "npc_id": 3036,
         "anime": 0
       },
-      "20270011": {
-        "parent_chapter": 20270010,
+      "20320011": {
+        "parent_chapter": 20320010,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1637,8 +1908,8 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20270013": {
-        "parent_chapter": 20270011,
+      "20320013": {
+        "parent_chapter": 20320011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1647,8 +1918,8 @@
         "npc_id": 3039,
         "anime": 0
       },
-      "20270014": {
-        "parent_chapter": 20270013,
+      "20320014": {
+        "parent_chapter": 20320013,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1657,8 +1928,8 @@
         "npc_id": 3040,
         "anime": 0
       },
-      "20270015": {
-        "parent_chapter": 20270014,
+      "20320015": {
+        "parent_chapter": 20320014,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1667,8 +1938,8 @@
         "npc_id": 3041,
         "anime": 0
       },
-      "20279000": {
-        "parent_chapter": 20270015,
+      "20329000": {
+        "parent_chapter": 20320015,
         "difficulty": 0,
         "mydeck_set_id": 0,
         "set_id": 0,
@@ -1679,18 +1950,28 @@
       }
     },
     "2028": {
-      "20280002": {
+      "20280001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20280016": {
+        "parent_chapter": 20280001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20280003": {
-        "parent_chapter": 20280002,
+        "parent_chapter": 20280016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1779,18 +2060,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20280012": {
+      "20280017": {
         "parent_chapter": 20280011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20280014": {
-        "parent_chapter": 20280012,
+        "parent_chapter": 20280017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1821,18 +2102,28 @@
       }
     },
     "2029": {
-      "20290002": {
+      "20290001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20290016": {
+        "parent_chapter": 20290001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20290003": {
-        "parent_chapter": 20290002,
+        "parent_chapter": 20290016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1921,18 +2212,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20290012": {
+      "20290017": {
         "parent_chapter": 20290011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20290013": {
-        "parent_chapter": 20290012,
+        "parent_chapter": 20290017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -1963,18 +2254,28 @@
       }
     },
     "2030": {
-      "20300002": {
+      "20300001": {
         "parent_chapter": 0,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3028,
+        "npc_id": 3027,
+        "anime": 0
+      },
+      "20300016": {
+        "parent_chapter": 20300001,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3042,
         "anime": 0
       },
       "20300003": {
-        "parent_chapter": 20300002,
+        "parent_chapter": 20300016,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -2063,18 +2364,18 @@
         "npc_id": 3037,
         "anime": 0
       },
-      "20300012": {
+      "20300017": {
         "parent_chapter": 20300011,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
         "unlock_id": 0,
         "begin_sn": "",
-        "npc_id": 3038,
+        "npc_id": 3043,
         "anime": 0
       },
       "20300013": {
-        "parent_chapter": 20300012,
+        "parent_chapter": 20300017,
         "difficulty": 1,
         "mydeck_set_id": 0,
         "set_id": 1,
@@ -2107,88 +2408,184 @@
   },
   "encounters": [
     {
-      "chapterId": 20170003,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160016,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
+      "opponentCharacterId": "yugi_season2"
+    },
+    {
+      "chapterId": 20160003,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "kaiba"
     },
     {
-      "chapterId": 20170004,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160004,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "joey"
     },
     {
-      "chapterId": 20170005,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160005,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "weevil"
     },
     {
-      "chapterId": 20170006,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160006,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "rex"
     },
     {
-      "chapterId": 20170007,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160007,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "mako"
     },
     {
-      "chapterId": 20170008,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160008,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "mai"
     },
     {
-      "chapterId": 20170009,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160009,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "bandit_keith"
     },
     {
-      "chapterId": 20170010,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160010,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "bonz"
     },
     {
-      "chapterId": 20170011,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160011,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20170012,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
-      "opponentCharacterId": "marik_bakura"
+      "chapterId": 20160017,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
+      "opponentCharacterId": "yami_bakura"
     },
     {
-      "chapterId": 20170013,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160013,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "gravekeepers"
     },
     {
-      "chapterId": 20170014,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160014,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "grandpa"
     },
     {
-      "chapterId": 20170015,
-      "gateId": 2017,
-      "playerCharacterId": "yugi_battle_city",
+      "chapterId": 20160015,
+      "gateId": 2016,
+      "playerCharacterId": "yugi",
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20180002,
+      "chapterId": 20310001,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20310003,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "kaiba"
+    },
+    {
+      "chapterId": 20310004,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "joey"
+    },
+    {
+      "chapterId": 20310005,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "weevil"
+    },
+    {
+      "chapterId": 20310006,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "rex"
+    },
+    {
+      "chapterId": 20310007,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "mako"
+    },
+    {
+      "chapterId": 20310008,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "mai"
+    },
+    {
+      "chapterId": 20310009,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "bandit_keith"
+    },
+    {
+      "chapterId": 20310010,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "bonz"
+    },
+    {
+      "chapterId": 20310011,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "pegasus"
+    },
+    {
+      "chapterId": 20310017,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "yami_bakura"
+    },
+    {
+      "chapterId": 20310013,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "gravekeepers"
+    },
+    {
+      "chapterId": 20310014,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "grandpa"
+    },
+    {
+      "chapterId": 20310015,
+      "gateId": 2031,
+      "playerCharacterId": "yugi_season2",
+      "opponentCharacterId": "jaden"
+    },
+    {
+      "chapterId": 20180001,
       "gateId": 2018,
       "playerCharacterId": "kaiba",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20180016,
+      "gateId": 2018,
+      "playerCharacterId": "kaiba",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20180004,
@@ -2239,10 +2636,10 @@
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20180012,
+      "chapterId": 20180017,
       "gateId": 2018,
       "playerCharacterId": "kaiba",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20180013,
@@ -2263,10 +2660,16 @@
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20190002,
+      "chapterId": 20190001,
       "gateId": 2019,
       "playerCharacterId": "joey",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20190016,
+      "gateId": 2019,
+      "playerCharacterId": "joey",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20190003,
@@ -2317,10 +2720,10 @@
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20190012,
+      "chapterId": 20190017,
       "gateId": 2019,
       "playerCharacterId": "joey",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20190013,
@@ -2341,10 +2744,16 @@
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20200002,
+      "chapterId": 20200001,
       "gateId": 2020,
       "playerCharacterId": "weevil",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20200016,
+      "gateId": 2020,
+      "playerCharacterId": "weevil",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20200003,
@@ -2395,10 +2804,10 @@
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20200012,
+      "chapterId": 20200017,
       "gateId": 2020,
       "playerCharacterId": "weevil",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20200013,
@@ -2419,10 +2828,16 @@
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20210002,
+      "chapterId": 20210001,
       "gateId": 2021,
       "playerCharacterId": "rex",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20210016,
+      "gateId": 2021,
+      "playerCharacterId": "rex",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20210003,
@@ -2473,10 +2888,10 @@
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20210012,
+      "chapterId": 20210017,
       "gateId": 2021,
       "playerCharacterId": "rex",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20210013,
@@ -2497,10 +2912,16 @@
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20220002,
+      "chapterId": 20220001,
       "gateId": 2022,
       "playerCharacterId": "mako",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20220016,
+      "gateId": 2022,
+      "playerCharacterId": "mako",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20220003,
@@ -2551,10 +2972,10 @@
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20220012,
+      "chapterId": 20220017,
       "gateId": 2022,
       "playerCharacterId": "mako",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20220013,
@@ -2575,10 +2996,16 @@
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20230002,
+      "chapterId": 20230001,
       "gateId": 2023,
       "playerCharacterId": "mai",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20230016,
+      "gateId": 2023,
+      "playerCharacterId": "mai",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20230003,
@@ -2629,10 +3056,10 @@
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20230012,
+      "chapterId": 20230017,
       "gateId": 2023,
       "playerCharacterId": "mai",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20230013,
@@ -2653,10 +3080,16 @@
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20240002,
+      "chapterId": 20240001,
       "gateId": 2024,
       "playerCharacterId": "bandit_keith",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20240016,
+      "gateId": 2024,
+      "playerCharacterId": "bandit_keith",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20240003,
@@ -2707,10 +3140,10 @@
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20240012,
+      "chapterId": 20240017,
       "gateId": 2024,
       "playerCharacterId": "bandit_keith",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20240013,
@@ -2731,10 +3164,16 @@
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20250002,
+      "chapterId": 20250001,
       "gateId": 2025,
       "playerCharacterId": "bonz",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20250016,
+      "gateId": 2025,
+      "playerCharacterId": "bonz",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20250003,
@@ -2785,10 +3224,10 @@
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20250012,
+      "chapterId": 20250017,
       "gateId": 2025,
       "playerCharacterId": "bonz",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20250013,
@@ -2809,10 +3248,16 @@
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20260002,
+      "chapterId": 20260001,
       "gateId": 2026,
       "playerCharacterId": "pegasus",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20260016,
+      "gateId": 2026,
+      "playerCharacterId": "pegasus",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20260003,
@@ -2863,10 +3308,10 @@
       "opponentCharacterId": "bonz"
     },
     {
-      "chapterId": 20260012,
+      "chapterId": 20260017,
       "gateId": 2026,
       "playerCharacterId": "pegasus",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20260013,
@@ -2887,88 +3332,100 @@
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20270002,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
-      "opponentCharacterId": "yugi_battle_city"
+      "chapterId": 20320001,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
+      "opponentCharacterId": "yugi"
     },
     {
-      "chapterId": 20270003,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320016,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
+      "opponentCharacterId": "yugi_season2"
+    },
+    {
+      "chapterId": 20320003,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "kaiba"
     },
     {
-      "chapterId": 20270004,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320004,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "joey"
     },
     {
-      "chapterId": 20270005,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320005,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "weevil"
     },
     {
-      "chapterId": 20270006,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320006,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "rex"
     },
     {
-      "chapterId": 20270007,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320007,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "mako"
     },
     {
-      "chapterId": 20270008,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320008,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "mai"
     },
     {
-      "chapterId": 20270009,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320009,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "bandit_keith"
     },
     {
-      "chapterId": 20270010,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320010,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "bonz"
     },
     {
-      "chapterId": 20270011,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320011,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20270013,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320013,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "gravekeepers"
     },
     {
-      "chapterId": 20270014,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320014,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "grandpa"
     },
     {
-      "chapterId": 20270015,
-      "gateId": 2027,
-      "playerCharacterId": "marik_bakura",
+      "chapterId": 20320015,
+      "gateId": 2032,
+      "playerCharacterId": "yami_bakura",
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20280002,
+      "chapterId": 20280001,
       "gateId": 2028,
       "playerCharacterId": "gravekeepers",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20280016,
+      "gateId": 2028,
+      "playerCharacterId": "gravekeepers",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20280003,
@@ -3025,10 +3482,10 @@
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20280012,
+      "chapterId": 20280017,
       "gateId": 2028,
       "playerCharacterId": "gravekeepers",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20280014,
@@ -3043,10 +3500,16 @@
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20290002,
+      "chapterId": 20290001,
       "gateId": 2029,
       "playerCharacterId": "grandpa",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20290016,
+      "gateId": 2029,
+      "playerCharacterId": "grandpa",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20290003,
@@ -3103,10 +3566,10 @@
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20290012,
+      "chapterId": 20290017,
       "gateId": 2029,
       "playerCharacterId": "grandpa",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20290013,
@@ -3121,10 +3584,16 @@
       "opponentCharacterId": "jaden"
     },
     {
-      "chapterId": 20300002,
+      "chapterId": 20300001,
       "gateId": 2030,
       "playerCharacterId": "jaden",
-      "opponentCharacterId": "yugi_battle_city"
+      "opponentCharacterId": "yugi"
+    },
+    {
+      "chapterId": 20300016,
+      "gateId": 2030,
+      "playerCharacterId": "jaden",
+      "opponentCharacterId": "yugi_season2"
     },
     {
       "chapterId": 20300003,
@@ -3181,10 +3650,10 @@
       "opponentCharacterId": "pegasus"
     },
     {
-      "chapterId": 20300012,
+      "chapterId": 20300017,
       "gateId": 2030,
       "playerCharacterId": "jaden",
-      "opponentCharacterId": "marik_bakura"
+      "opponentCharacterId": "yami_bakura"
     },
     {
       "chapterId": 20300013,
@@ -3200,19 +3669,20 @@
     }
   ],
   "deckFingerprints": {
-    "yugi_battle_city": "ad5d3c5b7df9fb4e40d5897727f9165f5e4b442ad53b365d18f9b8609ebff03f",
-    "kaiba": "493f8a2f2fca83290f59854d56eac22337fe8ff2acc66c081837f016a3058670",
+    "yugi": "3141b1517a08563503880616d0294a30639f9218ea182d180e5974eeff984e7d",
+    "yugi_season2": "1b9a99235ca4d30a089dadb7abcac4dbf7b091e173ebc4782aae3c1e02f3a2c4",
+    "kaiba": "4da8d66a73718d5fdc5d31ead0af948676504d75e637ac039867eb282f8306e5",
     "joey": "9464ef54d8ef5bf99a5a05629165eef38910110ed068456e5ab3e4aa640c4c31",
     "weevil": "421f0db283485906b1aef483646aa5d8bf6af5014fd8f007dbf501a2726e64aa",
-    "rex": "be7f4bd0ebc2ca40ef29b503949997c1212a1d160611c31e246f53fe9e37f739",
+    "rex": "1405d742793825bf04be8e0b05bf133ad90138a0f95bbf56a3963255da4f5215",
     "mako": "b0698f2718617d080d6a90e46c4ecdb34152faa694dac393a58720095b13aef4",
     "mai": "5b73912c4c26d1be60e3aeced98326ccbe92194f50504f52a54c2c4faf8c4b6f",
     "bandit_keith": "20ff8e99102ccc47e981ba40957a189d52f80772c22a53fd1f76c0488d0e5131",
-    "bonz": "b3afc42b51e008e275be0ff29c33f50abb3d38186e981fd791a30374a045687f",
+    "bonz": "39274767069cebabb8d3eaa27ce0f82fd51012313c2e9d9825a5247ac6b8ab6a",
     "pegasus": "e5a446cc1ab40c0b742f1a04c5288767e1ec138478d5c720e9c514187f4d553d",
-    "marik_bakura": "15742eee9e14b2cf77ce2ace37a833e20b84d397bd0342f7d461dd686ac3ae0a",
-    "gravekeepers": "ab03772e4df667927ddefa914bfbc1f9f80645939d8837922d067ad961b74ff8",
-    "grandpa": "37c94ae042ebffd02b603af82836728853904e0d84e28772ce8c6afdfdaa570d",
+    "yami_bakura": "c1a18a815d5e5e34925006e9fbda429f3db144d7083050321b6ff9c5befeb610",
+    "gravekeepers": "abf8cc99e5643de757ec7763df8e8d6bc0da04adab034aa112eb74bc80d601ad",
+    "grandpa": "7529ae318f2e45106382d5cc2518c6250c5f07c3a9974c4ba7b80bb03d592c04",
     "jaden": "54101e144a8ec741dc10c52f9715e913bc6e1757bd4c2e46c58c1bf572977bc8"
   }
 }

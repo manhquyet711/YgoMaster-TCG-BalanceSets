@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "characterId": "rex",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-vxy25zzjd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Stop Defense",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Poison of the Old Man",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Rush Recklessly",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Acid Trap Hole",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Fossil Excavation",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Reinforcements",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Jurassic World",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Shrink",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mind Control",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Megamorph",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Hole",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Fissure",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Trap Hole",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Trakodon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Two-Mouth Darkruler",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Kabazauls",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Two-Headed King Rex",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Uraby",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Sabersaurus",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gilasaurus",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Hyper Hammerhead",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Balloon Lizard",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mad Sword Beast",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Driceratops",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Bazoo the Soul-Eater",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Black Tyranno",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Monster Recovery",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Changed from v1: Monster Recovery replaces the second Rush Recklessly."
+  ]
+}

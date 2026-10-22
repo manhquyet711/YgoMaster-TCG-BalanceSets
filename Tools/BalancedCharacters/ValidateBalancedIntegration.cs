@@ -46,7 +46,7 @@ class ValidateBalancedIntegration
             string modeRoot = Path.Combine(temp, "BalancedCharacters");
             CopyTree(Path.Combine(runtime, "Data", "BalancedCharacters"), modeRoot);
             string target = operation == "disabled" ? Path.Combine(modeRoot, "Mode.json") :
-                operation == "quantity" ? Path.Combine(modeRoot, "Decks", "source-v1", "kaiba.json") :
+                operation == "quantity" ? Path.Combine(modeRoot, "Decks", (string)Get(originalServer, "balancedDeckRevision"), "kaiba.json") :
                 Path.Combine(modeRoot, "Generated", "Overlay.json");
             string text = File.ReadAllText(target);
             if (operation == "disabled") text = text.Replace("\"enabled\": true", "\"enabled\": false");
@@ -126,6 +126,22 @@ class ValidateBalancedIntegration
             decks.Remove(Get(removed, "Id"));
             Call(server, "SeedBalancedReferenceDecks", player);
             Check(decks.Count == ids.Count - 1, "A deleted reference deck is not added back");
+            // Upgrade path: a deck given for an older revision gets the new cards in place.
+            string markerPath = Path.Combine(root, "123456789", "BalancedReferenceDecks.json");
+            string kaibaName = "Balanced - " + (string)Call(catalog, "Name", "kaiba");
+            object kaiba = decks.Values.Cast<object>().Single(x => (string)Get(x, "Name") == kaibaName);
+            object kaibaMain = Get(kaiba, "MainDeckCards");
+            Call(kaibaMain, "Clear");
+            kaibaMain.GetType().GetMethod("Add", All).Invoke(kaibaMain, new object[] { 4007, Enum.ToObject(kaibaMain.GetType().GetMethod("Add", All).GetParameters()[1].ParameterType, 1) });
+            string marker = File.ReadAllText(markerPath);
+            File.WriteAllText(markerPath, marker.Replace("\"kaiba\":\"" + (string)Get(server, "balancedDeckRevision") + "\"", "\"kaiba\":\"source-v0-test\""));
+            Call(server, "SeedBalancedReferenceDecks", player);
+            Check(Matches(kaiba, Call(catalog, "CreateDeck", "kaiba")) && decks.Count == ids.Count - 1,
+                "Reference deck from an older revision is updated in place without duplicates");
+            File.WriteAllText(markerPath, "{\"seeded\":[\"kaiba\"]}");
+            Call(server, "SeedBalancedReferenceDecks", player);
+            Check(File.ReadAllText(markerPath).Contains("\"kaiba\":\"" + (string)Get(server, "balancedDeckRevision") + "\""),
+                "First-release marker files are read and upgraded");
         }
         finally
         {

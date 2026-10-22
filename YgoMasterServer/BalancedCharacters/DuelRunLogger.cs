@@ -36,7 +36,7 @@ namespace YgoMaster
             } catch (Exception error) { Utils.LogWarning("Balanced run logging failed: " + error.Message); return false; }
         }
         public void Begin(Player player, DuelSettings settings, string playerId, string opponentId,
-            string contentVersion, string runtime)
+            string contentVersion, string deckRevision, string runtime)
         {
             lock (sync) {
                 Run previous;
@@ -59,7 +59,7 @@ namespace YgoMaster
                 Append(new Dictionary<string, object> {
                     { "event", "start" }, { "runId", run.Id }, { "previousRunId", previous == null ? null : previous.Id },
                     { "chapterId", settings.chapter }, { "playerCharacter", playerId }, { "opponentCharacter", opponentId },
-                    { "contentVersion", contentVersion }, { "deckRevision", "source-v1" }, { "binaries", binaries },
+                    { "contentVersion", contentVersion }, { "deckRevision", deckRevision }, { "binaries", binaries },
                     { "deckFingerprints", new [] { CharacterCatalog.ComputeFingerprint(settings.Deck[0]), CharacterCatalog.ComputeFingerprint(settings.Deck[1]) } },
                     { "seed", settings.RandSeed }, { "firstPlayerConfigured", settings.FirstPlayer },
                     { "firstPlayerObserved", null }, { "life", settings.life }, { "hands", settings.hnum },
