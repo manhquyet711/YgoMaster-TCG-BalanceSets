@@ -1,105 +1,110 @@
-> Compatibility update: targets Master Duel **2.8.0** using YgoMaster v1.79. See [UPGRADE-NOTES.md](UPGRADE-NOTES.md). Build with `Build-Updated.cmd`.
+# YgoMaster TCG – Balance Sets
 
-Mod for YGOMaster
-- Master Duel - TCG Solo Campaign.
+Offline **Yu-Gi-Oh! Master Duel** mod that adds **Balanced Characters**: classic anime characters
+duel each other with fixed, photographed old-school decks built to be roughly equal in strength.
+It is built on the [TCG Solo Campaign](https://github.com/vngudu/YgoMaster-TCG) and
+[YgoMaster](https://github.com/pixeltris/YgoMaster), updated for **Master Duel 2.8.0**.
 
-Motivation:
-I started to play the TCG in its early days, spent most of my childhood with it, but also stopped even before synchro summons. When I recently started to play the video games, I had questions:
-How did the gameplay evolve into this?
-When were all the mechanisms and archetypes introduced?
-How did it feel, when those things first happened: Why were some cards banned, when did some become obsolete?
+*Offline only. Progress is not shared with the live game.*
 
-So, I wanted to re-create an experience, as if child-me would naturally face the changing meta through the years.
+> **Status: 0.2.2 prototype.** The mode builds, installs and has been played in-game
+> (map, deck/Play panel and CPU duels work), but balance between all matchups is not tested yet.
 
-Game Features:
-- progressive campaign, where the levels are determined by the introduced core sets of the TCG
-- campaign is divided in 6 parts by era: DM, GX, 5D, Zexal, Arc-V, VRAINS
-- 75 progression levels in total from Legend of Blue Eyes up to Eternity Code
-- each level is represented by 6 different opponents to battle against: 75*6 = 450 campaign duels
-- each level has a matching ban list of that time, so you can build your deck accordingly
-- the chapter description will tell you, which banlist you should apply
-- cards not available at that time are automatically excluded by the ban list
-- additional sets, structure decks etc, that were available inbetween the core sets can be unlocked as duel rewards
-- that makes around 300 packs available in the shop, each with custom pack art
-- additional post game: extensive post game campaign, that brings 228 decks into modern meta
+## Balanced Characters
 
-Installation:
-- unzip in your "Yu-Gi-Oh! Master Duel" folder and run "YgoMasterClient.exe"
-- needs to look like this or similar "C:\Program Files (x86)\Steam\steamapps\common\Yu-Gi-Oh!  Master Duel\YgoMaster_1.60 _TCG_20250614\YgoMasterClient.exe"
+Open **SOLO > Stories** and pick a **Balanced Characters** gate. The gate chooses the character you play;
+each battle node chooses an opponent. All opponents are open from the start, and the gate's Goal
+completes after you beat every opponent in it.
 
-![image](https://github.com/user-attachments/assets/a4714a24-af25-4f38-be21-9f951a8e8127)
+**14 characters, 182 matchups:**
 
-![1](https://github.com/user-attachments/assets/549a16f0-6708-4250-b5e6-32dd42659315)
-![2](https://github.com/user-attachments/assets/cbc5b7c6-191e-4aef-946e-3491e3ee6673)
-![3](https://github.com/user-attachments/assets/a97af667-b98d-4e98-be20-dff6d363cbe6)
+| | | |
+|---|---|---|
+| Yugi (Battle City) | Kaiba | Joey |
+| Weevil | Rex | Mako |
+| Mai | Bandit Keith | Bonz |
+| Pegasus | Marik / Bakura | Gravekeepers |
+| Grandpa | Jaden | |
 
+**Rules for every balanced duel**
 
-# YgoMaster
+- 8000 LP, 5-card opening hand, shuffled decks, no side decking
+- Both players use the exact fixed deck for their character (your collection is not used)
+- Same deck for player and CPU, no hidden CPU advantages
+- Decks keep their photographed card counts, e.g. Grandpa's 41-card deck and Jaden's 15-card Extra Deck
 
-Offline Yu-Gi-Oh! Master Duel (PC)
+Original Yugi is not included yet: *Spellbinding Circle* is missing from the game's card data,
+and no substitute card was inserted. Card transcriptions and decisions are documented in
+[Docs/BalancedCharacters](Docs/BalancedCharacters) (`DECISIONS.md`, `PHOTO-REVIEW-0.2.2.json`,
+`Character_Deck_Lists.md`).
 
-*Progress is not shared with the live game.*
+## Also included
 
-## Features
-
-- Create decks
-- Open packs
-- Solo content
-- Custom CPU duels
-- [PvP duels / friends / trading](Docs/PvP.md)
-- Duel replays
-- YDK / YDKe support
-- Card collection stats / deck editor sub menu improvements
+- **TCG Solo Campaign** from the parent fork: 450 duels across the DM, GX, 5D's, Zexal, Arc-V and VRAINS eras,
+  era-accurate ban lists, about 300 shop packs with custom art, and a post-game with 228 decks.
+- **Master Duel 2.8.0 update**: hooks, IL2CPP and duel bindings moved to the YgoMaster v1.79 baseline,
+  an extended card catalog (13,997 entries) and data fixes. See [UPGRADE-NOTES.md](UPGRADE-NOTES.md).
 
 ## Requirements
 
+- Yu-Gi-Oh! Master Duel **2.8.0** from Steam, fully downloaded (finish the in-game tutorial)
 - .NET Framework 4.8
-- The game downloaded on Steam (complete the in-game tutorial to download all data)
+- To build: Visual Studio / MSBuild for .NET Framework 4.8, and Python 3.9+ for the content tools
 
-YgoMaster is portable and can be used on any machine without Steam installed after being fully downloaded
+## Install and play
 
-## Usage
+1. Build (below), or use a release package.
+2. Put the runtime folder (for example `YgoMaster-BalancedCharacters`) **inside** the game folder,
+   next to `masterduel.exe`.
+3. Run `Start-Balanced.cmd`. It starts the balanced server and the client on the ports from your settings.
+4. In game: **SOLO > Stories > Balanced Characters**.
 
-- Download the latest release from https://github.com/pixeltris/YgoMaster/releases
-- Copy the `YgoMaster` folder (the folder, not the contents of the folder) into the game folder
-- Run `YgoMasterClient.exe` (this should also auto run `YgoMaster.exe`)
-- *[If you see file load error popups, infinite loading screens, corrupt screens, etc follow these instructions](Docs/FileLoadError.md)*
+Settings: `Open-Balanced-Settings.cmd` opens the Balanced Settings Editor (collection, starting gems,
+campaign rewards, mode on/off). Deck rules above are fixed by the mode and are not editable.
+Close the game before saving settings.
 
-Additionally...
+Match results are written to `Data/BalancedCharacters/Logs/duels.jsonl`
+(no account codes or names).
 
-- [It's recommended that you tailor the server settings to your preferences](Docs/Settings.md)
-- Download [VG.TCG.Decks.7z](https://github.com/pixeltris/YgoMaster/releases/download/v1.4/VG.TCG.Decks.7z) for ~6000 decks from the YGO video games
-- The custom duel starter UI can be accessed using the DUEL button on the home screen
-- When updating copy your `/YgoMaster/Data/Players/` folder
-- [How to change language](Docs/ChangingLanguage.md)
-- [How to run on Linux](Docs/Linux.md)
+## Building from source
 
-## Compiling from source
+```powershell
+.\Build-Balanced.ps1 -CompilePrototype   # Balanced Characters build + content, policy and server checks
+.\Build-Updated.cmd                      # TCG 2.8.0 build + campaign validation
+```
 
-- Install Visual Studio with C++ compilers
-- Run `Build.bat`
-- Copy the `YgoMaster` folder into the game folder as mentioned above
+Main locations:
 
-Running `Build.bat` is the equivilant of:
+| Path | Contents |
+|---|---|
+| `YgoMaster/Data/BalancedCharacters` | Roster, source decks, card map, generated chapters |
+| `Tools/BalancedCharacters` | Content generator, playtest report tool, validators, settings editor |
+| `YgoMasterServer`, `YgoMasterClient` | Server and client including the balanced mode hooks |
+| `Docs/BalancedCharacters` | Spec, status, decisions, release notes, build logs |
 
-- Compiling `YgoMaster.sln` with Visual Studio
-- Compiling `YgoMasterLoader.cpp` with `cl`
+## Playtesting
 
-## Related
+`Docs/BalancedCharacters/Playtest/QUEUE.csv` lists 1,820 manual games (10 per direction for each pair).
+After playing, summarise your results with:
 
-- https://www.nexusmods.com/yugiohmasterduel/mods - community mods
-- https://www.nexusmods.com/yugiohmasterduel/articles/3 - modding guide
-- https://github.com/SethPDA/MasterDuel-Modding/wiki - modding guide
-- https://github.com/crazydoomy/MD-Replay-Editor - save / load replays
-- https://github.com/Nauder/ygomd-rush-frames - Rush Duel card frames mod
-- https://code.moenext.com/sherry_chaos/MDPro3 - forked YGOPro2 with Master Duel assets
+```powershell
+python .\Tools\BalancedCharacters\playtest.py summary --runtime "<your balanced runtime folder>" --output .\PlaytestReport
+```
 
-## Screenshots
+Crashes, disconnects and unfinished games do not count as losses, and surrenders are left out of win rates.
 
-![Alt text](Docs/Pics/ss1.jpg)
-![Alt text](Docs/Pics/ss2.jpg)
-![Alt text](Docs/Pics/ss3.jpg)
-![Alt text](Docs/Pics/ss4.jpg)
-![Alt text](Docs/Pics/ss5.jpg)
-![Alt text](Docs/Pics/ss6.jpg)
-![Alt text](Docs/Pics/ss7.jpg)
+## Roadmap
+
+- Play through the playtest queue and tune decks (a separate `balanced-v1` deck revision)
+- Character portraits and dialogue
+- Optional story campaign
+- Original Yugi once Spellbinding Circle is available
+
+## Credits
+
+- [pixeltris/YgoMaster](https://github.com/pixeltris/YgoMaster): offline Master Duel server and client
+- [vngudu/YgoMaster-TCG](https://github.com/vngudu/YgoMaster-TCG): TCG Solo Campaign
+- Balance deck set: community photo project of balanced old-school character decks
+
+Base mod documentation (settings, PvP, language, Linux, custom content) is in [Docs](Docs).
+Licensed under the [MIT License](LICENSE).
