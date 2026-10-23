@@ -18,7 +18,12 @@ namespace YgoMaster
             if (SoloDuels.TryGetValue(chapterId, out duelSettings) &&
                 player.SoloChapters.TryGetValue(chapterId, out chapterStatus))
             {
-                if (!IsPracticeDuel(chapterId))
+                int lockedFirstPlayer;
+                if (SoloLockedFirstPlayer.TryGetValue(chapterId, out lockedFirstPlayer))
+                {
+                    duelSettings.FirstPlayer = lockedFirstPlayer;
+                }
+                else if (!IsPracticeDuel(chapterId))
                 {
                     // NOTE: "Solo.detail" is only requested once. We might need to tell the client of updates on duel completion?
                     if (chapterStatus == ChapterStatus.COMPLETE ||
@@ -219,6 +224,11 @@ namespace YgoMaster
                     switch (duel.Mode)
                     {
                         case GameMode.SoloSingle:
+                            if (RejectSoloDeckForRegulation(request, duel.ChapterId))
+                            {
+                                request.Remove("Duel", "DuelResult", "Result");
+                                return;
+                            }
                             duelSettings = CreateSoloDuelSettingsInstance(request.Player, duel.ChapterId);
                             break;
                     }
@@ -226,7 +236,10 @@ namespace YgoMaster
                 if (duelSettings != null)
                 {
                     int firstPlayer;
-                    if (!IsBalancedChapter(duel.ChapterId) && Utils.TryGetValue(rule, "FirstPlayer", out firstPlayer))
+                    // A first player locked in the chapter's duel file (e.g. boss duels where the CPU goes
+                    // first) wins over the client's request; custom Duel Starter duels keep the client's choice.
+                    bool fixedFirstPlayer = !duelSettings.IsCustomDuel && SoloLockedFirstPlayer.ContainsKey(duel.ChapterId);
+                    if (!IsBalancedChapter(duel.ChapterId) && !fixedFirstPlayer && Utils.TryGetValue(rule, "FirstPlayer", out firstPlayer))
                     {
                         duelSettings.FirstPlayer = firstPlayer;
                     }

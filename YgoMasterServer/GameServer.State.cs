@@ -74,6 +74,9 @@ namespace YgoMaster
         Dictionary<string, object> RawCardFilesData;
         Dictionary<string, object> SoloData;
         Dictionary<int, DuelSettings> SoloDuels;// <chapterid, DuelSettings>
+        // Chapters whose duel file sets "firstPlayerLocked": true keep their FirstPlayer
+        // (e.g. TCG boss duels where the CPU always goes first). <chapterid, first player>
+        Dictionary<int, int> SoloLockedFirstPlayer = new Dictionary<int, int>();
         Dictionary<int, CardCategory> CardCategories;// <categoryId, CardCategory>
         Dictionary<string, CardCategory> CardCategoriesByName;// <categoryName, CardCategory>
         DuelSettings CustomDuelSettings;
@@ -746,6 +749,7 @@ namespace YgoMaster
             LoadShop();
             LoadSolo();
             LoadBalancedCharacters();
+            LoadEraReferenceDecks();
 
             DuelRewards = new DuelRewardInfos();
             DuelRewards.FromDictionary(Utils.GetDictionary(values, "DuelRewards"));
@@ -2046,6 +2050,7 @@ namespace YgoMaster
                 }
             }
             SeedBalancedReferenceDecks(player);
+            SeedEraReferenceDecks(player);
             SortDecks(player);
             player.Duel.SelectedDeckFromDictionary(Utils.GetDictionary(data, "SelectedDeck"));
 
@@ -3145,6 +3150,7 @@ namespace YgoMaster
         void LoadSoloDuels()
         {
             SoloDuels = new Dictionary<int, DuelSettings>();
+            SoloLockedFirstPlayer = new Dictionary<int, int>();
             int nextStoryDeckId = 1;
             string dir = Path.Combine(dataDirectory, "SoloDuels");
             if (!Directory.Exists(dir))
@@ -3189,6 +3195,10 @@ namespace YgoMaster
                     continue;
                 }
                 SoloDuels[chapterId] = duel;
+                if (Utils.GetValue<bool>(duelData, "firstPlayerLocked") && duel.FirstPlayer >= 0)
+                {
+                    SoloLockedFirstPlayer[chapterId] = duel.FirstPlayer;
+                }
             }
             string jsonFile = Path.Combine(Path.Combine(dataDirectory, "SoloNpcDeckIds.json"));
             if (File.Exists(jsonFile))

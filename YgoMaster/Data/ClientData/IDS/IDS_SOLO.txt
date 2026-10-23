@@ -48,12 +48,14 @@ Core Set: Legend of Blue Eyes White Dragon
 Ban List: 2002-05 Yugi Kaiba Format
 Opponent: Great White
 Unlocks: 
+Opponent deck: Soul Control (fknAzZnDean, Munch-Bug Monthly 1, 2nd)
 [IDS_SOLO.CHAPTER20010002_EXPLANATION]
 Progression Level: 01
 Core Set: Legend of Blue Eyes White Dragon
 Ban List: 2002-05 Yugi Kaiba Format
 Opponent: Giant Soldier of Stone
 Unlocks: 01-Game: Dark Duel Stories
+Opponent deck: Stall Mill (Aretos, Munch-Bug Monthly 1, Top 4)
 [IDS_SOLO.CHAPTER20010003_EXPLANATION]
 Progression Level: 01
 Core Set: Legend of Blue Eyes White Dragon
@@ -66,6 +68,7 @@ Core Set: Legend of Blue Eyes White Dragon
 Ban List: 2002-05 Yugi Kaiba Format
 Opponent: Exodia
 Unlocks: 02-Core: Metal Raiders
+Boss deck: Soul Control (AlephYa2, Munch Bug Monthly 11, 1st)
 [IDS_SOLO.CHAPTER20010005_EXPLANATION]
 Progression Level: 01
 Core Set: Legend of Blue Eyes White Dragon
@@ -84,12 +87,14 @@ Core Set: Metal Raiders
 Ban List: 2002-07 Critter Format 
 Opponent: Harpie Lady Sisters
 Unlocks: 
+Opponent deck: Masked Control (Jazz, Ellietincan Cup 2, 2nd)
 [IDS_SOLO.CHAPTER20010008_EXPLANATION]
 Progression Level: 02
 Core Set: Metal Raiders
 Ban List: 2002-07 Critter Format 
 Opponent: White Magical Hat
 Unlocks: 
+Opponent deck: Vanilla Beat (DE4TH, Creepy Critter Extravaganza, Top 4)
 [IDS_SOLO.CHAPTER20010009_EXPLANATION]
 Progression Level: 02
 Core Set: Metal Raiders
@@ -102,6 +107,7 @@ Core Set: Metal Raiders
 Ban List: 2002-07 Critter Format 
 Opponent: Muka Muka
 Unlocks: 03-Core: Spell Ruler
+Boss deck: Muka Muka Turbo (dump truck, Duel Monsters Deluxe 2, 1st)
 [IDS_SOLO.CHAPTER20010011_EXPLANATION]
 Progression Level: 02
 Core Set: Metal Raiders
@@ -120,12 +126,14 @@ Core Set: Spell Ruler
 Ban List: 2002-10 Treasure Format 
 Opponent: Dream Clown
 Unlocks: 
+Opponent deck: Tomato Control (dekklan, YGOFrom0 Retro Tournament 1, 2nd)
 [IDS_SOLO.CHAPTER20010014_EXPLANATION]
 Progression Level: 03
 Core Set: Spell Ruler
 Ban List: 2002-10 Treasure Format 
 Opponent: Giant Germ
 Unlocks: 
+Opponent deck: Germ Burn (bsocks, Treasure Hunt 4, 2nd)
 [IDS_SOLO.CHAPTER20010015_EXPLANATION]
 Progression Level: 03
 Core Set: Spell Ruler
@@ -138,6 +146,7 @@ Core Set: Spell Ruler
 Ban List: 2002-10 Treasure Format 
 Opponent: Relinquished
 Unlocks: 04-Core: Pharaoh's Servant
+Boss deck: Tomato Control (lollo_8888, Treasure Hunt 6, 1st)
 [IDS_SOLO.CHAPTER20010017_EXPLANATION]
 Progression Level: 03
 Core Set: Spell Ruler
@@ -156,12 +165,14 @@ Core Set: Pharaoh's Servant
 Ban List: 2002-12 Imperial Format 
 Opponent: The Legendary Fisherman
 Unlocks: 
+Opponent deck: Relinquished (bsocks, YGOFrom0 Retro Tournament 3, 2nd)
 [IDS_SOLO.CHAPTER20010020_EXPLANATION]
 Progression Level: 04
 Core Set: Pharaoh's Servant
 Ban List: 2002-12 Imperial Format 
 Opponent: Jinzo
 Unlocks: 04-Game: Forbidden Memories
+Opponent deck: Tomato Control (dump truck, YGOFrom0 Retro Tournament 14, Top 4)
 [IDS_SOLO.CHAPTER20010021_EXPLANATION]
 Progression Level: 04
 Core Set: Pharaoh's Servant
@@ -174,6 +185,7 @@ Core Set: Pharaoh's Servant
 Ban List: 2002-12 Imperial Format 
 Opponent: Magician of Faith
 Unlocks: 05-Core: Labyrinth of Nightmare
+Boss deck: Tomato Control (mihawk, SENATVS POPVLVSQVE ROMANVS IX, 1st)
 [IDS_SOLO.CHAPTER20010023_EXPLANATION]
 Progression Level: 04
 Core Set: Pharaoh's Servant
@@ -192,12 +204,14 @@ Core Set: Labyrinth of Nightmare
 Ban List: 2003-05 Joey Pegasus Format
 Opponent: Destiny Board
 Unlocks: 
+Opponent deck: Tomato Control (DannyDroiid, Yu-Gi-Oh! Retro Series 27, 2nd)
 [IDS_SOLO.CHAPTER20010026_EXPLANATION]
 Progression Level: 05
 Core Set: Labyrinth of Nightmare
 Ban List: 2003-05 Joey Pegasus Format
 Opponent: Valkyrion the Magna Warrior
 Unlocks: 05-Game: Stairway to the Destined Duel
+Opponent deck: Equip Beat (GBO, Joey-Pegasus 2: Thousand Year Dragon, 2nd)
 [IDS_SOLO.CHAPTER20010027_EXPLANATION]
 Progression Level: 05
 Core Set: Labyrinth of Nightmare
@@ -210,6 +224,7 @@ Core Set: Labyrinth of Nightmare
 Ban List: 2003-05 Joey Pegasus Format
 Opponent: The Last Warrior from Another Planet
 Unlocks: 06-Core: Legacy of Darkness
+Boss deck: Tomato Control (itsgucci, Joey-Pegasus 4: Duelist Kingdom, 1st)
 [IDS_SOLO.CHAPTER20010029_EXPLANATION]
 Progression Level: 05
 Core Set: Labyrinth of Nightmare
@@ -228,12 +243,14 @@ Core Set: Legacy of Darkness
 Ban List: 2003-07 Fiber Format 
 Opponent: Hino-Kagu-Tsuchi
 Unlocks: 
+Opponent deck: Spirit Control (Food, Fiber Format Monthly 23: "Cilindro Magico", 2nd)
 [IDS_SOLO.CHAPTER20010032_EXPLANATION]
 Progression Level: 06
 Core Set: Legacy of Darkness
 Ban List: 2003-07 Fiber Format 
 Opponent: Spear Dragon
 Unlocks: 
+Opponent deck: Tomato Control (Gerhat, Fiber Format Monthly 23: "Cilindro Magico", Top 4)
 [IDS_SOLO.CHAPTER20010033_EXPLANATION]
 Progression Level: 06
 Core Set: Legacy of Darkness
@@ -246,6 +263,7 @@ Core Set: Legacy of Darkness
 Ban List: 2003-07 Fiber Format 
 Opponent: Gearfried
 Unlocks: 07-Core: Pharaonic Guardian
+Boss deck: Gearfried (Arfio, Dump Truck Live 13, 1st)
 [IDS_SOLO.CHAPTER20010035_EXPLANATION]
 Progression Level: 06
 Core Set: Legacy of Darkness
@@ -264,30 +282,35 @@ Core Set: Pharaonic Guardian
 Ban List: 2003-08 Yata Format 
 Opponent: Des Lacooda
 Unlocks: 
+Opponent deck: Tomato Control (Shigeki Kitamura, World Championship 2003, 2nd)
 [IDS_SOLO.CHAPTER20010038_EXPLANATION]
 Progression Level: 07
 Core Set: Pharaonic Guardian
 Ban List: 2003-08 Yata Format 
 Opponent: Don Zaloog
 Unlocks: 
+Opponent deck: Hand Control (Mike Rosenberg, World Championship 2003, Top 4)
 [IDS_SOLO.CHAPTER20010039_EXPLANATION]
 Progression Level: 07
 Core Set: Pharaonic Guardian
 Ban List: 2003-08 Yata Format 
 Opponent: Maiden of the Aqua
 Unlocks: 
+Opponent deck: Warrior Tomato Control (DannyDroiid, Drama Llama Classic 6, Top 4)
 [IDS_SOLO.CHAPTER20010040_EXPLANATION]
 Progression Level: 07
 Core Set: Pharaonic Guardian
 Ban List: 2003-08 Yata Format 
 Opponent: Gravekeeper’s Spy
 Unlocks: 08-Core: Magician's Force
+Boss deck: Hand Control (Ng Yu Leung, World Championship 2003, 1st)
 [IDS_SOLO.CHAPTER20010041_EXPLANATION]
 Progression Level: 07
 Core Set: Pharaonic Guardian
 Ban List: 2003-08 Yata Format 
 Opponent: Lava Golem
 Unlocks: 
+Opponent deck: Goat Control (Gyomberman, Drama Llama Classic 6, Top 4)
 [IDS_SOLO.CHAPTER20010042_EXPLANATION]
 Progression Level: 07
 Core Set: Pharaonic Guardian
@@ -300,12 +323,14 @@ Core Set: Magician's Force
 Ban List: 2003-11 Scientist Format 
 Opponent: X-Head Cannon
 Unlocks: 
+Opponent deck: Scientist FTK (DK-ZERO, YGOFrom0 Retro Tournament 9, 2nd)
 [IDS_SOLO.CHAPTER20010044_EXPLANATION]
 Progression Level: 08
 Core Set: Magician's Force
 Ban List: 2003-11 Scientist Format 
 Opponent: Paladin of White Dragon
 Unlocks: 
+Opponent deck: Spellcaster Control (GBO, YGOFrom0 Retro Tournament 9, Top 4)
 [IDS_SOLO.CHAPTER20010045_EXPLANATION]
 Progression Level: 08
 Core Set: Magician's Force
@@ -318,6 +343,7 @@ Core Set: Magician's Force
 Ban List: 2003-11 Scientist Format 
 Opponent: Dark Blade
 Unlocks: 09-Core: Dark Crisis
+Boss deck: Scientist Control (WagaMuffin, Science Sackers 3, 1st)
 [IDS_SOLO.CHAPTER20010047_EXPLANATION]
 Progression Level: 08
 Core Set: Magician's Force
@@ -336,12 +362,14 @@ Core Set: Dark Crisis
 Ban List: 2004-02 Vampire Format 
 Opponent: Iron Blacksmith Kotetsu
 Unlocks: 
+Opponent deck: Jar Burn (Fusion, Ke$ha Grand Prix 1: Vampire Weekend, 2nd)
 [IDS_SOLO.CHAPTER20010050_EXPLANATION]
 Progression Level: 09
 Core Set: Dark Crisis
 Ban List: 2004-02 Vampire Format 
 Opponent: Great Maju Garzett
 Unlocks: 
+Opponent deck: Scientist FTK (ellietincan, Ke$ha Grand Prix 2: Vampire Weekend 2, 2nd)
 [IDS_SOLO.CHAPTER20010051_EXPLANATION]
 Progression Level: 09
 Core Set: Dark Crisis
@@ -354,6 +382,7 @@ Core Set: Dark Crisis
 Ban List: 2004-02 Vampire Format 
 Opponent: Vampire Lord
 Unlocks: 10-Core: Invasion of Chaos
+Boss deck: Warrior Control (OupsOfCow, Dark Crisis of Dimensions 2, 1st)
 [IDS_SOLO.CHAPTER20010053_EXPLANATION]
 Progression Level: 09
 Core Set: Dark Crisis
@@ -372,42 +401,49 @@ Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Berserk Gorilla
 Unlocks: 
+Opponent deck: Chaos Control (Oscar Taieb, Battle City Amsterdam 2004, 2nd)
 [IDS_SOLO.CHAPTER20010056_EXPLANATION]
 Progression Level: 10
 Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Levua-Dragon – Daedalus
 Unlocks: 10-Game: Power of Chaos: Kaiba the Revenge
+Opponent deck: Chaos Warrior (aomine, Ellietincan Cup 8, 2nd)
 [IDS_SOLO.CHAPTER20010057_EXPLANATION]
 Progression Level: 10
 Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Cyber Jar
 Unlocks: 10-Game: The Dawn of Destiny
+Opponent deck: Jar Turbo (GMYFS, Chaos Cup 2, 2nd)
 [IDS_SOLO.CHAPTER20010058_EXPLANATION]
 Progression Level: 10
 Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Chaos Emperor Dragon
 Unlocks: 11-Core: Ancient Sanctuary
+Boss deck: Chaos Control (Theerasak Poonsombat, U.S. National Championship 2004, 1st)
 [IDS_SOLO.CHAPTER20010059_EXPLANATION]
 Progression Level: 10
 Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Arsenal Bug
 Unlocks: 10-Starter Deck: Kaiba Evolution
+Opponent deck: Chaos Control (Edwin Hoekstra, Battle City Amsterdam 2004, Top 4)
 [IDS_SOLO.CHAPTER20010060_EXPLANATION]
 Progression Level: 10
 Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Des Koala
 Unlocks: 10-Starter Deck: Yugi Evolution
+Opponent deck: Chaos Control (Thom Kalavris, Battle City Amsterdam 2004, Top 4)
 [IDS_SOLO.CHAPTER20010061_EXPLANATION]
 Progression Level: 11
 Core Set: Ancient Sanctuary
 Ban List: 2004-10 Warrior Format 
 Opponent: Spirit of the Pharaoh
 Unlocks: 11-Hobby League: 1
+Opponent deck: Warrior Control (Bryan St. Clair, SJC Columbus 2005, Top 8)
 [IDS_SOLO.CHAPTER20010062_EXPLANATION]
 Progression Level: 11
 Core Set: Ancient Sanctuary
@@ -426,6 +462,7 @@ Core Set: Ancient Sanctuary
 Ban List: 2004-10 Warrior Format 
 Opponent: Dark Paladin
 Unlocks: 12-Core: Soul of the Duelist
+Boss deck: Earth Beat (Ian Wingrove, SJC Las Vegas 2005, 2nd)
 [IDS_SOLO.CHAPTER20010065_EXPLANATION]
 Progression Level: 11
 Core Set: Ancient Sanctuary
@@ -444,108 +481,126 @@ Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Gate Guardian
 Unlocks: 
+Opponent deck: Earth Beat (Elton Cho, SJC Pomona 2005, Top 4)
 [IDS_SOLO.CHAPTER20010068_EXPLANATION]
 Progression Level: 12
 Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Lady Ninja Yae
 Unlocks: 12-Game: Destiny Board Traveler
+Opponent deck: Chaos Zombie (Ryan Henderson, U.K. National Championship 2005, Top 4)
 [IDS_SOLO.CHAPTER20010069_EXPLANATION]
 Progression Level: 12
 Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Koitsu
 Unlocks: 12-TP: Tournament Pack 5
+Opponent deck: Canceller Stun (Nate Neidelbeck, SJC Houston 2005, Top 4)
 [IDS_SOLO.CHAPTER20010070_EXPLANATION]
 Progression Level: 12
 Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Black Luster Soldier
 Unlocks: 13-Core: Rise of Destiny
+Boss deck: Zombie (Jae Kim, SJC Charlotte 2005, 2nd)
 [IDS_SOLO.CHAPTER20010071_EXPLANATION]
 Progression Level: 12
 Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Heart of the Underdog
 Unlocks: 
+Opponent deck: Goat Control (Craig Carver, SJC Houston 2005, Top 8)
 [IDS_SOLO.CHAPTER20010072_EXPLANATION]
 Progression Level: 12
 Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Revival Jam
 Unlocks: 12-Reprint: Dark Beginning 1
+Opponent deck: Warrior Control (Bounty, U.S. National Championship 2005, Top 8)
 [IDS_SOLO.CHAPTER20010073_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: Mokey Mokey
 Unlocks: 
+Opponent deck: Chaos Zombie (Robert Tagoe, U.K. National Championship 2005, Top 4)
 [IDS_SOLO.CHAPTER20010074_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: Thestalos the Firestorm Monarch
 Unlocks: 13-Game: World Championship Tournament 2005
+Opponent deck: Chaos (Miguel Garcia, 2005 US Nationals, 2nd)
 [IDS_SOLO.CHAPTER20010075_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: Fairy King Truesdale
 Unlocks: 13-Structure Deck: Zombie Madness
+Opponent deck: Zombie/Chaos (Eric Wu, 2005 Shonen Jump Los Angeles, 1st)
 [IDS_SOLO.CHAPTER20010076_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: The Creator
 Unlocks: 14-Core: Flaming Eternity
+Boss deck: Goat Control (Bryan Coronel, SJC New Jersey 2005, Top 4)
 [IDS_SOLO.CHAPTER20010077_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: Horus the Black Flame Dragon
 Unlocks: 13-Game: Capsule Monster Coliseum
+Opponent deck: Goat Control (Mary Triatafilidi, SJC New Jersey 2005, Top 8)
 [IDS_SOLO.CHAPTER20010078_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: Strike Ninja
 Unlocks: 13-Structure Deck: Dragon's Roar
+Opponent deck: Goat Burn (Cas Stomphorst, SJC Indianapolis 2005, Top 8)
 [IDS_SOLO.CHAPTER20010079_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Ojama King
 Unlocks: 
+Opponent deck: Zombie (Keanson Ye, SJC Pomona 2005, 2nd)
 [IDS_SOLO.CHAPTER20010080_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Magical Marionette
 Unlocks: 
+Opponent deck: Soul Control (Evan Vargas, SJC Pomona 2005, Top 4)
 [IDS_SOLO.CHAPTER20010081_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Gigantes
 Unlocks: 14-Reprint: Dark Revelation Volume 1
+Opponent deck: Goat Control (Joe Whittaker, U.K. National Championship 2005, 2nd)
 [IDS_SOLO.CHAPTER20010082_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Sacred Phoenix of Nephthys
 Unlocks: 15-Core: The Lost Millennium
+Boss deck: Goat Control (Max Suffridge, U.S. National Championship 2005, 1st)
 [IDS_SOLO.CHAPTER20010083_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Red-Eyes Darkness Dragon
 Unlocks: 14-Structure Deck: Blaze of Destruction
+Opponent deck: Ben Kei OTK (Chad Justice, SJC Houston 2005, Top 4)
 [IDS_SOLO.CHAPTER20010084_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Armed Samurai – Ben Kei
 Unlocks: 14-Structure Deck: Fury from the Deep
+Opponent deck: Indy Chaos (Michael Fukuyama, 2005 SJC Indianapolis, 2nd)
 [IDS_SOLO.CHAPTER20020001_EXPLANATION]
 Progression Level: 15
 Core Set: The Lost Millennium

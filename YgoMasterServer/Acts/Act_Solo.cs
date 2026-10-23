@@ -1167,6 +1167,66 @@ namespace YgoMaster
             return result;
         }
 
+        /// <summary>
+        /// The regulation a chapter's own deck must follow: the chapter's "regulation_name",
+        /// else its gate's, else 0 (none).
+        /// </summary>
+        int GetChapterRegulationId(int chapterId)
+        {
+            if (SoloData == null)
+            {
+                return 0;
+            }
+            int gateId = GetChapterGateId(chapterId);
+            int result = 0;
+            Dictionary<string, object> allChapterData = Utils.GetDictionary(SoloData, "chapter");
+            Dictionary<string, object> chapterGateData = allChapterData != null ? Utils.GetDictionary(allChapterData, gateId.ToString()) : null;
+            Dictionary<string, object> chapterData = chapterGateData != null ? Utils.GetDictionary(chapterGateData, chapterId.ToString()) : null;
+            if (chapterData != null)
+            {
+                result = GetSoloRegulationIdOverride(chapterData, chapterId);
+            }
+            if (result == 0)
+            {
+                Dictionary<string, object> allGateData = Utils.GetDictionary(SoloData, "gate");
+                Dictionary<string, object> gateData = allGateData != null ? Utils.GetDictionary(allGateData, gateId.ToString()) : null;
+                if (gateData != null)
+                {
+                    result = GetSoloRegulationIdOverride(gateData, gateId);
+                }
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// Era ban lists: refuse a campaign duel when the player's own deck breaks the chapter's
+        /// regulation. The client only shows the regulation, so the server enforces it.
+        /// </summary>
+        bool RejectSoloDeckForRegulation(GameServerWebRequest request, int chapterId)
+        {
+            if (DisableDeckValidation || !request.Player.Duel.IsMyDeck || request.Player.Duel.IsCustomSoloDuel ||
+                IsBalancedChapter(chapterId))
+            {
+                return false;
+            }
+            int regulationId = GetChapterRegulationId(chapterId);
+            if (regulationId == 0)
+            {
+                return false;
+            }
+            DeckInfo deck = request.Player.Duel.GetDeck(GameMode.SoloSingle);
+            if (deck != null && deck.IsValid(request.Player, regulationId, Regulation))
+            {
+                return false;
+            }
+            string name;
+            DeckInfo.RegulationNamesById.TryGetValue(regulationId, out name);
+            Utils.LogWarning("Chapter " + chapterId + ": deck '" + (deck != null ? deck.Name : "none") +
+                "' is not legal in " + (name ?? regulationId.ToString()) + ", duel refused");
+            request.ResultCode = (int)ResultCodes.DuelCode.INVALID_DECK;
+            return true;
+        }
+
         void UpdateSoloDeckValidation(GameServerWebRequest request, int chapterId)
         {
             int soloRegulationIdOverride = 0;
@@ -1299,6 +1359,11 @@ namespace YgoMaster
                 {
                     DeckInfo deck = request.Player.Duel.GetDeck(GameMode.SoloSingle);
                     request.Player.Duel.IsMyDeck = deck != null;
+                }
+                if (RejectSoloDeckForRegulation(request, chapterId))
+                {
+                    request.Remove("Solo.Result", "Duel", "DuelResult");
+                    return;
                 }
                 DuelSettings duelSettings = CreateSoloDuelSettingsInstance(request.Player, chapterId);
                 if (duelSettings != null)

@@ -31,7 +31,7 @@ completes after you beat every opponent in it.
 
 - 8000 LP, 5-card opening hand, shuffled decks, no side decking
 - Both players use the exact fixed deck for their character (your collection is not used)
-- Same deck for player and CPU, no hidden CPU advantages
+- Same deck for player and CPU, no hidden CPU advantages; the CPU plays at full strength (AI 100)
 - Decks keep their photographed card counts, e.g. Jaden's 15-card Extra Deck
 
 **Reference decks:** every player starts with a "Balanced - <character>" copy of all 15 decks in
@@ -47,10 +47,28 @@ Deck lists: [Character_Deck_Lists_v2.md](Docs/BalancedCharacters/Character_Deck_
 The v1 set (14 characters, including Yugi (Battle City) and the Marik/Bakura mix) is kept under
 `Decks/source-v1` and can be selected again with `activeDeckRevision` in `Mode.json`.
 
+## TCG campaign: harder and closer to history
+
+The TCG Solo Campaign from the parent fork (450 era duels, 4 challenger gates and a 228-duel post-game)
+has been reworked here. Full details: [Docs/TCGCampaign/CHANGES.md](Docs/TCGCampaign/CHANGES.md).
+
+- **Era ban lists, enforced:** every chapter uses the format of its set release (level 01 = LOB 2002
+  through level 75 = Eternity Code 2020), including that time's card pool. The server refuses a duel
+  when your own deck breaks it.
+- **AI strength 100** in every campaign duel.
+- **Harder bosses** (the duels that unlock the next pack): CPU at 12,000 LP and always going first;
+  the Goat, Perfect Circle, Edison and HAT challenger gates add 16,000 LP and a 6-card hand.
+- **Loaner-only era finals:** each era's last boss is played with that era's premade deck.
+- **56 premade format decks** in every deck list ("Era 01 Yugi Kaiba Format" … "Era 75 Adamancipator
+  Format", plus 5 "Challenger" decks), set to their format, no cards given.
+- **Real tournament decks (DM era):** bosses play event winners such as Ng Yu Leung's 2003 World
+  Championship deck; normal duels play 2nd-4th place decks from SJCs and Nationals. Each chapter
+  description names the deck, pilot, event and placement. Other eras follow.
+- **Tripled chapter rewards** (600 / 1,200 / 6,000 / 15,000 gems).
+
 ## Also included
 
-- **TCG Solo Campaign** from the parent fork: 450 duels across the DM, GX, 5D's, Zexal, Arc-V and VRAINS eras,
-  era-accurate ban lists, about 300 shop packs with custom art, and a post-game with 228 decks.
+- **TCG Solo Campaign** from the parent fork: about 300 shop packs with custom art, era progression and dialogue.
 - **Master Duel 2.8.0 update**: hooks, IL2CPP and duel bindings moved to the YgoMaster v1.79 baseline,
   an extended card catalog (13,997 entries) and data fixes. See [UPGRADE-NOTES.md](UPGRADE-NOTES.md).
 
@@ -88,6 +106,8 @@ Main locations:
 |---|---|
 | `YgoMaster/Data/BalancedCharacters` | Roster, source decks, card map, generated chapters |
 | `Tools/BalancedCharacters` | Content generator, playtest report tool, validators, settings editor |
+| `YgoMaster/Data/TCGCampaign` | Premade era decks and picked tournament decks |
+| `Tools/TCGCampaign` | Scripts for era ban lists, AI strength, bosses, era decks and tournament decks |
 | `YgoMasterServer`, `YgoMasterClient` | Server and client including the balanced mode hooks |
 | `Docs/BalancedCharacters` | Spec, status, decisions, release notes, build logs |
 
@@ -113,6 +133,8 @@ Crashes, disconnects and unfinished games do not count as losses, and surrenders
 
 - [pixeltris/YgoMaster](https://github.com/pixeltris/YgoMaster): offline Master Duel server and client
 - [vngudu/YgoMaster-TCG](https://github.com/vngudu/YgoMaster-TCG): TCG Solo Campaign
+- [Format Library](https://formatlibrary.com) and [Yugioh Top Decks](https://yugiohtopdecks.com):
+  historical formats and tournament decklists used for the TCG campaign opponents
 
 ### Character decks: u/Rosehn
 
