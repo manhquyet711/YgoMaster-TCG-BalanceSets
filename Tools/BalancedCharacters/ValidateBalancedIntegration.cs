@@ -158,7 +158,7 @@ class ValidateBalancedIntegration
         var decks = (Array)Get(active, "Deck"); var templateDecks = (Array)Get(expected, "Deck");
         Check(Matches(decks.GetValue(0), templateDecks.GetValue(0)) && Matches(decks.GetValue(1), templateDecks.GetValue(1)), "Exact canonical decks survived forged launch data");
         Check(((int[])Get(active, "life")).Take(2).All(x => x == 8000) && ((int[])Get(active, "hnum")).Take(2).All(x => x == 5), "Trusted life and starting hands enforced");
-        Check(!(bool)Get(active, "noshuffle") && (int)Get(active, "Type") == 0 && (int)Get(active, "cpu") == 97, "Trusted shuffle, duel type and CPU enforced");
+        Check(!(bool)Get(active, "noshuffle") && (int)Get(active, "Type") == 0 && (int)Get(active, "cpu") == 100, "Trusted shuffle, duel type and CPU enforced");
         Check((int)Get(active, "FirstPlayer") >= 0 && (int)Get(active, "FirstPlayer") <= 1 && (uint)Get(active, "RandSeed") != 0, "Client FirstPlayer override rejected and fresh seed selected");
         Check(((string[])Get(active, "name"))[0] == playerName && ((string[])Get(active, "name"))[1] == opponentName, "Character names preserved");
     }

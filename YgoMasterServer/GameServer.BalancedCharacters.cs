@@ -194,7 +194,7 @@ namespace YgoMaster
         static DuelSettings BuildBalancedTemplate(CharacterCatalog catalog, BalancedEncounter entry)
         {
             var settings = new DuelSettings { IsCustomDuel = true, chapter = entry.ChapterId,
-                GameMode = (int)GameMode.SoloSingle, FirstPlayer = -1, cpu = 97, cpuflag = null,
+                GameMode = (int)GameMode.SoloSingle, FirstPlayer = -1, cpu = 100, cpuflag = null,
                 noshuffle = false, Type = 0, MyType = 0 };
             settings.Deck[0] = catalog.CreateDeck(entry.PlayerId);
             settings.Deck[1] = catalog.CreateDeck(entry.OpponentId);

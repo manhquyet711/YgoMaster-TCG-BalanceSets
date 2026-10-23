@@ -391,7 +391,7 @@ def compile_prototype():
             if player == opponent:
                 continue
             duel = {'life': [8000, 8000], 'hnum': [5, 5], 'noshuffle': False,
-                    'Type': 0, 'MyType': 0, 'FirstPlayer': -1, 'cpu': 97, 'cpuflag': None,
+                    'Type': 0, 'MyType': 0, 'FirstPlayer': -1, 'cpu': 100, 'cpuflag': None,
                     'name': [player, opponent], 'Deck': [wire_deck(decks[player]), wire_deck(decks[opponent])]}
             write_json(output / (player + '__' + opponent + '.json'),
                        {'schemaVersion': 1, 'runtimeIntegrated': True, 'Duel': duel,
