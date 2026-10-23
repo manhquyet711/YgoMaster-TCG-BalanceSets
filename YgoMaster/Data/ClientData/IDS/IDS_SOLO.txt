@@ -48,402 +48,427 @@ Core Set: Legend of Blue Eyes White Dragon
 Ban List: 2002-05 Yugi Kaiba Format
 Opponent: Great White
 Unlocks: 
-Opponent deck: Soul Control (fknAzZnDean, Munch-Bug Monthly 1, 2nd)
+Opponent deck: Soul Control (fknAzZnDean, Munch-Bug Monthly 1, March 2025, 2nd)
 [IDS_SOLO.CHAPTER20010002_EXPLANATION]
 Progression Level: 01
 Core Set: Legend of Blue Eyes White Dragon
 Ban List: 2002-05 Yugi Kaiba Format
 Opponent: Giant Soldier of Stone
 Unlocks: 01-Game: Dark Duel Stories
-Opponent deck: Stall Mill (Aretos, Munch-Bug Monthly 1, Top 4)
+Opponent deck: Stall Mill (Aretos, Munch-Bug Monthly 1, March 2025, Top 4)
 [IDS_SOLO.CHAPTER20010003_EXPLANATION]
 Progression Level: 01
 Core Set: Legend of Blue Eyes White Dragon
 Ban List: 2002-05 Yugi Kaiba Format
 Opponent: Curse of Dragon
 Unlocks: 
+Opponent deck: Exodia (nigchtmarkusy, Munch-Bug Monthly 7, April 2026, Top 4)
 [IDS_SOLO.CHAPTER20010004_EXPLANATION]
 Progression Level: 01
 Core Set: Legend of Blue Eyes White Dragon
 Ban List: 2002-05 Yugi Kaiba Format
 Opponent: Exodia
 Unlocks: 02-Core: Metal Raiders
-Boss deck: Soul Control (AlephYa2, Munch Bug Monthly 11, 1st)
+Boss deck: Soul Control (AlephYa2, Munch Bug Monthly 11, September 2026, 1st)
 [IDS_SOLO.CHAPTER20010005_EXPLANATION]
 Progression Level: 01
 Core Set: Legend of Blue Eyes White Dragon
 Ban List: 2002-05 Yugi Kaiba Format
 Opponent: Dark Magician
 Unlocks: 01-Starter Deck: Yugi
+Opponent deck: Stall Mill (Swifty, Munch-Bug Monthly 3, August 2025, 2nd)
 [IDS_SOLO.CHAPTER20010006_EXPLANATION]
 Progression Level: 01
 Core Set: Legend of Blue Eyes White Dragon
 Ban List: 2002-05 Yugi Kaiba Format
 Opponent: Lord of D.
 Unlocks: 01-Starter Deck: Kaiba
+Opponent deck: Stall Mill (ellietincan, Munch Bug Monthly 11, September 2026, Top 4)
 [IDS_SOLO.CHAPTER20010007_EXPLANATION]
 Progression Level: 02
 Core Set: Metal Raiders
 Ban List: 2002-07 Critter Format 
 Opponent: Harpie Lady Sisters
 Unlocks: 
-Opponent deck: Masked Control (Jazz, Ellietincan Cup 2, 2nd)
+Opponent deck: Masked Control (Jazz, Ellietincan Cup 2, June 2022, 2nd)
 [IDS_SOLO.CHAPTER20010008_EXPLANATION]
 Progression Level: 02
 Core Set: Metal Raiders
 Ban List: 2002-07 Critter Format 
 Opponent: White Magical Hat
 Unlocks: 
-Opponent deck: Vanilla Beat (DE4TH, Creepy Critter Extravaganza, Top 4)
+Opponent deck: Vanilla Beat (DE4TH, Creepy Critter Extravaganza, October 2022, Top 4)
 [IDS_SOLO.CHAPTER20010009_EXPLANATION]
 Progression Level: 02
 Core Set: Metal Raiders
 Ban List: 2002-07 Critter Format 
 Opponent: Cannon Soldier
 Unlocks: 
+Opponent deck: Labyrinth Tank Turbo (Falco, YGOFrom0 Retro Tournament 5, July 2023, 2nd)
 [IDS_SOLO.CHAPTER20010010_EXPLANATION]
 Progression Level: 02
 Core Set: Metal Raiders
 Ban List: 2002-07 Critter Format 
 Opponent: Muka Muka
 Unlocks: 03-Core: Spell Ruler
-Boss deck: Muka Muka Turbo (dump truck, Duel Monsters Deluxe 2, 1st)
+Boss deck: Muka Muka Turbo (dump truck, Duel Monsters Deluxe 2, August 2025, 1st)
 [IDS_SOLO.CHAPTER20010011_EXPLANATION]
 Progression Level: 02
 Core Set: Metal Raiders
 Ban List: 2002-07 Critter Format 
 Opponent: Shadow Ghoul
 Unlocks: 
+Opponent deck: Goblin Control (paoloNS, The Critters, April 2024, Top 8)
 [IDS_SOLO.CHAPTER20010012_EXPLANATION]
 Progression Level: 02
 Core Set: Metal Raiders
 Ban List: 2002-07 Critter Format 
 Opponent: Labyrinth Tank
 Unlocks: 02-TP: Tournament Pack 1
+Opponent deck: Exodia (Ley Murphy, Ellietincan Cup 7, December 2022, 2nd)
 [IDS_SOLO.CHAPTER20010013_EXPLANATION]
 Progression Level: 03
 Core Set: Spell Ruler
 Ban List: 2002-10 Treasure Format 
 Opponent: Dream Clown
 Unlocks: 
-Opponent deck: Tomato Control (dekklan, YGOFrom0 Retro Tournament 1, 2nd)
+Opponent deck: Tomato Control (dekklan, YGOFrom0 Retro Tournament 1, March 2023, 2nd)
 [IDS_SOLO.CHAPTER20010014_EXPLANATION]
 Progression Level: 03
 Core Set: Spell Ruler
 Ban List: 2002-10 Treasure Format 
 Opponent: Giant Germ
 Unlocks: 
-Opponent deck: Germ Burn (bsocks, Treasure Hunt 4, 2nd)
+Opponent deck: Germ Burn (bsocks, Treasure Hunt 4, August 2024, 2nd)
 [IDS_SOLO.CHAPTER20010015_EXPLANATION]
 Progression Level: 03
 Core Set: Spell Ruler
 Ban List: 2002-10 Treasure Format 
 Opponent: Maha Vailo
 Unlocks: 
+Opponent deck: Recruiter Control (SolEmerald69, YGOFrom0 Retro Tournament 8, October 2023, 1st)
 [IDS_SOLO.CHAPTER20010016_EXPLANATION]
 Progression Level: 03
 Core Set: Spell Ruler
 Ban List: 2002-10 Treasure Format 
 Opponent: Relinquished
 Unlocks: 04-Core: Pharaoh's Servant
-Boss deck: Tomato Control (lollo_8888, Treasure Hunt 6, 1st)
+Boss deck: Tomato Control (lollo_8888, Treasure Hunt 6, March 2025, 1st)
 [IDS_SOLO.CHAPTER20010017_EXPLANATION]
 Progression Level: 03
 Core Set: Spell Ruler
 Ban List: 2002-10 Treasure Format 
 Opponent: Morphing Jar
 Unlocks: 03-TP: Tournament Pack 2
+Opponent deck: Muka Muka Turbo (Ghostrider15, Ellietincan Cup 7, December 2022, Top 4)
 [IDS_SOLO.CHAPTER20010018_EXPLANATION]
 Progression Level: 03
 Core Set: Spell Ruler
 Ban List: 2002-10 Treasure Format 
 Opponent: Toon Summoned Skull
 Unlocks: 03-Game: Eternal Duelist Soul
+Opponent deck: Masked Control (Hunteru, The Critters, April 2024, Top 4)
 [IDS_SOLO.CHAPTER20010019_EXPLANATION]
 Progression Level: 04
 Core Set: Pharaoh's Servant
 Ban List: 2002-12 Imperial Format 
 Opponent: The Legendary Fisherman
 Unlocks: 
-Opponent deck: Relinquished (bsocks, YGOFrom0 Retro Tournament 3, 2nd)
+Opponent deck: Relinquished (bsocks, YGOFrom0 Retro Tournament 3, May 2023, 2nd)
 [IDS_SOLO.CHAPTER20010020_EXPLANATION]
 Progression Level: 04
 Core Set: Pharaoh's Servant
 Ban List: 2002-12 Imperial Format 
 Opponent: Jinzo
 Unlocks: 04-Game: Forbidden Memories
-Opponent deck: Tomato Control (dump truck, YGOFrom0 Retro Tournament 14, Top 4)
+Opponent deck: Tomato Control (dump truck, YGOFrom0 Retro Tournament 14, April 2024, Top 4)
 [IDS_SOLO.CHAPTER20010021_EXPLANATION]
 Progression Level: 04
 Core Set: Pharaoh's Servant
 Ban List: 2002-12 Imperial Format 
 Opponent: Parasite Paracide
 Unlocks: 
+Opponent deck: Exodia (Birdman, SENATVS POPVLVSQVE ROMANVS VIII, July 2025, Top 4)
 [IDS_SOLO.CHAPTER20010022_EXPLANATION]
 Progression Level: 04
 Core Set: Pharaoh's Servant
 Ban List: 2002-12 Imperial Format 
 Opponent: Magician of Faith
 Unlocks: 05-Core: Labyrinth of Nightmare
-Boss deck: Tomato Control (mihawk, SENATVS POPVLVSQVE ROMANVS IX, 1st)
+Boss deck: Tomato Control (mihawk, SENATVS POPVLVSQVE ROMANVS IX, May 2026, 1st)
 [IDS_SOLO.CHAPTER20010023_EXPLANATION]
 Progression Level: 04
 Core Set: Pharaoh's Servant
 Ban List: 2002-12 Imperial Format 
 Opponent: Thousand Eyes Restrict
 Unlocks: 04-Game: Duelists of the Roses
+Opponent deck: Soul Control (Ikaros, Munch-Bug Monthly 8, June 2026, Top 4)
 [IDS_SOLO.CHAPTER20010024_EXPLANATION]
 Progression Level: 04
 Core Set: Pharaoh's Servant
 Ban List: 2002-12 Imperial Format 
 Opponent: Goblin Attack Force
 Unlocks: 04-Promo: McDonald's Promotional
+Opponent deck: Tomato Control (DannyDroiid, Senatvs Popvlvsqve Romanvs I., June 2024, 2nd)
 [IDS_SOLO.CHAPTER20010025_EXPLANATION]
 Progression Level: 05
 Core Set: Labyrinth of Nightmare
 Ban List: 2003-05 Joey Pegasus Format
 Opponent: Destiny Board
 Unlocks: 
-Opponent deck: Tomato Control (DannyDroiid, Yu-Gi-Oh! Retro Series 27, 2nd)
+Opponent deck: Tomato Control (DannyDroiid, Yu-Gi-Oh! Retro Series 27, September 2020, 2nd)
 [IDS_SOLO.CHAPTER20010026_EXPLANATION]
 Progression Level: 05
 Core Set: Labyrinth of Nightmare
 Ban List: 2003-05 Joey Pegasus Format
 Opponent: Valkyrion the Magna Warrior
 Unlocks: 05-Game: Stairway to the Destined Duel
-Opponent deck: Equip Beat (GBO, Joey-Pegasus 2: Thousand Year Dragon, 2nd)
+Opponent deck: Equip Beat (GBO, Joey-Pegasus 2: Thousand Year Dragon, September 2024, 2nd)
 [IDS_SOLO.CHAPTER20010027_EXPLANATION]
 Progression Level: 05
 Core Set: Labyrinth of Nightmare
 Ban List: 2003-05 Joey Pegasus Format
 Opponent: Needle Worm
 Unlocks: 05-TP: Tournament Pack 3
+Opponent deck: Fiend (FNBRBanana, YGOFrom0 Retro Tournament 12, February 2024, Top 8)
 [IDS_SOLO.CHAPTER20010028_EXPLANATION]
 Progression Level: 05
 Core Set: Labyrinth of Nightmare
 Ban List: 2003-05 Joey Pegasus Format
 Opponent: The Last Warrior from Another Planet
 Unlocks: 06-Core: Legacy of Darkness
-Boss deck: Tomato Control (itsgucci, Joey-Pegasus 4: Duelist Kingdom, 1st)
+Boss deck: Tomato Control (itsgucci, Joey-Pegasus 4: Duelist Kingdom, January 2025, 1st)
 [IDS_SOLO.CHAPTER20010029_EXPLANATION]
 Progression Level: 05
 Core Set: Labyrinth of Nightmare
 Ban List: 2003-05 Joey Pegasus Format
 Opponent: Scapegoat
 Unlocks: 05-Starter Deck: Joey
+Opponent deck: Vanilla Beat (pj darkness, Joey-Pegasus 4: Duelist Kingdom, January 2025, 2nd)
 [IDS_SOLO.CHAPTER20010030_EXPLANATION]
 Progression Level: 05
 Core Set: Labyrinth of Nightmare
 Ban List: 2003-05 Joey Pegasus Format
 Opponent: Dark Necrofear
 Unlocks: 05-Starter Deck: Pegasus
+Opponent deck: Recruiter Control (Terramaster, Yu-Gi-Oh! Legacy Tournament 0, July 2020, 1st)
 [IDS_SOLO.CHAPTER20010031_EXPLANATION]
 Progression Level: 06
 Core Set: Legacy of Darkness
 Ban List: 2003-07 Fiber Format 
 Opponent: Hino-Kagu-Tsuchi
 Unlocks: 
-Opponent deck: Spirit Control (Food, Fiber Format Monthly 23: "Cilindro Magico", 2nd)
+Opponent deck: Spirit Control (Food, Fiber Format Monthly 23: "Cilindro Magico", January 2026, 2nd)
 [IDS_SOLO.CHAPTER20010032_EXPLANATION]
 Progression Level: 06
 Core Set: Legacy of Darkness
 Ban List: 2003-07 Fiber Format 
 Opponent: Spear Dragon
 Unlocks: 
-Opponent deck: Tomato Control (Gerhat, Fiber Format Monthly 23: "Cilindro Magico", Top 4)
+Opponent deck: Tomato Control (Gerhat, Fiber Format Monthly 23: "Cilindro Magico", January 2026, Top 4)
 [IDS_SOLO.CHAPTER20010033_EXPLANATION]
 Progression Level: 06
 Core Set: Legacy of Darkness
 Ban List: 2003-07 Fiber Format 
 Opponent: Dark Ruler Ha Des
 Unlocks: 
+Opponent deck: Equip Beat (Yami Chaotico 闇, YGOFrom0 Retro Tournament 4, June 2023, Top 4)
 [IDS_SOLO.CHAPTER20010034_EXPLANATION]
 Progression Level: 06
 Core Set: Legacy of Darkness
 Ban List: 2003-07 Fiber Format 
 Opponent: Gearfried
 Unlocks: 07-Core: Pharaonic Guardian
-Boss deck: Gearfried (Arfio, Dump Truck Live 13, 1st)
+Boss deck: Gearfried (Arfio, Dump Truck Live 13, September 2026, 1st)
 [IDS_SOLO.CHAPTER20010035_EXPLANATION]
 Progression Level: 06
 Core Set: Legacy of Darkness
 Ban List: 2003-07 Fiber Format 
 Opponent: Marauding Captain
 Unlocks: 
+Opponent deck: Recruiter Control (T-Retro-Games, Fiber Format Monthly 25: "Nothing but Net", March 2026, Top 4)
 [IDS_SOLO.CHAPTER20010036_EXPLANATION]
 Progression Level: 06
 Core Set: Legacy of Darkness
 Ban List: 2003-07 Fiber Format 
 Opponent: Thunder Nyan Nyan
 Unlocks: 
+Opponent deck: Hand Control (clody, Fiber Format Monthly 27: "lowk", May 2026, Top 4)
 [IDS_SOLO.CHAPTER20010037_EXPLANATION]
 Progression Level: 07
 Core Set: Pharaonic Guardian
 Ban List: 2003-08 Yata Format 
 Opponent: Des Lacooda
 Unlocks: 
-Opponent deck: Tomato Control (Shigeki Kitamura, World Championship 2003, 2nd)
+Opponent deck: Tomato Control (Shigeki Kitamura, World Championship, August 2003, 2nd)
 [IDS_SOLO.CHAPTER20010038_EXPLANATION]
 Progression Level: 07
 Core Set: Pharaonic Guardian
 Ban List: 2003-08 Yata Format 
 Opponent: Don Zaloog
 Unlocks: 
-Opponent deck: Hand Control (Mike Rosenberg, World Championship 2003, Top 4)
+Opponent deck: Hand Control (Mike Rosenberg, World Championship, August 2003, Top 4)
 [IDS_SOLO.CHAPTER20010039_EXPLANATION]
 Progression Level: 07
 Core Set: Pharaonic Guardian
 Ban List: 2003-08 Yata Format 
 Opponent: Maiden of the Aqua
 Unlocks: 
-Opponent deck: Warrior Tomato Control (DannyDroiid, Drama Llama Classic 6, Top 4)
+Opponent deck: Warrior Tomato Control (DannyDroiid, Drama Llama Classic 6, November 2023, Top 4)
 [IDS_SOLO.CHAPTER20010040_EXPLANATION]
 Progression Level: 07
 Core Set: Pharaonic Guardian
 Ban List: 2003-08 Yata Format 
 Opponent: Gravekeeper’s Spy
 Unlocks: 08-Core: Magician's Force
-Boss deck: Hand Control (Ng Yu Leung, World Championship 2003, 1st)
+Boss deck: Hand Control (Ng Yu Leung, World Championship, August 2003, 1st)
 [IDS_SOLO.CHAPTER20010041_EXPLANATION]
 Progression Level: 07
 Core Set: Pharaonic Guardian
 Ban List: 2003-08 Yata Format 
 Opponent: Lava Golem
 Unlocks: 
-Opponent deck: Goat Control (Gyomberman, Drama Llama Classic 6, Top 4)
+Opponent deck: Goat Control (Gyomberman, Drama Llama Classic 6, November 2023, Top 4)
 [IDS_SOLO.CHAPTER20010042_EXPLANATION]
 Progression Level: 07
 Core Set: Pharaonic Guardian
 Ban List: 2003-08 Yata Format 
 Opponent: Metamorphosis
 Unlocks: 07-TP: Tournament Pack 4
+Opponent deck: Reasoning Gate Turbo (Desowitz02, Dump Truck Live 3, March 2026, 2nd)
 [IDS_SOLO.CHAPTER20010043_EXPLANATION]
 Progression Level: 08
 Core Set: Magician's Force
 Ban List: 2003-11 Scientist Format 
 Opponent: X-Head Cannon
 Unlocks: 
-Opponent deck: Scientist FTK (DK-ZERO, YGOFrom0 Retro Tournament 9, 2nd)
+Opponent deck: Scientist FTK (DK-ZERO, YGOFrom0 Retro Tournament 9, November 2023, 2nd)
 [IDS_SOLO.CHAPTER20010044_EXPLANATION]
 Progression Level: 08
 Core Set: Magician's Force
 Ban List: 2003-11 Scientist Format 
 Opponent: Paladin of White Dragon
 Unlocks: 
-Opponent deck: Spellcaster Control (GBO, YGOFrom0 Retro Tournament 9, Top 4)
+Opponent deck: Spellcaster Control (GBO, YGOFrom0 Retro Tournament 9, November 2023, Top 4)
 [IDS_SOLO.CHAPTER20010045_EXPLANATION]
 Progression Level: 08
 Core Set: Magician's Force
 Ban List: 2003-11 Scientist Format 
 Opponent: Breaker the Magical Warrior
 Unlocks: 08-Game: The Sacred Cards
+Opponent deck: Gravekeeper (bsocks, Seven Eras Subscriber Bonanza 2, February 2025, 1st)
 [IDS_SOLO.CHAPTER20010046_EXPLANATION]
 Progression Level: 08
 Core Set: Magician's Force
 Ban List: 2003-11 Scientist Format 
 Opponent: Dark Blade
 Unlocks: 09-Core: Dark Crisis
-Boss deck: Scientist Control (WagaMuffin, Science Sackers 3, 1st)
+Boss deck: Scientist Control (WagaMuffin, Science Sackers 3, April 2025, 1st)
 [IDS_SOLO.CHAPTER20010047_EXPLANATION]
 Progression Level: 08
 Core Set: Magician's Force
 Ban List: 2003-11 Scientist Format 
 Opponent: Amazoness Paladin
 Unlocks: 08-Game: The Falsebound Kingdom
+Opponent deck: Germ Burn (PradaG, Purple Bird Special 1, November 2024, 2nd)
 [IDS_SOLO.CHAPTER20010048_EXPLANATION]
 Progression Level: 08
 Core Set: Magician's Force
 Ban List: 2003-11 Scientist Format 
 Opponent: Skilled Dark Magician
 Unlocks: 08-Game: Power of Chaos: Yugi the Destiny
+Opponent deck: Warrior Tomato Control (GMYFS, Purple Bird Special 2, January 2025, Top 4)
 [IDS_SOLO.CHAPTER20010049_EXPLANATION]
 Progression Level: 09
 Core Set: Dark Crisis
 Ban List: 2004-02 Vampire Format 
 Opponent: Iron Blacksmith Kotetsu
 Unlocks: 
-Opponent deck: Jar Burn (Fusion, Ke$ha Grand Prix 1: Vampire Weekend, 2nd)
+Opponent deck: Jar Burn (Fusion, Ke$ha Grand Prix 1: Vampire Weekend, June 2021, 2nd)
 [IDS_SOLO.CHAPTER20010050_EXPLANATION]
 Progression Level: 09
 Core Set: Dark Crisis
 Ban List: 2004-02 Vampire Format 
 Opponent: Great Maju Garzett
 Unlocks: 
-Opponent deck: Scientist FTK (ellietincan, Ke$ha Grand Prix 2: Vampire Weekend 2, 2nd)
+Opponent deck: Scientist FTK (ellietincan, Ke$ha Grand Prix 2: Vampire Weekend 2, October 2021, 2nd)
 [IDS_SOLO.CHAPTER20010051_EXPLANATION]
 Progression Level: 09
 Core Set: Dark Crisis
 Ban List: 2004-02 Vampire Format 
 Opponent: Terrorking Archfiend
 Unlocks: 
+Opponent deck: Archfiend (Colgate, YGOFrom0 Retro Tournament 10, December 2023, Top 16)
 [IDS_SOLO.CHAPTER20010052_EXPLANATION]
 Progression Level: 09
 Core Set: Dark Crisis
 Ban List: 2004-02 Vampire Format 
 Opponent: Vampire Lord
 Unlocks: 10-Core: Invasion of Chaos
-Boss deck: Warrior Control (OupsOfCow, Dark Crisis of Dimensions 2, 1st)
+Boss deck: Warrior Control (OupsOfCow, Dark Crisis of Dimensions 2, June 2025, 1st)
 [IDS_SOLO.CHAPTER20010053_EXPLANATION]
 Progression Level: 09
 Core Set: Dark Crisis
 Ban List: 2004-02 Vampire Format 
 Opponent: Gyaku-Gire Panda
 Unlocks: 
+Opponent deck: Gearfried (ShogunLopez, Duel Monsters Deluxe 3, August 2025, Top 8)
 [IDS_SOLO.CHAPTER20010054_EXPLANATION]
 Progression Level: 09
 Core Set: Dark Crisis
 Ban List: 2004-02 Vampire Format 
 Opponent: Exodia Necross
 Unlocks: 09-Game: World Championship Tournament 2004
+Opponent deck: Zombie (Food, YGOFrom0 Retro Tournament 10, December 2023, Top 4)
 [IDS_SOLO.CHAPTER20010055_EXPLANATION]
 Progression Level: 10
 Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Berserk Gorilla
 Unlocks: 
-Opponent deck: Chaos Control (Oscar Taieb, Battle City Amsterdam 2004, 2nd)
+Opponent deck: Chaos Control (Oscar Taieb, Battle City Amsterdam, August 2004, 2nd)
 [IDS_SOLO.CHAPTER20010056_EXPLANATION]
 Progression Level: 10
 Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Levua-Dragon – Daedalus
 Unlocks: 10-Game: Power of Chaos: Kaiba the Revenge
-Opponent deck: Chaos Warrior (aomine, Ellietincan Cup 8, 2nd)
+Opponent deck: Chaos Warrior (aomine, Ellietincan Cup 8, March 2023, 2nd)
 [IDS_SOLO.CHAPTER20010057_EXPLANATION]
 Progression Level: 10
 Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Cyber Jar
 Unlocks: 10-Game: The Dawn of Destiny
-Opponent deck: Jar Turbo (GMYFS, Chaos Cup 2, 2nd)
+Opponent deck: Jar Turbo (GMYFS, Chaos Cup 2, August 2024, 2nd)
 [IDS_SOLO.CHAPTER20010058_EXPLANATION]
 Progression Level: 10
 Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Chaos Emperor Dragon
 Unlocks: 11-Core: Ancient Sanctuary
-Boss deck: Chaos Control (Theerasak Poonsombat, U.S. National Championship 2004, 1st)
+Boss deck: Chaos Control (Theerasak Poonsombat, U.S. National Championship, June 2004, 1st)
 [IDS_SOLO.CHAPTER20010059_EXPLANATION]
 Progression Level: 10
 Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Arsenal Bug
 Unlocks: 10-Starter Deck: Kaiba Evolution
-Opponent deck: Chaos Control (Edwin Hoekstra, Battle City Amsterdam 2004, Top 4)
+Opponent deck: Chaos Control (Edwin Hoekstra, Battle City Amsterdam, August 2004, Top 4)
 [IDS_SOLO.CHAPTER20010060_EXPLANATION]
 Progression Level: 10
 Core Set: Invasion of Chaos
 Ban List: 2004-04 Chaos Format 
 Opponent: Des Koala
 Unlocks: 10-Starter Deck: Yugi Evolution
-Opponent deck: Chaos Control (Thom Kalavris, Battle City Amsterdam 2004, Top 4)
+Opponent deck: Chaos Control (Thom Kalavris, Battle City Amsterdam, August 2004, Top 4)
 [IDS_SOLO.CHAPTER20010061_EXPLANATION]
 Progression Level: 11
 Core Set: Ancient Sanctuary
 Ban List: 2004-10 Warrior Format 
 Opponent: Spirit of the Pharaoh
 Unlocks: 11-Hobby League: 1
-Opponent deck: Warrior Control (Bryan St. Clair, SJC Columbus 2005, Top 8)
+Opponent deck: Warrior Control (Bryan St. Clair, SJC Columbus, February 2005, Top 8)
 [IDS_SOLO.CHAPTER20010062_EXPLANATION]
 Progression Level: 11
 Core Set: Ancient Sanctuary
@@ -462,7 +487,7 @@ Core Set: Ancient Sanctuary
 Ban List: 2004-10 Warrior Format 
 Opponent: Dark Paladin
 Unlocks: 12-Core: Soul of the Duelist
-Boss deck: Earth Beat (Ian Wingrove, SJC Las Vegas 2005, 2nd)
+Boss deck: Earth Beat (Ian Wingrove, SJC Las Vegas, February 2005, 2nd)
 [IDS_SOLO.CHAPTER20010065_EXPLANATION]
 Progression Level: 11
 Core Set: Ancient Sanctuary
@@ -481,498 +506,560 @@ Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Gate Guardian
 Unlocks: 
-Opponent deck: Earth Beat (Elton Cho, SJC Pomona 2005, Top 4)
+Opponent deck: Earth Beat (Elton Cho, SJC Pomona, April 2005, Top 4)
 [IDS_SOLO.CHAPTER20010068_EXPLANATION]
 Progression Level: 12
 Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Lady Ninja Yae
 Unlocks: 12-Game: Destiny Board Traveler
-Opponent deck: Chaos Zombie (Ryan Henderson, U.K. National Championship 2005, Top 4)
+Opponent deck: Chaos Zombie (Ryan Henderson, U.K. National Championship, April 2005, Top 4)
 [IDS_SOLO.CHAPTER20010069_EXPLANATION]
 Progression Level: 12
 Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Koitsu
 Unlocks: 12-TP: Tournament Pack 5
-Opponent deck: Canceller Stun (Nate Neidelbeck, SJC Houston 2005, Top 4)
+Opponent deck: Canceller Stun (Nate Neidelbeck, SJC Houston, April 2005, Top 4)
 [IDS_SOLO.CHAPTER20010070_EXPLANATION]
 Progression Level: 12
 Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Black Luster Soldier
 Unlocks: 13-Core: Rise of Destiny
-Boss deck: Zombie (Jae Kim, SJC Charlotte 2005, 2nd)
+Boss deck: Zombie (Jae Kim, SJC Charlotte, June 2005, 2nd)
 [IDS_SOLO.CHAPTER20010071_EXPLANATION]
 Progression Level: 12
 Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Heart of the Underdog
 Unlocks: 
-Opponent deck: Goat Control (Craig Carver, SJC Houston 2005, Top 8)
+Opponent deck: Goat Control (Craig Carver, SJC Houston, April 2005, Top 8)
 [IDS_SOLO.CHAPTER20010072_EXPLANATION]
 Progression Level: 12
 Core Set: Soul of the Duelist
 Ban List: 2005-04 Goat Format 
 Opponent: Revival Jam
 Unlocks: 12-Reprint: Dark Beginning 1
-Opponent deck: Warrior Control (Bounty, U.S. National Championship 2005, Top 8)
+Opponent deck: Warrior Control (Bounty, U.S. National Championship, July 2005, Top 8)
 [IDS_SOLO.CHAPTER20010073_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: Mokey Mokey
 Unlocks: 
-Opponent deck: Chaos Zombie (Robert Tagoe, U.K. National Championship 2005, Top 4)
+Opponent deck: Chaos Zombie (Robert Tagoe, U.K. National Championship, April 2005, Top 4)
 [IDS_SOLO.CHAPTER20010074_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: Thestalos the Firestorm Monarch
 Unlocks: 13-Game: World Championship Tournament 2005
-Opponent deck: Chaos (Miguel Garcia, 2005 US Nationals, 2nd)
+Opponent deck: Chaos (Miguel Garcia, US Nationals, July 2005, 2nd)
 [IDS_SOLO.CHAPTER20010075_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: Fairy King Truesdale
 Unlocks: 13-Structure Deck: Zombie Madness
-Opponent deck: Zombie/Chaos (Eric Wu, 2005 Shonen Jump Los Angeles, 1st)
+Opponent deck: Zombie/Chaos (Eric Wu, Shonen Jump Los Angeles, April 2005, 1st)
 [IDS_SOLO.CHAPTER20010076_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: The Creator
 Unlocks: 14-Core: Flaming Eternity
-Boss deck: Goat Control (Bryan Coronel, SJC New Jersey 2005, Top 4)
+Boss deck: Goat Control (Bryan Coronel, SJC New Jersey, June 2005, Top 4)
 [IDS_SOLO.CHAPTER20010077_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: Horus the Black Flame Dragon
 Unlocks: 13-Game: Capsule Monster Coliseum
-Opponent deck: Goat Control (Mary Triatafilidi, SJC New Jersey 2005, Top 8)
+Opponent deck: Goat Control (Mary Triatafilidi, SJC New Jersey, June 2005, Top 8)
 [IDS_SOLO.CHAPTER20010078_EXPLANATION]
 Progression Level: 13
 Core Set: Rise of Destiny
 Ban List: 2005-04 Goat Format 
 Opponent: Strike Ninja
 Unlocks: 13-Structure Deck: Dragon's Roar
-Opponent deck: Goat Burn (Cas Stomphorst, SJC Indianapolis 2005, Top 8)
+Opponent deck: Goat Burn (Cas Stomphorst, SJC Indianapolis, August 2005, Top 8)
 [IDS_SOLO.CHAPTER20010079_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Ojama King
 Unlocks: 
-Opponent deck: Zombie (Keanson Ye, SJC Pomona 2005, 2nd)
+Opponent deck: Zombie (Keanson Ye, SJC Pomona, April 2005, 2nd)
 [IDS_SOLO.CHAPTER20010080_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Magical Marionette
 Unlocks: 
-Opponent deck: Soul Control (Evan Vargas, SJC Pomona 2005, Top 4)
+Opponent deck: Soul Control (Evan Vargas, SJC Pomona, April 2005, Top 4)
 [IDS_SOLO.CHAPTER20010081_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Gigantes
 Unlocks: 14-Reprint: Dark Revelation Volume 1
-Opponent deck: Goat Control (Joe Whittaker, U.K. National Championship 2005, 2nd)
+Opponent deck: Goat Control (Joe Whittaker, U.K. National Championship, April 2005, 2nd)
 [IDS_SOLO.CHAPTER20010082_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Sacred Phoenix of Nephthys
 Unlocks: 15-Core: The Lost Millennium
-Boss deck: Goat Control (Max Suffridge, U.S. National Championship 2005, 1st)
+Boss deck: Goat Control (Max Suffridge, U.S. National Championship, July 2005, 1st)
 [IDS_SOLO.CHAPTER20010083_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Red-Eyes Darkness Dragon
 Unlocks: 14-Structure Deck: Blaze of Destruction
-Opponent deck: Ben Kei OTK (Chad Justice, SJC Houston 2005, Top 4)
+Opponent deck: Ben Kei OTK (Chad Justice, SJC Houston, April 2005, Top 4)
 [IDS_SOLO.CHAPTER20010084_EXPLANATION]
 Progression Level: 14
 Core Set: Flaming Eternity
 Ban List: 2005-04 Goat Format 
 Opponent: Armed Samurai – Ben Kei
 Unlocks: 14-Structure Deck: Fury from the Deep
-Opponent deck: Indy Chaos (Michael Fukuyama, 2005 SJC Indianapolis, 2nd)
+Opponent deck: Indy Chaos (Michael Fukuyama, SJC Indianapolis, August 2005, 2nd)
 [IDS_SOLO.CHAPTER20020001_EXPLANATION]
 Progression Level: 15
 Core Set: The Lost Millennium
 Ban List: 2005-10 Reaper Format 
 Opponent: Elemental HERO Flame Wingman
 Unlocks: 
+Opponent deck: Stall Burn (Brendan Chock, SJC San Francisco, December 2005, Top 4)
 [IDS_SOLO.CHAPTER20020002_EXPLANATION]
 Progression Level: 15
 Core Set: The Lost Millennium
 Ban List: 2005-10 Reaper Format 
 Opponent: Winged Kuriboh
 Unlocks: 
+Opponent deck: Soul Control (Jonathan Navarro, SJC Los Angeles, November 2005, Top 4)
 [IDS_SOLO.CHAPTER20020003_EXPLANATION]
 Progression Level: 15
 Core Set: The Lost Millennium
 Ban List: 2005-10 Reaper Format 
 Opponent: Nmaster Monkl
 Unlocks: 
+Opponent deck: Zombie Chaos (Ramsey Tobias, Minnesota Regionals, October 2005, Top 4)
 [IDS_SOLO.CHAPTER20020004_EXPLANATION]
 Progression Level: 15
 Core Set: The Lost Millennium
 Ban List: 2005-10 Reaper Format 
 Opponent: Ancient Gear Golem
 Unlocks: 16-Core: Cybernetic Revolution
+Boss deck: Monarch (Kirk Leonhardt, SJC Los Angeles, November 2005, Top 8)
 [IDS_SOLO.CHAPTER20020005_EXPLANATION]
 Progression Level: 15
 Core Set: The Lost Millennium
 Ban List: 2005-10 Reaper Format 
 Opponent: Ultimate Insect
 Unlocks: 15-Reprint: Dark Beginning 2
+Opponent deck: Strike Ninja Return (Alex Elmdanat, SJC Long Beach, March 2006, Top 8)
 [IDS_SOLO.CHAPTER20020006_EXPLANATION]
 Progression Level: 15
 Core Set: The Lost Millennium
 Ban List: 2005-10 Reaper Format 
 Opponent: Elemental Mistress Doriado
 Unlocks: 15-TP: Tournament Pack 6
+Opponent deck: 1st Place (William Vizzini, Pharoah Tour Italy, February 2006, 1st)
 [IDS_SOLO.CHAPTER20020007_EXPLANATION]
 Progression Level: 16
 Core Set: Cybernetic Revolution
 Ban List: 2005-10 Reaper Format 
 Opponent: Black Tyranno
 Unlocks: 
+Opponent deck: Tomato Control (Adrian Madaj, Pharaoh Tour Bremen, December 2005, 2nd)
 [IDS_SOLO.CHAPTER20020008_EXPLANATION]
 Progression Level: 16
 Core Set: Cybernetic Revolution
 Ban List: 2005-10 Reaper Format 
 Opponent: Dice Jar
 Unlocks: 16-TP: Tournament Pack 7
+Opponent deck: Flip Warrior (Ma Hömig, Pharaoh Tour Bremen, December 2005, Top 4)
 [IDS_SOLO.CHAPTER20020009_EXPLANATION]
 Progression Level: 16
 Core Set: Cybernetic Revolution
 Ban List: 2005-10 Reaper Format 
 Opponent: Spiritual Wind Art – Miyabi
 Unlocks: 16-Game: Nightmare Troubadour
+Opponent deck: Warrior Control (Angel Flores, SJC Los Angeles, November 2005, 2nd)
 [IDS_SOLO.CHAPTER20020010_EXPLANATION]
 Progression Level: 16
 Core Set: Cybernetic Revolution
 Ban List: 2005-10 Reaper Format 
 Opponent: Cyber Dragon
 Unlocks: 17-Core: Elemental Energy
+Boss deck: Chaos Control (Tango (John Wick), SJC Durham, February 2006, 1st)
 [IDS_SOLO.CHAPTER20020011_EXPLANATION]
 Progression Level: 16
 Core Set: Cybernetic Revolution
 Ban List: 2005-10 Reaper Format 
 Opponent: Silent Magician
 Unlocks: 16-Structure Deck: Warrior's Triumph
+Opponent deck: Bazoo Return (Carlos Santiago, SJC Los Angeles, November 2005, Top 4)
 [IDS_SOLO.CHAPTER20020012_EXPLANATION]
 Progression Level: 16
 Core Set: Cybernetic Revolution
 Ban List: 2005-10 Reaper Format 
 Opponent: Gilford the Legend
 Unlocks: 16-Reprint: Dark Revelation Volume 2
+Opponent deck: Warrior (plevitin, SJC Chicago, October 2005, Top 4)
 [IDS_SOLO.CHAPTER20020013_EXPLANATION]
 Progression Level: 17
 Core Set: Elemental Energy
 Ban List: 2006_04 Chaos Return Format
 Opponent: B.E.S. Big Core
 Unlocks: 
+Opponent deck: Chaos Return (Chris Pittao, Canadian National Championship, June 2006, 2nd)
 [IDS_SOLO.CHAPTER20020014_EXPLANATION]
 Progression Level: 17
 Core Set: Elemental Energy
 Ban List: 2006_04 Chaos Return Format
 Opponent: Mobius the Frost Monarch
 Unlocks: 17-Game: GX Duel Academy
+Opponent deck: Chaos Monarch (Dexter Dalit, Canadian National Championship, June 2006, Top 4)
 [IDS_SOLO.CHAPTER20020015_EXPLANATION]
 Progression Level: 17
 Core Set: Elemental Energy
 Ban List: 2006_04 Chaos Return Format
 Opponent: Dark Eradicator Warlock
 Unlocks: 17-Structure Deck: Spellcaster's Judgement
+Opponent deck: Chaos Recruiter (Eric Blum, SJC Philadelphia, July 2006, Top 4)
 [IDS_SOLO.CHAPTER20020016_EXPLANATION]
 Progression Level: 17
 Core Set: Elemental Energy
 Ban List: 2006_04 Chaos Return Format
 Opponent: Goldd, Wu-Lord of Dark World
 Unlocks: 18-Core: Shadow of Infinity
+Boss deck: 1st Place (Emon Ghaneian, Shonen Jump: Denver, June 2006, 1st)
 [IDS_SOLO.CHAPTER20020017_EXPLANATION]
 Progression Level: 17
 Core Set: Elemental Energy
 Ban List: 2006_04 Chaos Return Format
 Opponent: VWXYZ
 Unlocks: 17-Duelist Pack: Chazz Princeton
+Opponent deck: Virus Control (Dwight Lloyd, SJC Hamilton, August 2006, Top 4)
 [IDS_SOLO.CHAPTER20020018_EXPLANATION]
 Progression Level: 17
 Core Set: Elemental Energy
 Ban List: 2006_04 Chaos Return Format
 Opponent: Armed Dragon LV10
 Unlocks: 17-Duelist Pack: Jaden Yuki
+Opponent deck: Stein OTK (Robert Morgan, SJC Indianapolis, August 2006, Top 4)
 [IDS_SOLO.CHAPTER20020019_EXPLANATION]
 Progression Level: 18
 Core Set: Shadow of Infinity
 Ban List: 2006_04 Chaos Return Format
 Opponent: White Magician Pikeru
 Unlocks: 18-Shonen Jump 2006
+Opponent deck: Chaos Zombie (Darian Belser, SJC Indianapolis, August 2006, Top 8)
 [IDS_SOLO.CHAPTER20020020_EXPLANATION]
 Progression Level: 18
 Core Set: Shadow of Infinity
 Ban List: 2006_04 Chaos Return Format
 Opponent: Parasitic Ticky
 Unlocks: 18-Duelist Pack: Special
+Opponent deck: Dark World Burn (Bobby Williams, SJC Arlington, July 2006, Top 8)
 [IDS_SOLO.CHAPTER20020021_EXPLANATION]
 Progression Level: 18
 Core Set: Shadow of Infinity
 Ban List: 2006_04 Chaos Return Format
 Opponent: Ancient Gear
 Unlocks: 18-TP: Tournament Pack 8
+Opponent deck: Chaos Recruiter (Kyle Duncan, SJC Hamilton, August 2006, 2nd)
 [IDS_SOLO.CHAPTER20020022_EXPLANATION]
 Progression Level: 18
 Core Set: Shadow of Infinity
 Ban List: 2006_04 Chaos Return Format
 Opponent: Uria, Lord of Searing Flames
 Unlocks: 19-Core: Enemy of Justice
+Boss deck: Chaos Return (James Naughton, SJC Arlington, July 2006, 1st)
 [IDS_SOLO.CHAPTER20020023_EXPLANATION]
 Progression Level: 18
 Core Set: Shadow of Infinity
 Ban List: 2006_04 Chaos Return Format
 Opponent: Demise, King of Armageddon
 Unlocks: 18-Starter Deck: 2006, 18-Game: World Championship Tournament 2006
+Opponent deck: Chaos Control (Harry Anderson, SJC Arlington, July 2006, Top 4)
 [IDS_SOLO.CHAPTER20020024_EXPLANATION]
 Progression Level: 18
 Core Set: Shadow of Infinity
 Ban List: 2006_04 Chaos Return Format
 Opponent: Exodd, Master of the Guard
 Unlocks: 18-Structure Deck: Invincible Fortress
+Opponent deck: Chaos Monarch (Jerry Wang, SJC Columbus, May 2006, Top 4)
 [IDS_SOLO.CHAPTER20020025_EXPLANATION]
 Progression Level: 19
 Core Set: Enemy of Justice
 Ban List: 2006-09 Stein Format 
 Opponent: Batteryman C
 Unlocks: 
+Opponent deck: Dark World (Theerasak Poonsombat, SJC Anaheim, November 2006, Top 4)
 [IDS_SOLO.CHAPTER20020026_EXPLANATION]
 Progression Level: 19
 Core Set: Enemy of Justice
 Ban List: 2006-09 Stein Format 
 Opponent: Harpie’s Pet Dragon
 Unlocks: 
+Opponent deck: Apprentice Monarch (crashvolt, SJC Seattle, October 2006, 1st)
 [IDS_SOLO.CHAPTER20020027_EXPLANATION]
 Progression Level: 19
 Core Set: Enemy of Justice
 Ban List: 2006-09 Stein Format 
 Opponent: Majestic Mech – Goryu
 Unlocks: 
+Opponent deck: Tomato Monarch (Bobby Chambers, SJC Boston, September 2006, 1st)
 [IDS_SOLO.CHAPTER20020028_EXPLANATION]
 Progression Level: 19
 Core Set: Enemy of Justice
 Ban List: 2006-09 Stein Format 
 Opponent: Elemental HERO Tempest
 Unlocks: 20-Core: Power of the Duelist
+Boss deck: Dark World (Tony Mera, Kings Games Regional, February 2007, 1st)
 [IDS_SOLO.CHAPTER20020029_EXPLANATION]
 Progression Level: 19
 Core Set: Enemy of Justice
 Ban List: 2006-09 Stein Format 
 Opponent: Golden Homunculus
 Unlocks: 
+Opponent deck: Warrior (Chris Moosman, SJC Seattle, October 2006, Top 4)
 [IDS_SOLO.CHAPTER20020030_EXPLANATION]
 Progression Level: 19
 Core Set: Enemy of Justice
 Ban List: 2006-09 Stein Format 
 Opponent: Bountiful Artemis
 Unlocks: 19-Structure Deck: Lord of the Storm
+Opponent deck: Monarch (Mark Vazquez, SJC Orlando, January 2007, 2nd)
 [IDS_SOLO.CHAPTER20020031_EXPLANATION]
 Progression Level: 20
 Core Set: Power of the Duelist
 Ban List: 2006-09 Stein Format 
 Opponent: Elemental HERO Neos
 Unlocks: 
+Opponent deck: Dimension Fusion Turbo (Paul Lyn, SJC Orlando, January 2007, 1st)
 [IDS_SOLO.CHAPTER20020032_EXPLANATION]
 Progression Level: 20
 Core Set: Power of the Duelist
 Ban List: 2006-09 Stein Format 
 Opponent: Satellite Cannon
 Unlocks: 
+Opponent deck: Machine OTK (Bounty, SJC Orlando, January 2007, Top 8)
 [IDS_SOLO.CHAPTER20020033_EXPLANATION]
 Progression Level: 20
 Core Set: Power of the Duelist
 Ban List: 2006-09 Stein Format 
 Opponent: Cosmic Horror Gangi’el
 Unlocks: 
+Opponent deck: Gearfried (Matt Stille, SJC Austin, October 2006, Top 8)
 [IDS_SOLO.CHAPTER20020034_EXPLANATION]
 Progression Level: 20
 Core Set: Power of the Duelist
 Ban List: 2006-09 Stein Format 
 Opponent: Destiny HERO Dogma
 Unlocks: 21-Core: Cyberdark Impact
+Boss deck: Apprentice Monarch (Tristian Patillo, SJC Austin, October 2006, 1st)
 [IDS_SOLO.CHAPTER20020035_EXPLANATION]
 Progression Level: 20
 Core Set: Power of the Duelist
 Ban List: 2006-09 Stein Format 
 Opponent: Super Vehicroid Jumbo Drill
 Unlocks: 20-TP: Champion Pack: Game One
+Opponent deck: Tomato Control (Marc Glass, SJC Orlando, January 2007, Top 8)
 [IDS_SOLO.CHAPTER20020036_EXPLANATION]
 Progression Level: 20
 Core Set: Power of the Duelist
 Ban List: 2006-09 Stein Format 
 Opponent: Super Conductor Tyranno
 Unlocks: 20-Structure Deck: Dinosaur's Rage
+Opponent deck: Warrior (Abel Carrasco, SJC Austin, October 2006, Top 8)
 [IDS_SOLO.CHAPTER20020037_EXPLANATION]
 Progression Level: 21
 Core Set: Cyberdark Impact
 Ban List: 2007-03 Chimeratech Format 
 Opponent: Poison of the Old Man
 Unlocks: 21-Reprint: Dark Revelation Volume 3
+Opponent deck: Gadget (Joe Whittaker, U.K. National Championship, May 2007, 2nd)
 [IDS_SOLO.CHAPTER20020038_EXPLANATION]
 Progression Level: 21
 Core Set: Cyberdark Impact
 Ban List: 2007-03 Chimeratech Format 
 Opponent: Allure Queen LV7
 Unlocks: 21-Duelist Pack: Aster Phoenix, 21-Game: Tag Force
+Opponent deck: Trooper Monarch (Lazaro, SJC Philadelphia, May 2007, 2nd)
 [IDS_SOLO.CHAPTER20020039_EXPLANATION]
 Progression Level: 21
 Core Set: Cyberdark Impact
 Ban List: 2007-03 Chimeratech Format 
 Opponent: Dark Lucius LV8
 Unlocks: 21-Duelist Pack: Jaden Yuki 2, 21-Game: Spirit Caller
+Opponent deck: Macro Monarch (Alex Martinez, SJC Houston, March 2007, Top 8)
 [IDS_SOLO.CHAPTER20020040_EXPLANATION]
 Progression Level: 21
 Core Set: Cyberdark Impact
 Ban List: 2007-03 Chimeratech Format 
 Opponent: Cyberdark Dragon
 Unlocks: 22-Core: Strike of Neos
+Boss deck: Gadget (Dexter Dalit, Canadian Nationals, June 2007, 1st)
 [IDS_SOLO.CHAPTER20020041_EXPLANATION]
 Progression Level: 21
 Core Set: Cyberdark Impact
 Ban List: 2007-03 Chimeratech Format 
 Opponent: Phantom Beast Thunder-Pegasus
 Unlocks: 21-TP: Champion Pack: Game Two, 21-Promo: McDonald's Promotional 2
+Opponent deck: Bazoo Return (Jonathan Chauvin, SJC Montreal, April 2007, Top 4)
 [IDS_SOLO.CHAPTER20020042_EXPLANATION]
 Progression Level: 21
 Core Set: Cyberdark Impact
 Ban List: 2007-03 Chimeratech Format 
 Opponent: Green Gadget
 Unlocks: 21-Structure Deck: Machine Re-Volt
+Opponent deck: Stall Burn (Björn Krause, European Championship, June 2007, Top 8)
 [IDS_SOLO.CHAPTER20020043_EXPLANATION]
 Progression Level: 22
 Core Set: Cyberdark Impact
 Ban List: 2007-06 Trooper Format 
 Opponent: Spell Striker
 Unlocks: 
+Opponent deck: Six Samurai (Matthew Lai, Canadian National Championship, June 2007, Top 8)
 [IDS_SOLO.CHAPTER20020044_EXPLANATION]
 Progression Level: 22
 Core Set: Strike of Neos
 Ban List: 2007-06 Trooper Format 
 Opponent: Cu Chulainn the Awakened
 Unlocks: 22-Game: World Championship 2007
+Opponent deck: Demise OTK (Matt Berlingieri, SJC Philadelphia, May 2007, Top 16)
 [IDS_SOLO.CHAPTER20020045_EXPLANATION]
 Progression Level: 22
 Core Set: Strike of Neos
 Ban List: 2007-06 Trooper Format 
 Opponent: Lycanthrope
 Unlocks: 
+Opponent deck: Gadget (Josh Fuzy, SJC Phoenix, July 2007, Top 8)
 [IDS_SOLO.CHAPTER20020046_EXPLANATION]
 Progression Level: 22
 Core Set: Strike of Neos
 Ban List: 2007-06 Trooper Format 
 Opponent: Reign-Beaux, Overlord of Dark World
 Unlocks: 23-Core: Force of the Breaker
+Boss deck: Gadget (Jon Whittaker, UK Nationals, June 2007, 2nd)
 [IDS_SOLO.CHAPTER20020047_EXPLANATION]
 Progression Level: 22
 Core Set: Strike of Neos
 Ban List: 2007-06 Trooper Format 
 Opponent: Legendary Flame Lord
 Unlocks: 22-TP: Champion Pack: Game Three
+Opponent deck: Trooper Monarch (plevitin, SJC Philadelphia, May 2007, Top 8)
 [IDS_SOLO.CHAPTER20020048_EXPLANATION]
 Progression Level: 22
 Core Set: Strike of Neos
 Ban List: 2007-06 Trooper Format 
 Opponent: Neo-Parshath, the Sky Paladin
 Unlocks: 22-Duelist Pack: Zane Truesdale
+Opponent deck: Apprentice Monarch (Devon Schwartz, SJC Philadelphia, May 2007, Top 8)
 [IDS_SOLO.CHAPTER20020049_EXPLANATION]
 Progression Level: 23
 Core Set: Force of the Breaker
 Ban List: 2007-06 Trooper Format 
 Opponent: Volcanic Hammerer
 Unlocks: 
+Opponent deck: Machine Beat (Oliver Schmidt-Voss, European Championship, June 2007, Top 4)
 [IDS_SOLO.CHAPTER20020050_EXPLANATION]
 Progression Level: 23
 Core Set: Force of the Breaker
 Ban List: 2007-06 Trooper Format 
 Opponent: Marshmallon
 Unlocks: 
+Opponent deck: Monarch (Bryan Rockenbach, U.S. National Championship, June 2007, 2nd)
 [IDS_SOLO.CHAPTER20020051_EXPLANATION]
 Progression Level: 23
 Core Set: Force of the Breaker
 Ban List: 2007-06 Trooper Format 
 Opponent: Alien Grey
 Unlocks: 23-Starter Deck: Syrus Truesdale
+Opponent deck: Trooper Monarch (Shane Scurry, SJC Indianapolis, August 2007, Top 8)
 [IDS_SOLO.CHAPTER20020052_EXPLANATION]
 Progression Level: 23
 Core Set: Force of the Breaker
 Ban List: 2007-06 Trooper Format 
 Opponent: Great Shogun Shien
 Unlocks: 24-Core: Tactical Evolution
+Boss deck: Trooper Monarch (Lazaro Bellido, SJ Philadelphia, May 2007, 2nd)
 [IDS_SOLO.CHAPTER20020053_EXPLANATION]
 Progression Level: 23
 Core Set: Force of the Breaker
 Ban List: 2007-06 Trooper Format 
 Opponent: Abyss Soldier
 Unlocks: 23-Bonus: Premium Pack
+Opponent deck: Gadget (Jordan Nasser, SJC Minneapolis, June 2007, Top 8)
 [IDS_SOLO.CHAPTER20020054_EXPLANATION]
 Progression Level: 23
 Core Set: Force of the Breaker
 Ban List: 2007-06 Trooper Format 
 Opponent: Gravekeeper’s Commandant
 Unlocks: 23-Starter Deck: Jaden Yuki
+Opponent deck: Trooper Burn (AJTBLS, Yu-Gi-Oh! Retro Series 20, August 2020, 2nd)
 [IDS_SOLO.CHAPTER20020055_EXPLANATION]
 Progression Level: 24
 Core Set: Tactical Evolution
 Ban List: 2007-09 Zombie Format 
 Opponent: Rainbow Dragon
 Unlocks: 
+Opponent deck: Zombie (Levi Yoder, SJC Durham, October 2007, 2nd)
 [IDS_SOLO.CHAPTER20020056_EXPLANATION]
 Progression Level: 24
 Core Set: Tactical Evolution
 Ban List: 2007-09 Zombie Format 
 Opponent: Huge Revolution
 Unlocks: 24-Game: Tag Force 2
+Opponent deck: Volcanic Monarch (Alvaro Jirau, SJC Orlando, January 2008, Top 16)
 [IDS_SOLO.CHAPTER20020057_EXPLANATION]
 Progression Level: 24
 Core Set: Tactical Evolution
 Ban List: 2007-09 Zombie Format 
 Opponent: Bad Reaction to Simochi
 Unlocks: 24-TP: Champion Pack: Game Four
+Opponent deck: Perfect Circle Monarch (Chris McGarrett, SJC Orlando, January 2008, Top 16)
 [IDS_SOLO.CHAPTER20020058_EXPLANATION]
 Progression Level: 24
 Core Set: Tactical Evolution
 Ban List: 2007-09 Zombie Format 
 Opponent: Neo Space Pathfinder
 Unlocks: 25-Core: Gladiator's Assault
+Boss deck: Tomato Control (Donald Myers, SJC Chicago, September 2007, Top 4)
 [IDS_SOLO.CHAPTER20020059_EXPLANATION]
 Progression Level: 24
 Core Set: Tactical Evolution
 Ban List: 2007-09 Zombie Format 
 Opponent: Venom Serpent
 Unlocks: 24-Structure Deck: Rise of the Dragon Lords
+Opponent deck: Baboon Burn (James Neumann, SJC Orlando, January 2008, Top 16)
 [IDS_SOLO.CHAPTER20020060_EXPLANATION]
 Progression Level: 24
 Core Set: Tactical Evolution
 Ban List: 2007-09 Zombie Format 
 Opponent: Vampire Genesis
 Unlocks: 24-Reprint: Dark Revelation Volume 4
+Opponent deck: Macro Stun (David Duran, SJC Chicago, September 2007, Top 8)
 [IDS_SOLO.CHAPTER20020061_EXPLANATION]
 Progression Level: 25
 Core Set: Tactical Evolution
 Ban List: 2008_03 DAD Return Format
 Opponent: Evil HERO Lightning Golem
 Unlocks: 25-Game: Card Almanac
+Opponent deck: Gadget (Michael Johnson, SJC Costa Mesa, March 2008, Top 16)
 [IDS_SOLO.CHAPTER20020062_EXPLANATION]
 Progression Level: 25
 Core Set: Gladiator's Assault
 Ban List: 2008_03 DAD Return Format
 Opponent: Witch Doctor of Sparta
 Unlocks: 25-Game: Tag Force Evolution, 25-Game: World Championship 2008
+Opponent deck: Gadget (AlephYa2, YGOFrom0 Retro Tournament 24, February 2025, Top 8)
 [IDS_SOLO.CHAPTER20020063_EXPLANATION]
 Progression Level: 25
 Core Set: Gladiator's Assault
@@ -1003,78 +1090,91 @@ Core Set: Phantom Darkness
 Ban List: 2008_03 DAD Return Format
 Opponent: Yubel – Terror Incarnate
 Unlocks: 
+Opponent deck: DAD Turbo (Miguel Garcia, U.S. National Championship, June 2008, Top 4)
 [IDS_SOLO.CHAPTER20020068_EXPLANATION]
 Progression Level: 26
 Core Set: Phantom Darkness
 Ban List: 2008_03 DAD Return Format
 Opponent: The Immortal Bushi
 Unlocks: 
+Opponent deck: DAD Return (Mario Matheu, SJC Minneapolis, April 2008, 2nd)
 [IDS_SOLO.CHAPTER20020069_EXPLANATION]
 Progression Level: 26
 Core Set: Phantom Darkness
 Ban List: 2008_03 DAD Return Format
 Opponent: Return Zombie
 Unlocks: 
+Opponent deck: Economics FTK (Erin Diaz, SJC Columbus, March 2008, 2nd)
 [IDS_SOLO.CHAPTER20020070_EXPLANATION]
 Progression Level: 26
 Core Set: Phantom Darkness
 Ban List: 2008_03 DAD Return Format
 Opponent: Rainbow Neos
 Unlocks: 27-Core: Light of Destruction
+Boss deck: Gladiator Beast (plevitin, SJC Minneapolis, April 2008, 1st)
 [IDS_SOLO.CHAPTER20020071_EXPLANATION]
 Progression Level: 26
 Core Set: Phantom Darkness
 Ban List: 2008_03 DAD Return Format
 Opponent: Superalloy Beast Raptinus
 Unlocks: 26-Structure Deck: The Dark Emperor
+Opponent deck: Gravekeeper Monarch (Chioh Yim, SJC Nashville, May 2008, Top 16)
 [IDS_SOLO.CHAPTER20020072_EXPLANATION]
 Progression Level: 26
 Core Set: Phantom Darkness
 Ban List: 2008_03 DAD Return Format
 Opponent: Doom Dozer
 Unlocks: 26-TP: Champion Pack: Game Six
+Opponent deck: Diamond Dude Turbo (kperovic, SJC Minneapolis, April 2008, Top 16)
 [IDS_SOLO.CHAPTER20020073_EXPLANATION]
 Progression Level: 27
 Core Set: Light of Destruction
 Ban List: 2008-09 TeleDAD Format 
 Opponent: Substitoad
 Unlocks: 
+Opponent deck: Hero Beat (Marco Cesario, SJC Indianapolis, August 2008, Top 8)
 [IDS_SOLO.CHAPTER20020074_EXPLANATION]
 Progression Level: 27
 Core Set: Light of Destruction
 Ban List: 2008-09 TeleDAD Format 
 Opponent: Arcana Force XXI – The World
 Unlocks: 27-Starter Deck: Yu-Gi-Oh! 5D's
+Opponent deck: Soul Control (Christian Acosta, SJC San Francisco 2008, January 2009, Top 16)
 [IDS_SOLO.CHAPTER20020075_EXPLANATION]
 Progression Level: 27
 Core Set: Light of Destruction
 Ban List: 2008-09 TeleDAD Format 
 Opponent: Batteryman Micro-Cell
 Unlocks: 27-TP: Champion Pack: Game Seven
+Opponent deck: Monarch (David Dursun, World Championships, August 2008, Top 16)
 [IDS_SOLO.CHAPTER20020076_EXPLANATION]
 Progression Level: 27
 Core Set: Light of Destruction
 Ban List: 2008-09 TeleDAD Format 
 Opponent: Junk Warrior
 Unlocks: 28-Core: The Duelist Genesis
+Boss deck: Soul Control (Michael Rossitto, SJC Baltimore, September 2008, Top 16)
 [IDS_SOLO.CHAPTER20020077_EXPLANATION]
 Progression Level: 27
 Core Set: Light of Destruction
 Ban List: 2008-09 TeleDAD Format 
 Opponent: Ultimate Ancient Gear Golem
 Unlocks: 27-Reprint: Retro Pack
+Opponent deck: Soul Control (Jose Prado, SJC Indianapolis, August 2008, Top 16)
 [IDS_SOLO.CHAPTER20020078_EXPLANATION]
 Progression Level: 27
 Core Set: Light of Destruction
 Ban List: 2008-09 TeleDAD Format 
 Opponent: Judgement Dragon
 Unlocks: 27-Bonus: Premium Pack 2
+Opponent deck: Monarch (Alejandro Vivaldo Reyes Suarez, World Championships, August 2008, Top 16)
 [IDS_SOLO.CHAPTER20030001_EXPLANATION]
 Progression Level: 28
 Core Set: The Duelist Genesis
 Ban List: 2009-03 Cat Format 
 Opponent: Thought Ruler Archfiend
 Unlocks: 
+Opponent deck: Lightsworn (Bobby Chambers, SJC Anaheim, April 2009, Top 16)
 [IDS_SOLO.CHAPTER20030002_EXPLANATION]
 Progression Level: 28
 Core Set: The Duelist Genesis
@@ -1147,84 +1247,98 @@ Core Set: Crimson Crisis
 Ban List: 2009-03 Cat Format 
 Opponent: Red Dragon Archfiend/Assault Mode
 Unlocks: 
+Opponent deck: Blackwing (Joseph Franzo, SJC Anaheim, April 2009, Top 4)
 [IDS_SOLO.CHAPTER20030014_EXPLANATION]
 Progression Level: 30
 Core Set: Crimson Crisis
 Ban List: 2009-03 Cat Format 
 Opponent: B.E.S. Covered Core
 Unlocks: 
+Opponent deck: Twilight (Stephen Harrison-Daly, European Championship, June 2009, Top 16)
 [IDS_SOLO.CHAPTER20030015_EXPLANATION]
 Progression Level: 30
 Core Set: Crimson Crisis
 Ban List: 2009-03 Cat Format 
 Opponent: Flying Fortress SKY FIRE
 Unlocks: 
+Opponent deck: Gladiator Beast (George Garcia, SJC Anaheim, April 2009, Top 8)
 [IDS_SOLO.CHAPTER20030016_EXPLANATION]
 Progression Level: 30
 Core Set: Crimson Crisis
 Ban List: 2009-03 Cat Format 
 Opponent: Black Wing Armor Master
 Unlocks: 31-Core: Raging Battle
+Boss deck: Lightsworn (Jarel Winston, SJC Anaheim, April 2009, 2nd)
 [IDS_SOLO.CHAPTER20030017_EXPLANATION]
 Progression Level: 30
 Core Set: Crimson Crisis
 Ban List: 2009-03 Cat Format 
 Opponent: Cosmic Fortress Gol’gar
 Unlocks: 30-Structure Deck: Spellcaster's Command
+Opponent deck: Gladiator Beast (Justin Trias, SJC Anaheim, April 2009, Top 8)
 [IDS_SOLO.CHAPTER20030018_EXPLANATION]
 Progression Level: 30
 Core Set: Crimson Crisis
 Ban List: 2009-03 Cat Format 
 Opponent: Debris Dragon
 Unlocks: 30-Duelist Pack Tins: 2009
+Opponent deck: Lightsworn (Pinkes Rene, European Championship, June 2009, Top 16)
 [IDS_SOLO.CHAPTER20030019_EXPLANATION]
 Progression Level: 31
 Core Set: Raging Battle
 Ban List: 2009_09 Lightsworn Format 
 Opponent: Earthbound Immortal Wiraqocha Rasca
 Unlocks: 31-Game: World Championship 2009
+Opponent deck: ZombieSworn (Theodore Stamelatos, SJ Los Angeles, January 2010, Top 4)
 [IDS_SOLO.CHAPTER20030020_EXPLANATION]
 Progression Level: 31
 Core Set: Raging Battle
 Ban List: 2009_09 Lightsworn Format 
 Opponent: Deep Sea Diva
 Unlocks: 31-Game: Wheelie Breakers
+Opponent deck: Chaos Control (Mako Tsunami, SJC Austin, October 2009, Top 8)
 [IDS_SOLO.CHAPTER20030021_EXPLANATION]
 Progression Level: 31
 Core Set: Raging Battle
 Ban List: 2009_09 Lightsworn Format 
 Opponent: Ojama Red
 Unlocks: 31-Starter Deck: 5D's 2009
+Opponent deck: Zombie TeleDAD (Roy St. Clair, SJC Austin, October 2009, Top 16)
 [IDS_SOLO.CHAPTER20030022_EXPLANATION]
 Progression Level: 31
 Core Set: Raging Battle
 Ban List: 2009_09 Lightsworn Format 
 Opponent: Power Tool Dragon
 Unlocks: 32-Core: Ancient Prophecy
+Boss deck: Lightsworn (Chris Bryson, SJC Austin, October 2009, Top 4)
 [IDS_SOLO.CHAPTER20030023_EXPLANATION]
 Progression Level: 31
 Core Set: Raging Battle
 Ban List: 2009_09 Lightsworn Format 
 Opponent: Koa’ki Meiru Valafar
 Unlocks: 31-Duelist Pack: Yugi
+Opponent deck: Twilight (Rudy Munoz, SJC Austin, October 2009, Top 16)
 [IDS_SOLO.CHAPTER20030024_EXPLANATION]
 Progression Level: 31
 Core Set: Raging Battle
 Ban List: 2009_09 Lightsworn Format 
 Opponent: King of the Beasts
 Unlocks: 31-Reprint: Retro Pack 2
+Opponent deck: Zombies (Rodrigo Togores, SJ Los Angeles, January 2010, Top 16)
 [IDS_SOLO.CHAPTER20030025_EXPLANATION]
 Progression Level: 32
 Core Set: Ancient Prophecy
 Ban List: 2010-03 Edison Format 
 Opponent: X-Saber Urbellum
 Unlocks: 
+Opponent deck: Doomcaliber Gadgets (Renaldo Lainez, SJ Edison, April 2010, 2nd)
 [IDS_SOLO.CHAPTER20030026_EXPLANATION]
 Progression Level: 32
 Core Set: Ancient Prophecy
 Ban List: 2010-03 Edison Format 
 Opponent: Superancient Deepsea King Coelacanth
 Unlocks: 
+Opponent deck: Lightsworn (WagaMuffin, IMNerd Circuit Series 5 - Edison $1K, September 2026, Top 8)
 [IDS_SOLO.CHAPTER20030027_EXPLANATION]
 Progression Level: 32
 Core Set: Ancient Prophecy
@@ -1255,240 +1369,280 @@ Core Set: Stardust Overdrive
 Ban List: 2010-03 Edison Format 
 Opponent: Divine Grace – Northwemko
 Unlocks: 
+Opponent deck: Blackwing (Nick Ma, YCS Washington D.C., May 2010, Top 32)
 [IDS_SOLO.CHAPTER20030032_EXPLANATION]
 Progression Level: 33
 Core Set: Stardust Overdrive
 Ban List: 2010-03 Edison Format 
 Opponent: Solitaire Magician
 Unlocks: 33-Game: Tag Force 4
+Opponent deck: Gigavise (NB96, Edison World Championship Qualifier 14, September 2026, 2nd)
 [IDS_SOLO.CHAPTER20030033_EXPLANATION]
 Progression Level: 33
 Core Set: Stardust Overdrive
 Ban List: 2010-03 Edison Format 
 Opponent: Mother Spider
 Unlocks: 
+Opponent deck: Frog Control (Luigi Kira Alici, Edison World Championship Qualifier 14, September 2026, Top 4)
 [IDS_SOLO.CHAPTER20030034_EXPLANATION]
 Progression Level: 33
 Core Set: Stardust Overdrive
 Ban List: 2010-03 Edison Format 
 Opponent: Gladiator Beast Gaiodiaz
 Unlocks: 34-Core: Absolute Powerforce
+Boss deck: Frog OTK (sebapierino., Patron Battle Royale 58, September 2026, Top 4)
 [IDS_SOLO.CHAPTER20030035_EXPLANATION]
 Progression Level: 33
 Core Set: Stardust Overdrive
 Ban List: 2010-03 Edison Format 
 Opponent: Majestic Star Dragon
 Unlocks: 33-TP: Turbo Pack: Booster Two
+Opponent deck: Frog Monarch (Duck Tracey, Seven Eras Subscriber Bonanza 19, July 2026, Top 8)
 [IDS_SOLO.CHAPTER20030036_EXPLANATION]
 Progression Level: 33
 Core Set: Stardust Overdrive
 Ban List: 2010-03 Edison Format 
 Opponent: Blackwing – Silverwind the Ascendant
 Unlocks: 33-Duelist Pack: Yusei 2
+Opponent deck: Blackwing (Bryan Ortiz, SJC Edison, April 2010, Top 16)
 [IDS_SOLO.CHAPTER20030037_EXPLANATION]
 Progression Level: 34
 Core Set: Absolute Powerforce
 Ban List: 2010-03 Edison Format 
 Opponent: Machina Fortress
 Unlocks: 
+Opponent deck: Quickdraw Plant (Jeff Jones, SJC Edison, April 2010, 1st)
 [IDS_SOLO.CHAPTER20030038_EXPLANATION]
 Progression Level: 34
 Core Set: Absolute Powerforce
 Ban List: 2010-03 Edison Format 
 Opponent: Reptilianne Hydra
 Unlocks: 34-Structure Deck: Machina Mayhem
+Opponent deck: Gladiator Beast (David Duran, YCS Washington D.C., May 2010, Top 16)
 [IDS_SOLO.CHAPTER20030039_EXPLANATION]
 Progression Level: 34
 Core Set: Absolute Powerforce
 Ban List: 2010-03 Edison Format 
 Opponent: Skull Conductor
 Unlocks: 34-Game: World Championship 2010
+Opponent deck: Twilight (Chris Pittao, SJC Edison, April 2010, Top 16)
 [IDS_SOLO.CHAPTER20030040_EXPLANATION]
 Progression Level: 34
 Core Set: Absolute Powerforce
 Ban List: 2010-03 Edison Format 
 Opponent: Oracle of the Sun
 Unlocks: 35-Core: The Shining Darkness
+Boss deck: Gadgets WCQ (Ivan Anamaria, United States WCQ, July 2010, Top 8)
 [IDS_SOLO.CHAPTER20030041_EXPLANATION]
 Progression Level: 34
 Core Set: Absolute Powerforce
 Ban List: 2010-03 Edison Format 
 Opponent: Cyber End Dragon
 Unlocks: 34-Duelist Pack Collection Tin: 2010
+Opponent deck: Gigavise (sassp, Peak of the Beak 12, August 2026, 1st)
 [IDS_SOLO.CHAPTER20030042_EXPLANATION]
 Progression Level: 34
 Core Set: Absolute Powerforce
 Ban List: 2010-03 Edison Format 
 Opponent: Dark Simorgh
 Unlocks: 34-Duelist Pack: Kaiba
+Opponent deck: Frog OTK (Lonnen, Peak of the Beak 12, August 2026, Top 16)
 [IDS_SOLO.CHAPTER20030043_EXPLANATION]
 Progression Level: 35
 Core Set: The Shining Darkness
 Ban List: 2010-09 X-Saber Format 
 Opponent: Herald of Perfection
 Unlocks: 
+Opponent deck: X-Saber (Ali Yassine, YCS Toronto, September 2010, Top 16)
 [IDS_SOLO.CHAPTER20030044_EXPLANATION]
 Progression Level: 35
 Core Set: The Shining Darkness
 Ban List: 2010-09 X-Saber Format 
 Opponent: The Dark Creator
 Unlocks: 35-Collectible Tins: 2010
+Opponent deck: Blackwing (Tommy Cecil, YCS San Jose, September 2010, Top 4)
 [IDS_SOLO.CHAPTER20030045_EXPLANATION]
 Progression Level: 35
 Core Set: The Shining Darkness
 Ban List: 2010-09 X-Saber Format 
 Opponent: Ally of Justice Catastor
 Unlocks: 35-Starter Deck: Duelist Toolbox
+Opponent deck: Gladiator Beast (Baris Bulut, YCS Bochum, September 2010, Top 8)
 [IDS_SOLO.CHAPTER20030046_EXPLANATION]
 Progression Level: 35
 Core Set: The Shining Darkness
 Ban List: 2010-09 X-Saber Format 
 Opponent: Enishi, Shien’s Chancellor
 Unlocks: 36-Core: Duelist Revolution
+Boss deck: Lightsworn (Steven Richardson, YCS Philadelphia, October 2010, Top 32)
 [IDS_SOLO.CHAPTER20030047_EXPLANATION]
 Progression Level: 35
 Core Set: The Shining Darkness
 Ban List: 2010-09 X-Saber Format 
 Opponent: Infernity Doom Dragon
 Unlocks: 35-TP: Turbo Pack: Booster Three
+Opponent deck: Herald Control (PradaG, Clody Formats Tournament 3, September 2026, 2nd)
 [IDS_SOLO.CHAPTER20030048_EXPLANATION]
 Progression Level: 35
 Core Set: The Shining Darkness
 Ban List: 2010-09 X-Saber Format 
 Opponent: Naturia Leodrake
 Unlocks: 35-Bonus: Hidden Arsenal 2
+Opponent deck: Herald Control (dominicoski, Clody Formats Tournament 3, September 2026, Top 4)
 [IDS_SOLO.CHAPTER20030049_EXPLANATION]
 Progression Level: 36
 Core Set: Duelist Revolution
 Ban List: 2010-09 X-Saber Format 
 Opponent: Amazoness Queen
 Unlocks: 
+Opponent deck: Plant Synchro (Kenny Kwan, YCS Philadelphia, October 2010, 2nd)
 [IDS_SOLO.CHAPTER20030050_EXPLANATION]
 Progression Level: 36
 Core Set: Duelist Revolution
 Ban List: 2010-09 X-Saber Format 
 Opponent: Wattchimera
 Unlocks: 
+Opponent deck: Machina Gadget (Alex Vansant, YCS Toronto, September 2010, Top 4)
 [IDS_SOLO.CHAPTER20030051_EXPLANATION]
 Progression Level: 36
 Core Set: Duelist Revolution
 Ban List: 2010-09 X-Saber Format 
 Opponent: Genex Controller
 Unlocks: 
+Opponent deck: Scrap (Christopher Ryan Miles, YCS Philadelphia, October 2010, Top 16)
 [IDS_SOLO.CHAPTER20030052_EXPLANATION]
 Progression Level: 36
 Core Set: Duelist Revolution
 Ban List: 2010-09 X-Saber Format 
 Opponent: Hyper Psychic Blaster
 Unlocks: 37-Core: Starstrike Blast
+Boss deck: X-Saber (Jonathan Vazquez Herrera, YCS Mexico City, November 2010, 1st)
 [IDS_SOLO.CHAPTER20030053_EXPLANATION]
 Progression Level: 36
 Core Set: Duelist Revolution
 Ban List: 2010-09 X-Saber Format 
 Opponent: Thunder Unicorn
 Unlocks: 36-Game: Tag Force 5
+Opponent deck: Flamvell (Pongyue Moua, YCS Philadelphia, October 2010, Top 32)
 [IDS_SOLO.CHAPTER20030054_EXPLANATION]
 Progression Level: 36
 Core Set: Duelist Revolution
 Ban List: 2010-09 X-Saber Format 
 Opponent: Scrap Archfiend
 Unlocks: 36-Structure Deck: Marik
+Opponent deck: Machina Control (Mario Matheu, YCS San Jose, September 2010, Top 16)
 [IDS_SOLO.CHAPTER20030055_EXPLANATION]
 Progression Level: 37
 Core Set: Starstrike Blast
 Ban List: 2011-03 Trishula Format 
 Opponent: Dragunity Knight – Vajrayana
 Unlocks: 
+Opponent deck: Gravekeeper (Jonathan Weigle, YCS Anaheim, April 2011, 2nd)
 [IDS_SOLO.CHAPTER20030056_EXPLANATION]
 Progression Level: 37
 Core Set: Starstrike Blast
 Ban List: 2011-03 Trishula Format 
 Opponent: Worm Queen
 Unlocks: 37-Game: Duel Transer
+Opponent deck: Fish OTK (Nicky Lacaille, YCS Charlotte, March 2011, 2nd)
 [IDS_SOLO.CHAPTER20030057_EXPLANATION]
 Progression Level: 37
 Core Set: Starstrike Blast
 Ban List: 2011-03 Trishula Format 
 Opponent: Fabled Leviathan
 Unlocks: 37-TP: Turbo Pack: Booster Four
+Opponent deck: Empty Jar (Paul Cooper, YCS Charlotte, March 2011, Top 4)
 [IDS_SOLO.CHAPTER20030058_EXPLANATION]
 Progression Level: 37
 Core Set: Starstrike Blast
 Ban List: 2011-03 Trishula Format 
 Opponent: Dewloren, Tiger King of the Ice Barrier
 Unlocks: 38-Core: Storm of Ragnarok
+Boss deck: Zombies (Traviis Massengale, YCS Orlando, May 2011, 1st)
 [IDS_SOLO.CHAPTER20030059_EXPLANATION]
 Progression Level: 37
 Core Set: Starstrike Blast
 Ban List: 2011-03 Trishula Format 
 Opponent: Karakuri Strategist mdl 248 “Nishipachi”
 Unlocks: 37-Duelist Pack: Yusei 3
+Opponent deck: Zombie (Andres Ochoa, YCS Anaheim, April 2011, Top 32)
 [IDS_SOLO.CHAPTER20030060_EXPLANATION]
 Progression Level: 37
 Core Set: Starstrike Blast
 Ban List: 2011-03 Trishula Format 
 Opponent: Jurrac Giganoto
 Unlocks: 37-Bonus: Hidden Arsenal 3
+Opponent deck: Plant Synchro (Tudor Mitchell, YCS Paris, April 2011, 2nd)
 [IDS_SOLO.CHAPTER20030061_EXPLANATION]
 Progression Level: 38
 Core Set: Storm of Ragnarok
 Ban List: 2011-03 Trishula Format 
 Opponent: Malefic Paradox Dragon
 Unlocks: 38-Promo: Bonds Beyond Time Movie Pack
+Opponent deck: Water Plant Synchro (Peter Nguyen, YCS Providence, June 2011, Top 4)
 [IDS_SOLO.CHAPTER20030062_EXPLANATION]
 Progression Level: 38
 Core Set: Storm of Ragnarok
 Ban List: 2011-03 Trishula Format 
 Opponent: Odin, Father of the Aesir
 Unlocks: 38-TP: Turbo Pack: Booster Five
+Opponent deck: Six Samurai (Vincent Cassello, YCS Orlando, May 2011, Top 4)
 [IDS_SOLO.CHAPTER20030063_EXPLANATION]
 Progression Level: 38
 Core Set: Storm of Ragnarok
 Ban List: 2011-03 Trishula Format 
 Opponent: Elemental HERO Voltic
 Unlocks: 38-Duelist Pack Collection Tin: 2011
+Opponent deck: Zombie Plant (Travis Massengale, YCS Orlando, May 2011, 1st)
 [IDS_SOLO.CHAPTER20030064_EXPLANATION]
 Progression Level: 38
 Core Set: Storm of Ragnarok
 Ban List: 2011-03 Trishula Format 
 Opponent: Earthbound Linewalker
 Unlocks: 39-Core: Extreme Victory
+Boss deck: X-Saber (Stephan Sluis, YCS Paris, April 2011, 1st)
 [IDS_SOLO.CHAPTER20030065_EXPLANATION]
 Progression Level: 38
 Core Set: Storm of Ragnarok
 Ban List: 2011-03 Trishula Format 
 Opponent: Neo Flamvelll Origin
 Unlocks: 38-Structure Deck: Dragunity Legion
+Opponent deck: Machina Karakuri (Jeremy Henrion, YCS Paris, April 2011, Top 16)
 [IDS_SOLO.CHAPTER20030066_EXPLANATION]
 Progression Level: 38
 Core Set: Storm of Ragnarok
 Ban List: 2011-03 Trishula Format 
 Opponent: Naturia Exterio
 Unlocks: 38-Bonus: Hidden Arsenal 4: Trishula's Triumph
+Opponent deck: Dragunity (Anthony Eckroth, YCS Anaheim, April 2011, Top 32)
 [IDS_SOLO.CHAPTER20030067_EXPLANATION]
 Progression Level: 39
 Core Set: Extreme Victory
 Ban List: 2011-09 Tengu Plant Format
 Opponent: Meklord Emperor Skiel
 Unlocks: 39-Game: World Championship 2011
+Opponent deck: Machina Gadgets (Carl Waite, YCS Columbus, November 2011, Top 16)
 [IDS_SOLO.CHAPTER20030068_EXPLANATION]
 Progression Level: 39
 Core Set: Extreme Victory
 Ban List: 2011-09 Tengu Plant Format
 Opponent: Junk Berserker
 Unlocks: 39-TP: Turbo Pack: Booster Six
+Opponent deck: X-Saber (zm, Trishula's Triumph 9, May 2026, Top 4)
 [IDS_SOLO.CHAPTER20030069_EXPLANATION]
 Progression Level: 39
 Core Set: Extreme Victory
 Ban List: 2011-09 Tengu Plant Format
 Opponent: Jar Turtle
 Unlocks: 39-Starter Deck: Dawn of the Xyz
+Opponent deck: Gladiator Beast (Ikaros, YGOFrom0 Retro Tournament 34, December 2025, Top 8)
 [IDS_SOLO.CHAPTER20030070_EXPLANATION]
 Progression Level: 39
 Core Set: Extreme Victory
 Ban List: 2011-09 Tengu Plant Format
 Opponent: Mad Lobster
 Unlocks: 40-Core: Generation Force
+Boss deck: Gadgets (Andrew Salazar, YCS Indianapolis, August 2011, Top 16)
 [IDS_SOLO.CHAPTER20030071_EXPLANATION]
 Progression Level: 39
 Core Set: Extreme Victory
@@ -1507,60 +1661,70 @@ Core Set: Generation Force
 Ban List: 2011-09 Tengu Plant Format
 Opponent: Wind-Up Zenmaister
 Unlocks: 
+Opponent deck: Agent (Alexander St-Louis, YCS Toronto, September 2011, Top 4)
 [IDS_SOLO.CHAPTER20040002_EXPLANATION]
 Progression Level: 40
 Core Set: Generation Force
 Ban List: 2011-09 Tengu Plant Format
 Opponent: Super Crashbug
 Unlocks: 
+Opponent deck: T.G. Stun (Tyler Nolan, YCS Toronto, September 2011, Top 4)
 [IDS_SOLO.CHAPTER20040003_EXPLANATION]
 Progression Level: 40
 Core Set: Generation Force
 Ban List: 2011-09 Tengu Plant Format
 Opponent: Masked HERO Goka
 Unlocks: 
+Opponent deck: T.G. Agent (Galo Orbea Davila, YCS Ecuador, September 2011, 1st)
 [IDS_SOLO.CHAPTER20040004_EXPLANATION]
 Progression Level: 40
 Core Set: Generation Force
 Ban List: 2011-09 Tengu Plant Format
 Opponent: Grapha, Dragon Lord of Dark World
 Unlocks: 41-Core: Photon Shockwave
+Boss deck: Plant Synchro (MaxEffort313, YCS Toronto, September 2011, Top 8)
 [IDS_SOLO.CHAPTER20040005_EXPLANATION]
 Progression Level: 40
 Core Set: Generation Force
 Ban List: 2011-09 Tengu Plant Format
 Opponent: Pain Painter
 Unlocks: 40-Collectible Tins: 2011
+Opponent deck: Six Samurai (Brandon Gonzalez Rodriguez, YCS Guadalajara, February 2012, Top 16)
 [IDS_SOLO.CHAPTER20040006_EXPLANATION]
 Progression Level: 40
 Core Set: Generation Force
 Ban List: 2011-09 Tengu Plant Format
 Opponent: Spearfish Soldier
 Unlocks: 40-Structure Deck: Gates of the Underworld
+Opponent deck: Nordic (Dave Trepanier, YCS Toronto, September 2011, Top 32)
 [IDS_SOLO.CHAPTER20040007_EXPLANATION]
 Progression Level: 41
 Core Set: Photon Shockwave
 Ban List: 2012-03 Dino Rabbit Format
 Opponent: Daigusto Gulldos
 Unlocks: 
+Opponent deck: Dino Rabbit (Daniel Nunnally, YCS Chicago, April 2012, 2nd)
 [IDS_SOLO.CHAPTER20040008_EXPLANATION]
 Progression Level: 41
 Core Set: Photon Shockwave
 Ban List: 2012-03 Dino Rabbit Format
 Opponent: Gishki Vanity
 Unlocks: 
+Opponent deck: Dino Rabbit (Aaron Noel, YCS Chicago, May 2012, 1st)
 [IDS_SOLO.CHAPTER20040009_EXPLANATION]
 Progression Level: 41
 Core Set: Photon Shockwave
 Ban List: 2012-03 Dino Rabbit Format
 Opponent: Vylon Soldier
 Unlocks: 
+Opponent deck: Frog Monarchs (Aaron Coker, Regional - Lafayette Louisiana, May 2012, Top 16)
 [IDS_SOLO.CHAPTER20040010_EXPLANATION]
 Progression Level: 41
 Core Set: Photon Shockwave
 Ban List: 2012-03 Dino Rabbit Format
 Opponent: Evolzar Dolkka
 Unlocks: 42-Core: Order of Chaos
+Boss deck: Exodia (Jarel Winston, World Championship, August 2012, Top 8)
 [IDS_SOLO.CHAPTER20040011_EXPLANATION]
 Progression Level: 41
 Core Set: Photon Shockwave
@@ -1579,426 +1743,497 @@ Core Set: Order of Chaos
 Ban List: 2012-03 Dino Rabbit Format
 Opponent: Photon Crusher
 Unlocks: 
+Opponent deck: Wind-Up (Anthony Tutu, European WCQ, July 2012, Top 8)
 [IDS_SOLO.CHAPTER20040014_EXPLANATION]
 Progression Level: 42
 Core Set: Order of Chaos
 Ban List: 2012-03 Dino Rabbit Format
 Opponent: Steelswarm Roach
 Unlocks: 
+Opponent deck: Chaos Dragon (Edgar Hale, YCS Chicago, April 2012, Top 8)
 [IDS_SOLO.CHAPTER20040015_EXPLANATION]
 Progression Level: 42
 Core Set: Order of Chaos
 Ban List: 2012-03 Dino Rabbit Format
 Opponent: Master of Oz
 Unlocks: 
+Opponent deck: Dino Rabbit (Jack Bruun, YCS Toulouse, April 2012, 2nd)
 [IDS_SOLO.CHAPTER20040016_EXPLANATION]
 Progression Level: 42
 Core Set: Order of Chaos
 Ban List: 2012-03 Dino Rabbit Format
 Opponent: Lightpulsar Dragon
 Unlocks: 43-Core: Galactic Overlord
+Boss deck: Frog Monarch (Cuquecu, Dino Rush 1, July 2024, Top 4)
 [IDS_SOLO.CHAPTER20040017_EXPLANATION]
 Progression Level: 42
 Core Set: Order of Chaos
 Ban List: 2012-03 Dino Rabbit Format
 Opponent: Blade Armor Ninja
 Unlocks: 42-Starter Deck: Xyz Symphony
+Opponent deck: Wind-Up (Jake Quinsee, European WCQ, July 2012, Top 16)
 [IDS_SOLO.CHAPTER20040018_EXPLANATION]
 Progression Level: 42
 Core Set: Order of Chaos
 Ban List: 2012-03 Dino Rabbit Format
 Opponent: Tentempo the Percussion Djinn
 Unlocks: 42-Structure Deck: Dragons Collide
+Opponent deck: Wind-Up (Emanuele Distefano, European WCQ, July 2012, Top 32)
 [IDS_SOLO.CHAPTER20040019_EXPLANATION]
 Progression Level: 43
 Core Set: Galactic Overlord
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Hieratic Dragon King of Atum
 Unlocks: 43-TP: Turbo Pack: Booster Eight
+Opponent deck: Six Samurai (Junior Dorcin, YCS Indianapolis, September 2012, 1st)
 [IDS_SOLO.CHAPTER20040020_EXPLANATION]
 Progression Level: 43
 Core Set: Galactic Overlord
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Lightray Sorcerer
 Unlocks: 43-Structure Deck: Samurai Warlords
+Opponent deck: Gladiator Beast (Brad Pironciak, YCS Providence, October 2012, Top 16)
 [IDS_SOLO.CHAPTER20040021_EXPLANATION]
 Progression Level: 43
 Core Set: Galactic Overlord
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Watthydra
 Unlocks: 43-Collectible Tins: 2012
+Opponent deck: Monster Mash (Ellis Maddalena, YCS Providence, October 2012, Top 32)
 [IDS_SOLO.CHAPTER20040022_EXPLANATION]
 Progression Level: 43
 Core Set: Galactic Overlord
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Inzektor Exa-Beeetle
 Unlocks: 44-Core: Return of the Duelist
+Boss deck: Wind-Up (Kristopher Valters, YCS Indianapolis, September 2012, 2nd)
 [IDS_SOLO.CHAPTER20040023_EXPLANATION]
 Progression Level: 43
 Core Set: Galactic Overlord
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Koa’ki Meiru Doom
 Unlocks: 43-Bonus: Battle Pack: Epic Dawn
+Opponent deck: Dark World (absolute.ly, YCS Toronto, September 2012, Top 32)
 [IDS_SOLO.CHAPTER20040024_EXPLANATION]
 Progression Level: 43
 Core Set: Galactic Overlord
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Scrap Twin Dragon
 Unlocks: 43-Bonus: Hidden Arsenal 6: Omega Xyz
+Opponent deck: Dino Rabbit (David Chavarria, YCS Guatemala, September 2012, 2nd)
 [IDS_SOLO.CHAPTER20040025_EXPLANATION]
 Progression Level: 44
 Core Set: Return of the Duelist
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Gear Gigant X
 Unlocks: 
+Opponent deck: Karakuri Geargia (Robert Boyajian, YCS Guatemala, September 2012, Top 4)
 [IDS_SOLO.CHAPTER20040026_EXPLANATION]
 Progression Level: 44
 Core Set: Return of the Duelist
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Superdimensional Robot Galaxy Destroyer
 Unlocks: 
+Opponent deck: Psychic (Jeff Jones, YCS Toronto, September 2012, 2nd)
 [IDS_SOLO.CHAPTER20040027_EXPLANATION]
 Progression Level: 44
 Core Set: Return of the Duelist
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Madolche Puddingcess
 Unlocks: 
+Opponent deck: Gishki FTK (ACP, YCS San Diego, April 2013, Top 32)
 [IDS_SOLO.CHAPTER20040028_EXPLANATION]
 Progression Level: 44
 Core Set: Return of the Duelist
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Poseidra, the Atlantean Dragoon
 Unlocks: 45-Core: Abyss Rising
+Boss deck: Wind-Ups (Kris Valters, YCS Indianapolis, September 2012, 2nd)
 [IDS_SOLO.CHAPTER20040029_EXPLANATION]
 Progression Level: 44
 Core Set: Return of the Duelist
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Chronomaly Crystal Chrononaut
 Unlocks: 44-Structure Deck: Realm of the Sea Emperor
+Opponent deck: Karakuri Psychic (Joonhyuk Park, YCS Toronto, September 2012, Top 32)
 [IDS_SOLO.CHAPTER20040030_EXPLANATION]
 Progression Level: 44
 Core Set: Return of the Duelist
 Ban List: 2012-09 Wind-Up Format 
 Opponent: Thunder King Rai-Oh
 Unlocks: 
+Opponent deck: Agent (Kevin Rubio, YCS Providence, October 2012, Top 16)
 [IDS_SOLO.CHAPTER20040031_EXPLANATION]
 Progression Level: 45
 Core Set: Abyss Rising
 Ban List: 2013-03 Meadowlands Format 
 Opponent: Mermail Abyssmegalo
 Unlocks: 
+Opponent deck: Karakuri (Mauricio Pavon Anzaldo, YCS San Diego, April 2013, Top 32)
 [IDS_SOLO.CHAPTER20040032_EXPLANATION]
 Progression Level: 45
 Core Set: Abyss Rising
 Ban List: 2013-03 Meadowlands Format 
 Opponent: Snowdust Giant
 Unlocks: 
+Opponent deck: Mermail (Robert Scarpelli, YCS Austin, March 2013, Top 32)
 [IDS_SOLO.CHAPTER20040033_EXPLANATION]
 Progression Level: 45
 Core Set: Abyss Rising
 Ban List: 2013-03 Meadowlands Format 
 Opponent: Heroic Champion – Excalibur
 Unlocks: 
+Opponent deck: Karakuri Geargia (Homam Jamal, YCS San Diego, April 2013, Top 32)
 [IDS_SOLO.CHAPTER20040034_EXPLANATION]
 Progression Level: 45
 Core Set: Abyss Rising
 Ban List: 2013-03 Meadowlands Format 
 Opponent: Empress of Prophecy
 Unlocks: 46-Core: Cosmo Blazer
+Boss deck: Six Samurai (Lovro Lukavecki, WCQ - Croatia Nationals, June 2013, Top 4)
 [IDS_SOLO.CHAPTER20040035_EXPLANATION]
 Progression Level: 45
 Core Set: Abyss Rising
 Ban List: 2013-03 Meadowlands Format 
 Opponent: Locomotion R-Genex
 Unlocks: 45-TP: Astral Pack One
+Opponent deck: Frog Monarch (Tamer, REDU Multi-Day 9, June 2026, Top 8)
 [IDS_SOLO.CHAPTER20040036_EXPLANATION]
 Progression Level: 45
 Core Set: Abyss Rising
 Ban List: 2013-03 Meadowlands Format 
 Opponent: Mist Valley Thunder Lord
 Unlocks: 
+Opponent deck: Karakuri (Roy St. Clair, YCS Austin, March 2013, Top 16)
 [IDS_SOLO.CHAPTER20040037_EXPLANATION]
 Progression Level: 46
 Core Set: Cosmo Blazer
 Ban List: 2013-03 Meadowlands Format 
 Opponent: Fire King Avatar Barong
 Unlocks: 
+Opponent deck: Spellbook (Mercel Leucker, YCS Lille, April 2013, Top 8)
 [IDS_SOLO.CHAPTER20040038_EXPLANATION]
 Progression Level: 46
 Core Set: Cosmo Blazer
 Ban List: 2013-03 Meadowlands Format 
 Opponent: Number 39: Utopia
 Unlocks: 46-Bonus: Star Pack 2013
+Opponent deck: Fire Fist (Jose Ricardo Menendez Menendez, YCS Costa Rica, April 2013, Top 8)
 [IDS_SOLO.CHAPTER20040039_EXPLANATION]
 Progression Level: 46
 Core Set: Cosmo Blazer
 Ban List: 2013-03 Meadowlands Format 
 Opponent: D.D. Jet Iron
 Unlocks: 46-TP: Astral Pack Two
+Opponent deck: Mermail (James Guerrero, YCS Meadowlands, May 2013, 2nd)
 [IDS_SOLO.CHAPTER20040040_EXPLANATION]
 Progression Level: 46
 Core Set: Cosmo Blazer
 Ban List: 2013-03 Meadowlands Format 
 Opponent: Evilswarm Bahamut
 Unlocks: 47-Core: Lord of the Tachyon Galaxy
+Boss deck: Chain Burn (Duc Tran, WCQ - German Nationals, June 2013, 1st)
 [IDS_SOLO.CHAPTER20040041_EXPLANATION]
 Progression Level: 46
 Core Set: Cosmo Blazer
 Ban List: 2013-03 Meadowlands Format 
 Opponent: Barbaroid, the Ultimate Battle Machine
 Unlocks: 46-Bonus: Hidden Arsenal 7: Knight of Stars
+Opponent deck: Karakuri (Anthony Locoge, YCS Lille, April 2013, Top 32)
 [IDS_SOLO.CHAPTER20040042_EXPLANATION]
 Progression Level: 46
 Core Set: Cosmo Blazer
 Ban List: 2013-03 Meadowlands Format 
 Opponent: Heraldic Beast Leo
 Unlocks: 46-Structure Deck: Onslaught of the Fire Kings
+Opponent deck: Frog Monarch (Austyn Ruoff, YCS San Diego, April 2013, Top 16)
 [IDS_SOLO.CHAPTER20040043_EXPLANATION]
 Progression Level: 47
 Core Set: Lord of the Tachyon Galaxy
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Harpie Queen
 Unlocks: 
+Opponent deck: Dragunity Ruler (Patrick Hoban, YCS Toronto, August 2013, Top 4)
 [IDS_SOLO.CHAPTER20040044_EXPLANATION]
 Progression Level: 47
 Core Set: Lord of the Tachyon Galaxy
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Tidal, Dragon Ruler of Waterfall
 Unlocks: 
+Opponent deck: Chain Burn (Matthew Thomson, YCS London, October 2013, Top 32)
 [IDS_SOLO.CHAPTER20040045_EXPLANATION]
 Progression Level: 47
 Core Set: Lord of the Tachyon Galaxy
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Artorigus, King of the Noble Knights
 Unlocks: 
+Opponent deck: Assault Dragon Ruler (Ed Acepcion, YCS San Mateo, October 2013, Top 16)
 [IDS_SOLO.CHAPTER20040046_EXPLANATION]
 Progression Level: 47
 Core Set: Lord of the Tachyon Galaxy
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Constellar Pleiades
 Unlocks: 48-Core: Judgment of the Light
+Boss deck: Karakuri Geargia (Samuel Pedigo, YCS Turin, November 2013, 1st)
 [IDS_SOLO.CHAPTER20040047_EXPLANATION]
 Progression Level: 47
 Core Set: Lord of the Tachyon Galaxy
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Brotherhood of the Fire Fist – Tiger King
 Unlocks: 47-Bonus: Number Hunters
+Opponent deck: Dragunity (Umar Haq, YCS Toronto, August 2013, Top 8)
 [IDS_SOLO.CHAPTER20040048_EXPLANATION]
 Progression Level: 47
 Core Set: Lord of the Tachyon Galaxy
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Jurrac Meteor
 Unlocks: 47-Bonus: Battle Pack 2: War of the Giants
+Opponent deck: Mermail (Sorosh Saberian, YCS Toronto, August 2013, 2nd)
 [IDS_SOLO.CHAPTER20040049_EXPLANATION]
 Progression Level: 48
 Core Set: Judgment of the Light
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Mecha Phantom Beast Dracossack
 Unlocks: 
+Opponent deck: Dragon Ruler (Xue Hao Hu, YCS San Mateo, October 2013, 2nd)
 [IDS_SOLO.CHAPTER20040050_EXPLANATION]
 Progression Level: 48
 Core Set: Judgment of the Light
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Gimmick Puppet Egg Head
 Unlocks: 
+Opponent deck: Evilswarm (Thierry Garcia, YCS London, October 2013, Top 8)
 [IDS_SOLO.CHAPTER20040051_EXPLANATION]
 Progression Level: 48
 Core Set: Judgment of the Light
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Gogogo Gigant
 Unlocks: 48-TP: Astral Pack Three
+Opponent deck: Hieratic Ruler (Sven-Ole Wegner, YCS Berlin, February 2014, Top 8)
 [IDS_SOLO.CHAPTER20040052_EXPLANATION]
 Progression Level: 48
 Core Set: Judgment of the Light
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Archfiend Emperor, the First Lord of Horror
 Unlocks: 49-Core: Shadow Specters
+Boss deck: Evilswarm (Victor Li, Regional - Toronto Canada, November 2013, 1st)
 [IDS_SOLO.CHAPTER20040053_EXPLANATION]
 Progression Level: 48
 Core Set: Judgment of the Light
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Maiden with Eyes of Blue
 Unlocks: 48-Structure Deck: Saga of Blue-Eyes White Dragon
+Opponent deck: Infernity (Roger Simpson, YCS Toronto, August 2013, Top 16)
 [IDS_SOLO.CHAPTER20040054_EXPLANATION]
 Progression Level: 48
 Core Set: Judgment of the Light
 Ban List: 2013-09 Ravine Ruler Format
 Opponent: Hazy Flame Mantikor
 Unlocks: 48-Collectible Tins: 2013
+Opponent deck: Dragunity Ruler (Denny Yu, YCS San Mateo, October 2013, Top 4)
 [IDS_SOLO.CHAPTER20040055_EXPLANATION]
 Progression Level: 49
 Core Set: Shadow Specters
 Ban List: 2014-01 Fire-Water Format 
 Opponent: Battlin’ Boxer Cheat Commissioner
 Unlocks: 
+Opponent deck: Spellbook (Adrian Climi, YCS Sydney Jan., January 2014, Top 4)
 [IDS_SOLO.CHAPTER20040056_EXPLANATION]
 Progression Level: 49
 Core Set: Shadow Specters
 Ban List: 2014-01 Fire-Water Format 
 Opponent: Ghostrick Alucard
 Unlocks: 49-Starter Deck: Kaiba Reloaded
+Opponent deck: Chain Burn (Florian Hofmann, YCS Berlin, February 2014, Top 16)
 [IDS_SOLO.CHAPTER20040057_EXPLANATION]
 Progression Level: 49
 Core Set: Shadow Specters
 Ban List: 2014-01 Fire-Water Format 
 Opponent: Malicevorous Knife
 Unlocks: 49-Starter Deck: Yugi Reloaded
+Opponent deck: Hieratic Ruler (Chris LeBlanc, YCS Atlanta, February 2014, Top 8)
 [IDS_SOLO.CHAPTER20040058_EXPLANATION]
 Progression Level: 49
 Core Set: Shadow Specters
 Ban List: 2014-01 Fire-Water Format 
 Opponent: Bujintei Kagutsuchi
 Unlocks: 50-Core: Legacy of the Valiant
+Boss deck: Karakuri (Anders Koh, YCS Sydney Jan., January 2014, 1st)
 [IDS_SOLO.CHAPTER20040059_EXPLANATION]
 Progression Level: 49
 Core Set: Shadow Specters
 Ban List: 2014-01 Fire-Water Format 
 Opponent: Vampire Grace
 Unlocks: 49-Bonus: War of the Giants Reinforcements
+Opponent deck: Fire Fist (Ryan Nelson, YCS Sydney Jan., January 2014, Top 16)
 [IDS_SOLO.CHAPTER20040060_EXPLANATION]
 Progression Level: 49
 Core Set: Shadow Specters
 Ban List: 2014-01 Fire-Water Format 
 Opponent: Meliae of the Trees
 Unlocks: 49-Bonus: War of the Giants: Round 2
+Opponent deck: Mermail (Jan Sim, YCS Sydney Jan., January 2014, Top 16)
 [IDS_SOLO.CHAPTER20040061_EXPLANATION]
 Progression Level: 50
 Core Set: Legacy of the Valiant
 Ban List: 2014-04 HAT Format 
 Opponent: Sylvan Hermitree
 Unlocks: 
+Opponent deck: Geargia (Kyle White, YCS Paris, April 2014, Top 16)
 [IDS_SOLO.CHAPTER20040062_EXPLANATION]
 Progression Level: 50
 Core Set: Legacy of the Valiant
 Ban List: 2014-04 HAT Format 
 Opponent: Amulet Dragon
 Unlocks: 50-Bonus: Star Pack 2014
+Opponent deck: Bujin (Hooman Farahbakush, YCS Las Vegas, April 2014, Top 16)
 [IDS_SOLO.CHAPTER20040063_EXPLANATION]
 Progression Level: 50
 Core Set: Legacy of the Valiant
 Ban List: 2014-04 HAT Format 
 Opponent: Gorgonic Guardian
 Unlocks: 50-TP: Astral Pack Four
+Opponent deck: Fire King (Alejandro Galindo, YCS Las Vegas, April 2014, Top 32)
 [IDS_SOLO.CHAPTER20040064_EXPLANATION]
 Progression Level: 50
 Core Set: Legacy of the Valiant
 Ban List: 2014-04 HAT Format 
 Opponent: Baby Raccoon Ponpoko
 Unlocks: 51-Core: Primal Origin
+Boss deck: Machina Gadgets (Rogger Antonio Vera Moran, WCQ - South America, June 2014, 1st)
 [IDS_SOLO.CHAPTER20040065_EXPLANATION]
 Progression Level: 50
 Core Set: Legacy of the Valiant
 Ban List: 2014-04 HAT Format 
 Opponent: Cyber Dragon Nova
 Unlocks: 50-Structure Deck: Cyber Dragon Revolution
+Opponent deck: Ghostrick Madolche (Gabriel Andrade, YCS Chicago, March 2014, Top 16)
 [IDS_SOLO.CHAPTER20040066_EXPLANATION]
 Progression Level: 50
 Core Set: Legacy of the Valiant
 Ban List: 2014-04 HAT Format 
 Opponent: Paladin of Photon Dragon
 Unlocks: 50-Bonus: Dragons of Legend
+Opponent deck: Gadget (Christopher Gonzalez, YCS Chicago, March 2014, Top 32)
 [IDS_SOLO.CHAPTER20040067_EXPLANATION]
 Progression Level: 51
 Core Set: Primal Origin
 Ban List: 2014-07 Shaddoll Format 
 Opponent: Traptrix Atrax
 Unlocks: 
+Opponent deck: Lightsworn Ruler (Marcel Burri, European WCQ, June 2014, 2nd)
 [IDS_SOLO.CHAPTER20040068_EXPLANATION]
 Progression Level: 51
 Core Set: Primal Origin
 Ban List: 2014-07 Shaddoll Format 
 Opponent: Starduston
 Unlocks: 51-TP: Astral Pack Five
+Opponent deck: Madolche (Joe Slone, North America WCQ, July 2014, Top 16)
 [IDS_SOLO.CHAPTER20040069_EXPLANATION]
 Progression Level: 51
 Core Set: Primal Origin
 Ban List: 2014-07 Shaddoll Format 
 Opponent: Artifact Durendal
 Unlocks: 51-Bonus: Battle Pack 3: Monster League
+Opponent deck: Sylvan (Kim van Campenhoudt, European WCQ, June 2014, Top 64)
 [IDS_SOLO.CHAPTER20040070_EXPLANATION]
 Progression Level: 51
 Core Set: Primal Origin
 Ban List: 2014-07 Shaddoll Format 
 Opponent: Timegazer Magician
 Unlocks: 52-Core: Duelist Alliance
+Boss deck: Infernity (Michael Albanese, ARGCS Providence, August 2014, 1st)
 [IDS_SOLO.CHAPTER20040071_EXPLANATION]
 Progression Level: 51
 Core Set: Primal Origin
 Ban List: 2014-07 Shaddoll Format 
 Opponent: Caius the Shadow Monarch
 Unlocks: 51-Starter Deck: Space-Time Showdown
+Opponent deck: Spellbook (Floris van Asch, European WCQ, June 2014, Top 64)
 [IDS_SOLO.CHAPTER20040072_EXPLANATION]
 Progression Level: 51
 Core Set: Primal Origin
 Ban List: 2014-07 Shaddoll Format 
 Opponent: Michael, the Arch-Lightsworn
 Unlocks: 51-Structure Deck: Realm of Light
+Opponent deck: Mermail (goplaytetris., European WCQ, June 2014, 1st)
 [IDS_SOLO.CHAPTER20050001_EXPLANATION]
 Progression Level: 52
 Core Set: Duelist Alliance
 Ban List: 2014-10 Burning Abyss Format
 Opponent: Performapal Hip Hippo
 Unlocks: 
+Opponent deck: Chaos Shaddoll (Yueqi Zhu, YCS Dallas, October 2014, Top 4)
 [IDS_SOLO.CHAPTER20050002_EXPLANATION]
 Progression Level: 52
 Core Set: Duelist Alliance
 Ban List: 2014-10 Burning Abyss Format
 Opponent: Dante, Traveler of the Burning Abyss
 Unlocks: 
+Opponent deck: 60-Card Shaddoll (Billy Brake, YCS Dallas, October 2014, 1st)
 [IDS_SOLO.CHAPTER20050003_EXPLANATION]
 Progression Level: 52
 Core Set: Duelist Alliance
 Ban List: 2014-10 Burning Abyss Format
 Opponent: Baxia, Brightness of the Yang Zing
 Unlocks: 
+Opponent deck: Shaddolls (Ross Nappi, ARG Circuit Series Columbus, October 2014, 1st)
 [IDS_SOLO.CHAPTER20050004_EXPLANATION]
 Progression Level: 52
 Core Set: Duelist Alliance
 Ban List: 2014-10 Burning Abyss Format
 Opponent: El Shaddoll Construct
 Unlocks: 53-Core: The New Challengers
+Boss deck: Shaddoll (Marco Mazzuoccolo, YCS London, October 2014, Top 16)
 [IDS_SOLO.CHAPTER20050005_EXPLANATION]
 Progression Level: 52
 Core Set: Duelist Alliance
 Ban List: 2014-10 Burning Abyss Format
 Opponent: Stellarknight Delteros
 Unlocks: 
+Opponent deck: Evilswarm (Piyal Peiris, YCS London, October 2014, Top 16)
 [IDS_SOLO.CHAPTER20050006_EXPLANATION]
 Progression Level: 52
 Core Set: Duelist Alliance
 Ban List: 2014-10 Burning Abyss Format
 Opponent: Geargiegear Gigant XG
 Unlocks: 52-Structure Deck: Geargia Rampage
+Opponent deck: Spellbook (Callum Bilbe, YCS Madrid, September 2014, Top 32)
 [IDS_SOLO.CHAPTER20050007_EXPLANATION]
 Progression Level: 53
 Core Set: The New Challengers
 Ban List: 2015_01 Charleston Format 
 Opponent: Superheavy Samurai Big Benkei
 Unlocks: 
+Opponent deck: Qliphorts (Casey Barbee, ARGCS Atlanta, December 2014, 1st)
 [IDS_SOLO.CHAPTER20050008_EXPLANATION]
 Progression Level: 53
 Core Set: The New Challengers
 Ban List: 2015_01 Charleston Format 
 Opponent: Shopina the Melodious Maestra
 Unlocks: 
+Opponent deck: Warrior Chaos Shaddoll (ShamWOW, Charleston Cookoff 3, June 2025, Top 4)
 [IDS_SOLO.CHAPTER20050009_EXPLANATION]
 Progression Level: 53
 Core Set: The New Challengers
 Ban List: 2015_01 Charleston Format 
 Opponent: Qliphort Disk
 Unlocks: 
+Opponent deck: Chaos Shaddoll (Jay, Charleston Cookoff 6, May 2026, 2nd)
 [IDS_SOLO.CHAPTER20050010_EXPLANATION]
 Progression Level: 53
 Core Set: The New Challengers
 Ban List: 2015_01 Charleston Format 
 Opponent: Frightfur Bear
 Unlocks: 54-Core: Secrets of Eternity
+Boss deck: Lightsworn (Unknown Competitor, Regional - Aldershot England, February 2015, Top 16)
 [IDS_SOLO.CHAPTER20050011_EXPLANATION]
 Progression Level: 53
 Core Set: The New Challengers
 Ban List: 2015_01 Charleston Format 
 Opponent: First of the Dragons
 Unlocks: 53-TP: Astral Pack Six
+Opponent deck: Chaos Shaddoll (Sylvanspieler, Charleston Cookoff 5, January 2026, 1st)
 [IDS_SOLO.CHAPTER20050012_EXPLANATION]
 Progression Level: 53
 Core Set: The New Challengers
@@ -2011,96 +2246,112 @@ Core Set: Secrets of Eternity
 Ban List: 2015-04 Nekroz Format 
 Opponent: Dododo Swordsman
 Unlocks: 
+Opponent deck: Nekroz (Christopher Pobee-Mensah, YCS Columbus, May 2015, 2nd)
 [IDS_SOLO.CHAPTER20050014_EXPLANATION]
 Progression Level: 54
 Core Set: Secrets of Eternity
 Ban List: 2015-04 Nekroz Format 
 Opponent: Thunderclap Skywolf
 Unlocks: 
+Opponent deck: Qliphort Stun (Daniel Silva Cardona, YCS Bogota, April 2015, Top 4)
 [IDS_SOLO.CHAPTER20050015_EXPLANATION]
 Progression Level: 54
 Core Set: Secrets of Eternity
 Ban List: 2015-04 Nekroz Format 
 Opponent: Ritual Beast Ulti-Peeltphin
 Unlocks: 54-Bonus: World Superstars
+Opponent deck: Mecha Phantom Beast (Nino Zimmermann, YCS Bochum, April 2015, Top 16)
 [IDS_SOLO.CHAPTER20050016_EXPLANATION]
 Progression Level: 54
 Core Set: Secrets of Eternity
 Ban List: 2015-04 Nekroz Format 
 Opponent: Nekroz of Trishula
 Unlocks: 55-Core: Crossed Souls
+Boss deck: Nekroz (Galileo Mauricio De Obaldia Soza, WCQ - Central America, June 2015, 1st)
 [IDS_SOLO.CHAPTER20050017_EXPLANATION]
 Progression Level: 54
 Core Set: Secrets of Eternity
 Ban List: 2015-04 Nekroz Format 
 Opponent: Star Seraph Scale
 Unlocks: 54-Bonus: The Secret Forces
+Opponent deck: Star Seraph Shaddoll (Chan Zhongheng, YCS Bochum, April 2015, Top 32)
 [IDS_SOLO.CHAPTER20050018_EXPLANATION]
 Progression Level: 54
 Core Set: Secrets of Eternity
 Ban List: 2015-04 Nekroz Format 
 Opponent: Contrast HERO Chaos
 Unlocks: 54-Structure Deck: HERO Strike
+Opponent deck: Volcanic (Carlos Herrera, YCS Bogota, April 2015, Top 16)
 [IDS_SOLO.CHAPTER20050019_EXPLANATION]
 Progression Level: 55
 Core Set: Crossed Souls
 Ban List: 2015-07 Clown Format 
 Opponent: Aquaactress Arowana
 Unlocks: 55-Bonus: Star Pack ARC-V, 55-TP: Astral Pack Seven
+Opponent deck: Ritual Beast (Matthew Beckford, YCS Toronto, August 2015, Top 32)
 [IDS_SOLO.CHAPTER20050020_EXPLANATION]
 Progression Level: 55
 Core Set: Crossed Souls
 Ban List: 2015-07 Clown Format 
 Opponent: Mimicat
 Unlocks: 55-Starter Deck: Dark Legion
+Opponent deck: Shaddoll (Jonathan Rosario, YCS Dallas, October 2015, Top 8)
 [IDS_SOLO.CHAPTER20050021_EXPLANATION]
 Progression Level: 55
 Core Set: Crossed Souls
 Ban List: 2015-07 Clown Format 
 Opponent: U.A. Dreadnought Dunker
 Unlocks: 55-Starter Deck: Saber Force
+Opponent deck: Nekroz (Tom Morran, YCS Toronto, August 2015, Top 16)
 [IDS_SOLO.CHAPTER20050022_EXPLANATION]
 Progression Level: 55
 Core Set: Crossed Souls
 Ban List: 2015-07 Clown Format 
 Opponent: Zefraxa, Flame Beast of the Nekroz
 Unlocks: 56-Core: Clash of Rebellions
+Boss deck: Qliphorts (DeAndre Nathaniel Mason, Dragon Duel Championship - Kyoto Japan, August 2015, 2nd)
 [IDS_SOLO.CHAPTER20050023_EXPLANATION]
 Progression Level: 55
 Core Set: Crossed Souls
 Ban List: 2015-07 Clown Format 
 Opponent: Timaeus the Knight of Destiny
 Unlocks: 55-Bonus: Dragons of Legend 2
+Opponent deck: Star Seraph Shaddoll (Marcel Leucker, YCS Rimini, August 2015, Top 16)
 [IDS_SOLO.CHAPTER20050024_EXPLANATION]
 Progression Level: 55
 Core Set: Crossed Souls
 Ban List: 2015-07 Clown Format 
 Opponent: Prediction Princess Tarotrei
 Unlocks: 55-Duelist Pack: Battle City
+Opponent deck: Qliphort Stun (Steven Rivetti, European WCQ, July 2015, Top 32)
 [IDS_SOLO.CHAPTER20050025_EXPLANATION]
 Progression Level: 56
 Core Set: Clash of Rebellions
 Ban List: 2015-11 PePe Format 
 Opponent: PSY-Framelord Zeta
 Unlocks: 
+Opponent deck: Brilliant Madolches (Michael Chao, Regional - Pittsburgh Pennsylvania, January 2016, Top 16)
 [IDS_SOLO.CHAPTER20050026_EXPLANATION]
 Progression Level: 56
 Core Set: Clash of Rebellions
 Ban List: 2015-11 PePe Format 
 Opponent: Yosenju Misak
 Unlocks: 
+Opponent deck: Brilliant Madolches (Doug Zeeff, Regional - Indianapolis Indiana, November 2015, Top 16)
 [IDS_SOLO.CHAPTER20050027_EXPLANATION]
 Progression Level: 56
 Core Set: Clash of Rebellions
 Ban List: 2015-11 PePe Format 
 Opponent: Force Resonator
 Unlocks: 56-TP: Astral Pack Eight
+Opponent deck: Madolches (Orion Miller, Regional - Garden City Michigan, November 2015, Top 16)
 [IDS_SOLO.CHAPTER20050028_EXPLANATION]
 Progression Level: 56
 Core Set: Clash of Rebellions
 Ban List: 2015-11 PePe Format 
 Opponent: Archfiend Black Skull Dragon
 Unlocks: 57-Core: Dimension of Chaos
+Boss deck: Infernoids (Andrew Do, Regional - Los Angeles California, June 2016, Top 16)
 [IDS_SOLO.CHAPTER20050029_EXPLANATION]
 Progression Level: 56
 Core Set: Clash of Rebellions
@@ -2155,90 +2406,105 @@ Core Set: Breakers of Shadow
 Ban List: 2016-04 DracoPal Format 
 Opponent: Kozmo Forerunner
 Unlocks: 
+Opponent deck: Super Quantums (Logan George, State Championship - West Virginia, June 2016, Top 4)
 [IDS_SOLO.CHAPTER20050038_EXPLANATION]
 Progression Level: 58
 Core Set: Breakers of Shadow
 Ban List: 2016-04 DracoPal Format 
 Opponent: Graydle Slime
 Unlocks: 58-TP: OTS Tournament Pack 1
+Opponent deck: Chain Strike Burn (Ben Lodise, State Championship - Illinois, June 2016, Top 4)
 [IDS_SOLO.CHAPTER20050039_EXPLANATION]
 Progression Level: 58
 Core Set: Breakers of Shadow
 Ban List: 2016-04 DracoPal Format 
 Opponent: Deskbot 006
 Unlocks: 58-Bonus: Millennium Pack
+Opponent deck: Domain Monarchs (Daniel Gurwell, State Championship - Kansas, June 2016, 1st)
 [IDS_SOLO.CHAPTER20050040_EXPLANATION]
 Progression Level: 58
 Core Set: Breakers of Shadow
 Ban List: 2016-04 DracoPal Format 
 Opponent: Majespecter Raccoon – Bunbuku
 Unlocks: 59-Core: Shining Victories
+Boss deck: Burning Phantom Knights (Michael Campos, ARGCS 25K - Oaks Pennsylvania, August 2016, Top 16)
 [IDS_SOLO.CHAPTER20050041_EXPLANATION]
 Progression Level: 58
 Core Set: Breakers of Shadow
 Ban List: 2016-04 DracoPal Format 
 Opponent: Ra’s Disciple
 Unlocks: 58-Bonus: Wing Raiders
+Opponent deck: Burning Abyss Infernoids (Edgar Lopez, Regional Taylorsville Utah, September 2016, Top 16)
 [IDS_SOLO.CHAPTER20050042_EXPLANATION]
 Progression Level: 58
 Core Set: Breakers of Shadow
 Ban List: 2016-04 DracoPal Format 
 Opponent: Goyo Emperor
 Unlocks: 58-Structure Deck: Emperor of Darkness
+Opponent deck: Speedroid Monarchs (Edgar Gonzalez, Regional - Buford Georgia, April 2016, Top 16)
 [IDS_SOLO.CHAPTER20050043_EXPLANATION]
 Progression Level: 59
 Core Set: Shining Victories
 Ban List: 2016-08 ABC Format 
 Opponent: Gadarla, the Mystery Dust Kaiju
 Unlocks: 
+Opponent deck: Domain Monarchs (Victor Hugo Miceli Schroeder Dos Santos, VIP Qualifier Bogotá 2017 Yu-Gi-Oh! TCG, March 2017, 2nd)
 [IDS_SOLO.CHAPTER20050044_EXPLANATION]
 Progression Level: 59
 Core Set: Shining Victories
 Ban List: 2016-08 ABC Format 
 Opponent: Dinoster Power, the Mighty Dracoslayer
 Unlocks: 59-Starter Deck: Yuya
+Opponent deck: Mermail Atlanteans (Travis Newman, Regional - Fargo North Dakota, March 2017, Top 4)
 [IDS_SOLO.CHAPTER20050045_EXPLANATION]
 Progression Level: 59
 Core Set: Shining Victories
 Ban List: 2016-08 ABC Format 
 Opponent: The Phantom Knights of Break Sword
 Unlocks: 59-TP: OTS Tournament Pack 2
+Opponent deck: Domain Monarchs (Fabiano Tonon, Regional - Italy, January 2017, 1st)
 [IDS_SOLO.CHAPTER20050046_EXPLANATION]
 Progression Level: 59
 Core Set: Shining Victories
 Ban List: 2016-08 ABC Format 
 Opponent: Enther the Heavenly Monarch
 Unlocks: 60-Core: The Dark Illusion
+Boss deck: Infernoid Kaiju Burning Abyss (Duelist Unknown, Regional - Toronto Canada, January 2017, Top 16)
 [IDS_SOLO.CHAPTER20050047_EXPLANATION]
 Progression Level: 59
 Core Set: Shining Victories
 Ban List: 2016-08 ABC Format 
 Opponent: Azure-Eyes Silver Dragon
 Unlocks: 59-Structure Deck: Rise of the True Dragons
+Opponent deck: Domain Monarchs (F3az13, Regional - Italy, March 2017, Top 16)
 [IDS_SOLO.CHAPTER20050048_EXPLANATION]
 Progression Level: 59
 Core Set: Shining Victories
 Ban List: 2016-08 ABC Format 
 Opponent: Gold Gadget
 Unlocks: 59-Promo: Dark Side of Dimensions Movie
+Opponent deck: Burning Phantom Knights (Andrew Fredella, UDS - Chicago Illinois, September 2016, Top 16)
 [IDS_SOLO.CHAPTER20050049_EXPLANATION]
 Progression Level: 60
 Core Set: The Dark Illusion
 Ban List: 2017-03 Grass Zoo Format
 Opponent: Buster Blader, the Dragon Destroyer Swordsman
 Unlocks: 
+Opponent deck: Domain Monarchs (Kevin Lacour, Regional - Yucatan Mexico, June 2017, Top 4)
 [IDS_SOLO.CHAPTER20050050_EXPLANATION]
 Progression Level: 60
 Core Set: The Dark Illusion
 Ban List: 2017-03 Grass Zoo Format
 Opponent: Kiwi Magician Girl
 Unlocks: 60-Duelist Pack: Rivals of the Pharaoh
+Opponent deck: Barrier Statue Anti Meta (Jesse Parks, Regional - Omaha Nebraska, March 2017, Top 16)
 [IDS_SOLO.CHAPTER20050051_EXPLANATION]
 Progression Level: 60
 Core Set: The Dark Illusion
 Ban List: 2017-03 Grass Zoo Format
 Opponent: Super Quantal Fairy Alphan
 Unlocks: 60-Bonus: Dragons of Legend: Unleashed
+Opponent deck: Barrier Statue Demise Stun (Kristiaan Delforge, WCQ Outpost Gent, March 2017, Top 8)
 [IDS_SOLO.CHAPTER20050052_EXPLANATION]
 Progression Level: 60
 Core Set: The Dark Illusion
@@ -2263,6 +2529,7 @@ Core Set: Invasion: Vengeance
 Ban List: 2017-03 Grass Zoo Format
 Opponent: Lunalight Cat Dancer
 Unlocks: 
+Opponent deck: Abyss Actor Metalfoes (Kadir Utku Topal, Regional - Istanbul, April 2017, 2nd)
 [IDS_SOLO.CHAPTER20050056_EXPLANATION]
 Progression Level: 61
 Core Set: Invasion: Vengeance
@@ -2299,444 +2566,518 @@ Core Set: Raging Tempest
 Ban List: 2017-03 Grass Zoo Format
 Opponent: SPYRAL Quik-Fix
 Unlocks: 62-TP: OTS Tournament Pack 4
+Opponent deck: 60-Card Brilliant Zoodiac (Leonard Anaya, YCS Denver, April 2017, 2nd)
 [IDS_SOLO.CHAPTER20050062_EXPLANATION]
 Progression Level: 62
 Core Set: Raging Tempest
 Ban List: 2017-03 Grass Zoo Format
 Opponent: Subterror Behemoth Ultramafus
 Unlocks: 62-Bonus: Star Pack Battle Royal
+Opponent deck: Zoodiac (Louie Benitez, YCS Denver, April 2017, Top 4)
 [IDS_SOLO.CHAPTER20050063_EXPLANATION]
 Progression Level: 62
 Core Set: Raging Tempest
 Ban List: 2017-03 Grass Zoo Format
 Opponent: Metalfoes Adamante
 Unlocks: 62-Bonus: Fusion Enforcers
+Opponent deck: 60-Card Infernoid Zoodiac (Anderson Tsang, YCS Denver, April 2017, 1st)
 [IDS_SOLO.CHAPTER20050064_EXPLANATION]
 Progression Level: 62
 Core Set: Raging Tempest
 Ban List: 2017-03 Grass Zoo Format
 Opponent: Cyber Angel Vrash
 Unlocks: 63-Core: Maximum Crisis
+Boss deck: 60 Card Infernoid Zoo (Jerry Felix, Regional - Los Angeles California, April 2017, 1st)
 [IDS_SOLO.CHAPTER20050065_EXPLANATION]
 Progression Level: 62
 Core Set: Raging Tempest
 Ban List: 2017-03 Grass Zoo Format
 Opponent: Heavy Freight Train Derricrane
 Unlocks: 62-Structure Deck: Machine Reactor
+Opponent deck: Paleo Frog Zoodiac (Christopher Rodriguez, YCS Denver, April 2017, Top 32)
 [IDS_SOLO.CHAPTER20050066_EXPLANATION]
 Progression Level: 62
 Core Set: Raging Tempest
 Ban List: 2017-03 Grass Zoo Format
 Opponent: Triamid Sphinx
 Unlocks: 62-Structure Deck: Dinosmasher's Fury
+Opponent deck: Mermail (Sylvanspieler, Invasion: Vengeance 3, April 2025, Top 4)
 [IDS_SOLO.CHAPTER20050067_EXPLANATION]
 Progression Level: 63
 Core Set: Maximum Crisis
 Ban List: 2017_06 Draco Zoo Format
 Opponent: Supreme King Z-ARC
 Unlocks: 
+Opponent deck: True Draco Zoodiac (Chester Henson, North America WCQ, July 2017, 1st)
 [IDS_SOLO.CHAPTER20050068_EXPLANATION]
 Progression Level: 63
 Core Set: Maximum Crisis
 Ban List: 2017_06 Draco Zoo Format
 Opponent: Flower Cardian Lightflare
 Unlocks: 63-Duelist Pack: Dimensional Guardians
+Opponent deck: True King Dinosaur (Giuseppe Caratozzolo, YCS Rimini, August 2017, Top 32)
 [IDS_SOLO.CHAPTER20050069_EXPLANATION]
 Progression Level: 63
 Core Set: Maximum Crisis
 Ban List: 2017_06 Draco Zoo Format
 Opponent: Chemicritter Hydron Hawk
 Unlocks: 63-Bonus: Battles of Legend: Light's Revenge
+Opponent deck: True Draco (Michael Forner, YCS Rimini, August 2017, Top 32)
 [IDS_SOLO.CHAPTER20050070_EXPLANATION]
 Progression Level: 63
 Core Set: Maximum Crisis
 Ban List: 2017_06 Draco Zoo Format
 Opponent: Crystron Phoenix
 Unlocks: 64-Core: Code of the Duelist
+Boss deck: True Draco Zoodiacs (Christopher LeBlanc, ARGCS - Knoxville Tennessee, July 2017, 1st)
 [IDS_SOLO.CHAPTER20050071_EXPLANATION]
 Progression Level: 63
 Core Set: Maximum Crisis
 Ban List: 2017_06 Draco Zoo Format
 Opponent: Abyss Actor – Evil Heel
 Unlocks: 63-Bonus: Pendulum Evolution
+Opponent deck: Pendulum Zoodiac (Adam Cisneros, North America WCQ, July 2017, Top 32)
 [IDS_SOLO.CHAPTER20050072_EXPLANATION]
 Progression Level: 63
 Core Set: Maximum Crisis
 Ban List: 2017_06 Draco Zoo Format
 Opponent: Paleozoic Anomalocaris
 Unlocks: 63-Starter Deck: Link Strike
+Opponent deck: 60-Card Zombie (Zachariah Butler, North America WCQ, July 2017, Top 32)
 [IDS_SOLO.CHAPTER20060001_EXPLANATION]
 Progression Level: 64
 Core Set: Code of the Duelist
 Ban List: 2017-09 Draco Zoo Format
 Opponent: Predaplant Chimerafflesia
 Unlocks: 
+Opponent deck: SPYRAL (Guy "demonicdna" Hazan, Hanukkah Regional - Israel, December 2017, Top 4)
 [IDS_SOLO.CHAPTER20060002_EXPLANATION]
 Progression Level: 64
 Core Set: Code of the Duelist
 Ban List: 2017-09 Draco Zoo Format
 Opponent: Berserkion the Electromagna Warrior
 Unlocks: 
+Opponent deck: Pendulum Magician (Paulo Goncalves, YCS Guadalajara, October 2017, Top 8)
 [IDS_SOLO.CHAPTER20060003_EXPLANATION]
 Progression Level: 64
 Core Set: Code of the Duelist
 Ban List: 2017-09 Draco Zoo Format
 Opponent: Citadel Whale
 Unlocks: 
+Opponent deck: True King Dinosaur (Ricardo Lora Zavala, YCS Guadalajara, October 2017, Top 16)
 [IDS_SOLO.CHAPTER20060004_EXPLANATION]
 Progression Level: 64
 Core Set: Code of the Duelist
 Ban List: 2017-09 Draco Zoo Format
 Opponent: Invoked Raidjin
 Unlocks: 65-Core: Circuit Break
+Boss deck: Dinosaur (amazingmikeman, Into The VRAINS 2, January 2026, Top 4)
 [IDS_SOLO.CHAPTER20060005_EXPLANATION]
 Progression Level: 64
 Core Set: Code of the Duelist
 Ban List: 2017-09 Draco Zoo Format
 Opponent: Darklord Ixchel
 Unlocks: 64-TP: OTS Tournament Pack 5
+Opponent deck: Demise True Draco (Bugra Incekara, Regional - Istanbul, March 2018, 2nd)
 [IDS_SOLO.CHAPTER20060006_EXPLANATION]
 Progression Level: 64
 Core Set: Code of the Duelist
 Ban List: 2017-09 Draco Zoo Format
 Opponent: Windwitch – Ice Bell
 Unlocks: 64-Bonus: Legendary Duelists
+Opponent deck: 60-Card Lightsworn Infernoids (Fabio Re, YCS - Prague Czech Republic, November 2017, Top 16)
 [IDS_SOLO.CHAPTER20060007_EXPLANATION]
 Progression Level: 65
 Core Set: Circuit Break
 Ban List: 2018-02 SPYRAL Format 
 Opponent: True King of All Calamaties
 Unlocks: 
+Opponent deck: True Draco (Galileo de Obaldia Soza, YCS Costa Rica, March 2018, Top 4)
 [IDS_SOLO.CHAPTER20060008_EXPLANATION]
 Progression Level: 65
 Core Set: Circuit Break
 Ban List: 2018-02 SPYRAL Format 
 Opponent: Shinobird Crow
 Unlocks: 65-TP: OTS Tournament Pack 6
+Opponent deck: Demise True Draco (Evaggelos Argyris, YCS - Bochum Germany, February 2018, Top 4)
 [IDS_SOLO.CHAPTER20060009_EXPLANATION]
 Progression Level: 65
 Core Set: Circuit Break
 Ban List: 2018-02 SPYRAL Format 
 Opponent: Cyberdarkness Dragon
 Unlocks: 65-Bonus: Spirit Warriors
+Opponent deck: True Draco (Leonard Anaya, YCS Salt Lake City, March 2018, 1st)
 [IDS_SOLO.CHAPTER20060010_EXPLANATION]
 Progression Level: 65
 Core Set: Circuit Break
 Ban List: 2018-02 SPYRAL Format 
 Opponent: Zoodiac Hammerkong
 Unlocks: 66-Core: Extreme Force
+Boss deck: True Draco (Alexander Hales, Regional - Tulsa Oklahoma, April 2018, 1st)
 [IDS_SOLO.CHAPTER20060011_EXPLANATION]
 Progression Level: 65
 Core Set: Circuit Break
 Ban List: 2018-02 SPYRAL Format 
 Opponent: Lyrilusc – Assembled Nightingale
 Unlocks: 65-Structure Deck: Wave of Light
+Opponent deck: True Draco (Nelson Marenco Garcia, YCS Costa Rica, March 2018, Top 16)
 [IDS_SOLO.CHAPTER20060012_EXPLANATION]
 Progression Level: 65
 Core Set: Circuit Break
 Ban List: 2018-02 SPYRAL Format 
 Opponent: Phantasm Spiral Dragon
 Unlocks: 65-Structure Deck: Cyberse Link
+Opponent deck: True Draco (Oscar Midence Munoz, YCS Costa Rica, March 2018, Top 16)
 [IDS_SOLO.CHAPTER20060013_EXPLANATION]
 Progression Level: 66
 Core Set: Extreme Force
 Ban List: 2018-05 Secaucus Format 
 Opponent: Ningirsu the World Chalice Warrior
 Unlocks: 
+Opponent deck: Pendulum Magician (Walter Jule, North America WCQ, June 2018, 2nd)
 [IDS_SOLO.CHAPTER20060014_EXPLANATION]
 Progression Level: 66
 Core Set: Extreme Force
 Ban List: 2018-05 Secaucus Format 
 Opponent: X-Krawler Qualiark
 Unlocks: 66-Bonus: Star Pack VRAINS
+Opponent deck: Pendulum Magicians (Adam Anouer, LLDS - Hornchurch, September 2018, Top 4)
 [IDS_SOLO.CHAPTER20060015_EXPLANATION]
 Progression Level: 66
 Core Set: Extreme Force
 Ban List: 2018-05 Secaucus Format 
 Opponent: Trickstar Bloom
 Unlocks: 66-TP: OTS Tournament Pack 7
+Opponent deck: Pendulum Magician (Alex Moffatt, European WCQ, July 2018, Top 32)
 [IDS_SOLO.CHAPTER20060016_EXPLANATION]
 Progression Level: 66
 Core Set: Extreme Force
 Ban List: 2018-05 Secaucus Format 
 Opponent: Firewall Dragon Darkfluid
 Unlocks: 67-Core: Flames of Destruction
+Boss deck: D/D Magician (Sergio Conti, LLDS - Catania, August 2018, 1st)
 [IDS_SOLO.CHAPTER20060017_EXPLANATION]
 Progression Level: 66
 Core Set: Extreme Force
 Ban List: 2018-05 Secaucus Format 
 Opponent: The Weather Painter Rainbow
 Unlocks: 66-Legendary Duelists: Ancient Millennium
+Opponent deck: Pendulum Magician (+Abductor) (Martín Lira, WCQ - South America, July 2018, Top 8)
 [IDS_SOLO.CHAPTER20060018_EXPLANATION]
 Progression Level: 66
 Core Set: Extreme Force
 Ban List: 2018-05 Secaucus Format 
 Opponent: Magical Musketeer Calamity
 Unlocks: 66-Structure Deck: Lair of Darkness
+Opponent deck: True Draco Demise (Cristian Kenji Namba, DSC - Sao Paulo, September 2018, Top 16)
 [IDS_SOLO.CHAPTER20060019_EXPLANATION]
 Progression Level: 67
 Core Set: Flames of Destruction
 Ban List: 2018-09 Danger Format 
 Opponent: Altergeist Primebanshee
 Unlocks: 
+Opponent deck: Paleo Frog (Daniel Strakna, YCS Columbus, September 2018, Top 32)
 [IDS_SOLO.CHAPTER20060020_EXPLANATION]
 Progression Level: 67
 Core Set: Flames of Destruction
 Ban List: 2018-09 Danger Format 
 Opponent: Pumpkin Carriage
 Unlocks: 
+Opponent deck: Pure Cardian (Luis Ricardo Labres Rohde, UDS Qualifier - Porto Alegre, September 2018, 1st)
 [IDS_SOLO.CHAPTER20060021_EXPLANATION]
 Progression Level: 67
 Core Set: Flames of Destruction
 Ban List: 2018-09 Danger Format 
 Opponent: Metaphys Tyrant Dragon
 Unlocks: 67-Starter Deck: Codebreaker
+Opponent deck: Demise True Draco (Ryan Hall, Regional - Rosemont Illinois, August 2018, 1st)
 [IDS_SOLO.CHAPTER20060022_EXPLANATION]
 Progression Level: 67
 Core Set: Flames of Destruction
 Ban List: 2018-09 Danger Format 
 Opponent: F.A. Whip Crosser
 Unlocks: 68-Core: Cybernetic Horizon
+Boss deck: Boarder True Dracos (Daniel Kvak, Regional - Prague, November 2018, Top 8)
 [IDS_SOLO.CHAPTER20060023_EXPLANATION]
 Progression Level: 67
 Core Set: Flames of Destruction
 Ban List: 2018-09 Danger Format 
 Opponent: Revendread Slayer
 Unlocks: 67-Bonus: Dark Saviors
+Opponent deck: True Dracos (Sebastian Price, Regional - Hatfield, November 2018, Top 16)
 [IDS_SOLO.CHAPTER20060024_EXPLANATION]
 Progression Level: 67
 Core Set: Flames of Destruction
 Ban List: 2018-09 Danger Format 
 Opponent: Mekk-Knight Red Moon
 Unlocks: 67-Bonus: Battles of Legend: Relentless Revenge
+Opponent deck: True Draco (Maximilien Delval, Regional - London England, October 2018, Top 16)
 [IDS_SOLO.CHAPTER20060025_EXPLANATION]
 Progression Level: 68
 Core Set: Cybernetic Horizon
 Ban List: 2018-09 Danger Format 
 Opponent: Gouki Tagpartner
 Unlocks: 
+Opponent deck: Burning Abyss (Dinh Kha-Bui, YCS Utrecht, September 2018, 2nd)
 [IDS_SOLO.CHAPTER20060026_EXPLANATION]
 Progression Level: 68
 Core Set: Cybernetic Horizon
 Ban List: 2018-09 Danger Format 
 Opponent: Mythical Beast Garuda
 Unlocks: 68-Legendary Duelists: White Dragon Abyss
+Opponent deck: Sky Striker (Andreas Vrellos, YCS Utrecht, September 2018, Top 4)
 [IDS_SOLO.CHAPTER20060027_EXPLANATION]
 Progression Level: 68
 Core Set: Cybernetic Horizon
 Ban List: 2018-09 Danger Format 
 Opponent: Sky Striker Ace – Kagari
 Unlocks: 68-TP: OTS Tournament Pack 8
+Opponent deck: Altergeist (Christopher Lofton, YCS Niagara Falls, October 2018, Top 32)
 [IDS_SOLO.CHAPTER20060028_EXPLANATION]
 Progression Level: 68
 Core Set: Cybernetic Horizon
 Ban List: 2018-09 Danger Format 
 Opponent: Knightmare Phoenix
 Unlocks: 69-Core: Soul Fusion
+Boss deck: True Draco (Luis Moro Carrera, Regional - Vitoria Spain, March 2019, 1st)
 [IDS_SOLO.CHAPTER20060029_EXPLANATION]
 Progression Level: 68
 Core Set: Cybernetic Horizon
 Ban List: 2018-09 Danger Format 
 Opponent: Elementsaber Molehu
 Unlocks: 68-Structure Deck: Powercode Link
+Opponent deck: Trickstar Sky Striker (Sven Rebmann, YCS Utrecht, September 2018, Top 8)
 [IDS_SOLO.CHAPTER20060030_EXPLANATION]
 Progression Level: 68
 Core Set: Cybernetic Horizon
 Ban List: 2018-09 Danger Format 
 Opponent: Bravo, Fighter Fur Hire
 Unlocks: 68-Bonus: Shadows in Valhalla
+Opponent deck: Invoked Mekk-Knight (Ceylan Sakrak, YCS Utrecht, September 2018, Top 64)
 [IDS_SOLO.CHAPTER20060031_EXPLANATION]
 Progression Level: 69
 Core Set: Soul Fusion
 Ban List: 2018-09 Danger Format 
 Opponent: Crusadia Spartha
 Unlocks: 
+Opponent deck: Boarder True Dracos (Zach Newhall, Regional - Layton Utah, March 2019, Top 16)
 [IDS_SOLO.CHAPTER20060032_EXPLANATION]
 Progression Level: 69
 Core Set: Soul Fusion
 Ban List: 2019-01 Striker Format 
 Opponent: Superdreadnought Rail Cannon Juggernaut Liebe
 Unlocks: 69-TP: OTS Tournament Pack 9
+Opponent deck: True Draco (Jacob Pieffle, Regional - Fargo North Dakota, March 2019, Top 16)
 [IDS_SOLO.CHAPTER20060033_EXPLANATION]
 Progression Level: 69
 Core Set: Soul Fusion
 Ban List: 2019-01 Striker Format 
 Opponent: Prank-Kids Rocket Ride
 Unlocks: 69-Bonus: Hidden Summoners
+Opponent deck: True Draco (Richard Oglesby, ARG Circuit Series Chicago, March 2019, Top 16)
 [IDS_SOLO.CHAPTER20060034_EXPLANATION]
 Progression Level: 69
 Core Set: Soul Fusion
 Ban List: 2019-01 Striker Format 
 Opponent: Danger! Thunderbird!
 Unlocks: 70-Core: Savage Strike
+Boss deck: True Draco (Walter Tavares, Regional - Sao Paulo Brazil, March 2019, Top 16)
 [IDS_SOLO.CHAPTER20060035_EXPLANATION]
 Progression Level: 69
 Core Set: Soul Fusion
 Ban List: 2019-01 Striker Format 
 Opponent: Yoko, the Graceful Mayakashi
 Unlocks: 69-Legendary Duelists: Sisters of the Rose
+Opponent deck: True Draco (César Lincoln, Regional - Joao Pessoa Brazil, March 2019, Top 16)
 [IDS_SOLO.CHAPTER20060036_EXPLANATION]
 Progression Level: 69
 Core Set: Soul Fusion
 Ban List: 2019-01 Striker Format 
 Opponent: Nephthys, the Sacred Preserver
 Unlocks: 69-Structure Deck: Zombie Horde
+Opponent deck: Lair Infernoid (José Tobar, Regional - Panama City Panama, March 2019, Top 16)
 [IDS_SOLO.CHAPTER20060037_EXPLANATION]
 Progression Level: 70
 Core Set: Savage Strike
 Ban List: 2019-04 Thunder Dragon Format
 Opponent: Galatea, the Orcust Automaton
 Unlocks: 
+Opponent deck: Salamangreat (Stephen Muldoon, North America WCQ, July 2019, Top 32)
 [IDS_SOLO.CHAPTER20060038_EXPLANATION]
 Progression Level: 70
 Core Set: Savage Strike
 Ban List: 2019-04 Thunder Dragon Format
 Opponent: Garden Rose Maiden
 Unlocks: 70-TP: OTS Tournament Pack 10
+Opponent deck: Sky Striker (Raymond Dai, North America WCQ, July 2019, 2nd)
 [IDS_SOLO.CHAPTER20060039_EXPLANATION]
 Progression Level: 70
 Core Set: Savage Strike
 Ban List: 2019-04 Thunder Dragon Format
 Opponent: Valkyrie Brunhilde
 Unlocks: 70-Bonus: The Infinity Chasers
+Opponent deck: Endymion (Luke Coogan, Regional - Dublin Ireland, May 2019, 1st)
 [IDS_SOLO.CHAPTER20060040_EXPLANATION]
 Progression Level: 70
 Core Set: Savage Strike
 Ban List: 2019-04 Thunder Dragon Format
 Opponent: Salamangreat Heatleo
 Unlocks: 71-Core: Dark Neostorm
+Boss deck: Sky Striker (Brian Chen, YCS Portland, August 2019, 1st)
 [IDS_SOLO.CHAPTER20060041_EXPLANATION]
 Progression Level: 70
 Core Set: Savage Strike
 Ban List: 2019-04 Thunder Dragon Format
 Opponent: Impcantation Chalislime
 Unlocks: 70-Structure Deck: Order of the Spellcasters
+Opponent deck: Sky Striker (Junior Dorcin, YCS Knoxville, June 2019, Top 8)
 [IDS_SOLO.CHAPTER20060042_EXPLANATION]
 Progression Level: 70
 Core Set: Savage Strike
 Ban List: 2019-04 Thunder Dragon Format
 Opponent: Thunder Dragon Colossus
 Unlocks: 70-Structure Deck: Soulburner
+Opponent deck: Prank-Kids (Benjamin Kovac, Regional - Ljubljana Slovenia, April 2019, 1st)
 [IDS_SOLO.CHAPTER20060043_EXPLANATION]
 Progression Level: 71
 Core Set: Dark Neostorm
 Ban List: 2019-07 Lunalight Format 
 Opponent: Guardragon Pisty
 Unlocks: 
+Opponent deck: Salamangreat (Walter Jule, YCS Portland, August 2019, Top 8)
 [IDS_SOLO.CHAPTER20060044_EXPLANATION]
 Progression Level: 71
 Core Set: Dark Neostorm
 Ban List: 2019-07 Lunalight Format 
 Opponent: Witchcrafter Pittore
 Unlocks: 
+Opponent deck: Sky Striker (Garon Williams, YCS Portland, August 2019, Top 4)
 [IDS_SOLO.CHAPTER20060045_EXPLANATION]
 Progression Level: 71
 Core Set: Dark Neostorm
 Ban List: 2019-07 Lunalight Format 
 Opponent: Infinitrack Mountain Smasher
 Unlocks: 
+Opponent deck: Lunalight Orcust (Clifton Land, YCS - Niagara Falls, September 2019, 2nd)
 [IDS_SOLO.CHAPTER20060046_EXPLANATION]
 Progression Level: 71
 Core Set: Dark Neostorm
 Ban List: 2019-07 Lunalight Format 
 Opponent: Dinowrestler Giga Spinosavate
 Unlocks: 72-Core: Rising Rampage
+Boss deck: True Draco (Chat, TOSS Monthly 21, March 2026, 2nd)
 [IDS_SOLO.CHAPTER20060047_EXPLANATION]
 Progression Level: 71
 Core Set: Dark Neostorm
 Ban List: 2019-07 Lunalight Format 
 Opponent: Time Thief Redoer
 Unlocks: 71-Bonus: Battles of Legend: Hero's Revenge
+Opponent deck: Salamangreat (Dominic Couch, YCS Portland, August 2019, Top 16)
 [IDS_SOLO.CHAPTER20060048_EXPLANATION]
 Progression Level: 71
 Core Set: Dark Neostorm
 Ban List: 2019-07 Lunalight Format 
 Opponent: Basilius, Familiar of the Evil Eye
 Unlocks: 
+Opponent deck: Salamangreat (Oscar Velez, YCS Pasadena, November 2019, Top 64)
 [IDS_SOLO.CHAPTER20060049_EXPLANATION]
 Progression Level: 72
 Core Set: Rising Rampage
 Ban List: 2019-10 Orcust Format 
 Opponent: Simorg, Bird of Bringing
 Unlocks: 72-Game: Legacy of the Duelist: Link Evolution
+Opponent deck: Sky Striker (Fortino Cabrales, YCS Pasadena, November 2019, Top 32)
 [IDS_SOLO.CHAPTER20060050_EXPLANATION]
 Progression Level: 72
 Core Set: Rising Rampage
 Ban List: 2019-10 Orcust Format 
 Opponent: Curse Necrofear
 Unlocks: 72-Legendary Duelists: Immortal Destiny
+Opponent deck: True Draco (Maximilien Delval, YCS - Milan Italy, December 2019, 2nd)
 [IDS_SOLO.CHAPTER20060051_EXPLANATION]
 Progression Level: 72
 Core Set: Rising Rampage
 Ban List: 2019-10 Orcust Format 
 Opponent: Fortune Fairy Ann
 Unlocks: 72-TP: OTS Tournament Pack 11
+Opponent deck: Salamangreat (Matrixx, TOSS Monthly 18, December 2025, 2nd)
 [IDS_SOLO.CHAPTER20060052_EXPLANATION]
 Progression Level: 72
 Core Set: Rising Rampage
 Ban List: 2019-10 Orcust Format 
 Opponent: Vision HERO Trinity
 Unlocks: 73-Core: Chaos Impact
+Boss deck: True Draco (João Neves, Regional - Porto Portugal, February 2020, 1st)
 [IDS_SOLO.CHAPTER20060053_EXPLANATION]
 Progression Level: 72
 Core Set: Rising Rampage
 Ban List: 2019-10 Orcust Format 
 Opponent: Battlewasp – Azusa the Ghost Bow
 Unlocks: 72-Bonus: Fists of the Gadgets
+Opponent deck: Sky Striker (joebogli, YCS Pasadena, November 2019, Top 64)
 [IDS_SOLO.CHAPTER20060054_EXPLANATION]
 Progression Level: 72
 Core Set: Rising Rampage
 Ban List: 2019-10 Orcust Format 
 Opponent: Silverrokket Dragon
 Unlocks: 72-Structure Deck: Rokket Revolt
+Opponent deck: True Draco (Jarrid Centamore, Regional - Philadelphia Pennsylvania, September 2019, 2nd)
 [IDS_SOLO.CHAPTER20060055_EXPLANATION]
 Progression Level: 73
 Core Set: Chaos Impact
 Ban List: 2020-01 Rokket Format 
 Opponent: Marincess Marbled Rock
 Unlocks: 
+Opponent deck: SPYRAL (Ethan Schwarten, Regional - Minneapolis Minnesota, February 2020, 1st)
 [IDS_SOLO.CHAPTER20060056_EXPLANATION]
 Progression Level: 73
 Core Set: Chaos Impact
 Ban List: 2020-01 Rokket Format 
 Opponent: House Dragonmaid
 Unlocks: 
+Opponent deck: SPYRAL (Jacob Adams, Regional - Layton Utah, February 2020, 1st)
 [IDS_SOLO.CHAPTER20060057_EXPLANATION]
 Progression Level: 73
 Core Set: Chaos Impact
 Ban List: 2020-01 Rokket Format 
 Opponent: Ikelos, the Dream Mirror Mara
 Unlocks: 73-TP: OTS Tournament Pack 12
+Opponent deck: SPYRAL (Luke Bowkis, Regional - Sheffield England, March 2020, Top 16)
 [IDS_SOLO.CHAPTER20060058_EXPLANATION]
 Progression Level: 73
 Core Set: Chaos Impact
 Ban List: 2020-01 Rokket Format 
 Opponent: Shaman of the Tenyi
 Unlocks: 74-Core: Ignition Assault
+Boss deck: Danger! Lunalight (Sam Nguyen, Regional - Indianapolis Indiana, February 2020, Top 16)
 [IDS_SOLO.CHAPTER20060059_EXPLANATION]
 Progression Level: 73
 Core Set: Chaos Impact
 Ban List: 2020-01 Rokket Format 
 Opponent: Hela, Generaider Boss of Doom
 Unlocks: 73-Legendary Duelists: Magical Hero
+Opponent deck: Danger! Mekk-Knight Invoked (Ben Polding, Regional - Reading England, February 2020, Top 16)
 [IDS_SOLO.CHAPTER20060060_EXPLANATION]
 Progression Level: 73
 Core Set: Chaos Impact
 Ban List: 2020-01 Rokket Format 
 Opponent: Geomathmech Final Sigma
 Unlocks: 73-Bonus: Mystic Fighters
+Opponent deck: Rank-Up Orcust (Patrick Cook, Regional - Pearl Mississippi, February 2020, Top 16)
 [IDS_SOLO.CHAPTER20060061_EXPLANATION]
 Progression Level: 74
 Core Set: Ignition Assault
 Ban List: 2020-04 Rokket Format 
 Opponent: Powercode Talker
 Unlocks: 
+Opponent deck: Mystic Mine Trains (Thomas Barass, Regional - Sheffield England, March 2020, 1st)
 [IDS_SOLO.CHAPTER20060062_EXPLANATION]
 Progression Level: 74
 Core Set: Ignition Assault
 Ban List: 2020-04 Rokket Format 
 Opponent: Unchained Abomination
 Unlocks: 
+Opponent deck: Duy3hr4 (Arthur V, Cardmarket Series Paris, September 2020, Top 16)
 [IDS_SOLO.CHAPTER20060063_EXPLANATION]
 Progression Level: 74
 Core Set: Ignition Assault
@@ -3941,110 +4282,137 @@ Opponent: Zefra Metaltron
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: Mudora
+Opponent deck: Goat Control (Gianmarco Santeroni, GCI Championship Series Vol. 2, December 2019, 2nd)
 [IDS_SOLO.CHAPTER20120002_EXPLANATION]
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: Morphing Jar  
+Opponent deck: Economics FTK (Federico Cavallaro, GCI Championship Series Vol. 2, December 2019, Top 4)
 [IDS_SOLO.CHAPTER20120003_EXPLANATION]
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: Horus the Black Flame Dragon LV8  
+Opponent deck: Chaos Turbo (Galliw7390, GCI Championship Series Vol. 2, December 2019, Top 4)
 [IDS_SOLO.CHAPTER20120004_EXPLANATION]
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: Gravekeepers Spy  
+Opponent deck: Chaos Control (I'm really LIKE THAT., Format Library Championship 10, December 2019, 2nd)
 [IDS_SOLO.CHAPTER20120005_EXPLANATION]
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: Golem Sentry  
+Opponent deck: Chaos Return (freakysoap, Goat Format Swag Freeroll, July 2019, 2nd)
 [IDS_SOLO.CHAPTER20120006_EXPLANATION]
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: Dark Necrofear  
+Opponent deck: Flip Control (Tristan, Goat Format Swag Freeroll, July 2019, Top 4)
 [IDS_SOLO.CHAPTER20120007_EXPLANATION]
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: Black Luster Soldier  
+Opponent deck: Empty Jar (mm, Format Library Championship 9, July 2019, 2nd)
 [IDS_SOLO.CHAPTER20120008_EXPLANATION]
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: Armed Dragen LV7  
+Opponent deck: Drain Burn (Darth Griefious, Format Library Championship 9, July 2019, Top 4)
 [IDS_SOLO.CHAPTER20120009_EXPLANATION]
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: Zaborg  
+Opponent deck: Panda Burn (kl1993_, Format Library Championship 9, July 2019, Top 4)
 [IDS_SOLO.CHAPTER20120010_EXPLANATION]
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: The Creator  
+Opponent deck: Tiger Stun (Pojo, Format Library Championship 8, April 2019, Top 4)
 [IDS_SOLO.CHAPTER20120011_EXPLANATION]
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: Ryu Kokki  
+Opponent deck: Reasoning Gate Turbo ([DGz] Noelle., Format Library Championship 7, February 2019, 2nd)
 [IDS_SOLO.CHAPTER20120012_EXPLANATION]
 Progression Level: 14+
 Ban List: 2005-04 Goat Format  
 Opponent: Relinquished  
+Opponent deck: Stall Burn (Dylicious, Format Library Championship 6, September 2018, Top 4)
 [IDS_SOLO.CHAPTER20130001_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Test Tiger 
+Opponent deck: Gadget (Matthew Tuxford, SJC Orlando, January 2008, Top 4)
 [IDS_SOLO.CHAPTER20130002_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Skill Drain 
+Opponent deck: Macro Stun (Hugo Adame, SJC Orlando, January 2008, Top 16)
 [IDS_SOLO.CHAPTER20130003_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Red Gadget 
+Opponent deck: Volcanic Monarch (Charley La, SJC San Mateo, December 2007, Top 8)
 [IDS_SOLO.CHAPTER20130004_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Il Blud 
+Opponent deck: Demise OTK (David Rodriguez, SJC San Mateo, December 2007, Top 8)
 [IDS_SOLO.CHAPTER20130005_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Green Gadget 
+Opponent deck: Macro Monarch (John Umali, SJC San Mateo, December 2007, Top 8)
 [IDS_SOLO.CHAPTER20130006_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Great Shogun Shien 
+Opponent deck: Zombie (David Huertas, SJC San Mateo, December 2007, Top 16)
 [IDS_SOLO.CHAPTER20130007_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Destiny Hero Diamond Dude 
+Opponent deck: Baboon Burn (Justin Trias, SJC San Mateo, December 2007, Top 16)
 [IDS_SOLO.CHAPTER20130008_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Demise, King of Armageddon 
+Opponent deck: Perfect Circle Monarch (hey_its_jan, Drama Llama Classic 9, April 2026, Top 4)
 [IDS_SOLO.CHAPTER20130009_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Cyber Dragon
+Opponent deck: Volcanic (GBO, Disk Commander Classic 14, September 2026, Top 8)
 [IDS_SOLO.CHAPTER20130010_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Bazoo the Soul Eater
+Opponent deck: Bazoo Return (james arc, Disk Commander Classic 14, September 2026, Top 8)
 [IDS_SOLO.CHAPTER20130011_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Banisher of the Radiance
+Opponent deck: Rat Warrior (clemxns12, Disk Commander Classic 11, June 2026, Top 8)
 [IDS_SOLO.CHAPTER20130012_EXPLANATION]
 Progression Level: 27+
 Ban List: 2008-01 Perfect Circle Format  
 Opponent: Thestalos the Firestorm Monarch
+Opponent deck: Six Samurai (FloatstoneMafia, Drama Llama Classic 9, April 2026, Top 8)
 [IDS_SOLO.CHAPTER20140001_EXPLANATION]
 Progression Level: 39+
 Ban List: 2010-03 Edison Format  
 Opponent: Volcanic Rocket
+Opponent deck: Frog OTK (Anthony M Phillips, Patron Battle Royal 57, August 2026, Top 8)
 [IDS_SOLO.CHAPTER20140002_EXPLANATION]
 Progression Level: 39+
 Ban List: 2010-03 Edison Format  
 Opponent: Substitoad
+Opponent deck: Gigavise (dunko_sekka, Patron Battle Royale 56, July 2026, Top 8)
 [IDS_SOLO.CHAPTER20140003_EXPLANATION]
 Progression Level: 39+
 Ban List: 2010-03 Edison Format  
 Opponent: Rescue Cat
+Opponent deck: Gigavise (NOT the True Party King, Seven Eras Subscriber Bonanza 19, July 2026, Top 8)
 [IDS_SOLO.CHAPTER20140004_EXPLANATION]
 Progression Level: 39+
 Ban List: 2010-03 Edison Format  
@@ -4085,48 +4453,60 @@ Opponent: Zombie Master
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: T.G. Rush Rhino
+Opponent deck: Traptrix (Nick Blandin, YCS Philadelphia, May 2014, 2nd)
 [IDS_SOLO.CHAPTER20150002_EXPLANATION]
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: Sylvan Hemitree
+Opponent deck: Lightsworn Ruler (Alexander Muts, North America WCQ, July 2014, Top 32)
 [IDS_SOLO.CHAPTER20150003_EXPLANATION]
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: Mermail Abysslinde
+Opponent deck: Geargia (Dominic Böhmer, European WCQ, June 2014, Top 8)
 [IDS_SOLO.CHAPTER20150004_EXPLANATION]
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: Koaki Meiru Urnight
+Opponent deck: Mermail (ilbestio, European WCQ, June 2014, Top 8)
 [IDS_SOLO.CHAPTER20150005_EXPLANATION]
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: Karakuri Shogun mdl 00 Burei
+Opponent deck: Madolche (Kevin Semlali, European WCQ, June 2014, Top 16)
 [IDS_SOLO.CHAPTER20150006_EXPLANATION]
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: Infernity Necromancer
+Opponent deck: Bujin (Luis Poma, YCS Philadelphia, May 2014, Top 16)
 [IDS_SOLO.CHAPTER20150007_EXPLANATION]
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: Gishki Zielgigas
+Opponent deck: Infernity (Joshua Lytle, YCS Philadelphia, May 2014, Top 32)
 [IDS_SOLO.CHAPTER20150008_EXPLANATION]
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: Fire Hand
+Opponent deck: Evilswarm (Nizar Sarhan, YCS Philadelphia, May 2014, Top 32)
 [IDS_SOLO.CHAPTER20150009_EXPLANATION]
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: Evolsaur Cerato
+Opponent deck: Sylvan (IlMatematico, Moralltach Monthly 52, July 2026, Top 4)
 [IDS_SOLO.CHAPTER20150010_EXPLANATION]
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: Evilswarm Ophion
+Opponent deck: Geargia (Kevin Brandt, European WCQ, June 2014, Top 16)
 [IDS_SOLO.CHAPTER20150011_EXPLANATION]
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: Bujin Hirume
+Opponent deck: Lightsworn Ruler (Dennis, European WCQ, June 2014, Top 32)
 [IDS_SOLO.CHAPTER20150012_EXPLANATION]
 Progression Level: 51+
 Ban List: 2014-04 HAT Format  
 Opponent: Brotherhood of the Fire Fist - Rooster
 
+Opponent deck: Mermail (Alpay Engin, European WCQ, June 2014, Top 64)

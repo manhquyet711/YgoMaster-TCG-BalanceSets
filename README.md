@@ -61,9 +61,10 @@ has been reworked here. Full details: [Docs/TCGCampaign/CHANGES.md](Docs/TCGCamp
 - **Loaner-only era finals:** each era's last boss is played with that era's premade deck.
 - **56 premade format decks** in every deck list ("Era 01 Yugi Kaiba Format" … "Era 75 Adamancipator
   Format", plus 5 "Challenger" decks), set to their format, no cards given.
-- **Real tournament decks (DM era):** bosses play event winners such as Ng Yu Leung's 2003 World
-  Championship deck; normal duels play 2nd-4th place decks from SJCs and Nationals. Each chapter
-  description names the deck, pilot, event and placement. Other eras follow.
+- **Tournament decks in every era:** 435 opponents (351 real decks from the time, 84 retro) across the
+  six eras and four challenger gates. Bosses play event winners such as Ng Yu Leung's 2003 World
+  Championship deck; normal duels play 2nd-4th place decks from SJCs, YCSs, Nationals and WCQs.
+  Each chapter description names the deck, pilot, event, date and placement.
 - **Tripled chapter rewards** (600 / 1,200 / 6,000 / 15,000 gems).
 
 ## Also included

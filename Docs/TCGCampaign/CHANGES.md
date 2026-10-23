@@ -84,13 +84,34 @@ With `"DeckListAlphabetical": true` in `Settings.json` the list sorts from Era 0
 Script: `Tools/TCGCampaign/build_era_decks.py <Data folder>` → `Data/TCGCampaign/EraReferenceDecks.json`
 Server: `YgoMasterServer/GameServer.EraReferenceDecks.cs`
 
-## Tournament decks (DM era)
+## Tournament decks (all eras and challenger gates)
 
-Opponents in the DM era now play real tournament decks, and each chapter description ends with the
-deck's name, pilot, event and placement, e.g.
-"Boss deck: Hand Control (Ng Yu Leung, World Championship 2003, 1st)".
+Opponents in all six era gates and the Goat, Perfect Circle, Edison and HAT challenger gates play
+tournament decks: 435 duels in total, 351 of them real decks from the time and 84 from retro
+tournaments. Each chapter description ends with the deck's name, pilot, event, date and placement, e.g.
+"Boss deck: Hand Control (Ng Yu Leung, World Championship, August 2003, 1st)" or
+"Opponent deck: Earth Beat (Elton Cho, SJC Pomona, April 2005, Top 4)".
 
-**Bosses** use event winners:
+| Gate | Real | Retro | Original kept |
+|---|---|---|---|
+| DM | 27 | 53 | 4 |
+| GX | 72 | 2 | 4 |
+| 5D's | 44 | 11 | 17 |
+| Zexal | 68 | 2 | 2 |
+| Arc-V | 51 | 4 | 17 |
+| VRAINS | 59 | 3 | 10 |
+| Goat Challenger | 12 | 0 | 0 |
+| Perfect Circle Challenger | 7 | 5 | 0 |
+| Edison Challenger | 0 | 3 | 9 |
+| HAT Challenger | 11 | 1 | 0 |
+
+Duels keep their original deck only where no legal tournament deck exists: mostly levels right at a
+set release (11, 25, 28-29, 32, 57, 61, 74-75), where nearly every deck of those weeks already uses the
+next set's cards. The Modern Challenger post-game (2011) is unchanged. DM formats from 2002 to mid-2003
+predate organized play, so DM levels 1-6, 8 and 9 use retro decks.
+
+**DM bosses** were hand-picked (`DM_BOSS_PICKS`); bosses in other eras are picked automatically:
+real winners first, then real 2nd/Top 4, then retro winners. The DM bosses:
 
 | Level | Format | Deck | Source |
 |---|---|---|---|
@@ -109,18 +130,20 @@ deck's name, pilot, event and placement, e.g.
 | 13 | Goat | Goat Control | Bryan Coronel, SJC New Jersey 2005, Top 4 |
 | 14 | Goat | Goat Control | Max Suffridge, U.S. Nationals 2005, 1st |
 
-**Normal duels** use 2nd-4th place decks: real decks from the time first, then at most two retro
-decks per level; a duel with no legal deck left keeps its original campaign deck. Result: 21 real
-and 20 retro decks, 29 duels unchanged (mostly levels 1-6, 8 and 9, which predate organized play,
-and level 11, where nearly every deck of the period already uses Soul of the Duelist cards).
+**Normal duels** use real decks from the time first (2nd-4th place preferred), then retro decks.
+For variety, strategies used least so far in the gate come first, and a level avoids repeating a deck type.
 
 Rules for every pick: legal in the chapter's own format, used only once, every card exists in
-Master Duel. Archived lists with fewer than 40 main-deck cards are skipped; old Extra Decks are
-cut to 15. "Retro" decks come from today's retro-format tournaments (same card pools, modern players).
+Master Duel, and real decks must come from around the level's own period (from the set's release to
+a few months after the next one). Archived lists with fewer than 40 main-deck cards are skipped;
+old Extra Decks are cut to 15. "Retro" decks come from today's retro-format tournaments (same card
+pools, modern players). Names with rare accented letters are simplified for the game font.
 
-Script: `Tools/TCGCampaign/tournament_decks.py fetch <Data folder>` (online) saves the picks to
-`Data/TCGCampaign/TournamentDecks.json`; `tournament_decks.py apply <Data folder>` writes them into
-the duels and chapter texts without network access.
+Script: `Tools/TCGCampaign/tournament_decks.py fetch <Data folder>` (online, about an hour on a
+first run) saves the picks to `Data/TCGCampaign/TournamentDecks.json`, keeping picks already in that
+file; every downloaded page is cached in `Tools/TCGCampaign/.cache` (ignored by git), so reruns take
+minutes. `tournament_decks.py apply <Data folder>` writes the decks into the duels and chapter texts
+without network access.
 
 ## Rewards
 
