@@ -372,3 +372,6 @@ Docs/BalancedCharacters/Balance/*/decks/
 Docs/BalancedCharacters/Balance/*/round*/decks/
 Tools/*.exe
 Tools/BalancedCharacters/*.exe
+
+# Promotion drafts (Reddit, Facebook, video script): kept locally only
+Docs/Promotion/
