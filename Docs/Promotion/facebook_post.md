@@ -26,7 +26,8 @@ Pick a character, then beat every other one. Both decks are fixed, so it's your 
 🔒 Offline only. It doesn't connect to Konami's servers or touch your real account.
 
 ⬇️ **Download and setup guide:** https://github.com/manhquyet711/YgoMaster-TCG-BalanceSets/releases
-🎬 **Setup video (5 min):** VIDEO_LINK
+🎬 **Setup video:** https://youtu.be/UNSkqEzeNIc
+🎮 **Gameplay demo:** https://youtu.be/utRZhVZrScA
 
 Huge thanks to Rosehn for the decks, and to the YgoMaster and TCG Campaign creators 🙏
 Fan-made, free, not affiliated with Konami.

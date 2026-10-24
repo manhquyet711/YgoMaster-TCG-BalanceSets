@@ -13,6 +13,15 @@ It is built on the [TCG Solo Campaign](https://github.com/vngudu/YgoMaster-TCG) 
 > v3 and Duel Royale are still being balanced. Results in
 > [Docs/BalancedCharacters/Balance/ANALYSIS.md](Docs/BalancedCharacters/Balance/ANALYSIS.md).
 
+## Videos
+
+- [How to install the Balanced Characters mod (about 2 min)](https://youtu.be/UNSkqEzeNIc)
+- [Character balance sets: gameplay demo](https://youtu.be/utRZhVZrScA)
+- [Balanced character decks and TCG campaign (Master Duel 2.8.0)](https://youtu.be/rsW_F0inilc)
+
+**Download:** [latest release](https://github.com/manhquyet711/YgoMaster-TCG-BalanceSets/releases/latest). Get
+`Balanced-Characters-Master-Duel-<version>.zip` under Assets (the "Source code" downloads won't run).
+
 ## Balanced Characters
 
 Open **SOLO > Stories > Balanced Characters** and pick a character gate. The gate chooses the character you play;

@@ -45,7 +45,7 @@ Big caveat: the AI plays straightforward beatdown well, but it doesn't pilot com
 - **Duel Royale:** Konami's 7 official pre-built decks from the Japanese Duel Royale sets.
 - Each set is its own folder in Solo, next to the TCG Solo Campaign.
 
-**Download:** [GitHub release](https://github.com/manhquyet711/YgoMaster-TCG-BalanceSets/releases) · [Source and full results](https://github.com/manhquyet711/YgoMaster-TCG-BalanceSets) · [Setup video](VIDEO_LINK)
+**Download:** [GitHub release](https://github.com/manhquyet711/YgoMaster-TCG-BalanceSets/releases) · [Source and full results](https://github.com/manhquyet711/YgoMaster-TCG-BalanceSets) · [Setup video](https://youtu.be/UNSkqEzeNIc) · [Gameplay demo](https://youtu.be/utRZhVZrScA)
 
 Full credit for the decks goes to you. The mod's README links back to both of your posts. Thanks for putting these together!
 
