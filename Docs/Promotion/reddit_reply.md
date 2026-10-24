@@ -47,10 +47,10 @@ Big caveat: the AI plays straightforward beatdown well, but it doesn't pilot com
 
 **Download:** [GitHub release](https://github.com/manhquyet711/YgoMaster-TCG-BalanceSets/releases) · [Source and full results](https://github.com/manhquyet711/YgoMaster-TCG-BalanceSets) · [Setup video](VIDEO_LINK)
 
-Full credit for the decks goes to you. The mod's README links back to both of your posts and to Cardaire. Thanks for putting these together!
+Full credit for the decks goes to you. The mod's README links back to both of your posts. Thanks for putting these together!
 
 ---
 
 ## DM to u/Rosehn (send first)
 
-> Hi! I loved your balanced old-school character decks, and I made a free offline Master Duel mod where you can play all 15 v2 lists against each other (fixed decks, vs the CPU). I credited you and linked both of your posts, and Cardaire. I also ran every matchup CPU vs CPU and got some win-rate numbers you might find interesting. Would you be OK with me sharing it as a comment on your v2 post? Happy to change anything you'd like first. Repo: https://github.com/manhquyet711/YgoMaster-TCG-BalanceSets
+> Hi! I loved your balanced old-school character decks, and I made a free offline Master Duel mod where you can play all 15 v2 lists against each other (fixed decks, vs the CPU). I credited you and linked both of your posts. I also ran every matchup CPU vs CPU and got some win-rate numbers you might find interesting. Would you be OK with me sharing it as a comment on your v2 post? Happy to change anything you'd like first. Repo: https://github.com/manhquyet711/YgoMaster-TCG-BalanceSets
