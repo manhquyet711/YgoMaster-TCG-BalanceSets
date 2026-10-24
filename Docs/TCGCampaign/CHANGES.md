@@ -173,6 +173,18 @@ Server side:
   and skipped folders are set in `Settings.json`: `SoloRecommendModes` (default `[2100, 2101, 2102, 2104, 2103]`)
   and `SoloRecommendSkip` (default `[2109]`: the original gates are never recommended).
 
+## Lighter pack art
+
+The campaign's shop art (3 images for each of 326 packs) was about 995 MB of lossless PNG, which
+made the mod about 1 GB. `Tools/TCGCampaign/compress_pack_art.py` cut it to about 230 MB, checked in game:
+
+| Images | DM, GX, 5D's (levels 1-39) | Zexal, Arc-V, VRAINS (levels 40-75) |
+|---|---|---|
+| Shop banners (900x800, no transparency) | JPEG q90 | JPEG q80 at 75% size |
+| Pack covers (see-through edges) | PNG re-saved losslessly | 256-colour PNG |
+
+Banners become `.jpg`: the client loads `<name>.jpg` when `<name>.png` is missing.
+
 ## Rewards
 
 Chapter clear rewards in `Solo.json` are tripled: 600 / 1,200 / 6,000 / 15,000 gems (reward sets

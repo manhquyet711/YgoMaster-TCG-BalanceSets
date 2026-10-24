@@ -197,8 +197,24 @@ built by `royale_set.py build` into `Tools/BalancedCharacters/Testing/royale`. P
 | Relinquished (+ Thousand-Eyes Restrict, Sanwitch) | Pegasus |
 | Masked Beast Des Gardius | Bakura |
 
-Two test duels finished cleanly. The full test (21 pairs, 20 games each) is queued after Pegasus B;
-results go to `royale/SUMMARY.md`. If it tests well it becomes its own Solo mode (folder 2103).
+It is now its own Solo mode (folder 2103, deck set `source-v4`).
+
+**Result, 2026-10-23** (420 duels, 20 per pair, 0 errors): **6 of 7 decks in range** with no changes,
+the most even set tested so far (spread 41-62%). Results: [royale/SUMMARY.md](royale/SUMMARY.md).
+
+| Deck | Win % | First | Second |
+|---|---|---|---|
+| A Legendary Ocean (Mako) | **62%** | 55% | 68% |
+| Relinquished (Pegasus) | 58% | 50% | 67% |
+| Gearfried (Joey) | 52% | 42% | 63% |
+| Dark Magician (Yugi) | 48% | 47% | 50% |
+| Des Gardius (Bakura) | 42% | 42% | 43% |
+| Blue-Eyes (Kaiba) | 42% | 30% | 53% |
+| Lava Golem (Marik) | 41% | 33% | 48% |
+
+A Legendary Ocean is only just over the line; its lopsided matchup is Lava Golem (90%). Blue-Eyes and
+Lava Golem are weak going first (30% and 33%), which fits the CPU's habit of wasting its first turn.
+The decks are played as Konami printed them, so they are left unchanged for now.
 ygo-agent was also checked for these decks: it can play all 155 cards but its trained AI knows only 16 (10%).
 
 ## v2 tuned (test only, not in the game)

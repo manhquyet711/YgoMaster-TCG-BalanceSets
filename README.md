@@ -106,6 +106,8 @@ The two Recommended cards show your current TCG era and Format Challenge. See
 ## Also included
 
 - **TCG Solo Campaign** from the parent fork: about 300 shop packs with custom art, era progression and dialogue.
+  The pack art is compressed per era (995 MB to about 230 MB; see
+  [CHANGES.md](Docs/TCGCampaign/CHANGES.md#lighter-pack-art)), so the whole mod is about 285 MB.
 - **Master Duel 2.8.0 update**: hooks, IL2CPP and duel bindings moved to the YgoMaster v1.79 baseline,
   an extended card catalog (13,997 entries) and data fixes. See [UPGRADE-NOTES.md](UPGRADE-NOTES.md).
 
