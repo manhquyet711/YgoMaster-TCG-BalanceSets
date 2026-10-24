@@ -115,9 +115,35 @@ Changes made for round 3:
 | Marik (64%) | 1 Mystic Tomato out; a 2nd Masked Sorcerer in |
 | Pegasus (17%) | Parrot Dragon, Illusionist Faceless Mage, Thousand-Eyes Idol and the last Crass Clown out; 2 Mystic Tomato, Magician of Faith and Spirit Reaper in (searchers and defense so he survives until Toon World lands) |
 
-### Round 3
+### Round 3, 2026-10-23
 
-Running; results go to [source-v3/SUMMARY.md](source-v3/SUMMARY.md).
+560 duels, 0 errors. Results: [source-v3/round3/SUMMARY.md](source-v3/round3/SUMMARY.md); deck lists:
+[source-v3/round3/goat_set.round3.py](source-v3/round3/goat_set.round3.py). **6 of 8 decks in range**
+(round 1: 4 of 8).
+
+| Deck | Round 1 | Round 2 | Round 3 | First | Second |
+|---|---|---|---|---|---|
+| Marik Ishtar | 71% | 64% | **64%** | 61% | 67% |
+| Ishizu Ishtar | 59% | 60% | 59% | 49% | 69% |
+| Mai Valentine | 61% | 55% | 56% | 40% | 71% |
+| Joey Wheeler | 56% | 59% | 52% | 37% | 67% |
+| Seto Kaiba | 57% | 63% | 50% | 47% | 53% |
+| Yami Bakura | 42% | 44% | 45% | 40% | 50% |
+| Yugi Muto | 39% | 38% | 44% | 41% | 46% |
+| Maximillion Pegasus | 13% | 17% | **29%** | 24% | 33% |
+
+What it shows:
+- **Yugi is fixed** (38% to 44%): swapping the Magnet Warriors for Dark Magician of Chaos,
+  Apprentice Magician and a 2nd Summoned Skull worked.
+- **Kaiba is fixed** (63% to 50%) with one fewer Enemy Controller and Lord of D.
+- **Pegasus improved again** (17% to 29%) with Mystic Tomato and defense, but is still last; he
+  still loses 90% to Marik and Ishizu. Pegasus B (running next) decides his version.
+- **Marik did not move** (64%). One fewer Mystic Tomato was not enough. He is strongest going second
+  (67%): his many traps (about 15) and floaters suit the CPU's defensive play.
+- Most decks win far more going second (Mai 71%, Joey 67%), so the CPU tends to waste its first turn.
+  This affects every deck alike and is not a deck problem.
+
+Round 4 (after the Pegasus B comparison): cut Marik's trap count and choose the Pegasus version.
 
 ### Pegasus B (comparison deck, test only)
 

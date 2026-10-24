@@ -178,7 +178,7 @@ Options for test-only decks that are not in the game:
 
 Results so far (details and reasons in [ANALYSIS.md](Docs/BalancedCharacters/Balance/ANALYSIS.md)):
 v2 has 10 of 15 decks in range (Grandpa 11%, Pegasus 24% lowest; Rex 66% highest); the tuned v2
-test copy has 14 of 15. v3 is being tuned round by round.
+test copy has 14 of 15. v3 has 6 of 8 after three tuning rounds (Marik 64%, Pegasus 29% left).
 
 ## Manual playtesting
 
