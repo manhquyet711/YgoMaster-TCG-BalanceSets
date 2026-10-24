@@ -1,111 +1,62 @@
 {
   "cardTableCount": 14257,
-  "revision": "source-v2",
+  "revision": "source-v3",
   "decks": [
     {
-      "characterId": "yugi",
-      "ready": true,
-      "errors": [],
-      "mainCount": 40,
-      "extraCount": 0
-    },
-    {
-      "characterId": "yugi_season2",
-      "ready": true,
-      "errors": [],
-      "mainCount": 40,
-      "extraCount": 4
-    },
-    {
-      "characterId": "kaiba",
-      "ready": true,
-      "errors": [],
-      "mainCount": 40,
-      "extraCount": 3
-    },
-    {
-      "characterId": "joey",
-      "ready": true,
-      "errors": [],
-      "mainCount": 40,
-      "extraCount": 3
-    },
-    {
-      "characterId": "weevil",
-      "ready": true,
-      "errors": [],
-      "mainCount": 40,
-      "extraCount": 0
-    },
-    {
-      "characterId": "rex",
-      "ready": true,
-      "errors": [],
-      "mainCount": 40,
-      "extraCount": 0
-    },
-    {
-      "characterId": "mako",
-      "ready": true,
-      "errors": [],
-      "mainCount": 40,
-      "extraCount": 0
-    },
-    {
-      "characterId": "mai",
-      "ready": true,
-      "errors": [],
-      "mainCount": 40,
-      "extraCount": 0
-    },
-    {
-      "characterId": "bandit_keith",
-      "ready": true,
-      "errors": [],
-      "mainCount": 40,
-      "extraCount": 0
-    },
-    {
-      "characterId": "bonz",
-      "ready": true,
-      "errors": [],
-      "mainCount": 40,
-      "extraCount": 0
-    },
-    {
-      "characterId": "pegasus",
+      "characterId": "goat_yugi",
       "ready": true,
       "errors": [],
       "mainCount": 40,
       "extraCount": 2
     },
     {
-      "characterId": "yami_bakura",
+      "characterId": "goat_kaiba",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 2
+    },
+    {
+      "characterId": "goat_joey",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 2
+    },
+    {
+      "characterId": "goat_mai",
       "ready": true,
       "errors": [],
       "mainCount": 40,
       "extraCount": 0
     },
     {
-      "characterId": "gravekeepers",
+      "characterId": "goat_pegasus",
+      "ready": true,
+      "errors": [],
+      "mainCount": 40,
+      "extraCount": 2
+    },
+    {
+      "characterId": "goat_bakura",
       "ready": true,
       "errors": [],
       "mainCount": 40,
       "extraCount": 0
     },
     {
-      "characterId": "grandpa",
+      "characterId": "goat_marik",
       "ready": true,
       "errors": [],
       "mainCount": 40,
       "extraCount": 0
     },
     {
-      "characterId": "jaden",
+      "characterId": "goat_ishizu",
       "ready": true,
       "errors": [],
       "mainCount": 40,
-      "extraCount": 15
+      "extraCount": 0
     }
   ]
 }

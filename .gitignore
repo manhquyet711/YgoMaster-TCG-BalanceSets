@@ -365,3 +365,10 @@ MigrationBackup/
 
 # Download cache of Tools/TCGCampaign/tournament_decks.py
 Tools/TCGCampaign/.cache/
+
+# Balanced Characters: regenerated test decks and build outputs
+Tools/BalancedCharacters/Testing/
+Docs/BalancedCharacters/Balance/*/decks/
+Docs/BalancedCharacters/Balance/*/round*/decks/
+Tools/*.exe
+Tools/BalancedCharacters/*.exe

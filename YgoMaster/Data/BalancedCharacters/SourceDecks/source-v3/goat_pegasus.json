@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "characterId": "goat_pegasus",
+  "displayName": "Maximillion Pegasus",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Goat Era Duelists: AI-designed balanced set (Tools/BalancedCharacters/goat_set.py)",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 2,
+  "main": [
+    {
+      "name": "Toon Summoned Skull",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Blue-Eyes Toon Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Toon Mermaid",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Toon Alligator",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Mystic Tomato",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "D.D. Warrior Lady",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Manga Ryu-Ran",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Relinquished",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Magician of Faith",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Hane-Hane",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Spirit Reaper",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Toon World",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Black Illusion Ritual",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mind Control",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Card Destruction",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Swords of Revealing Light",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Nobleman of Crossout",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Shadow Spell",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Draining Shield",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sakuretsu Armor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Magic Cylinder",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Waboku",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Trap Hole",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ultimate Offering",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ring of Destruction",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Thousand-Eyes Restrict",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Bickuribox",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

@@ -73,5 +73,10 @@
     "masterDuelId": 4675,
     "substitute": true,
     "evidence": "Substitute requested by the user: Spellbinding Circle is absent from the installed card tables. Shadow Spell (Continuous Trap: target monster cannot attack or change battle position, loses 700 ATK) is the closest available old-school card."
+  },
+  "Reinforcement of the Army": {
+    "canonicalName": "Reinforcement of the Army",
+    "masterDuelId": 5328,
+    "evidence": "Original printing (Goat-legal, limited to 2); the other same-name entry (20040) is a later separate card not in the Goat pool."
   }
 }

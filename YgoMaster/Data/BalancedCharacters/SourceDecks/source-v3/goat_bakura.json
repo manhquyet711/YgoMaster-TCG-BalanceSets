@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "characterId": "goat_bakura",
+  "displayName": "Yami Bakura",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Goat Era Duelists: AI-designed balanced set (Tools/BalancedCharacters/goat_set.py)",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Dark Necrofear",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Headless Knight",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Earthbound Spirit",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Souls of the Forgotten",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "The Gross Ghost of Fled Dreams",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "The Portrait's Secret",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Whiptail Crow",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Morphing Jar",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Spirit Reaper",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Darklord Marie",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dark Ruler Ha Des",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ryu-Kishin Powered",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Lesser Fiend",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Invader of Darkness",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Soul Release",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Premature Burial",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Nightmare Wheel",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mind Control",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Spiritualism",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Card Destruction",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Book of Moon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Destiny Board",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Spirit Message \"I\"",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Spirit Message \"N\"",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Spirit Message \"A\"",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Spirit Message \"L\"",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Michizure",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Magic Cylinder",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sakuretsu Armor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Deal of Phantom",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Trap Hole",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "extra": [],
+  "side": []
+}

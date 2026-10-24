@@ -37,7 +37,13 @@ ROSTER_V2 = [
     ('yami_bakura', 'Yami Bakura', 40, 0),
     ('gravekeepers', 'Ishtar (Gravekeepers)', 40, 0),
     ('grandpa', 'Grandpa (Exodia)', 40, 0), ('jaden', 'Jaden Yuki', 40, 15)]
-ROSTERS = {'source-v1': ROSTER, 'source-v2': ROSTER_V2}
+# v3: Goat Era Duelists, AI-designed and Goat-legal (decks in goat_set.py).
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import goat_set  # noqa: E402
+ROSTER_V3 = [(cid, name, sum(main.values()), sum(extra.values())) for cid, name, main, extra in goat_set.DECKS]
+ROSTERS = {'source-v1': ROSTER, 'source-v2': ROSTER_V2, 'source-v3': ROSTER_V3}
+# Deck sources that count as reviewed: photographed lists, or designed sets checked by their own tool.
+VERIFIED = ('photo-verified', 'designed')
 
 
 def write_json(path, value):
@@ -191,7 +197,7 @@ def resolve():
             expected = source['expectedMainCount'] if zone == 'main' else source['expectedExtraCount'] if zone == 'extra' else 0
             if actual != expected:
                 errors.append('%s source count %d != expected %d' % (zone, actual, expected))
-        verified = source['verificationStatus'] == 'photo-verified'
+        verified = source['verificationStatus'] in VERIFIED
         if not verified:
             errors.append('Full source photo review pending')
         deck_reports.append({'characterId': cid, 'ready': not errors, 'errors': errors,
@@ -280,7 +286,7 @@ def compile_prototype():
         decks[cid] = load_json(path)
         validate_deck(decks[cid], catalog, revision)
         source = load_json(source_dir(revision) / (cid + '.json'))
-        if source['verificationStatus'] != 'photo-verified':
+        if source['verificationStatus'] not in VERIFIED:
             raise ValueError('Source photo is not verified: ' + cid)
     solo = load_game_config(DATA / 'Solo.json')['Master']['Solo']
     existing_gates = set(map(int, solo['gate']))
@@ -329,7 +335,10 @@ def compile_prototype():
         'mai': 'Harpie Lady Sisters', 'bandit_keith': 'Barrel Dragon', 'bonz': 'Pumpking the King of Ghosts',
         'pegasus': 'Relinquished', 'marik_bakura': 'Dark Necrofear',
         'gravekeepers': "Gravekeeper's Chief", 'grandpa': 'Exodia the Forbidden One',
-        'jaden': 'Elemental HERO Bladedge'}
+        'jaden': 'Elemental HERO Bladedge',
+        'goat_yugi': 'Dark Magician', 'goat_kaiba': 'Blue-Eyes White Dragon', 'goat_joey': 'Red-Eyes Black Dragon',
+        'goat_mai': 'Harpie Lady Sisters', 'goat_pegasus': 'Relinquished', 'goat_bakura': 'Dark Necrofear',
+        'goat_marik': 'Lava Golem', 'goat_ishizu': 'Mudora'}
     names_by_id = card_table()
     signatures = {}
     for cid in characters:
@@ -342,7 +351,9 @@ def compile_prototype():
         'kaiba': 'Kaiba', 'joey': 'Joey', 'weevil': 'Weevil', 'rex': 'Rex', 'mako': 'Mako',
         'mai': 'Mai', 'bandit_keith': 'Keith', 'bonz': 'Bonz', 'pegasus': 'Pegasus',
         'yami_bakura': 'Bakura', 'marik_bakura': 'Marik', 'gravekeepers': 'Gravekeeper',
-        'grandpa': 'Grandpa', 'jaden': 'Jaden'}
+        'grandpa': 'Grandpa', 'jaden': 'Jaden',
+        'goat_yugi': 'Yugi', 'goat_kaiba': 'Kaiba', 'goat_joey': 'Joey', 'goat_mai': 'Mai', 'goat_pegasus': 'Pegasus',
+        'goat_bakura': 'Bakura', 'goat_marik': 'Marik', 'goat_ishizu': 'Ishizu'}
 
     def deck_size(cid):
         main = sum(c['quantity'] for c in decks[cid]['main'])
@@ -420,12 +431,73 @@ def compile_prototype():
     print('Generated %d gates / %d directed encounters for %s' % (len(gates), len(encounters), ', '.join(characters)))
 
 
+# Shown in the Balanced Settings Editor's "Deck set" list.
+REVISION_INFO = {
+    'source-v1': 'Original 2021 lists by u/Rosehn (14 characters, incl. Yugi Battle City and Marik/Bakura)',
+    'source-v2': 'Updated and finalized 2024 lists by u/Rosehn (15 characters)',
+    'source-v3': 'Goat Era Duelists: AI-built balanced set, Goat-legal (8 characters)',
+}
+# Sets offered in the Settings Editor (v1 is kept as data but replaced by v3 in the list).
+PACKED_REVISIONS = ['source-v2', 'source-v3']
+
+
+def build_packs():
+    """Compile every deck revision into Revisions/<revision>/ so the Settings Editor can switch
+    sets by copying files. Working files (active overlay, texts, roster, generated pairs) are
+    restored afterwards, so the active revision and the repository stay unchanged."""
+    import shutil
+    import tempfile
+    ids_text = DATA / 'ClientData/IDS/IDS_BALANCED_CHARACTERS.txt'
+    # Roster.json and Ids.json are not restored: they only gain entries (names and gate/chapter IDs
+    # of every packed set), and the server needs those entries to load any of the packs.
+    keep = [MODE / 'Mode.json', ids_text,
+            MODE / 'Generated', ROOT / 'Tools' / 'BalancedCharacters' / 'Generated']
+    original_mode = load_json(MODE / 'Mode.json')
+    with tempfile.TemporaryDirectory() as tmp:
+        saved = []
+        for i, path in enumerate(keep):
+            target = Path(tmp) / str(i)
+            if path.is_dir():
+                shutil.copytree(path, target)
+            else:
+                shutil.copy2(path, target)
+            saved.append((path, target))
+        try:
+            for revision in PACKED_REVISIONS:
+                all_rows = ROSTERS[revision]
+                # only characters with a compiled deck (v1 Yugi was never playable: Spellbinding Circle)
+                roster = [r for r in all_rows if (MODE / 'Decks' / revision / (r[0] + '.json')).exists()]
+                mode = dict(original_mode, activeDeckRevision=revision, activeCharacterIds=[r[0] for r in roster])
+                write_json(MODE / 'Mode.json', mode)
+                compile_prototype()
+                pack = MODE / 'Revisions' / revision
+                pack.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(MODE / 'Generated/Overlay.json', pack / 'Overlay.json')
+                shutil.copy2(MODE / 'Generated/SoloGateCards.txt', pack / 'SoloGateCards.txt')
+                shutil.copy2(ids_text, pack / 'IDS_BALANCED_CHARACTERS.txt')
+                write_json(pack / 'Pack.json', {
+                    'schemaVersion': 1, 'revision': revision, 'contentVersion': mode['contentVersion'],
+                    'description': REVISION_INFO.get(revision, revision),
+                    'activeCharacterIds': mode['activeCharacterIds'],
+                    'characters': [r[1] for r in roster]})
+                print('Pack %s: %d characters' % (revision, len(roster)))
+        finally:
+            for path, target in saved:
+                if path.is_dir():
+                    shutil.rmtree(path)
+                    shutil.copytree(target, path)
+                else:
+                    shutil.copy2(target, path)
+    print('Restored the active revision %s' % original_mode.get('activeDeckRevision'))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['import', 'resolve', 'compile'])
+    parser.add_argument('command', choices=['import', 'resolve', 'compile', 'packs'])
     args = parser.parse_args()
     try:
-        {'import': import_sources, 'resolve': resolve, 'compile': compile_prototype}[args.command]()
+        {'import': import_sources, 'resolve': resolve, 'compile': compile_prototype,
+         'packs': build_packs}[args.command]()
     except (ValueError, KeyError, OSError) as error:
         print('BLOCKED: ' + str(error), file=sys.stderr)
         return 1

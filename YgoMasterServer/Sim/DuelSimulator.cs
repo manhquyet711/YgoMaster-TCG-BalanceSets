@@ -74,7 +74,8 @@ namespace YgoMaster
 
             int num = DLL_SetWorkMemory(IntPtr.Zero);
             IntPtr engineWork = Marshal.AllocHGlobal(num);
-            Debug.Assert(DLL_SetWorkMemory(engineWork) == 0);
+            // Not inside Debug.Assert: Release builds drop that call, leaving the engine without work memory.
+            DLL_SetWorkMemory(engineWork);
 
             DLL_SetEffectDelegate(DoRunEffect, DoIsBusyEffect);
             DLL_DuelSysClearWork();
@@ -168,7 +169,8 @@ namespace YgoMaster
 
             int num = DLL_SetWorkMemory(IntPtr.Zero);
             IntPtr engineWork = Marshal.AllocHGlobal(num);
-            Debug.Assert(DLL_SetWorkMemory(engineWork) == 0);
+            // Not inside Debug.Assert: Release builds drop that call, leaving the engine without work memory.
+            DLL_SetWorkMemory(engineWork);
 
             DLL_SetEffectDelegate(DoRunEffect, DoIsBusyEffect);
             DLL_DuelSysClearWork();

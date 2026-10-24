@@ -293,6 +293,15 @@ namespace YgoMaster
         /// Forces the deck list to be sorted by deck box then alphabetically
         /// </summary>
         public bool DeckListByBoxThenAlphabetical;
+        /// <summary>
+        /// Solo mode folders (parent gates) for the two "Recommended" cards, in order. Each card shows the
+        /// first gate in a folder (by priority) whose goal duel is not cleared yet.
+        /// </summary>
+        public List<int> SoloRecommendModes = new List<int>();
+        /// <summary>
+        /// Solo folders whose gates are never recommended (for example the original Master Duel gates)
+        /// </summary>
+        public List<int> SoloRecommendSkip = new List<int>();
 
         void LoadSettings()
         {
@@ -475,6 +484,8 @@ namespace YgoMaster
             DontUpdateDeckEditTime = Utils.GetValue<bool>(values, "DontUpdateDeckEditTime");
             DeckListAlphabetical = Utils.GetValue<bool>(values, "DeckListAlphabetical");
             DeckListByBoxThenAlphabetical = Utils.GetValue<bool>(values, "DeckListByBoxThenAlphabetical");
+            SoloRecommendModes = values.ContainsKey("SoloRecommendModes") ? Utils.GetIntList(values, "SoloRecommendModes", true) : new List<int>() { 2100, 2101, 2102, 2103 };
+            SoloRecommendSkip = values.ContainsKey("SoloRecommendSkip") ? Utils.GetIntList(values, "SoloRecommendSkip", true) : new List<int>() { 2109 };
             TradeAllowOtherPlayerToAddYourCards = Utils.GetValue<bool>(values, "TradeAllowOtherPlayerToAddYourCards");
             TradeAllowOtherPlayerToRemoveYourCards = Utils.GetValue<bool>(values, "TradeAllowOtherPlayerToRemoveYourCards");
             TradeEnterRoomRequestDelayInSeconds = Utils.GetValue<float>(values, "TradeEnterRoomRequestDelayInSeconds");

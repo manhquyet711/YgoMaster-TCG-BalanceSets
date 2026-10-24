@@ -117,5 +117,61 @@
     "displayName": "Yami Bakura",
     "deckRevision": "source-v2",
     "deckFile": "Decks/source-v2/yami_bakura.json"
+  },
+  {
+    "id": "goat_yugi",
+    "presentationId": "goat_yugi",
+    "displayName": "Yugi Muto",
+    "deckRevision": "source-v3",
+    "deckFile": "Decks/source-v3/goat_yugi.json"
+  },
+  {
+    "id": "goat_kaiba",
+    "presentationId": "goat_kaiba",
+    "displayName": "Seto Kaiba",
+    "deckRevision": "source-v3",
+    "deckFile": "Decks/source-v3/goat_kaiba.json"
+  },
+  {
+    "id": "goat_joey",
+    "presentationId": "goat_joey",
+    "displayName": "Joey Wheeler",
+    "deckRevision": "source-v3",
+    "deckFile": "Decks/source-v3/goat_joey.json"
+  },
+  {
+    "id": "goat_mai",
+    "presentationId": "goat_mai",
+    "displayName": "Mai Valentine",
+    "deckRevision": "source-v3",
+    "deckFile": "Decks/source-v3/goat_mai.json"
+  },
+  {
+    "id": "goat_pegasus",
+    "presentationId": "goat_pegasus",
+    "displayName": "Maximillion Pegasus",
+    "deckRevision": "source-v3",
+    "deckFile": "Decks/source-v3/goat_pegasus.json"
+  },
+  {
+    "id": "goat_bakura",
+    "presentationId": "goat_bakura",
+    "displayName": "Yami Bakura",
+    "deckRevision": "source-v3",
+    "deckFile": "Decks/source-v3/goat_bakura.json"
+  },
+  {
+    "id": "goat_marik",
+    "presentationId": "goat_marik",
+    "displayName": "Marik Ishtar",
+    "deckRevision": "source-v3",
+    "deckFile": "Decks/source-v3/goat_marik.json"
+  },
+  {
+    "id": "goat_ishizu",
+    "presentationId": "goat_ishizu",
+    "displayName": "Ishizu Ishtar",
+    "deckRevision": "source-v3",
+    "deckFile": "Decks/source-v3/goat_ishizu.json"
   }
 ]

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "characterId": "bonz",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-10uoilzjd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Block Attack",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Book of Life",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Call of the Mummy",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Skull Invitation",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Deal of Phantom",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Violet Crystal",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mirage of Nightmare",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Nightmare Wheel",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Yaranzo",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "The Snake Hair",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dragon Zombie",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Armored Zombie",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Master Kyonshee",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "The 13th Grave",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Clown Zombie",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Three-Legged Zombies",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Pyramid Turtle",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Castle of Dark Illusions",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Des Lacooda",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Decayed Commander",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Zombie Tiger",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Pumpking the King of Ghosts",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Shadow Ghoul",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Vampire Genesis",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Vampire Lord",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Foolish Burial",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Changed from v1: second De-Spell, Foolish Burial and Mystical Space Typhoon replace Dust Tornado, The Dark Door and Widespread Ruin."
+  ]
+}

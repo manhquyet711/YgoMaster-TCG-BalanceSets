@@ -1,3 +1,4 @@
+# 0.2.2 upgrade tool: uses the old launcher scripts, kept in Tools\BalancedCharacters\Legacy.
 param([string]$PackageDirectory = 'F:\ChatGPT\Balanced-Characters-0.2.2')
 $ErrorActionPreference = 'Stop'
 $installed = 'G:\Game\yugioh online\copy of master dual\Yu-Gi-Oh!  Master Duel\YgoMaster-BalancedCharacters'

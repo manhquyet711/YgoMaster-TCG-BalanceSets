@@ -1,6 +1,21 @@
 # Balanced Character Duels
 
-Current development revision: **0.2.2-prototype** (2026-10-22).
+## Current status (0.3.0-prototype, 2026-10-23)
+
+| Area | Status |
+|---|---|
+| Deck sets | `source-v2` (u/Rosehn 2024, 15 characters, default, played in-game) and `source-v3` (Goat Era Duelists, 8 AI-built Goat-legal decks, packed, not installed yet). `source-v1` retired. |
+| Balance testing | CPU vs CPU with the real engine (`npc_balance.py`). v2: 10/15 decks within 40-60%. Tuned v2 test copy: 14/15. v3: round 1 and 2 done, round 3 running. See [Balance/ANALYSIS.md](Balance/ANALYSIS.md). |
+| Comparisons | Pegasus B (Relinquished build) and Konami's 7 Duel Royale decks are queued as test-only sets. |
+| Solo menu | Grouped into folders, checked in-game: Stories has TCG Campaign and Balanced Characters; Training & Challenges has Format Challenges and Master Duel Basics. Recommended shows the current TCG era and Format Challenge. |
+| Launcher / settings | `Start Game.exe` (the redesigned settings editor) is the only launcher: Start Game saves settings, starts the server, then Master Duel. Old `SettingsEditor.exe`, `Start-Balanced.*` and `Open-Balanced-Settings.cmd` removed from the install (backups in `UpgradeBackups\start-game-*`); support files are hidden. Installed. |
+| Next | Finish v3 balance, install v3, pick Pegasus version, Duel Royale as its own Solo mode. |
+
+The sections below describe 0.2.2 and are kept as history.
+
+## 0.2.2 status
+
+Development revision: **0.2.2-prototype** (2026-10-22).
 Source: F:\ChatGPT\Balanced-Character-Duels.
 
 Fourteen photo-reviewed decks and 182 directed encounters are implemented.

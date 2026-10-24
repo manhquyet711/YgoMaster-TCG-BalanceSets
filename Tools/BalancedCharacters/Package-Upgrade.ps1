@@ -1,3 +1,4 @@
+# 0.2.2 upgrade tool: uses the old launcher scripts, kept in Tools\BalancedCharacters\Legacy.
 param([string]$InstalledRuntime = 'G:\Game\yugioh online\copy of master dual\Yu-Gi-Oh!  Master Duel\YgoMaster-BalancedCharacters', [string]$OutputDirectory = 'F:\ChatGPT\Balanced-Characters-0.2.2')
 $ErrorActionPreference = 'Stop'
 $root = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
@@ -11,7 +12,8 @@ foreach ($name in @('YgoMaster.exe')) {
     Copy-Item -LiteralPath (Join-Path $root "YgoMaster\$name") -Destination (Join-Path $payload $name)
 }
 foreach ($name in @('Start-Balanced.ps1','Start-Balanced.cmd','Stop-Balanced.ps1','Open-Balanced-Settings.cmd')) {
-    Copy-Item -LiteralPath (Join-Path $root $name) -Destination (Join-Path $payload $name)
+    $legacyCopy = Join-Path $root "Tools\BalancedCharacters\Legacy\$name"
+    Copy-Item -LiteralPath $(if (Test-Path -LiteralPath $legacyCopy) { $legacyCopy } else { Join-Path $root $name }) -Destination (Join-Path $payload $name)
 }
 foreach ($file in Get-ChildItem -LiteralPath (Join-Path $root 'YgoMaster\Data\BalancedCharacters') -Recurse -File) {
     $rel = $file.FullName.Substring((Join-Path $root 'YgoMaster').Length+1)

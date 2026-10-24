@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "revision": "source-v3",
+  "contentVersion": "0.3.0-prototype",
+  "description": "Goat Era Duelists: AI-built balanced set, Goat-legal (8 characters)",
+  "activeCharacterIds": [
+    "goat_yugi",
+    "goat_kaiba",
+    "goat_joey",
+    "goat_mai",
+    "goat_pegasus",
+    "goat_bakura",
+    "goat_marik",
+    "goat_ishizu"
+  ],
+  "characters": [
+    "Yugi Muto",
+    "Seto Kaiba",
+    "Joey Wheeler",
+    "Mai Valentine",
+    "Maximillion Pegasus",
+    "Yami Bakura",
+    "Marik Ishtar",
+    "Ishizu Ishtar"
+  ]
+}

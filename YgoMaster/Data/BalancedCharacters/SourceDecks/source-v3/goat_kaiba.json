@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "characterId": "goat_kaiba",
+  "displayName": "Seto Kaiba",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Goat Era Duelists: AI-designed balanced set (Tools/BalancedCharacters/goat_set.py)",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 2,
+  "main": [
+    {
+      "name": "Blue-Eyes White Dragon",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Lord of D.",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Rude Kaiser",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Kaiser Glider",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "La Jinn the Mystical Genie of the Lamp",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Hitotsu-Me Giant",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "X-Head Cannon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Y-Dragon Head",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Z-Metal Tank",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Spear Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Battle Ox",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mystic Horseman",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Luster Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Saggi the Dark Clown",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Blade Knight",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Exiled Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "The Flute of Summoning Dragon",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Burst Stream of Destruction",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Enemy Controller",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Soul Exchange",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Premature Burial",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ring of Destruction",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Interdimensional Matter Transporter",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Reinforcements",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ultimate Offering",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Threatening Roar",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Shadow Spell",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sakuretsu Armor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Trap Hole",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Blue-Eyes Ultimate Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "XYZ-Dragon Cannon",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

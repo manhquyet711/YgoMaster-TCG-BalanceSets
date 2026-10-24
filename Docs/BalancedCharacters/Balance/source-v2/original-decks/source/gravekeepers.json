@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "characterId": "gravekeepers",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-1qmw9hzjd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Raigeki Break",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Rite of Spirit",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Curse of Aging",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Embodiment of Apophis",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Altar for Tribute",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Royal Tribute",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Different Dimension Capsule",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Book of Moon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Hole",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Needle Ceiling",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Draining Shield",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Judgment of Anubis",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Curse of Anubis",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gravekeeper's Guard",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gravekeeper's Spy",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gravekeeper's Spear Soldier",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gravekeeper's Assailant",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gravekeeper's Cannonholder",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gravekeeper's Curse",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Charm of Shabti",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "A Cat of Ill Omen",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Neko Mane King",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gravekeeper's Chief",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mystical Knight of Jackal",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Necrovalley",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gravekeeper's Watcher",
+      "quantity": 3,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Changed from v1: three Gravekeeper's Watcher (label read in v2 photo) replace three Gravekeeper's Vassal."
+  ]
+}

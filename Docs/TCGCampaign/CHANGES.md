@@ -145,6 +145,33 @@ file; every downloaded page is cached in `Tools/TCGCampaign/.cache` (ignored by 
 minutes. `tournament_decks.py apply <Data folder>` writes the decks into the duels and chapter texts
 without network access.
 
+## Solo modes (folders)
+
+The Solo menu is grouped into mode folders instead of one long list. Master Duel shows a gate's
+children inside it (`parent_gate`), and sorts gates by `category` into two sections:
+**Stories** (1) and **Training & Challenges** (2).
+
+| Folder gate | Section | Holds |
+|---|---|---|
+| 2100 TCG Campaign | Stories | Era gates 2001-2006 (DM to VRAINS), unlocking in order as before |
+| 2102 Balanced Characters | Stories | The active deck set's character gates, added by the server at startup |
+| 2103 Duel Royale | Stories | Reserved: Konami's 7 Duel Royale decks, once they are tested |
+| 2101 Format Challenges | Training & Challenges | Goat, Perfect Circle, Edison, HAT, YgoMaster v1.60 (2011-2015) |
+| 2109 Master Duel Basics | Training & Challenges | The original gates: Tutorial (1), 48, and 31 with its gates 22 and 30 |
+
+`Tools/TCGCampaign/solo_modes.py <Data>` adds the folders, their names, descriptions and thumbnails
+(`IDS_SOLO.txt`, `SoloGateCards.txt`). Gate IDs do not change, so progress is kept.
+
+Server side:
+- **Balanced Characters folder** (`GameServer.BalancedCharacters.cs`, `ApplyBalancedFolder`): after the
+  overlay loads, its character gates are moved into gate 2102 and the folder takes the first
+  character's goal. Switching deck sets in the Settings Editor keeps the folder. With Balanced mode
+  off the folder is removed, so no empty folder shows.
+- **Recommended cards** (`Act_Solo.cs`, `GetRecommendedSoloGates`): each card shows the current gate
+  of a mode folder, the first by priority whose goal duel is not cleared and which is visible. Order
+  and skipped folders are set in `Settings.json`: `SoloRecommendModes` (default `[2100, 2101, 2102, 2103]`)
+  and `SoloRecommendSkip` (default `[2109]`: the original gates are never recommended).
+
 ## Rewards
 
 Chapter clear rewards in `Solo.json` are tripled: 600 / 1,200 / 6,000 / 15,000 gems (reward sets
@@ -163,6 +190,7 @@ python Tools\TCGCampaign\apply_era_rules.py   YgoMaster\Data   # ban lists + AI 
 python Tools\TCGCampaign\build_era_decks.py   YgoMaster\Data   # premade era decks
 python Tools\TCGCampaign\apply_boss_rules.py  YgoMaster\Data   # boss LP/hand/first turn + loaner finals
 python Tools\TCGCampaign\tournament_decks.py apply YgoMaster\Data   # tournament decks + chapter text
+python Tools\TCGCampaign\solo_modes.py        YgoMaster\Data   # Solo mode folders
 ```
 
 `apply_era_rules.py`, `apply_boss_rules.py` and `tournament_decks.py apply` take `--check` to report

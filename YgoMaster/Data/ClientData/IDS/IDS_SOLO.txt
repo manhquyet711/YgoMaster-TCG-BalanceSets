@@ -1,3 +1,19 @@
+[IDS_SOLO.GATE2109]
+Master Duel Basics
+[IDS_SOLO.GATE2109_EXPLANATION]]
+The original Master Duel Solo gates: Tutorial and the basic story gates.
+[IDS_SOLO.GATE2102]
+Balanced Characters
+[IDS_SOLO.GATE2102_EXPLANATION]]
+Fixed character decks, balanced against each other. Pick a character, then beat every opponent. Change the deck set in the Settings Editor.
+[IDS_SOLO.GATE2101]
+Format Challenges
+[IDS_SOLO.GATE2101_EXPLANATION]]
+Classic tournament formats with their ban lists: Goat, Perfect Circle, Edison, HAT and YgoMaster v1.60.
+[IDS_SOLO.GATE2100]
+TCG Campaign
+[IDS_SOLO.GATE2100_EXPLANATION]]
+Progressive campaign through the TCG eras, from Duel Monsters to VRAINS. Clear an era to open the next.
 [IDS_SOLO.GATE2001]
 Yu-Gi-Oh! TCG DM Era
 [IDS_SOLO.GATE2002]

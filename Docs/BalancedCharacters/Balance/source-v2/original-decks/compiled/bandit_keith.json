@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "characterId": "bandit_keith",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "revision": "source-v2",
+  "main": [
+    {
+      "cardId": 4806,
+      "quantity": 3
+    },
+    {
+      "cardId": 4843,
+      "quantity": 1
+    },
+    {
+      "cardId": 4838,
+      "quantity": 1
+    },
+    {
+      "cardId": 4863,
+      "quantity": 1
+    },
+    {
+      "cardId": 6217,
+      "quantity": 1
+    },
+    {
+      "cardId": 4878,
+      "quantity": 1
+    },
+    {
+      "cardId": 6053,
+      "quantity": 3
+    },
+    {
+      "cardId": 5162,
+      "quantity": 1
+    },
+    {
+      "cardId": 4844,
+      "quantity": 1
+    },
+    {
+      "cardId": 4812,
+      "quantity": 1
+    },
+    {
+      "cardId": 5129,
+      "quantity": 1
+    },
+    {
+      "cardId": 4664,
+      "quantity": 1
+    },
+    {
+      "cardId": 4836,
+      "quantity": 1
+    },
+    {
+      "cardId": 4794,
+      "quantity": 1
+    },
+    {
+      "cardId": 5027,
+      "quantity": 2
+    },
+    {
+      "cardId": 4981,
+      "quantity": 1
+    },
+    {
+      "cardId": 4982,
+      "quantity": 1
+    },
+    {
+      "cardId": 4281,
+      "quantity": 1
+    },
+    {
+      "cardId": 6174,
+      "quantity": 1
+    },
+    {
+      "cardId": 4519,
+      "quantity": 2
+    },
+    {
+      "cardId": 5702,
+      "quantity": 1
+    },
+    {
+      "cardId": 4977,
+      "quantity": 1
+    },
+    {
+      "cardId": 4518,
+      "quantity": 1
+    },
+    {
+      "cardId": 6201,
+      "quantity": 2
+    },
+    {
+      "cardId": 4428,
+      "quantity": 1
+    },
+    {
+      "cardId": 4742,
+      "quantity": 1
+    },
+    {
+      "cardId": 4913,
+      "quantity": 1
+    },
+    {
+      "cardId": 4394,
+      "quantity": 1
+    },
+    {
+      "cardId": 5964,
+      "quantity": 1
+    },
+    {
+      "cardId": 4413,
+      "quantity": 2
+    },
+    {
+      "cardId": 4749,
+      "quantity": 1
+    },
+    {
+      "cardId": 4729,
+      "quantity": 1
+    }
+  ],
+  "extra": [],
+  "side": []
+}

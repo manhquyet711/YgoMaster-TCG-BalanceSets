@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "characterId": "bandit_keith",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-5n2cmmzjd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "7 Completed",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Seven Tools of the Bandit",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Divine Wrath",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Paralyzing Potion",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "7",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Creature Swap",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Limiter Removal",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Metalmorph",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Trap Hole",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Time Machine",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Robotic Knight",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Oni Tank T-34",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Overdrive",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Ground Attacker Bugroth",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Bokoichi the Freightening Car",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Guardian of the Throne Room",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Battle Footballer",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Cyber Falcon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Cannon Soldier",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dekoichi the Battlechanted Locomotive",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Jinzo #7",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Blast Sphere",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Cyber Jar",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Pendulum Machine",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Blowback Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Machine King",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Barrel Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Slot Machine",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Identical to v1 after photo comparison."
+  ]
+}

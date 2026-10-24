@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "characterId": "yugi_season2",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 4,
+  "revision": "source-v2",
+  "main": [
+    {
+      "cardId": 4744,
+      "quantity": 2
+    },
+    {
+      "cardId": 4792,
+      "quantity": 2
+    },
+    {
+      "cardId": 4763,
+      "quantity": 2
+    },
+    {
+      "cardId": 5503,
+      "quantity": 2
+    },
+    {
+      "cardId": 4753,
+      "quantity": 2
+    },
+    {
+      "cardId": 4054,
+      "quantity": 1
+    },
+    {
+      "cardId": 4764,
+      "quantity": 1
+    },
+    {
+      "cardId": 5655,
+      "quantity": 1
+    },
+    {
+      "cardId": 5244,
+      "quantity": 1
+    },
+    {
+      "cardId": 5558,
+      "quantity": 1
+    },
+    {
+      "cardId": 5559,
+      "quantity": 1
+    },
+    {
+      "cardId": 4045,
+      "quantity": 1
+    },
+    {
+      "cardId": 4538,
+      "quantity": 1
+    },
+    {
+      "cardId": 4044,
+      "quantity": 1
+    },
+    {
+      "cardId": 4041,
+      "quantity": 1
+    },
+    {
+      "cardId": 4755,
+      "quantity": 1
+    },
+    {
+      "cardId": 4983,
+      "quantity": 1
+    },
+    {
+      "cardId": 5835,
+      "quantity": 1
+    },
+    {
+      "cardId": 5002,
+      "quantity": 1
+    },
+    {
+      "cardId": 4999,
+      "quantity": 1
+    },
+    {
+      "cardId": 4963,
+      "quantity": 1
+    },
+    {
+      "cardId": 4837,
+      "quantity": 1
+    },
+    {
+      "cardId": 4874,
+      "quantity": 1
+    },
+    {
+      "cardId": 4838,
+      "quantity": 1
+    },
+    {
+      "cardId": 4842,
+      "quantity": 1
+    },
+    {
+      "cardId": 5904,
+      "quantity": 1
+    },
+    {
+      "cardId": 4843,
+      "quantity": 1
+    },
+    {
+      "cardId": 5479,
+      "quantity": 1
+    },
+    {
+      "cardId": 6541,
+      "quantity": 1
+    },
+    {
+      "cardId": 4354,
+      "quantity": 1
+    },
+    {
+      "cardId": 4965,
+      "quantity": 1
+    },
+    {
+      "cardId": 5837,
+      "quantity": 1
+    },
+    {
+      "cardId": 5123,
+      "quantity": 1
+    },
+    {
+      "cardId": 5118,
+      "quantity": 1
+    },
+    {
+      "cardId": 4861,
+      "quantity": 1
+    }
+  ],
+  "extra": [
+    {
+      "cardId": 4756,
+      "quantity": 1
+    },
+    {
+      "cardId": 6454,
+      "quantity": 1
+    },
+    {
+      "cardId": 5628,
+      "quantity": 1
+    },
+    {
+      "cardId": 4043,
+      "quantity": 1
+    }
+  ],
+  "side": []
+}

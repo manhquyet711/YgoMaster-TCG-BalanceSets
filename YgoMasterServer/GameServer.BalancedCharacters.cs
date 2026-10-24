@@ -45,7 +45,41 @@ namespace YgoMaster
         }
         bool IsReservedBalancedChapter(int chapterId) { return balancedReservedGates.Contains(chapterId / 10000); }
 
+        /// <summary>Solo folder (parent gate in Solo.json) that holds the active set's character gates.</summary>
+        const int BalancedFolderGate = 2102;
+
         void LoadBalancedCharacters()
+        {
+            LoadBalancedCharactersCore();
+            ApplyBalancedFolder();
+        }
+
+        /// <summary>
+        /// Puts the loaded character gates inside the Balanced Characters folder, and points the folder's goal at
+        /// the first character's goal. Without a loaded set the folder is removed so no empty folder shows.
+        /// The generated overlay stays unchanged (its gates are validated as top-level free-duel gates).
+        /// </summary>
+        void ApplyBalancedFolder()
+        {
+            var allGates = Utils.GetDictionary(SoloData, "gate");
+            var folder = allGates == null ? null : Utils.GetDictionary(allGates, BalancedFolderGate.ToString());
+            if (folder == null) return;
+            var children = balancedCatalog == null ? new List<KeyValuePair<string, object>>() : allGates
+                .Where(x => { int id; return int.TryParse(x.Key, out id) && balancedReservedGates.Contains(id) && x.Value is Dictionary<string, object>; })
+                .OrderBy(x => Utils.GetValue<int>((Dictionary<string, object>)x.Value, "priority"))
+                .ToList();
+            if (children.Count == 0)
+            {
+                allGates.Remove(BalancedFolderGate.ToString());
+                Utils.LogInfo("Balanced Characters folder hidden (no character set loaded)");
+                return;
+            }
+            foreach (var child in children)
+                ((Dictionary<string, object>)child.Value)["parent_gate"] = BalancedFolderGate;
+            folder["clear_chapter"] = Utils.GetValue<int>((Dictionary<string, object>)children[0].Value, "clear_chapter");
+        }
+
+        void LoadBalancedCharactersCore()
         {
             balancedEncounters.Clear();
             balancedReservedGates.Clear();

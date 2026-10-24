@@ -7,16 +7,18 @@ It is built on the [TCG Solo Campaign](https://github.com/vngudu/YgoMaster-TCG) 
 
 *Offline only. Progress is not shared with the live game.*
 
-> **Status: 0.3.0 prototype (character set v2).** The mode builds, installs and has been played in-game
-> (map, deck/Play panel and CPU duels work), but balance between all matchups is not tested yet.
+> **Status: 0.3.0 prototype.** Two deck sets: **v2** (u/Rosehn's lists, default, played in-game) and
+> **v3 Goat Era Duelists** (AI-built, being balanced). Every matchup of both sets has been tested
+> CPU vs CPU with the real duel engine; results in
+> [Docs/BalancedCharacters/Balance/ANALYSIS.md](Docs/BalancedCharacters/Balance/ANALYSIS.md).
 
 ## Balanced Characters
 
-Open **SOLO > Stories** and pick a **Balanced Characters** gate. The gate chooses the character you play;
+Open **SOLO > Stories > Balanced Characters** and pick a character gate. The gate chooses the character you play;
 each battle node chooses an opponent. All opponents are open from the start, and the gate's Goal
 completes after you beat every opponent in it.
 
-**15 characters, 210 matchups.** Decks by [u/Rosehn](https://www.reddit.com/user/Rosehn/), from their
+**Deck set v2 (default): 15 characters, 210 matchups.** Decks by [u/Rosehn](https://www.reddit.com/user/Rosehn/), from their
 [updated and finalized 2024 lists](https://www.reddit.com/r/yugioh/comments/1epku1s/three_years_ago_i_posted_a_set_of_balanced_old/) (see [Credits](#credits)):
 
 | | | |
@@ -44,8 +46,24 @@ reference decks that are still there get the new cards.
 as **Shadow Spell**, the closest old-school card (same lock, plus -700 ATK).
 
 Deck lists: [Character_Deck_Lists_v2.md](Docs/BalancedCharacters/Character_Deck_Lists_v2.md).
-The v1 set (14 characters, including Yugi (Battle City) and the Marik/Bakura mix) is kept under
-`Decks/source-v1` and can be selected again with `activeDeckRevision` in `Mode.json`.
+**Choosing the deck set:** open `Start Game.exe`, pick a **Deck set**, then press **Start Game**
+(or Save). Installed sets:
+
+| Deck set | Lists |
+|---|---|
+| `source-v2` (default) | u/Rosehn's updated and finalized 2024 lists, 15 characters |
+| `source-v3` | **Goat Era Duelists**: 8 AI-built decks (Yugi, Kaiba, Joey, Mai, Pegasus, Bakura, Marik, Ishizu), every card legal in the April 2005 Goat format. Lists: [Character_Deck_Lists_v3.md](Docs/BalancedCharacters/Character_Deck_Lists_v3.md) |
+
+The original 2021 lists (`source-v1`) are no longer offered; their lists stay in
+[Character_Deck_Lists.md](Docs/BalancedCharacters/Character_Deck_Lists.md). v3 is built from
+`Tools/BalancedCharacters/goat_set.py` (shared rules: Pot of Greed, Graceful Charity, one MST or
+Heavy Storm, at most two premium removal traps, no Goat tournament engines).
+
+The new set loads the next time the balanced server starts. Progress is kept per battle, and the
+"Balanced - …" reference decks switch to the chosen set's cards. Command line:
+`"Start Game.exe" --deck-set source-v3`. Each set is a compiled pack in
+`Data/BalancedCharacters/Revisions/<revision>`, built by `content.py packs` (part of
+`Build-Balanced.ps1 -CompilePrototype`); a new revision added to `content.py` shows up in the list.
 
 ## TCG campaign: harder and closer to history
 
@@ -67,6 +85,17 @@ has been reworked here. Full details: [Docs/TCGCampaign/CHANGES.md](Docs/TCGCamp
   Each chapter description names the deck, pilot, event, date and placement.
 - **Tripled chapter rewards** (600 / 1,200 / 6,000 / 15,000 gems).
 
+## Solo menu
+
+Solo is grouped into mode folders:
+
+- **Stories:** TCG Campaign (DM to VRAINS eras) and Balanced Characters (the active deck set).
+- **Training & Challenges:** Format Challenges (Goat, Perfect Circle, Edison, HAT, v1.60) and
+  Master Duel Basics (the original Tutorial gates).
+
+The two Recommended cards show your current TCG era and Format Challenge. See
+[Docs/TCGCampaign/CHANGES.md](Docs/TCGCampaign/CHANGES.md#solo-modes-folders).
+
 ## Also included
 
 - **TCG Solo Campaign** from the parent fork: about 300 shop packs with custom art, era progression and dialogue.
@@ -84,12 +113,23 @@ has been reworked here. Full details: [Docs/TCGCampaign/CHANGES.md](Docs/TCGCamp
 1. Build (below), or use a release package.
 2. Put the runtime folder (for example `YgoMaster-BalancedCharacters`) **inside** the game folder,
    next to `masterduel.exe`.
-3. Run `Start-Balanced.cmd`. It starts the balanced server and the client on the ports from your settings.
+3. Open `Start Game.exe` (the only file shown in the folder besides `Data`) and press **Start Game**.
+   It saves your settings, starts the balanced server on the ports from your settings, then starts Master Duel.
 4. In game: **SOLO > Stories > Balanced Characters**.
 
-Settings: `Open-Balanced-Settings.cmd` opens the Balanced Settings Editor (collection, starting gems,
-campaign rewards, mode on/off). Deck rules above are fixed by the mode and are not editable.
-Close the game before saving settings.
+`Start Game.exe` is also the settings window: a dark window over your game background with the
+deck set picker (description and the set's characters), the mode on/off switch, and settings for
+collection, starting gems and campaign rewards. Buttons: **Start Game**, Save, Close. Deck rules above
+are fixed by the mode and are not editable. Close the game before saving settings.
+
+The server, client, loader, config files, `Stop-Balanced.ps1` and the log and backup folders are
+hidden (Windows hidden attribute) so `Start Game.exe` stands out; `Start Game.exe` re-hides them each
+time it opens. Turn on *Show hidden items* in Explorer to see them. Server logs: `LaunchLogs`.
+The original YgoMaster `SettingsEditor.exe` and the `Start-Balanced` / `Open-Balanced-Settings`
+scripts are no longer shipped (kept for the 0.2.2 upgrade tools in `Tools/BalancedCharacters/Legacy`).
+
+Command line: `--validate` (launch checks only), `--hide`, `--check`, `--self-test <test copy>`,
+`--smoke-test`, `--screenshot <png>`, `--deck-set <revision>`.
 
 Match results are written to `Data/BalancedCharacters/Logs/duels.jsonl`
 (no account codes or names).
@@ -111,8 +151,36 @@ Main locations:
 | `Tools/TCGCampaign` | Scripts for era ban lists, AI strength, bosses, era decks and tournament decks |
 | `YgoMasterServer`, `YgoMasterClient` | Server and client including the balanced mode hooks |
 | `Docs/BalancedCharacters` | Spec, status, decisions, release notes, build logs |
+| `Docs/BalancedCharacters/Balance` | CPU-vs-CPU balance results and analysis per deck set |
 
-## Playtesting
+## Balance testing (CPU vs CPU)
+
+`Tools/BalancedCharacters/npc_balance.py` plays every pair of decks in a set against each other with
+Master Duel's own duel engine and AI (strength 100 on both sides, 8000 LP, half the games each side
+first), in parallel, and writes win rates, going first/second and a matchup table:
+
+```powershell
+python -I Tools\BalancedCharacters\npc_balance.py run --revision source-v3 --games 20 --workers 8
+python -I Tools\BalancedCharacters\npc_balance.py summary --revision source-v3
+```
+
+It uses `YgoMaster.exe --cpucontest-sim` (run from the installed runtime folder, which has the
+game's `duel.dll`). Runs resume from `results.jsonl`. Target: every deck between 40% and 60%.
+Options for test-only decks that are not in the game:
+
+| Option / tool | Use |
+|---|---|
+| `--decks-dir <folder>` | Test a folder of decks instead of the set in `Data` |
+| `--only <deck id>` | Play only the pairs with this deck (compare one new deck against a set) |
+| `v2_tuning.py build` | Tuned copy of v2 in `Testing/source-v2-tuned` (original v2 unchanged) |
+| `goat_set.py compare` | v3 plus comparison decks (`ALT_DECKS`, e.g. Pegasus B) in `Testing/source-v3-compare` |
+| `royale_set.py build` | Konami's 7 Duel Royale decks in `Testing/royale` |
+
+Results so far (details and reasons in [ANALYSIS.md](Docs/BalancedCharacters/Balance/ANALYSIS.md)):
+v2 has 10 of 15 decks in range (Grandpa 11%, Pegasus 24% lowest; Rex 66% highest); the tuned v2
+test copy has 14 of 15. v3 is being tuned round by round.
+
+## Manual playtesting
 
 `Docs/BalancedCharacters/Playtest/QUEUE.csv` lists 1,820 manual games (10 per direction for each pair).
 After playing, summarise your results with:
@@ -125,7 +193,10 @@ Crashes, disconnects and unfinished games do not count as losses, and surrenders
 
 ## Roadmap
 
-- Play through the playtest queue and tune decks (a separate `balanced-v1` deck revision)
+- Finish balancing v3 (every deck within 40-60%), then install it and choose Toon Pegasus or Pegasus B
+- Ship the tuned v2 as a new deck set if players want it (the original v2 stays)
+- **Duel Royale** as its own Solo mode (folder 2103): Konami's 7 official pre-built decks, after its balance test
+- Play through the playtest queue
 - Character portraits and dialogue
 - Optional story campaign
 - Swap Shadow Spell back to Spellbinding Circle if Master Duel adds it
@@ -139,7 +210,7 @@ Crashes, disconnects and unfinished games do not count as losses, and surrenders
 
 ### Character decks: u/Rosehn
 
-Every Balanced Characters deck was designed, built and photographed by
+The v1 and v2 Balanced Characters decks were designed, built and photographed by
 **[u/Rosehn](https://www.reddit.com/user/Rosehn/)**. This mod only transcribes their lists into Master Duel.
 
 - Original set (2021, deck revision `source-v1`):
@@ -150,6 +221,13 @@ Every Balanced Characters deck was designed, built and photographed by
 - Rosehn is also making [Cardaire](https://store.steampowered.com/app/3124080/Cardaire/), a game inspired by the old-school Yu-Gi-Oh! GBA games.
 
 The only change made here is Shadow Spell in place of Spellbinding Circle, because that card is not in Master Duel.
+
+### Other deck sets
+
+- **v3 Goat Era Duelists:** designed for this mod (AI-built with Claude), not by u/Rosehn.
+- **Duel Royale (test only):** Konami's OCG *Duel Royale Deck Set EX* (2021) and *EX ROUND2* (2022),
+  decks built by the University of Yu-Gi-Oh! Tokyo Circle; card lists from
+  [Yugipedia](https://yugipedia.com/wiki/Yu-Gi-Oh!_Duel_Royale).
 
 Base mod documentation (settings, PvP, language, Linux, custom content) is in [Docs](Docs).
 Licensed under the [MIT License](LICENSE).

@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "characterId": "kaiba",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-dn7blrzjd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 3,
+  "main": [
+    {
+      "name": "Saggi the Dark Clown",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Blackland Fire Dragon",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Ryu-Kishin Powered",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mystic Horseman",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Battle Ox",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "La Jinn the Mystical Genie of the Lamp",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Hitotsu-Me Giant",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Trap Master",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Ancient Lamp",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Witch of the Black Forest",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Blade Knight",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Spear Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Lord of D.",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Luster Dragon #2",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Thunder Dragon",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Blue-Eyes White Dragon",
+      "quantity": 3,
+      "status": "transcribed"
+    },
+    {
+      "name": "Chaos Emperor Dragon - Envoy of the End",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Obelisk the Tormentor",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Burst Stream of Destruction",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Stop Defense",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "The Flute of Summoning Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Soul Exchange",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Raigeki",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Enemy Controller",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Reinforcements",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Ring of Destruction",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Crush Card Virus",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Ultimate Offering",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Shadow Spell",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Rabid Horseman",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Twin-Headed Thunder Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Blue-Eyes Ultimate Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "side": [],
+  "corrections": [
+    "Changed from v1: 2 Blackland Fire Dragon and Obelisk the Tormentor replace 2 Blizzard Dragon and Red-Eyes Darkness Metal Dragon."
+  ]
+}

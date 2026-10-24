@@ -5,7 +5,7 @@ $root = [IO.Path]::GetFullPath($TargetDirectory).TrimEnd('\')
 $backup = [IO.Path]::GetFullPath($BackupDirectory).TrimEnd('\')
 if (-not $backup.StartsWith(($root + '\UpgradeBackups\0.2.2-'), [StringComparison]::OrdinalIgnoreCase) -or
     -not (Test-Path -LiteralPath (Join-Path $backup 'Data\BalancedCharacters\Mode.json'))) { throw 'Select a 0.2.2 upgrade backup inside this runtime.' }
-if (Get-Process -Name masterduel,BalancedSettingsEditor,SettingsEditor -ErrorAction SilentlyContinue) { throw 'Close Master Duel and settings editors before restoring.' }
+if (Get-Process -Name masterduel,'Start Game',BalancedSettingsEditor,SettingsEditor -ErrorAction SilentlyContinue) { throw 'Close Master Duel and settings editors before restoring.' }
 $serverPath = Join-Path $root 'YgoMaster.exe'
 foreach ($process in @(Get-Process -Name YgoMaster -ErrorAction SilentlyContinue | Where-Object Path -EQ $serverPath)) {
     Stop-Process -Id $process.Id

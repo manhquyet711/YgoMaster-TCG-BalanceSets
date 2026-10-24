@@ -7,7 +7,7 @@ try {
     & '.\Tools\BalancedCharacters\Resolve-CardMap.ps1'
     if ($CompilePrototype) { & '.\Tools\BalancedCharacters\Build-Content.ps1' }
     & '.\Build-Updated.ps1' -Validate
-    & '.\Tools\BalancedCharacters\SettingsEditor\Build-Editor.ps1' -OutputPath (Join-Path $PSScriptRoot 'YgoMaster\BalancedSettingsEditor.exe')
+    & '.\Tools\BalancedCharacters\SettingsEditor\Build-Editor.ps1' -OutputPath (Join-Path $PSScriptRoot 'YgoMaster\Start Game.exe')
     $csc = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319\csc.exe'
     & $csc '/nologo' '/out:Tools\BalancedCharacters\ValidateBalancedCharacters.exe' 'Tools\BalancedCharacters\ValidateBalancedCharacters.cs'
     if ($LASTEXITCODE -ne 0) { throw 'Policy validator compile failed.' }

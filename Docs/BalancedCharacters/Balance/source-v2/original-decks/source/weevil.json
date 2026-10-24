@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "characterId": "weevil",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-pz2teozjd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Insect Armor with Laser Cannon",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Eradicating Aerosol",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Insect Barrier",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "DNA Surgery",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Negate Attack",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Forest",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Block Attack",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Share the Pain",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Snatch Steal",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Fake Trap",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Petit Moth",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Girochin Kuwagata",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Flying Kamakiri #2",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Neo Bug",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Arsenal Bug",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Jirai Gumo",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Flying Kamakiri #1",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Insect Soldiers of the Sky",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Man-Eater Bug",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Cocoon of Evolution",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Leghul",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Skull-Mark Ladybug",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Kiseitai",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Pinch Hopper",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "4-Starred Ladybug of Doom",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Parasite Paracide",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Insect Queen",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Empress Mantis",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Great Moth",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Metal Armored Bug",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [],
+  "side": [],
+  "corrections": [
+    "Identical to v1 after photo comparison."
+  ]
+}

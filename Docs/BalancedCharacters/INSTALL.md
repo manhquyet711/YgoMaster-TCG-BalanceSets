@@ -21,7 +21,7 @@ Each deck has 40 Main and 3 Fusion/Extra cards, transcribed and reviewed from th
 
 1. Extract the ZIP. Close Master Duel before testing.
 2. Run Install.cmd. It uses the existing YgoMaster-TCG-Updated-2.8.0 installation as its asset/data base and creates a NEW YgoMaster-BalancedCharacters folder beside masterduel.exe. It refuses an existing target to preserve possible saves. The original TCG installation is not changed.
-3. Open YgoMaster-BalancedCharacters and run Start-Balanced.cmd.
+3. Open YgoMaster-BalancedCharacters and run Start Game.exe, then press Start Game. (Packages before 0.3.0 used Start-Balanced.cmd.)
 4. Open SOLO > Stories. Look for Balanced Characters - Kaiba / Joey. Pick a character gate, inspect both recipes, and launch its duel.
 
 For a non-default game path, run Install-Prototype.ps1 -GameRoot followed by the quoted game directory. -DryRun validates the package and selected game without writing files. The installer checks the inspected GameAssembly hash; a changed game needs revalidation.

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "characterId": "goat_mai",
+  "displayName": "Mai Valentine",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Goat Era Duelists: AI-designed balanced set (Tools/BalancedCharacters/goat_set.py)",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Harpie Lady 1",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Harpie Lady 2",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Harpie Lady 3",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Harpie Lady Sisters",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Harpie Lady",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Harpie Girl",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Harpie's Pet Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Amazoness Tiger",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Birdface",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Amazoness Swords Woman",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Amazoness Paladin",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sky Scout",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Garuda the Wind Spirit",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Skull Red Bird",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Amazoness Fighter",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Elegant Egotist",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Harpies' Hunting Ground",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Triangle Ecstasy Spark",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Book of Moon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Amazoness Archer",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Rising Air Current",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mirror Wall",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Soul Release",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Phoenix Wing Wind Blast",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Shadow of Eyes",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sakuretsu Armor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Trap Hole",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Waboku",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "extra": [],
+  "side": []
+}

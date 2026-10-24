@@ -6,11 +6,12 @@ $out = Join-Path $root ('Dist\Balanced-Characters-' + $Version)
 if (Test-Path -LiteralPath $out) { throw 'Package folder exists; preserve it and choose a new package version before rebuilding.' }
 $payload = Join-Path $out 'Payload'
 New-Item -ItemType Directory -Path $payload -Force | Out-Null
-foreach ($name in @('YgoMaster.exe','YgoMasterClient.exe','YgoMasterLoader.dll','YgoMaster.exe.config','YgoMasterClient.exe.config','SettingsEditor.exe','BalancedSettingsEditor.exe')) {
+foreach ($name in @('YgoMaster.exe','YgoMasterClient.exe','YgoMasterLoader.dll','YgoMaster.exe.config','YgoMasterClient.exe.config','Start Game.exe')) {
     $source = Join-Path $root "YgoMaster\$name"
     if (Test-Path -LiteralPath $source) { Copy-Item -LiteralPath $source -Destination (Join-Path $payload $name) }
 }
-foreach ($name in @('Start-Balanced.ps1','Start-Balanced.cmd','Stop-Balanced.ps1','Open-Balanced-Settings.cmd')) {
+# Start Game.exe is the launcher (settings + start); Stop-Balanced.ps1 stays as a hidden helper.
+foreach ($name in @('Stop-Balanced.ps1')) {
     Copy-Item -LiteralPath (Join-Path $root $name) -Destination (Join-Path $payload $name)
 }
 foreach ($relative in @('Data\Settings.json','Data\ClientData\ClientSettings.json','Data\ClientData\IDS\IDS_BALANCED_CHARACTERS.txt')) {

@@ -18,24 +18,34 @@ namespace YgoMaster
             }
 
             byte[] bufferInternalID = File.ReadAllBytes(Path.Combine(cardDataDir, "#", "CARD_IntID.bytes"));
-            DLL_SetInternalID(bufferInternalID);
+            DLL_SetInternalID(Pin(bufferInternalID));
 
             byte[] bufferProp = File.ReadAllBytes(Path.Combine(cardDataDir, "#", "CARD_Prop.bytes"));
-            DLL_SetCardProperty(bufferProp, bufferProp.Length);
+            DLL_SetCardProperty(Pin(bufferProp), bufferProp.Length);
 
             byte[] bufferSame = File.ReadAllBytes(Path.Combine(cardDataDir, "MD", "CARD_Same.bytes"));
-            DLL_SetCardSame(bufferSame, bufferSame.Length);
+            DLL_SetCardSame(Pin(bufferSame), bufferSame.Length);
             
             byte[] bufferGenre = File.ReadAllBytes(Path.Combine(cardDataDir, "#", "CARD_Genre.bytes"));
-            DLL_SetCardGenre(bufferGenre);
+            DLL_SetCardGenre(Pin(bufferGenre));
             
             byte[] bufferNamed = File.ReadAllBytes(Path.Combine(cardDataDir, "#", "CARD_Named.bytes"));
-            DLL_SetCardNamed(bufferNamed);
+            DLL_SetCardNamed(Pin(bufferNamed));
             
             byte[] bufferLink = File.ReadAllBytes(Path.Combine(cardDataDir, "MD", "CARD_Link.bytes"));
-            DLL_SetCardLink(bufferLink, bufferLink.Length);
+            DLL_SetCardLink(Pin(bufferLink), bufferLink.Length);
 
             return true;
+        }
+
+        // duel.dll keeps pointers to the card tables, so they must stay at a fixed address for
+        // the whole process (like Pvp.GetPtr). Passing byte[] directly let them move or be freed,
+        // which crashed DLL_DuelSysClearWork with an access violation.
+        static IntPtr Pin(byte[] buffer)
+        {
+            IntPtr res = Marshal.AllocHGlobal(buffer.Length);
+            Marshal.Copy(buffer, 0, res, buffer.Length);
+            return res;
         }
 
         [DllImport(dllName)]
@@ -95,16 +105,16 @@ namespace YgoMaster
         [DllImport(dllName)]
         private static extern int DLL_CardIsThisTunerMonster(int cardId);
         [DllImport(dllName)]
-        private static extern void DLL_SetCardGenre(byte[] data);
+        private static extern void DLL_SetCardGenre(IntPtr data);
         [DllImport(dllName)]
-        private static extern void DLL_SetCardLink(byte[] data, int size);
+        private static extern void DLL_SetCardLink(IntPtr data, int size);
         [DllImport(dllName)]
-        private static extern void DLL_SetCardNamed(byte[] data);
+        private static extern void DLL_SetCardNamed(IntPtr data);
         [DllImport(dllName)]
-        private static extern int DLL_SetCardProperty(byte[] data, int size);
+        private static extern int DLL_SetCardProperty(IntPtr data, int size);
         [DllImport(dllName)]
-        private static extern void DLL_SetCardSame(byte[] data, int size);
+        private static extern void DLL_SetCardSame(IntPtr data, int size);
         [DllImport(dllName)]
-        private static extern void DLL_SetInternalID(byte[] data);
+        private static extern void DLL_SetInternalID(IntPtr data);
     }
 }

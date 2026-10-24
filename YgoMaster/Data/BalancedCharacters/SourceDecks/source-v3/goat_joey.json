@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "characterId": "goat_joey",
+  "displayName": "Joey Wheeler",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Goat Era Duelists: AI-designed balanced set (Tools/BalancedCharacters/goat_set.py)",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 2,
+  "main": [
+    {
+      "name": "Red-Eyes Black Dragon",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Red-Eyes Black Metal Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gearfried the Iron Knight",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Gearfried the Swordmaster",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Jinzo",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Little-Winguard",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Flame Manipulator",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Baby Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Time Wizard",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Axe Raider",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Masaki the Legendary Swordsman",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Goblin Attack Force",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Marauding Captain",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Command Knight",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Scapegoat",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Graceful Dice",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Shield & Sword",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Release Restraint",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Reinforcement of the Army",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "United We Stand",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Skull Dice",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Metalmorph",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Lightning Blade",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Big Bang Shot",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Graverobber",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sakuretsu Armor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Waboku",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Fairy Box",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mataza the Zapper",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Thousand Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Flame Swordsman",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

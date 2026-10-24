@@ -76,7 +76,9 @@ namespace YgoMaster
                 var matches = roster.OfType<Dictionary<string, object>>().Where(x => Utils.GetValue<string>(x, "id") == id).ToList();
                 if (matches.Count != 1) throw new InvalidDataException("Unknown or duplicate roster ID: " + id);
                 var source = Read(SourceDeckPath(root, revision, id));
-                if (Utils.GetValue<string>(source, "verificationStatus") != "photo-verified")
+                // "designed": AI-built sets checked by their own tool (Tools/BalancedCharacters/goat_set.py)
+                string verification = Utils.GetValue<string>(source, "verificationStatus");
+                if (verification != "photo-verified" && verification != "designed")
                     throw new InvalidDataException("Unreviewed source photo: " + id);
                 var canonical = Read(Path.Combine(root, "Decks", revision, id + ".json"));
                 if (Utils.GetValue<int>(canonical, "schemaVersion") != 1 ||

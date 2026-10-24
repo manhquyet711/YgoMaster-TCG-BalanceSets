@@ -1094,10 +1094,59 @@ namespace YgoMaster
             };
 
             Dictionary<string, object> itemhave = GetItemHaveDictionary(player);
+
+            // Solo modes: recommend the current gate of each mode folder (first by priority whose goal duel
+            // is not cleared, that is visible, and has a duel left to play).
+            Func<int, int> ParentOf = (int gateId) =>
+            {
+                Dictionary<string, object> gateData = Utils.GetDictionary(allGateData, gateId.ToString());
+                return gateData == null ? 0 : Utils.GetValue<int>(gateData, "parent_gate");
+            };
+            Func<int, bool> IsGateGoalCleared = (int gateId) =>
+            {
+                Dictionary<string, object> gateData = Utils.GetDictionary(allGateData, gateId.ToString());
+                int goal = gateData == null ? 0 : Utils.GetValue<int>(gateData, "clear_chapter");
+                return goal != 0 && GetChapterStatus(goal, player.SoloChapters) != 0;
+            };
+            Func<int, bool> IsSkipped = (int gateId) =>
+            {
+                for (int i = 0, g = gateId; g != 0 && i < 8; i++, g = ParentOf(g))
+                {
+                    if (SoloRecommendSkip.Contains(g)) return true;
+                }
+                return false;
+            };
+            Func<int, bool> HasDuelLeft = (int gateId) =>
+            {
+                List<int> chapterIds;
+                return allGatesChapterIds.TryGetValue(gateId, out chapterIds) && chapterIds.Any(x =>
+                    GetChapterStatus(x, player.SoloChapters) == 0 && IsAvailable(x, player.SoloChapters, itemhave));
+            };
+            foreach (int mode in SoloRecommendModes)
+            {
+                if (gateRec2 != 0) break;
+                int picked = gateRec1;
+                int current = allGateData.Keys
+                    .Select(x => { int id; return int.TryParse(x, out id) ? id : 0; })
+                    .Where(x => x != 0 && x != picked && ParentOf(x) == mode && IsGateUnlocked(x, player.SoloChapters, itemhave))
+                    .Where(x =>
+                    {
+                        int viewGate = Utils.GetValue<int>(Utils.GetDictionary(allGateData, x.ToString()), "view_gate");
+                        return viewGate == 0 || IsGateGoalCleared(viewGate);
+                    })
+                    .Where(x => !IsGateGoalCleared(x) && HasDuelLeft(x))
+                    .OrderBy(x => Utils.GetValue<int>(Utils.GetDictionary(allGateData, x.ToString()), "priority"))
+                    .FirstOrDefault();
+                if (current == 0) continue;
+                if (gateRec1 == 0) gateRec1 = current;
+                else gateRec2 = current;
+            }
+
             foreach (KeyValuePair<int, Dictionary<string, object>> chapter in allChapters)
             {
+                if (gateRec2 != 0) break;
                 int gateId = GetChapterGateId(chapter.Key);
-                if (gateRec1 != 0 && gateId == gateRec1)
+                if ((gateRec1 != 0 && gateId == gateRec1) || IsSkipped(gateId))
                 {
                     continue;
                 }
@@ -1129,7 +1178,7 @@ namespace YgoMaster
                 }
                 int[] gateIds = allGateData.Keys
                     .Select(x => int.Parse(x))
-                    .Where(x => firstChapters.ContainsKey(x) && IsAvailable(firstChapters[x], player.SoloChapters, itemhave))
+                    .Where(x => firstChapters.ContainsKey(x) && !IsSkipped(x) && IsAvailable(firstChapters[x], player.SoloChapters, itemhave))
                     .OrderByDescending(x => x)
                     .ToArray();
                 if (gateIds.Length >= 1)

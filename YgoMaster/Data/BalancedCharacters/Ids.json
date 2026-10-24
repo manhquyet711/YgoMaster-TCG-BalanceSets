@@ -85,6 +85,46 @@
       "gateId": 2032,
       "npcId": 3043,
       "slot": 17
+    },
+    "goat_yugi": {
+      "gateId": 2033,
+      "npcId": 3044,
+      "slot": 18
+    },
+    "goat_kaiba": {
+      "gateId": 2034,
+      "npcId": 3045,
+      "slot": 19
+    },
+    "goat_joey": {
+      "gateId": 2035,
+      "npcId": 3046,
+      "slot": 20
+    },
+    "goat_mai": {
+      "gateId": 2036,
+      "npcId": 3047,
+      "slot": 21
+    },
+    "goat_pegasus": {
+      "gateId": 2037,
+      "npcId": 3048,
+      "slot": 22
+    },
+    "goat_bakura": {
+      "gateId": 2038,
+      "npcId": 3049,
+      "slot": 23
+    },
+    "goat_marik": {
+      "gateId": 2039,
+      "npcId": 3050,
+      "slot": 24
+    },
+    "goat_ishizu": {
+      "gateId": 2040,
+      "npcId": 3051,
+      "slot": 25
     }
   }
 }

@@ -1,23 +1,31 @@
 {"Master":{"Solo":{
 	"gate":{
+		//mode: Master Duel Basics
+		"2109":{"priority":900,"parent_gate":0,"unlock_id":0,"view_gate":0,"clear_chapter":300247,"category":2},
+		//mode: Balanced Characters
+		"2102":{"priority":20,"parent_gate":0,"unlock_id":0,"view_gate":0,"clear_chapter":0,"category":1},
+		//mode: Format Challenges
+		"2101":{"priority":17,"parent_gate":0,"unlock_id":0,"view_gate":0,"clear_chapter":20110226,"category":2},
+		//mode: TCG Campaign
+		"2100":{"priority":10,"parent_gate":0,"unlock_id":0,"view_gate":0,"clear_chapter":20060070,"category":1},
 		//tutorial
-		"1":{"priority":1,"parent_gate":0,"unlock_id":0,"view_gate": 0,"clear_chapter":10003,"category":2},
+		"1":{"priority":1,"parent_gate":2109,"unlock_id":0,"view_gate": 0,"clear_chapter":10003,"category":2},
 		"22":{"priority":4,"parent_gate":31,"unlock_id":0,"view_gate":0,"clear_chapter":220150,"category":2},
 		"30":{"priority":5,"parent_gate":31,"unlock_id":0,"view_gate":0,"clear_chapter":300247,"category":2,},
-		"31":{"priority":3,"parent_gate":0,"unlock_id":0,"view_gate":0,"clear_chapter":300247,"category":2,},
-		"48":{"priority":2,"parent_gate":0,"unlock_id":0,"view_gate":0,"clear_chapter":480391,"category":2,},
+		"31":{"priority":3,"parent_gate":2109,"unlock_id":0,"view_gate":0,"clear_chapter":300247,"category":2,},
+		"48":{"priority":2,"parent_gate":2109,"unlock_id":0,"view_gate":0,"clear_chapter":480391,"category":2,},
 		//tcg
-		"2001":{"priority":11,"parent_gate":0,"view_gate":0,"unlock_id":0,"clear_chapter":20010082,"category":1},
-		"2002":{"priority":12,"parent_gate":0,"view_gate":2001,"unlock_id":0,"clear_chapter":20020076,"category":1},
-		"2003":{"priority":13,"parent_gate":0,"view_gate":2002,"unlock_id":0,"clear_chapter":20030070,"category":1},
-		"2004":{"priority":14,"parent_gate":0,"view_gate":2003,"unlock_id":0,"clear_chapter":20040070,"category":1},
-		"2005":{"priority":15,"parent_gate":0,"view_gate":2004,"unlock_id":0,"clear_chapter":20050070,"category":1},
-		"2006":{"priority":16,"parent_gate":0,"view_gate":2005,"unlock_id":0,"clear_chapter":20060070,"category":1},
-		"2011":{"regulation_name":"TCG 75+ YGOMaster v1.60","priority":21,"parent_gate":0,"view_gate":2006,"unlock_id":0,"clear_chapter":20110226,"category":2},
-		"2012":{"regulation_name":"TCG 14+ 2005-04 Goat Format","priority":17,"parent_gate":0,"view_gate":2001,"unlock_id":0,"clear_chapter":20120012,"category":2},
-		"2013":{"regulation_name":"TCG 27+ 2008-01 Perfect Circle Format","priority":18,"parent_gate":0,"view_gate":2002,"unlock_id":0,"clear_chapter":20130012,"category":2},
-		"2014":{"regulation_name":"TCG 39+ 2010-03 Edison Format","priority":19,"parent_gate":0,"view_gate":2003,"unlock_id":0,"clear_chapter":20140012,"category":2},
-		"2015":{"regulation_name":"TCG 51+ 2014-04 HAT Format","priority":20,"parent_gate":0,"view_gate":2004,"unlock_id":0,"clear_chapter":20150012,"category":2}
+		"2001":{"priority":11,"parent_gate":2100,"view_gate":0,"unlock_id":0,"clear_chapter":20010082,"category":1},
+		"2002":{"priority":12,"parent_gate":2100,"view_gate":2001,"unlock_id":0,"clear_chapter":20020076,"category":1},
+		"2003":{"priority":13,"parent_gate":2100,"view_gate":2002,"unlock_id":0,"clear_chapter":20030070,"category":1},
+		"2004":{"priority":14,"parent_gate":2100,"view_gate":2003,"unlock_id":0,"clear_chapter":20040070,"category":1},
+		"2005":{"priority":15,"parent_gate":2100,"view_gate":2004,"unlock_id":0,"clear_chapter":20050070,"category":1},
+		"2006":{"priority":16,"parent_gate":2100,"view_gate":2005,"unlock_id":0,"clear_chapter":20060070,"category":1},
+		"2011":{"regulation_name":"TCG 75+ YGOMaster v1.60","priority":21,"parent_gate":2101,"view_gate":2006,"unlock_id":0,"clear_chapter":20110226,"category":2},
+		"2012":{"regulation_name":"TCG 14+ 2005-04 Goat Format","priority":17,"parent_gate":2101,"view_gate":2001,"unlock_id":0,"clear_chapter":20120012,"category":2},
+		"2013":{"regulation_name":"TCG 27+ 2008-01 Perfect Circle Format","priority":18,"parent_gate":2101,"view_gate":2002,"unlock_id":0,"clear_chapter":20130012,"category":2},
+		"2014":{"regulation_name":"TCG 39+ 2010-03 Edison Format","priority":19,"parent_gate":2101,"view_gate":2003,"unlock_id":0,"clear_chapter":20140012,"category":2},
+		"2015":{"regulation_name":"TCG 51+ 2014-04 HAT Format","priority":20,"parent_gate":2101,"view_gate":2004,"unlock_id":0,"clear_chapter":20150012,"category":2}
 	},
 	"chapter":{
 			"1":

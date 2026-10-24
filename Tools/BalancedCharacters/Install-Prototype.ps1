@@ -39,5 +39,5 @@ foreach ($entry in $manifest.files) {
     if ((Get-FileHash -LiteralPath $dest).Hash -ne $entry.sha256) { throw "Installed hash mismatch: $($entry.path)" }
 }
 Write-Host "Prototype installed at $target"
-Write-Host 'Run Start-Balanced.cmd there; open SOLO > Stories > Balanced Characters - Kaiba or Joey.'
+Write-Host 'Run Start Game.exe there and press Start Game; open SOLO > Stories > Balanced Characters.'
 Write-Host 'This is a development prototype; an in-game duel has not yet been verified.'

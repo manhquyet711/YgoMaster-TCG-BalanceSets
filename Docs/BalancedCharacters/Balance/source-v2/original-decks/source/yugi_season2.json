@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "characterId": "yugi_season2",
+  "revision": "source-v2",
+  "sourcePhoto": "three-years-ago-i-posted-a-set-of-balanced-old-school-v0-qaqp350kd1id1.webp",
+  "sourceFolder": "G:\\Game\\charracter set v2",
+  "verificationStatus": "photo-verified",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 4,
+  "main": [
+    {
+      "name": "Alpha The Magnet Warrior",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gamma The Magnet Warrior",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Beta The Magnet Warrior",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Queen's Knight",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gazelle the King of Mythical Beasts",
+      "quantity": 2,
+      "status": "transcribed"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Big Shield Gardna",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Breaker the Magical Warrior",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Obnoxious Celtic Guard",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "King's Knight",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Jack's Knight",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Curse of Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gemini Elf",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gaia the Fierce Knight",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Magician",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Berfomet",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Buster Blader",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Black Luster Soldier - Envoy of the Beginning",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Valkyrion the Magna Warrior",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Slifer the Sky Dragon",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Nobleman of Crossout",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Block Attack",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Remove Trap",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Stray Lambs",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Spell",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Card of Sanctity",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Magical Mallet",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Swords of Revealing Light",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "The Shallow Grave",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Heart of the Underdog",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Card of Safe Return",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "De-Fusion",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Solemn Judgment",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Chimera the Flying Mythical Beast",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Arcana Knight Joker",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Dark Paladin",
+      "quantity": 1,
+      "status": "transcribed"
+    },
+    {
+      "name": "Gaia the Dragon Champion",
+      "quantity": 1,
+      "status": "transcribed"
+    }
+  ],
+  "side": [],
+  "corrections": [
+    "Successor of v1 Yugi (Battle City): +1 Gazelle, Remove Trap, Breaker the Magical Warrior; -Green Phantom King, The Tricky, Mystical Space Typhoon; extra Arcana Knight Joker replaces Black Skull Dragon."
+  ]
+}

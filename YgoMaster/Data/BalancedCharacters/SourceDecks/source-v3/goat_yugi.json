@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "characterId": "goat_yugi",
+  "displayName": "Yugi Muto",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Goat Era Duelists: AI-designed balanced set (Tools/BalancedCharacters/goat_set.py)",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 2,
+  "main": [
+    {
+      "name": "Dark Magician",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Dark Magician Girl",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Buster Blader",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dark Magician of Chaos",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Apprentice Magician",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Summoned Skull",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Big Shield Gardna",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Kuriboh",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Magician of Faith",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Breaker the Magical Warrior",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Skilled Dark Magician",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Curse of Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gaia The Fierce Knight",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mystical Elf",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Old Vindictive Magician",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Thousand Knives",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dark Magic Attack",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Swords of Revealing Light",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mage Power",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Premature Burial",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Nobleman of Crossout",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Card of Sanctity",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Magic Cylinder",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Shadow Spell",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Magical Hats",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sakuretsu Armor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Waboku",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Dark Paladin",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gaia the Dragon Champion",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

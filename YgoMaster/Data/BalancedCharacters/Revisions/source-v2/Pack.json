@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "revision": "source-v2",
+  "contentVersion": "0.3.0-prototype",
+  "description": "Updated and finalized 2024 lists by u/Rosehn (15 characters)",
+  "activeCharacterIds": [
+    "yugi",
+    "yugi_season2",
+    "kaiba",
+    "joey",
+    "weevil",
+    "rex",
+    "mako",
+    "mai",
+    "bandit_keith",
+    "bonz",
+    "pegasus",
+    "yami_bakura",
+    "gravekeepers",
+    "grandpa",
+    "jaden"
+  ],
+  "characters": [
+    "Yugi (Season 1)",
+    "Yugi (Season 2)",
+    "Kaiba",
+    "Joey",
+    "Weevil",
+    "Rex",
+    "Mako Tsunami",
+    "Mai Valentine",
+    "Bandit Keith",
+    "Bonz",
+    "Pegasus",
+    "Yami Bakura",
+    "Ishtar (Gravekeepers)",
+    "Grandpa (Exodia)",
+    "Jaden Yuki"
+  ]
+}
