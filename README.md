@@ -7,9 +7,10 @@ It is built on the [TCG Solo Campaign](https://github.com/vngudu/YgoMaster-TCG) 
 
 *Offline only. Progress is not shared with the live game.*
 
-> **Status: 0.3.0 prototype.** Two deck sets: **v2** (u/Rosehn's lists, default, played in-game) and
-> **v3 Goat Era Duelists** (AI-built, being balanced). Every matchup of both sets has been tested
-> CPU vs CPU with the real duel engine; results in
+> **Status: 0.3.0 prototype.** Three character modes in SOLO > Stories, all loaded at once:
+> **Balanced Characters** (u/Rosehn's v2 lists), **Goat Era Duelists** (v3, AI-built, Goat-legal) and
+> **Duel Royale** (Konami's 7 official decks). v2 and v3 are tested CPU vs CPU with the real duel engine;
+> v3 and Duel Royale are still being balanced. Results in
 > [Docs/BalancedCharacters/Balance/ANALYSIS.md](Docs/BalancedCharacters/Balance/ANALYSIS.md).
 
 ## Balanced Characters
@@ -46,24 +47,30 @@ reference decks that are still there get the new cards.
 as **Shadow Spell**, the closest old-school card (same lock, plus -700 ATK).
 
 Deck lists: [Character_Deck_Lists_v2.md](Docs/BalancedCharacters/Character_Deck_Lists_v2.md).
-**Choosing the deck set:** open `Start Game.exe`, pick a **Deck set**, then press **Start Game**
-(or Save). Installed sets:
+### Three character modes
 
-| Deck set | Lists |
-|---|---|
-| `source-v2` (default) | u/Rosehn's updated and finalized 2024 lists, 15 characters |
-| `source-v3` | **Goat Era Duelists**: 8 AI-built decks (Yugi, Kaiba, Joey, Mai, Pegasus, Bakura, Marik, Ishizu), every card legal in the April 2005 Goat format. Lists: [Character_Deck_Lists_v3.md](Docs/BalancedCharacters/Character_Deck_Lists_v3.md) |
+Each deck set is its own folder in **SOLO > Stories**, all loaded at the same time (nothing to switch):
+
+| Stories folder | Deck set | Decks |
+|---|---|---|
+| **Balanced Characters** | `source-v2` | u/Rosehn's updated and finalized 2024 lists, 15 characters (above) |
+| **Goat Era Duelists** | `source-v3` | 8 AI-built decks (Yugi, Kaiba, Joey, Mai, Pegasus, Bakura, Marik, Ishizu), every card legal in the April 2005 Goat format. Lists: [Character_Deck_Lists_v3.md](Docs/BalancedCharacters/Character_Deck_Lists_v3.md) |
+| **Duel Royale** | `source-v4` | Konami's 7 official Duel Royale decks as printed: Dark Magician, Blue-Eyes, Gearfried, Lava Golem, A Legendary Ocean, Relinquished, Des Gardius. Lists: `Tools/BalancedCharacters/Royale/decklists.json` |
+
+Every mode works the same way: the gate picks your deck, each battle node an opponent from the same
+mode, 8000 LP, fixed decks, CPU at full strength. Gates are named "Goat Era - …" and "Duel Royale - …"
+in those modes. Reference decks in your deck list: "Balanced - …", "Goat Era - …", "Royale - …".
 
 The original 2021 lists (`source-v1`) are no longer offered; their lists stay in
 [Character_Deck_Lists.md](Docs/BalancedCharacters/Character_Deck_Lists.md). v3 is built from
 `Tools/BalancedCharacters/goat_set.py` (shared rules: Pot of Greed, Graceful Charity, one MST or
 Heavy Storm, at most two premium removal traps, no Goat tournament engines).
 
-The new set loads the next time the balanced server starts. Progress is kept per battle, and the
-"Balanced - …" reference decks switch to the chosen set's cards. Command line:
-`"Start Game.exe" --deck-set source-v3`. Each set is a compiled pack in
-`Data/BalancedCharacters/Revisions/<revision>`, built by `content.py packs` (part of
-`Build-Balanced.ps1 -CompilePrototype`); a new revision added to `content.py` shows up in the list.
+How the modes load: each set is a compiled pack in `Data/BalancedCharacters/Revisions/<revision>`,
+built by `content.py packs` (part of `Build-Balanced.ps1 -CompilePrototype`). `Mode.json` lists the
+loaded sets and their folders (`"sets"`, written by `content.py sets <Data>`); the server loads each pack
+on its own, so one bad pack only turns off its own mode. Start Game installs each set's texts
+(`ClientData/IDS/IDS_BALANCED_SOURCE_V*.txt`) and gate thumbnails before starting the server.
 
 ## TCG campaign: harder and closer to history
 
@@ -89,7 +96,7 @@ has been reworked here. Full details: [Docs/TCGCampaign/CHANGES.md](Docs/TCGCamp
 
 Solo is grouped into mode folders:
 
-- **Stories:** TCG Campaign (DM to VRAINS eras) and Balanced Characters (the active deck set).
+- **Stories:** TCG Campaign (DM to VRAINS eras), Balanced Characters, Goat Era Duelists and Duel Royale.
 - **Training & Challenges:** Format Challenges (Goat, Perfect Circle, Edison, HAT, v1.60) and
   Master Duel Basics (the original Tutorial gates).
 
@@ -117,8 +124,9 @@ The two Recommended cards show your current TCG era and Format Challenge. See
    It saves your settings, starts the balanced server on the ports from your settings, then starts Master Duel.
 4. In game: **SOLO > Stories > Balanced Characters**.
 
-`Start Game.exe` is also the settings window: a dark window over your game background with the
-deck set picker (description and the set's characters), the mode on/off switch, and settings for
+`Start Game.exe` is also the settings window: a dark window over your game background with a
+**Stories Modes** list (pick a mode to see its description and characters; nothing to switch, all three
+are always loaded), the on/off switch for the character modes, and settings for
 collection, starting gems and campaign rewards. Buttons: **Start Game**, Save, Close. Deck rules above
 are fixed by the mode and are not editable. Close the game before saving settings.
 
@@ -178,7 +186,7 @@ Options for test-only decks that are not in the game:
 
 Results so far (details and reasons in [ANALYSIS.md](Docs/BalancedCharacters/Balance/ANALYSIS.md)):
 v2 has 10 of 15 decks in range (Grandpa 11%, Pegasus 24% lowest; Rex 66% highest); the tuned v2
-test copy has 14 of 15. v3 has 6 of 8 after three tuning rounds (Marik 64%, Pegasus 29% left).
+test copy has 14 of 15. v3 has 6 of 8 after three tuning rounds; Pegasus was then rebuilt around Relinquished (29% to 48%), leaving Marik (64%).
 
 ## Manual playtesting
 

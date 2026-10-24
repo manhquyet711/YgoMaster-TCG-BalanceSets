@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_relinquished",
+  "displayName": "Relinquished (Pegasus)",
+  "sourcePhoto": null,
+  "verificationStatus": "official",
+  "design": "Konami OCG Duel Royale Deck Set (DR01/DR02), Relinquished Deck, as printed",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 2,
+  "main": [
+    {
+      "name": "Thousand-Eyes Idol",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Lava Golem",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Breaker the Magical Warrior",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mystic Tomato",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Manju of the Ten Thousand Hands",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Senju of the Thousand Hands",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Sonic Bird",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Witch of the Black Forest",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dark Scorpion - Meanae the Thorn",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Dark Scorpion - Cliff the Trap Remover",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Relinquished",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dark Eruption",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Shield Crush",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Shrink",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Book of Moon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Scapegoat",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Black Illusion Ritual",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Advanced Ritual Art",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Premature Burial",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Interdimensional Matter Transporter",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Zero Gravity",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "official"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Thousand-Eyes Restrict",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Sanwitch",
+      "quantity": 1,
+      "status": "official"
+    }
+  ],
+  "side": []
+}

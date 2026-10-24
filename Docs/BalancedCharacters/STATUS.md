@@ -4,10 +4,10 @@
 
 | Area | Status |
 |---|---|
-| Deck sets | `source-v2` (u/Rosehn 2024, 15 characters, default, played in-game) and `source-v3` (Goat Era Duelists, 8 AI-built Goat-legal decks, packed, not installed yet). `source-v1` retired. |
+| Deck sets | Three Stories modes loaded at once: Balanced Characters (`source-v2`, u/Rosehn, 15), Goat Era Duelists (`source-v3`, 8 AI-built Goat-legal decks) and Duel Royale (`source-v4`, Konami's 7 decks). No deck set switching; `source-v1` retired. Installed and server-tested (all three load). |
 | Balance testing | CPU vs CPU with the real engine (`npc_balance.py`). v2: 10/15 decks within 40-60%. Tuned v2 test copy: 14/15. v3: rounds 1-3 done, 6/8 decks in range (Marik 64%, Pegasus 29% left). See [Balance/ANALYSIS.md](Balance/ANALYSIS.md). |
-| Comparisons | Pegasus B (Relinquished build) and Konami's 7 Duel Royale decks are queued as test-only sets. |
-| Solo menu | Grouped into folders, checked in-game: Stories has TCG Campaign and Balanced Characters; Training & Challenges has Format Challenges and Master Duel Basics. Recommended shows the current TCG era and Format Challenge. |
+| Comparisons | Pegasus B (Relinquished build) and the Duel Royale balance test are running. |
+| Solo menu | Grouped into folders, checked in-game: Stories has TCG Campaign and Balanced Characters; Training & Challenges has Format Challenges and Master Duel Basics. Recommended shows the current TCG era and Format Challenge. Goat Era Duelists and Duel Royale folders added. |
 | Launcher / settings | `Start Game.exe` (the redesigned settings editor) is the only launcher: Start Game saves settings, starts the server, then Master Duel. Old `SettingsEditor.exe`, `Start-Balanced.*` and `Open-Balanced-Settings.cmd` removed from the install (backups in `UpgradeBackups\start-game-*`); support files are hidden. Installed. |
 | Next | Finish v3 balance, install v3, pick Pegasus version, Duel Royale as its own Solo mode. |
 

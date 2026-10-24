@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_gearfried",
+  "displayName": "Gearfried (Joey)",
+  "sourcePhoto": null,
+  "verificationStatus": "official",
+  "design": "Konami OCG Duel Royale Deck Set (DR01/DR02), Gearfried the Swordmaster Deck, as printed",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Gearfried the Swordmaster",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "The Fiend Megacyber",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Zombyra the Dark",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Gearfried the Iron Knight",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "D.D. Assailant",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Red Sparrow Summoner",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "D.D. Warrior Lady",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Obnoxious Celtic Guard",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Command Knight",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Sasuke Samurai #4",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "D.D. Warrior",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Warrior Lady of the Wasteland",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Exiled Force",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mysterious Guard",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Lightning Vortex",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Reinforcement of the Army",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "The Warrior Returning Alive",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Release Restraint",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Fusion Sword Murasame Blade",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "United We Stand",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Bottomless Trap Hole",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Kunai with Chain",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Metalmorph",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Blast with Chain",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Pinpoint Guard",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Fairy Box",
+      "quantity": 1,
+      "status": "official"
+    }
+  ],
+  "extra": [],
+  "side": []
+}

@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_dark_magician",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "revision": "source-v4",
+  "main": [
+    {
+      "cardId": 4041,
+      "quantity": 2
+    },
+    {
+      "cardId": 4766,
+      "quantity": 1
+    },
+    {
+      "cardId": 5652,
+      "quantity": 1
+    },
+    {
+      "cardId": 5655,
+      "quantity": 1
+    },
+    {
+      "cardId": 5649,
+      "quantity": 2
+    },
+    {
+      "cardId": 5248,
+      "quantity": 1
+    },
+    {
+      "cardId": 9906,
+      "quantity": 1
+    },
+    {
+      "cardId": 8134,
+      "quantity": 1
+    },
+    {
+      "cardId": 4745,
+      "quantity": 1
+    },
+    {
+      "cardId": 4580,
+      "quantity": 1
+    },
+    {
+      "cardId": 5031,
+      "quantity": 1
+    },
+    {
+      "cardId": 5651,
+      "quantity": 1
+    },
+    {
+      "cardId": 5650,
+      "quantity": 2
+    },
+    {
+      "cardId": 10565,
+      "quantity": 1
+    },
+    {
+      "cardId": 12764,
+      "quantity": 1
+    },
+    {
+      "cardId": 4434,
+      "quantity": 1
+    },
+    {
+      "cardId": 4842,
+      "quantity": 1
+    },
+    {
+      "cardId": 4844,
+      "quantity": 1
+    },
+    {
+      "cardId": 5217,
+      "quantity": 1
+    },
+    {
+      "cardId": 5743,
+      "quantity": 1
+    },
+    {
+      "cardId": 4354,
+      "quantity": 1
+    },
+    {
+      "cardId": 4830,
+      "quantity": 1
+    },
+    {
+      "cardId": 12502,
+      "quantity": 1
+    },
+    {
+      "cardId": 6057,
+      "quantity": 1
+    },
+    {
+      "cardId": 14446,
+      "quantity": 1
+    },
+    {
+      "cardId": 4909,
+      "quantity": 1
+    },
+    {
+      "cardId": 5432,
+      "quantity": 1
+    },
+    {
+      "cardId": 5752,
+      "quantity": 2
+    },
+    {
+      "cardId": 6152,
+      "quantity": 1
+    },
+    {
+      "cardId": 4966,
+      "quantity": 1
+    },
+    {
+      "cardId": 4887,
+      "quantity": 1
+    },
+    {
+      "cardId": 5124,
+      "quantity": 1
+    },
+    {
+      "cardId": 6168,
+      "quantity": 1
+    },
+    {
+      "cardId": 12509,
+      "quantity": 1
+    },
+    {
+      "cardId": 4988,
+      "quantity": 1
+    },
+    {
+      "cardId": 4989,
+      "quantity": 1
+    }
+  ],
+  "extra": [],
+  "side": []
+}

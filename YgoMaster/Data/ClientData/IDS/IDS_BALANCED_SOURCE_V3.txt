@@ -1,0 +1,368 @@
+[IDS_SOLO.CHAPTER20330019]
+Yugi Muto vs Seto Kaiba
+[IDS_SOLO.CHAPTER20330019_EXPLANATION]
+Opponent: Seto Kaiba, Blue-Eyes White Dragon deck, 40 cards + 2 Extra. You play Yugi Muto, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20330019_MAPLABEL]
+vs Kaiba
+[IDS_SOLO.CHAPTER20330020]
+Yugi Muto vs Joey Wheeler
+[IDS_SOLO.CHAPTER20330020_EXPLANATION]
+Opponent: Joey Wheeler, Red-Eyes Black Dragon deck, 40 cards + 2 Extra. You play Yugi Muto, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20330020_MAPLABEL]
+vs Joey
+[IDS_SOLO.CHAPTER20330021]
+Yugi Muto vs Mai Valentine
+[IDS_SOLO.CHAPTER20330021_EXPLANATION]
+Opponent: Mai Valentine, Harpie Lady Sisters deck, 40 cards. You play Yugi Muto, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20330021_MAPLABEL]
+vs Mai
+[IDS_SOLO.CHAPTER20330022]
+Yugi Muto vs Maximillion Pegasus
+[IDS_SOLO.CHAPTER20330022_EXPLANATION]
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Yugi Muto, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20330022_MAPLABEL]
+vs Pegasus
+[IDS_SOLO.CHAPTER20330023]
+Yugi Muto vs Yami Bakura
+[IDS_SOLO.CHAPTER20330023_EXPLANATION]
+Opponent: Yami Bakura, Dark Necrofear deck, 40 cards. You play Yugi Muto, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20330023_MAPLABEL]
+vs Bakura
+[IDS_SOLO.CHAPTER20330024]
+Yugi Muto vs Marik Ishtar
+[IDS_SOLO.CHAPTER20330024_EXPLANATION]
+Opponent: Marik Ishtar, Lava Golem deck, 40 cards. You play Yugi Muto, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20330024_MAPLABEL]
+vs Marik
+[IDS_SOLO.CHAPTER20330025]
+Yugi Muto vs Ishizu Ishtar
+[IDS_SOLO.CHAPTER20330025_EXPLANATION]
+Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Yugi Muto, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20330025_MAPLABEL]
+vs Ishizu
+[IDS_SOLO.GATE2033]
+Goat Era - Yugi Muto
+[IDS_SOLO.GATE2033_EXPLANATION]
+Choose an opponent. You play Yugi Muto's fixed deck.
+[IDS_SOLO.CHAPTER20340018]
+Seto Kaiba vs Yugi Muto
+[IDS_SOLO.CHAPTER20340018_EXPLANATION]
+Opponent: Yugi Muto, Dark Magician deck, 40 cards + 2 Extra. You play Seto Kaiba, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20340018_MAPLABEL]
+vs Yugi
+[IDS_SOLO.CHAPTER20340020]
+Seto Kaiba vs Joey Wheeler
+[IDS_SOLO.CHAPTER20340020_EXPLANATION]
+Opponent: Joey Wheeler, Red-Eyes Black Dragon deck, 40 cards + 2 Extra. You play Seto Kaiba, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20340020_MAPLABEL]
+vs Joey
+[IDS_SOLO.CHAPTER20340021]
+Seto Kaiba vs Mai Valentine
+[IDS_SOLO.CHAPTER20340021_EXPLANATION]
+Opponent: Mai Valentine, Harpie Lady Sisters deck, 40 cards. You play Seto Kaiba, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20340021_MAPLABEL]
+vs Mai
+[IDS_SOLO.CHAPTER20340022]
+Seto Kaiba vs Maximillion Pegasus
+[IDS_SOLO.CHAPTER20340022_EXPLANATION]
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Seto Kaiba, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20340022_MAPLABEL]
+vs Pegasus
+[IDS_SOLO.CHAPTER20340023]
+Seto Kaiba vs Yami Bakura
+[IDS_SOLO.CHAPTER20340023_EXPLANATION]
+Opponent: Yami Bakura, Dark Necrofear deck, 40 cards. You play Seto Kaiba, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20340023_MAPLABEL]
+vs Bakura
+[IDS_SOLO.CHAPTER20340024]
+Seto Kaiba vs Marik Ishtar
+[IDS_SOLO.CHAPTER20340024_EXPLANATION]
+Opponent: Marik Ishtar, Lava Golem deck, 40 cards. You play Seto Kaiba, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20340024_MAPLABEL]
+vs Marik
+[IDS_SOLO.CHAPTER20340025]
+Seto Kaiba vs Ishizu Ishtar
+[IDS_SOLO.CHAPTER20340025_EXPLANATION]
+Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Seto Kaiba, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20340025_MAPLABEL]
+vs Ishizu
+[IDS_SOLO.GATE2034]
+Goat Era - Seto Kaiba
+[IDS_SOLO.GATE2034_EXPLANATION]
+Choose an opponent. You play Seto Kaiba's fixed deck.
+[IDS_SOLO.CHAPTER20350018]
+Joey Wheeler vs Yugi Muto
+[IDS_SOLO.CHAPTER20350018_EXPLANATION]
+Opponent: Yugi Muto, Dark Magician deck, 40 cards + 2 Extra. You play Joey Wheeler, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20350018_MAPLABEL]
+vs Yugi
+[IDS_SOLO.CHAPTER20350019]
+Joey Wheeler vs Seto Kaiba
+[IDS_SOLO.CHAPTER20350019_EXPLANATION]
+Opponent: Seto Kaiba, Blue-Eyes White Dragon deck, 40 cards + 2 Extra. You play Joey Wheeler, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20350019_MAPLABEL]
+vs Kaiba
+[IDS_SOLO.CHAPTER20350021]
+Joey Wheeler vs Mai Valentine
+[IDS_SOLO.CHAPTER20350021_EXPLANATION]
+Opponent: Mai Valentine, Harpie Lady Sisters deck, 40 cards. You play Joey Wheeler, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20350021_MAPLABEL]
+vs Mai
+[IDS_SOLO.CHAPTER20350022]
+Joey Wheeler vs Maximillion Pegasus
+[IDS_SOLO.CHAPTER20350022_EXPLANATION]
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Joey Wheeler, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20350022_MAPLABEL]
+vs Pegasus
+[IDS_SOLO.CHAPTER20350023]
+Joey Wheeler vs Yami Bakura
+[IDS_SOLO.CHAPTER20350023_EXPLANATION]
+Opponent: Yami Bakura, Dark Necrofear deck, 40 cards. You play Joey Wheeler, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20350023_MAPLABEL]
+vs Bakura
+[IDS_SOLO.CHAPTER20350024]
+Joey Wheeler vs Marik Ishtar
+[IDS_SOLO.CHAPTER20350024_EXPLANATION]
+Opponent: Marik Ishtar, Lava Golem deck, 40 cards. You play Joey Wheeler, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20350024_MAPLABEL]
+vs Marik
+[IDS_SOLO.CHAPTER20350025]
+Joey Wheeler vs Ishizu Ishtar
+[IDS_SOLO.CHAPTER20350025_EXPLANATION]
+Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Joey Wheeler, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20350025_MAPLABEL]
+vs Ishizu
+[IDS_SOLO.GATE2035]
+Goat Era - Joey Wheeler
+[IDS_SOLO.GATE2035_EXPLANATION]
+Choose an opponent. You play Joey Wheeler's fixed deck.
+[IDS_SOLO.CHAPTER20360018]
+Mai Valentine vs Yugi Muto
+[IDS_SOLO.CHAPTER20360018_EXPLANATION]
+Opponent: Yugi Muto, Dark Magician deck, 40 cards + 2 Extra. You play Mai Valentine, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20360018_MAPLABEL]
+vs Yugi
+[IDS_SOLO.CHAPTER20360019]
+Mai Valentine vs Seto Kaiba
+[IDS_SOLO.CHAPTER20360019_EXPLANATION]
+Opponent: Seto Kaiba, Blue-Eyes White Dragon deck, 40 cards + 2 Extra. You play Mai Valentine, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20360019_MAPLABEL]
+vs Kaiba
+[IDS_SOLO.CHAPTER20360020]
+Mai Valentine vs Joey Wheeler
+[IDS_SOLO.CHAPTER20360020_EXPLANATION]
+Opponent: Joey Wheeler, Red-Eyes Black Dragon deck, 40 cards + 2 Extra. You play Mai Valentine, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20360020_MAPLABEL]
+vs Joey
+[IDS_SOLO.CHAPTER20360022]
+Mai Valentine vs Maximillion Pegasus
+[IDS_SOLO.CHAPTER20360022_EXPLANATION]
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Mai Valentine, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20360022_MAPLABEL]
+vs Pegasus
+[IDS_SOLO.CHAPTER20360023]
+Mai Valentine vs Yami Bakura
+[IDS_SOLO.CHAPTER20360023_EXPLANATION]
+Opponent: Yami Bakura, Dark Necrofear deck, 40 cards. You play Mai Valentine, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20360023_MAPLABEL]
+vs Bakura
+[IDS_SOLO.CHAPTER20360024]
+Mai Valentine vs Marik Ishtar
+[IDS_SOLO.CHAPTER20360024_EXPLANATION]
+Opponent: Marik Ishtar, Lava Golem deck, 40 cards. You play Mai Valentine, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20360024_MAPLABEL]
+vs Marik
+[IDS_SOLO.CHAPTER20360025]
+Mai Valentine vs Ishizu Ishtar
+[IDS_SOLO.CHAPTER20360025_EXPLANATION]
+Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Mai Valentine, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20360025_MAPLABEL]
+vs Ishizu
+[IDS_SOLO.GATE2036]
+Goat Era - Mai Valentine
+[IDS_SOLO.GATE2036_EXPLANATION]
+Choose an opponent. You play Mai Valentine's fixed deck.
+[IDS_SOLO.CHAPTER20370018]
+Maximillion Pegasus vs Yugi Muto
+[IDS_SOLO.CHAPTER20370018_EXPLANATION]
+Opponent: Yugi Muto, Dark Magician deck, 40 cards + 2 Extra. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20370018_MAPLABEL]
+vs Yugi
+[IDS_SOLO.CHAPTER20370019]
+Maximillion Pegasus vs Seto Kaiba
+[IDS_SOLO.CHAPTER20370019_EXPLANATION]
+Opponent: Seto Kaiba, Blue-Eyes White Dragon deck, 40 cards + 2 Extra. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20370019_MAPLABEL]
+vs Kaiba
+[IDS_SOLO.CHAPTER20370020]
+Maximillion Pegasus vs Joey Wheeler
+[IDS_SOLO.CHAPTER20370020_EXPLANATION]
+Opponent: Joey Wheeler, Red-Eyes Black Dragon deck, 40 cards + 2 Extra. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20370020_MAPLABEL]
+vs Joey
+[IDS_SOLO.CHAPTER20370021]
+Maximillion Pegasus vs Mai Valentine
+[IDS_SOLO.CHAPTER20370021_EXPLANATION]
+Opponent: Mai Valentine, Harpie Lady Sisters deck, 40 cards. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20370021_MAPLABEL]
+vs Mai
+[IDS_SOLO.CHAPTER20370023]
+Maximillion Pegasus vs Yami Bakura
+[IDS_SOLO.CHAPTER20370023_EXPLANATION]
+Opponent: Yami Bakura, Dark Necrofear deck, 40 cards. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20370023_MAPLABEL]
+vs Bakura
+[IDS_SOLO.CHAPTER20370024]
+Maximillion Pegasus vs Marik Ishtar
+[IDS_SOLO.CHAPTER20370024_EXPLANATION]
+Opponent: Marik Ishtar, Lava Golem deck, 40 cards. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20370024_MAPLABEL]
+vs Marik
+[IDS_SOLO.CHAPTER20370025]
+Maximillion Pegasus vs Ishizu Ishtar
+[IDS_SOLO.CHAPTER20370025_EXPLANATION]
+Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20370025_MAPLABEL]
+vs Ishizu
+[IDS_SOLO.GATE2037]
+Goat Era - Maximillion Pegasus
+[IDS_SOLO.GATE2037_EXPLANATION]
+Choose an opponent. You play Maximillion Pegasus's fixed deck.
+[IDS_SOLO.CHAPTER20380018]
+Yami Bakura vs Yugi Muto
+[IDS_SOLO.CHAPTER20380018_EXPLANATION]
+Opponent: Yugi Muto, Dark Magician deck, 40 cards + 2 Extra. You play Yami Bakura, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20380018_MAPLABEL]
+vs Yugi
+[IDS_SOLO.CHAPTER20380019]
+Yami Bakura vs Seto Kaiba
+[IDS_SOLO.CHAPTER20380019_EXPLANATION]
+Opponent: Seto Kaiba, Blue-Eyes White Dragon deck, 40 cards + 2 Extra. You play Yami Bakura, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20380019_MAPLABEL]
+vs Kaiba
+[IDS_SOLO.CHAPTER20380020]
+Yami Bakura vs Joey Wheeler
+[IDS_SOLO.CHAPTER20380020_EXPLANATION]
+Opponent: Joey Wheeler, Red-Eyes Black Dragon deck, 40 cards + 2 Extra. You play Yami Bakura, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20380020_MAPLABEL]
+vs Joey
+[IDS_SOLO.CHAPTER20380021]
+Yami Bakura vs Mai Valentine
+[IDS_SOLO.CHAPTER20380021_EXPLANATION]
+Opponent: Mai Valentine, Harpie Lady Sisters deck, 40 cards. You play Yami Bakura, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20380021_MAPLABEL]
+vs Mai
+[IDS_SOLO.CHAPTER20380022]
+Yami Bakura vs Maximillion Pegasus
+[IDS_SOLO.CHAPTER20380022_EXPLANATION]
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Yami Bakura, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20380022_MAPLABEL]
+vs Pegasus
+[IDS_SOLO.CHAPTER20380024]
+Yami Bakura vs Marik Ishtar
+[IDS_SOLO.CHAPTER20380024_EXPLANATION]
+Opponent: Marik Ishtar, Lava Golem deck, 40 cards. You play Yami Bakura, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20380024_MAPLABEL]
+vs Marik
+[IDS_SOLO.CHAPTER20380025]
+Yami Bakura vs Ishizu Ishtar
+[IDS_SOLO.CHAPTER20380025_EXPLANATION]
+Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Yami Bakura, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20380025_MAPLABEL]
+vs Ishizu
+[IDS_SOLO.GATE2038]
+Goat Era - Yami Bakura
+[IDS_SOLO.GATE2038_EXPLANATION]
+Choose an opponent. You play Yami Bakura's fixed deck.
+[IDS_SOLO.CHAPTER20390018]
+Marik Ishtar vs Yugi Muto
+[IDS_SOLO.CHAPTER20390018_EXPLANATION]
+Opponent: Yugi Muto, Dark Magician deck, 40 cards + 2 Extra. You play Marik Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20390018_MAPLABEL]
+vs Yugi
+[IDS_SOLO.CHAPTER20390019]
+Marik Ishtar vs Seto Kaiba
+[IDS_SOLO.CHAPTER20390019_EXPLANATION]
+Opponent: Seto Kaiba, Blue-Eyes White Dragon deck, 40 cards + 2 Extra. You play Marik Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20390019_MAPLABEL]
+vs Kaiba
+[IDS_SOLO.CHAPTER20390020]
+Marik Ishtar vs Joey Wheeler
+[IDS_SOLO.CHAPTER20390020_EXPLANATION]
+Opponent: Joey Wheeler, Red-Eyes Black Dragon deck, 40 cards + 2 Extra. You play Marik Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20390020_MAPLABEL]
+vs Joey
+[IDS_SOLO.CHAPTER20390021]
+Marik Ishtar vs Mai Valentine
+[IDS_SOLO.CHAPTER20390021_EXPLANATION]
+Opponent: Mai Valentine, Harpie Lady Sisters deck, 40 cards. You play Marik Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20390021_MAPLABEL]
+vs Mai
+[IDS_SOLO.CHAPTER20390022]
+Marik Ishtar vs Maximillion Pegasus
+[IDS_SOLO.CHAPTER20390022_EXPLANATION]
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Marik Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20390022_MAPLABEL]
+vs Pegasus
+[IDS_SOLO.CHAPTER20390023]
+Marik Ishtar vs Yami Bakura
+[IDS_SOLO.CHAPTER20390023_EXPLANATION]
+Opponent: Yami Bakura, Dark Necrofear deck, 40 cards. You play Marik Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20390023_MAPLABEL]
+vs Bakura
+[IDS_SOLO.CHAPTER20390025]
+Marik Ishtar vs Ishizu Ishtar
+[IDS_SOLO.CHAPTER20390025_EXPLANATION]
+Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Marik Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20390025_MAPLABEL]
+vs Ishizu
+[IDS_SOLO.GATE2039]
+Goat Era - Marik Ishtar
+[IDS_SOLO.GATE2039_EXPLANATION]
+Choose an opponent. You play Marik Ishtar's fixed deck.
+[IDS_SOLO.CHAPTER20400018]
+Ishizu Ishtar vs Yugi Muto
+[IDS_SOLO.CHAPTER20400018_EXPLANATION]
+Opponent: Yugi Muto, Dark Magician deck, 40 cards + 2 Extra. You play Ishizu Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20400018_MAPLABEL]
+vs Yugi
+[IDS_SOLO.CHAPTER20400019]
+Ishizu Ishtar vs Seto Kaiba
+[IDS_SOLO.CHAPTER20400019_EXPLANATION]
+Opponent: Seto Kaiba, Blue-Eyes White Dragon deck, 40 cards + 2 Extra. You play Ishizu Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20400019_MAPLABEL]
+vs Kaiba
+[IDS_SOLO.CHAPTER20400020]
+Ishizu Ishtar vs Joey Wheeler
+[IDS_SOLO.CHAPTER20400020_EXPLANATION]
+Opponent: Joey Wheeler, Red-Eyes Black Dragon deck, 40 cards + 2 Extra. You play Ishizu Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20400020_MAPLABEL]
+vs Joey
+[IDS_SOLO.CHAPTER20400021]
+Ishizu Ishtar vs Mai Valentine
+[IDS_SOLO.CHAPTER20400021_EXPLANATION]
+Opponent: Mai Valentine, Harpie Lady Sisters deck, 40 cards. You play Ishizu Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20400021_MAPLABEL]
+vs Mai
+[IDS_SOLO.CHAPTER20400022]
+Ishizu Ishtar vs Maximillion Pegasus
+[IDS_SOLO.CHAPTER20400022_EXPLANATION]
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Ishizu Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20400022_MAPLABEL]
+vs Pegasus
+[IDS_SOLO.CHAPTER20400023]
+Ishizu Ishtar vs Yami Bakura
+[IDS_SOLO.CHAPTER20400023_EXPLANATION]
+Opponent: Yami Bakura, Dark Necrofear deck, 40 cards. You play Ishizu Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20400023_MAPLABEL]
+vs Bakura
+[IDS_SOLO.CHAPTER20400024]
+Ishizu Ishtar vs Marik Ishtar
+[IDS_SOLO.CHAPTER20400024_EXPLANATION]
+Opponent: Marik Ishtar, Lava Golem deck, 40 cards. You play Ishizu Ishtar, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20400024_MAPLABEL]
+vs Marik
+[IDS_SOLO.GATE2040]
+Goat Era - Ishizu Ishtar
+[IDS_SOLO.GATE2040_EXPLANATION]
+Choose an opponent. You play Ishizu Ishtar's fixed deck.

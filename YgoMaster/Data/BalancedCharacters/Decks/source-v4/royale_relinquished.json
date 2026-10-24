@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_relinquished",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 2,
+  "revision": "source-v4",
+  "main": [
+    {
+      "cardId": 4739,
+      "quantity": 2
+    },
+    {
+      "cardId": 5496,
+      "quantity": 1
+    },
+    {
+      "cardId": 5655,
+      "quantity": 1
+    },
+    {
+      "cardId": 4930,
+      "quantity": 2
+    },
+    {
+      "cardId": 5900,
+      "quantity": 3
+    },
+    {
+      "cardId": 4916,
+      "quantity": 1
+    },
+    {
+      "cardId": 4929,
+      "quantity": 2
+    },
+    {
+      "cardId": 4580,
+      "quantity": 1
+    },
+    {
+      "cardId": 5766,
+      "quantity": 2
+    },
+    {
+      "cardId": 5662,
+      "quantity": 1
+    },
+    {
+      "cardId": 4054,
+      "quantity": 1
+    },
+    {
+      "cardId": 4737,
+      "quantity": 3
+    },
+    {
+      "cardId": 4842,
+      "quantity": 1
+    },
+    {
+      "cardId": 4844,
+      "quantity": 1
+    },
+    {
+      "cardId": 4891,
+      "quantity": 1
+    },
+    {
+      "cardId": 7453,
+      "quantity": 1
+    },
+    {
+      "cardId": 4837,
+      "quantity": 1
+    },
+    {
+      "cardId": 6003,
+      "quantity": 1
+    },
+    {
+      "cardId": 4909,
+      "quantity": 1
+    },
+    {
+      "cardId": 5355,
+      "quantity": 1
+    },
+    {
+      "cardId": 5432,
+      "quantity": 1
+    },
+    {
+      "cardId": 4818,
+      "quantity": 1
+    },
+    {
+      "cardId": 4802,
+      "quantity": 3
+    },
+    {
+      "cardId": 6996,
+      "quantity": 1
+    },
+    {
+      "cardId": 4966,
+      "quantity": 1
+    },
+    {
+      "cardId": 4887,
+      "quantity": 1
+    },
+    {
+      "cardId": 4988,
+      "quantity": 1
+    },
+    {
+      "cardId": 5560,
+      "quantity": 1
+    },
+    {
+      "cardId": 5857,
+      "quantity": 1
+    },
+    {
+      "cardId": 4989,
+      "quantity": 1
+    }
+  ],
+  "extra": [
+    {
+      "cardId": 4740,
+      "quantity": 1
+    },
+    {
+      "cardId": 6128,
+      "quantity": 1
+    }
+  ],
+  "side": []
+}

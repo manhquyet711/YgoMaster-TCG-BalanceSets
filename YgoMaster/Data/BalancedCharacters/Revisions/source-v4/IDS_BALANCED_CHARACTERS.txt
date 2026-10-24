@@ -1,0 +1,280 @@
+[IDS_SOLO.CHAPTER20410027]
+Dark Magician (Yugi) vs Blue-Eyes (Kaiba)
+[IDS_SOLO.CHAPTER20410027_EXPLANATION]
+Opponent: Blue-Eyes (Kaiba), Blue-Eyes White Dragon deck, 40 cards. You play Dark Magician (Yugi), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20410027_MAPLABEL]
+vs Blue-Eyes
+[IDS_SOLO.CHAPTER20410028]
+Dark Magician (Yugi) vs Gearfried (Joey)
+[IDS_SOLO.CHAPTER20410028_EXPLANATION]
+Opponent: Gearfried (Joey), Gearfried the Swordmaster deck, 40 cards. You play Dark Magician (Yugi), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20410028_MAPLABEL]
+vs Gearfried
+[IDS_SOLO.CHAPTER20410029]
+Dark Magician (Yugi) vs Lava Golem (Marik)
+[IDS_SOLO.CHAPTER20410029_EXPLANATION]
+Opponent: Lava Golem (Marik), Lava Golem deck, 40 cards. You play Dark Magician (Yugi), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20410029_MAPLABEL]
+vs Lava Golem
+[IDS_SOLO.CHAPTER20410030]
+Dark Magician (Yugi) vs Legendary Ocean (Mako)
+[IDS_SOLO.CHAPTER20410030_EXPLANATION]
+Opponent: Legendary Ocean (Mako), Levia-Dragon - Daedalus deck, 40 cards. You play Dark Magician (Yugi), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20410030_MAPLABEL]
+vs Ocean
+[IDS_SOLO.CHAPTER20410031]
+Dark Magician (Yugi) vs Relinquished (Pegasus)
+[IDS_SOLO.CHAPTER20410031_EXPLANATION]
+Opponent: Relinquished (Pegasus), Relinquished deck, 40 cards + 2 Extra. You play Dark Magician (Yugi), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20410031_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.CHAPTER20410032]
+Dark Magician (Yugi) vs Des Gardius (Bakura)
+[IDS_SOLO.CHAPTER20410032_EXPLANATION]
+Opponent: Des Gardius (Bakura), Masked Beast Des Gardius deck, 40 cards. You play Dark Magician (Yugi), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20410032_MAPLABEL]
+vs Des Gardius
+[IDS_SOLO.GATE2041]
+Duel Royale - Dark Magician (Yugi)
+[IDS_SOLO.GATE2041_EXPLANATION]
+Choose an opponent. You play Dark Magician (Yugi)'s fixed deck.
+[IDS_SOLO.CHAPTER20420026]
+Blue-Eyes (Kaiba) vs Dark Magician (Yugi)
+[IDS_SOLO.CHAPTER20420026_EXPLANATION]
+Opponent: Dark Magician (Yugi), Dark Magician deck, 40 cards. You play Blue-Eyes (Kaiba), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20420026_MAPLABEL]
+vs Dark Magician
+[IDS_SOLO.CHAPTER20420028]
+Blue-Eyes (Kaiba) vs Gearfried (Joey)
+[IDS_SOLO.CHAPTER20420028_EXPLANATION]
+Opponent: Gearfried (Joey), Gearfried the Swordmaster deck, 40 cards. You play Blue-Eyes (Kaiba), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20420028_MAPLABEL]
+vs Gearfried
+[IDS_SOLO.CHAPTER20420029]
+Blue-Eyes (Kaiba) vs Lava Golem (Marik)
+[IDS_SOLO.CHAPTER20420029_EXPLANATION]
+Opponent: Lava Golem (Marik), Lava Golem deck, 40 cards. You play Blue-Eyes (Kaiba), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20420029_MAPLABEL]
+vs Lava Golem
+[IDS_SOLO.CHAPTER20420030]
+Blue-Eyes (Kaiba) vs Legendary Ocean (Mako)
+[IDS_SOLO.CHAPTER20420030_EXPLANATION]
+Opponent: Legendary Ocean (Mako), Levia-Dragon - Daedalus deck, 40 cards. You play Blue-Eyes (Kaiba), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20420030_MAPLABEL]
+vs Ocean
+[IDS_SOLO.CHAPTER20420031]
+Blue-Eyes (Kaiba) vs Relinquished (Pegasus)
+[IDS_SOLO.CHAPTER20420031_EXPLANATION]
+Opponent: Relinquished (Pegasus), Relinquished deck, 40 cards + 2 Extra. You play Blue-Eyes (Kaiba), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20420031_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.CHAPTER20420032]
+Blue-Eyes (Kaiba) vs Des Gardius (Bakura)
+[IDS_SOLO.CHAPTER20420032_EXPLANATION]
+Opponent: Des Gardius (Bakura), Masked Beast Des Gardius deck, 40 cards. You play Blue-Eyes (Kaiba), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20420032_MAPLABEL]
+vs Des Gardius
+[IDS_SOLO.GATE2042]
+Duel Royale - Blue-Eyes (Kaiba)
+[IDS_SOLO.GATE2042_EXPLANATION]
+Choose an opponent. You play Blue-Eyes (Kaiba)'s fixed deck.
+[IDS_SOLO.CHAPTER20430026]
+Gearfried (Joey) vs Dark Magician (Yugi)
+[IDS_SOLO.CHAPTER20430026_EXPLANATION]
+Opponent: Dark Magician (Yugi), Dark Magician deck, 40 cards. You play Gearfried (Joey), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20430026_MAPLABEL]
+vs Dark Magician
+[IDS_SOLO.CHAPTER20430027]
+Gearfried (Joey) vs Blue-Eyes (Kaiba)
+[IDS_SOLO.CHAPTER20430027_EXPLANATION]
+Opponent: Blue-Eyes (Kaiba), Blue-Eyes White Dragon deck, 40 cards. You play Gearfried (Joey), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20430027_MAPLABEL]
+vs Blue-Eyes
+[IDS_SOLO.CHAPTER20430029]
+Gearfried (Joey) vs Lava Golem (Marik)
+[IDS_SOLO.CHAPTER20430029_EXPLANATION]
+Opponent: Lava Golem (Marik), Lava Golem deck, 40 cards. You play Gearfried (Joey), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20430029_MAPLABEL]
+vs Lava Golem
+[IDS_SOLO.CHAPTER20430030]
+Gearfried (Joey) vs Legendary Ocean (Mako)
+[IDS_SOLO.CHAPTER20430030_EXPLANATION]
+Opponent: Legendary Ocean (Mako), Levia-Dragon - Daedalus deck, 40 cards. You play Gearfried (Joey), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20430030_MAPLABEL]
+vs Ocean
+[IDS_SOLO.CHAPTER20430031]
+Gearfried (Joey) vs Relinquished (Pegasus)
+[IDS_SOLO.CHAPTER20430031_EXPLANATION]
+Opponent: Relinquished (Pegasus), Relinquished deck, 40 cards + 2 Extra. You play Gearfried (Joey), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20430031_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.CHAPTER20430032]
+Gearfried (Joey) vs Des Gardius (Bakura)
+[IDS_SOLO.CHAPTER20430032_EXPLANATION]
+Opponent: Des Gardius (Bakura), Masked Beast Des Gardius deck, 40 cards. You play Gearfried (Joey), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20430032_MAPLABEL]
+vs Des Gardius
+[IDS_SOLO.GATE2043]
+Duel Royale - Gearfried (Joey)
+[IDS_SOLO.GATE2043_EXPLANATION]
+Choose an opponent. You play Gearfried (Joey)'s fixed deck.
+[IDS_SOLO.CHAPTER20440026]
+Lava Golem (Marik) vs Dark Magician (Yugi)
+[IDS_SOLO.CHAPTER20440026_EXPLANATION]
+Opponent: Dark Magician (Yugi), Dark Magician deck, 40 cards. You play Lava Golem (Marik), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20440026_MAPLABEL]
+vs Dark Magician
+[IDS_SOLO.CHAPTER20440027]
+Lava Golem (Marik) vs Blue-Eyes (Kaiba)
+[IDS_SOLO.CHAPTER20440027_EXPLANATION]
+Opponent: Blue-Eyes (Kaiba), Blue-Eyes White Dragon deck, 40 cards. You play Lava Golem (Marik), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20440027_MAPLABEL]
+vs Blue-Eyes
+[IDS_SOLO.CHAPTER20440028]
+Lava Golem (Marik) vs Gearfried (Joey)
+[IDS_SOLO.CHAPTER20440028_EXPLANATION]
+Opponent: Gearfried (Joey), Gearfried the Swordmaster deck, 40 cards. You play Lava Golem (Marik), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20440028_MAPLABEL]
+vs Gearfried
+[IDS_SOLO.CHAPTER20440030]
+Lava Golem (Marik) vs Legendary Ocean (Mako)
+[IDS_SOLO.CHAPTER20440030_EXPLANATION]
+Opponent: Legendary Ocean (Mako), Levia-Dragon - Daedalus deck, 40 cards. You play Lava Golem (Marik), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20440030_MAPLABEL]
+vs Ocean
+[IDS_SOLO.CHAPTER20440031]
+Lava Golem (Marik) vs Relinquished (Pegasus)
+[IDS_SOLO.CHAPTER20440031_EXPLANATION]
+Opponent: Relinquished (Pegasus), Relinquished deck, 40 cards + 2 Extra. You play Lava Golem (Marik), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20440031_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.CHAPTER20440032]
+Lava Golem (Marik) vs Des Gardius (Bakura)
+[IDS_SOLO.CHAPTER20440032_EXPLANATION]
+Opponent: Des Gardius (Bakura), Masked Beast Des Gardius deck, 40 cards. You play Lava Golem (Marik), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20440032_MAPLABEL]
+vs Des Gardius
+[IDS_SOLO.GATE2044]
+Duel Royale - Lava Golem (Marik)
+[IDS_SOLO.GATE2044_EXPLANATION]
+Choose an opponent. You play Lava Golem (Marik)'s fixed deck.
+[IDS_SOLO.CHAPTER20450026]
+Legendary Ocean (Mako) vs Dark Magician (Yugi)
+[IDS_SOLO.CHAPTER20450026_EXPLANATION]
+Opponent: Dark Magician (Yugi), Dark Magician deck, 40 cards. You play Legendary Ocean (Mako), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20450026_MAPLABEL]
+vs Dark Magician
+[IDS_SOLO.CHAPTER20450027]
+Legendary Ocean (Mako) vs Blue-Eyes (Kaiba)
+[IDS_SOLO.CHAPTER20450027_EXPLANATION]
+Opponent: Blue-Eyes (Kaiba), Blue-Eyes White Dragon deck, 40 cards. You play Legendary Ocean (Mako), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20450027_MAPLABEL]
+vs Blue-Eyes
+[IDS_SOLO.CHAPTER20450028]
+Legendary Ocean (Mako) vs Gearfried (Joey)
+[IDS_SOLO.CHAPTER20450028_EXPLANATION]
+Opponent: Gearfried (Joey), Gearfried the Swordmaster deck, 40 cards. You play Legendary Ocean (Mako), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20450028_MAPLABEL]
+vs Gearfried
+[IDS_SOLO.CHAPTER20450029]
+Legendary Ocean (Mako) vs Lava Golem (Marik)
+[IDS_SOLO.CHAPTER20450029_EXPLANATION]
+Opponent: Lava Golem (Marik), Lava Golem deck, 40 cards. You play Legendary Ocean (Mako), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20450029_MAPLABEL]
+vs Lava Golem
+[IDS_SOLO.CHAPTER20450031]
+Legendary Ocean (Mako) vs Relinquished (Pegasus)
+[IDS_SOLO.CHAPTER20450031_EXPLANATION]
+Opponent: Relinquished (Pegasus), Relinquished deck, 40 cards + 2 Extra. You play Legendary Ocean (Mako), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20450031_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.CHAPTER20450032]
+Legendary Ocean (Mako) vs Des Gardius (Bakura)
+[IDS_SOLO.CHAPTER20450032_EXPLANATION]
+Opponent: Des Gardius (Bakura), Masked Beast Des Gardius deck, 40 cards. You play Legendary Ocean (Mako), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20450032_MAPLABEL]
+vs Des Gardius
+[IDS_SOLO.GATE2045]
+Duel Royale - Legendary Ocean (Mako)
+[IDS_SOLO.GATE2045_EXPLANATION]
+Choose an opponent. You play Legendary Ocean (Mako)'s fixed deck.
+[IDS_SOLO.CHAPTER20460026]
+Relinquished (Pegasus) vs Dark Magician (Yugi)
+[IDS_SOLO.CHAPTER20460026_EXPLANATION]
+Opponent: Dark Magician (Yugi), Dark Magician deck, 40 cards. You play Relinquished (Pegasus), 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20460026_MAPLABEL]
+vs Dark Magician
+[IDS_SOLO.CHAPTER20460027]
+Relinquished (Pegasus) vs Blue-Eyes (Kaiba)
+[IDS_SOLO.CHAPTER20460027_EXPLANATION]
+Opponent: Blue-Eyes (Kaiba), Blue-Eyes White Dragon deck, 40 cards. You play Relinquished (Pegasus), 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20460027_MAPLABEL]
+vs Blue-Eyes
+[IDS_SOLO.CHAPTER20460028]
+Relinquished (Pegasus) vs Gearfried (Joey)
+[IDS_SOLO.CHAPTER20460028_EXPLANATION]
+Opponent: Gearfried (Joey), Gearfried the Swordmaster deck, 40 cards. You play Relinquished (Pegasus), 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20460028_MAPLABEL]
+vs Gearfried
+[IDS_SOLO.CHAPTER20460029]
+Relinquished (Pegasus) vs Lava Golem (Marik)
+[IDS_SOLO.CHAPTER20460029_EXPLANATION]
+Opponent: Lava Golem (Marik), Lava Golem deck, 40 cards. You play Relinquished (Pegasus), 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20460029_MAPLABEL]
+vs Lava Golem
+[IDS_SOLO.CHAPTER20460030]
+Relinquished (Pegasus) vs Legendary Ocean (Mako)
+[IDS_SOLO.CHAPTER20460030_EXPLANATION]
+Opponent: Legendary Ocean (Mako), Levia-Dragon - Daedalus deck, 40 cards. You play Relinquished (Pegasus), 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20460030_MAPLABEL]
+vs Ocean
+[IDS_SOLO.CHAPTER20460032]
+Relinquished (Pegasus) vs Des Gardius (Bakura)
+[IDS_SOLO.CHAPTER20460032_EXPLANATION]
+Opponent: Des Gardius (Bakura), Masked Beast Des Gardius deck, 40 cards. You play Relinquished (Pegasus), 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20460032_MAPLABEL]
+vs Des Gardius
+[IDS_SOLO.GATE2046]
+Duel Royale - Relinquished (Pegasus)
+[IDS_SOLO.GATE2046_EXPLANATION]
+Choose an opponent. You play Relinquished (Pegasus)'s fixed deck.
+[IDS_SOLO.CHAPTER20470026]
+Des Gardius (Bakura) vs Dark Magician (Yugi)
+[IDS_SOLO.CHAPTER20470026_EXPLANATION]
+Opponent: Dark Magician (Yugi), Dark Magician deck, 40 cards. You play Des Gardius (Bakura), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20470026_MAPLABEL]
+vs Dark Magician
+[IDS_SOLO.CHAPTER20470027]
+Des Gardius (Bakura) vs Blue-Eyes (Kaiba)
+[IDS_SOLO.CHAPTER20470027_EXPLANATION]
+Opponent: Blue-Eyes (Kaiba), Blue-Eyes White Dragon deck, 40 cards. You play Des Gardius (Bakura), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20470027_MAPLABEL]
+vs Blue-Eyes
+[IDS_SOLO.CHAPTER20470028]
+Des Gardius (Bakura) vs Gearfried (Joey)
+[IDS_SOLO.CHAPTER20470028_EXPLANATION]
+Opponent: Gearfried (Joey), Gearfried the Swordmaster deck, 40 cards. You play Des Gardius (Bakura), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20470028_MAPLABEL]
+vs Gearfried
+[IDS_SOLO.CHAPTER20470029]
+Des Gardius (Bakura) vs Lava Golem (Marik)
+[IDS_SOLO.CHAPTER20470029_EXPLANATION]
+Opponent: Lava Golem (Marik), Lava Golem deck, 40 cards. You play Des Gardius (Bakura), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20470029_MAPLABEL]
+vs Lava Golem
+[IDS_SOLO.CHAPTER20470030]
+Des Gardius (Bakura) vs Legendary Ocean (Mako)
+[IDS_SOLO.CHAPTER20470030_EXPLANATION]
+Opponent: Legendary Ocean (Mako), Levia-Dragon - Daedalus deck, 40 cards. You play Des Gardius (Bakura), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20470030_MAPLABEL]
+vs Ocean
+[IDS_SOLO.CHAPTER20470031]
+Des Gardius (Bakura) vs Relinquished (Pegasus)
+[IDS_SOLO.CHAPTER20470031_EXPLANATION]
+Opponent: Relinquished (Pegasus), Relinquished deck, 40 cards + 2 Extra. You play Des Gardius (Bakura), 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER20470031_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.GATE2047]
+Duel Royale - Des Gardius (Bakura)
+[IDS_SOLO.GATE2047_EXPLANATION]
+Choose an opponent. You play Des Gardius (Bakura)'s fixed deck.

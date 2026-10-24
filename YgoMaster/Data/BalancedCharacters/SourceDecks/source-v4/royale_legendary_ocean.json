@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_legendary_ocean",
+  "displayName": "Legendary Ocean (Mako)",
+  "sourcePhoto": null,
+  "verificationStatus": "official",
+  "design": "Konami OCG Duel Royale Deck Set (DR01/DR02), A Legendary Ocean Deck, as printed",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Giga Gagagigo",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Terrorking Salmon",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Levia-Dragon - Daedalus",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "B.E.S. Crystal Core",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Warrior of Atlantis",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Abyss Soldier",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Aqua Spirit",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Mermaid Knight",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mother Grizzly",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Nightmare Penguin",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Spined Gillman",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Yomi Ship",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Lightning Vortex",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Terraforming",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Aqua Jet",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Salvage",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "A Legendary Ocean",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Premature Burial",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "official"
+    }
+  ],
+  "extra": [],
+  "side": []
+}

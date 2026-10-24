@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_blue_eyes",
+  "displayName": "Blue-Eyes (Kaiba)",
+  "sourcePhoto": null,
+  "verificationStatus": "official",
+  "design": "Konami OCG Duel Royale Deck Set (DR01/DR02), Blue-Eyes White Dragon Deck, as printed",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Blue-Eyes White Dragon",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Alexandrite Dragon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Luster Dragon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "The Dragon Dwelling in the Cave",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Assault Wyvern",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Masked Dragon",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Exploder Dragon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Kidmodo Dragon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dragon Knight of Creation",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Manju of the Ten Thousand Hands",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Senju of the Thousand Hands",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Sonic Bird",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Paladin of White Dragon",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Lightning Vortex",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Shrink",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Book of Moon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Silver's Cry",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Forbidden Lance",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "White Dragon Ritual",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Advanced Ritual Art",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Premature Burial",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Powerful Rebirth",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Back to the Front",
+      "quantity": 1,
+      "status": "official"
+    }
+  ],
+  "extra": [],
+  "side": []
+}

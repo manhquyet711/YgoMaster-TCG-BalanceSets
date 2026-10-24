@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_blue_eyes",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "revision": "source-v4",
+  "main": [
+    {
+      "cardId": 3801,
+      "quantity": 3
+    },
+    {
+      "cardId": 9863,
+      "quantity": 1
+    },
+    {
+      "cardId": 5644,
+      "quantity": 1
+    },
+    {
+      "cardId": 5336,
+      "quantity": 1
+    },
+    {
+      "cardId": 12486,
+      "quantity": 1
+    },
+    {
+      "cardId": 6118,
+      "quantity": 2
+    },
+    {
+      "cardId": 7094,
+      "quantity": 1
+    },
+    {
+      "cardId": 10459,
+      "quantity": 1
+    },
+    {
+      "cardId": 12382,
+      "quantity": 1
+    },
+    {
+      "cardId": 5900,
+      "quantity": 3
+    },
+    {
+      "cardId": 4916,
+      "quantity": 1
+    },
+    {
+      "cardId": 4929,
+      "quantity": 1
+    },
+    {
+      "cardId": 5600,
+      "quantity": 3
+    },
+    {
+      "cardId": 4842,
+      "quantity": 1
+    },
+    {
+      "cardId": 4844,
+      "quantity": 1
+    },
+    {
+      "cardId": 5217,
+      "quantity": 1
+    },
+    {
+      "cardId": 4891,
+      "quantity": 1
+    },
+    {
+      "cardId": 4909,
+      "quantity": 1
+    },
+    {
+      "cardId": 5355,
+      "quantity": 1
+    },
+    {
+      "cardId": 5432,
+      "quantity": 1
+    },
+    {
+      "cardId": 10591,
+      "quantity": 1
+    },
+    {
+      "cardId": 9352,
+      "quantity": 1
+    },
+    {
+      "cardId": 5601,
+      "quantity": 2
+    },
+    {
+      "cardId": 6996,
+      "quantity": 2
+    },
+    {
+      "cardId": 4966,
+      "quantity": 1
+    },
+    {
+      "cardId": 4887,
+      "quantity": 1
+    },
+    {
+      "cardId": 5114,
+      "quantity": 1
+    },
+    {
+      "cardId": 4988,
+      "quantity": 1
+    },
+    {
+      "cardId": 4989,
+      "quantity": 1
+    },
+    {
+      "cardId": 10983,
+      "quantity": 1
+    },
+    {
+      "cardId": 13116,
+      "quantity": 1
+    }
+  ],
+  "extra": [],
+  "side": []
+}

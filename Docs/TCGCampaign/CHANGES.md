@@ -154,8 +154,9 @@ children inside it (`parent_gate`), and sorts gates by `category` into two secti
 | Folder gate | Section | Holds |
 |---|---|---|
 | 2100 TCG Campaign | Stories | Era gates 2001-2006 (DM to VRAINS), unlocking in order as before |
-| 2102 Balanced Characters | Stories | The active deck set's character gates, added by the server at startup |
-| 2103 Duel Royale | Stories | Reserved: Konami's 7 Duel Royale decks, once they are tested |
+| 2102 Balanced Characters | Stories | Deck set v2's 15 character gates, added by the server at startup |
+| 2104 Goat Era Duelists | Stories | Deck set v3's 8 character gates |
+| 2103 Duel Royale | Stories | Deck set v4: Konami's 7 Duel Royale decks |
 | 2101 Format Challenges | Training & Challenges | Goat, Perfect Circle, Edison, HAT, YgoMaster v1.60 (2011-2015) |
 | 2109 Master Duel Basics | Training & Challenges | The original gates: Tutorial (1), 48, and 31 with its gates 22 and 30 |
 
@@ -163,13 +164,13 @@ children inside it (`parent_gate`), and sorts gates by `category` into two secti
 (`IDS_SOLO.txt`, `SoloGateCards.txt`). Gate IDs do not change, so progress is kept.
 
 Server side:
-- **Balanced Characters folder** (`GameServer.BalancedCharacters.cs`, `ApplyBalancedFolder`): after the
-  overlay loads, its character gates are moved into gate 2102 and the folder takes the first
-  character's goal. Switching deck sets in the Settings Editor keeps the folder. With Balanced mode
-  off the folder is removed, so no empty folder shows.
+- **Deck set folders** (`GameServer.BalancedCharacters.cs`, `ApplyBalancedFolder`): the server loads every
+  set in `Mode.json` `"sets"` and moves each set's character gates into its folder (2102, 2104, 2103); the
+  folder takes the set's first character goal. A folder whose set is not loaded is removed, so no empty
+  folder shows.
 - **Recommended cards** (`Act_Solo.cs`, `GetRecommendedSoloGates`): each card shows the current gate
   of a mode folder, the first by priority whose goal duel is not cleared and which is visible. Order
-  and skipped folders are set in `Settings.json`: `SoloRecommendModes` (default `[2100, 2101, 2102, 2103]`)
+  and skipped folders are set in `Settings.json`: `SoloRecommendModes` (default `[2100, 2101, 2102, 2104, 2103]`)
   and `SoloRecommendSkip` (default `[2109]`: the original gates are never recommended).
 
 ## Rewards

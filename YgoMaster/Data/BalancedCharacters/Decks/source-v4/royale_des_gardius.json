@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_des_gardius",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "revision": "source-v4",
+  "main": [
+    {
+      "cardId": 5095,
+      "quantity": 3
+    },
+    {
+      "cardId": 5093,
+      "quantity": 2
+    },
+    {
+      "cardId": 5097,
+      "quantity": 3
+    },
+    {
+      "cardId": 5222,
+      "quantity": 1
+    },
+    {
+      "cardId": 5301,
+      "quantity": 1
+    },
+    {
+      "cardId": 6001,
+      "quantity": 1
+    },
+    {
+      "cardId": 5037,
+      "quantity": 1
+    },
+    {
+      "cardId": 4930,
+      "quantity": 3
+    },
+    {
+      "cardId": 5484,
+      "quantity": 1
+    },
+    {
+      "cardId": 4054,
+      "quantity": 1
+    },
+    {
+      "cardId": 11711,
+      "quantity": 1
+    },
+    {
+      "cardId": 6042,
+      "quantity": 1
+    },
+    {
+      "cardId": 4921,
+      "quantity": 3
+    },
+    {
+      "cardId": 4597,
+      "quantity": 1
+    },
+    {
+      "cardId": 4842,
+      "quantity": 1
+    },
+    {
+      "cardId": 4844,
+      "quantity": 1
+    },
+    {
+      "cardId": 5217,
+      "quantity": 1
+    },
+    {
+      "cardId": 4891,
+      "quantity": 1
+    },
+    {
+      "cardId": 5098,
+      "quantity": 2
+    },
+    {
+      "cardId": 5162,
+      "quantity": 2
+    },
+    {
+      "cardId": 6511,
+      "quantity": 1
+    },
+    {
+      "cardId": 11740,
+      "quantity": 1
+    },
+    {
+      "cardId": 4909,
+      "quantity": 1
+    },
+    {
+      "cardId": 4818,
+      "quantity": 1
+    },
+    {
+      "cardId": 4966,
+      "quantity": 1
+    },
+    {
+      "cardId": 4887,
+      "quantity": 1
+    },
+    {
+      "cardId": 4988,
+      "quantity": 1
+    },
+    {
+      "cardId": 4989,
+      "quantity": 1
+    },
+    {
+      "cardId": 10983,
+      "quantity": 1
+    }
+  ],
+  "extra": [],
+  "side": []
+}

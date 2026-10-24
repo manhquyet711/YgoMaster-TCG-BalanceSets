@@ -23,12 +23,19 @@ MODES = {
     2101: ("Format Challenges",
            "Classic tournament formats with their ban lists: Goat, Perfect Circle, Edison, HAT and YgoMaster v1.60.",
            17, 2, 4041, [2012, 2013, 2014, 2015, 2011]),
-    # Children come from the generated overlay of the active deck set: the server puts them in this folder
-    # at startup (GameServer.BalancedCharacters.cs, ApplyBalancedFolder) and hides the folder when the mode is off.
+    # Deck set folders: no fixed children. The server puts each set's character gates in its folder at
+    # startup (Mode.json "sets"; GameServer.BalancedCharacters.cs, ApplyBalancedFolder) and removes a folder
+    # whose set is not loaded.
     2102: ("Balanced Characters",
-           "Fixed character decks, balanced against each other. Pick a character, then beat every opponent. Change the deck set in the Settings Editor.",
+           "u/Rosehn's fixed character decks, balanced against each other. Pick a character, then beat every opponent.",
            20, 1, 4027, []),
-    # 2103 Duel Royale is reserved for later.
+    2104: ("Goat Era Duelists",
+           "Eight duelists with fixed decks built from cards legal in the 2005 Goat format. Pick a character, then beat every opponent.",
+           21, 1, 4370, []),
+    2103: ("Duel Royale",
+           "Konami's seven official Duel Royale decks, as printed: Dark Magician, Blue-Eyes, Gearfried, Lava Golem, "
+           "A Legendary Ocean, Relinquished and Des Gardius. Pick one, then beat every other deck.",
+           22, 1, 4088, []),
     # The original Master Duel gates (Tutorial, 48, and 31 with its own children 22 and 30), out of the way at the end.
     2109: ("Master Duel Basics",
            "The original Master Duel Solo gates: Tutorial and the basic story gates.",
@@ -67,11 +74,16 @@ def apply(data, check=False):
                 solo = pattern.sub(lambda x: x.group(1) + str(parent), solo, count=1)
                 changes.append("gate %d moved into %d" % (child, parent))
         key = "[IDS_SOLO.GATE%d]" % parent
-        if key not in ids:
-            nl = "\r\n" if "\r\n" in ids else "\n"
-            block = nl.join([key, name, "[IDS_SOLO.GATE%d_EXPLANATION]]" % parent, text]) + nl
+        explanation_key = "[IDS_SOLO.GATE%d_EXPLANATION]]" % parent
+        nl = "\r\n" if "\r\n" in ids else "\n"
+        block = nl.join([key, name, explanation_key, text]) + nl
+        old = re.search(re.escape(key) + r"\r?\n[^\r\n]*\r?\n" + re.escape(explanation_key) + r"\r?\n[^\r\n]*\r?\n", ids)
+        if not old:
             ids = block + ids
             changes.append("text for gate %d added" % parent)
+        elif old.group(0) != block:
+            ids = ids[:old.start()] + block + ids[old.end():]
+            changes.append("text for gate %d updated" % parent)
         if not re.search(r"(?m)^%d," % parent, cards):
             nl = "\r\n" if "\r\n" in cards else "\n"
             cards = cards.rstrip("\r\n") + nl + "%d,%d,0,0.2" % (parent, card) + nl

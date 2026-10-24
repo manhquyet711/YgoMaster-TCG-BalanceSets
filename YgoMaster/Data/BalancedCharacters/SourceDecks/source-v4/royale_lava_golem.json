@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_lava_golem",
+  "displayName": "Lava Golem (Marik)",
+  "sourcePhoto": null,
+  "verificationStatus": "official",
+  "design": "Konami OCG Duel Royale Deck Set (DR01/DR02), Lava Golem Deck, as printed",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Humanoid Slime",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Lava Golem",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Legendary Fiend",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Helpoemer",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Revival Jam",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mystic Tomato",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Newdoria",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Holding Arms",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Bowganian",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Des Koala",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Doomdog Octhros",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Stealth Bird",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Spirit Reaper",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mask of Darkness",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Morphing Jar",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Nightmare's Steelcage",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Darkworld Shackles",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "The Dark Door",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dark Room of Nightmare",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Wave-Motion Cannon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Swords of Concealing Light",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Just Desserts",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Secret Barrel",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Curse of Anubis",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dark Sacrifice",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Nightmare Wheel",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Ominous Fortunetelling",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Ordeal of a Traveler",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Metal Reflect Slime",
+      "quantity": 1,
+      "status": "official"
+    }
+  ],
+  "extra": [],
+  "side": []
+}

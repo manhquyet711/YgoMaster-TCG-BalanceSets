@@ -25,11 +25,11 @@ Extra: 1x Thousand Dragon, 1x Flame Swordsman
 
 1x Harpie Lady 1, 1x Harpie Lady 2, 1x Harpie Lady 3, 3x Harpie Lady Sisters, 2x Harpie Lady, 1x Harpie Girl, 1x Harpie's Pet Dragon, 1x Amazoness Tiger, 2x Birdface, 1x Amazoness Swords Woman, 1x Amazoness Paladin, 1x Sky Scout, 1x Garuda the Wind Spirit, 1x Skull Red Bird, 1x Amazoness Fighter, 2x Elegant Egotist, 2x Harpies' Hunting Ground, 1x Triangle Ecstasy Spark, 1x Book of Moon, 1x Amazoness Archer, 1x Pot of Greed, 1x Graceful Charity, 1x Mystical Space Typhoon, 1x Rising Air Current, 1x Mirror Wall, 1x Soul Release, 1x Phoenix Wing Wind Blast, 1x Call of the Haunted, 1x Shadow of Eyes, 1x Sakuretsu Armor, 1x Dust Tornado, 1x Trap Hole, 1x Mirror Force, 1x Waboku
 
-## Maximillion Pegasus (40 cards, Extra 2)
+## Maximillion Pegasus (40 cards, Extra 1)
 
-1x Toon Summoned Skull, 1x Blue-Eyes Toon Dragon, 2x Toon Mermaid, 2x Toon Alligator, 2x Mystic Tomato, 1x D.D. Warrior Lady, 2x Manga Ryu-Ran, 1x Relinquished, 1x Magician of Faith, 1x Hane-Hane, 1x Sangan, 1x Spirit Reaper, 3x Toon World, 1x Black Illusion Ritual, 1x Polymerization, 1x Mind Control, 1x Pot of Greed, 1x Graceful Charity, 1x Mystical Space Typhoon, 1x Card Destruction, 1x Swords of Revealing Light, 1x Nobleman of Crossout, 1x Shadow Spell, 1x Draining Shield, 1x Sakuretsu Armor, 1x Dust Tornado, 1x Call of the Haunted, 1x Magic Cylinder, 1x Waboku, 1x Negate Attack, 1x Trap Hole, 1x Torrential Tribute, 1x Ultimate Offering, 1x Ring of Destruction
+2x Relinquished, 2x Sonic Bird, 2x Thousand-Eyes Idol, 1x Illusionist Faceless Mage, 1x Toon Summoned Skull, 1x Toon Alligator, 2x Mystic Tomato, 1x Sangan, 1x Magician of Faith, 1x Spirit Reaper, 1x D.D. Warrior Lady, 1x Big Shield Gardna, 1x Hane-Hane, 1x Pot of Greed, 1x Graceful Charity, 1x Mystical Space Typhoon, 2x Black Illusion Ritual, 1x Toon World, 1x Polymerization, 1x Mind Control, 1x Swords of Revealing Light, 1x Nobleman of Crossout, 1x Premature Burial, 1x Book of Moon, 1x Magic Cylinder, 1x Ring of Destruction, 1x Torrential Tribute, 1x Sakuretsu Armor, 1x Dust Tornado, 1x Call of the Haunted, 1x Shadow Spell, 1x Negate Attack, 1x Trap Hole, 1x Draining Shield, 1x Waboku
 
-Extra: 1x Thousand-Eyes Restrict, 1x Bickuribox
+Extra: 1x Thousand-Eyes Restrict
 
 ## Yami Bakura (40 cards)
 

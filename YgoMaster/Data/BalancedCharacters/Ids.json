@@ -125,6 +125,41 @@
       "gateId": 2040,
       "npcId": 3051,
       "slot": 25
+    },
+    "royale_dark_magician": {
+      "gateId": 2041,
+      "npcId": 3052,
+      "slot": 26
+    },
+    "royale_blue_eyes": {
+      "gateId": 2042,
+      "npcId": 3053,
+      "slot": 27
+    },
+    "royale_gearfried": {
+      "gateId": 2043,
+      "npcId": 3054,
+      "slot": 28
+    },
+    "royale_lava_golem": {
+      "gateId": 2044,
+      "npcId": 3055,
+      "slot": 29
+    },
+    "royale_legendary_ocean": {
+      "gateId": 2045,
+      "npcId": 3056,
+      "slot": 30
+    },
+    "royale_relinquished": {
+      "gateId": 2046,
+      "npcId": 3057,
+      "slot": 31
+    },
+    "royale_des_gardius": {
+      "gateId": 2047,
+      "npcId": 3058,
+      "slot": 32
     }
   }
 }

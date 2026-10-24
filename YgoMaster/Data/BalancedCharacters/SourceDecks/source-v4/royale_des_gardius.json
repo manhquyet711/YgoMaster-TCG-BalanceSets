@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_des_gardius",
+  "displayName": "Des Gardius (Bakura)",
+  "sourcePhoto": null,
+  "verificationStatus": "official",
+  "design": "Konami OCG Duel Royale Deck Set (DR01/DR02), Masked Beast Des Gardius Deck, as printed",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Melchid the Four-Face Beast",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Grand Tiki Elder",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Masked Beast Des Gardius",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Dark Necrofear",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dark Ruler Ha Des",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Doomcaliber Knight",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Slate Warrior",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mystic Tomato",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Newdoria",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Doomdog Octhros",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Night Assailant",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Giant Germ",
+      "quantity": 3,
+      "status": "official"
+    },
+    {
+      "name": "Morphing Jar",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Lightning Vortex",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "The Mask of Remnants",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Creature Swap",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Pot of Avarice",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Unexpected Dai",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Scapegoat",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Premature Burial",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Powerful Rebirth",
+      "quantity": 1,
+      "status": "official"
+    }
+  ],
+  "extra": [],
+  "side": []
+}

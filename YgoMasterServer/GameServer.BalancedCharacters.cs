@@ -13,15 +13,26 @@ namespace YgoMaster
             public int GateId;
             public string PlayerId;
             public string OpponentId;
+            public BalancedSet Set;
+        }
+        /// <summary>One loaded deck set (character catalog) and the Solo folder that holds its gates.</summary>
+        sealed class BalancedSet
+        {
+            public string Revision;
+            public int FolderGate;
+            public string DeckPrefix;
+            public List<string> CharacterIds = new List<string>();
+            public string OverlayPath;
+            public CharacterCatalog Catalog;
+            public string ContentVersion;
+            public readonly List<int> Gates = new List<int>();
         }
         readonly Dictionary<int, BalancedEncounter> balancedEncounters = new Dictionary<int, BalancedEncounter>();
         readonly HashSet<int> balancedReservedGates = new HashSet<int>();
         readonly Dictionary<int, int> balancedGoals = new Dictionary<int, int>();
-        CharacterCatalog balancedCatalog;
+        readonly List<BalancedSet> balancedSets = new List<BalancedSet>();
         string balancedLoadError;
         DuelRunLogger balancedRunLogger;
-        string balancedContentVersion;
-        string balancedDeckRevision;
 
         void BeginBalancedRun(Player player, DuelSettings settings)
         {
@@ -29,7 +40,7 @@ namespace YgoMaster
             BalancedEncounter entry;
             bool balanced = balancedEncounters.TryGetValue(settings.chapter, out entry) && settings.GameMode == (int)GameMode.SoloSingle;
             balancedRunLogger.Begin(player, settings, balanced ? entry.PlayerId : null,
-                balanced ? entry.OpponentId : null, balancedContentVersion, balancedDeckRevision,
+                balanced ? entry.OpponentId : null, balanced ? entry.Set.ContentVersion : null, balanced ? entry.Set.Revision : null,
                 Path.GetFullPath(Path.Combine(dataDirectory, "..")));
         }
 
@@ -45,8 +56,10 @@ namespace YgoMaster
         }
         bool IsReservedBalancedChapter(int chapterId) { return balancedReservedGates.Contains(chapterId / 10000); }
 
-        /// <summary>Solo folder (parent gate in Solo.json) that holds the active set's character gates.</summary>
+        /// <summary>Solo folder (parent gate in Solo.json) for the Balanced Characters set (v2, or the single active set).</summary>
         const int BalancedFolderGate = 2102;
+        /// <summary>Every Solo folder a deck set can use; folders without a loaded set are removed.</summary>
+        static readonly int[] BalancedSetFolders = { 2102, 2103, 2104 };
 
         void LoadBalancedCharacters()
         {
@@ -55,39 +68,45 @@ namespace YgoMaster
         }
 
         /// <summary>
-        /// Puts the loaded character gates inside the Balanced Characters folder, and points the folder's goal at
-        /// the first character's goal. Without a loaded set the folder is removed so no empty folder shows.
-        /// The generated overlay stays unchanged (its gates are validated as top-level free-duel gates).
+        /// Puts each loaded set's character gates inside its Solo folder, and points the folder's goal at the
+        /// set's first character goal. Folders without a loaded set are removed so no empty folder shows.
+        /// The generated overlays stay unchanged (their gates are validated as top-level free-duel gates).
         /// </summary>
         void ApplyBalancedFolder()
         {
             var allGates = Utils.GetDictionary(SoloData, "gate");
-            var folder = allGates == null ? null : Utils.GetDictionary(allGates, BalancedFolderGate.ToString());
-            if (folder == null) return;
-            var children = balancedCatalog == null ? new List<KeyValuePair<string, object>>() : allGates
-                .Where(x => { int id; return int.TryParse(x.Key, out id) && balancedReservedGates.Contains(id) && x.Value is Dictionary<string, object>; })
-                .OrderBy(x => Utils.GetValue<int>((Dictionary<string, object>)x.Value, "priority"))
-                .ToList();
-            if (children.Count == 0)
+            if (allGates == null) return;
+            foreach (int folderGate in BalancedSetFolders)
             {
-                allGates.Remove(BalancedFolderGate.ToString());
-                Utils.LogInfo("Balanced Characters folder hidden (no character set loaded)");
-                return;
+                var folder = Utils.GetDictionary(allGates, folderGate.ToString());
+                if (folder == null) continue;
+                var children = balancedSets.Where(x => x.FolderGate == folderGate).SelectMany(x => x.Gates)
+                    .Select(x => Utils.GetDictionary(allGates, x.ToString())).Where(x => x != null)
+                    .OrderBy(x => Utils.GetValue<int>(x, "priority")).ToList();
+                if (children.Count == 0)
+                {
+                    allGates.Remove(folderGate.ToString());
+                    Utils.LogInfo("Solo folder " + folderGate + " hidden (no deck set loaded for it)");
+                    continue;
+                }
+                foreach (var child in children) child["parent_gate"] = folderGate;
+                folder["clear_chapter"] = Utils.GetValue<int>(children[0], "clear_chapter");
             }
-            foreach (var child in children)
-                ((Dictionary<string, object>)child.Value)["parent_gate"] = BalancedFolderGate;
-            folder["clear_chapter"] = Utils.GetValue<int>((Dictionary<string, object>)children[0].Value, "clear_chapter");
         }
 
+        /// <summary>
+        /// Loads every deck set listed in Mode.json "sets" (each from its pack in Revisions/<revision>, with its
+        /// own Solo folder). Without "sets", the single active set (activeDeckRevision, Generated/Overlay.json)
+        /// loads into the Balanced Characters folder, as before. A set that fails validation is skipped alone.
+        /// </summary>
         void LoadBalancedCharactersCore()
         {
             balancedEncounters.Clear();
             balancedReservedGates.Clear();
             balancedGoals.Clear();
-            balancedCatalog = null;
+            balancedSets.Clear();
             balancedLoadError = null;
             balancedRunLogger = null;
-            balancedDeckRevision = null;
             string root = Path.Combine(dataDirectory, "BalancedCharacters");
             string modeFile = Path.Combine(root, "Mode.json");
             if (!File.Exists(modeFile)) return;
@@ -95,18 +114,71 @@ namespace YgoMaster
             {
                 var mode = CharacterCatalog.Read(modeFile);
                 if (!Utils.GetValue<bool>(mode, "enabled")) return;
-                string revision = Utils.GetValue<string>(mode, "activeDeckRevision");
-                if (Utils.GetValue<int>(mode, "schemaVersion") != 1 || !CharacterCatalog.IsValidRevision(revision) ||
-                    !Directory.Exists(Path.Combine(root, "Decks", revision)))
-                    throw new InvalidDataException("Unsupported mode schema or deck revision");
+                if (Utils.GetValue<int>(mode, "schemaVersion") != 1) throw new InvalidDataException("Unsupported mode schema");
                 var allocations = CharacterCatalog.Read(Path.Combine(root, "Ids.json"));
                 foreach (var entry in Utils.GetDictionary(allocations, "characters"))
                     balancedReservedGates.Add(Utils.GetValue<int>((Dictionary<string, object>)entry.Value, "gateId"));
-                List<object> selected;
-                if (!Utils.TryGetValue(mode, "activeCharacterIds", out selected) || selected.Count < 2 || selected.Count > 15 ||
-                    selected.Any(x => !(x is string))) throw new InvalidDataException("Invalid active character list");
-                var catalog = CharacterCatalog.Load(root, selected.Cast<string>().ToList(), CardRare, revision);
-                var overlay = CharacterCatalog.Read(Path.Combine(root, "Generated", "Overlay.json"));
+                var specs = new List<BalancedSet>();
+                List<object> setList;
+                if (Utils.TryGetValue(mode, "sets", out setList))
+                {
+                    foreach (var raw in setList)
+                    {
+                        var data = raw as Dictionary<string, object>;
+                        if (data == null) throw new InvalidDataException("Invalid sets entry");
+                        string revision = Utils.GetValue<string>(data, "revision");
+                        var pack = CharacterCatalog.Read(Path.Combine(root, "Revisions", revision ?? "", "Pack.json"));
+                        List<object> ids;
+                        if (!Utils.TryGetValue(pack, "activeCharacterIds", out ids)) throw new InvalidDataException("Pack without characters: " + revision);
+                        specs.Add(new BalancedSet { Revision = revision, FolderGate = Utils.GetValue<int>(data, "folderGate"),
+                            DeckPrefix = Utils.GetValue<string>(data, "deckPrefix", BalancedReferenceDeckPrefix),
+                            CharacterIds = ids.OfType<string>().ToList(),
+                            OverlayPath = Path.Combine(root, "Revisions", revision, "Overlay.json") });
+                    }
+                }
+                else
+                {
+                    List<object> selected;
+                    if (!Utils.TryGetValue(mode, "activeCharacterIds", out selected) || selected.Any(x => !(x is string)))
+                        throw new InvalidDataException("Invalid active character list");
+                    specs.Add(new BalancedSet { Revision = Utils.GetValue<string>(mode, "activeDeckRevision"), FolderGate = BalancedFolderGate,
+                        DeckPrefix = BalancedReferenceDeckPrefix, CharacterIds = selected.Cast<string>().ToList(),
+                        OverlayPath = Path.Combine(root, "Generated", "Overlay.json") });
+                }
+                foreach (var set in specs)
+                {
+                    try
+                    {
+                        LoadBalancedSet(root, mode, allocations, set);
+                        balancedSets.Add(set);
+                    }
+                    catch (Exception error)
+                    {
+                        balancedLoadError = (balancedLoadError == null ? "" : balancedLoadError + "; ") + set.Revision + ": " + error.Message;
+                        Utils.LogWarning("Balanced deck set " + set.Revision + " disabled: " + error.Message);
+                    }
+                }
+                if (balancedSets.Count > 0)
+                    balancedRunLogger = new DuelRunLogger(Path.Combine(root, "Logs", "duels.jsonl"), false);
+            }
+            catch (Exception error)
+            {
+                balancedLoadError = error.Message;
+                Utils.LogWarning("Balanced Characters disabled: " + balancedLoadError);
+            }
+        }
+
+        void LoadBalancedSet(string root, Dictionary<string, object> mode, Dictionary<string, object> allocations, BalancedSet set)
+        {
+            string revision = set.Revision;
+            if (!CharacterCatalog.IsValidRevision(revision) || !Directory.Exists(Path.Combine(root, "Decks", revision)))
+                throw new InvalidDataException("Unsupported deck revision");
+            var selected = set.CharacterIds.Cast<object>().ToList();
+            if (selected.Count < 2 || selected.Count > 15) throw new InvalidDataException("Invalid active character list");
+            var catalog = CharacterCatalog.Load(root, set.CharacterIds, CardRare, revision);
+            string overlayPath = set.OverlayPath;
+            {
+                var overlay = CharacterCatalog.Read(overlayPath);
                 // Overlays from before deck revisions carry no deckRevision and are always source-v1.
                 if (Utils.GetValue<int>(overlay, "schemaVersion") != 1 ||
                     Utils.GetValue<string>(overlay, "contentVersion") != Utils.GetValue<string>(mode, "contentVersion") ||
@@ -148,7 +220,7 @@ namespace YgoMaster
                     if (data == null) throw new InvalidDataException("Invalid encounter");
                     var entry = new BalancedEncounter { ChapterId = Utils.GetValue<int>(data, "chapterId"),
                         GateId = Utils.GetValue<int>(data, "gateId"), PlayerId = Utils.GetValue<string>(data, "playerCharacterId"),
-                        OpponentId = Utils.GetValue<string>(data, "opponentCharacterId") };
+                        OpponentId = Utils.GetValue<string>(data, "opponentCharacterId"), Set = set };
                     var chapterGate = Utils.GetDictionary(chapters, entry.GateId.ToString());
                     var chapter = Utils.GetDictionary(chapterGate, entry.ChapterId.ToString());
                     if (!gates.ContainsKey(entry.GateId.ToString()) || entry.ChapterId / 10000 != entry.GateId ||
@@ -212,16 +284,10 @@ namespace YgoMaster
                 foreach (var duel in templates) SoloDuels.Add(duel.Key, duel.Value);
                 foreach (var encounter in staged) balancedEncounters.Add(encounter.Key, encounter.Value);
                 foreach (var goal in stagedGoals) balancedGoals.Add(goal.Key, goal.Value);
-                balancedCatalog = catalog;
-                balancedDeckRevision = revision;
-                balancedContentVersion = Utils.GetValue<string>(mode, "contentVersion");
-                balancedRunLogger = new DuelRunLogger(Path.Combine(root, "Logs", "duels.jsonl"), false);
-                Utils.LogInfo("Balanced Characters loaded: " + gates.Count + " gates / " + staged.Count + " encounters");
-            }
-            catch (Exception error)
-            {
-                balancedLoadError = error.Message;
-                Utils.LogWarning("Balanced Characters disabled: " + balancedLoadError);
+                set.Catalog = catalog;
+                set.ContentVersion = Utils.GetValue<string>(mode, "contentVersion");
+                set.Gates.AddRange(gates.Keys.Select(int.Parse));
+                Utils.LogInfo("Balanced deck set " + revision + " loaded: " + gates.Count + " gates / " + staged.Count + " encounters");
             }
         }
 
@@ -242,8 +308,9 @@ namespace YgoMaster
         DuelSettings CreateBalancedDuelSettings(Player player, int chapterId, bool begin)
         {
             BalancedEncounter entry;
-            if (balancedCatalog == null || !balancedEncounters.TryGetValue(chapterId, out entry)) return null;
-            var settings = BuildBalancedTemplate(balancedCatalog, entry);
+            if (!balancedEncounters.TryGetValue(chapterId, out entry) || entry.Set == null || entry.Set.Catalog == null) return null;
+            var catalog = entry.Set.Catalog;
+            var settings = BuildBalancedTemplate(catalog, entry);
             var preview = SoloDuels[chapterId];
             settings.Deck[0].Id = preview.Deck[0].Id;
             settings.Deck[1].Id = preview.Deck[1].Id;
@@ -256,8 +323,8 @@ namespace YgoMaster
                 player.Duel.IsMyDeck = false;
                 player.Duel.IsCustomSoloDuel = false;
             }
-            if (!FixedDeckPolicy.Matches(settings.Deck[0], balancedCatalog.CreateDeck(entry.PlayerId)) ||
-                !FixedDeckPolicy.Matches(settings.Deck[1], balancedCatalog.CreateDeck(entry.OpponentId)))
+            if (!FixedDeckPolicy.Matches(settings.Deck[0], catalog.CreateDeck(entry.PlayerId)) ||
+                !FixedDeckPolicy.Matches(settings.Deck[1], catalog.CreateDeck(entry.OpponentId)))
                 throw new InvalidDataException("Trusted deck policy failed");
             return settings;
         }

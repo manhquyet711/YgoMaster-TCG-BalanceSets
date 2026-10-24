@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_dark_magician",
+  "displayName": "Dark Magician (Yugi)",
+  "sourcePhoto": null,
+  "verificationStatus": "official",
+  "design": "Konami OCG Duel Royale Deck Set (DR01/DR02), Dark Magician Deck, as printed",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Dark Magician",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Dark Magician Girl",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Chaos Command Magician",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Breaker the Magical Warrior",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Skilled Dark Magician",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Kycoo the Ghost Destroyer",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Chow Len the Prophet",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Defender, the Magical Knight",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Legion the Fiend Jester",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Witch of the Black Forest",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Injection Fairy Lily",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Old Vindictive Magician",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Apprentice Magician",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Magical Undertaker",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Apprentice Piper",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Magician of Faith",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Monster Reborn",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Lightning Vortex",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Soul Taker",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Swords of Revealing Light",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dark Magic Curtain",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dark Magic Veil",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dark Magic Attack",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dwimmered Path",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Book of Moon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Magical Dimension",
+      "quantity": 2,
+      "status": "official"
+    },
+    {
+      "name": "Rebellion",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Premature Burial",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Magic Cylinder",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Magician's Circle",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dark Horizon",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 1,
+      "status": "official"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "official"
+    }
+  ],
+  "extra": [],
+  "side": []
+}

@@ -147,42 +147,42 @@ goat_mai,main,Dust Tornado,1,Dust Tornado,4988,resolved,local CARD_Name/CARD_Ind
 goat_mai,main,Trap Hole,1,Trap Hole,4836,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_mai,main,Mirror Force,1,Mirror Force,4887,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_mai,main,Waboku,1,Waboku,4886,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Relinquished,2,Relinquished,4737,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Sonic Bird,2,Sonic Bird,4929,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Thousand-Eyes Idol,2,Thousand-Eyes Idol,4739,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Illusionist Faceless Mage,1,Illusionist Faceless Mage,4048,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Toon Summoned Skull,1,Toon Summoned Skull,4735,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Blue-Eyes Toon Dragon,1,Blue-Eyes Toon Dragon,4773,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Toon Mermaid,2,Toon Mermaid,4734,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Toon Alligator,2,Toon Alligator,4387,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Toon Alligator,1,Toon Alligator,4387,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Mystic Tomato,2,Mystic Tomato,4930,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,D.D. Warrior Lady,1,D.D. Warrior Lady,5719,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Manga Ryu-Ran,2,Manga Ryu-Ran,4733,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Relinquished,1,Relinquished,4737,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Magician of Faith,1,Magician of Faith,4434,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Hane-Hane,1,Hane-Hane,4547,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Sangan,1,Sangan,4054,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Magician of Faith,1,Magician of Faith,4434,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Spirit Reaper,1,Spirit Reaper,5526,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Toon World,3,Toon World,4798,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Black Illusion Ritual,1,Black Illusion Ritual,4802,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Polymerization,1,Polymerization,4837,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 24094653 maps to 4837; other same-name entries are not selected.,designed,not playtested; modern engine effects
-goat_pegasus,main,Mind Control,1,Mind Control,4817,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,D.D. Warrior Lady,1,D.D. Warrior Lady,5719,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Big Shield Gardna,1,Big Shield Gardna,4764,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Hane-Hane,1,Hane-Hane,4547,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Pot of Greed,1,Pot of Greed,4844,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Graceful Charity,1,Graceful Charity,4812,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Mystical Space Typhoon,1,Mystical Space Typhoon,4909,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Card Destruction,1,Card Destruction,4821,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Black Illusion Ritual,2,Black Illusion Ritual,4802,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Toon World,1,Toon World,4798,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Polymerization,1,Polymerization,4837,resolved,Explicit original-card selection verified in local YdkIds.txt: passcode 24094653 maps to 4837; other same-name entries are not selected.,designed,not playtested; modern engine effects
+goat_pegasus,main,Mind Control,1,Mind Control,4817,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Swords of Revealing Light,1,Swords of Revealing Light,4354,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Nobleman of Crossout,1,Nobleman of Crossout,4963,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Shadow Spell,1,Shadow Spell,4675,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Draining Shield,1,Draining Shield,5994,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Premature Burial,1,Premature Burial,4966,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Book of Moon,1,Book of Moon,5432,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Magic Cylinder,1,Magic Cylinder,5124,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Ring of Destruction,1,Ring of Destruction,5005,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Torrential Tribute,1,Torrential Tribute,5114,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Sakuretsu Armor,1,Sakuretsu Armor,5799,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Dust Tornado,1,Dust Tornado,4988,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Call of the Haunted,1,Call of the Haunted,4989,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Magic Cylinder,1,Magic Cylinder,5124,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Waboku,1,Waboku,4886,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Shadow Spell,1,Shadow Spell,4675,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Negate Attack,1,Negate Attack,4804,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,main,Trap Hole,1,Trap Hole,4836,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Torrential Tribute,1,Torrential Tribute,5114,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Ultimate Offering,1,Ultimate Offering,4851,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,main,Ring of Destruction,1,Ring of Destruction,5005,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Draining Shield,1,Draining Shield,5994,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
+goat_pegasus,main,Waboku,1,Waboku,4886,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_pegasus,extra,Thousand-Eyes Restrict,1,Thousand-Eyes Restrict,4740,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
-goat_pegasus,extra,Bickuribox,1,Bickuribox,4391,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_bakura,main,Dark Necrofear,1,Dark Necrofear,5222,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_bakura,main,Headless Knight,1,Headless Knight,5221,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects
 goat_bakura,main,Earthbound Spirit,2,Earthbound Spirit,5226,resolved,local CARD_Name/CARD_Indx/CARD_Prop tables,designed,not playtested; modern engine effects

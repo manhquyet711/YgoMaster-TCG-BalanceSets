@@ -6,26 +6,36 @@
   "verificationStatus": "designed",
   "design": "Goat Era Duelists: AI-designed balanced set (Tools/BalancedCharacters/goat_set.py)",
   "expectedMainCount": 40,
-  "expectedExtraCount": 2,
+  "expectedExtraCount": 1,
   "main": [
+    {
+      "name": "Relinquished",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Sonic Bird",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Thousand-Eyes Idol",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Illusionist Faceless Mage",
+      "quantity": 1,
+      "status": "designed"
+    },
     {
       "name": "Toon Summoned Skull",
       "quantity": 1,
       "status": "designed"
     },
     {
-      "name": "Blue-Eyes Toon Dragon",
-      "quantity": 1,
-      "status": "designed"
-    },
-    {
-      "name": "Toon Mermaid",
-      "quantity": 2,
-      "status": "designed"
-    },
-    {
       "name": "Toon Alligator",
-      "quantity": 2,
+      "quantity": 1,
       "status": "designed"
     },
     {
@@ -34,17 +44,7 @@
       "status": "designed"
     },
     {
-      "name": "D.D. Warrior Lady",
-      "quantity": 1,
-      "status": "designed"
-    },
-    {
-      "name": "Manga Ryu-Ran",
-      "quantity": 2,
-      "status": "designed"
-    },
-    {
-      "name": "Relinquished",
+      "name": "Sangan",
       "quantity": 1,
       "status": "designed"
     },
@@ -54,37 +54,22 @@
       "status": "designed"
     },
     {
-      "name": "Hane-Hane",
-      "quantity": 1,
-      "status": "designed"
-    },
-    {
-      "name": "Sangan",
-      "quantity": 1,
-      "status": "designed"
-    },
-    {
       "name": "Spirit Reaper",
       "quantity": 1,
       "status": "designed"
     },
     {
-      "name": "Toon World",
-      "quantity": 3,
-      "status": "designed"
-    },
-    {
-      "name": "Black Illusion Ritual",
+      "name": "D.D. Warrior Lady",
       "quantity": 1,
       "status": "designed"
     },
     {
-      "name": "Polymerization",
+      "name": "Big Shield Gardna",
       "quantity": 1,
       "status": "designed"
     },
     {
-      "name": "Mind Control",
+      "name": "Hane-Hane",
       "quantity": 1,
       "status": "designed"
     },
@@ -104,7 +89,22 @@
       "status": "designed"
     },
     {
-      "name": "Card Destruction",
+      "name": "Black Illusion Ritual",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Toon World",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Polymerization",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mind Control",
       "quantity": 1,
       "status": "designed"
     },
@@ -119,12 +119,27 @@
       "status": "designed"
     },
     {
-      "name": "Shadow Spell",
+      "name": "Premature Burial",
       "quantity": 1,
       "status": "designed"
     },
     {
-      "name": "Draining Shield",
+      "name": "Book of Moon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Magic Cylinder",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ring of Destruction",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
       "quantity": 1,
       "status": "designed"
     },
@@ -144,12 +159,7 @@
       "status": "designed"
     },
     {
-      "name": "Magic Cylinder",
-      "quantity": 1,
-      "status": "designed"
-    },
-    {
-      "name": "Waboku",
+      "name": "Shadow Spell",
       "quantity": 1,
       "status": "designed"
     },
@@ -164,17 +174,12 @@
       "status": "designed"
     },
     {
-      "name": "Torrential Tribute",
+      "name": "Draining Shield",
       "quantity": 1,
       "status": "designed"
     },
     {
-      "name": "Ultimate Offering",
-      "quantity": 1,
-      "status": "designed"
-    },
-    {
-      "name": "Ring of Destruction",
+      "name": "Waboku",
       "quantity": 1,
       "status": "designed"
     }
@@ -182,11 +187,6 @@
   "extra": [
     {
       "name": "Thousand-Eyes Restrict",
-      "quantity": 1,
-      "status": "designed"
-    },
-    {
-      "name": "Bickuribox",
       "quantity": 1,
       "status": "designed"
     }

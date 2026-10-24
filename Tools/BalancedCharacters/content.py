@@ -41,9 +41,15 @@ ROSTER_V2 = [
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import goat_set  # noqa: E402
 ROSTER_V3 = [(cid, name, sum(main.values()), sum(extra.values())) for cid, name, main, extra in goat_set.DECKS]
-ROSTERS = {'source-v1': ROSTER, 'source-v2': ROSTER_V2, 'source-v3': ROSTER_V3}
-# Deck sources that count as reviewed: photographed lists, or designed sets checked by their own tool.
-VERIFIED = ('photo-verified', 'designed')
+# v4: Duel Royale, Konami's official pre-built decks as printed (lists in Royale/decklists.json).
+import royale_set  # noqa: E402
+ROSTER_V4 = royale_set.roster()
+ROSTERS = {'source-v1': ROSTER, 'source-v2': ROSTER_V2, 'source-v3': ROSTER_V3, 'source-v4': ROSTER_V4}
+# Deck sources that count as reviewed: photographed lists, designed sets checked by their own tool,
+# or official printed decks.
+VERIFIED = ('photo-verified', 'designed', 'official')
+# Gate name prefix per set; each set has its own Solo folder.
+GATE_TITLE = {'source-v3': 'Goat Era - ', 'source-v4': 'Duel Royale - '}
 
 
 def write_json(path, value):
@@ -338,7 +344,11 @@ def compile_prototype():
         'jaden': 'Elemental HERO Bladedge',
         'goat_yugi': 'Dark Magician', 'goat_kaiba': 'Blue-Eyes White Dragon', 'goat_joey': 'Red-Eyes Black Dragon',
         'goat_mai': 'Harpie Lady Sisters', 'goat_pegasus': 'Relinquished', 'goat_bakura': 'Dark Necrofear',
-        'goat_marik': 'Lava Golem', 'goat_ishizu': 'Mudora'}
+        'goat_marik': 'Lava Golem', 'goat_ishizu': 'Mudora',
+        'royale_dark_magician': 'Dark Magician', 'royale_blue_eyes': 'Blue-Eyes White Dragon',
+        'royale_gearfried': 'Gearfried the Swordmaster', 'royale_lava_golem': 'Lava Golem',
+        'royale_legendary_ocean': 'Levia-Dragon - Daedalus', 'royale_relinquished': 'Relinquished',
+        'royale_des_gardius': 'Masked Beast Des Gardius'}
     names_by_id = card_table()
     signatures = {}
     for cid in characters:
@@ -353,7 +363,10 @@ def compile_prototype():
         'yami_bakura': 'Bakura', 'marik_bakura': 'Marik', 'gravekeepers': 'Gravekeeper',
         'grandpa': 'Grandpa', 'jaden': 'Jaden',
         'goat_yugi': 'Yugi', 'goat_kaiba': 'Kaiba', 'goat_joey': 'Joey', 'goat_mai': 'Mai', 'goat_pegasus': 'Pegasus',
-        'goat_bakura': 'Bakura', 'goat_marik': 'Marik', 'goat_ishizu': 'Ishizu'}
+        'goat_bakura': 'Bakura', 'goat_marik': 'Marik', 'goat_ishizu': 'Ishizu',
+        'royale_dark_magician': 'Dark Magician', 'royale_blue_eyes': 'Blue-Eyes', 'royale_gearfried': 'Gearfried',
+        'royale_lava_golem': 'Lava Golem', 'royale_legendary_ocean': 'Ocean', 'royale_relinquished': 'Relinquished',
+        'royale_des_gardius': 'Des Gardius'}
 
     def deck_size(cid):
         main = sum(c['quantity'] for c in decks[cid]['main'])
@@ -393,7 +406,7 @@ def compile_prototype():
         gates[str(gate)] = {'priority': 100 + roster_ids.index(player), 'parent_gate': 0,
             'view_gate': 0, 'unlock_id': 0, 'clear_chapter': goal_id, 'category': 1}
         chapters[str(gate)] = chapter_rows
-        texts.extend(['[IDS_SOLO.GATE%d]' % gate, 'Balanced Characters - ' + names[player],
+        texts.extend(['[IDS_SOLO.GATE%d]' % gate, GATE_TITLE.get(revision, 'Balanced Characters - ') + names[player],
                       '[IDS_SOLO.GATE%d_EXPLANATION]' % gate, 'Choose an opponent. You play ' + names[player] + "'s fixed deck."])
         thumbs.append('%d,%d,0,0.2' % (gate, signatures[player]))
     output = ROOT / 'Tools' / 'BalancedCharacters' / 'Generated'
@@ -436,9 +449,12 @@ REVISION_INFO = {
     'source-v1': 'Original 2021 lists by u/Rosehn (14 characters, incl. Yugi Battle City and Marik/Bakura)',
     'source-v2': 'Updated and finalized 2024 lists by u/Rosehn (15 characters)',
     'source-v3': 'Goat Era Duelists: AI-built balanced set, Goat-legal (8 characters)',
+    'source-v4': "Duel Royale: Konami's 7 official pre-built decks, as printed",
 }
-# Sets offered in the Settings Editor (v1 is kept as data but replaced by v3 in the list).
-PACKED_REVISIONS = ['source-v2', 'source-v3']
+# Sets built into packs (Revisions/<revision>). The game loads every set listed in Mode.json "sets",
+# each into its own Solo folder: v2 Balanced Characters, v3 Goat Era Duelists, v4 Duel Royale.
+PACKED_REVISIONS = ['source-v2', 'source-v3', 'source-v4']
+SET_FOLDERS = [('source-v2', 2102, 'Balanced - '), ('source-v3', 2104, 'Goat Era - '), ('source-v4', 2103, 'Royale - ')]
 
 
 def build_packs():
@@ -459,8 +475,10 @@ def build_packs():
             target = Path(tmp) / str(i)
             if path.is_dir():
                 shutil.copytree(path, target)
-            else:
+            elif path.exists():
                 shutil.copy2(path, target)
+            else:
+                target = None  # did not exist (e.g. the single-set IDS file after `sets`): remove afterwards
             saved.append((path, target))
         try:
             for revision in PACKED_REVISIONS:
@@ -483,7 +501,10 @@ def build_packs():
                 print('Pack %s: %d characters' % (revision, len(roster)))
         finally:
             for path, target in saved:
-                if path.is_dir():
+                if target is None:
+                    if path.exists():
+                        path.unlink()
+                elif path.is_dir():
                     shutil.rmtree(path)
                     shutil.copytree(target, path)
                 else:
@@ -491,13 +512,43 @@ def build_packs():
     print('Restored the active revision %s' % original_mode.get('activeDeckRevision'))
 
 
+def install_sets(data=None):
+    """Configure a Data folder to load every packed set at once, each in its own Solo folder:
+    Mode.json "sets", one IDS text file per set (the client loads every file in ClientData/IDS),
+    and one merged gate thumbnail list. Start Game.exe refreshes the text and thumbnails too."""
+    data = Path(data) if data else DATA
+    mode_dir = data / 'BalancedCharacters'
+    mode_path = mode_dir / 'Mode.json'
+    mode = load_json(mode_path)
+    sets = []
+    thumbs = []
+    ids_dir = data / 'ClientData' / 'IDS'
+    for revision, folder_gate, prefix in SET_FOLDERS:
+        pack = mode_dir / 'Revisions' / revision
+        if not (pack / 'Pack.json').exists():
+            raise ValueError('Pack missing: ' + str(pack))
+        sets.append({'revision': revision, 'folderGate': folder_gate, 'deckPrefix': prefix})
+        text = (pack / 'IDS_BALANCED_CHARACTERS.txt').read_text(encoding='utf-8-sig')
+        (ids_dir / ('IDS_BALANCED_%s.txt' % revision.upper().replace('-', '_'))).write_text(text, encoding='utf-8')
+        thumbs.extend(l for l in (pack / 'SoloGateCards.txt').read_text(encoding='utf-8-sig').splitlines() if l.strip())
+    single = ids_dir / 'IDS_BALANCED_CHARACTERS.txt'
+    if single.exists():
+        single.unlink()  # same texts as the v2 set file; one copy only
+    (mode_dir / 'Generated').mkdir(exist_ok=True)
+    (mode_dir / 'Generated' / 'SoloGateCards.txt').write_text('\n'.join(thumbs) + '\n', encoding='utf-8')
+    mode['sets'] = sets
+    write_json(mode_path, mode)
+    print('Configured %d deck sets in %s: %s' % (len(sets), data, ', '.join(s['revision'] for s in sets)))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['import', 'resolve', 'compile', 'packs'])
+    parser.add_argument('command', choices=['import', 'resolve', 'compile', 'packs', 'sets'])
+    parser.add_argument('data', nargs='?', help='sets: the Data folder to configure (default: repository Data)')
     args = parser.parse_args()
     try:
         {'import': import_sources, 'resolve': resolve, 'compile': compile_prototype,
-         'packs': build_packs}[args.command]()
+         'packs': build_packs, 'sets': lambda: install_sets(args.data)}[args.command]()
     except (ValueError, KeyError, OSError) as error:
         print('BLOCKED: ' + str(error), file=sys.stderr)
         return 1

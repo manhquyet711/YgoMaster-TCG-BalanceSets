@@ -82,6 +82,7 @@ public sealed class EditorDocument
     public readonly List<DeckSet> DeckSets;
     public string CurrentRevision { get; private set; }
     public string SelectedRevision;
+    public readonly List<string> LoadedSets = new List<string>();
     string originalSettings, originalMode;
     Dictionary<string, object> settings, mode;
     static readonly JavaScriptSerializer Json = new JavaScriptSerializer { MaxJsonLength = int.MaxValue };
@@ -103,6 +104,10 @@ public sealed class EditorDocument
         CurrentRevision = mode.ContainsKey("activeDeckRevision") ? (string)mode["activeDeckRevision"] : "source-v1";
         SelectedRevision = CurrentRevision;
         DeckSets = DeckSet.Find(Path.GetDirectoryName(ModePath));
+        // Deck sets the game loads at once, each in its own Stories folder (Mode.json "sets").
+        if (mode.ContainsKey("sets") && mode["sets"] is IList)
+            foreach (var entry in Array(mode["sets"]).OfType<Dictionary<string, object>>())
+                if (entry.ContainsKey("revision")) LoadedSets.Add((string)entry["revision"]);
         if ((string)Win["type"] != "Gem" || (string)Lose["type"] != "Gem")
             throw new InvalidDataException("Unexpected reward layout. Original settings preserved.");
         Values.UnlockAllCards = Convert.ToBoolean(settings["UnlockAllCards"]);
@@ -331,11 +336,17 @@ public sealed class BalancedEditorForm : Form
         // Left column: deck set and its characters
         var setCard = new CardPanel { Dock = DockStyle.Fill, Margin = new Padding(0, 0, 12, 0) };
         outer.Controls.Add(setCard, 0, 1);
-        setCard.Controls.Add(SectionTitle("DECK SET", 14, 10));
+        setCard.Controls.Add(SectionTitle("STORIES MODES", 14, 10));
         deckSet = new ComboBox { DropDownStyle = ComboBoxStyle.DropDownList, Location = new Point(16, 40), Width = 380, BackColor = Theme.Field, ForeColor = Theme.Text, FlatStyle = FlatStyle.Flat, Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right };
-        foreach (var set in document.DeckSets) deckSet.Items.Add(set);
-        deckSet.SelectedItem = document.DeckSets.FirstOrDefault(x => x.Revision == document.CurrentRevision);
-        if (deckSet.Items.Count == 0) { deckSet.Items.Add("(no deck sets installed: " + document.CurrentRevision + " stays active)"); deckSet.SelectedIndex = 0; deckSet.Enabled = false; }
+        // Every loaded deck set is its own mode in SOLO > Stories; this list only shows them (nothing to switch).
+        var loaded = document.LoadedSets.Count > 0 ? document.LoadedSets : new List<string> { document.CurrentRevision };
+        foreach (string revision in loaded)
+        {
+            var set = document.DeckSets.FirstOrDefault(x => x.Revision == revision);
+            if (set != null) deckSet.Items.Add(new ModeItem(set));
+        }
+        if (deckSet.Items.Count > 0) deckSet.SelectedIndex = 0;
+        else { deckSet.Items.Add("(no deck sets installed)"); deckSet.SelectedIndex = 0; deckSet.Enabled = false; }
         setCard.Controls.Add(deckSet);
         setDescription = new Label { Location = new Point(16, 78), AutoSize = false, Size = new Size(380, 48), ForeColor = Theme.Text, BackColor = Color.Transparent, Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right };
         setCard.Controls.Add(setDescription);
@@ -368,7 +379,7 @@ public sealed class BalancedEditorForm : Form
         AddButton(buttons, "Save", false, () => Save());
         AddButton(buttons, "Close", false, () => Close());
         status = new Label { Location = new Point(16, 56), AutoSize = true, ForeColor = Theme.Muted, BackColor = Color.Transparent,
-            Text = "Active deck set: " + document.CurrentRevision + ". Start Game saves your settings, then starts the server and Master Duel." };
+            Text = "Start Game saves your settings, then starts the server and Master Duel." };
         try { GameLauncher.HideSupportFiles(document.Root); } catch { }
         footer.Controls.Add(status);
         ShowSet();
@@ -414,13 +425,31 @@ public sealed class BalancedEditorForm : Form
         MessageBox.Show(this, message, "Start Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
     }
 
-    DeckSet SelectedSet() { return deckSet.SelectedItem as DeckSet; }
+    /// <summary>A Stories mode in the list: the deck set and the folder name it has in the game.</summary>
+    sealed class ModeItem
+    {
+        public readonly DeckSet Set;
+        public ModeItem(DeckSet set) { Set = set; }
+        public static string ModeName(string revision)
+        {
+            switch (revision)
+            {
+                case "source-v2": return "Balanced Characters";
+                case "source-v3": return "Goat Era Duelists";
+                case "source-v4": return "Duel Royale";
+                default: return revision;
+            }
+        }
+        public override string ToString() { return ModeName(Set.Revision) + "  (" + Set.CharacterIds.Count + " decks)"; }
+    }
+
+    DeckSet SelectedSet() { var item = deckSet.SelectedItem as ModeItem; return item == null ? null : item.Set; }
 
     void ShowSet()
     {
         var set = SelectedSet();
         if (set == null) { setDescription.Text = ""; setCharacters.Text = ""; return; }
-        setDescription.Text = set.Description + (set.Revision == document.CurrentRevision ? "   (active)" : "   (selected: press Save to switch)");
+        setDescription.Text = set.Description + "   (SOLO > Stories > " + ModeItem.ModeName(set.Revision) + ")";
         setCharacters.Text = string.Join("\n", CharacterNames(set).Select(n => "•  " + n));
     }
 
@@ -436,14 +465,9 @@ public sealed class BalancedEditorForm : Form
     {
         ValidateChildren();
         document.Enabled = enabled.Checked;
-        var set = SelectedSet();
-        if (set != null) document.SelectedRevision = set.Revision;
-        string before = document.CurrentRevision;
         document.Save();
         ShowSet();
-        status.Text = before != document.CurrentRevision
-            ? "Saved with backups. Deck set switched to " + document.CurrentRevision + "; it loads the next time the balanced server starts."
-            : "Saved with backups. Other settings and saves preserved.";
+        status.Text = "Saved with backups. Other settings and saves preserved.";
     }
 
     void StartGame()
@@ -569,9 +593,47 @@ static class GameLauncher
         return result;
     }
 
+    /// <summary>
+    /// For every deck set in Mode.json "sets": installs its texts as ClientData/IDS/IDS_BALANCED_&lt;REVISION&gt;.txt
+    /// (the client loads every file in that folder) and merges the gate thumbnails into
+    /// BalancedCharacters/Generated/SoloGateCards.txt. Returns the number of sets.
+    /// </summary>
+    public static int PrepareSets(string root)
+    {
+        string modeRoot = Path.Combine(root, "Data", "BalancedCharacters");
+        var mode = ReadLoose(Path.Combine(modeRoot, "Mode.json"));
+        object raw;
+        if (!mode.TryGetValue("sets", out raw) || !(raw is IList)) return 0;
+        string idsDir = Path.Combine(root, "Data", "ClientData", "IDS");
+        var thumbs = new List<string>();
+        int count = 0;
+        foreach (var entry in ((IList)raw).OfType<Dictionary<string, object>>())
+        {
+            string revision = entry.ContainsKey("revision") ? entry["revision"] as string : null;
+            if (string.IsNullOrEmpty(revision) || revision.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0) continue;
+            string pack = Path.Combine(modeRoot, "Revisions", revision);
+            string text = Path.Combine(pack, "IDS_BALANCED_CHARACTERS.txt"), cards = Path.Combine(pack, "SoloGateCards.txt");
+            if (!File.Exists(text) || !File.Exists(cards)) throw new FileNotFoundException("Deck set " + revision + " is incomplete. Reinstall the mod.");
+            string target = Path.Combine(idsDir, "IDS_BALANCED_" + revision.ToUpperInvariant().Replace('-', '_') + ".txt");
+            string content = File.ReadAllText(text);
+            if (!File.Exists(target) || File.ReadAllText(target) != content) File.WriteAllText(target, content, new UTF8Encoding(false));
+            thumbs.AddRange(File.ReadAllLines(cards).Where(x => x.Trim().Length > 0));
+            count++;
+        }
+        // The single-set text file holds the same texts as one of the sets; keep one copy only.
+        string single = Path.Combine(idsDir, "IDS_BALANCED_CHARACTERS.txt");
+        if (count > 0 && File.Exists(single)) File.Delete(single);
+        string merged = Path.Combine(modeRoot, "Generated", "SoloGateCards.txt");
+        Directory.CreateDirectory(Path.GetDirectoryName(merged));
+        string mergedText = string.Join("\n", thumbs) + "\n";
+        if (!File.Exists(merged) || File.ReadAllText(merged) != mergedText) File.WriteAllText(merged, mergedText, new UTF8Encoding(false));
+        return count;
+    }
+
     public static string Start(string root, Action<string> progress)
     {
         int[] ports = Validate(root);
+        PrepareSets(root);
         string serverPath = Path.GetFullPath(Path.Combine(root, "YgoMaster.exe"));
         // Restart only this folder's own server so saved settings load; other mod servers are left alone.
         foreach (var process in OwnServers(serverPath))
@@ -633,6 +695,7 @@ static class Program
                 return 0;
             }
             if (args.Length > 0 && args[0] == "--hide") { GameLauncher.HideSupportFiles(root); Console.WriteLine("Support files hidden in " + root); return 0; }
+            if (args.Length > 0 && args[0] == "--prepare-sets") { Console.WriteLine("Prepared " + GameLauncher.PrepareSets(root) + " deck sets in " + root); return 0; }
             if (args.Length > 0 && args[0] == "--self-test") { EditorDocument.SelfTest(root); return 0; }
             if (args.Length > 1 && args[0] == "--deck-set")
             {

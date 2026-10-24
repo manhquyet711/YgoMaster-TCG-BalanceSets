@@ -1,0 +1,832 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.3.0-prototype",
+  "deckRevision": "source-v4",
+  "gate": {
+    "2041": {
+      "priority": 100,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 20419000,
+      "category": 1
+    },
+    "2042": {
+      "priority": 101,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 20429000,
+      "category": 1
+    },
+    "2043": {
+      "priority": 102,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 20439000,
+      "category": 1
+    },
+    "2044": {
+      "priority": 103,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 20449000,
+      "category": 1
+    },
+    "2045": {
+      "priority": 104,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 20459000,
+      "category": 1
+    },
+    "2046": {
+      "priority": 105,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 20469000,
+      "category": 1
+    },
+    "2047": {
+      "priority": 106,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 20479000,
+      "category": 1
+    }
+  },
+  "chapter": {
+    "2041": {
+      "20410027": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3053,
+        "anime": 0
+      },
+      "20410028": {
+        "parent_chapter": 20410027,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3054,
+        "anime": 0
+      },
+      "20410029": {
+        "parent_chapter": 20410028,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3055,
+        "anime": 0
+      },
+      "20410030": {
+        "parent_chapter": 20410029,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3056,
+        "anime": 0
+      },
+      "20410031": {
+        "parent_chapter": 20410030,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3057,
+        "anime": 0
+      },
+      "20410032": {
+        "parent_chapter": 20410031,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3058,
+        "anime": 0
+      },
+      "20419000": {
+        "parent_chapter": 20410032,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2042": {
+      "20420026": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3052,
+        "anime": 0
+      },
+      "20420028": {
+        "parent_chapter": 20420026,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3054,
+        "anime": 0
+      },
+      "20420029": {
+        "parent_chapter": 20420028,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3055,
+        "anime": 0
+      },
+      "20420030": {
+        "parent_chapter": 20420029,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3056,
+        "anime": 0
+      },
+      "20420031": {
+        "parent_chapter": 20420030,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3057,
+        "anime": 0
+      },
+      "20420032": {
+        "parent_chapter": 20420031,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3058,
+        "anime": 0
+      },
+      "20429000": {
+        "parent_chapter": 20420032,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2043": {
+      "20430026": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3052,
+        "anime": 0
+      },
+      "20430027": {
+        "parent_chapter": 20430026,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3053,
+        "anime": 0
+      },
+      "20430029": {
+        "parent_chapter": 20430027,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3055,
+        "anime": 0
+      },
+      "20430030": {
+        "parent_chapter": 20430029,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3056,
+        "anime": 0
+      },
+      "20430031": {
+        "parent_chapter": 20430030,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3057,
+        "anime": 0
+      },
+      "20430032": {
+        "parent_chapter": 20430031,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3058,
+        "anime": 0
+      },
+      "20439000": {
+        "parent_chapter": 20430032,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2044": {
+      "20440026": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3052,
+        "anime": 0
+      },
+      "20440027": {
+        "parent_chapter": 20440026,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3053,
+        "anime": 0
+      },
+      "20440028": {
+        "parent_chapter": 20440027,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3054,
+        "anime": 0
+      },
+      "20440030": {
+        "parent_chapter": 20440028,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3056,
+        "anime": 0
+      },
+      "20440031": {
+        "parent_chapter": 20440030,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3057,
+        "anime": 0
+      },
+      "20440032": {
+        "parent_chapter": 20440031,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3058,
+        "anime": 0
+      },
+      "20449000": {
+        "parent_chapter": 20440032,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2045": {
+      "20450026": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3052,
+        "anime": 0
+      },
+      "20450027": {
+        "parent_chapter": 20450026,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3053,
+        "anime": 0
+      },
+      "20450028": {
+        "parent_chapter": 20450027,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3054,
+        "anime": 0
+      },
+      "20450029": {
+        "parent_chapter": 20450028,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3055,
+        "anime": 0
+      },
+      "20450031": {
+        "parent_chapter": 20450029,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3057,
+        "anime": 0
+      },
+      "20450032": {
+        "parent_chapter": 20450031,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3058,
+        "anime": 0
+      },
+      "20459000": {
+        "parent_chapter": 20450032,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2046": {
+      "20460026": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3052,
+        "anime": 0
+      },
+      "20460027": {
+        "parent_chapter": 20460026,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3053,
+        "anime": 0
+      },
+      "20460028": {
+        "parent_chapter": 20460027,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3054,
+        "anime": 0
+      },
+      "20460029": {
+        "parent_chapter": 20460028,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3055,
+        "anime": 0
+      },
+      "20460030": {
+        "parent_chapter": 20460029,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3056,
+        "anime": 0
+      },
+      "20460032": {
+        "parent_chapter": 20460030,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3058,
+        "anime": 0
+      },
+      "20469000": {
+        "parent_chapter": 20460032,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2047": {
+      "20470026": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3052,
+        "anime": 0
+      },
+      "20470027": {
+        "parent_chapter": 20470026,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3053,
+        "anime": 0
+      },
+      "20470028": {
+        "parent_chapter": 20470027,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3054,
+        "anime": 0
+      },
+      "20470029": {
+        "parent_chapter": 20470028,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3055,
+        "anime": 0
+      },
+      "20470030": {
+        "parent_chapter": 20470029,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3056,
+        "anime": 0
+      },
+      "20470031": {
+        "parent_chapter": 20470030,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3057,
+        "anime": 0
+      },
+      "20479000": {
+        "parent_chapter": 20470031,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    }
+  },
+  "encounters": [
+    {
+      "chapterId": 20410027,
+      "gateId": 2041,
+      "playerCharacterId": "royale_dark_magician",
+      "opponentCharacterId": "royale_blue_eyes"
+    },
+    {
+      "chapterId": 20410028,
+      "gateId": 2041,
+      "playerCharacterId": "royale_dark_magician",
+      "opponentCharacterId": "royale_gearfried"
+    },
+    {
+      "chapterId": 20410029,
+      "gateId": 2041,
+      "playerCharacterId": "royale_dark_magician",
+      "opponentCharacterId": "royale_lava_golem"
+    },
+    {
+      "chapterId": 20410030,
+      "gateId": 2041,
+      "playerCharacterId": "royale_dark_magician",
+      "opponentCharacterId": "royale_legendary_ocean"
+    },
+    {
+      "chapterId": 20410031,
+      "gateId": 2041,
+      "playerCharacterId": "royale_dark_magician",
+      "opponentCharacterId": "royale_relinquished"
+    },
+    {
+      "chapterId": 20410032,
+      "gateId": 2041,
+      "playerCharacterId": "royale_dark_magician",
+      "opponentCharacterId": "royale_des_gardius"
+    },
+    {
+      "chapterId": 20420026,
+      "gateId": 2042,
+      "playerCharacterId": "royale_blue_eyes",
+      "opponentCharacterId": "royale_dark_magician"
+    },
+    {
+      "chapterId": 20420028,
+      "gateId": 2042,
+      "playerCharacterId": "royale_blue_eyes",
+      "opponentCharacterId": "royale_gearfried"
+    },
+    {
+      "chapterId": 20420029,
+      "gateId": 2042,
+      "playerCharacterId": "royale_blue_eyes",
+      "opponentCharacterId": "royale_lava_golem"
+    },
+    {
+      "chapterId": 20420030,
+      "gateId": 2042,
+      "playerCharacterId": "royale_blue_eyes",
+      "opponentCharacterId": "royale_legendary_ocean"
+    },
+    {
+      "chapterId": 20420031,
+      "gateId": 2042,
+      "playerCharacterId": "royale_blue_eyes",
+      "opponentCharacterId": "royale_relinquished"
+    },
+    {
+      "chapterId": 20420032,
+      "gateId": 2042,
+      "playerCharacterId": "royale_blue_eyes",
+      "opponentCharacterId": "royale_des_gardius"
+    },
+    {
+      "chapterId": 20430026,
+      "gateId": 2043,
+      "playerCharacterId": "royale_gearfried",
+      "opponentCharacterId": "royale_dark_magician"
+    },
+    {
+      "chapterId": 20430027,
+      "gateId": 2043,
+      "playerCharacterId": "royale_gearfried",
+      "opponentCharacterId": "royale_blue_eyes"
+    },
+    {
+      "chapterId": 20430029,
+      "gateId": 2043,
+      "playerCharacterId": "royale_gearfried",
+      "opponentCharacterId": "royale_lava_golem"
+    },
+    {
+      "chapterId": 20430030,
+      "gateId": 2043,
+      "playerCharacterId": "royale_gearfried",
+      "opponentCharacterId": "royale_legendary_ocean"
+    },
+    {
+      "chapterId": 20430031,
+      "gateId": 2043,
+      "playerCharacterId": "royale_gearfried",
+      "opponentCharacterId": "royale_relinquished"
+    },
+    {
+      "chapterId": 20430032,
+      "gateId": 2043,
+      "playerCharacterId": "royale_gearfried",
+      "opponentCharacterId": "royale_des_gardius"
+    },
+    {
+      "chapterId": 20440026,
+      "gateId": 2044,
+      "playerCharacterId": "royale_lava_golem",
+      "opponentCharacterId": "royale_dark_magician"
+    },
+    {
+      "chapterId": 20440027,
+      "gateId": 2044,
+      "playerCharacterId": "royale_lava_golem",
+      "opponentCharacterId": "royale_blue_eyes"
+    },
+    {
+      "chapterId": 20440028,
+      "gateId": 2044,
+      "playerCharacterId": "royale_lava_golem",
+      "opponentCharacterId": "royale_gearfried"
+    },
+    {
+      "chapterId": 20440030,
+      "gateId": 2044,
+      "playerCharacterId": "royale_lava_golem",
+      "opponentCharacterId": "royale_legendary_ocean"
+    },
+    {
+      "chapterId": 20440031,
+      "gateId": 2044,
+      "playerCharacterId": "royale_lava_golem",
+      "opponentCharacterId": "royale_relinquished"
+    },
+    {
+      "chapterId": 20440032,
+      "gateId": 2044,
+      "playerCharacterId": "royale_lava_golem",
+      "opponentCharacterId": "royale_des_gardius"
+    },
+    {
+      "chapterId": 20450026,
+      "gateId": 2045,
+      "playerCharacterId": "royale_legendary_ocean",
+      "opponentCharacterId": "royale_dark_magician"
+    },
+    {
+      "chapterId": 20450027,
+      "gateId": 2045,
+      "playerCharacterId": "royale_legendary_ocean",
+      "opponentCharacterId": "royale_blue_eyes"
+    },
+    {
+      "chapterId": 20450028,
+      "gateId": 2045,
+      "playerCharacterId": "royale_legendary_ocean",
+      "opponentCharacterId": "royale_gearfried"
+    },
+    {
+      "chapterId": 20450029,
+      "gateId": 2045,
+      "playerCharacterId": "royale_legendary_ocean",
+      "opponentCharacterId": "royale_lava_golem"
+    },
+    {
+      "chapterId": 20450031,
+      "gateId": 2045,
+      "playerCharacterId": "royale_legendary_ocean",
+      "opponentCharacterId": "royale_relinquished"
+    },
+    {
+      "chapterId": 20450032,
+      "gateId": 2045,
+      "playerCharacterId": "royale_legendary_ocean",
+      "opponentCharacterId": "royale_des_gardius"
+    },
+    {
+      "chapterId": 20460026,
+      "gateId": 2046,
+      "playerCharacterId": "royale_relinquished",
+      "opponentCharacterId": "royale_dark_magician"
+    },
+    {
+      "chapterId": 20460027,
+      "gateId": 2046,
+      "playerCharacterId": "royale_relinquished",
+      "opponentCharacterId": "royale_blue_eyes"
+    },
+    {
+      "chapterId": 20460028,
+      "gateId": 2046,
+      "playerCharacterId": "royale_relinquished",
+      "opponentCharacterId": "royale_gearfried"
+    },
+    {
+      "chapterId": 20460029,
+      "gateId": 2046,
+      "playerCharacterId": "royale_relinquished",
+      "opponentCharacterId": "royale_lava_golem"
+    },
+    {
+      "chapterId": 20460030,
+      "gateId": 2046,
+      "playerCharacterId": "royale_relinquished",
+      "opponentCharacterId": "royale_legendary_ocean"
+    },
+    {
+      "chapterId": 20460032,
+      "gateId": 2046,
+      "playerCharacterId": "royale_relinquished",
+      "opponentCharacterId": "royale_des_gardius"
+    },
+    {
+      "chapterId": 20470026,
+      "gateId": 2047,
+      "playerCharacterId": "royale_des_gardius",
+      "opponentCharacterId": "royale_dark_magician"
+    },
+    {
+      "chapterId": 20470027,
+      "gateId": 2047,
+      "playerCharacterId": "royale_des_gardius",
+      "opponentCharacterId": "royale_blue_eyes"
+    },
+    {
+      "chapterId": 20470028,
+      "gateId": 2047,
+      "playerCharacterId": "royale_des_gardius",
+      "opponentCharacterId": "royale_gearfried"
+    },
+    {
+      "chapterId": 20470029,
+      "gateId": 2047,
+      "playerCharacterId": "royale_des_gardius",
+      "opponentCharacterId": "royale_lava_golem"
+    },
+    {
+      "chapterId": 20470030,
+      "gateId": 2047,
+      "playerCharacterId": "royale_des_gardius",
+      "opponentCharacterId": "royale_legendary_ocean"
+    },
+    {
+      "chapterId": 20470031,
+      "gateId": 2047,
+      "playerCharacterId": "royale_des_gardius",
+      "opponentCharacterId": "royale_relinquished"
+    }
+  ],
+  "deckFingerprints": {
+    "royale_dark_magician": "fc17d7376576c038ce75c5d394c19ef17a248e1a381414dc705fb39fbdadfde8",
+    "royale_blue_eyes": "f08d340116d959ee9f44e85b241442ae05979777dddcd839fbf775ab7547d678",
+    "royale_gearfried": "6b6c85731072423ca37ad3e151a786e199258acaaef1589552fc341f2fee91f1",
+    "royale_lava_golem": "6cbab0894d88605d3d2d5f58ccba13e502ebfa017df5c84d6b2c429e01aa56d7",
+    "royale_legendary_ocean": "dc92c97a01a3636a898fffd7b7cd8e10635bb792aac9263759e091673ffe4f75",
+    "royale_relinquished": "2d23380968811221e679139a01c6605db82989ad943bbf4dfa5b11e8b764f12f",
+    "royale_des_gardius": "7217be0592c94951eac3fa291044f38c4417bebbda1182d0c32939b148ad4324"
+  }
+}

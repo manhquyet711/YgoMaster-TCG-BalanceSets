@@ -36,5 +36,22 @@
     "cpu": 100,
     "cpuflag": null
   },
-  "note": "v2 character set (photos in \"charracter set v2\"): fifteen photo-reviewed decks, 210 fixed-deck encounters. Yugi (Season 1) plays Shadow Spell in place of Spellbinding Circle, which is absent from Master Duel. In-game acceptance pending."
+  "note": "v2 character set (photos in \"charracter set v2\"): fifteen photo-reviewed decks, 210 fixed-deck encounters. Yugi (Season 1) plays Shadow Spell in place of Spellbinding Circle, which is absent from Master Duel. In-game acceptance pending.",
+  "sets": [
+    {
+      "revision": "source-v2",
+      "folderGate": 2102,
+      "deckPrefix": "Balanced - "
+    },
+    {
+      "revision": "source-v3",
+      "folderGate": 2104,
+      "deckPrefix": "Goat Era - "
+    },
+    {
+      "revision": "source-v4",
+      "folderGate": 2103,
+      "deckPrefix": "Royale - "
+    }
+  ]
 }

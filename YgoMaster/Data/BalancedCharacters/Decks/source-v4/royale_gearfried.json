@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "characterId": "royale_gearfried",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "revision": "source-v4",
+  "main": [
+    {
+      "cardId": 6251,
+      "quantity": 1
+    },
+    {
+      "cardId": 4761,
+      "quantity": 1
+    },
+    {
+      "cardId": 5245,
+      "quantity": 1
+    },
+    {
+      "cardId": 5059,
+      "quantity": 3
+    },
+    {
+      "cardId": 5932,
+      "quantity": 1
+    },
+    {
+      "cardId": 11143,
+      "quantity": 1
+    },
+    {
+      "cardId": 5719,
+      "quantity": 1
+    },
+    {
+      "cardId": 5244,
+      "quantity": 1
+    },
+    {
+      "cardId": 5017,
+      "quantity": 1
+    },
+    {
+      "cardId": 6185,
+      "quantity": 1
+    },
+    {
+      "cardId": 4262,
+      "quantity": 1
+    },
+    {
+      "cardId": 6457,
+      "quantity": 2
+    },
+    {
+      "cardId": 5323,
+      "quantity": 1
+    },
+    {
+      "cardId": 5321,
+      "quantity": 1
+    },
+    {
+      "cardId": 4842,
+      "quantity": 1
+    },
+    {
+      "cardId": 4844,
+      "quantity": 1
+    },
+    {
+      "cardId": 5217,
+      "quantity": 1
+    },
+    {
+      "cardId": 4891,
+      "quantity": 1
+    },
+    {
+      "cardId": 4909,
+      "quantity": 1
+    },
+    {
+      "cardId": 5328,
+      "quantity": 2
+    },
+    {
+      "cardId": 5330,
+      "quantity": 1
+    },
+    {
+      "cardId": 6270,
+      "quantity": 2
+    },
+    {
+      "cardId": 5388,
+      "quantity": 2
+    },
+    {
+      "cardId": 5212,
+      "quantity": 1
+    },
+    {
+      "cardId": 4887,
+      "quantity": 1
+    },
+    {
+      "cardId": 5400,
+      "quantity": 1
+    },
+    {
+      "cardId": 4657,
+      "quantity": 1
+    },
+    {
+      "cardId": 4664,
+      "quantity": 1
+    },
+    {
+      "cardId": 5396,
+      "quantity": 3
+    },
+    {
+      "cardId": 4989,
+      "quantity": 1
+    },
+    {
+      "cardId": 10550,
+      "quantity": 1
+    },
+    {
+      "cardId": 5113,
+      "quantity": 1
+    }
+  ],
+  "extra": [],
+  "side": []
+}

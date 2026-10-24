@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "revision": "source-v4",
+  "contentVersion": "0.3.0-prototype",
+  "description": "Duel Royale: Konami's 7 official pre-built decks, as printed",
+  "activeCharacterIds": [
+    "royale_dark_magician",
+    "royale_blue_eyes",
+    "royale_gearfried",
+    "royale_lava_golem",
+    "royale_legendary_ocean",
+    "royale_relinquished",
+    "royale_des_gardius"
+  ],
+  "characters": [
+    "Dark Magician (Yugi)",
+    "Blue-Eyes (Kaiba)",
+    "Gearfried (Joey)",
+    "Lava Golem (Marik)",
+    "Legendary Ocean (Mako)",
+    "Relinquished (Pegasus)",
+    "Des Gardius (Bakura)"
+  ]
+}

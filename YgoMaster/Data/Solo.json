@@ -1,5 +1,9 @@
 {"Master":{"Solo":{
 	"gate":{
+		//mode: Duel Royale
+		"2103":{"priority":22,"parent_gate":0,"unlock_id":0,"view_gate":0,"clear_chapter":0,"category":1},
+		//mode: Goat Era Duelists
+		"2104":{"priority":21,"parent_gate":0,"unlock_id":0,"view_gate":0,"clear_chapter":0,"category":1},
 		//mode: Master Duel Basics
 		"2109":{"priority":900,"parent_gate":0,"unlock_id":0,"view_gate":0,"clear_chapter":300247,"category":2},
 		//mode: Balanced Characters

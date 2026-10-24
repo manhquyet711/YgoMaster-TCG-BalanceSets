@@ -73,17 +73,18 @@ DECKS = [
         "Shadow of Eyes": 1, "Sakuretsu Armor": 1, "Dust Tornado": 1, "Trap Hole": 1, "Mirror Force": 1,
         "Waboku": 1,
     }, {}),
+    # Relinquished / Thousand-Eyes build (tested as Pegasus B): 48% vs the set; the Toon World build won 29%.
     ("goat_pegasus", "Maximillion Pegasus", {
-        "Toon Summoned Skull": 1, "Blue-Eyes Toon Dragon": 1, "Toon Mermaid": 2, "Toon Alligator": 2, "Mystic Tomato": 2, "D.D. Warrior Lady": 1,
-        "Manga Ryu-Ran": 2, "Relinquished": 1, "Magician of Faith": 1, "Hane-Hane": 1, "Sangan": 1,
-        "Spirit Reaper": 1,
-        "Toon World": 3, "Black Illusion Ritual": 1, "Polymerization": 1, "Mind Control": 1, "Pot of Greed": 1,
-        "Graceful Charity": 1, "Mystical Space Typhoon": 1, "Card Destruction": 1, "Swords of Revealing Light": 1,
-        "Nobleman of Crossout": 1,
-        "Shadow Spell": 1, "Draining Shield": 1, "Sakuretsu Armor": 1, "Dust Tornado": 1, "Call of the Haunted": 1,
-        "Magic Cylinder": 1, "Waboku": 1, "Negate Attack": 1, "Trap Hole": 1, "Torrential Tribute": 1,
-        "Ultimate Offering": 1, "Ring of Destruction": 1,
-    }, {"Thousand-Eyes Restrict": 1, "Bickuribox": 1}),
+        "Relinquished": 2, "Sonic Bird": 2, "Thousand-Eyes Idol": 2, "Illusionist Faceless Mage": 1,
+        "Toon Summoned Skull": 1, "Toon Alligator": 1, "Mystic Tomato": 2, "Sangan": 1, "Magician of Faith": 1,
+        "Spirit Reaper": 1, "D.D. Warrior Lady": 1, "Big Shield Gardna": 1, "Hane-Hane": 1,
+        "Pot of Greed": 1, "Graceful Charity": 1, "Mystical Space Typhoon": 1, "Black Illusion Ritual": 2,
+        "Toon World": 1, "Polymerization": 1, "Mind Control": 1, "Swords of Revealing Light": 1,
+        "Nobleman of Crossout": 1, "Premature Burial": 1, "Book of Moon": 1,
+        "Magic Cylinder": 1, "Ring of Destruction": 1, "Torrential Tribute": 1, "Sakuretsu Armor": 1,
+        "Dust Tornado": 1, "Call of the Haunted": 1, "Shadow Spell": 1, "Negate Attack": 1, "Trap Hole": 1,
+        "Draining Shield": 1, "Waboku": 1,
+    }, {"Thousand-Eyes Restrict": 1}),
     ("goat_bakura", "Yami Bakura", {
         "Dark Necrofear": 1, "Headless Knight": 1, "Earthbound Spirit": 2, "Souls of the Forgotten": 1,
         "The Gross Ghost of Fled Dreams": 1, "The Portrait's Secret": 1, "Whiptail Crow": 1, "Sangan": 1,
@@ -119,20 +120,7 @@ DECKS = [
     }, {}),
 ]
 # Comparison-only decks: tested against the set (python goat_set.py compare), never shipped.
-# Pegasus B: Relinquished / Thousand-Eyes plan with only a few Toons, because the CPU plays Toons poorly.
-ALT_DECKS = [
-    ("goat_pegasus_b", "Pegasus B (Relinquished)", {
-        "Relinquished": 2, "Sonic Bird": 2, "Thousand-Eyes Idol": 2, "Illusionist Faceless Mage": 1,
-        "Toon Summoned Skull": 1, "Toon Alligator": 1, "Mystic Tomato": 2, "Sangan": 1, "Magician of Faith": 1,
-        "Spirit Reaper": 1, "D.D. Warrior Lady": 1, "Big Shield Gardna": 1, "Hane-Hane": 1,
-        "Pot of Greed": 1, "Graceful Charity": 1, "Mystical Space Typhoon": 1, "Black Illusion Ritual": 2,
-        "Toon World": 1, "Polymerization": 1, "Mind Control": 1, "Swords of Revealing Light": 1,
-        "Nobleman of Crossout": 1, "Premature Burial": 1, "Book of Moon": 1,
-        "Magic Cylinder": 1, "Ring of Destruction": 1, "Torrential Tribute": 1, "Sakuretsu Armor": 1,
-        "Dust Tornado": 1, "Call of the Haunted": 1, "Shadow Spell": 1, "Negate Attack": 1, "Trap Hole": 1,
-        "Draining Shield": 1, "Waboku": 1,
-    }, {"Thousand-Eyes Restrict": 1}),
-]
+ALT_DECKS = []  # Pegasus B was promoted into DECKS (round 4)
 COMPARE_DIR = HERE / "Testing" / "source-v3-compare"
 FORBIDDEN_ENGINES = {"Black Luster Soldier - Envoy of the Beginning", "Chaos Sorcerer", "Metamorphosis",
                      "Thousand-Eyes Restrict_main", "Sinister Serpent", "Tsukuyomi", "Exodia the Forbidden One"}

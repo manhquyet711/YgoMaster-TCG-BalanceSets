@@ -19,7 +19,7 @@ vs Mai
 [IDS_SOLO.CHAPTER20330022]
 Yugi Muto vs Maximillion Pegasus
 [IDS_SOLO.CHAPTER20330022_EXPLANATION]
-Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 2 Extra. You play Yugi Muto, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Yugi Muto, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20330022_MAPLABEL]
 vs Pegasus
 [IDS_SOLO.CHAPTER20330023]
@@ -41,7 +41,7 @@ Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Yugi Muto, 40 cards + 2
 [IDS_SOLO.CHAPTER20330025_MAPLABEL]
 vs Ishizu
 [IDS_SOLO.GATE2033]
-Balanced Characters - Yugi Muto
+Goat Era - Yugi Muto
 [IDS_SOLO.GATE2033_EXPLANATION]
 Choose an opponent. You play Yugi Muto's fixed deck.
 [IDS_SOLO.CHAPTER20340018]
@@ -65,7 +65,7 @@ vs Mai
 [IDS_SOLO.CHAPTER20340022]
 Seto Kaiba vs Maximillion Pegasus
 [IDS_SOLO.CHAPTER20340022_EXPLANATION]
-Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 2 Extra. You play Seto Kaiba, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Seto Kaiba, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20340022_MAPLABEL]
 vs Pegasus
 [IDS_SOLO.CHAPTER20340023]
@@ -87,7 +87,7 @@ Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Seto Kaiba, 40 cards + 
 [IDS_SOLO.CHAPTER20340025_MAPLABEL]
 vs Ishizu
 [IDS_SOLO.GATE2034]
-Balanced Characters - Seto Kaiba
+Goat Era - Seto Kaiba
 [IDS_SOLO.GATE2034_EXPLANATION]
 Choose an opponent. You play Seto Kaiba's fixed deck.
 [IDS_SOLO.CHAPTER20350018]
@@ -111,7 +111,7 @@ vs Mai
 [IDS_SOLO.CHAPTER20350022]
 Joey Wheeler vs Maximillion Pegasus
 [IDS_SOLO.CHAPTER20350022_EXPLANATION]
-Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 2 Extra. You play Joey Wheeler, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Joey Wheeler, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20350022_MAPLABEL]
 vs Pegasus
 [IDS_SOLO.CHAPTER20350023]
@@ -133,7 +133,7 @@ Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Joey Wheeler, 40 cards 
 [IDS_SOLO.CHAPTER20350025_MAPLABEL]
 vs Ishizu
 [IDS_SOLO.GATE2035]
-Balanced Characters - Joey Wheeler
+Goat Era - Joey Wheeler
 [IDS_SOLO.GATE2035_EXPLANATION]
 Choose an opponent. You play Joey Wheeler's fixed deck.
 [IDS_SOLO.CHAPTER20360018]
@@ -157,7 +157,7 @@ vs Joey
 [IDS_SOLO.CHAPTER20360022]
 Mai Valentine vs Maximillion Pegasus
 [IDS_SOLO.CHAPTER20360022_EXPLANATION]
-Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 2 Extra. You play Mai Valentine, 40 cards. Fixed decks, 8000 LP each.
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Mai Valentine, 40 cards. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20360022_MAPLABEL]
 vs Pegasus
 [IDS_SOLO.CHAPTER20360023]
@@ -179,53 +179,53 @@ Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Mai Valentine, 40 cards
 [IDS_SOLO.CHAPTER20360025_MAPLABEL]
 vs Ishizu
 [IDS_SOLO.GATE2036]
-Balanced Characters - Mai Valentine
+Goat Era - Mai Valentine
 [IDS_SOLO.GATE2036_EXPLANATION]
 Choose an opponent. You play Mai Valentine's fixed deck.
 [IDS_SOLO.CHAPTER20370018]
 Maximillion Pegasus vs Yugi Muto
 [IDS_SOLO.CHAPTER20370018_EXPLANATION]
-Opponent: Yugi Muto, Dark Magician deck, 40 cards + 2 Extra. You play Maximillion Pegasus, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+Opponent: Yugi Muto, Dark Magician deck, 40 cards + 2 Extra. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20370018_MAPLABEL]
 vs Yugi
 [IDS_SOLO.CHAPTER20370019]
 Maximillion Pegasus vs Seto Kaiba
 [IDS_SOLO.CHAPTER20370019_EXPLANATION]
-Opponent: Seto Kaiba, Blue-Eyes White Dragon deck, 40 cards + 2 Extra. You play Maximillion Pegasus, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+Opponent: Seto Kaiba, Blue-Eyes White Dragon deck, 40 cards + 2 Extra. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20370019_MAPLABEL]
 vs Kaiba
 [IDS_SOLO.CHAPTER20370020]
 Maximillion Pegasus vs Joey Wheeler
 [IDS_SOLO.CHAPTER20370020_EXPLANATION]
-Opponent: Joey Wheeler, Red-Eyes Black Dragon deck, 40 cards + 2 Extra. You play Maximillion Pegasus, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+Opponent: Joey Wheeler, Red-Eyes Black Dragon deck, 40 cards + 2 Extra. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20370020_MAPLABEL]
 vs Joey
 [IDS_SOLO.CHAPTER20370021]
 Maximillion Pegasus vs Mai Valentine
 [IDS_SOLO.CHAPTER20370021_EXPLANATION]
-Opponent: Mai Valentine, Harpie Lady Sisters deck, 40 cards. You play Maximillion Pegasus, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+Opponent: Mai Valentine, Harpie Lady Sisters deck, 40 cards. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20370021_MAPLABEL]
 vs Mai
 [IDS_SOLO.CHAPTER20370023]
 Maximillion Pegasus vs Yami Bakura
 [IDS_SOLO.CHAPTER20370023_EXPLANATION]
-Opponent: Yami Bakura, Dark Necrofear deck, 40 cards. You play Maximillion Pegasus, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+Opponent: Yami Bakura, Dark Necrofear deck, 40 cards. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20370023_MAPLABEL]
 vs Bakura
 [IDS_SOLO.CHAPTER20370024]
 Maximillion Pegasus vs Marik Ishtar
 [IDS_SOLO.CHAPTER20370024_EXPLANATION]
-Opponent: Marik Ishtar, Lava Golem deck, 40 cards. You play Maximillion Pegasus, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+Opponent: Marik Ishtar, Lava Golem deck, 40 cards. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20370024_MAPLABEL]
 vs Marik
 [IDS_SOLO.CHAPTER20370025]
 Maximillion Pegasus vs Ishizu Ishtar
 [IDS_SOLO.CHAPTER20370025_EXPLANATION]
-Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Maximillion Pegasus, 40 cards + 2 Extra. Fixed decks, 8000 LP each.
+Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Maximillion Pegasus, 40 cards + 1 Extra. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20370025_MAPLABEL]
 vs Ishizu
 [IDS_SOLO.GATE2037]
-Balanced Characters - Maximillion Pegasus
+Goat Era - Maximillion Pegasus
 [IDS_SOLO.GATE2037_EXPLANATION]
 Choose an opponent. You play Maximillion Pegasus's fixed deck.
 [IDS_SOLO.CHAPTER20380018]
@@ -255,7 +255,7 @@ vs Mai
 [IDS_SOLO.CHAPTER20380022]
 Yami Bakura vs Maximillion Pegasus
 [IDS_SOLO.CHAPTER20380022_EXPLANATION]
-Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 2 Extra. You play Yami Bakura, 40 cards. Fixed decks, 8000 LP each.
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Yami Bakura, 40 cards. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20380022_MAPLABEL]
 vs Pegasus
 [IDS_SOLO.CHAPTER20380024]
@@ -271,7 +271,7 @@ Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Yami Bakura, 40 cards. 
 [IDS_SOLO.CHAPTER20380025_MAPLABEL]
 vs Ishizu
 [IDS_SOLO.GATE2038]
-Balanced Characters - Yami Bakura
+Goat Era - Yami Bakura
 [IDS_SOLO.GATE2038_EXPLANATION]
 Choose an opponent. You play Yami Bakura's fixed deck.
 [IDS_SOLO.CHAPTER20390018]
@@ -301,7 +301,7 @@ vs Mai
 [IDS_SOLO.CHAPTER20390022]
 Marik Ishtar vs Maximillion Pegasus
 [IDS_SOLO.CHAPTER20390022_EXPLANATION]
-Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 2 Extra. You play Marik Ishtar, 40 cards. Fixed decks, 8000 LP each.
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Marik Ishtar, 40 cards. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20390022_MAPLABEL]
 vs Pegasus
 [IDS_SOLO.CHAPTER20390023]
@@ -317,7 +317,7 @@ Opponent: Ishizu Ishtar, Mudora deck, 40 cards. You play Marik Ishtar, 40 cards.
 [IDS_SOLO.CHAPTER20390025_MAPLABEL]
 vs Ishizu
 [IDS_SOLO.GATE2039]
-Balanced Characters - Marik Ishtar
+Goat Era - Marik Ishtar
 [IDS_SOLO.GATE2039_EXPLANATION]
 Choose an opponent. You play Marik Ishtar's fixed deck.
 [IDS_SOLO.CHAPTER20400018]
@@ -347,7 +347,7 @@ vs Mai
 [IDS_SOLO.CHAPTER20400022]
 Ishizu Ishtar vs Maximillion Pegasus
 [IDS_SOLO.CHAPTER20400022_EXPLANATION]
-Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 2 Extra. You play Ishizu Ishtar, 40 cards. Fixed decks, 8000 LP each.
+Opponent: Maximillion Pegasus, Relinquished deck, 40 cards + 1 Extra. You play Ishizu Ishtar, 40 cards. Fixed decks, 8000 LP each.
 [IDS_SOLO.CHAPTER20400022_MAPLABEL]
 vs Pegasus
 [IDS_SOLO.CHAPTER20400023]
@@ -363,6 +363,6 @@ Opponent: Marik Ishtar, Lava Golem deck, 40 cards. You play Ishizu Ishtar, 40 ca
 [IDS_SOLO.CHAPTER20400024_MAPLABEL]
 vs Marik
 [IDS_SOLO.GATE2040]
-Balanced Characters - Ishizu Ishtar
+Goat Era - Ishizu Ishtar
 [IDS_SOLO.GATE2040_EXPLANATION]
 Choose an opponent. You play Ishizu Ishtar's fixed deck.

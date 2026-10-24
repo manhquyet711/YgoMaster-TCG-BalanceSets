@@ -173,5 +173,54 @@
     "displayName": "Ishizu Ishtar",
     "deckRevision": "source-v3",
     "deckFile": "Decks/source-v3/goat_ishizu.json"
+  },
+  {
+    "id": "royale_dark_magician",
+    "presentationId": "royale_dark_magician",
+    "displayName": "Dark Magician (Yugi)",
+    "deckRevision": "source-v4",
+    "deckFile": "Decks/source-v4/royale_dark_magician.json"
+  },
+  {
+    "id": "royale_blue_eyes",
+    "presentationId": "royale_blue_eyes",
+    "displayName": "Blue-Eyes (Kaiba)",
+    "deckRevision": "source-v4",
+    "deckFile": "Decks/source-v4/royale_blue_eyes.json"
+  },
+  {
+    "id": "royale_gearfried",
+    "presentationId": "royale_gearfried",
+    "displayName": "Gearfried (Joey)",
+    "deckRevision": "source-v4",
+    "deckFile": "Decks/source-v4/royale_gearfried.json"
+  },
+  {
+    "id": "royale_lava_golem",
+    "presentationId": "royale_lava_golem",
+    "displayName": "Lava Golem (Marik)",
+    "deckRevision": "source-v4",
+    "deckFile": "Decks/source-v4/royale_lava_golem.json"
+  },
+  {
+    "id": "royale_legendary_ocean",
+    "presentationId": "royale_legendary_ocean",
+    "displayName": "Legendary Ocean (Mako)",
+    "deckRevision": "source-v4",
+    "deckFile": "Decks/source-v4/royale_legendary_ocean.json"
+  },
+  {
+    "id": "royale_relinquished",
+    "presentationId": "royale_relinquished",
+    "displayName": "Relinquished (Pegasus)",
+    "deckRevision": "source-v4",
+    "deckFile": "Decks/source-v4/royale_relinquished.json"
+  },
+  {
+    "id": "royale_des_gardius",
+    "presentationId": "royale_des_gardius",
+    "displayName": "Des Gardius (Bakura)",
+    "deckRevision": "source-v4",
+    "deckFile": "Decks/source-v4/royale_des_gardius.json"
   }
 ]

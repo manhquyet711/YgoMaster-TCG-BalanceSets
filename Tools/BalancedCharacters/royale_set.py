@@ -6,9 +6,11 @@ The decks are played as printed ("Royale rules": no Forbidden/Limited List).
 
 Usage:
   python -I royale_set.py build      check every card is in Master Duel, write Testing/royale/*.json
+  python -I royale_set.py write      write the deck set's source lists (SourceDecks/source-v4), for content.py
   python -I npc_balance.py run --revision royale --decks-dir Testing/royale --games 20
 
-Nothing here is added to the game. Shipping the set would mean a new revision through SourceDecks.
+The game uses the set as deck revision source-v4 (its own Solo folder, "Duel Royale"): `write`, then
+content.py resolve/packs like the other sets.
 """
 import collections
 import json
@@ -21,13 +23,13 @@ OUT = HERE / "Testing" / "royale"
 
 # deck name in decklists.json: (character id, display name)
 DECKS = {
-    "Dark Magician": ("royale_dark_magician", "Royale: Dark Magician (Yugi)"),
-    "Blue-Eyes White Dragon": ("royale_blue_eyes", "Royale: Blue-Eyes (Kaiba)"),
-    "Gearfried the Swordmaster": ("royale_gearfried", "Royale: Gearfried (Joey)"),
-    "Lava Golem": ("royale_lava_golem", "Royale: Lava Golem (Marik)"),
-    "A Legendary Ocean": ("royale_legendary_ocean", "Royale: Legendary Ocean (Mako)"),
-    "Relinquished": ("royale_relinquished", "Royale: Relinquished (Pegasus)"),
-    "Masked Beast Des Gardius": ("royale_des_gardius", "Royale: Des Gardius (Bakura)"),
+    "Dark Magician": ("royale_dark_magician", "Dark Magician (Yugi)"),
+    "Blue-Eyes White Dragon": ("royale_blue_eyes", "Blue-Eyes (Kaiba)"),
+    "Gearfried the Swordmaster": ("royale_gearfried", "Gearfried (Joey)"),
+    "Lava Golem": ("royale_lava_golem", "Lava Golem (Marik)"),
+    "A Legendary Ocean": ("royale_legendary_ocean", "Legendary Ocean (Mako)"),
+    "Relinquished": ("royale_relinquished", "Relinquished (Pegasus)"),
+    "Masked Beast Des Gardius": ("royale_des_gardius", "Des Gardius (Bakura)"),
 }
 EXTRA = {"Thousand-Eyes Restrict", "Sanwitch"}
 
@@ -72,5 +74,36 @@ def build():
     print("wrote %d test decks to %s (game data unchanged)" % (len(lists), OUT))
 
 
+REVISION = "source-v4"
+
+
+def roster():
+    """(character id, display name, main count, extra count) rows for content.py."""
+    lists = json.loads(LISTS.read_text(encoding="utf-8"))
+    return [(DECKS[name][0], DECKS[name][1], sum(q for c, q in cards.items() if c not in EXTRA),
+             sum(q for c, q in cards.items() if c in EXTRA)) for name, cards in lists.items()]
+
+
+def write():
+    sys.path.insert(0, str(HERE))
+    import content
+    out = content.MODE / "SourceDecks" / REVISION
+    out.mkdir(parents=True, exist_ok=True)
+    lists = json.loads(LISTS.read_text(encoding="utf-8"))
+    for deck_name, cards in lists.items():
+        cid, display = DECKS[deck_name]
+        main = {c: q for c, q in cards.items() if c not in EXTRA}
+        extra = {c: q for c, q in cards.items() if c in EXTRA}
+        doc = {"schemaVersion": 1, "characterId": cid, "displayName": display, "sourcePhoto": None,
+               "verificationStatus": "official",
+               "design": "Konami OCG Duel Royale Deck Set (DR01/DR02), %s Deck, as printed" % deck_name,
+               "expectedMainCount": sum(main.values()), "expectedExtraCount": sum(extra.values()),
+               "main": [{"name": k, "quantity": v, "status": "official"} for k, v in main.items()],
+               "extra": [{"name": k, "quantity": v, "status": "official"} for k, v in extra.items()],
+               "side": []}
+        (out / (cid + ".json")).write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print("wrote %d source decks to %s" % (len(lists), out))
+
+
 if __name__ == "__main__":
-    {"build": build}[sys.argv[1]]()
+    {"build": build, "write": write}[sys.argv[1]]()

@@ -26,6 +26,16 @@ namespace YgoMaster
 
         void SeedBalancedReferenceDecks(Player player)
         {
+            // One reference deck per character of every loaded set, named with the set's prefix
+            // ("Balanced - ", "Goat Era - ", "Royale - ") so the deck list groups them.
+            foreach (var set in balancedSets)
+            {
+                SeedBalancedReferenceDecks(player, set.Catalog, set.Revision, set.DeckPrefix ?? BalancedReferenceDeckPrefix);
+            }
+        }
+
+        void SeedBalancedReferenceDecks(Player player, CharacterCatalog balancedCatalog, string balancedDeckRevision, string prefix)
+        {
             if (balancedCatalog == null || string.IsNullOrEmpty(balancedDeckRevision))
             {
                 return;
@@ -39,13 +49,16 @@ namespace YgoMaster
                 bool changed = false;
                 foreach (string id in balancedCatalog.Ids)
                 {
+                    // Marker = revision plus the deck's fingerprint, so a deck tuned within the same revision
+                    // (for example a balance round) also updates. Older markers hold the revision only.
+                    string current = balancedDeckRevision + ":" + balancedCatalog.Fingerprint(id);
                     string givenRevision;
                     bool wasGiven = given.TryGetValue(id, out givenRevision);
-                    if (wasGiven && givenRevision == balancedDeckRevision)
+                    if (wasGiven && givenRevision == current)
                     {
                         continue;
                     }
-                    string name = BalancedReferenceDeckName(balancedCatalog.Name(id));
+                    string name = prefix + balancedCatalog.Name(id);
                     DeckInfo existing = player.Decks.Values.FirstOrDefault(x =>
                         string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase));
                     if (existing == null && !wasGiven)
@@ -75,7 +88,7 @@ namespace YgoMaster
                         existing.TimeEdited = Utils.GetEpochTime();
                         existing.Save();
                     }
-                    given[id] = balancedDeckRevision;
+                    given[id] = current;
                     changed = true;
                 }
                 if (changed)

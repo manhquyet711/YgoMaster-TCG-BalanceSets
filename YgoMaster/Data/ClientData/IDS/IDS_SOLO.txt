@@ -1,3 +1,11 @@
+[IDS_SOLO.GATE2103]
+Duel Royale
+[IDS_SOLO.GATE2103_EXPLANATION]]
+Konami's seven official Duel Royale decks, as printed: Dark Magician, Blue-Eyes, Gearfried, Lava Golem, A Legendary Ocean, Relinquished and Des Gardius. Pick one, then beat every other deck.
+[IDS_SOLO.GATE2104]
+Goat Era Duelists
+[IDS_SOLO.GATE2104_EXPLANATION]]
+Eight duelists with fixed decks built from cards legal in the 2005 Goat format. Pick a character, then beat every opponent.
 [IDS_SOLO.GATE2109]
 Master Duel Basics
 [IDS_SOLO.GATE2109_EXPLANATION]]
@@ -5,7 +13,7 @@ The original Master Duel Solo gates: Tutorial and the basic story gates.
 [IDS_SOLO.GATE2102]
 Balanced Characters
 [IDS_SOLO.GATE2102_EXPLANATION]]
-Fixed character decks, balanced against each other. Pick a character, then beat every opponent. Change the deck set in the Settings Editor.
+u/Rosehn's fixed character decks, balanced against each other. Pick a character, then beat every opponent.
 [IDS_SOLO.GATE2101]
 Format Challenges
 [IDS_SOLO.GATE2101_EXPLANATION]]

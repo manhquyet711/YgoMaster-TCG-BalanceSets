@@ -155,7 +155,29 @@ Mystic Tomato and other support. Same set rules as the other v3 decks.
 
 It plays only against the 8 v3 decks (`npc_balance.py --only goat_pegasus_b`, 20 games each,
 including Toon Pegasus head to head), so both Pegasus versions get win rates against the same
-opponents. Queued after round 3; results go to `source-v3-compare/SUMMARY.md`.
+opponents. Results: `source-v3-compare/SUMMARY.md`.
+
+**Result, 2026-10-23** (160 duels against the round-3 decks, 0 errors):
+
+| Opponent | Toon Pegasus (round 3) | Pegasus B |
+|---|---|---|
+| Yugi Muto | 55% | 85% |
+| Seto Kaiba | 10% | 65% |
+| Yami Bakura | 35% | 50% |
+| Joey Wheeler | 20% | 50% |
+| Mai Valentine | 20% | 40% |
+| Marik Ishtar | 10% | 30% |
+| Ishizu Ishtar | 5% | 15% |
+| **Overall** | **29%** | **48%** against the other 7 (52% counting the head to head) |
+| Head to head | | Pegasus B wins 80% |
+
+Pegasus B lands in the 40-60% range on his first try: the Relinquished plan works for the CPU where
+Toon World does not. Ishizu stays his worst matchup (her Fairy traps and Mudora). Recommendation:
+replace Toon Pegasus with Pegasus B in the next v3 round.
+
+**Done (2026-10-23):** Pegasus B is now the Goat Era Duelists Pegasus (`goat_pegasus` in `goat_set.py`,
+same gate and progress). Players' "Goat Era - Maximillion Pegasus" reference deck updates to the new list:
+reference decks now update whenever a deck's cards change, not only on a new revision.
 
 ## Duel Royale (test only, not in the game)
 

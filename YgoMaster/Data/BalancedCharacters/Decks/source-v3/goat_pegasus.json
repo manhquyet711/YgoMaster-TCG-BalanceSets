@@ -2,39 +2,39 @@
   "schemaVersion": 1,
   "characterId": "goat_pegasus",
   "expectedMainCount": 40,
-  "expectedExtraCount": 2,
+  "expectedExtraCount": 1,
   "revision": "source-v3",
   "main": [
+    {
+      "cardId": 4737,
+      "quantity": 2
+    },
+    {
+      "cardId": 4929,
+      "quantity": 2
+    },
+    {
+      "cardId": 4739,
+      "quantity": 2
+    },
+    {
+      "cardId": 4048,
+      "quantity": 1
+    },
     {
       "cardId": 4735,
       "quantity": 1
     },
     {
-      "cardId": 4773,
-      "quantity": 1
-    },
-    {
-      "cardId": 4734,
-      "quantity": 2
-    },
-    {
       "cardId": 4387,
-      "quantity": 2
+      "quantity": 1
     },
     {
       "cardId": 4930,
       "quantity": 2
     },
     {
-      "cardId": 5719,
-      "quantity": 1
-    },
-    {
-      "cardId": 4733,
-      "quantity": 2
-    },
-    {
-      "cardId": 4737,
+      "cardId": 4054,
       "quantity": 1
     },
     {
@@ -42,31 +42,19 @@
       "quantity": 1
     },
     {
-      "cardId": 4547,
-      "quantity": 1
-    },
-    {
-      "cardId": 4054,
-      "quantity": 1
-    },
-    {
       "cardId": 5526,
       "quantity": 1
     },
     {
-      "cardId": 4798,
-      "quantity": 3
-    },
-    {
-      "cardId": 4802,
+      "cardId": 5719,
       "quantity": 1
     },
     {
-      "cardId": 4837,
+      "cardId": 4764,
       "quantity": 1
     },
     {
-      "cardId": 4817,
+      "cardId": 4547,
       "quantity": 1
     },
     {
@@ -82,7 +70,19 @@
       "quantity": 1
     },
     {
-      "cardId": 4821,
+      "cardId": 4802,
+      "quantity": 2
+    },
+    {
+      "cardId": 4798,
+      "quantity": 1
+    },
+    {
+      "cardId": 4837,
+      "quantity": 1
+    },
+    {
+      "cardId": 4817,
       "quantity": 1
     },
     {
@@ -94,11 +94,23 @@
       "quantity": 1
     },
     {
-      "cardId": 4675,
+      "cardId": 4966,
       "quantity": 1
     },
     {
-      "cardId": 5994,
+      "cardId": 5432,
+      "quantity": 1
+    },
+    {
+      "cardId": 5124,
+      "quantity": 1
+    },
+    {
+      "cardId": 5005,
+      "quantity": 1
+    },
+    {
+      "cardId": 5114,
       "quantity": 1
     },
     {
@@ -114,11 +126,7 @@
       "quantity": 1
     },
     {
-      "cardId": 5124,
-      "quantity": 1
-    },
-    {
-      "cardId": 4886,
+      "cardId": 4675,
       "quantity": 1
     },
     {
@@ -130,25 +138,17 @@
       "quantity": 1
     },
     {
-      "cardId": 5114,
+      "cardId": 5994,
       "quantity": 1
     },
     {
-      "cardId": 4851,
-      "quantity": 1
-    },
-    {
-      "cardId": 5005,
+      "cardId": 4886,
       "quantity": 1
     }
   ],
   "extra": [
     {
       "cardId": 4740,
-      "quantity": 1
-    },
-    {
-      "cardId": 4391,
       "quantity": 1
     }
   ],
