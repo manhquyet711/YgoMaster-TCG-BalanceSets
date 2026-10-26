@@ -177,11 +177,28 @@ namespace YgoMasterClient
             {
                 string modeRoot = Path.Combine(Program.DataDir, "BalancedCharacters");
                 string modePath = Path.Combine(modeRoot, "Mode.json");
-                string overlayPath = Path.Combine(modeRoot, "Generated", "Overlay.json");
-                if (File.Exists(modePath) && File.Exists(overlayPath))
+                if (File.Exists(modePath))
                 {
                     var mode = MiniJSON.Json.DeserializeStripped(File.ReadAllText(modePath)) as Dictionary<string, object>;
-                    if (mode != null && YgoMaster.Utils.GetValue<bool>(mode, "enabled"))
+                    // Every loaded deck set (Mode.json "sets", each with Revisions/<revision>/Overlay.json),
+                    // or only the single active set (Generated/Overlay.json) when "sets" is absent.
+                    var overlayPaths = new List<string>();
+                    List<object> sets;
+                    if (mode != null && YgoMaster.Utils.TryGetValue(mode, "sets", out sets))
+                    {
+                        foreach (var set in sets.OfType<Dictionary<string, object>>())
+                        {
+                            string revision = YgoMaster.Utils.GetValue<string>(set, "revision");
+                            if (!string.IsNullOrEmpty(revision) && revision.All(c => char.IsLetterOrDigit(c) || c == '-'))
+                                overlayPaths.Add(Path.Combine(modeRoot, "Revisions", revision, "Overlay.json"));
+                        }
+                    }
+                    else
+                    {
+                        overlayPaths.Add(Path.Combine(modeRoot, "Generated", "Overlay.json"));
+                    }
+                    if (mode == null || !YgoMaster.Utils.GetValue<bool>(mode, "enabled")) overlayPaths.Clear();
+                    foreach (string overlayPath in overlayPaths.Where(File.Exists))
                     {
                         var overlay = MiniJSON.Json.DeserializeStripped(File.ReadAllText(overlayPath)) as Dictionary<string, object>;
                         var chapters = YgoMaster.Utils.GetDictionary(overlay, "chapter");
