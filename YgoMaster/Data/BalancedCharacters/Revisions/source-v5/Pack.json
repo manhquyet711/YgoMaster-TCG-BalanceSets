@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "revision": "source-v5",
+  "contentVersion": "0.3.0-prototype",
+  "description": "Goat Format Strategies: 8 tournament decks (2005 Goat list), tuned for balance",
+  "activeCharacterIds": [
+    "goatfmt_goat_control",
+    "goatfmt_chaos_turbo",
+    "goatfmt_warrior",
+    "goatfmt_chaos_warrior",
+    "goatfmt_chaos_return",
+    "goatfmt_panda_burn",
+    "goatfmt_relinquished",
+    "goatfmt_flip_control"
+  ],
+  "characters": [
+    "Goat Control",
+    "Chaos Turbo",
+    "Warrior Beatdown",
+    "Chaos Warrior",
+    "Chaos Return",
+    "Panda Burn",
+    "Relinquished",
+    "Flip Control"
+  ]
+}

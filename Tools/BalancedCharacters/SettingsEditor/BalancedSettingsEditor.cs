@@ -439,6 +439,8 @@ public sealed class BalancedEditorForm : Form
                 case "source-v2": return "Balanced Characters";
                 case "source-v3": return "Goat Era Duelists";
                 case "source-v4": return "Duel Royale";
+                case "source-v5": return "Goat Format Strategies";
+                case "source-v6": return "Edison Format Strategies";
                 default: return revision;
             }
         }

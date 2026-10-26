@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "characterId": "goatfmt_goat_control",
+  "displayName": "Goat Control",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Goat Control tournament deck from Format Library (1st, PWCQ 92 (2026): the format's namesake control deck), tuned with Tools/BalancedCharacters/strategy_set.py",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 15,
+  "main": [
+    {
+      "name": "Asura Priest",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Black Luster Soldier - Envoy of the Beginning",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Breaker the Magical Warrior",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "D.D. Assailant",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "D.D. Warrior Lady",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Don Zaloog",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Exiled Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Kycoo the Ghost Destroyer",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Magician of Faith",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Mystic Swordsman LV2",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ninja Grandmaster Sasuke",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sinister Serpent",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Tribe-Infecting Virus",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Tsukuyomi",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Zaborg the Thunder Monarch",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Book of Moon",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Creature Swap",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Delinquent Duo",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Metamorphosis",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Nobleman of Crossout",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Premature Burial",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Reinforcement of the Army",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Scapegoat",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Snatch Steal",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ring of Destruction",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Royal Decree",
+      "quantity": 3,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Dark Balter the Terrible",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dark Blade the Dragon Knight",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Darkfire Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Fiend Skull Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Flame Ghost",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Flower Wolf",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gatling Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "King Dragun",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Master of Oz",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Reaper on the Nightmare",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ryu Senshi",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "The Last Warrior from Another Planet",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Thousand-Eyes Restrict",
+      "quantity": 3,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

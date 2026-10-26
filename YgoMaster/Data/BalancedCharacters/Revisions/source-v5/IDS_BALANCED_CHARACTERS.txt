@@ -1,0 +1,368 @@
+[IDS_SOLO.CHAPTER21100034]
+Goat Control vs Chaos Turbo
+[IDS_SOLO.CHAPTER21100034_EXPLANATION]
+Opponent: Chaos Turbo, Chaos Sorcerer deck, 40 cards + 15 Extra. You play Goat Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21100034_MAPLABEL]
+vs Chaos Turbo
+[IDS_SOLO.CHAPTER21100035]
+Goat Control vs Warrior Beatdown
+[IDS_SOLO.CHAPTER21100035_EXPLANATION]
+Opponent: Warrior Beatdown, Blade Knight deck, 40 cards + 15 Extra. You play Goat Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21100035_MAPLABEL]
+vs Warrior
+[IDS_SOLO.CHAPTER21100036]
+Goat Control vs Chaos Warrior
+[IDS_SOLO.CHAPTER21100036_EXPLANATION]
+Opponent: Chaos Warrior, Black Luster Soldier - Envoy of the Beginning deck, 40 cards + 15 Extra. You play Goat Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21100036_MAPLABEL]
+vs Chaos Warrior
+[IDS_SOLO.CHAPTER21100037]
+Goat Control vs Chaos Return
+[IDS_SOLO.CHAPTER21100037_EXPLANATION]
+Opponent: Chaos Return, Return from the Different Dimension deck, 40 cards + 15 Extra. You play Goat Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21100037_MAPLABEL]
+vs Chaos Return
+[IDS_SOLO.CHAPTER21100038]
+Goat Control vs Panda Burn
+[IDS_SOLO.CHAPTER21100038_EXPLANATION]
+Opponent: Panda Burn, Gyaku-Gire Panda deck, 40 cards. You play Goat Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21100038_MAPLABEL]
+vs Panda Burn
+[IDS_SOLO.CHAPTER21100039]
+Goat Control vs Relinquished
+[IDS_SOLO.CHAPTER21100039_EXPLANATION]
+Opponent: Relinquished, Relinquished deck, 40 cards + 15 Extra. You play Goat Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21100039_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.CHAPTER21100040]
+Goat Control vs Flip Control
+[IDS_SOLO.CHAPTER21100040_EXPLANATION]
+Opponent: Flip Control, Magician of Faith deck, 40 cards + 15 Extra. You play Goat Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21100040_MAPLABEL]
+vs Flip Control
+[IDS_SOLO.GATE2110]
+Goat Format - Goat Control
+[IDS_SOLO.GATE2110_EXPLANATION]
+Choose an opponent. You play Goat Control's fixed deck.
+[IDS_SOLO.CHAPTER21110033]
+Chaos Turbo vs Goat Control
+[IDS_SOLO.CHAPTER21110033_EXPLANATION]
+Opponent: Goat Control, Scapegoat deck, 40 cards + 15 Extra. You play Chaos Turbo, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21110033_MAPLABEL]
+vs Goat Control
+[IDS_SOLO.CHAPTER21110035]
+Chaos Turbo vs Warrior Beatdown
+[IDS_SOLO.CHAPTER21110035_EXPLANATION]
+Opponent: Warrior Beatdown, Blade Knight deck, 40 cards + 15 Extra. You play Chaos Turbo, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21110035_MAPLABEL]
+vs Warrior
+[IDS_SOLO.CHAPTER21110036]
+Chaos Turbo vs Chaos Warrior
+[IDS_SOLO.CHAPTER21110036_EXPLANATION]
+Opponent: Chaos Warrior, Black Luster Soldier - Envoy of the Beginning deck, 40 cards + 15 Extra. You play Chaos Turbo, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21110036_MAPLABEL]
+vs Chaos Warrior
+[IDS_SOLO.CHAPTER21110037]
+Chaos Turbo vs Chaos Return
+[IDS_SOLO.CHAPTER21110037_EXPLANATION]
+Opponent: Chaos Return, Return from the Different Dimension deck, 40 cards + 15 Extra. You play Chaos Turbo, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21110037_MAPLABEL]
+vs Chaos Return
+[IDS_SOLO.CHAPTER21110038]
+Chaos Turbo vs Panda Burn
+[IDS_SOLO.CHAPTER21110038_EXPLANATION]
+Opponent: Panda Burn, Gyaku-Gire Panda deck, 40 cards. You play Chaos Turbo, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21110038_MAPLABEL]
+vs Panda Burn
+[IDS_SOLO.CHAPTER21110039]
+Chaos Turbo vs Relinquished
+[IDS_SOLO.CHAPTER21110039_EXPLANATION]
+Opponent: Relinquished, Relinquished deck, 40 cards + 15 Extra. You play Chaos Turbo, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21110039_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.CHAPTER21110040]
+Chaos Turbo vs Flip Control
+[IDS_SOLO.CHAPTER21110040_EXPLANATION]
+Opponent: Flip Control, Magician of Faith deck, 40 cards + 15 Extra. You play Chaos Turbo, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21110040_MAPLABEL]
+vs Flip Control
+[IDS_SOLO.GATE2111]
+Goat Format - Chaos Turbo
+[IDS_SOLO.GATE2111_EXPLANATION]
+Choose an opponent. You play Chaos Turbo's fixed deck.
+[IDS_SOLO.CHAPTER21120033]
+Warrior Beatdown vs Goat Control
+[IDS_SOLO.CHAPTER21120033_EXPLANATION]
+Opponent: Goat Control, Scapegoat deck, 40 cards + 15 Extra. You play Warrior Beatdown, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21120033_MAPLABEL]
+vs Goat Control
+[IDS_SOLO.CHAPTER21120034]
+Warrior Beatdown vs Chaos Turbo
+[IDS_SOLO.CHAPTER21120034_EXPLANATION]
+Opponent: Chaos Turbo, Chaos Sorcerer deck, 40 cards + 15 Extra. You play Warrior Beatdown, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21120034_MAPLABEL]
+vs Chaos Turbo
+[IDS_SOLO.CHAPTER21120036]
+Warrior Beatdown vs Chaos Warrior
+[IDS_SOLO.CHAPTER21120036_EXPLANATION]
+Opponent: Chaos Warrior, Black Luster Soldier - Envoy of the Beginning deck, 40 cards + 15 Extra. You play Warrior Beatdown, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21120036_MAPLABEL]
+vs Chaos Warrior
+[IDS_SOLO.CHAPTER21120037]
+Warrior Beatdown vs Chaos Return
+[IDS_SOLO.CHAPTER21120037_EXPLANATION]
+Opponent: Chaos Return, Return from the Different Dimension deck, 40 cards + 15 Extra. You play Warrior Beatdown, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21120037_MAPLABEL]
+vs Chaos Return
+[IDS_SOLO.CHAPTER21120038]
+Warrior Beatdown vs Panda Burn
+[IDS_SOLO.CHAPTER21120038_EXPLANATION]
+Opponent: Panda Burn, Gyaku-Gire Panda deck, 40 cards. You play Warrior Beatdown, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21120038_MAPLABEL]
+vs Panda Burn
+[IDS_SOLO.CHAPTER21120039]
+Warrior Beatdown vs Relinquished
+[IDS_SOLO.CHAPTER21120039_EXPLANATION]
+Opponent: Relinquished, Relinquished deck, 40 cards + 15 Extra. You play Warrior Beatdown, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21120039_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.CHAPTER21120040]
+Warrior Beatdown vs Flip Control
+[IDS_SOLO.CHAPTER21120040_EXPLANATION]
+Opponent: Flip Control, Magician of Faith deck, 40 cards + 15 Extra. You play Warrior Beatdown, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21120040_MAPLABEL]
+vs Flip Control
+[IDS_SOLO.GATE2112]
+Goat Format - Warrior Beatdown
+[IDS_SOLO.GATE2112_EXPLANATION]
+Choose an opponent. You play Warrior Beatdown's fixed deck.
+[IDS_SOLO.CHAPTER21130033]
+Chaos Warrior vs Goat Control
+[IDS_SOLO.CHAPTER21130033_EXPLANATION]
+Opponent: Goat Control, Scapegoat deck, 40 cards + 15 Extra. You play Chaos Warrior, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21130033_MAPLABEL]
+vs Goat Control
+[IDS_SOLO.CHAPTER21130034]
+Chaos Warrior vs Chaos Turbo
+[IDS_SOLO.CHAPTER21130034_EXPLANATION]
+Opponent: Chaos Turbo, Chaos Sorcerer deck, 40 cards + 15 Extra. You play Chaos Warrior, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21130034_MAPLABEL]
+vs Chaos Turbo
+[IDS_SOLO.CHAPTER21130035]
+Chaos Warrior vs Warrior Beatdown
+[IDS_SOLO.CHAPTER21130035_EXPLANATION]
+Opponent: Warrior Beatdown, Blade Knight deck, 40 cards + 15 Extra. You play Chaos Warrior, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21130035_MAPLABEL]
+vs Warrior
+[IDS_SOLO.CHAPTER21130037]
+Chaos Warrior vs Chaos Return
+[IDS_SOLO.CHAPTER21130037_EXPLANATION]
+Opponent: Chaos Return, Return from the Different Dimension deck, 40 cards + 15 Extra. You play Chaos Warrior, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21130037_MAPLABEL]
+vs Chaos Return
+[IDS_SOLO.CHAPTER21130038]
+Chaos Warrior vs Panda Burn
+[IDS_SOLO.CHAPTER21130038_EXPLANATION]
+Opponent: Panda Burn, Gyaku-Gire Panda deck, 40 cards. You play Chaos Warrior, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21130038_MAPLABEL]
+vs Panda Burn
+[IDS_SOLO.CHAPTER21130039]
+Chaos Warrior vs Relinquished
+[IDS_SOLO.CHAPTER21130039_EXPLANATION]
+Opponent: Relinquished, Relinquished deck, 40 cards + 15 Extra. You play Chaos Warrior, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21130039_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.CHAPTER21130040]
+Chaos Warrior vs Flip Control
+[IDS_SOLO.CHAPTER21130040_EXPLANATION]
+Opponent: Flip Control, Magician of Faith deck, 40 cards + 15 Extra. You play Chaos Warrior, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21130040_MAPLABEL]
+vs Flip Control
+[IDS_SOLO.GATE2113]
+Goat Format - Chaos Warrior
+[IDS_SOLO.GATE2113_EXPLANATION]
+Choose an opponent. You play Chaos Warrior's fixed deck.
+[IDS_SOLO.CHAPTER21140033]
+Chaos Return vs Goat Control
+[IDS_SOLO.CHAPTER21140033_EXPLANATION]
+Opponent: Goat Control, Scapegoat deck, 40 cards + 15 Extra. You play Chaos Return, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21140033_MAPLABEL]
+vs Goat Control
+[IDS_SOLO.CHAPTER21140034]
+Chaos Return vs Chaos Turbo
+[IDS_SOLO.CHAPTER21140034_EXPLANATION]
+Opponent: Chaos Turbo, Chaos Sorcerer deck, 40 cards + 15 Extra. You play Chaos Return, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21140034_MAPLABEL]
+vs Chaos Turbo
+[IDS_SOLO.CHAPTER21140035]
+Chaos Return vs Warrior Beatdown
+[IDS_SOLO.CHAPTER21140035_EXPLANATION]
+Opponent: Warrior Beatdown, Blade Knight deck, 40 cards + 15 Extra. You play Chaos Return, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21140035_MAPLABEL]
+vs Warrior
+[IDS_SOLO.CHAPTER21140036]
+Chaos Return vs Chaos Warrior
+[IDS_SOLO.CHAPTER21140036_EXPLANATION]
+Opponent: Chaos Warrior, Black Luster Soldier - Envoy of the Beginning deck, 40 cards + 15 Extra. You play Chaos Return, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21140036_MAPLABEL]
+vs Chaos Warrior
+[IDS_SOLO.CHAPTER21140038]
+Chaos Return vs Panda Burn
+[IDS_SOLO.CHAPTER21140038_EXPLANATION]
+Opponent: Panda Burn, Gyaku-Gire Panda deck, 40 cards. You play Chaos Return, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21140038_MAPLABEL]
+vs Panda Burn
+[IDS_SOLO.CHAPTER21140039]
+Chaos Return vs Relinquished
+[IDS_SOLO.CHAPTER21140039_EXPLANATION]
+Opponent: Relinquished, Relinquished deck, 40 cards + 15 Extra. You play Chaos Return, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21140039_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.CHAPTER21140040]
+Chaos Return vs Flip Control
+[IDS_SOLO.CHAPTER21140040_EXPLANATION]
+Opponent: Flip Control, Magician of Faith deck, 40 cards + 15 Extra. You play Chaos Return, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21140040_MAPLABEL]
+vs Flip Control
+[IDS_SOLO.GATE2114]
+Goat Format - Chaos Return
+[IDS_SOLO.GATE2114_EXPLANATION]
+Choose an opponent. You play Chaos Return's fixed deck.
+[IDS_SOLO.CHAPTER21150033]
+Panda Burn vs Goat Control
+[IDS_SOLO.CHAPTER21150033_EXPLANATION]
+Opponent: Goat Control, Scapegoat deck, 40 cards + 15 Extra. You play Panda Burn, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21150033_MAPLABEL]
+vs Goat Control
+[IDS_SOLO.CHAPTER21150034]
+Panda Burn vs Chaos Turbo
+[IDS_SOLO.CHAPTER21150034_EXPLANATION]
+Opponent: Chaos Turbo, Chaos Sorcerer deck, 40 cards + 15 Extra. You play Panda Burn, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21150034_MAPLABEL]
+vs Chaos Turbo
+[IDS_SOLO.CHAPTER21150035]
+Panda Burn vs Warrior Beatdown
+[IDS_SOLO.CHAPTER21150035_EXPLANATION]
+Opponent: Warrior Beatdown, Blade Knight deck, 40 cards + 15 Extra. You play Panda Burn, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21150035_MAPLABEL]
+vs Warrior
+[IDS_SOLO.CHAPTER21150036]
+Panda Burn vs Chaos Warrior
+[IDS_SOLO.CHAPTER21150036_EXPLANATION]
+Opponent: Chaos Warrior, Black Luster Soldier - Envoy of the Beginning deck, 40 cards + 15 Extra. You play Panda Burn, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21150036_MAPLABEL]
+vs Chaos Warrior
+[IDS_SOLO.CHAPTER21150037]
+Panda Burn vs Chaos Return
+[IDS_SOLO.CHAPTER21150037_EXPLANATION]
+Opponent: Chaos Return, Return from the Different Dimension deck, 40 cards + 15 Extra. You play Panda Burn, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21150037_MAPLABEL]
+vs Chaos Return
+[IDS_SOLO.CHAPTER21150039]
+Panda Burn vs Relinquished
+[IDS_SOLO.CHAPTER21150039_EXPLANATION]
+Opponent: Relinquished, Relinquished deck, 40 cards + 15 Extra. You play Panda Burn, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21150039_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.CHAPTER21150040]
+Panda Burn vs Flip Control
+[IDS_SOLO.CHAPTER21150040_EXPLANATION]
+Opponent: Flip Control, Magician of Faith deck, 40 cards + 15 Extra. You play Panda Burn, 40 cards. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21150040_MAPLABEL]
+vs Flip Control
+[IDS_SOLO.GATE2115]
+Goat Format - Panda Burn
+[IDS_SOLO.GATE2115_EXPLANATION]
+Choose an opponent. You play Panda Burn's fixed deck.
+[IDS_SOLO.CHAPTER21160033]
+Relinquished vs Goat Control
+[IDS_SOLO.CHAPTER21160033_EXPLANATION]
+Opponent: Goat Control, Scapegoat deck, 40 cards + 15 Extra. You play Relinquished, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21160033_MAPLABEL]
+vs Goat Control
+[IDS_SOLO.CHAPTER21160034]
+Relinquished vs Chaos Turbo
+[IDS_SOLO.CHAPTER21160034_EXPLANATION]
+Opponent: Chaos Turbo, Chaos Sorcerer deck, 40 cards + 15 Extra. You play Relinquished, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21160034_MAPLABEL]
+vs Chaos Turbo
+[IDS_SOLO.CHAPTER21160035]
+Relinquished vs Warrior Beatdown
+[IDS_SOLO.CHAPTER21160035_EXPLANATION]
+Opponent: Warrior Beatdown, Blade Knight deck, 40 cards + 15 Extra. You play Relinquished, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21160035_MAPLABEL]
+vs Warrior
+[IDS_SOLO.CHAPTER21160036]
+Relinquished vs Chaos Warrior
+[IDS_SOLO.CHAPTER21160036_EXPLANATION]
+Opponent: Chaos Warrior, Black Luster Soldier - Envoy of the Beginning deck, 40 cards + 15 Extra. You play Relinquished, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21160036_MAPLABEL]
+vs Chaos Warrior
+[IDS_SOLO.CHAPTER21160037]
+Relinquished vs Chaos Return
+[IDS_SOLO.CHAPTER21160037_EXPLANATION]
+Opponent: Chaos Return, Return from the Different Dimension deck, 40 cards + 15 Extra. You play Relinquished, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21160037_MAPLABEL]
+vs Chaos Return
+[IDS_SOLO.CHAPTER21160038]
+Relinquished vs Panda Burn
+[IDS_SOLO.CHAPTER21160038_EXPLANATION]
+Opponent: Panda Burn, Gyaku-Gire Panda deck, 40 cards. You play Relinquished, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21160038_MAPLABEL]
+vs Panda Burn
+[IDS_SOLO.CHAPTER21160040]
+Relinquished vs Flip Control
+[IDS_SOLO.CHAPTER21160040_EXPLANATION]
+Opponent: Flip Control, Magician of Faith deck, 40 cards + 15 Extra. You play Relinquished, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21160040_MAPLABEL]
+vs Flip Control
+[IDS_SOLO.GATE2116]
+Goat Format - Relinquished
+[IDS_SOLO.GATE2116_EXPLANATION]
+Choose an opponent. You play Relinquished's fixed deck.
+[IDS_SOLO.CHAPTER21170033]
+Flip Control vs Goat Control
+[IDS_SOLO.CHAPTER21170033_EXPLANATION]
+Opponent: Goat Control, Scapegoat deck, 40 cards + 15 Extra. You play Flip Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21170033_MAPLABEL]
+vs Goat Control
+[IDS_SOLO.CHAPTER21170034]
+Flip Control vs Chaos Turbo
+[IDS_SOLO.CHAPTER21170034_EXPLANATION]
+Opponent: Chaos Turbo, Chaos Sorcerer deck, 40 cards + 15 Extra. You play Flip Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21170034_MAPLABEL]
+vs Chaos Turbo
+[IDS_SOLO.CHAPTER21170035]
+Flip Control vs Warrior Beatdown
+[IDS_SOLO.CHAPTER21170035_EXPLANATION]
+Opponent: Warrior Beatdown, Blade Knight deck, 40 cards + 15 Extra. You play Flip Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21170035_MAPLABEL]
+vs Warrior
+[IDS_SOLO.CHAPTER21170036]
+Flip Control vs Chaos Warrior
+[IDS_SOLO.CHAPTER21170036_EXPLANATION]
+Opponent: Chaos Warrior, Black Luster Soldier - Envoy of the Beginning deck, 40 cards + 15 Extra. You play Flip Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21170036_MAPLABEL]
+vs Chaos Warrior
+[IDS_SOLO.CHAPTER21170037]
+Flip Control vs Chaos Return
+[IDS_SOLO.CHAPTER21170037_EXPLANATION]
+Opponent: Chaos Return, Return from the Different Dimension deck, 40 cards + 15 Extra. You play Flip Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21170037_MAPLABEL]
+vs Chaos Return
+[IDS_SOLO.CHAPTER21170038]
+Flip Control vs Panda Burn
+[IDS_SOLO.CHAPTER21170038_EXPLANATION]
+Opponent: Panda Burn, Gyaku-Gire Panda deck, 40 cards. You play Flip Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21170038_MAPLABEL]
+vs Panda Burn
+[IDS_SOLO.CHAPTER21170039]
+Flip Control vs Relinquished
+[IDS_SOLO.CHAPTER21170039_EXPLANATION]
+Opponent: Relinquished, Relinquished deck, 40 cards + 15 Extra. You play Flip Control, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21170039_MAPLABEL]
+vs Relinquished
+[IDS_SOLO.GATE2117]
+Goat Format - Flip Control
+[IDS_SOLO.GATE2117_EXPLANATION]
+Choose an opponent. You play Flip Control's fixed deck.

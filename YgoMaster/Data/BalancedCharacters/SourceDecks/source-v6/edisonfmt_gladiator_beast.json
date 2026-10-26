@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "characterId": "edisonfmt_gladiator_beast",
+  "displayName": "Gladiator Beast",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Gladiator Beast tournament deck from Format Library (1st, PBR 56 (2026): tag-out beatdown with Contact Fusion), tuned with Tools/BalancedCharacters/strategy_set.py",
+  "expectedMainCount": 42,
+  "expectedExtraCount": 15,
+  "main": [
+    {
+      "name": "Elemental HERO Prisma",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Elemental HERO Stratos",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gladiator Beast Bestiari",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gladiator Beast Darius",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gladiator Beast Equeste",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Gladiator Beast Laquari",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Gladiator Beast Murmillo",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gladiator Beast Retiari",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gladiator Beast Samnite",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Gladiator Beast Secutor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gorz the Emissary of Darkness",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Rescue Cat",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Test Tiger",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Book of Moon",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Reinforcement of the Army",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Smashing Ground",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Bottomless Trap Hole",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Compulsory Evacuation Device",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Dimensional Prison",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Gladiator Beast War Chariot",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Solemn Judgment",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Trap Dustshoot",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Trap Stun",
+      "quantity": 3,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Chimeratech Fortress Dragon",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Gladiator Beast Gyzarus",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Gladiator Beast Heraklinos",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Ally of Justice Catastor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Black Rose Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Brionac, Dragon of the Ice Barrier",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Goyo Guardian",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Stardust Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Thought Ruler Archfiend",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

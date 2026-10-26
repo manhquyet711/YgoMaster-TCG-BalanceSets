@@ -59,7 +59,7 @@ namespace YgoMaster
         /// <summary>Solo folder (parent gate in Solo.json) for the Balanced Characters set (v2, or the single active set).</summary>
         const int BalancedFolderGate = 2102;
         /// <summary>Every Solo folder a deck set can use; folders without a loaded set are removed.</summary>
-        static readonly int[] BalancedSetFolders = { 2102, 2103, 2104 };
+        static readonly int[] BalancedSetFolders = { 2102, 2103, 2104, 2105, 2106 };
 
         void LoadBalancedCharacters()
         {

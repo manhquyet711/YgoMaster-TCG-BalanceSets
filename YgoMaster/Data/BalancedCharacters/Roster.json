@@ -222,5 +222,117 @@
     "displayName": "Des Gardius (Bakura)",
     "deckRevision": "source-v4",
     "deckFile": "Decks/source-v4/royale_des_gardius.json"
+  },
+  {
+    "id": "goatfmt_goat_control",
+    "presentationId": "goatfmt_goat_control",
+    "displayName": "Goat Control",
+    "deckRevision": "source-v5",
+    "deckFile": "Decks/source-v5/goatfmt_goat_control.json"
+  },
+  {
+    "id": "goatfmt_chaos_turbo",
+    "presentationId": "goatfmt_chaos_turbo",
+    "displayName": "Chaos Turbo",
+    "deckRevision": "source-v5",
+    "deckFile": "Decks/source-v5/goatfmt_chaos_turbo.json"
+  },
+  {
+    "id": "goatfmt_warrior",
+    "presentationId": "goatfmt_warrior",
+    "displayName": "Warrior Beatdown",
+    "deckRevision": "source-v5",
+    "deckFile": "Decks/source-v5/goatfmt_warrior.json"
+  },
+  {
+    "id": "goatfmt_chaos_warrior",
+    "presentationId": "goatfmt_chaos_warrior",
+    "displayName": "Chaos Warrior",
+    "deckRevision": "source-v5",
+    "deckFile": "Decks/source-v5/goatfmt_chaos_warrior.json"
+  },
+  {
+    "id": "goatfmt_chaos_return",
+    "presentationId": "goatfmt_chaos_return",
+    "displayName": "Chaos Return",
+    "deckRevision": "source-v5",
+    "deckFile": "Decks/source-v5/goatfmt_chaos_return.json"
+  },
+  {
+    "id": "goatfmt_panda_burn",
+    "presentationId": "goatfmt_panda_burn",
+    "displayName": "Panda Burn",
+    "deckRevision": "source-v5",
+    "deckFile": "Decks/source-v5/goatfmt_panda_burn.json"
+  },
+  {
+    "id": "goatfmt_relinquished",
+    "presentationId": "goatfmt_relinquished",
+    "displayName": "Relinquished",
+    "deckRevision": "source-v5",
+    "deckFile": "Decks/source-v5/goatfmt_relinquished.json"
+  },
+  {
+    "id": "goatfmt_flip_control",
+    "presentationId": "goatfmt_flip_control",
+    "displayName": "Flip Control",
+    "deckRevision": "source-v5",
+    "deckFile": "Decks/source-v5/goatfmt_flip_control.json"
+  },
+  {
+    "id": "edisonfmt_blackwing",
+    "presentationId": "edisonfmt_blackwing",
+    "displayName": "Blackwing",
+    "deckRevision": "source-v6",
+    "deckFile": "Decks/source-v6/edisonfmt_blackwing.json"
+  },
+  {
+    "id": "edisonfmt_gladiator_beast",
+    "presentationId": "edisonfmt_gladiator_beast",
+    "displayName": "Gladiator Beast",
+    "deckRevision": "source-v6",
+    "deckFile": "Decks/source-v6/edisonfmt_gladiator_beast.json"
+  },
+  {
+    "id": "edisonfmt_lightsworn",
+    "presentationId": "edisonfmt_lightsworn",
+    "displayName": "Lightsworn",
+    "deckRevision": "source-v6",
+    "deckFile": "Decks/source-v6/edisonfmt_lightsworn.json"
+  },
+  {
+    "id": "edisonfmt_hero_frog",
+    "presentationId": "edisonfmt_hero_frog",
+    "displayName": "Hero Frog",
+    "deckRevision": "source-v6",
+    "deckFile": "Decks/source-v6/edisonfmt_hero_frog.json"
+  },
+  {
+    "id": "edisonfmt_quickdraw_plant",
+    "presentationId": "edisonfmt_quickdraw_plant",
+    "displayName": "Quickdraw Plant",
+    "deckRevision": "source-v6",
+    "deckFile": "Decks/source-v6/edisonfmt_quickdraw_plant.json"
+  },
+  {
+    "id": "edisonfmt_machina_gadget",
+    "presentationId": "edisonfmt_machina_gadget",
+    "displayName": "Machina Gadget",
+    "deckRevision": "source-v6",
+    "deckFile": "Decks/source-v6/edisonfmt_machina_gadget.json"
+  },
+  {
+    "id": "edisonfmt_vayu_turbo",
+    "presentationId": "edisonfmt_vayu_turbo",
+    "displayName": "Vayu Turbo",
+    "deckRevision": "source-v6",
+    "deckFile": "Decks/source-v6/edisonfmt_vayu_turbo.json"
+  },
+  {
+    "id": "edisonfmt_cat_control",
+    "presentationId": "edisonfmt_cat_control",
+    "displayName": "Cat Control",
+    "deckRevision": "source-v6",
+    "deckFile": "Decks/source-v6/edisonfmt_cat_control.json"
   }
 ]

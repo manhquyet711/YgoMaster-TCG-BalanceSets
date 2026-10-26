@@ -484,7 +484,7 @@ namespace YgoMaster
             DontUpdateDeckEditTime = Utils.GetValue<bool>(values, "DontUpdateDeckEditTime");
             DeckListAlphabetical = Utils.GetValue<bool>(values, "DeckListAlphabetical");
             DeckListByBoxThenAlphabetical = Utils.GetValue<bool>(values, "DeckListByBoxThenAlphabetical");
-            SoloRecommendModes = values.ContainsKey("SoloRecommendModes") ? Utils.GetIntList(values, "SoloRecommendModes", true) : new List<int>() { 2100, 2101, 2102, 2104, 2103 };
+            SoloRecommendModes = values.ContainsKey("SoloRecommendModes") ? Utils.GetIntList(values, "SoloRecommendModes", true) : new List<int>() { 2100, 2101, 2102, 2104, 2103, 2105, 2106 };
             SoloRecommendSkip = values.ContainsKey("SoloRecommendSkip") ? Utils.GetIntList(values, "SoloRecommendSkip", true) : new List<int>() { 2109 };
             TradeAllowOtherPlayerToAddYourCards = Utils.GetValue<bool>(values, "TradeAllowOtherPlayerToAddYourCards");
             TradeAllowOtherPlayerToRemoveYourCards = Utils.GetValue<bool>(values, "TradeAllowOtherPlayerToRemoveYourCards");

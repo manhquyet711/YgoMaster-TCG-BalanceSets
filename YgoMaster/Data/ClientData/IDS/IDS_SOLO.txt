@@ -1,3 +1,11 @@
+[IDS_SOLO.GATE2106]
+Edison Format Strategies
+[IDS_SOLO.GATE2106_EXPLANATION]]
+Eight tournament decks from the 2010 Edison format: Blackwing, Gladiator Beast, Lightsworn, Hero Frog, Quickdraw Plant, Machina Gadget, Vayu Turbo and Cat Control. Pick one, then beat every other deck.
+[IDS_SOLO.GATE2105]
+Goat Format Strategies
+[IDS_SOLO.GATE2105_EXPLANATION]]
+Eight tournament decks from the 2005 Goat format: Goat Control, Chaos Turbo, Warrior, Chaos Warrior, Chaos Return, Panda Burn, Relinquished and Flip Control. Pick one, then beat every other deck.
 [IDS_SOLO.GATE2103]
 Duel Royale
 [IDS_SOLO.GATE2103_EXPLANATION]]

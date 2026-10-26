@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "characterId": "goatfmt_chaos_return",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 15,
+  "revision": "source-v5",
+  "main": [
+    {
+      "cardId": 5835,
+      "quantity": 1
+    },
+    {
+      "cardId": 5655,
+      "quantity": 1
+    },
+    {
+      "cardId": 5833,
+      "quantity": 2
+    },
+    {
+      "cardId": 5719,
+      "quantity": 1
+    },
+    {
+      "cardId": 6201,
+      "quantity": 3
+    },
+    {
+      "cardId": 5509,
+      "quantity": 3
+    },
+    {
+      "cardId": 4054,
+      "quantity": 1
+    },
+    {
+      "cardId": 4924,
+      "quantity": 3
+    },
+    {
+      "cardId": 5660,
+      "quantity": 1
+    },
+    {
+      "cardId": 5965,
+      "quantity": 2
+    },
+    {
+      "cardId": 5432,
+      "quantity": 2
+    },
+    {
+      "cardId": 4901,
+      "quantity": 1
+    },
+    {
+      "cardId": 4812,
+      "quantity": 1
+    },
+    {
+      "cardId": 4891,
+      "quantity": 1
+    },
+    {
+      "cardId": 4909,
+      "quantity": 1
+    },
+    {
+      "cardId": 4963,
+      "quantity": 2
+    },
+    {
+      "cardId": 4844,
+      "quantity": 1
+    },
+    {
+      "cardId": 4898,
+      "quantity": 1
+    },
+    {
+      "cardId": 4988,
+      "quantity": 3
+    },
+    {
+      "cardId": 4887,
+      "quantity": 1
+    },
+    {
+      "cardId": 6078,
+      "quantity": 1
+    },
+    {
+      "cardId": 5005,
+      "quantity": 1
+    },
+    {
+      "cardId": 4861,
+      "quantity": 3
+    },
+    {
+      "cardId": 5114,
+      "quantity": 1
+    },
+    {
+      "cardId": 5446,
+      "quantity": 1
+    },
+    {
+      "cardId": 5526,
+      "quantity": 1
+    }
+  ],
+  "extra": [
+    {
+      "cardId": 5302,
+      "quantity": 1
+    },
+    {
+      "cardId": 6204,
+      "quantity": 1
+    },
+    {
+      "cardId": 5698,
+      "quantity": 1
+    },
+    {
+      "cardId": 4174,
+      "quantity": 1
+    },
+    {
+      "cardId": 4300,
+      "quantity": 1
+    },
+    {
+      "cardId": 5338,
+      "quantity": 1
+    },
+    {
+      "cardId": 6264,
+      "quantity": 1
+    },
+    {
+      "cardId": 6265,
+      "quantity": 1
+    },
+    {
+      "cardId": 6127,
+      "quantity": 1
+    },
+    {
+      "cardId": 6126,
+      "quantity": 1
+    },
+    {
+      "cardId": 5528,
+      "quantity": 1
+    },
+    {
+      "cardId": 5319,
+      "quantity": 1
+    },
+    {
+      "cardId": 4785,
+      "quantity": 1
+    },
+    {
+      "cardId": 4740,
+      "quantity": 1
+    },
+    {
+      "cardId": 4619,
+      "quantity": 1
+    }
+  ],
+  "side": []
+}

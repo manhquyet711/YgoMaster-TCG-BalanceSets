@@ -184,7 +184,8 @@ def main():
     p.add_argument("--decks-dir", default=None,
                    help="test decks folder instead of Data/BalancedCharacters/Decks/<revision> (e.g. Testing/source-v2-tuned)")
     args = p.parse_args()
-    args.out = args.out or str(ROOT / "Docs" / "BalancedCharacters" / "Balance" / args.revision)
+    # Full path: the simulator runs from --game-dir, so a relative deck path would not be found.
+    args.out = str(Path(args.out or ROOT / "Docs" / "BalancedCharacters" / "Balance" / args.revision).resolve())
     Path(args.out).mkdir(parents=True, exist_ok=True)
     {"run": run, "summary": summary}[args.command](args)
 

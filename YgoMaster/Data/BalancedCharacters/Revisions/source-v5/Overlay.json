@@ -1,0 +1,1077 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.3.0-prototype",
+  "deckRevision": "source-v5",
+  "gate": {
+    "2110": {
+      "priority": 100,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 21109000,
+      "category": 1
+    },
+    "2111": {
+      "priority": 101,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 21119000,
+      "category": 1
+    },
+    "2112": {
+      "priority": 102,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 21129000,
+      "category": 1
+    },
+    "2113": {
+      "priority": 103,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 21139000,
+      "category": 1
+    },
+    "2114": {
+      "priority": 104,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 21149000,
+      "category": 1
+    },
+    "2115": {
+      "priority": 105,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 21159000,
+      "category": 1
+    },
+    "2116": {
+      "priority": 106,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 21169000,
+      "category": 1
+    },
+    "2117": {
+      "priority": 107,
+      "parent_gate": 0,
+      "view_gate": 0,
+      "unlock_id": 0,
+      "clear_chapter": 21179000,
+      "category": 1
+    }
+  },
+  "chapter": {
+    "2110": {
+      "21100034": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3060,
+        "anime": 0
+      },
+      "21100035": {
+        "parent_chapter": 21100034,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3061,
+        "anime": 0
+      },
+      "21100036": {
+        "parent_chapter": 21100035,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3062,
+        "anime": 0
+      },
+      "21100037": {
+        "parent_chapter": 21100036,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3063,
+        "anime": 0
+      },
+      "21100038": {
+        "parent_chapter": 21100037,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3064,
+        "anime": 0
+      },
+      "21100039": {
+        "parent_chapter": 21100038,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3065,
+        "anime": 0
+      },
+      "21100040": {
+        "parent_chapter": 21100039,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3066,
+        "anime": 0
+      },
+      "21109000": {
+        "parent_chapter": 21100040,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2111": {
+      "21110033": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3059,
+        "anime": 0
+      },
+      "21110035": {
+        "parent_chapter": 21110033,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3061,
+        "anime": 0
+      },
+      "21110036": {
+        "parent_chapter": 21110035,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3062,
+        "anime": 0
+      },
+      "21110037": {
+        "parent_chapter": 21110036,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3063,
+        "anime": 0
+      },
+      "21110038": {
+        "parent_chapter": 21110037,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3064,
+        "anime": 0
+      },
+      "21110039": {
+        "parent_chapter": 21110038,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3065,
+        "anime": 0
+      },
+      "21110040": {
+        "parent_chapter": 21110039,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3066,
+        "anime": 0
+      },
+      "21119000": {
+        "parent_chapter": 21110040,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2112": {
+      "21120033": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3059,
+        "anime": 0
+      },
+      "21120034": {
+        "parent_chapter": 21120033,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3060,
+        "anime": 0
+      },
+      "21120036": {
+        "parent_chapter": 21120034,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3062,
+        "anime": 0
+      },
+      "21120037": {
+        "parent_chapter": 21120036,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3063,
+        "anime": 0
+      },
+      "21120038": {
+        "parent_chapter": 21120037,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3064,
+        "anime": 0
+      },
+      "21120039": {
+        "parent_chapter": 21120038,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3065,
+        "anime": 0
+      },
+      "21120040": {
+        "parent_chapter": 21120039,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3066,
+        "anime": 0
+      },
+      "21129000": {
+        "parent_chapter": 21120040,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2113": {
+      "21130033": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3059,
+        "anime": 0
+      },
+      "21130034": {
+        "parent_chapter": 21130033,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3060,
+        "anime": 0
+      },
+      "21130035": {
+        "parent_chapter": 21130034,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3061,
+        "anime": 0
+      },
+      "21130037": {
+        "parent_chapter": 21130035,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3063,
+        "anime": 0
+      },
+      "21130038": {
+        "parent_chapter": 21130037,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3064,
+        "anime": 0
+      },
+      "21130039": {
+        "parent_chapter": 21130038,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3065,
+        "anime": 0
+      },
+      "21130040": {
+        "parent_chapter": 21130039,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3066,
+        "anime": 0
+      },
+      "21139000": {
+        "parent_chapter": 21130040,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2114": {
+      "21140033": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3059,
+        "anime": 0
+      },
+      "21140034": {
+        "parent_chapter": 21140033,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3060,
+        "anime": 0
+      },
+      "21140035": {
+        "parent_chapter": 21140034,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3061,
+        "anime": 0
+      },
+      "21140036": {
+        "parent_chapter": 21140035,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3062,
+        "anime": 0
+      },
+      "21140038": {
+        "parent_chapter": 21140036,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3064,
+        "anime": 0
+      },
+      "21140039": {
+        "parent_chapter": 21140038,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3065,
+        "anime": 0
+      },
+      "21140040": {
+        "parent_chapter": 21140039,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3066,
+        "anime": 0
+      },
+      "21149000": {
+        "parent_chapter": 21140040,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2115": {
+      "21150033": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3059,
+        "anime": 0
+      },
+      "21150034": {
+        "parent_chapter": 21150033,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3060,
+        "anime": 0
+      },
+      "21150035": {
+        "parent_chapter": 21150034,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3061,
+        "anime": 0
+      },
+      "21150036": {
+        "parent_chapter": 21150035,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3062,
+        "anime": 0
+      },
+      "21150037": {
+        "parent_chapter": 21150036,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3063,
+        "anime": 0
+      },
+      "21150039": {
+        "parent_chapter": 21150037,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3065,
+        "anime": 0
+      },
+      "21150040": {
+        "parent_chapter": 21150039,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3066,
+        "anime": 0
+      },
+      "21159000": {
+        "parent_chapter": 21150040,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2116": {
+      "21160033": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3059,
+        "anime": 0
+      },
+      "21160034": {
+        "parent_chapter": 21160033,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3060,
+        "anime": 0
+      },
+      "21160035": {
+        "parent_chapter": 21160034,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3061,
+        "anime": 0
+      },
+      "21160036": {
+        "parent_chapter": 21160035,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3062,
+        "anime": 0
+      },
+      "21160037": {
+        "parent_chapter": 21160036,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3063,
+        "anime": 0
+      },
+      "21160038": {
+        "parent_chapter": 21160037,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3064,
+        "anime": 0
+      },
+      "21160040": {
+        "parent_chapter": 21160038,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3066,
+        "anime": 0
+      },
+      "21169000": {
+        "parent_chapter": 21160040,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    },
+    "2117": {
+      "21170033": {
+        "parent_chapter": 0,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3059,
+        "anime": 0
+      },
+      "21170034": {
+        "parent_chapter": 21170033,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3060,
+        "anime": 0
+      },
+      "21170035": {
+        "parent_chapter": 21170034,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3061,
+        "anime": 0
+      },
+      "21170036": {
+        "parent_chapter": 21170035,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3062,
+        "anime": 0
+      },
+      "21170037": {
+        "parent_chapter": 21170036,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3063,
+        "anime": 0
+      },
+      "21170038": {
+        "parent_chapter": 21170037,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3064,
+        "anime": 0
+      },
+      "21170039": {
+        "parent_chapter": 21170038,
+        "difficulty": 1,
+        "mydeck_set_id": 0,
+        "set_id": 1,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 3065,
+        "anime": 0
+      },
+      "21179000": {
+        "parent_chapter": 21170039,
+        "difficulty": 0,
+        "mydeck_set_id": 0,
+        "set_id": 0,
+        "unlock_id": 0,
+        "begin_sn": "",
+        "npc_id": 0,
+        "anime": 0
+      }
+    }
+  },
+  "encounters": [
+    {
+      "chapterId": 21100034,
+      "gateId": 2110,
+      "playerCharacterId": "goatfmt_goat_control",
+      "opponentCharacterId": "goatfmt_chaos_turbo"
+    },
+    {
+      "chapterId": 21100035,
+      "gateId": 2110,
+      "playerCharacterId": "goatfmt_goat_control",
+      "opponentCharacterId": "goatfmt_warrior"
+    },
+    {
+      "chapterId": 21100036,
+      "gateId": 2110,
+      "playerCharacterId": "goatfmt_goat_control",
+      "opponentCharacterId": "goatfmt_chaos_warrior"
+    },
+    {
+      "chapterId": 21100037,
+      "gateId": 2110,
+      "playerCharacterId": "goatfmt_goat_control",
+      "opponentCharacterId": "goatfmt_chaos_return"
+    },
+    {
+      "chapterId": 21100038,
+      "gateId": 2110,
+      "playerCharacterId": "goatfmt_goat_control",
+      "opponentCharacterId": "goatfmt_panda_burn"
+    },
+    {
+      "chapterId": 21100039,
+      "gateId": 2110,
+      "playerCharacterId": "goatfmt_goat_control",
+      "opponentCharacterId": "goatfmt_relinquished"
+    },
+    {
+      "chapterId": 21100040,
+      "gateId": 2110,
+      "playerCharacterId": "goatfmt_goat_control",
+      "opponentCharacterId": "goatfmt_flip_control"
+    },
+    {
+      "chapterId": 21110033,
+      "gateId": 2111,
+      "playerCharacterId": "goatfmt_chaos_turbo",
+      "opponentCharacterId": "goatfmt_goat_control"
+    },
+    {
+      "chapterId": 21110035,
+      "gateId": 2111,
+      "playerCharacterId": "goatfmt_chaos_turbo",
+      "opponentCharacterId": "goatfmt_warrior"
+    },
+    {
+      "chapterId": 21110036,
+      "gateId": 2111,
+      "playerCharacterId": "goatfmt_chaos_turbo",
+      "opponentCharacterId": "goatfmt_chaos_warrior"
+    },
+    {
+      "chapterId": 21110037,
+      "gateId": 2111,
+      "playerCharacterId": "goatfmt_chaos_turbo",
+      "opponentCharacterId": "goatfmt_chaos_return"
+    },
+    {
+      "chapterId": 21110038,
+      "gateId": 2111,
+      "playerCharacterId": "goatfmt_chaos_turbo",
+      "opponentCharacterId": "goatfmt_panda_burn"
+    },
+    {
+      "chapterId": 21110039,
+      "gateId": 2111,
+      "playerCharacterId": "goatfmt_chaos_turbo",
+      "opponentCharacterId": "goatfmt_relinquished"
+    },
+    {
+      "chapterId": 21110040,
+      "gateId": 2111,
+      "playerCharacterId": "goatfmt_chaos_turbo",
+      "opponentCharacterId": "goatfmt_flip_control"
+    },
+    {
+      "chapterId": 21120033,
+      "gateId": 2112,
+      "playerCharacterId": "goatfmt_warrior",
+      "opponentCharacterId": "goatfmt_goat_control"
+    },
+    {
+      "chapterId": 21120034,
+      "gateId": 2112,
+      "playerCharacterId": "goatfmt_warrior",
+      "opponentCharacterId": "goatfmt_chaos_turbo"
+    },
+    {
+      "chapterId": 21120036,
+      "gateId": 2112,
+      "playerCharacterId": "goatfmt_warrior",
+      "opponentCharacterId": "goatfmt_chaos_warrior"
+    },
+    {
+      "chapterId": 21120037,
+      "gateId": 2112,
+      "playerCharacterId": "goatfmt_warrior",
+      "opponentCharacterId": "goatfmt_chaos_return"
+    },
+    {
+      "chapterId": 21120038,
+      "gateId": 2112,
+      "playerCharacterId": "goatfmt_warrior",
+      "opponentCharacterId": "goatfmt_panda_burn"
+    },
+    {
+      "chapterId": 21120039,
+      "gateId": 2112,
+      "playerCharacterId": "goatfmt_warrior",
+      "opponentCharacterId": "goatfmt_relinquished"
+    },
+    {
+      "chapterId": 21120040,
+      "gateId": 2112,
+      "playerCharacterId": "goatfmt_warrior",
+      "opponentCharacterId": "goatfmt_flip_control"
+    },
+    {
+      "chapterId": 21130033,
+      "gateId": 2113,
+      "playerCharacterId": "goatfmt_chaos_warrior",
+      "opponentCharacterId": "goatfmt_goat_control"
+    },
+    {
+      "chapterId": 21130034,
+      "gateId": 2113,
+      "playerCharacterId": "goatfmt_chaos_warrior",
+      "opponentCharacterId": "goatfmt_chaos_turbo"
+    },
+    {
+      "chapterId": 21130035,
+      "gateId": 2113,
+      "playerCharacterId": "goatfmt_chaos_warrior",
+      "opponentCharacterId": "goatfmt_warrior"
+    },
+    {
+      "chapterId": 21130037,
+      "gateId": 2113,
+      "playerCharacterId": "goatfmt_chaos_warrior",
+      "opponentCharacterId": "goatfmt_chaos_return"
+    },
+    {
+      "chapterId": 21130038,
+      "gateId": 2113,
+      "playerCharacterId": "goatfmt_chaos_warrior",
+      "opponentCharacterId": "goatfmt_panda_burn"
+    },
+    {
+      "chapterId": 21130039,
+      "gateId": 2113,
+      "playerCharacterId": "goatfmt_chaos_warrior",
+      "opponentCharacterId": "goatfmt_relinquished"
+    },
+    {
+      "chapterId": 21130040,
+      "gateId": 2113,
+      "playerCharacterId": "goatfmt_chaos_warrior",
+      "opponentCharacterId": "goatfmt_flip_control"
+    },
+    {
+      "chapterId": 21140033,
+      "gateId": 2114,
+      "playerCharacterId": "goatfmt_chaos_return",
+      "opponentCharacterId": "goatfmt_goat_control"
+    },
+    {
+      "chapterId": 21140034,
+      "gateId": 2114,
+      "playerCharacterId": "goatfmt_chaos_return",
+      "opponentCharacterId": "goatfmt_chaos_turbo"
+    },
+    {
+      "chapterId": 21140035,
+      "gateId": 2114,
+      "playerCharacterId": "goatfmt_chaos_return",
+      "opponentCharacterId": "goatfmt_warrior"
+    },
+    {
+      "chapterId": 21140036,
+      "gateId": 2114,
+      "playerCharacterId": "goatfmt_chaos_return",
+      "opponentCharacterId": "goatfmt_chaos_warrior"
+    },
+    {
+      "chapterId": 21140038,
+      "gateId": 2114,
+      "playerCharacterId": "goatfmt_chaos_return",
+      "opponentCharacterId": "goatfmt_panda_burn"
+    },
+    {
+      "chapterId": 21140039,
+      "gateId": 2114,
+      "playerCharacterId": "goatfmt_chaos_return",
+      "opponentCharacterId": "goatfmt_relinquished"
+    },
+    {
+      "chapterId": 21140040,
+      "gateId": 2114,
+      "playerCharacterId": "goatfmt_chaos_return",
+      "opponentCharacterId": "goatfmt_flip_control"
+    },
+    {
+      "chapterId": 21150033,
+      "gateId": 2115,
+      "playerCharacterId": "goatfmt_panda_burn",
+      "opponentCharacterId": "goatfmt_goat_control"
+    },
+    {
+      "chapterId": 21150034,
+      "gateId": 2115,
+      "playerCharacterId": "goatfmt_panda_burn",
+      "opponentCharacterId": "goatfmt_chaos_turbo"
+    },
+    {
+      "chapterId": 21150035,
+      "gateId": 2115,
+      "playerCharacterId": "goatfmt_panda_burn",
+      "opponentCharacterId": "goatfmt_warrior"
+    },
+    {
+      "chapterId": 21150036,
+      "gateId": 2115,
+      "playerCharacterId": "goatfmt_panda_burn",
+      "opponentCharacterId": "goatfmt_chaos_warrior"
+    },
+    {
+      "chapterId": 21150037,
+      "gateId": 2115,
+      "playerCharacterId": "goatfmt_panda_burn",
+      "opponentCharacterId": "goatfmt_chaos_return"
+    },
+    {
+      "chapterId": 21150039,
+      "gateId": 2115,
+      "playerCharacterId": "goatfmt_panda_burn",
+      "opponentCharacterId": "goatfmt_relinquished"
+    },
+    {
+      "chapterId": 21150040,
+      "gateId": 2115,
+      "playerCharacterId": "goatfmt_panda_burn",
+      "opponentCharacterId": "goatfmt_flip_control"
+    },
+    {
+      "chapterId": 21160033,
+      "gateId": 2116,
+      "playerCharacterId": "goatfmt_relinquished",
+      "opponentCharacterId": "goatfmt_goat_control"
+    },
+    {
+      "chapterId": 21160034,
+      "gateId": 2116,
+      "playerCharacterId": "goatfmt_relinquished",
+      "opponentCharacterId": "goatfmt_chaos_turbo"
+    },
+    {
+      "chapterId": 21160035,
+      "gateId": 2116,
+      "playerCharacterId": "goatfmt_relinquished",
+      "opponentCharacterId": "goatfmt_warrior"
+    },
+    {
+      "chapterId": 21160036,
+      "gateId": 2116,
+      "playerCharacterId": "goatfmt_relinquished",
+      "opponentCharacterId": "goatfmt_chaos_warrior"
+    },
+    {
+      "chapterId": 21160037,
+      "gateId": 2116,
+      "playerCharacterId": "goatfmt_relinquished",
+      "opponentCharacterId": "goatfmt_chaos_return"
+    },
+    {
+      "chapterId": 21160038,
+      "gateId": 2116,
+      "playerCharacterId": "goatfmt_relinquished",
+      "opponentCharacterId": "goatfmt_panda_burn"
+    },
+    {
+      "chapterId": 21160040,
+      "gateId": 2116,
+      "playerCharacterId": "goatfmt_relinquished",
+      "opponentCharacterId": "goatfmt_flip_control"
+    },
+    {
+      "chapterId": 21170033,
+      "gateId": 2117,
+      "playerCharacterId": "goatfmt_flip_control",
+      "opponentCharacterId": "goatfmt_goat_control"
+    },
+    {
+      "chapterId": 21170034,
+      "gateId": 2117,
+      "playerCharacterId": "goatfmt_flip_control",
+      "opponentCharacterId": "goatfmt_chaos_turbo"
+    },
+    {
+      "chapterId": 21170035,
+      "gateId": 2117,
+      "playerCharacterId": "goatfmt_flip_control",
+      "opponentCharacterId": "goatfmt_warrior"
+    },
+    {
+      "chapterId": 21170036,
+      "gateId": 2117,
+      "playerCharacterId": "goatfmt_flip_control",
+      "opponentCharacterId": "goatfmt_chaos_warrior"
+    },
+    {
+      "chapterId": 21170037,
+      "gateId": 2117,
+      "playerCharacterId": "goatfmt_flip_control",
+      "opponentCharacterId": "goatfmt_chaos_return"
+    },
+    {
+      "chapterId": 21170038,
+      "gateId": 2117,
+      "playerCharacterId": "goatfmt_flip_control",
+      "opponentCharacterId": "goatfmt_panda_burn"
+    },
+    {
+      "chapterId": 21170039,
+      "gateId": 2117,
+      "playerCharacterId": "goatfmt_flip_control",
+      "opponentCharacterId": "goatfmt_relinquished"
+    }
+  ],
+  "deckFingerprints": {
+    "goatfmt_goat_control": "3ae5636284cc936c53fdbdeb149f68f2242e6b5bb0c56ce86e78d46b3da52c04",
+    "goatfmt_chaos_turbo": "4915b84c5c91b6706461fd457da8e0a290fcceed69ce6c0736501e085d31fe62",
+    "goatfmt_warrior": "a4170fc33e8c16c986e8ac5cef3bc084529a020317902585190728c5c4935ce9",
+    "goatfmt_chaos_warrior": "da0c3b1e6d3b9180f08b962fd27a87de29961c08d2b85f4d6b16fff31d4545e5",
+    "goatfmt_chaos_return": "cafa84ca074bf41b635c21788e4fefc1299bfc59a71f50ba7e064769a497c776",
+    "goatfmt_panda_burn": "d9ace90eee134fcfebce9543577401222042e2330006578d74e0bab76a3616b4",
+    "goatfmt_relinquished": "d92c0adbeec317df08ea9073296be0910d42f961b4676416a70e38f7fb9d1800",
+    "goatfmt_flip_control": "f724f1e309a93b63b5c4297dfb8028670939d11f90ec5025ea854a1ebfc70409"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "revision": "source-v6",
+  "contentVersion": "0.3.0-prototype",
+  "description": "Edison Format Strategies: 8 tournament decks (2010 Edison list), tuned for balance",
+  "activeCharacterIds": [
+    "edisonfmt_blackwing",
+    "edisonfmt_gladiator_beast",
+    "edisonfmt_lightsworn",
+    "edisonfmt_hero_frog",
+    "edisonfmt_quickdraw_plant",
+    "edisonfmt_machina_gadget",
+    "edisonfmt_vayu_turbo",
+    "edisonfmt_cat_control"
+  ],
+  "characters": [
+    "Blackwing",
+    "Gladiator Beast",
+    "Lightsworn",
+    "Hero Frog",
+    "Quickdraw Plant",
+    "Machina Gadget",
+    "Vayu Turbo",
+    "Cat Control"
+  ]
+}

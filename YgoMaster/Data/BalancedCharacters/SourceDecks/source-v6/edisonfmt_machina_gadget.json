@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "characterId": "edisonfmt_machina_gadget",
+  "displayName": "Machina Gadget",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Machina Gadget tournament deck from Format Library (4th, EWCQ (2026): two strategies, Machina Fortress + Gadgets), tuned with Tools/BalancedCharacters/strategy_set.py",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 15,
+  "main": [
+    {
+      "name": "Blackwing - Gale the Whirlwind",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Breaker the Magical Warrior",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Caius the Shadow Monarch",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Cyber Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Green Gadget",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Kycoo the Ghost Destroyer",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Machina Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Machina Fortress",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Machina Gearframe",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Red Gadget",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Yellow Gadget",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Brain Control",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Limiter Removal",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Smashing Ground",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Bottomless Trap Hole",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Compulsory Evacuation Device",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Dimensional Prison",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Horn of Heaven",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Royal Oppression",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Solemn Judgment",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Starlight Road",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Trap Dustshoot",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Chimeratech Fortress Dragon",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Ally of Justice Catastor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ancient Fairy Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Arcanite Magician",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Black Rose Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Blackwing Armor Master",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Brionac, Dragon of the Ice Barrier",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Colossal Fighter",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dark End Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Goyo Guardian",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Stardust Dragon",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Thought Ruler Archfiend",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "X-Saber Urbellum",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

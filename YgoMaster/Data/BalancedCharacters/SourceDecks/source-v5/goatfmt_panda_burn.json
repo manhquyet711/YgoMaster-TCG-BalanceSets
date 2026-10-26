@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "characterId": "goatfmt_panda_burn",
+  "displayName": "Panda Burn",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Panda Burn tournament deck from Format Library (1st, LCQ 2 (2026): burn behind stall cards), tuned with Tools/BalancedCharacters/strategy_set.py",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 0,
+  "main": [
+    {
+      "name": "Big Shield Gardna",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Cyber Jar",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Des Koala",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Exiled Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Giant Rat",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Gyaku-Gire Panda",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Injection Fairy Lily",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Morphing Jar",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Giant Trunade",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Level Limit - Area B",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Swords of Revealing Light",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ceasefire",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Desert Sunlight",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gravity Bind",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Just Desserts",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Magic Cylinder",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Nightmare Wheel",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Ojama Trio",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Ring of Destruction",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Secret Barrel",
+      "quantity": 3,
+      "status": "designed"
+    }
+  ],
+  "extra": [],
+  "side": []
+}

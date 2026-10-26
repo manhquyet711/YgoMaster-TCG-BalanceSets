@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "characterId": "goatfmt_relinquished",
+  "displayName": "Relinquished",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Relinquished tournament deck from Format Library (3rd, GFC 2026: ritual steal-and-equip), tuned with Tools/BalancedCharacters/strategy_set.py",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 15,
+  "main": [
+    {
+      "name": "Black Luster Soldier - Envoy of the Beginning",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Breaker the Magical Warrior",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Chaos Sorcerer",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "D.D. Warrior Lady",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Kycoo the Ghost Destroyer",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Manju of the Ten Thousand Hands",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Senju of the Thousand Hands",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sinister Serpent",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Spirit Reaper",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Thunder Dragon",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Tribe-Infecting Virus",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Relinquished",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Black Illusion Ritual",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Card Destruction",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Delinquent Duo",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Nobleman of Crossout",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Premature Burial",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Snatch Steal",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Upstart Goblin",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Jar of Greed",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Raigeki Break",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Ring of Destruction",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 2,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Dark Balter the Terrible",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dark Blade the Dragon Knight",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Darkfire Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dragoness the Wicked Knight",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Fiend Skull Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Flame Ghost",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gatling Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "King Dragun",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Master of Oz",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ojama King",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Reaper on the Nightmare",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ryu Senshi",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "The Last Warrior from Another Planet",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Thousand-Eyes Restrict",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Twin-Headed Thunder Dragon",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

@@ -9,7 +9,7 @@ Usage: python -I solo_modes.py <Data folder> [--check]
 
 The Balanced Characters folder has no fixed children: the server moves the active deck set's
 character gates into it at startup, so switching sets in the Settings Editor keeps the layout.
-Duel Royale (2103) is added once its deck set is tested.
+Duel Royale (2103), Goat Format Strategies (2105) and Edison Format Strategies (2106) are deck set folders too.
 """
 import re
 import sys
@@ -36,6 +36,15 @@ MODES = {
            "Konami's seven official Duel Royale decks, as printed: Dark Magician, Blue-Eyes, Gearfried, Lava Golem, "
            "A Legendary Ocean, Relinquished and Des Gardius. Pick one, then beat every other deck.",
            22, 1, 4088, []),
+    # Strategy sets (Tools/BalancedCharacters/strategy_set.py): real tournament decks, tuned for CPU balance.
+    2105: ("Goat Format Strategies",
+           "Eight tournament decks from the 2005 Goat format: Goat Control, Chaos Turbo, Warrior, Chaos Warrior, "
+           "Chaos Return, Panda Burn, Relinquished and Flip Control. Pick one, then beat every other deck.",
+           23, 1, 5835, []),
+    2106: ("Edison Format Strategies",
+           "Eight tournament decks from the 2010 Edison format: Blackwing, Gladiator Beast, Lightsworn, Hero Frog, "
+           "Quickdraw Plant, Machina Gadget, Vayu Turbo and Cat Control. Pick one, then beat every other deck.",
+           24, 1, 7734, []),
     # The original Master Duel gates (Tutorial, 48, and 31 with its own children 22 and 30), out of the way at the end.
     2109: ("Master Duel Basics",
            "The original Master Duel Solo gates: Tutorial and the basic story gates.",

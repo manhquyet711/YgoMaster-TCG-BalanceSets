@@ -7,10 +7,11 @@ It is built on the [TCG Solo Campaign](https://github.com/vngudu/YgoMaster-TCG) 
 
 *Offline only. Progress is not shared with the live game.*
 
-> **Status: 0.3.0 prototype.** Three character modes in SOLO > Stories, all loaded at once:
-> **Balanced Characters** (u/Rosehn's v2 lists), **Goat Era Duelists** (v3, AI-built, Goat-legal) and
-> **Duel Royale** (Konami's 7 official decks). v2 and v3 are tested CPU vs CPU with the real duel engine;
-> v3 and Duel Royale are still being balanced. Results in
+> **Status: 0.3.0 prototype.** Five deck modes in SOLO > Stories, all loaded at once:
+> **Balanced Characters** (u/Rosehn's v2 lists), **Goat Era Duelists** (v3, AI-built, Goat-legal),
+> **Duel Royale** (Konami's 7 official decks), and **Goat Format Strategies** and **Edison Format Strategies**
+> (real tournament decks, tuned). All are tested CPU vs CPU with the real duel engine;
+> v3, Duel Royale and the Goat strategies are still being balanced. Results in
 > [Docs/BalancedCharacters/Balance/ANALYSIS.md](Docs/BalancedCharacters/Balance/ANALYSIS.md).
 
 ## Playing with friends (duel rooms, trading)
@@ -83,10 +84,13 @@ Each deck set is its own folder in **SOLO > Stories**, all loaded at the same ti
 | **Balanced Characters** | `source-v2` | u/Rosehn's updated and finalized 2024 lists, 15 characters (above) |
 | **Goat Era Duelists** | `source-v3` | 8 AI-built decks (Yugi, Kaiba, Joey, Mai, Pegasus, Bakura, Marik, Ishizu), every card legal in the April 2005 Goat format. Lists: [Character_Deck_Lists_v3.md](Docs/BalancedCharacters/Character_Deck_Lists_v3.md) |
 | **Duel Royale** | `source-v4` | Konami's 7 official Duel Royale decks as printed: Dark Magician, Blue-Eyes, Gearfried, Lava Golem, A Legendary Ocean, Relinquished, Des Gardius. Lists: `Tools/BalancedCharacters/Royale/decklists.json` |
+| **Goat Format Strategies** | `source-v5` | 8 top-placing Goat tournament decks (Format Library): Goat Control, Chaos Turbo, Warrior, Chaos Warrior, Chaos Return, Panda Burn, Relinquished, Flip Control. Weak decks got extra tech instead of nerfing the strong ones. Lists and tuning: `Tools/BalancedCharacters/strategy_set.py` |
+| **Edison Format Strategies** | `source-v6` | 8 top-placing Edison tournament decks: Blackwing, Gladiator Beast, Lightsworn, Hero Frog, Quickdraw Plant, Machina Gadget, Vayu Turbo, Cat Control. All within 40-60% CPU vs CPU |
 
 Every mode works the same way: the gate picks your deck, each battle node an opponent from the same
-mode, 8000 LP, fixed decks, CPU at full strength. Gates are named "Goat Era - …" and "Duel Royale - …"
-in those modes. Reference decks in your deck list: "Balanced - …", "Goat Era - …", "Royale - …".
+mode, 8000 LP, fixed decks, CPU at full strength. Gates are named "Goat Era - …", "Duel Royale - …",
+"Goat Format - …" and "Edison Format - …" in those modes. Reference decks in your deck list: "Balanced - …",
+"Goat Era - …", "Royale - …", "Goat Format - …", "Edison Format - …".
 
 The original 2021 lists (`source-v1`) are no longer offered; their lists stay in
 [Character_Deck_Lists.md](Docs/BalancedCharacters/Character_Deck_Lists.md). v3 is built from
@@ -123,7 +127,8 @@ has been reworked here. Full details: [Docs/TCGCampaign/CHANGES.md](Docs/TCGCamp
 
 Solo is grouped into mode folders:
 
-- **Stories:** TCG Campaign (DM to VRAINS eras), Balanced Characters, Goat Era Duelists and Duel Royale.
+- **Stories:** TCG Campaign (DM to VRAINS eras), Balanced Characters, Goat Era Duelists, Duel Royale,
+  Goat Format Strategies and Edison Format Strategies.
 - **Training & Challenges:** Format Challenges (Goat, Perfect Circle, Edison, HAT, v1.60) and
   Master Duel Basics (the original Tutorial gates).
 
@@ -154,7 +159,7 @@ The two Recommended cards show your current TCG era and Format Challenge. See
 4. In game: **SOLO > Stories > Balanced Characters**.
 
 `Start Game.exe` is also the settings window: a dark window over your game background with a
-**Stories Modes** list (pick a mode to see its description and characters; nothing to switch, all three
+**Stories Modes** list (pick a mode to see its description and characters; nothing to switch, all five
 are always loaded), the on/off switch for the character modes, and settings for
 collection, starting gems and campaign rewards. Buttons: **Start Game**, Save, Close. Deck rules above
 are fixed by the mode and are not editable. Close the game before saving settings.
@@ -212,6 +217,7 @@ Options for test-only decks that are not in the game:
 | `v2_tuning.py build` | Tuned copy of v2 in `Testing/source-v2-tuned` (original v2 unchanged) |
 | `goat_set.py compare` | v3 plus comparison decks (`ALT_DECKS`, e.g. Pegasus B) in `Testing/source-v3-compare` |
 | `royale_set.py build` | Konami's 7 Duel Royale decks in `Testing/royale` |
+| `strategy_set.py build` | Goat and Edison tournament decks in `Testing/strategy-goat` and `Testing/strategy-edison`; `write` makes the game sets (v5, v6) |
 
 Results so far (details and reasons in [ANALYSIS.md](Docs/BalancedCharacters/Balance/ANALYSIS.md)):
 v2 has 10 of 15 decks in range (Grandpa 11%, Pegasus 24% lowest; Rex 66% highest); the tuned v2
@@ -232,7 +238,7 @@ Crashes, disconnects and unfinished games do not count as losses, and surrenders
 
 - Finish balancing v3 (every deck within 40-60%), then install it and choose Toon Pegasus or Pegasus B
 - Ship the tuned v2 as a new deck set if players want it (the original v2 stays)
-- **Duel Royale** as its own Solo mode (folder 2103): Konami's 7 official pre-built decks, after its balance test
+- Goat Format Strategies: bring Flip Control (29%) into 40-60%
 - Play through the playtest queue
 - Character portraits and dialogue
 - Optional story campaign

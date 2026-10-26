@@ -1,0 +1,368 @@
+[IDS_SOLO.CHAPTER21180042]
+Blackwing vs Gladiator Beast
+[IDS_SOLO.CHAPTER21180042_EXPLANATION]
+Opponent: Gladiator Beast, Gladiator Beast Laquari deck, 42 cards + 15 Extra. You play Blackwing, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21180042_MAPLABEL]
+vs Gladiator
+[IDS_SOLO.CHAPTER21180043]
+Blackwing vs Lightsworn
+[IDS_SOLO.CHAPTER21180043_EXPLANATION]
+Opponent: Lightsworn, Wulf, Lightsworn Beast deck, 40 cards + 15 Extra. You play Blackwing, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21180043_MAPLABEL]
+vs Lightsworn
+[IDS_SOLO.CHAPTER21180044]
+Blackwing vs Hero Frog
+[IDS_SOLO.CHAPTER21180044_EXPLANATION]
+Opponent: Hero Frog, Swap Frog deck, 40 cards + 15 Extra. You play Blackwing, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21180044_MAPLABEL]
+vs Hero Frog
+[IDS_SOLO.CHAPTER21180045]
+Blackwing vs Quickdraw Plant
+[IDS_SOLO.CHAPTER21180045_EXPLANATION]
+Opponent: Quickdraw Plant, Quickdraw Synchron deck, 41 cards + 15 Extra. You play Blackwing, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21180045_MAPLABEL]
+vs Quickdraw
+[IDS_SOLO.CHAPTER21180046]
+Blackwing vs Machina Gadget
+[IDS_SOLO.CHAPTER21180046_EXPLANATION]
+Opponent: Machina Gadget, Machina Fortress deck, 40 cards + 15 Extra. You play Blackwing, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21180046_MAPLABEL]
+vs Machina
+[IDS_SOLO.CHAPTER21180047]
+Blackwing vs Vayu Turbo
+[IDS_SOLO.CHAPTER21180047_EXPLANATION]
+Opponent: Vayu Turbo, Blackwing - Vayu the Emblem of Honor deck, 41 cards + 15 Extra. You play Blackwing, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21180047_MAPLABEL]
+vs Vayu Turbo
+[IDS_SOLO.CHAPTER21180048]
+Blackwing vs Cat Control
+[IDS_SOLO.CHAPTER21180048_EXPLANATION]
+Opponent: Cat Control, Rescue Cat deck, 41 cards + 15 Extra. You play Blackwing, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21180048_MAPLABEL]
+vs Cat Control
+[IDS_SOLO.GATE2118]
+Edison Format - Blackwing
+[IDS_SOLO.GATE2118_EXPLANATION]
+Choose an opponent. You play Blackwing's fixed deck.
+[IDS_SOLO.CHAPTER21190041]
+Gladiator Beast vs Blackwing
+[IDS_SOLO.CHAPTER21190041_EXPLANATION]
+Opponent: Blackwing, Blackwing - Shura the Blue Flame deck, 40 cards + 15 Extra. You play Gladiator Beast, 42 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21190041_MAPLABEL]
+vs Blackwing
+[IDS_SOLO.CHAPTER21190043]
+Gladiator Beast vs Lightsworn
+[IDS_SOLO.CHAPTER21190043_EXPLANATION]
+Opponent: Lightsworn, Wulf, Lightsworn Beast deck, 40 cards + 15 Extra. You play Gladiator Beast, 42 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21190043_MAPLABEL]
+vs Lightsworn
+[IDS_SOLO.CHAPTER21190044]
+Gladiator Beast vs Hero Frog
+[IDS_SOLO.CHAPTER21190044_EXPLANATION]
+Opponent: Hero Frog, Swap Frog deck, 40 cards + 15 Extra. You play Gladiator Beast, 42 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21190044_MAPLABEL]
+vs Hero Frog
+[IDS_SOLO.CHAPTER21190045]
+Gladiator Beast vs Quickdraw Plant
+[IDS_SOLO.CHAPTER21190045_EXPLANATION]
+Opponent: Quickdraw Plant, Quickdraw Synchron deck, 41 cards + 15 Extra. You play Gladiator Beast, 42 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21190045_MAPLABEL]
+vs Quickdraw
+[IDS_SOLO.CHAPTER21190046]
+Gladiator Beast vs Machina Gadget
+[IDS_SOLO.CHAPTER21190046_EXPLANATION]
+Opponent: Machina Gadget, Machina Fortress deck, 40 cards + 15 Extra. You play Gladiator Beast, 42 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21190046_MAPLABEL]
+vs Machina
+[IDS_SOLO.CHAPTER21190047]
+Gladiator Beast vs Vayu Turbo
+[IDS_SOLO.CHAPTER21190047_EXPLANATION]
+Opponent: Vayu Turbo, Blackwing - Vayu the Emblem of Honor deck, 41 cards + 15 Extra. You play Gladiator Beast, 42 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21190047_MAPLABEL]
+vs Vayu Turbo
+[IDS_SOLO.CHAPTER21190048]
+Gladiator Beast vs Cat Control
+[IDS_SOLO.CHAPTER21190048_EXPLANATION]
+Opponent: Cat Control, Rescue Cat deck, 41 cards + 15 Extra. You play Gladiator Beast, 42 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21190048_MAPLABEL]
+vs Cat Control
+[IDS_SOLO.GATE2119]
+Edison Format - Gladiator Beast
+[IDS_SOLO.GATE2119_EXPLANATION]
+Choose an opponent. You play Gladiator Beast's fixed deck.
+[IDS_SOLO.CHAPTER21200041]
+Lightsworn vs Blackwing
+[IDS_SOLO.CHAPTER21200041_EXPLANATION]
+Opponent: Blackwing, Blackwing - Shura the Blue Flame deck, 40 cards + 15 Extra. You play Lightsworn, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21200041_MAPLABEL]
+vs Blackwing
+[IDS_SOLO.CHAPTER21200042]
+Lightsworn vs Gladiator Beast
+[IDS_SOLO.CHAPTER21200042_EXPLANATION]
+Opponent: Gladiator Beast, Gladiator Beast Laquari deck, 42 cards + 15 Extra. You play Lightsworn, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21200042_MAPLABEL]
+vs Gladiator
+[IDS_SOLO.CHAPTER21200044]
+Lightsworn vs Hero Frog
+[IDS_SOLO.CHAPTER21200044_EXPLANATION]
+Opponent: Hero Frog, Swap Frog deck, 40 cards + 15 Extra. You play Lightsworn, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21200044_MAPLABEL]
+vs Hero Frog
+[IDS_SOLO.CHAPTER21200045]
+Lightsworn vs Quickdraw Plant
+[IDS_SOLO.CHAPTER21200045_EXPLANATION]
+Opponent: Quickdraw Plant, Quickdraw Synchron deck, 41 cards + 15 Extra. You play Lightsworn, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21200045_MAPLABEL]
+vs Quickdraw
+[IDS_SOLO.CHAPTER21200046]
+Lightsworn vs Machina Gadget
+[IDS_SOLO.CHAPTER21200046_EXPLANATION]
+Opponent: Machina Gadget, Machina Fortress deck, 40 cards + 15 Extra. You play Lightsworn, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21200046_MAPLABEL]
+vs Machina
+[IDS_SOLO.CHAPTER21200047]
+Lightsworn vs Vayu Turbo
+[IDS_SOLO.CHAPTER21200047_EXPLANATION]
+Opponent: Vayu Turbo, Blackwing - Vayu the Emblem of Honor deck, 41 cards + 15 Extra. You play Lightsworn, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21200047_MAPLABEL]
+vs Vayu Turbo
+[IDS_SOLO.CHAPTER21200048]
+Lightsworn vs Cat Control
+[IDS_SOLO.CHAPTER21200048_EXPLANATION]
+Opponent: Cat Control, Rescue Cat deck, 41 cards + 15 Extra. You play Lightsworn, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21200048_MAPLABEL]
+vs Cat Control
+[IDS_SOLO.GATE2120]
+Edison Format - Lightsworn
+[IDS_SOLO.GATE2120_EXPLANATION]
+Choose an opponent. You play Lightsworn's fixed deck.
+[IDS_SOLO.CHAPTER21210041]
+Hero Frog vs Blackwing
+[IDS_SOLO.CHAPTER21210041_EXPLANATION]
+Opponent: Blackwing, Blackwing - Shura the Blue Flame deck, 40 cards + 15 Extra. You play Hero Frog, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21210041_MAPLABEL]
+vs Blackwing
+[IDS_SOLO.CHAPTER21210042]
+Hero Frog vs Gladiator Beast
+[IDS_SOLO.CHAPTER21210042_EXPLANATION]
+Opponent: Gladiator Beast, Gladiator Beast Laquari deck, 42 cards + 15 Extra. You play Hero Frog, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21210042_MAPLABEL]
+vs Gladiator
+[IDS_SOLO.CHAPTER21210043]
+Hero Frog vs Lightsworn
+[IDS_SOLO.CHAPTER21210043_EXPLANATION]
+Opponent: Lightsworn, Wulf, Lightsworn Beast deck, 40 cards + 15 Extra. You play Hero Frog, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21210043_MAPLABEL]
+vs Lightsworn
+[IDS_SOLO.CHAPTER21210045]
+Hero Frog vs Quickdraw Plant
+[IDS_SOLO.CHAPTER21210045_EXPLANATION]
+Opponent: Quickdraw Plant, Quickdraw Synchron deck, 41 cards + 15 Extra. You play Hero Frog, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21210045_MAPLABEL]
+vs Quickdraw
+[IDS_SOLO.CHAPTER21210046]
+Hero Frog vs Machina Gadget
+[IDS_SOLO.CHAPTER21210046_EXPLANATION]
+Opponent: Machina Gadget, Machina Fortress deck, 40 cards + 15 Extra. You play Hero Frog, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21210046_MAPLABEL]
+vs Machina
+[IDS_SOLO.CHAPTER21210047]
+Hero Frog vs Vayu Turbo
+[IDS_SOLO.CHAPTER21210047_EXPLANATION]
+Opponent: Vayu Turbo, Blackwing - Vayu the Emblem of Honor deck, 41 cards + 15 Extra. You play Hero Frog, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21210047_MAPLABEL]
+vs Vayu Turbo
+[IDS_SOLO.CHAPTER21210048]
+Hero Frog vs Cat Control
+[IDS_SOLO.CHAPTER21210048_EXPLANATION]
+Opponent: Cat Control, Rescue Cat deck, 41 cards + 15 Extra. You play Hero Frog, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21210048_MAPLABEL]
+vs Cat Control
+[IDS_SOLO.GATE2121]
+Edison Format - Hero Frog
+[IDS_SOLO.GATE2121_EXPLANATION]
+Choose an opponent. You play Hero Frog's fixed deck.
+[IDS_SOLO.CHAPTER21220041]
+Quickdraw Plant vs Blackwing
+[IDS_SOLO.CHAPTER21220041_EXPLANATION]
+Opponent: Blackwing, Blackwing - Shura the Blue Flame deck, 40 cards + 15 Extra. You play Quickdraw Plant, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21220041_MAPLABEL]
+vs Blackwing
+[IDS_SOLO.CHAPTER21220042]
+Quickdraw Plant vs Gladiator Beast
+[IDS_SOLO.CHAPTER21220042_EXPLANATION]
+Opponent: Gladiator Beast, Gladiator Beast Laquari deck, 42 cards + 15 Extra. You play Quickdraw Plant, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21220042_MAPLABEL]
+vs Gladiator
+[IDS_SOLO.CHAPTER21220043]
+Quickdraw Plant vs Lightsworn
+[IDS_SOLO.CHAPTER21220043_EXPLANATION]
+Opponent: Lightsworn, Wulf, Lightsworn Beast deck, 40 cards + 15 Extra. You play Quickdraw Plant, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21220043_MAPLABEL]
+vs Lightsworn
+[IDS_SOLO.CHAPTER21220044]
+Quickdraw Plant vs Hero Frog
+[IDS_SOLO.CHAPTER21220044_EXPLANATION]
+Opponent: Hero Frog, Swap Frog deck, 40 cards + 15 Extra. You play Quickdraw Plant, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21220044_MAPLABEL]
+vs Hero Frog
+[IDS_SOLO.CHAPTER21220046]
+Quickdraw Plant vs Machina Gadget
+[IDS_SOLO.CHAPTER21220046_EXPLANATION]
+Opponent: Machina Gadget, Machina Fortress deck, 40 cards + 15 Extra. You play Quickdraw Plant, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21220046_MAPLABEL]
+vs Machina
+[IDS_SOLO.CHAPTER21220047]
+Quickdraw Plant vs Vayu Turbo
+[IDS_SOLO.CHAPTER21220047_EXPLANATION]
+Opponent: Vayu Turbo, Blackwing - Vayu the Emblem of Honor deck, 41 cards + 15 Extra. You play Quickdraw Plant, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21220047_MAPLABEL]
+vs Vayu Turbo
+[IDS_SOLO.CHAPTER21220048]
+Quickdraw Plant vs Cat Control
+[IDS_SOLO.CHAPTER21220048_EXPLANATION]
+Opponent: Cat Control, Rescue Cat deck, 41 cards + 15 Extra. You play Quickdraw Plant, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21220048_MAPLABEL]
+vs Cat Control
+[IDS_SOLO.GATE2122]
+Edison Format - Quickdraw Plant
+[IDS_SOLO.GATE2122_EXPLANATION]
+Choose an opponent. You play Quickdraw Plant's fixed deck.
+[IDS_SOLO.CHAPTER21230041]
+Machina Gadget vs Blackwing
+[IDS_SOLO.CHAPTER21230041_EXPLANATION]
+Opponent: Blackwing, Blackwing - Shura the Blue Flame deck, 40 cards + 15 Extra. You play Machina Gadget, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21230041_MAPLABEL]
+vs Blackwing
+[IDS_SOLO.CHAPTER21230042]
+Machina Gadget vs Gladiator Beast
+[IDS_SOLO.CHAPTER21230042_EXPLANATION]
+Opponent: Gladiator Beast, Gladiator Beast Laquari deck, 42 cards + 15 Extra. You play Machina Gadget, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21230042_MAPLABEL]
+vs Gladiator
+[IDS_SOLO.CHAPTER21230043]
+Machina Gadget vs Lightsworn
+[IDS_SOLO.CHAPTER21230043_EXPLANATION]
+Opponent: Lightsworn, Wulf, Lightsworn Beast deck, 40 cards + 15 Extra. You play Machina Gadget, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21230043_MAPLABEL]
+vs Lightsworn
+[IDS_SOLO.CHAPTER21230044]
+Machina Gadget vs Hero Frog
+[IDS_SOLO.CHAPTER21230044_EXPLANATION]
+Opponent: Hero Frog, Swap Frog deck, 40 cards + 15 Extra. You play Machina Gadget, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21230044_MAPLABEL]
+vs Hero Frog
+[IDS_SOLO.CHAPTER21230045]
+Machina Gadget vs Quickdraw Plant
+[IDS_SOLO.CHAPTER21230045_EXPLANATION]
+Opponent: Quickdraw Plant, Quickdraw Synchron deck, 41 cards + 15 Extra. You play Machina Gadget, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21230045_MAPLABEL]
+vs Quickdraw
+[IDS_SOLO.CHAPTER21230047]
+Machina Gadget vs Vayu Turbo
+[IDS_SOLO.CHAPTER21230047_EXPLANATION]
+Opponent: Vayu Turbo, Blackwing - Vayu the Emblem of Honor deck, 41 cards + 15 Extra. You play Machina Gadget, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21230047_MAPLABEL]
+vs Vayu Turbo
+[IDS_SOLO.CHAPTER21230048]
+Machina Gadget vs Cat Control
+[IDS_SOLO.CHAPTER21230048_EXPLANATION]
+Opponent: Cat Control, Rescue Cat deck, 41 cards + 15 Extra. You play Machina Gadget, 40 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21230048_MAPLABEL]
+vs Cat Control
+[IDS_SOLO.GATE2123]
+Edison Format - Machina Gadget
+[IDS_SOLO.GATE2123_EXPLANATION]
+Choose an opponent. You play Machina Gadget's fixed deck.
+[IDS_SOLO.CHAPTER21240041]
+Vayu Turbo vs Blackwing
+[IDS_SOLO.CHAPTER21240041_EXPLANATION]
+Opponent: Blackwing, Blackwing - Shura the Blue Flame deck, 40 cards + 15 Extra. You play Vayu Turbo, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21240041_MAPLABEL]
+vs Blackwing
+[IDS_SOLO.CHAPTER21240042]
+Vayu Turbo vs Gladiator Beast
+[IDS_SOLO.CHAPTER21240042_EXPLANATION]
+Opponent: Gladiator Beast, Gladiator Beast Laquari deck, 42 cards + 15 Extra. You play Vayu Turbo, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21240042_MAPLABEL]
+vs Gladiator
+[IDS_SOLO.CHAPTER21240043]
+Vayu Turbo vs Lightsworn
+[IDS_SOLO.CHAPTER21240043_EXPLANATION]
+Opponent: Lightsworn, Wulf, Lightsworn Beast deck, 40 cards + 15 Extra. You play Vayu Turbo, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21240043_MAPLABEL]
+vs Lightsworn
+[IDS_SOLO.CHAPTER21240044]
+Vayu Turbo vs Hero Frog
+[IDS_SOLO.CHAPTER21240044_EXPLANATION]
+Opponent: Hero Frog, Swap Frog deck, 40 cards + 15 Extra. You play Vayu Turbo, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21240044_MAPLABEL]
+vs Hero Frog
+[IDS_SOLO.CHAPTER21240045]
+Vayu Turbo vs Quickdraw Plant
+[IDS_SOLO.CHAPTER21240045_EXPLANATION]
+Opponent: Quickdraw Plant, Quickdraw Synchron deck, 41 cards + 15 Extra. You play Vayu Turbo, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21240045_MAPLABEL]
+vs Quickdraw
+[IDS_SOLO.CHAPTER21240046]
+Vayu Turbo vs Machina Gadget
+[IDS_SOLO.CHAPTER21240046_EXPLANATION]
+Opponent: Machina Gadget, Machina Fortress deck, 40 cards + 15 Extra. You play Vayu Turbo, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21240046_MAPLABEL]
+vs Machina
+[IDS_SOLO.CHAPTER21240048]
+Vayu Turbo vs Cat Control
+[IDS_SOLO.CHAPTER21240048_EXPLANATION]
+Opponent: Cat Control, Rescue Cat deck, 41 cards + 15 Extra. You play Vayu Turbo, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21240048_MAPLABEL]
+vs Cat Control
+[IDS_SOLO.GATE2124]
+Edison Format - Vayu Turbo
+[IDS_SOLO.GATE2124_EXPLANATION]
+Choose an opponent. You play Vayu Turbo's fixed deck.
+[IDS_SOLO.CHAPTER21250041]
+Cat Control vs Blackwing
+[IDS_SOLO.CHAPTER21250041_EXPLANATION]
+Opponent: Blackwing, Blackwing - Shura the Blue Flame deck, 40 cards + 15 Extra. You play Cat Control, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21250041_MAPLABEL]
+vs Blackwing
+[IDS_SOLO.CHAPTER21250042]
+Cat Control vs Gladiator Beast
+[IDS_SOLO.CHAPTER21250042_EXPLANATION]
+Opponent: Gladiator Beast, Gladiator Beast Laquari deck, 42 cards + 15 Extra. You play Cat Control, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21250042_MAPLABEL]
+vs Gladiator
+[IDS_SOLO.CHAPTER21250043]
+Cat Control vs Lightsworn
+[IDS_SOLO.CHAPTER21250043_EXPLANATION]
+Opponent: Lightsworn, Wulf, Lightsworn Beast deck, 40 cards + 15 Extra. You play Cat Control, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21250043_MAPLABEL]
+vs Lightsworn
+[IDS_SOLO.CHAPTER21250044]
+Cat Control vs Hero Frog
+[IDS_SOLO.CHAPTER21250044_EXPLANATION]
+Opponent: Hero Frog, Swap Frog deck, 40 cards + 15 Extra. You play Cat Control, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21250044_MAPLABEL]
+vs Hero Frog
+[IDS_SOLO.CHAPTER21250045]
+Cat Control vs Quickdraw Plant
+[IDS_SOLO.CHAPTER21250045_EXPLANATION]
+Opponent: Quickdraw Plant, Quickdraw Synchron deck, 41 cards + 15 Extra. You play Cat Control, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21250045_MAPLABEL]
+vs Quickdraw
+[IDS_SOLO.CHAPTER21250046]
+Cat Control vs Machina Gadget
+[IDS_SOLO.CHAPTER21250046_EXPLANATION]
+Opponent: Machina Gadget, Machina Fortress deck, 40 cards + 15 Extra. You play Cat Control, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21250046_MAPLABEL]
+vs Machina
+[IDS_SOLO.CHAPTER21250047]
+Cat Control vs Vayu Turbo
+[IDS_SOLO.CHAPTER21250047_EXPLANATION]
+Opponent: Vayu Turbo, Blackwing - Vayu the Emblem of Honor deck, 41 cards + 15 Extra. You play Cat Control, 41 cards + 15 Extra. Fixed decks, 8000 LP each.
+[IDS_SOLO.CHAPTER21250047_MAPLABEL]
+vs Vayu Turbo
+[IDS_SOLO.GATE2125]
+Edison Format - Cat Control
+[IDS_SOLO.GATE2125_EXPLANATION]
+Choose an opponent. You play Cat Control's fixed deck.

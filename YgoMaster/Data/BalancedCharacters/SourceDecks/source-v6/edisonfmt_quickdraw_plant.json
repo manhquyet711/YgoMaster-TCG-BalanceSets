@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "characterId": "edisonfmt_quickdraw_plant",
+  "displayName": "Quickdraw Plant",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Quickdraw Plant tournament deck from Format Library (1st, SJC Edison (2010): the original Edison winner, Synchro combos), tuned with Tools/BalancedCharacters/strategy_set.py",
+  "expectedMainCount": 41,
+  "expectedExtraCount": 15,
+  "main": [
+    {
+      "name": "Caius the Shadow Monarch",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Card Trooper",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dandylion",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Debris Dragon",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Lonefire Blossom",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Morphing Jar",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Quickdraw Synchron",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Ryko, Lightsworn Hunter",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Super-Nimble Mega Hamster",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Tytannial, Princess of Camellias",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Book of Moon",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Brain Control",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Foolish Burial",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Avarice",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Bottomless Trap Hole",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Call of the Haunted",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dimensional Prison",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Solemn Judgment",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Starlight Road",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gorz the Emissary of Darkness",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dark Armed Dragon",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Ally of Justice Catastor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ancient Fairy Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Black Rose Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Brionac, Dragon of the Ice Barrier",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Drill Warrior",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Iron Chain Dragon",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Junk Archer",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Nitro Warrior",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Red Dragon Archfiend",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Stardust Dragon",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Turbo Warrior",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

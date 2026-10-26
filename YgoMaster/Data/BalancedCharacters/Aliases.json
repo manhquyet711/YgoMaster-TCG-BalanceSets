@@ -78,5 +78,25 @@
     "canonicalName": "Reinforcement of the Army",
     "masterDuelId": 5328,
     "evidence": "Original printing (Goat-legal, limited to 2); the other same-name entry (20040) is a later separate card not in the Goat pool."
+  },
+  "Black Rose Dragon": {
+    "canonicalName": "Black Rose Dragon",
+    "masterDuelId": 7898,
+    "evidence": "Explicit original-card ID verified in local YdkIds.txt: 73580471 7898"
+  },
+  "Stardust Dragon": {
+    "canonicalName": "Stardust Dragon",
+    "masterDuelId": 7734,
+    "evidence": "Explicit original-card ID verified in local YdkIds.txt: 44508094 7734"
+  },
+  "Elemental HERO Stratos": {
+    "canonicalName": "Elemental HERO Stratos",
+    "masterDuelId": 6784,
+    "evidence": "Explicit original-card ID verified in local YdkIds.txt: 40044918 6784"
+  },
+  "Junk Warrior": {
+    "canonicalName": "Junk Warrior",
+    "masterDuelId": 7696,
+    "evidence": "Explicit original-card ID verified in local YdkIds.txt: 60800381 7696"
   }
 }

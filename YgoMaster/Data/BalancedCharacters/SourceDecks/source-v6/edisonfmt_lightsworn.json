@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "characterId": "edisonfmt_lightsworn",
+  "displayName": "Lightsworn",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Lightsworn tournament deck from Format Library (2nd, SESB 19 (2026): mill engine, Judgment Dragon), tuned with Tools/BalancedCharacters/strategy_set.py",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 15,
+  "main": [
+    {
+      "name": "Armageddon Knight",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Blackwing - Gale the Whirlwind",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Caius the Shadow Monarch",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Card Trooper",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Chaos Sorcerer",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "D.D. Crow",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dark Armed Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gorz the Emissary of Darkness",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Jain, Lightsworn Paladin",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Lyla, Lightsworn Sorceress",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Necro Gardna",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Plaguespreader Zombie",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ryko, Lightsworn Hunter",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Super-Nimble Mega Hamster",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Wulf, Lightsworn Beast",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Allure of Darkness",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Brain Control",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Charge of the Light Brigade",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Foolish Burial",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Avarice",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Reinforcement of the Army",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Solar Recharge",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Bottomless Trap Hole",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dimensional Prison",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Trap Dustshoot",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Chimeratech Fortress Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ally of Justice Catastor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Armory Arm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Black Rose Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Blackwing Armor Master",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Brionac, Dragon of the Ice Barrier",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Colossal Fighter",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dark End Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Flamvell Uruquizas",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Goyo Guardian",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Magical Android",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mist Wurm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Stardust Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Tempest Magician",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Thought Ruler Archfiend",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

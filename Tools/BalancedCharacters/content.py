@@ -44,12 +44,18 @@ ROSTER_V3 = [(cid, name, sum(main.values()), sum(extra.values())) for cid, name,
 # v4: Duel Royale, Konami's official pre-built decks as printed (lists in Royale/decklists.json).
 import royale_set  # noqa: E402
 ROSTER_V4 = royale_set.roster()
-ROSTERS = {'source-v1': ROSTER, 'source-v2': ROSTER_V2, 'source-v3': ROSTER_V3, 'source-v4': ROSTER_V4}
+# v5 / v6: Goat and Edison Format Strategies, real tournament decks tuned for CPU balance (strategy_set.py).
+import strategy_set  # noqa: E402
+ROSTER_V5 = strategy_set.roster('goat')
+ROSTER_V6 = strategy_set.roster('edison')
+ROSTERS = {'source-v1': ROSTER, 'source-v2': ROSTER_V2, 'source-v3': ROSTER_V3, 'source-v4': ROSTER_V4,
+           'source-v5': ROSTER_V5, 'source-v6': ROSTER_V6}
 # Deck sources that count as reviewed: photographed lists, designed sets checked by their own tool,
 # or official printed decks.
 VERIFIED = ('photo-verified', 'designed', 'official')
 # Gate name prefix per set; each set has its own Solo folder.
-GATE_TITLE = {'source-v3': 'Goat Era - ', 'source-v4': 'Duel Royale - '}
+GATE_TITLE = {'source-v3': 'Goat Era - ', 'source-v4': 'Duel Royale - ',
+              'source-v5': 'Goat Format - ', 'source-v6': 'Edison Format - '}
 
 
 def write_json(path, value):
@@ -349,6 +355,8 @@ def compile_prototype():
         'royale_gearfried': 'Gearfried the Swordmaster', 'royale_lava_golem': 'Lava Golem',
         'royale_legendary_ocean': 'Levia-Dragon - Daedalus', 'royale_relinquished': 'Relinquished',
         'royale_des_gardius': 'Masked Beast Des Gardius'}
+    showcase = strategy_set.showcase()
+    preferred_names.update({cid: card for cid, (card, label) in showcase.items()})
     names_by_id = card_table()
     signatures = {}
     for cid in characters:
@@ -367,6 +375,7 @@ def compile_prototype():
         'royale_dark_magician': 'Dark Magician', 'royale_blue_eyes': 'Blue-Eyes', 'royale_gearfried': 'Gearfried',
         'royale_lava_golem': 'Lava Golem', 'royale_legendary_ocean': 'Ocean', 'royale_relinquished': 'Relinquished',
         'royale_des_gardius': 'Des Gardius'}
+    map_labels.update({cid: label for cid, (card, label) in showcase.items()})
 
     def deck_size(cid):
         main = sum(c['quantity'] for c in decks[cid]['main'])
@@ -450,11 +459,15 @@ REVISION_INFO = {
     'source-v2': 'Updated and finalized 2024 lists by u/Rosehn (15 characters)',
     'source-v3': 'Goat Era Duelists: AI-built balanced set, Goat-legal (8 characters)',
     'source-v4': "Duel Royale: Konami's 7 official pre-built decks, as printed",
+    'source-v5': 'Goat Format Strategies: 8 tournament decks (2005 Goat list), tuned for balance',
+    'source-v6': 'Edison Format Strategies: 8 tournament decks (2010 Edison list), tuned for balance',
 }
 # Sets built into packs (Revisions/<revision>). The game loads every set listed in Mode.json "sets",
-# each into its own Solo folder: v2 Balanced Characters, v3 Goat Era Duelists, v4 Duel Royale.
-PACKED_REVISIONS = ['source-v2', 'source-v3', 'source-v4']
-SET_FOLDERS = [('source-v2', 2102, 'Balanced - '), ('source-v3', 2104, 'Goat Era - '), ('source-v4', 2103, 'Royale - ')]
+# each into its own Solo folder: v2 Balanced Characters, v3 Goat Era Duelists, v4 Duel Royale,
+# v5 Goat Format Strategies, v6 Edison Format Strategies.
+PACKED_REVISIONS = ['source-v2', 'source-v3', 'source-v4', 'source-v5', 'source-v6']
+SET_FOLDERS = [('source-v2', 2102, 'Balanced - '), ('source-v3', 2104, 'Goat Era - '), ('source-v4', 2103, 'Royale - '),
+               ('source-v5', 2105, 'Goat Format - '), ('source-v6', 2106, 'Edison Format - ')]
 
 
 def build_packs():

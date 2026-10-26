@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "characterId": "edisonfmt_hero_frog",
+  "displayName": "Hero Frog",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Hero Frog tournament deck from Format Library (1st, SESB 19 (2026): two strategies, Elemental HERO + Frog monarch tributes), tuned with Tools/BalancedCharacters/strategy_set.py",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 15,
+  "main": [
+    {
+      "name": "Battle Fader",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Caius the Shadow Monarch",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Dupe Frog",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Elemental HERO Neos Alius",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Elemental HERO Ocean",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Elemental HERO Stratos",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Evil HERO Infernal Prodigy",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Evil HERO Malicious Edge",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Gorz the Emissary of Darkness",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Junk Synchron",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Raiza the Storm Monarch",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Substitoad",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Swap Frog",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Treeborn Frog",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Brain Control",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "E - Emergency Call",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Miracle Fusion",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Reinforcement of the Army",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Soul Exchange",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Raigeki Break",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Spiritual Water Art - Aoi",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Trap Dustshoot",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Bottomless Trap Hole",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dimensional Prison",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Elemental HERO Absolute Zero",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Elemental HERO Gaia",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ally of Justice Catastor",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Armory Arm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Black Rose Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Brionac, Dragon of the Ice Barrier",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Flamvell Uruquizas",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Goyo Guardian",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Junk Warrior",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Magical Android",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Stardust Dragon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Thought Ruler Archfiend",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "X-Saber Urbellum",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

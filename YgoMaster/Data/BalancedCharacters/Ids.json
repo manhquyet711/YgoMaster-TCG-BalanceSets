@@ -160,6 +160,86 @@
       "gateId": 2047,
       "npcId": 3058,
       "slot": 32
+    },
+    "goatfmt_goat_control": {
+      "gateId": 2110,
+      "npcId": 3059,
+      "slot": 33
+    },
+    "goatfmt_chaos_turbo": {
+      "gateId": 2111,
+      "npcId": 3060,
+      "slot": 34
+    },
+    "goatfmt_warrior": {
+      "gateId": 2112,
+      "npcId": 3061,
+      "slot": 35
+    },
+    "goatfmt_chaos_warrior": {
+      "gateId": 2113,
+      "npcId": 3062,
+      "slot": 36
+    },
+    "goatfmt_chaos_return": {
+      "gateId": 2114,
+      "npcId": 3063,
+      "slot": 37
+    },
+    "goatfmt_panda_burn": {
+      "gateId": 2115,
+      "npcId": 3064,
+      "slot": 38
+    },
+    "goatfmt_relinquished": {
+      "gateId": 2116,
+      "npcId": 3065,
+      "slot": 39
+    },
+    "goatfmt_flip_control": {
+      "gateId": 2117,
+      "npcId": 3066,
+      "slot": 40
+    },
+    "edisonfmt_blackwing": {
+      "gateId": 2118,
+      "npcId": 3067,
+      "slot": 41
+    },
+    "edisonfmt_gladiator_beast": {
+      "gateId": 2119,
+      "npcId": 3068,
+      "slot": 42
+    },
+    "edisonfmt_lightsworn": {
+      "gateId": 2120,
+      "npcId": 3069,
+      "slot": 43
+    },
+    "edisonfmt_hero_frog": {
+      "gateId": 2121,
+      "npcId": 3070,
+      "slot": 44
+    },
+    "edisonfmt_quickdraw_plant": {
+      "gateId": 2122,
+      "npcId": 3071,
+      "slot": 45
+    },
+    "edisonfmt_machina_gadget": {
+      "gateId": 2123,
+      "npcId": 3072,
+      "slot": 46
+    },
+    "edisonfmt_vayu_turbo": {
+      "gateId": 2124,
+      "npcId": 3073,
+      "slot": 47
+    },
+    "edisonfmt_cat_control": {
+      "gateId": 2125,
+      "npcId": 3074,
+      "slot": 48
     }
   }
 }

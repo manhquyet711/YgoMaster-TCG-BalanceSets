@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "characterId": "goatfmt_flip_control",
+  "displayName": "Flip Control",
+  "sourcePhoto": null,
+  "verificationStatus": "designed",
+  "design": "Flip Control tournament deck from Format Library (3rd, SWAG (2019): flip effects and card advantage), tuned with Tools/BalancedCharacters/strategy_set.py",
+  "expectedMainCount": 40,
+  "expectedExtraCount": 15,
+  "main": [
+    {
+      "name": "Black Luster Soldier - Envoy of the Beginning",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Breaker the Magical Warrior",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Dekoichi the Battlechanted Locomotive",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Magician of Faith",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Morphing Jar",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sangan",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sinister Serpent",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Tsukuyomi",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Book of Moon",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Delinquent Duo",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Graceful Charity",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Heavy Storm",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mystical Space Typhoon",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Nobleman of Crossout",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Pot of Greed",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Snatch Steal",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Compulsory Evacuation Device",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Jar of Greed",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Mirror Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Ring of Destruction",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Sakuretsu Armor",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Solemn Judgment",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Torrential Tribute",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Chaos Sorcerer",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Dust Tornado",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Mystic Swordsman LV2",
+      "quantity": 2,
+      "status": "designed"
+    },
+    {
+      "name": "Exiled Force",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Tribe-Infecting Virus",
+      "quantity": 1,
+      "status": "designed"
+    },
+    {
+      "name": "Zaborg the Thunder Monarch",
+      "quantity": 1,
+      "status": "designed"
+    }
+  ],
+  "extra": [
+    {
+      "name": "Dragoness the Wicked Knight",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Flame Ghost",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Roaring Ocean Snake",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Sanwitch",
+      "quantity": 3,
+      "status": "designed"
+    },
+    {
+      "name": "Thousand-Eyes Restrict",
+      "quantity": 3,
+      "status": "designed"
+    }
+  ],
+  "side": []
+}

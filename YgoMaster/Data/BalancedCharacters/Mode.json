@@ -52,6 +52,16 @@
       "revision": "source-v4",
       "folderGate": 2103,
       "deckPrefix": "Royale - "
+    },
+    {
+      "revision": "source-v5",
+      "folderGate": 2105,
+      "deckPrefix": "Goat Format - "
+    },
+    {
+      "revision": "source-v6",
+      "folderGate": 2106,
+      "deckPrefix": "Edison Format - "
     }
   ]
 }
