@@ -13,6 +13,24 @@ It is built on the [TCG Solo Campaign](https://github.com/vngudu/YgoMaster-TCG) 
 > v3 and Duel Royale are still being balanced. Results in
 > [Docs/BalancedCharacters/Balance/ANALYSIS.md](Docs/BalancedCharacters/Balance/ANALYSIS.md).
 
+## Playing with friends (duel rooms, trading)
+
+`Start Game.exe` has three buttons:
+
+- **Start Game:** play alone (local server, multiplayer off).
+- **Host a server:** pick this PC's network address. It turns on multiplayer, opens the server to
+  the network (`MultiplayerEnabled`, `BindIP http://*:{BasePort}/`, `SessionServerIP 0.0.0.0`), and
+  starts the server and the game. Windows only allows that as administrator, so Start Game restarts
+  itself as administrator (confirm the prompt), and Windows Firewall may ask to allow YgoMaster.
+- **Join a server:** enter the host's address. It checks the server can be reached, then starts
+  only the game, connected to it.
+
+Each player gets their own `MultiplayerToken` automatically. Everyone needs Master Duel 2.8.0 from
+Steam and this mod. The easiest way to connect is a private network app all players join
+(Tailscale, ZeroTier or Radmin VPN); otherwise forward ports 4989 and 4988 to the host. Progress of
+every player is stored on the host. In game: **DUEL > Duel Room (PvP)**. Stories modes stay
+player vs CPU. Keep it among friends: Master Duel is Konami's game. Details: [Docs/PvP.md](Docs/PvP.md).
+
 ## Videos
 
 - [How to install the Balanced Characters mod (about 2 min)](https://youtu.be/UNSkqEzeNIc)

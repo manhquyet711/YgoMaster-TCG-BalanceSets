@@ -303,7 +303,7 @@ public sealed class BalancedEditorForm : Form
     readonly ComboBox deckSet;
     readonly Label status, setDescription, setCharacters;
     readonly PropertyGrid grid;
-    Button startButton;
+    Button startButton, hostButton, joinButton;
     Image background;
 
     public BalancedEditorForm(string root)
@@ -376,6 +376,8 @@ public sealed class BalancedEditorForm : Form
         var buttons = new FlowLayoutPanel { Location = new Point(12, 10), AutoSize = true, WrapContents = false, BackColor = Color.Transparent };
         footer.Controls.Add(buttons);
         startButton = AddButton(buttons, "Start Game", true, () => StartGame());
+        hostButton = AddButton(buttons, "Host a server", false, () => HostGame());
+        joinButton = AddButton(buttons, "Join a server", false, () => JoinGame());
         AddButton(buttons, "Save", false, () => Save());
         AddButton(buttons, "Close", false, () => Close());
         status = new Label { Location = new Point(16, 56), AutoSize = true, ForeColor = Theme.Muted, BackColor = Color.Transparent,
@@ -470,30 +472,109 @@ public sealed class BalancedEditorForm : Form
         status.Text = "Saved with backups. Other settings and saves preserved.";
     }
 
-    void StartGame()
+    void StartGame() { Launch(GameLauncher.NetMode.Offline, null); }
+
+    /// <summary>Host a server: pick this PC's network address, then start the open server and the game.</summary>
+    void HostGame()
+    {
+        var addresses = GameLauncher.LocalAddresses();
+        string saved = GameLauncher.SavedServerAddress(document.Root);
+        if (saved.Length > 0 && addresses.Contains(saved)) { addresses.Remove(saved); addresses.Insert(0, saved); }
+        string address = AskAddress("Host a server",
+            "Pick this PC's address on the network you share with the other players.\n" +
+            "Tailscale and ZeroTier addresses (100.x) and Radmin VPN (26.x) are listed first.\n" +
+            "Tell the other players this address; they press Join a server and enter it.", addresses, true);
+        if (address == null) return;
+        if (!GameLauncher.IsAdministrator())
+        {
+            var answer = MessageBox.Show(this, "Windows only lets a program accept connections from other PCs when it runs as administrator.\n\n" +
+                "Restart Start Game as administrator and host on " + address + "?\n(Windows will ask you to confirm.)",
+                "Host a server", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (answer != DialogResult.Yes) return;
+            Save();
+            try
+            {
+                Process.Start(new ProcessStartInfo(Application.ExecutablePath, "--host \"" + address + "\" \"" + document.Root.TrimEnd('\\') + "\"") { UseShellExecute = true, Verb = "runas" });
+                Close();
+            }
+            catch (System.ComponentModel.Win32Exception) { status.Text = "Hosting cancelled (administrator rights were not given)."; }
+            return;
+        }
+        Launch(GameLauncher.NetMode.Host, address);
+    }
+
+    /// <summary>Join a server: enter the host's address, then start only the game, connected to it.</summary>
+    void JoinGame()
+    {
+        string saved = GameLauncher.SavedServerAddress(document.Root);
+        string address = AskAddress("Join a server",
+            "Enter the address the host gave you (shown in their Host a server window).\n" +
+            "You both need the same private network app (Tailscale, ZeroTier or Radmin VPN) running.",
+            saved.Length > 0 ? new List<string> { saved } : new List<string>(), false);
+        if (address == null) return;
+        Launch(GameLauncher.NetMode.Join, address);
+    }
+
+    /// <summary>Saves settings, applies the network mode and starts the game (with or without a local server).</summary>
+    internal void Launch(GameLauncher.NetMode mode, string address)
     {
         if (Process.GetProcessesByName("masterduel").Length > 0)
-            throw new InvalidOperationException("Master Duel is already running. Close it first, then press Start Game.");
+            throw new InvalidOperationException("Master Duel is already running. Close it first, then try again.");
         Save();
+        GameLauncher.ApplyNetwork(document.Root, mode, address);
         GameLauncher.Validate(document.Root);
-        startButton.Enabled = false;
-        status.Text = "Starting the server...";
+        startButton.Enabled = hostButton.Enabled = joinButton.Enabled = false;
+        status.Text = mode == GameLauncher.NetMode.Join ? "Connecting..." : "Starting the server...";
         Cursor = Cursors.AppStarting;
         string root = document.Root;
         var worker = new System.Threading.Thread(() =>
         {
             try
             {
-                string message = GameLauncher.Start(root, text => BeginInvoke((Action)(() => status.Text = text)));
+                Action<string> progress = text => BeginInvoke((Action)(() => status.Text = text));
+                string message = mode == GameLauncher.NetMode.Join
+                    ? GameLauncher.StartClientOnly(root, address, progress)
+                    : GameLauncher.Start(root, progress);
+                if (mode == GameLauncher.NetMode.Host)
+                {
+                    BeginInvoke((Action)(() => MessageBox.Show(this, "Your server is open on " + address + ".\n\nTell the other players to press Join a server and enter:\n" + address +
+                        "\n\nKeep this PC on while they play. If Windows asks whether YgoMaster may use the network, choose Allow.",
+                        "Hosting", MessageBoxButtons.OK, MessageBoxIcon.Information)));
+                }
                 BeginInvoke((Action)(() => { status.Text = message; Close(); }));
             }
             catch (Exception ex)
             {
                 GameLauncher.LogError(root, ex.Message);
-                BeginInvoke((Action)(() => { Cursor = Cursors.Default; startButton.Enabled = true; ShowError(ex.Message + "\n\nDetails are in the LaunchLogs folder."); }));
+                BeginInvoke((Action)(() => { Cursor = Cursors.Default; startButton.Enabled = hostButton.Enabled = joinButton.Enabled = true; ShowError(ex.Message + "\n\nDetails are in the LaunchLogs folder."); }));
             }
         }) { IsBackground = true };
         worker.Start();
+    }
+
+    /// <summary>Small themed dialog with a list of addresses (or a text box when editable). Returns null on Cancel.</summary>
+    string AskAddress(string title, string text, List<string> choices, bool pickFromList)
+    {
+        using (var dialog = new Form { Text = title, FormBorderStyle = FormBorderStyle.FixedDialog, MaximizeBox = false, MinimizeBox = false,
+            StartPosition = FormStartPosition.CenterParent, ClientSize = new Size(520, 210), BackColor = Color.FromArgb(18, 22, 36), ForeColor = Theme.Text, Font = Font })
+        {
+            dialog.Controls.Add(new Label { Text = text, Location = new Point(18, 14), Size = new Size(484, 72), ForeColor = Theme.Text });
+            var box = new ComboBox { Location = new Point(18, 94), Width = 484, BackColor = Theme.Field, ForeColor = Theme.Text, FlatStyle = FlatStyle.Flat,
+                DropDownStyle = pickFromList && choices.Count > 0 ? ComboBoxStyle.DropDown : ComboBoxStyle.Simple, Height = 30 };
+            foreach (string c in choices) box.Items.Add(c);
+            if (choices.Count > 0) box.Text = choices[0];
+            dialog.Controls.Add(box);
+            var ok = MakeButton(pickFromList ? "Host" : "Join", true); ok.Location = new Point(300, 150); ok.DialogResult = DialogResult.OK;
+            var cancel = MakeButton("Cancel", false); cancel.Location = new Point(410, 150); cancel.DialogResult = DialogResult.Cancel;
+            dialog.Controls.Add(ok); dialog.Controls.Add(cancel);
+            dialog.AcceptButton = ok; dialog.CancelButton = cancel;
+            if (pickFromList && choices.Count == 0)
+                dialog.Controls.Add(new Label { Text = "No network address found: start your private network app first.", Location = new Point(18, 126), AutoSize = true, ForeColor = Theme.Muted });
+            if (dialog.ShowDialog(this) != DialogResult.OK) return null;
+            string value = box.Text.Trim();
+            if (value.Length == 0) { ShowError("Enter an address."); return null; }
+            return value;
+        }
     }
 }
 
@@ -630,6 +711,125 @@ static class GameLauncher
         return count;
     }
 
+    public enum NetMode { Offline, Host, Join }
+
+    /// <summary>
+    /// Switches Data/Settings.json and Data/ClientData/ClientSettings.json between playing alone (Offline),
+    /// hosting for other players (Host, server open on the network) and playing on another PC's server (Join).
+    /// Values follow Docs/PvP.md. Files are only rewritten when something changes.
+    /// </summary>
+    public static void ApplyNetwork(string root, NetMode mode, string address)
+    {
+        string serverPath = Path.Combine(root, "Data", "Settings.json");
+        string clientPath = Path.Combine(root, "Data", "ClientData", "ClientSettings.json");
+        var server = ReadLoose(serverPath);
+        var client = ReadLoose(clientPath);
+        bool serverChanged = false, clientChanged = false;
+        Action<Dictionary<string, object>, string, object, bool> set = (values, key, value, isServer) =>
+        {
+            object old;
+            if (values.TryGetValue(key, out old) && Equals(Convert.ToString(old), Convert.ToString(value))) return;
+            values[key] = value;
+            if (isServer) serverChanged = true; else clientChanged = true;
+        };
+        if (mode == NetMode.Offline)
+        {
+            set(server, "MultiplayerEnabled", false, true);
+            set(server, "BaseIP", "localhost", true);
+            set(server, "BindIP", "http://{BaseIP}:{BasePort}/", true);
+            set(server, "SessionServerIP", "{BaseIP}", true);
+            set(server, "MultiplayerPvpClientConnectIP", "{SessionServerIP}", true);
+            set(client, "BaseIP", "localhost", false);
+        }
+        else
+        {
+            if (string.IsNullOrWhiteSpace(address)) throw new ArgumentException("Enter the server address.");
+            address = address.Trim();
+            if (mode == NetMode.Host)
+            {
+                set(server, "MultiplayerEnabled", true, true);
+                set(server, "BaseIP", address, true);
+                set(server, "BindIP", "http://*:{BasePort}/", true);
+                set(server, "SessionServerIP", "0.0.0.0", true);
+                set(server, "MultiplayerPvpClientConnectIP", "localhost", true);
+            }
+            set(client, "BaseIP", address, false);
+            // Every player needs their own token, otherwise two players share one account on the server.
+            object token;
+            if (!client.TryGetValue("MultiplayerToken", out token) || string.IsNullOrWhiteSpace(Convert.ToString(token)))
+                set(client, "MultiplayerToken", "player-" + Guid.NewGuid().ToString("N").Substring(0, 12), false);
+        }
+        var json = new JavaScriptSerializer { MaxJsonLength = int.MaxValue };
+        if (serverChanged) File.WriteAllText(serverPath, json.Serialize(server), new UTF8Encoding(false));
+        if (clientChanged) File.WriteAllText(clientPath, json.Serialize(client), new UTF8Encoding(false));
+    }
+
+    /// <summary>The address saved for joining (the client's BaseIP), or "" when it is still local.</summary>
+    public static string SavedServerAddress(string root)
+    {
+        var client = ReadLoose(Path.Combine(root, "Data", "ClientData", "ClientSettings.json"));
+        object value;
+        string address = client.TryGetValue("BaseIP", out value) ? Convert.ToString(value) : "";
+        return address == "localhost" || address == "127.0.0.1" ? "" : address;
+    }
+
+    /// <summary>This PC's network addresses, private-network apps (Tailscale 100.x, Radmin 26.x) first.</summary>
+    public static List<string> LocalAddresses()
+    {
+        var result = new List<string>();
+        foreach (var nic in System.Net.NetworkInformation.NetworkInterface.GetAllNetworkInterfaces())
+        {
+            if (nic.OperationalStatus != System.Net.NetworkInformation.OperationalStatus.Up) continue;
+            foreach (var unicast in nic.GetIPProperties().UnicastAddresses)
+            {
+                var ip = unicast.Address;
+                if (ip.AddressFamily != System.Net.Sockets.AddressFamily.InterNetwork || System.Net.IPAddress.IsLoopback(ip)) continue;
+                string text = ip.ToString();
+                if (text.StartsWith("169.254.")) continue;
+                if (!result.Contains(text)) result.Add(text);
+            }
+        }
+        Func<string, int> rank = a => a.StartsWith("100.") ? 0 : a.StartsWith("26.") || a.StartsWith("25.") ? 1
+            : a.StartsWith("192.168.") || a.StartsWith("10.") || a.StartsWith("172.") ? 2 : 3;
+        return result.OrderBy(rank).ToList();
+    }
+
+    public static bool IsAdministrator()
+    {
+        try { return new System.Security.Principal.WindowsPrincipal(System.Security.Principal.WindowsIdentity.GetCurrent()).IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator); }
+        catch { return false; }
+    }
+
+    static bool CanReach(string address, int port)
+    {
+        try
+        {
+            using (var tcp = new System.Net.Sockets.TcpClient())
+            {
+                var attempt = tcp.BeginConnect(address, port, null, null);
+                bool done = attempt.AsyncWaitHandle.WaitOne(TimeSpan.FromSeconds(4));
+                if (done) tcp.EndConnect(attempt);
+                return done && tcp.Connected;
+            }
+        }
+        catch { return false; }
+    }
+
+    /// <summary>Join mode: starts only Master Duel, connected to another PC's server (no local server).</summary>
+    public static string StartClientOnly(string root, string address, Action<string> progress)
+    {
+        int[] ports = Validate(root);
+        PrepareSets(root);
+        progress("Checking the server at " + address + "...");
+        if (!CanReach(address, ports[0]))
+            throw new InvalidOperationException("Can't reach the server at " + address + " (port " + ports[0] + "). Check that the host has pressed Host a server, " +
+                "that you are both in the same private network app (Tailscale, ZeroTier, Radmin), and that the address is right.");
+        progress("Starting Master Duel...");
+        Process.Start(new ProcessStartInfo(Path.Combine(root, "YgoMasterClient.exe")) { WorkingDirectory = root, UseShellExecute = true, WindowStyle = ProcessWindowStyle.Hidden });
+        try { HideSupportFiles(root); } catch { }
+        return "Master Duel is starting, connected to " + address + ".";
+    }
+
     public static string Start(string root, Action<string> progress)
     {
         int[] ports = Validate(root);
@@ -660,7 +860,13 @@ static class GameLauncher
             ready = open.Contains(ports[0]) && open.Contains(ports[1]);
             if (!ready) System.Threading.Thread.Sleep(100);
         }
-        if (!ready) throw new TimeoutException("The server did not open ports " + ports[0] + " / " + ports[1] + " within 30 seconds.");
+        if (!ready)
+        {
+            bool open = ReadLoose(Path.Combine(root, "Data", "Settings.json")).ContainsKey("BindIP") &&
+                Convert.ToString(ReadLoose(Path.Combine(root, "Data", "Settings.json"))["BindIP"]).Contains("*");
+            throw new TimeoutException("The server did not open ports " + ports[0] + " / " + ports[1] + " within 30 seconds." +
+                (open && !IsAdministrator() ? " Hosting for other players needs administrator rights: use Host a server and confirm the Windows prompt, or press Start Game to play alone." : ""));
+        }
         progress("Starting Master Duel...");
         Process.Start(new ProcessStartInfo(Path.Combine(root, "YgoMasterClient.exe")) { WorkingDirectory = root, UseShellExecute = true, WindowStyle = ProcessWindowStyle.Hidden });
         try { HideSupportFiles(root); } catch { }
@@ -723,6 +929,28 @@ static class Program
                     Application.Run(form); timer.Dispose();
                 }
                 Console.WriteLine("Saved " + args[1]);
+                return 0;
+            }
+            if (args.Length > 1 && args[0] == "--net")
+            {
+                // "Start Game.exe" --net offline|host <address>|join <address> [runtime folder]: apply a network mode only (tests)
+                var mode = (GameLauncher.NetMode)Enum.Parse(typeof(GameLauncher.NetMode), args[1], true);
+                string address = mode == GameLauncher.NetMode.Offline ? null : args[2];
+                root = args.Length > (mode == GameLauncher.NetMode.Offline ? 2 : 3) ? args[mode == GameLauncher.NetMode.Offline ? 2 : 3] : AppDomain.CurrentDomain.BaseDirectory;
+                GameLauncher.ApplyNetwork(root, mode, address);
+                Console.WriteLine("Network mode " + mode + (address != null ? " " + address : "") + " applied in " + root);
+                return 0;
+            }
+            if (args.Length > 1 && args[0] == "--host")
+            {
+                // Restarted as administrator by Host a server: host on the chosen address straight away.
+                root = args.Length > 2 ? args[2] : AppDomain.CurrentDomain.BaseDirectory;
+                using (var hostForm = new BalancedEditorForm(root))
+                {
+                    string address = args[1];
+                    hostForm.Shown += (s, e) => { try { hostForm.Launch(GameLauncher.NetMode.Host, address); } catch (Exception error) { MessageBox.Show(hostForm, error.Message, "Host a server", MessageBoxButtons.OK, MessageBoxIcon.Error); } };
+                    Application.Run(hostForm);
+                }
                 return 0;
             }
             using (var form = new BalancedEditorForm(root))
