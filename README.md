@@ -7,7 +7,7 @@ It is built on the [TCG Solo Campaign](https://github.com/vngudu/YgoMaster-TCG) 
 
 *Offline only. Progress is not shared with the live game.*
 
-> **Status: 0.3.0 prototype.** Five deck modes in SOLO > Stories, all loaded at once:
+> **Status: 0.4.0 prototype.** Five deck modes in SOLO > Stories, all loaded at once:
 > **Balanced Characters** (u/Rosehn's v2 lists), **Goat Era Duelists** (v3, AI-built, Goat-legal),
 > **Duel Royale** (Konami's 7 official decks), and **Goat Format Strategies** and **Edison Format Strategies**
 > (real tournament decks, tuned). All are tested CPU vs CPU with the real duel engine;
